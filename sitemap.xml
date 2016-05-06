@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://blog.mindcont.com/about/index.html</loc>
+    <loc>http://blog.mindcont.com/history/index.html</loc>
     
-    <lastmod>2016-05-05T13:37:56.221Z</lastmod>
+    <lastmod>2016-05-06T12:06:57.409Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/history/index.html</loc>
+    <loc>http://blog.mindcont.com/about/index.html</loc>
     
-    <lastmod>2016-05-05T13:14:42.046Z</lastmod>
+    <lastmod>2016-05-06T11:54:49.061Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/04/24/how-to-use-tensorflow/</loc>
+    
+    <lastmod>2016-05-06T10:11:25.299Z</lastmod>
     
   </url>
   
@@ -26,13 +33,6 @@
     <loc>http://blog.mindcont.com/2016/05/05/RaspberryPi/</loc>
     
     <lastmod>2016-05-05T08:52:15.432Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/04/24/how-to-use-tensorflow/</loc>
-    
-    <lastmod>2016-04-24T09:28:48.949Z</lastmod>
     
   </url>
   
