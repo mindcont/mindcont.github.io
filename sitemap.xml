@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.mindcont.com/2016/05/13/Open-Source-Computer-Vision/</loc>
+    
+    <lastmod>2016-05-13T13:36:59.939Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/05/09/The-basic-principle-of-Kinect-depth-imaging/</loc>
+    
+    <lastmod>2016-05-13T06:08:37.708Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.mindcont.com/2016/05/12/win10-ubuntu-remote-desktop/</loc>
     
-    <lastmod>2016-05-12T04:33:24.996Z</lastmod>
+    <lastmod>2016-05-12T04:43:26.994Z</lastmod>
     
   </url>
   
@@ -12,20 +26,6 @@
     <loc>http://blog.mindcont.com/2016/05/10/Real-Time-Human-Pose-Recognition-in-Parts-from-Single-Depth-Images/</loc>
     
     <lastmod>2016-05-11T10:20:53.943Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/05/09/The-basic-principle-of-Kinect-depth-imaging/</loc>
-    
-    <lastmod>2016-05-09T09:22:53.107Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/05/08/Raspberry-Pi-kernel-compile-and-firmware-upgrade/</loc>
-    
-    <lastmod>2016-05-08T07:48:40.569Z</lastmod>
     
   </url>
   
