@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.mindcont.com/"/>
-  <updated>2016-05-14T02:22:04.164Z</updated>
+  <updated>2016-05-18T13:44:47.228Z</updated>
   <id>http://blog.mindcont.com/</id>
   
   <author>
@@ -14,6 +14,63 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Matlab连接Kinect V2</title>
+    <link href="http://blog.mindcont.com/2016/05/18/Microsoft-Kinect-V2-with-Matlab/"/>
+    <id>http://blog.mindcont.com/2016/05/18/Microsoft-Kinect-V2-with-Matlab/</id>
+    <published>2016-05-18T12:09:55.000Z</published>
+    <updated>2016-05-18T13:44:47.228Z</updated>
+    
+    <content type="html">&lt;p&gt;如何让matlab支持Kinect呢？通过搜索在&lt;a href=&quot;http://cn.mathworks.com/hardware-support/kinect-windows.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;mathworks 中国&lt;/a&gt;得知，只有最新版的 matlab 2016a 才支持 Kinect v2 。具体信息如下表，&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Version&lt;/th&gt;
+&lt;th&gt;MATLAB Release&lt;/th&gt;
+&lt;th&gt;Kinect for Windows Runtime&lt;/th&gt;
+&lt;th&gt;Platform&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Kinect for Windows v1&lt;/td&gt;
+&lt;td&gt;R2013a and later&lt;/td&gt;
+&lt;td&gt;1.6 (Installed by support package)&lt;/td&gt;
+&lt;td&gt;Windows&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Kinect v2&lt;/td&gt;
+&lt;td&gt;R2016a and later&lt;/td&gt;
+&lt;td&gt;2.0 (Installed by support package)&lt;/td&gt;
+&lt;td&gt;Windows 8 and later&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&quot;获取matlab-2016a&quot;&gt;&lt;a href=&quot;#获取matlab-2016a&quot; class=&quot;headerlink&quot; title=&quot;获取matlab 2016a&quot;&gt;&lt;/a&gt;获取matlab 2016a&lt;/h1&gt;&lt;p&gt;从百度云下载 matlab2016a ,大约7.6个g。值得注意的是：从2016开始 matlab不再支持win32平台。 &lt;/p&gt;
+&lt;p&gt;原版2016a 光盘镜像ISO&lt;br&gt;链接: &lt;a href=&quot;http://pan.baidu.com/s/1YOrl8&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1YOrl8&lt;/a&gt; 密码: 8k7u&lt;br&gt;2016a 破解文档及安装说明&lt;br&gt;链接: &lt;a href=&quot;http://pan.baidu.com/s/1kUyozNx&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1kUyozNx&lt;/a&gt; 密码: fygw&lt;/p&gt;
+&lt;h1 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h1&gt;&lt;h2 id=&quot;加载镜像&quot;&gt;&lt;a href=&quot;#加载镜像&quot; class=&quot;headerlink&quot; title=&quot;加载镜像&quot;&gt;&lt;/a&gt;加载镜像&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/images/matlab-2016a/matlab-2016a-1.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;安装-1&quot;&gt;&lt;a href=&quot;#安装-1&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;p&gt;选择安装方法&lt;br&gt;&lt;img src=&quot;/images/matlab-2016a/matlab-2016a-2.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;输入安装说明中的密钥。 在破解文档readme.txt中。&lt;br&gt;&lt;img src=&quot;/images/matlab-2016a/matlab-2016a-3.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;选择安装位置&lt;br&gt;&lt;img src=&quot;/images/matlab-2016a/matlab-2016a-4.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;选择组件。 第一个是分布式计算，用不到的朋友建议取消勾选，其余用不到的工具箱也建议不要安装，这样可以减少安装目录的大小，加快安装速度和运行时速度。&lt;br&gt;&lt;img src=&quot;/images/matlab-2016a/matlab-2016a-5.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;勾选 将快捷方式添加到桌面选项，否则桌面上将不会出现matlab 2016a的启动快捷方式，还要的手动到安装目录下 /bin文件下寻找。&lt;br&gt;&lt;img src=&quot;/images/matlab-2016a/matlab-2016a-6.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;安装完成&lt;br&gt;&lt;img src=&quot;/images/matlab-2016a/matlab-2016a-7.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;破解&quot;&gt;&lt;a href=&quot;#破解&quot; class=&quot;headerlink&quot; title=&quot;破解&quot;&gt;&lt;/a&gt;破解&lt;/h2&gt;&lt;p&gt;破解方式如同matlab之前的版本那样，这里我们简要的介绍一下。&lt;br&gt;运行MATLAB R2016a，进行授权lic注册&lt;br&gt;&lt;img src=&quot;/images/matlab-2016a/matlab-2016a-8.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/matlab-2016a/matlab-2016a-9.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;授权在破解文件夹内，根据自己安装时候选择的安装模式进行lic注册。&lt;br&gt;&lt;img src=&quot;/images/matlab-2016a/matlab-2016a-10.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;激活完成，值得注意的是:现在破解还没有完成，现在运行会出错。&lt;br&gt;&lt;img src=&quot;/images/matlab-2016a/matlab-2016a-11.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;strong&gt;替换原文件&lt;/strong&gt; 将破解文件夹中的Matlab_2016a win64_Crack\R2016a下的两个文件夹 bin 和 toolbox复制到matlab的文件路径下.&lt;br&gt;&lt;img src=&quot;/images/matlab-2016a/matlab-2016a-12.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;恭喜，此时，安装和激活全部完成，现在可以运行！&lt;br&gt;&lt;img src=&quot;/images/matlab-2016a/matlab-2016a-13.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;下载kinect支持包&quot;&gt;&lt;a href=&quot;#下载kinect支持包&quot; class=&quot;headerlink&quot; title=&quot;下载kinect支持包&quot;&gt;&lt;/a&gt;下载kinect支持包&lt;/h1&gt;&lt;p&gt;首先输入下面的这行命令&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;source.vid = videoinput(&lt;span class=&quot;string&quot;&gt;&#39;kinect&#39;&lt;/span&gt;,1); &lt;span class=&quot;comment&quot;&gt;#设置视频的输入方式和相应的格式&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;在没有安装kinect 支持包的时候，会报下面的错误&lt;br&gt;&lt;img src=&quot;/images/matlab-2016a/kinect-v2-1.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;用鼠标单击图中所示，会打开一个安装扩展支持包的界面&lt;br&gt;&lt;img src=&quot;/images/matlab-2016a/kinect-v2-2.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;把图中标红的两项都要安装，其中一个是kinect v2 的支持包，一个是系统通用视频接口的支持包(支持笔记本摄像头)。值得注意的是：安装过程中需要去mathworks 官网注册一个帐号。&lt;/p&gt;
+&lt;h1 id=&quot;测试&quot;&gt;&lt;a href=&quot;#测试&quot; class=&quot;headerlink&quot; title=&quot;测试&quot;&gt;&lt;/a&gt;测试&lt;/h1&gt;&lt;p&gt;查看安装信息，输入下面的指令。&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;imaqhwinfo&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;如果显示下面的信息，说明安装完成。&lt;br&gt;&lt;img src=&quot;/images/matlab-2016a/kinect-v2-3.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;还可以通过matlab 提供的工具箱进行测试。在菜单栏 “应用程序” 》 “Image Acquisition” 选项中双击打开。&lt;br&gt;&lt;img src=&quot;/images/matlab-2016a/kinect-v2-4.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;可以在侧边栏看到 硬件信息，选择其中一项如Depth_512*424 ,点击中部的预览 ，看见上面的预览窗口显示深度画面即表示matlab 连接 kinect v2 成功！！！&lt;br&gt;&lt;img src=&quot;/images/matlab-2016a/kinect-v2-5.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;作者:&lt;a href=&quot;https://github.com/mindcont&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;mindcont&lt;/a&gt;  2016-05-18 第一次编辑&lt;br&gt;&lt;strong&gt;转载注明出处 &lt;a href=&quot;http://blog.mindcont.com/2016/05/18/Microsoft-Kinect-V2-with-Matlab/&quot;&gt;http://blog.mindcont.com/2016/05/18/Microsoft-Kinect-V2-with-Matlab/&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;如何让matlab支持Kinect呢？通过搜索在&lt;a href=&quot;http://cn.mathworks.com/hardware-support/kinect-windows.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;mathworks 中
+    
+    </summary>
+    
+      <category term="Kinect" scheme="http://blog.mindcont.com/categories/Kinect/"/>
+    
+    
+      <category term="matlab" scheme="http://blog.mindcont.com/tags/matlab/"/>
+    
+  </entry>
   
   <entry>
     <title>计算机视觉开源项目</title>
@@ -1515,6 +1572,59 @@
   </entry>
   
   <entry>
+    <title>Android开源项目——优秀个人和团体</title>
+    <link href="http://blog.mindcont.com/2016/04/01/android-open-project-5/"/>
+    <id>http://blog.mindcont.com/2016/04/01/android-open-project-5/</id>
+    <published>2016-04-01T03:25:24.000Z</published>
+    <updated>2016-04-01T03:56:40.817Z</updated>
+    
+    <content type="html">&lt;p&gt;主要介绍那些乐于分享并且有一些很不错的开源项目的个人和组织。Follow大神，深挖大神的项目和following，你会发现很多。  &lt;/p&gt;
+&lt;h4 id=&quot;一、个人&quot;&gt;&lt;a href=&quot;#一、个人&quot; class=&quot;headerlink&quot; title=&quot;一、个人&quot;&gt;&lt;/a&gt;一、个人&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;JakeWharton&lt;br&gt;就职于Square，绝对牛逼的大神，项目主要集中在Android版本兼容，ViewPager及开发工具上&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/JakeWharton&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/JakeWharton&lt;/a&gt;&lt;br&gt;代表作：ActionBarSherlock，Android-ViewPagerIndicator，Nine Old Androids，SwipeToDismissNOA，hugo，butterknife，Android-DirectionalViewPager, scalpel&lt;br&gt;pidcat另外对square及其他开源项目有很多贡献&lt;br&gt;主页：&lt;a href=&quot;http://jakewharton.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://jakewharton.com/&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Chris Banes&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/chrisbanes&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/chrisbanes&lt;/a&gt;&lt;br&gt;代表作：ActionBar-PullToRefresh，PhotoView，Android-BitmapCache，Android-PullToRefresh&lt;br&gt;主页：&lt;a href=&quot;http://chris.banes.me/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://chris.banes.me/&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Koushik Dutta&lt;br&gt;就职于ClockworkMod&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/koush&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/koush&lt;/a&gt;&lt;br&gt;代表作：Superuser，AndroidAsync，UrlImageViewHelper，ion, 另外对&lt;a href=&quot;https://github.com/CyanogenMod&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/CyanogenMod&lt;/a&gt; 的开源项目有很多贡献&lt;br&gt;主页：&lt;a href=&quot;http://koush.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://koush.com/&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Simon Vig&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/SimonVT&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/SimonVT&lt;/a&gt;&lt;br&gt;代表作：android-menudrawer，MessageBar&lt;br&gt;主页：&lt;a href=&quot;http://simonvt.net/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://simonvt.net/&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Manuel Peinado&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/ManuelPeinado&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/ManuelPeinado&lt;/a&gt;&lt;br&gt;代表作：FadingActionBar，GlassActionBar，RefreshActionItem，QuickReturnHeader  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Emil Sj?lander&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/emilsjolander&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/emilsjolander&lt;/a&gt;&lt;br&gt;代表作：StickyListHeaders，sprinkles，android-FlipView&lt;br&gt;主页：&lt;a href=&quot;http://emilsjolander.se/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://emilsjolander.se/&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;greenrobot&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/greenrobot&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/greenrobot&lt;/a&gt;&lt;br&gt;代表作：greenDAO，EventBus&lt;br&gt;主页：&lt;a href=&quot;http://greenrobot.de/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://greenrobot.de/&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Jeff Gilfelt&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/jgilfelt&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/jgilfelt&lt;/a&gt;&lt;br&gt;代表作：android-mapviewballoons，android-viewbadger，android-actionbarstylegenerator，android-sqlite-asset-helper&lt;br&gt;主页：&lt;a href=&quot;http://jeffgilfelt.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://jeffgilfelt.com&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Romain Guy&lt;br&gt;Android team成员(2013.10已离开Android team，仍在Google)&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/romainguy&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/romainguy&lt;/a&gt;&lt;br&gt;代表作：ViewServer&lt;br&gt;主页：&lt;a href=&quot;http://www.curious-creature.org/category/android/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.curious-creature.org/category/android/&lt;/a&gt;&lt;br&gt;個人攝影作品：&lt;a href=&quot;http://www.flickr.com/photos/romainguy&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.flickr.com/photos/romainguy&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;sephiroth74&lt;br&gt;就职于Aviary.com&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/sephiroth74&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/sephiroth74&lt;/a&gt;&lt;br&gt;代表作：ImageViewZoom，HorizontalVariableListView，AndroidWheel，purePDF&lt;br&gt;主页：&lt;a href=&quot;http://www.sephiroth.it/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.sephiroth.it/&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Cyril Mottier&lt;br&gt;Google开发者专家认证，发布一些Android技巧及文章&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/cyrilmottier&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/cyrilmottier&lt;/a&gt;&lt;br&gt;代表作：GreenDroid，Polaris&lt;br&gt;主页：&lt;a href=&quot;http://cyrilmottier.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://cyrilmottier.com/&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/Trinea/android-open-project#%E7%9B%AE%E5%89%8D%E5%8C%85%E6%8B%AC&quot; title=&quot;返回目录&quot; style=&quot;width:100%&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://farm4.staticflickr.com/3737/12167413134_edcff68e22_o.png&quot; align=&quot;right&quot;&gt;&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&quot;二、组织&quot;&gt;&lt;a href=&quot;#二、组织&quot; class=&quot;headerlink&quot; title=&quot;二、组织&quot;&gt;&lt;/a&gt;二、组织&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Square&lt;br&gt;有态度有良心的企业，很多不错的分享&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/square&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/square&lt;/a&gt;&lt;br&gt;代表作：okhttp、fest-android，android-times-square、picasso、dagger、spoon等等&lt;br&gt;主页：&lt;a href=&quot;http://square.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://square.github.io/&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Inmite s.r.o.&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/inmite&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/inmite&lt;/a&gt;&lt;br&gt;代表作：android-styled-dialogs，android-grid-wichterle，android-selector-chapek&lt;br&gt;主页：&lt;a href=&quot;http://www.inmite.eu/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.inmite.eu/&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/Trinea/android-open-project#%E7%9B%AE%E5%89%8D%E5%8C%85%E6%8B%AC&quot; title=&quot;返回目录&quot; style=&quot;width:100%&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://farm4.staticflickr.com/3737/12167413134_edcff68e22_o.png&quot; align=&quot;right&quot;&gt;&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&quot;三、博客&quot;&gt;&lt;a href=&quot;#三、博客&quot; class=&quot;headerlink&quot; title=&quot;三、博客&quot;&gt;&lt;/a&gt;三、博客&lt;/h4&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/android-cn/android-dev-com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;部分国外著名 Android 开发者信息&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/Trinea/android-open-project#%E7%9B%AE%E5%89%8D%E5%8C%85%E6%8B%AC&quot; title=&quot;返回目录&quot; style=&quot;width:100%&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://farm4.staticflickr.com/3737/12167413134_edcff68e22_o.png&quot; align=&quot;right&quot;&gt;&lt;/a&gt;  &lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;主要介绍那些乐于分享并且有一些很不错的开源项目的个人和组织。Follow大神，深挖大神的项目和following，你会发现很多。  &lt;/p&gt;
+&lt;h4 id=&quot;一、个人&quot;&gt;&lt;a href=&quot;#一、个人&quot; class=&quot;headerlink&quot; title=&quot;一、个人&quot;&gt;&lt;/a&gt;
+    
+    </summary>
+    
+    
+      <category term="安卓" scheme="http://blog.mindcont.com/tags/%E5%AE%89%E5%8D%93/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Android开源项目——优秀项目</title>
     <link href="http://blog.mindcont.com/2016/04/01/android-open-project-3/"/>
     <id>http://blog.mindcont.com/2016/04/01/android-open-project-3/</id>
@@ -1540,147 +1650,6 @@
     <summary type="html">
     
       &lt;p&gt;主要介绍那些Android还不错的完整项目，目前包含的项目主要依据是项目有意思或项目分层规范比较好。&lt;br&gt;Linux&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/torvalds/linux&quot; target=&quot;_blank&quot; rel=&quot;exte
-    
-    </summary>
-    
-    
-      <category term="安卓" scheme="http://blog.mindcont.com/tags/%E5%AE%89%E5%8D%93/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Android开源项目——开发及测试工具</title>
-    <link href="http://blog.mindcont.com/2016/04/01/android-open-project-4/"/>
-    <id>http://blog.mindcont.com/2016/04/01/android-open-project-4/</id>
-    <published>2016-04-01T03:25:24.000Z</published>
-    <updated>2016-04-01T04:46:50.935Z</updated>
-    
-    <content type="html">&lt;p&gt;主要介绍和Android开发工具和测试工具相关的开源项目。  &lt;/p&gt;
-&lt;h4 id=&quot;一、开发效率工具&quot;&gt;&lt;a href=&quot;#一、开发效率工具&quot; class=&quot;headerlink&quot; title=&quot;一、开发效率工具&quot;&gt;&lt;/a&gt;一、开发效率工具&lt;/h4&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Parceler&lt;br&gt;通过注解及工具类自动完成实体类 Parcelable及值传递&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/johncarl81/parceler&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/johncarl81/parceler&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Json2Java&lt;br&gt;根据JSon数据自动生成对应的Java实体类，还支持Parcel、Gson Annotations对应代码自动生成。期待后续的提取父类以及多url构建整个工程的功能&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/jonfhancock/JsonToJava&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/jonfhancock/JsonToJava&lt;/a&gt;&lt;br&gt;在线演示：&lt;a href=&quot;http://jsontojava.appspot.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://jsontojava.appspot.com/&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;IntelliJ Plugin for Android Parcelable boilerplate code generation&lt;br&gt;Android studio插件，生成Parcelable代码&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/mcharmas/android-parcelable-intellij-plugin&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/mcharmas/android-parcelable-intellij-plugin&lt;/a&gt;&lt;br&gt;效果图：&lt;img src=&quot;https://github.com/mcharmas/android-parcelable-intellij-plugin/raw/master/screenshot.png&quot; alt=&quot;Holo Colors Idea&quot;&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Android Holo Colors IntelliJ Plugin&lt;br&gt;Android studio插件，生成holo样式9 patch图片&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/jeromevdl/android-holo-colors-idea-plugin&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/jeromevdl/android-holo-colors-idea-plugin&lt;/a&gt;&lt;br&gt;效果图：&lt;img src=&quot;https://raw.github.com/jeromevdl/android-holo-colors-idea-plugin/master/other/holocolorsidea.png&quot; alt=&quot;Holo Colors Idea&quot;&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Android Drawable Factory&lt;br&gt;用于生成各个分辨率的图片&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/tizionario/AndroidDrawableFactory&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/tizionario/AndroidDrawableFactory&lt;/a&gt;&lt;br&gt;效果图：&lt;img src=&quot;https://github-camo.global.ssl.fastly.net/5c3844b345a9779296f996490070dab0bfc9dbf5/68747470733a2f2f646c2e64726f70626f7875736572636f6e74656e742e636f6d2f752f32363636343637352f416e64726f69644472617761626c65466163746f72792f312e706e67&quot; alt=&quot;Android Drawable Factory&quot;&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;SelectorChapek for Android&lt;br&gt;Android Studio插件，可根据固定文件名格式资源自动生成drawable selectors xml文件。&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/inmite/android-selector-chapek&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/inmite/android-selector-chapek&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Android Action Bar Style Generator&lt;br&gt;Android ActionBar样式生成器，可在线选择ActionBar样式自动生成所需要的图片资源及xml文件&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/jgilfelt/android-actionbarstylegenerator&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/jgilfelt/android-actionbarstylegenerator&lt;/a&gt;&lt;br&gt;在线演示：&lt;a href=&quot;http://jgilfelt.github.io/android-actionbarstylegenerator/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://jgilfelt.github.io/android-actionbarstylegenerator/&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;ButterKnifeZelezny&lt;br&gt;用于快速生成&lt;a href=&quot;https://github.com/JakeWharton/butterknife&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ButterKnife&lt;/a&gt;View注入代码的Android Studio/IDEA插件&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/inmite/android-butterknife-zelezny&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/inmite/android-butterknife-zelezny&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;RoboCoP&lt;br&gt;利用Gradle task根据固定格式的json文件生成ContentProvider&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/mediarain/RoboCoP&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/mediarain/RoboCoP&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;appiconsizes&lt;br&gt;用于生成各个分辨率的图片&lt;br&gt;项目地址：&lt;a href=&quot;http://www.appiconsizes.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.appiconsizes.com/&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Gradle Retrolambda Plugin&lt;br&gt;&lt;a href=&quot;https://github.com/orfjackal/retrolambda&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Retrolambda&lt;/a&gt;是将Java8的Lambdas应用于Java7的工具，本项目是Gradle插件，通过Retrolambda从而使Java或Android项目用Java8的Lambdas编写，将编译后的字节码转换为Java6和7的字节码从而正常运行&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/evant/gradle-retrolambda&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/evant/gradle-retrolambda&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Dagger IntelliJ Plugin&lt;br&gt;dagger的intellij插件&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/square/dagger-intellij-plugin&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/square/dagger-intellij-plugin&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Android Gen Drawable Maven plugin&lt;br&gt;在编译时根据SVG描述文件生成不同分辨率的jpg、png或点9图片&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/avianey/androidgendrawable-maven-plugin&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/avianey/androidgendrawable-maven-plugin&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Android Asset Studio&lt;br&gt;各种Android资源自动生成器，包括启动图标、ActionBar图标、通知栏图标、点9等&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/romannurik/AndroidAssetStudio&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/romannurik/AndroidAssetStudio&lt;/a&gt;&lt;br&gt;在线演示：&lt;a href=&quot;http://romannurik.github.io/AndroidAssetStudio/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://romannurik.github.io/AndroidAssetStudio/&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;jsonschema2pojo&lt;br&gt;根据Json内容生成java对象，支持jackjson和gson&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/joelittlejohn/jsonschema2pojo&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/joelittlejohn/jsonschema2pojo&lt;/a&gt;&lt;br&gt;在线演示：&lt;a href=&quot;http://www.jsonschema2pojo.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jsonschema2pojo.org/&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;9-Patch-Resizer&lt;br&gt;自动生成 png 及点 9 图片的不同分辨率版本&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/redwarp/9-Patch-Resizer&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/redwarp/9-Patch-Resizer&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;AndroidLocalizationer&lt;br&gt;可用于将项目中的 string 资源自动翻译为其他语言的 Android Studio/IntelliJ IDEA 插件&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/westlinkin/AndroidLocalizationer&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/westlinkin/AndroidLocalizationer&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/Trinea/android-open-project#%E7%9B%AE%E5%89%8D%E5%8C%85%E6%8B%AC&quot; title=&quot;返回目录&quot; style=&quot;width:100%&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://farm4.staticflickr.com/3737/12167413134_edcff68e22_o.png&quot; align=&quot;right&quot;&gt;&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4 id=&quot;二、开发自测相关&quot;&gt;&lt;a href=&quot;#二、开发自测相关&quot; class=&quot;headerlink&quot; title=&quot;二、开发自测相关&quot;&gt;&lt;/a&gt;二、开发自测相关&lt;/h4&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Quality Tools for Android&lt;br&gt;Android测试及自测工具集合和示例&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/stephanenicolas/Quality-Tools-for-Android&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/stephanenicolas/Quality-Tools-for-Android&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;android-test-kit&lt;br&gt;Google的Android测试工具&lt;br&gt;包括GoogleInstrumentationTestRunner(增强版的InstrumentationTestRunner)和Espresso(用于快速写出可靠测试用例的API)&lt;br&gt;项目地址：&lt;a href=&quot;https://code.google.com/p/android-test-kit/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://code.google.com/p/android-test-kit/&lt;/a&gt;&lt;br&gt;文档介绍：&lt;a href=&quot;https://code.google.com/p/android-test-kit/w/list&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://code.google.com/p/android-test-kit/w/list&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;robolectric&lt;br&gt;测试用例编写框架&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/robolectric/robolectric&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/robolectric/robolectric&lt;/a&gt;&lt;br&gt;Demo地址：&lt;a href=&quot;https://github.com/robolectric/robolectricsample&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/robolectric/robolectricsample&lt;/a&gt;&lt;br&gt;文档介绍：&lt;a href=&quot;http://robolectric.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://robolectric.org/&lt;/a&gt;&lt;br&gt;特点：(1). 不需要模拟器在一般JVM就可以运行测试用例&lt;br&gt;(2). 能完成在真机上的大部分测试包括感应器&lt;br&gt;其他的测试用例及相关模块Mock可见：&lt;a href=&quot;https://code.google.com/p/android-mock/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;android-mock&lt;/a&gt;, &lt;a href=&quot;https://code.google.com/p/mockito/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;mockito&lt;/a&gt;, &lt;a href=&quot;https://github.com/easymock/easymock&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;easy-mock&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Android FEST&lt;br&gt;提供一些列方便的断言，可用于提高编写Android自测代码效率&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/square/fest-android&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/square/fest-android&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;BoundBox&lt;br&gt;可用于测试类各种访问权限的属性、方法。实际是通过BoundBox这个annotation生成一个属性和方法都是public权限的中间类并对此类进行测试完成的&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/stephanenicolas/boundbox&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/stephanenicolas/boundbox&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Hugo&lt;br&gt;用于打印函数信息及执行时间的工具，仅在debug模式生效&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/JakeWharton/hugo&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/JakeWharton/hugo&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;scalpel&lt;br&gt;在应用下面添加一层用于界面调试，待详细补充 // TODO&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/JakeWharton/scalpel&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/JakeWharton/scalpel&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Android Screenshot library&lt;br&gt;Android截图工具类，用于在持续集成时截图&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/rtyley/android-screenshot-lib&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/rtyley/android-screenshot-lib&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;sonar-android-lint-plugin&lt;br&gt;将android lint的错误在sonar中展现&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/SonarCommunity/sonar-android&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/SonarCommunity/sonar-android&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/Trinea/android-open-project#%E7%9B%AE%E5%89%8D%E5%8C%85%E6%8B%AC&quot; title=&quot;返回目录&quot; style=&quot;width:100%&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://farm4.staticflickr.com/3737/12167413134_edcff68e22_o.png&quot; align=&quot;right&quot;&gt;&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4 id=&quot;三、测试工具&quot;&gt;&lt;a href=&quot;#三、测试工具&quot; class=&quot;headerlink&quot; title=&quot;三、测试工具&quot;&gt;&lt;/a&gt;三、测试工具&lt;/h4&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Spoon&lt;br&gt;可用于android不同机型设备自动化测试，能将应用apk和测试apk运行在不同机器上并生成相应测试报告。&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/square/spoon&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/square/spoon&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Tencent APT&lt;br&gt;APT是腾讯开源的一个Android平台高效性能测试组件，提供丰富实用的功能，适用于开发自测、定位性能瓶颈；测试人员完成性能基准测试、竞品对比测试&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/stormzhang/APT&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/stormzhang/APT&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Emmagee&lt;br&gt;网易开源的性能测试工具，包括CPU、内存、网络流量、启动时间、电池状态等&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/NetEase/Emmagee&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/NetEase/Emmagee&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Android py-uiautomator&lt;br&gt;py-uiautomator是一个对Android uiautomator用python进行封装的测试框架.&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/xiaocong/uiautomator&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/xiaocong/uiautomator&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/Trinea/android-open-project#%E7%9B%AE%E5%89%8D%E5%8C%85%E6%8B%AC&quot; title=&quot;返回目录&quot; style=&quot;width:100%&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://farm4.staticflickr.com/3737/12167413134_edcff68e22_o.png&quot; align=&quot;right&quot;&gt;&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4 id=&quot;四、开发及编译环境&quot;&gt;&lt;a href=&quot;#四、开发及编译环境&quot; class=&quot;headerlink&quot; title=&quot;四、开发及编译环境&quot;&gt;&lt;/a&gt;四、开发及编译环境&lt;/h4&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Buck&lt;br&gt;facebook开源的Android编译工具，效率是ant的两倍。主要优点在于：&lt;br&gt;(1) 加快编译速度，通过并行利用多核cpu和跟踪不变资源减少增量编译时间实现&lt;br&gt;(2) 可以在编译系统中生成编译规则而无须另外的系统生成编译规则文件&lt;br&gt;(3) 编译同时可生成单元测试结果&lt;br&gt;(4) 既可用于IDE编译也可用于持续集成编译&lt;br&gt;(5) facebook持续优化中&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/facebook/buck&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/facebook/buck&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Android Maven Plugin&lt;br&gt;Android Maven插件，可用于对android三方依赖进行管理。在J2EE开发中，maven是非常成熟的依赖库管理工具，可统一管理依赖库。&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/jayway/maven-android-plugin&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/jayway/maven-android-plugin&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;umeng-muti-channel-build-tool&lt;br&gt;渠道打包工具&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/umeng/umeng-muti-channel-build-tool&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/umeng/umeng-muti-channel-build-tool&lt;/a&gt;&lt;br&gt;另可参见Google的构建系统Gradle：&lt;a href=&quot;http://tools.android.com/tech-docs/new-build-system/user-guide&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://tools.android.com/tech-docs/new-build-system/user-guide&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Genymotion&lt;br&gt;目前最好用最快的android模拟器&lt;br&gt;项目地址：&lt;a href=&quot;http://www.genymotion.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.genymotion.com/&lt;/a&gt;&lt;br&gt;Android studio集成控件： &lt;a href=&quot;http://plugins.jetbrains.com/plugin/7269?pr=idea&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://plugins.jetbrains.com/plugin/7269?pr=idea&lt;/a&gt;&lt;br&gt;Cyril Mottier推荐：&lt;a href=&quot;http://cyrilmottier.com/2013/06/27/a-productive-android-development-environment/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://cyrilmottier.com/2013/06/27/a-productive-android-development-environment/&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;gradle-mvn-push&lt;br&gt;方便的将Gradle的Artifacts上传到Maven仓库&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/chrisbanes/gradle-mvn-push&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/chrisbanes/gradle-mvn-push&lt;/a&gt;&lt;br&gt;文档介绍：&lt;a href=&quot;https://github.com/chrisbanes/gradle-mvn-push#usage&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/chrisbanes/gradle-mvn-push#usage&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Android Emulator Plugin for Jenkins&lt;br&gt;Android模拟器 jenkins插件，用于Jenkins做持续集成时跑模拟器测试&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/jenkinsci/android-emulator-plugin&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/jenkinsci/android-emulator-plugin&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Android Maven Plugin&lt;br&gt;管理应用所需要的依赖库。包括的构建工具有Maven、Gradle、ant、sbt&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/mosabua/maven-android-sdk-deployer&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/mosabua/maven-android-sdk-deployer&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;SDK Manager Plugin&lt;br&gt;下载和管理Android SDK的Gradle插件&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/JakeWharton/sdk-manager-plugin&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/JakeWharton/sdk-manager-plugin&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Gradle Protobuf Plugin&lt;br&gt;将.proto文件转换成Java文件的gradle插件&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/andrewkroh/gradle-protobuf-plugin&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/andrewkroh/gradle-protobuf-plugin&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;ChromeADB&lt;br&gt;Chrome 的 Adb 插件，当登录后，能看到所有连接的设备并操作，可以看应用、进程、内存及磁盘使用情况等&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/importre/chromeadb&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/importre/chromeadb&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/Trinea/android-open-project#%E7%9B%AE%E5%89%8D%E5%8C%85%E6%8B%AC&quot; title=&quot;返回目录&quot; style=&quot;width:100%&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://farm4.staticflickr.com/3737/12167413134_edcff68e22_o.png&quot; align=&quot;right&quot;&gt;&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4 id=&quot;五、其他&quot;&gt;&lt;a href=&quot;#五、其他&quot; class=&quot;headerlink&quot; title=&quot;五、其他&quot;&gt;&lt;/a&gt;五、其他&lt;/h4&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;ViewServer&lt;br&gt;允许app运行在任何手机上都可以用HierarchyViewer查看&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/romainguy/ViewServer&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/romainguy/ViewServer&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;GridWichterle for Android&lt;br&gt;在整个系统上显示一个grid，用来帮助查看应用布局及使得布局更美观，可设置grid网格大小和颜色，android推荐48dp和8dp，可见 Android Design Guidelines – Metrics and Grids，比起hierarchyviewer相差甚远，不过偶尔可用来作为布局查看工具。&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/inmite/android-grid-wichterle&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/inmite/android-grid-wichterle&lt;/a&gt;&lt;br&gt;Demo地址：&lt;a href=&quot;https://play.google.com/store/apps/details?id=eu.inmite.android.gridwichterle&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://play.google.com/store/apps/details?id=eu.inmite.android.gridwichterle&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Catlog&lt;br&gt;手机端log查看工具，支持不同颜色显示、关键字过滤、级别过滤、进程id过滤、录制功能等&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/nolanlawson/Catlog&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/nolanlawson/Catlog&lt;/a&gt;&lt;br&gt;在线演示：&lt;a href=&quot;https://play.google.com/store/apps/details?id=com.nolanlawson.logcat&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://play.google.com/store/apps/details?id=com.nolanlawson.logcat&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;PID Cat&lt;br&gt;根据package查看logcat日志&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/JakeWharton/pidcat&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/JakeWharton/pidcat&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;ACRA&lt;br&gt;应用崩溃信息日志上报到GoogleDoc工具，网页版展现结果三方开源地址&lt;a href=&quot;https://github.com/BenoitDuffez/crashreportsviewer&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/BenoitDuffez/crashreportsviewer&lt;/a&gt;&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/ACRA/acra&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/ACRA/acra&lt;/a&gt;&lt;br&gt;文档介绍：&lt;a href=&quot;https://github.com/ACRA/acra/wiki/BasicSetup&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/ACRA/acra/wiki/BasicSetup&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Crashlytics&lt;br&gt;提供丰富的应用崩溃信息日志收集&lt;br&gt;轻量级，丰富，可自定义应用崩溃信息收集器，附有邮件通知&lt;br&gt;项目地址：&lt;a href=&quot;http://www.crashlytics.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.crashlytics.com/&lt;/a&gt;&lt;br&gt;集成插件：&lt;a href=&quot;http://try.crashlytics.com/sdk-android/?utm_source=blog&amp;amp;utm_medium=blog&amp;amp;utm_campaign=Announcing_android_studio_wp&amp;amp;utm_content=CTA_button&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Android Studio, Eclipse and IntelliJ&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Android Resource Navigator&lt;br&gt;chrome插件，可以方便的查看github上android源码工程的styles.xml和themes.xml。主要功能：&lt;br&gt;(1) 快速打开android styles.xml themes.xml&lt;br&gt;(2) 方便在资源间跳转。styles.xml themes.xml文件中资源链接跳转，可以方便跳转到某个资源&lt;br&gt;(3) 方便查找某个style和theme。chrome地址栏输入arn+tab+搜索内容回车即可&lt;br&gt;(4) 自动下载不同分辨率下的drawable&lt;br&gt;(5) 通过映射查找那些不是按照固定命名规则命名的style和theme&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/jgilfelt/android-resource-navigator&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/jgilfelt/android-resource-navigator&lt;/a&gt;&lt;br&gt;在线演示：&lt;a href=&quot;https://chrome.google.com/webstore/detail/android-resource-navigato/agoomkionjjbejegcejiefodgbckeebo?hl=en&amp;amp;gl=GB&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://chrome.google.com/webstore/detail/android-resource-navigato/agoomkionjjbejegcejiefodgbckeebo?hl=en&amp;amp;gl=GB&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;android-resource-remover&lt;br&gt;根据lint的提示删除项目中无用的资源，减少包的大小&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/KeepSafe/android-resource-remover&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/KeepSafe/android-resource-remover&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Telescope&lt;br&gt;通过手势截图以特定主题发送到特定邮箱地址报告Bug&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/mattprecious/telescope&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/mattprecious/telescope&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Complete Android Fragment &amp;amp; Activity Lifecycle&lt;br&gt;完整的Android Fragment/Activity生命周期图&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/xxv/android-lifecycle&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/xxv/android-lifecycle&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Bugsnag Notifier for Android&lt;br&gt;通过&lt;code&gt;Thread.UncaughtExceptionHandler&lt;/code&gt;捕获应用未处理的异常崩溃 Bug 并用 Notification 展示同时上传到后台服务器&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/bugsnag/bugsnag-android&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/bugsnag/bugsnag-android&lt;/a&gt;&lt;br&gt;文档介绍：&lt;a href=&quot;https://github.com/bugsnag/bugsnag-android#installation--setup&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/bugsnag/bugsnag-android#installation--setup&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Material Design Icons&lt;br&gt;Google Material Design 规范中的 Icon&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/google/material-design-icons&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/google/material-design-icons&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;scrollscreenshot&lt;br&gt;Android 滚动屏幕自动截图 jar 包，支持纵向、横向滚动截屏拼接&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/PGSSoft/scrollscreenshot&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/PGSSoft/scrollscreenshot&lt;/a&gt;&lt;br&gt;效果图：&lt;img src=&quot;https://github.com/PGSSoft/scrollscreenshot/raw/master/samplehorizontal.png&quot; alt=&quot;Renderings&quot;&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/Trinea/android-open-project#%E7%9B%AE%E5%89%8D%E5%8C%85%E6%8B%AC&quot; title=&quot;返回目录&quot; style=&quot;width:100%&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://farm4.staticflickr.com/3737/12167413134_edcff68e22_o.png&quot; align=&quot;right&quot;&gt;&lt;/a&gt;   &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;droidicon&lt;br&gt;1600+的海量Icon，包括750+的Material Design icons&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/theDazzler/droidicon&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/theDazzler/droidicon&lt;/a&gt;   &lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;主要介绍和Android开发工具和测试工具相关的开源项目。  &lt;/p&gt;
-&lt;h4 id=&quot;一、开发效率工具&quot;&gt;&lt;a href=&quot;#一、开发效率工具&quot; class=&quot;headerlink&quot; title=&quot;一、开发效率工具&quot;&gt;&lt;/a&gt;一、开发效率工具&lt;/h4&gt;&lt;ol&gt;
-&lt;li&gt;&lt;
     
     </summary>
     
@@ -2478,50 +2447,138 @@
   </entry>
   
   <entry>
-    <title>Android开源项目——优秀个人和团体</title>
-    <link href="http://blog.mindcont.com/2016/04/01/android-open-project-5/"/>
-    <id>http://blog.mindcont.com/2016/04/01/android-open-project-5/</id>
+    <title>Android开源项目——开发及测试工具</title>
+    <link href="http://blog.mindcont.com/2016/04/01/android-open-project-4/"/>
+    <id>http://blog.mindcont.com/2016/04/01/android-open-project-4/</id>
     <published>2016-04-01T03:25:24.000Z</published>
-    <updated>2016-04-01T03:56:40.817Z</updated>
+    <updated>2016-04-01T04:46:50.935Z</updated>
     
-    <content type="html">&lt;p&gt;主要介绍那些乐于分享并且有一些很不错的开源项目的个人和组织。Follow大神，深挖大神的项目和following，你会发现很多。  &lt;/p&gt;
-&lt;h4 id=&quot;一、个人&quot;&gt;&lt;a href=&quot;#一、个人&quot; class=&quot;headerlink&quot; title=&quot;一、个人&quot;&gt;&lt;/a&gt;一、个人&lt;/h4&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;JakeWharton&lt;br&gt;就职于Square，绝对牛逼的大神，项目主要集中在Android版本兼容，ViewPager及开发工具上&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/JakeWharton&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/JakeWharton&lt;/a&gt;&lt;br&gt;代表作：ActionBarSherlock，Android-ViewPagerIndicator，Nine Old Androids，SwipeToDismissNOA，hugo，butterknife，Android-DirectionalViewPager, scalpel&lt;br&gt;pidcat另外对square及其他开源项目有很多贡献&lt;br&gt;主页：&lt;a href=&quot;http://jakewharton.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://jakewharton.com/&lt;/a&gt;  &lt;/p&gt;
+    <content type="html">&lt;p&gt;主要介绍和Android开发工具和测试工具相关的开源项目。  &lt;/p&gt;
+&lt;h4 id=&quot;一、开发效率工具&quot;&gt;&lt;a href=&quot;#一、开发效率工具&quot; class=&quot;headerlink&quot; title=&quot;一、开发效率工具&quot;&gt;&lt;/a&gt;一、开发效率工具&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Parceler&lt;br&gt;通过注解及工具类自动完成实体类 Parcelable及值传递&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/johncarl81/parceler&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/johncarl81/parceler&lt;/a&gt;  &lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Chris Banes&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/chrisbanes&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/chrisbanes&lt;/a&gt;&lt;br&gt;代表作：ActionBar-PullToRefresh，PhotoView，Android-BitmapCache，Android-PullToRefresh&lt;br&gt;主页：&lt;a href=&quot;http://chris.banes.me/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://chris.banes.me/&lt;/a&gt;  &lt;/p&gt;
+&lt;li&gt;&lt;p&gt;Json2Java&lt;br&gt;根据JSon数据自动生成对应的Java实体类，还支持Parcel、Gson Annotations对应代码自动生成。期待后续的提取父类以及多url构建整个工程的功能&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/jonfhancock/JsonToJava&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/jonfhancock/JsonToJava&lt;/a&gt;&lt;br&gt;在线演示：&lt;a href=&quot;http://jsontojava.appspot.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://jsontojava.appspot.com/&lt;/a&gt;  &lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Koushik Dutta&lt;br&gt;就职于ClockworkMod&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/koush&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/koush&lt;/a&gt;&lt;br&gt;代表作：Superuser，AndroidAsync，UrlImageViewHelper，ion, 另外对&lt;a href=&quot;https://github.com/CyanogenMod&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/CyanogenMod&lt;/a&gt; 的开源项目有很多贡献&lt;br&gt;主页：&lt;a href=&quot;http://koush.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://koush.com/&lt;/a&gt;  &lt;/p&gt;
+&lt;li&gt;&lt;p&gt;IntelliJ Plugin for Android Parcelable boilerplate code generation&lt;br&gt;Android studio插件，生成Parcelable代码&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/mcharmas/android-parcelable-intellij-plugin&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/mcharmas/android-parcelable-intellij-plugin&lt;/a&gt;&lt;br&gt;效果图：&lt;img src=&quot;https://github.com/mcharmas/android-parcelable-intellij-plugin/raw/master/screenshot.png&quot; alt=&quot;Holo Colors Idea&quot;&gt;  &lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Simon Vig&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/SimonVT&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/SimonVT&lt;/a&gt;&lt;br&gt;代表作：android-menudrawer，MessageBar&lt;br&gt;主页：&lt;a href=&quot;http://simonvt.net/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://simonvt.net/&lt;/a&gt;  &lt;/p&gt;
+&lt;li&gt;&lt;p&gt;Android Holo Colors IntelliJ Plugin&lt;br&gt;Android studio插件，生成holo样式9 patch图片&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/jeromevdl/android-holo-colors-idea-plugin&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/jeromevdl/android-holo-colors-idea-plugin&lt;/a&gt;&lt;br&gt;效果图：&lt;img src=&quot;https://raw.github.com/jeromevdl/android-holo-colors-idea-plugin/master/other/holocolorsidea.png&quot; alt=&quot;Holo Colors Idea&quot;&gt;  &lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Manuel Peinado&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/ManuelPeinado&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/ManuelPeinado&lt;/a&gt;&lt;br&gt;代表作：FadingActionBar，GlassActionBar，RefreshActionItem，QuickReturnHeader  &lt;/p&gt;
+&lt;li&gt;&lt;p&gt;Android Drawable Factory&lt;br&gt;用于生成各个分辨率的图片&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/tizionario/AndroidDrawableFactory&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/tizionario/AndroidDrawableFactory&lt;/a&gt;&lt;br&gt;效果图：&lt;img src=&quot;https://github-camo.global.ssl.fastly.net/5c3844b345a9779296f996490070dab0bfc9dbf5/68747470733a2f2f646c2e64726f70626f7875736572636f6e74656e742e636f6d2f752f32363636343637352f416e64726f69644472617761626c65466163746f72792f312e706e67&quot; alt=&quot;Android Drawable Factory&quot;&gt;  &lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Emil Sj?lander&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/emilsjolander&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/emilsjolander&lt;/a&gt;&lt;br&gt;代表作：StickyListHeaders，sprinkles，android-FlipView&lt;br&gt;主页：&lt;a href=&quot;http://emilsjolander.se/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://emilsjolander.se/&lt;/a&gt;  &lt;/p&gt;
+&lt;li&gt;&lt;p&gt;SelectorChapek for Android&lt;br&gt;Android Studio插件，可根据固定文件名格式资源自动生成drawable selectors xml文件。&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/inmite/android-selector-chapek&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/inmite/android-selector-chapek&lt;/a&gt;  &lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;greenrobot&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/greenrobot&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/greenrobot&lt;/a&gt;&lt;br&gt;代表作：greenDAO，EventBus&lt;br&gt;主页：&lt;a href=&quot;http://greenrobot.de/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://greenrobot.de/&lt;/a&gt;  &lt;/p&gt;
+&lt;li&gt;&lt;p&gt;Android Action Bar Style Generator&lt;br&gt;Android ActionBar样式生成器，可在线选择ActionBar样式自动生成所需要的图片资源及xml文件&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/jgilfelt/android-actionbarstylegenerator&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/jgilfelt/android-actionbarstylegenerator&lt;/a&gt;&lt;br&gt;在线演示：&lt;a href=&quot;http://jgilfelt.github.io/android-actionbarstylegenerator/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://jgilfelt.github.io/android-actionbarstylegenerator/&lt;/a&gt;  &lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Jeff Gilfelt&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/jgilfelt&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/jgilfelt&lt;/a&gt;&lt;br&gt;代表作：android-mapviewballoons，android-viewbadger，android-actionbarstylegenerator，android-sqlite-asset-helper&lt;br&gt;主页：&lt;a href=&quot;http://jeffgilfelt.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://jeffgilfelt.com&lt;/a&gt;  &lt;/p&gt;
+&lt;li&gt;&lt;p&gt;ButterKnifeZelezny&lt;br&gt;用于快速生成&lt;a href=&quot;https://github.com/JakeWharton/butterknife&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ButterKnife&lt;/a&gt;View注入代码的Android Studio/IDEA插件&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/inmite/android-butterknife-zelezny&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/inmite/android-butterknife-zelezny&lt;/a&gt;  &lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Romain Guy&lt;br&gt;Android team成员(2013.10已离开Android team，仍在Google)&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/romainguy&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/romainguy&lt;/a&gt;&lt;br&gt;代表作：ViewServer&lt;br&gt;主页：&lt;a href=&quot;http://www.curious-creature.org/category/android/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.curious-creature.org/category/android/&lt;/a&gt;&lt;br&gt;個人攝影作品：&lt;a href=&quot;http://www.flickr.com/photos/romainguy&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.flickr.com/photos/romainguy&lt;/a&gt;  &lt;/p&gt;
+&lt;li&gt;&lt;p&gt;RoboCoP&lt;br&gt;利用Gradle task根据固定格式的json文件生成ContentProvider&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/mediarain/RoboCoP&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/mediarain/RoboCoP&lt;/a&gt;  &lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;sephiroth74&lt;br&gt;就职于Aviary.com&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/sephiroth74&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/sephiroth74&lt;/a&gt;&lt;br&gt;代表作：ImageViewZoom，HorizontalVariableListView，AndroidWheel，purePDF&lt;br&gt;主页：&lt;a href=&quot;http://www.sephiroth.it/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.sephiroth.it/&lt;/a&gt;  &lt;/p&gt;
+&lt;li&gt;&lt;p&gt;appiconsizes&lt;br&gt;用于生成各个分辨率的图片&lt;br&gt;项目地址：&lt;a href=&quot;http://www.appiconsizes.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.appiconsizes.com/&lt;/a&gt;  &lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Cyril Mottier&lt;br&gt;Google开发者专家认证，发布一些Android技巧及文章&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/cyrilmottier&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/cyrilmottier&lt;/a&gt;&lt;br&gt;代表作：GreenDroid，Polaris&lt;br&gt;主页：&lt;a href=&quot;http://cyrilmottier.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://cyrilmottier.com/&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/Trinea/android-open-project#%E7%9B%AE%E5%89%8D%E5%8C%85%E6%8B%AC&quot; title=&quot;返回目录&quot; style=&quot;width:100%&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://farm4.staticflickr.com/3737/12167413134_edcff68e22_o.png&quot; align=&quot;right&quot;&gt;&lt;/a&gt;  &lt;/p&gt;
+&lt;li&gt;&lt;p&gt;Gradle Retrolambda Plugin&lt;br&gt;&lt;a href=&quot;https://github.com/orfjackal/retrolambda&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Retrolambda&lt;/a&gt;是将Java8的Lambdas应用于Java7的工具，本项目是Gradle插件，通过Retrolambda从而使Java或Android项目用Java8的Lambdas编写，将编译后的字节码转换为Java6和7的字节码从而正常运行&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/evant/gradle-retrolambda&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/evant/gradle-retrolambda&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Dagger IntelliJ Plugin&lt;br&gt;dagger的intellij插件&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/square/dagger-intellij-plugin&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/square/dagger-intellij-plugin&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Android Gen Drawable Maven plugin&lt;br&gt;在编译时根据SVG描述文件生成不同分辨率的jpg、png或点9图片&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/avianey/androidgendrawable-maven-plugin&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/avianey/androidgendrawable-maven-plugin&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Android Asset Studio&lt;br&gt;各种Android资源自动生成器，包括启动图标、ActionBar图标、通知栏图标、点9等&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/romannurik/AndroidAssetStudio&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/romannurik/AndroidAssetStudio&lt;/a&gt;&lt;br&gt;在线演示：&lt;a href=&quot;http://romannurik.github.io/AndroidAssetStudio/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://romannurik.github.io/AndroidAssetStudio/&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;jsonschema2pojo&lt;br&gt;根据Json内容生成java对象，支持jackjson和gson&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/joelittlejohn/jsonschema2pojo&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/joelittlejohn/jsonschema2pojo&lt;/a&gt;&lt;br&gt;在线演示：&lt;a href=&quot;http://www.jsonschema2pojo.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jsonschema2pojo.org/&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;9-Patch-Resizer&lt;br&gt;自动生成 png 及点 9 图片的不同分辨率版本&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/redwarp/9-Patch-Resizer&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/redwarp/9-Patch-Resizer&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;AndroidLocalizationer&lt;br&gt;可用于将项目中的 string 资源自动翻译为其他语言的 Android Studio/IntelliJ IDEA 插件&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/westlinkin/AndroidLocalizationer&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/westlinkin/AndroidLocalizationer&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/Trinea/android-open-project#%E7%9B%AE%E5%89%8D%E5%8C%85%E6%8B%AC&quot; title=&quot;返回目录&quot; style=&quot;width:100%&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://farm4.staticflickr.com/3737/12167413134_edcff68e22_o.png&quot; align=&quot;right&quot;&gt;&lt;/a&gt;  &lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h4 id=&quot;二、组织&quot;&gt;&lt;a href=&quot;#二、组织&quot; class=&quot;headerlink&quot; title=&quot;二、组织&quot;&gt;&lt;/a&gt;二、组织&lt;/h4&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Square&lt;br&gt;有态度有良心的企业，很多不错的分享&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/square&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/square&lt;/a&gt;&lt;br&gt;代表作：okhttp、fest-android，android-times-square、picasso、dagger、spoon等等&lt;br&gt;主页：&lt;a href=&quot;http://square.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://square.github.io/&lt;/a&gt;  &lt;/p&gt;
+&lt;h4 id=&quot;二、开发自测相关&quot;&gt;&lt;a href=&quot;#二、开发自测相关&quot; class=&quot;headerlink&quot; title=&quot;二、开发自测相关&quot;&gt;&lt;/a&gt;二、开发自测相关&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Quality Tools for Android&lt;br&gt;Android测试及自测工具集合和示例&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/stephanenicolas/Quality-Tools-for-Android&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/stephanenicolas/Quality-Tools-for-Android&lt;/a&gt;  &lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Inmite s.r.o.&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/inmite&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/inmite&lt;/a&gt;&lt;br&gt;代表作：android-styled-dialogs，android-grid-wichterle，android-selector-chapek&lt;br&gt;主页：&lt;a href=&quot;http://www.inmite.eu/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.inmite.eu/&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/Trinea/android-open-project#%E7%9B%AE%E5%89%8D%E5%8C%85%E6%8B%AC&quot; title=&quot;返回目录&quot; style=&quot;width:100%&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://farm4.staticflickr.com/3737/12167413134_edcff68e22_o.png&quot; align=&quot;right&quot;&gt;&lt;/a&gt;  &lt;/p&gt;
+&lt;li&gt;&lt;p&gt;android-test-kit&lt;br&gt;Google的Android测试工具&lt;br&gt;包括GoogleInstrumentationTestRunner(增强版的InstrumentationTestRunner)和Espresso(用于快速写出可靠测试用例的API)&lt;br&gt;项目地址：&lt;a href=&quot;https://code.google.com/p/android-test-kit/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://code.google.com/p/android-test-kit/&lt;/a&gt;&lt;br&gt;文档介绍：&lt;a href=&quot;https://code.google.com/p/android-test-kit/w/list&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://code.google.com/p/android-test-kit/w/list&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;robolectric&lt;br&gt;测试用例编写框架&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/robolectric/robolectric&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/robolectric/robolectric&lt;/a&gt;&lt;br&gt;Demo地址：&lt;a href=&quot;https://github.com/robolectric/robolectricsample&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/robolectric/robolectricsample&lt;/a&gt;&lt;br&gt;文档介绍：&lt;a href=&quot;http://robolectric.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://robolectric.org/&lt;/a&gt;&lt;br&gt;特点：(1). 不需要模拟器在一般JVM就可以运行测试用例&lt;br&gt;(2). 能完成在真机上的大部分测试包括感应器&lt;br&gt;其他的测试用例及相关模块Mock可见：&lt;a href=&quot;https://code.google.com/p/android-mock/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;android-mock&lt;/a&gt;, &lt;a href=&quot;https://code.google.com/p/mockito/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;mockito&lt;/a&gt;, &lt;a href=&quot;https://github.com/easymock/easymock&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;easy-mock&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Android FEST&lt;br&gt;提供一些列方便的断言，可用于提高编写Android自测代码效率&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/square/fest-android&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/square/fest-android&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;BoundBox&lt;br&gt;可用于测试类各种访问权限的属性、方法。实际是通过BoundBox这个annotation生成一个属性和方法都是public权限的中间类并对此类进行测试完成的&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/stephanenicolas/boundbox&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/stephanenicolas/boundbox&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Hugo&lt;br&gt;用于打印函数信息及执行时间的工具，仅在debug模式生效&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/JakeWharton/hugo&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/JakeWharton/hugo&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;scalpel&lt;br&gt;在应用下面添加一层用于界面调试，待详细补充 // TODO&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/JakeWharton/scalpel&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/JakeWharton/scalpel&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Android Screenshot library&lt;br&gt;Android截图工具类，用于在持续集成时截图&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/rtyley/android-screenshot-lib&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/rtyley/android-screenshot-lib&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;sonar-android-lint-plugin&lt;br&gt;将android lint的错误在sonar中展现&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/SonarCommunity/sonar-android&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/SonarCommunity/sonar-android&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/Trinea/android-open-project#%E7%9B%AE%E5%89%8D%E5%8C%85%E6%8B%AC&quot; title=&quot;返回目录&quot; style=&quot;width:100%&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://farm4.staticflickr.com/3737/12167413134_edcff68e22_o.png&quot; align=&quot;right&quot;&gt;&lt;/a&gt;  &lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h4 id=&quot;三、博客&quot;&gt;&lt;a href=&quot;#三、博客&quot; class=&quot;headerlink&quot; title=&quot;三、博客&quot;&gt;&lt;/a&gt;三、博客&lt;/h4&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/android-cn/android-dev-com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;部分国外著名 Android 开发者信息&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/Trinea/android-open-project#%E7%9B%AE%E5%89%8D%E5%8C%85%E6%8B%AC&quot; title=&quot;返回目录&quot; style=&quot;width:100%&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://farm4.staticflickr.com/3737/12167413134_edcff68e22_o.png&quot; align=&quot;right&quot;&gt;&lt;/a&gt;  &lt;/p&gt;
+&lt;h4 id=&quot;三、测试工具&quot;&gt;&lt;a href=&quot;#三、测试工具&quot; class=&quot;headerlink&quot; title=&quot;三、测试工具&quot;&gt;&lt;/a&gt;三、测试工具&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Spoon&lt;br&gt;可用于android不同机型设备自动化测试，能将应用apk和测试apk运行在不同机器上并生成相应测试报告。&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/square/spoon&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/square/spoon&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Tencent APT&lt;br&gt;APT是腾讯开源的一个Android平台高效性能测试组件，提供丰富实用的功能，适用于开发自测、定位性能瓶颈；测试人员完成性能基准测试、竞品对比测试&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/stormzhang/APT&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/stormzhang/APT&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Emmagee&lt;br&gt;网易开源的性能测试工具，包括CPU、内存、网络流量、启动时间、电池状态等&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/NetEase/Emmagee&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/NetEase/Emmagee&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Android py-uiautomator&lt;br&gt;py-uiautomator是一个对Android uiautomator用python进行封装的测试框架.&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/xiaocong/uiautomator&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/xiaocong/uiautomator&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/Trinea/android-open-project#%E7%9B%AE%E5%89%8D%E5%8C%85%E6%8B%AC&quot; title=&quot;返回目录&quot; style=&quot;width:100%&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://farm4.staticflickr.com/3737/12167413134_edcff68e22_o.png&quot; align=&quot;right&quot;&gt;&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&quot;四、开发及编译环境&quot;&gt;&lt;a href=&quot;#四、开发及编译环境&quot; class=&quot;headerlink&quot; title=&quot;四、开发及编译环境&quot;&gt;&lt;/a&gt;四、开发及编译环境&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Buck&lt;br&gt;facebook开源的Android编译工具，效率是ant的两倍。主要优点在于：&lt;br&gt;(1) 加快编译速度，通过并行利用多核cpu和跟踪不变资源减少增量编译时间实现&lt;br&gt;(2) 可以在编译系统中生成编译规则而无须另外的系统生成编译规则文件&lt;br&gt;(3) 编译同时可生成单元测试结果&lt;br&gt;(4) 既可用于IDE编译也可用于持续集成编译&lt;br&gt;(5) facebook持续优化中&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/facebook/buck&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/facebook/buck&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Android Maven Plugin&lt;br&gt;Android Maven插件，可用于对android三方依赖进行管理。在J2EE开发中，maven是非常成熟的依赖库管理工具，可统一管理依赖库。&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/jayway/maven-android-plugin&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/jayway/maven-android-plugin&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;umeng-muti-channel-build-tool&lt;br&gt;渠道打包工具&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/umeng/umeng-muti-channel-build-tool&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/umeng/umeng-muti-channel-build-tool&lt;/a&gt;&lt;br&gt;另可参见Google的构建系统Gradle：&lt;a href=&quot;http://tools.android.com/tech-docs/new-build-system/user-guide&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://tools.android.com/tech-docs/new-build-system/user-guide&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Genymotion&lt;br&gt;目前最好用最快的android模拟器&lt;br&gt;项目地址：&lt;a href=&quot;http://www.genymotion.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.genymotion.com/&lt;/a&gt;&lt;br&gt;Android studio集成控件： &lt;a href=&quot;http://plugins.jetbrains.com/plugin/7269?pr=idea&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://plugins.jetbrains.com/plugin/7269?pr=idea&lt;/a&gt;&lt;br&gt;Cyril Mottier推荐：&lt;a href=&quot;http://cyrilmottier.com/2013/06/27/a-productive-android-development-environment/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://cyrilmottier.com/2013/06/27/a-productive-android-development-environment/&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;gradle-mvn-push&lt;br&gt;方便的将Gradle的Artifacts上传到Maven仓库&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/chrisbanes/gradle-mvn-push&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/chrisbanes/gradle-mvn-push&lt;/a&gt;&lt;br&gt;文档介绍：&lt;a href=&quot;https://github.com/chrisbanes/gradle-mvn-push#usage&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/chrisbanes/gradle-mvn-push#usage&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Android Emulator Plugin for Jenkins&lt;br&gt;Android模拟器 jenkins插件，用于Jenkins做持续集成时跑模拟器测试&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/jenkinsci/android-emulator-plugin&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/jenkinsci/android-emulator-plugin&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Android Maven Plugin&lt;br&gt;管理应用所需要的依赖库。包括的构建工具有Maven、Gradle、ant、sbt&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/mosabua/maven-android-sdk-deployer&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/mosabua/maven-android-sdk-deployer&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;SDK Manager Plugin&lt;br&gt;下载和管理Android SDK的Gradle插件&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/JakeWharton/sdk-manager-plugin&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/JakeWharton/sdk-manager-plugin&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Gradle Protobuf Plugin&lt;br&gt;将.proto文件转换成Java文件的gradle插件&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/andrewkroh/gradle-protobuf-plugin&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/andrewkroh/gradle-protobuf-plugin&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;ChromeADB&lt;br&gt;Chrome 的 Adb 插件，当登录后，能看到所有连接的设备并操作，可以看应用、进程、内存及磁盘使用情况等&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/importre/chromeadb&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/importre/chromeadb&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/Trinea/android-open-project#%E7%9B%AE%E5%89%8D%E5%8C%85%E6%8B%AC&quot; title=&quot;返回目录&quot; style=&quot;width:100%&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://farm4.staticflickr.com/3737/12167413134_edcff68e22_o.png&quot; align=&quot;right&quot;&gt;&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&quot;五、其他&quot;&gt;&lt;a href=&quot;#五、其他&quot; class=&quot;headerlink&quot; title=&quot;五、其他&quot;&gt;&lt;/a&gt;五、其他&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;ViewServer&lt;br&gt;允许app运行在任何手机上都可以用HierarchyViewer查看&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/romainguy/ViewServer&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/romainguy/ViewServer&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;GridWichterle for Android&lt;br&gt;在整个系统上显示一个grid，用来帮助查看应用布局及使得布局更美观，可设置grid网格大小和颜色，android推荐48dp和8dp，可见 Android Design Guidelines – Metrics and Grids，比起hierarchyviewer相差甚远，不过偶尔可用来作为布局查看工具。&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/inmite/android-grid-wichterle&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/inmite/android-grid-wichterle&lt;/a&gt;&lt;br&gt;Demo地址：&lt;a href=&quot;https://play.google.com/store/apps/details?id=eu.inmite.android.gridwichterle&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://play.google.com/store/apps/details?id=eu.inmite.android.gridwichterle&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Catlog&lt;br&gt;手机端log查看工具，支持不同颜色显示、关键字过滤、级别过滤、进程id过滤、录制功能等&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/nolanlawson/Catlog&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/nolanlawson/Catlog&lt;/a&gt;&lt;br&gt;在线演示：&lt;a href=&quot;https://play.google.com/store/apps/details?id=com.nolanlawson.logcat&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://play.google.com/store/apps/details?id=com.nolanlawson.logcat&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;PID Cat&lt;br&gt;根据package查看logcat日志&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/JakeWharton/pidcat&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/JakeWharton/pidcat&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;ACRA&lt;br&gt;应用崩溃信息日志上报到GoogleDoc工具，网页版展现结果三方开源地址&lt;a href=&quot;https://github.com/BenoitDuffez/crashreportsviewer&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/BenoitDuffez/crashreportsviewer&lt;/a&gt;&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/ACRA/acra&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/ACRA/acra&lt;/a&gt;&lt;br&gt;文档介绍：&lt;a href=&quot;https://github.com/ACRA/acra/wiki/BasicSetup&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/ACRA/acra/wiki/BasicSetup&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Crashlytics&lt;br&gt;提供丰富的应用崩溃信息日志收集&lt;br&gt;轻量级，丰富，可自定义应用崩溃信息收集器，附有邮件通知&lt;br&gt;项目地址：&lt;a href=&quot;http://www.crashlytics.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.crashlytics.com/&lt;/a&gt;&lt;br&gt;集成插件：&lt;a href=&quot;http://try.crashlytics.com/sdk-android/?utm_source=blog&amp;amp;utm_medium=blog&amp;amp;utm_campaign=Announcing_android_studio_wp&amp;amp;utm_content=CTA_button&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Android Studio, Eclipse and IntelliJ&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Android Resource Navigator&lt;br&gt;chrome插件，可以方便的查看github上android源码工程的styles.xml和themes.xml。主要功能：&lt;br&gt;(1) 快速打开android styles.xml themes.xml&lt;br&gt;(2) 方便在资源间跳转。styles.xml themes.xml文件中资源链接跳转，可以方便跳转到某个资源&lt;br&gt;(3) 方便查找某个style和theme。chrome地址栏输入arn+tab+搜索内容回车即可&lt;br&gt;(4) 自动下载不同分辨率下的drawable&lt;br&gt;(5) 通过映射查找那些不是按照固定命名规则命名的style和theme&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/jgilfelt/android-resource-navigator&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/jgilfelt/android-resource-navigator&lt;/a&gt;&lt;br&gt;在线演示：&lt;a href=&quot;https://chrome.google.com/webstore/detail/android-resource-navigato/agoomkionjjbejegcejiefodgbckeebo?hl=en&amp;amp;gl=GB&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://chrome.google.com/webstore/detail/android-resource-navigato/agoomkionjjbejegcejiefodgbckeebo?hl=en&amp;amp;gl=GB&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;android-resource-remover&lt;br&gt;根据lint的提示删除项目中无用的资源，减少包的大小&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/KeepSafe/android-resource-remover&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/KeepSafe/android-resource-remover&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Telescope&lt;br&gt;通过手势截图以特定主题发送到特定邮箱地址报告Bug&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/mattprecious/telescope&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/mattprecious/telescope&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Complete Android Fragment &amp;amp; Activity Lifecycle&lt;br&gt;完整的Android Fragment/Activity生命周期图&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/xxv/android-lifecycle&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/xxv/android-lifecycle&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Bugsnag Notifier for Android&lt;br&gt;通过&lt;code&gt;Thread.UncaughtExceptionHandler&lt;/code&gt;捕获应用未处理的异常崩溃 Bug 并用 Notification 展示同时上传到后台服务器&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/bugsnag/bugsnag-android&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/bugsnag/bugsnag-android&lt;/a&gt;&lt;br&gt;文档介绍：&lt;a href=&quot;https://github.com/bugsnag/bugsnag-android#installation--setup&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/bugsnag/bugsnag-android#installation--setup&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Material Design Icons&lt;br&gt;Google Material Design 规范中的 Icon&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/google/material-design-icons&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/google/material-design-icons&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;scrollscreenshot&lt;br&gt;Android 滚动屏幕自动截图 jar 包，支持纵向、横向滚动截屏拼接&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/PGSSoft/scrollscreenshot&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/PGSSoft/scrollscreenshot&lt;/a&gt;&lt;br&gt;效果图：&lt;img src=&quot;https://github.com/PGSSoft/scrollscreenshot/raw/master/samplehorizontal.png&quot; alt=&quot;Renderings&quot;&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/Trinea/android-open-project#%E7%9B%AE%E5%89%8D%E5%8C%85%E6%8B%AC&quot; title=&quot;返回目录&quot; style=&quot;width:100%&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://farm4.staticflickr.com/3737/12167413134_edcff68e22_o.png&quot; align=&quot;right&quot;&gt;&lt;/a&gt;   &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;droidicon&lt;br&gt;1600+的海量Icon，包括750+的Material Design icons&lt;br&gt;项目地址：&lt;a href=&quot;https://github.com/theDazzler/droidicon&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/theDazzler/droidicon&lt;/a&gt;   &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p&gt;主要介绍那些乐于分享并且有一些很不错的开源项目的个人和组织。Follow大神，深挖大神的项目和following，你会发现很多。  &lt;/p&gt;
-&lt;h4 id=&quot;一、个人&quot;&gt;&lt;a href=&quot;#一、个人&quot; class=&quot;headerlink&quot; title=&quot;一、个人&quot;&gt;&lt;/a&gt;
+      &lt;p&gt;主要介绍和Android开发工具和测试工具相关的开源项目。  &lt;/p&gt;
+&lt;h4 id=&quot;一、开发效率工具&quot;&gt;&lt;a href=&quot;#一、开发效率工具&quot; class=&quot;headerlink&quot; title=&quot;一、开发效率工具&quot;&gt;&lt;/a&gt;一、开发效率工具&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;&lt;
     
     </summary>
     
