@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.mindcont.com/2016/05/28/OpenCV-2-4-9-Module-Introduction/</loc>
+    
+    <lastmod>2016-05-28T03:24:36.226Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/05/13/Open-Source-Computer-Vision/</loc>
+    
+    <lastmod>2016-05-28T01:54:59.547Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.mindcont.com/2016/04/15/Kinect-Disassemble/</loc>
     
     <lastmod>2016-05-20T03:21:26.122Z</lastmod>
@@ -19,13 +33,6 @@
     <loc>http://blog.mindcont.com/2016/05/18/Microsoft-Kinect-V2-with-Matlab/</loc>
     
     <lastmod>2016-05-18T13:44:47.228Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/05/13/Open-Source-Computer-Vision/</loc>
-    
-    <lastmod>2016-05-14T02:22:04.164Z</lastmod>
     
   </url>
   
