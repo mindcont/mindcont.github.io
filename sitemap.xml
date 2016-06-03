@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.mindcont.com/2016/06/03/GitHub-Rollback/</loc>
+    
+    <lastmod>2016-06-03T01:29:43.614Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/05/05/RaspberryPi/</loc>
+    
+    <lastmod>2016-05-28T03:28:26.909Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.mindcont.com/2016/05/28/OpenCV-2-4-9-Module-Introduction/</loc>
     
     <lastmod>2016-05-28T03:24:36.226Z</lastmod>
@@ -75,13 +89,6 @@
     <loc>http://blog.mindcont.com/2016/05/04/how-to-use-ngrok-penetrate-internal-network/</loc>
     
     <lastmod>2016-05-05T09:20:03.819Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/05/05/RaspberryPi/</loc>
-    
-    <lastmod>2016-05-05T08:52:15.432Z</lastmod>
     
   </url>
   

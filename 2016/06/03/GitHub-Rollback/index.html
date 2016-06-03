@@ -1,29 +1,29 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>有趣的树莓派项目 | 微纪元</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/3.0.3/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">有趣的树莓派项目</h1><a id="logo" href="/.">微纪元</a><p class="description">根据同名科幻小说改编</p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/history/"><i class="fa fa-history"> 历史</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div id="layout" class="pure-g"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">有趣的树莓派项目</h1><div class="post-meta">May 5, 2016<script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> Hits</span></span></div><a data-disqus-identifier="2016/05/05/RaspberryPi/" href="/2016/05/05/RaspberryPi/#disqus_thread" class="disqus-comment-count"></a><div class="post-content"><p>分享我所收集的有趣树莓派项目，相关项目的开源文件也可以在此路径相应文件夹下进行下载。欢迎大家fork和push ( /) V (\ ) 嘻嘻~</p>
-<p><img src="/images/flying_pi.png" alt=""></p>
-<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><table>
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>Git操作：强制删除提交到远程版本库的数据与版本记录 | 微纪元</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/3.0.3/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Git操作：强制删除提交到远程版本库的数据与版本记录</h1><a id="logo" href="/.">微纪元</a><p class="description">根据同名科幻小说改编</p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/history/"><i class="fa fa-history"> 历史</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div id="layout" class="pure-g"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">Git操作：强制删除提交到远程版本库的数据与版本记录</h1><div class="post-meta">Jun 3, 2016<script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> Hits</span></span></div><a data-disqus-identifier="2016/06/03/GitHub-Rollback/" href="/2016/06/03/GitHub-Rollback/#disqus_thread" class="disqus-comment-count"></a><div class="post-content"><p>经常往GitHub上提交修改的代码，会导致提交次数很多；又或者提交了某些不应该提交测试数据，那麽我们应该如何删除这些提交记录呢？  </p>
+<table>
 <thead>
 <tr>
-<th>文件夹</th>
-<th>说明</th>
-<th>作者</th>
-<th>开源地址</th>
+<th>运行平台</th>
+<th>环境</th>
+<th>备注</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Big Dog</td>
-<td>基于3D打印的开源大狗</td>
-<td>HuskyRobo</td>
-<td><a href="http://www.instructables.com/id/Fenrir-an-Open-Source-Dog-Robot/" target="_blank" rel="external">http://www.instructables.com/id/Fenrir-an-Open-Source-Dog-Robot/</a></td>
+<td>Microsoft Windows [版本 10.0.10240]</td>
+<td>GitHub Desktop (3.1.1.4)</td>
+<td>无</td>
 </tr>
 </tbody>
 </table>
-<h2 id="致谢"><a href="#致谢" class="headerlink" title="致谢"></a>致谢</h2><p>在此，感谢所有致力于开放源代码并为之努力的朋友们！</p>
-<h4 id="1、Big-Dog"><a href="#1、Big-Dog" class="headerlink" title="1、Big Dog"></a>1、Big Dog</h4><p>一个利用3D打印机和树莓派制作的开源大狗机器人<br>博客地址：<a href="http://www.instructables.com/id/Fenrir-an-Open-Source-Dog-Robot/" target="_blank" rel="external">http://www.instructables.com/id/Fenrir-an-Open-Source-Dog-Robot/</a><br>源码地址：<a href="https://github.com/HackHusky/Fenrir" target="_blank" rel="external">https://github.com/HackHusky/Fenrir</a><br>效果图： <img src="/images/dog-robot.jpg" alt="dog robot"></p>
-</div><script type="text/javascript" src="/js/share.js?v=0.0.0" async></script><a data-url="http://blog.mindcont.com/2016/05/05/RaspberryPi/" data-id="cioz1bue400089k9o5ufbf2hz" class="article-share-link">分享到</a><div class="tags"><a href="/tags/树莓派/">树莓派</a></div><div class="post-nav"><a href="/2016/05/09/The-basic-principle-of-Kinect-depth-imaging/" class="pre">Kinect深度成像的基本原理</a><a href="/2016/05/04/how-to-use-ngrok-penetrate-internal-network/" class="next">如何搭建ngrok穿透内网</a></div><div id="disqus_thread"><script>var disqus_shortname = 'micro-era';
-var disqus_identifier = '2016/05/05/RaspberryPi/';
-var disqus_title = '有趣的树莓派项目';
-var disqus_url = 'http://blog.mindcont.com/2016/05/05/RaspberryPi/';
+<p><strong>1、启动 git shell, 切换到项目所在的空间</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> c://github/android/rubikrobot            <span class="comment">#例如项目位于C://GitHub/Android/RubikRobot 目录下</span></span><br></pre></td></tr></table></figure></p>
+<p><strong>2、查看当前提交记录</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">log</span></span><br></pre></td></tr></table></figure></p>
+<p>输入 q退出日志</p>
+<p><strong>3、使用git reset 进行撤销操作</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git reset --hard HEAD~2                   <span class="comment"># 取消当前版本之前的两次提交  </span></span><br><span class="line">git push origin HEAD --force              <span class="comment"># 强制提交到远程版本库，从而删除之前的两次提交数据</span></span><br></pre></td></tr></table></figure></p>
+<p><img src="/images/github.png" alt=""><br><a href="https://git-scm.com/book/zh/v1/Git-%E5%9F%BA%E7%A1%80-%E6%92%A4%E6%B6%88%E6%93%8D%E4%BD%9C" target="_blank" rel="external">了解更多关于git 操作</a></p>
+</div><script type="text/javascript" src="/js/share.js?v=0.0.0" async></script><a data-url="http://blog.mindcont.com/2016/06/03/GitHub-Rollback/" data-id="cioz1bud500009k9ohuhb3lr5" class="article-share-link">分享到</a><div class="tags"><a href="/tags/GitHub/">GitHub</a></div><div class="post-nav"><a href="/2016/05/28/OpenCV-2-4-9-Module-Introduction/" class="next">OpenCV 2.4.9 模块简介</a></div><div id="disqus_thread"><script>var disqus_shortname = 'micro-era';
+var disqus_identifier = '2016/06/03/GitHub-Rollback/';
+var disqus_title = 'Git操作：强制删除提交到远程版本库的数据与版本记录';
+var disqus_url = 'http://blog.mindcont.com/2016/06/03/GitHub-Rollback/';
 (function() {
   var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
   dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
