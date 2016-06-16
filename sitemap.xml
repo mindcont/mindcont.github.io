@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.mindcont.com/about/index.html</loc>
+    
+    <lastmod>2016-06-16T09:11:26.234Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/05/13/Open-Source-Computer-Vision/</loc>
+    
+    <lastmod>2016-06-11T12:34:02.300Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.mindcont.com/2016/06/06/Chinese-college-entrance-examination/</loc>
     
-    <lastmod>2016-06-06T11:42:41.097Z</lastmod>
+    <lastmod>2016-06-07T09:01:14.522Z</lastmod>
     
   </url>
   
@@ -30,23 +44,9 @@
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/05/13/Open-Source-Computer-Vision/</loc>
-    
-    <lastmod>2016-05-28T01:54:59.547Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://blog.mindcont.com/2016/04/15/Kinect-Disassemble/</loc>
     
     <lastmod>2016-05-20T03:21:26.122Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/about/index.html</loc>
-    
-    <lastmod>2016-05-19T02:18:51.570Z</lastmod>
     
   </url>
   
