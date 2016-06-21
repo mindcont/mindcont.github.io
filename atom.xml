@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.mindcont.com/"/>
-  <updated>2016-06-07T09:01:14.522Z</updated>
+  <updated>2016-06-21T11:49:41.707Z</updated>
   <id>http://blog.mindcont.com/</id>
   
   <author>
@@ -14,6 +14,43 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>电视剧《长征》观后感</title>
+    <link href="http://blog.mindcont.com/2016/06/21/The-Long-March/"/>
+    <id>http://blog.mindcont.com/2016/06/21/The-Long-March/</id>
+    <published>2016-06-21T10:49:49.000Z</published>
+    <updated>2016-06-21T11:49:41.707Z</updated>
+    
+    <content type="html">&lt;p&gt;背景：第五次反围剿失败，博古、李德失去了中央红军的控制力，在遵义会议后确定了周恩来、毛泽东同志的领导。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/The-Long-March_1.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;strong&gt;恩来&lt;/strong&gt;：刚才伯承同志向政治局报告了有关的敌情，这说明敌人的主力虽然被我们吸引到了川滇黔边境，但是尚未构成包围之势，所以在这个紧要关头，请政治局讨论，决定我们红军下一步的行动方案。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;伯承&lt;/strong&gt;：我们可否从敌人的动态当中得出这样的结论，我们原计划从扎西揮戈北进，出其不意的北渡长江的计划变成不可能了&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;朱德&lt;/strong&gt;：那恐怕不行，不仅不能实现北渡长江的计划，如果我们在扎西再滞留几天的话，那就又回到以前被动挨打的局面上去啦&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;泽东&lt;/strong&gt;：我的方案很简单，十二个字，挥师东进，再渡赤水，重占遵义。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;伯承&lt;/strong&gt;：再渡赤水，为什么，有这个必要吗？&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;恩来&lt;/strong&gt;：我看，还是请泽东同志详细的讲一讲，他提出的挥师东进，再渡赤水，重占遵义的方案吧&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;泽东&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;第一 敌人的主力，已经被我们调到了川、滇、黔三省交界处，&lt;strong&gt;现在赤水河以东的黔北已经成为敌人最薄弱的地区&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;第二 我们可以利用敌人的错觉，以为红军要北渡长江，实际上我们突然挥师东进杀个回马枪，&lt;strong&gt;从不利的战局中寻找有利的因素，变被动为主动&lt;/strong&gt;。换句话说 我们可以从消极避战变成主动调动敌人&lt;/li&gt;
+&lt;li&gt;第三 在主动调敌的过程中，我们应该寻找有利战机，&lt;strong&gt;集中优势兵力发扬我军”运动战”的特长&lt;/strong&gt;，去主动消灭敌人&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;来大家看，这里是遵义，这是娄山关 我们二渡赤水抢占娄山关之后，进逼遵义…..&lt;/p&gt;
+&lt;p&gt;&lt;i class=&quot;fa fa-video-camera&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;  &lt;a href=&quot;http://v.youku.com/v_show/id_XMTE0MjQwNzM2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://v.youku.com/v_show/id_XMTE0MjQwNzM2.html&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;附：长征路线图&quot;&gt;&lt;a href=&quot;#附：长征路线图&quot; class=&quot;headerlink&quot; title=&quot;附：长征路线图&quot;&gt;&lt;/a&gt;附：长征路线图&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/images/The-Long-March_2.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;背景：第五次反围剿失败，博古、李德失去了中央红军的控制力，在遵义会议后确定了周恩来、毛泽东同志的领导。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/The-Long-March_1.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;strong&gt;恩来&lt;/strong&gt;：刚才伯承同志向
+    
+    </summary>
+    
+      <category term="随笔日记" scheme="http://blog.mindcont.com/categories/%E9%9A%8F%E7%AC%94%E6%97%A5%E8%AE%B0/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>CCTV9记录-《高考》</title>
@@ -343,7 +380,7 @@
     <link href="http://blog.mindcont.com/2016/05/13/Open-Source-Computer-Vision/"/>
     <id>http://blog.mindcont.com/2016/05/13/Open-Source-Computer-Vision/</id>
     <published>2016-05-13T05:40:08.000Z</published>
-    <updated>2016-06-11T12:34:02.300Z</updated>
+    <updated>2016-06-16T12:24:22.908Z</updated>
     
     <content type="html">&lt;p&gt;笔者日前在搜索计算机视觉方面的代码,偶然发现这个,不敢独享,随整理发表于此,希望可以帮助到有关学习计算机视觉的朋友们!&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/images/NASA_Mars_Rover.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
@@ -605,7 +642,7 @@
 &lt;/ul&gt;
 &lt;p&gt;&lt;i class=&quot;fa fa-folder-o&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;strong&gt;Discriminatively Trained Deformable Part Models&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;[Project] &lt;a href=&quot;http://people.cs.uchicago.edu/~pff/latent/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://people.cs.uchicago.edu/~pff/latent/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[Project] &lt;a href=&quot;http://people.eecs.berkeley.edu/~rbg/latent/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://people.eecs.berkeley.edu/~rbg/latent/index.html&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;i class=&quot;fa fa-folder-o&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; &lt;strong&gt;Cascade Object Detection with Deformable Part Models&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -1834,6 +1871,59 @@
   </entry>
   
   <entry>
+    <title>Android开源项目——优秀个人和团体</title>
+    <link href="http://blog.mindcont.com/2016/04/01/android-open-project-5/"/>
+    <id>http://blog.mindcont.com/2016/04/01/android-open-project-5/</id>
+    <published>2016-04-01T03:25:24.000Z</published>
+    <updated>2016-04-01T03:56:40.817Z</updated>
+    
+    <content type="html">&lt;p&gt;主要介绍那些乐于分享并且有一些很不错的开源项目的个人和组织。Follow大神，深挖大神的项目和following，你会发现很多。  &lt;/p&gt;
+&lt;h4 id=&quot;一、个人&quot;&gt;&lt;a href=&quot;#一、个人&quot; class=&quot;headerlink&quot; title=&quot;一、个人&quot;&gt;&lt;/a&gt;一、个人&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;JakeWharton&lt;br&gt;就职于Square，绝对牛逼的大神，项目主要集中在Android版本兼容，ViewPager及开发工具上&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/JakeWharton&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/JakeWharton&lt;/a&gt;&lt;br&gt;代表作：ActionBarSherlock，Android-ViewPagerIndicator，Nine Old Androids，SwipeToDismissNOA，hugo，butterknife，Android-DirectionalViewPager, scalpel&lt;br&gt;pidcat另外对square及其他开源项目有很多贡献&lt;br&gt;主页：&lt;a href=&quot;http://jakewharton.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://jakewharton.com/&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Chris Banes&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/chrisbanes&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/chrisbanes&lt;/a&gt;&lt;br&gt;代表作：ActionBar-PullToRefresh，PhotoView，Android-BitmapCache，Android-PullToRefresh&lt;br&gt;主页：&lt;a href=&quot;http://chris.banes.me/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://chris.banes.me/&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Koushik Dutta&lt;br&gt;就职于ClockworkMod&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/koush&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/koush&lt;/a&gt;&lt;br&gt;代表作：Superuser，AndroidAsync，UrlImageViewHelper，ion, 另外对&lt;a href=&quot;https://github.com/CyanogenMod&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/CyanogenMod&lt;/a&gt; 的开源项目有很多贡献&lt;br&gt;主页：&lt;a href=&quot;http://koush.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://koush.com/&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Simon Vig&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/SimonVT&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/SimonVT&lt;/a&gt;&lt;br&gt;代表作：android-menudrawer，MessageBar&lt;br&gt;主页：&lt;a href=&quot;http://simonvt.net/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://simonvt.net/&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Manuel Peinado&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/ManuelPeinado&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/ManuelPeinado&lt;/a&gt;&lt;br&gt;代表作：FadingActionBar，GlassActionBar，RefreshActionItem，QuickReturnHeader  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Emil Sj?lander&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/emilsjolander&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/emilsjolander&lt;/a&gt;&lt;br&gt;代表作：StickyListHeaders，sprinkles，android-FlipView&lt;br&gt;主页：&lt;a href=&quot;http://emilsjolander.se/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://emilsjolander.se/&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;greenrobot&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/greenrobot&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/greenrobot&lt;/a&gt;&lt;br&gt;代表作：greenDAO，EventBus&lt;br&gt;主页：&lt;a href=&quot;http://greenrobot.de/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://greenrobot.de/&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Jeff Gilfelt&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/jgilfelt&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/jgilfelt&lt;/a&gt;&lt;br&gt;代表作：android-mapviewballoons，android-viewbadger，android-actionbarstylegenerator，android-sqlite-asset-helper&lt;br&gt;主页：&lt;a href=&quot;http://jeffgilfelt.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://jeffgilfelt.com&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Romain Guy&lt;br&gt;Android team成员(2013.10已离开Android team，仍在Google)&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/romainguy&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/romainguy&lt;/a&gt;&lt;br&gt;代表作：ViewServer&lt;br&gt;主页：&lt;a href=&quot;http://www.curious-creature.org/category/android/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.curious-creature.org/category/android/&lt;/a&gt;&lt;br&gt;個人攝影作品：&lt;a href=&quot;http://www.flickr.com/photos/romainguy&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.flickr.com/photos/romainguy&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;sephiroth74&lt;br&gt;就职于Aviary.com&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/sephiroth74&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/sephiroth74&lt;/a&gt;&lt;br&gt;代表作：ImageViewZoom，HorizontalVariableListView，AndroidWheel，purePDF&lt;br&gt;主页：&lt;a href=&quot;http://www.sephiroth.it/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.sephiroth.it/&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Cyril Mottier&lt;br&gt;Google开发者专家认证，发布一些Android技巧及文章&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/cyrilmottier&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/cyrilmottier&lt;/a&gt;&lt;br&gt;代表作：GreenDroid，Polaris&lt;br&gt;主页：&lt;a href=&quot;http://cyrilmottier.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://cyrilmottier.com/&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/Trinea/android-open-project#%E7%9B%AE%E5%89%8D%E5%8C%85%E6%8B%AC&quot; title=&quot;返回目录&quot; style=&quot;width:100%&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://farm4.staticflickr.com/3737/12167413134_edcff68e22_o.png&quot; align=&quot;right&quot;&gt;&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&quot;二、组织&quot;&gt;&lt;a href=&quot;#二、组织&quot; class=&quot;headerlink&quot; title=&quot;二、组织&quot;&gt;&lt;/a&gt;二、组织&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Square&lt;br&gt;有态度有良心的企业，很多不错的分享&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/square&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/square&lt;/a&gt;&lt;br&gt;代表作：okhttp、fest-android，android-times-square、picasso、dagger、spoon等等&lt;br&gt;主页：&lt;a href=&quot;http://square.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://square.github.io/&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Inmite s.r.o.&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/inmite&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/inmite&lt;/a&gt;&lt;br&gt;代表作：android-styled-dialogs，android-grid-wichterle，android-selector-chapek&lt;br&gt;主页：&lt;a href=&quot;http://www.inmite.eu/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.inmite.eu/&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/Trinea/android-open-project#%E7%9B%AE%E5%89%8D%E5%8C%85%E6%8B%AC&quot; title=&quot;返回目录&quot; style=&quot;width:100%&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://farm4.staticflickr.com/3737/12167413134_edcff68e22_o.png&quot; align=&quot;right&quot;&gt;&lt;/a&gt;  &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&quot;三、博客&quot;&gt;&lt;a href=&quot;#三、博客&quot; class=&quot;headerlink&quot; title=&quot;三、博客&quot;&gt;&lt;/a&gt;三、博客&lt;/h4&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/android-cn/android-dev-com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;部分国外著名 Android 开发者信息&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/Trinea/android-open-project#%E7%9B%AE%E5%89%8D%E5%8C%85%E6%8B%AC&quot; title=&quot;返回目录&quot; style=&quot;width:100%&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://farm4.staticflickr.com/3737/12167413134_edcff68e22_o.png&quot; align=&quot;right&quot;&gt;&lt;/a&gt;  &lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;主要介绍那些乐于分享并且有一些很不错的开源项目的个人和组织。Follow大神，深挖大神的项目和following，你会发现很多。  &lt;/p&gt;
+&lt;h4 id=&quot;一、个人&quot;&gt;&lt;a href=&quot;#一、个人&quot; class=&quot;headerlink&quot; title=&quot;一、个人&quot;&gt;&lt;/a&gt;
+    
+    </summary>
+    
+    
+      <category term="安卓" scheme="http://blog.mindcont.com/tags/%E5%AE%89%E5%8D%93/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Android开源项目——工具库</title>
     <link href="http://blog.mindcont.com/2016/04/01/android-open-project-2/"/>
     <id>http://blog.mindcont.com/2016/04/01/android-open-project-2/</id>
@@ -2647,59 +2737,6 @@
     <summary type="html">
     
       &lt;p&gt;主要介绍那些不错个性化的View，包括ListView、ActionBar、Menu、ViewPager、Gallery、GridView、ImageView、ProgressBar、TextView、ScrollView、TimeView、TipView、FlipView
-    
-    </summary>
-    
-    
-      <category term="安卓" scheme="http://blog.mindcont.com/tags/%E5%AE%89%E5%8D%93/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Android开源项目——优秀个人和团体</title>
-    <link href="http://blog.mindcont.com/2016/04/01/android-open-project-5/"/>
-    <id>http://blog.mindcont.com/2016/04/01/android-open-project-5/</id>
-    <published>2016-04-01T03:25:24.000Z</published>
-    <updated>2016-04-01T03:56:40.817Z</updated>
-    
-    <content type="html">&lt;p&gt;主要介绍那些乐于分享并且有一些很不错的开源项目的个人和组织。Follow大神，深挖大神的项目和following，你会发现很多。  &lt;/p&gt;
-&lt;h4 id=&quot;一、个人&quot;&gt;&lt;a href=&quot;#一、个人&quot; class=&quot;headerlink&quot; title=&quot;一、个人&quot;&gt;&lt;/a&gt;一、个人&lt;/h4&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;JakeWharton&lt;br&gt;就职于Square，绝对牛逼的大神，项目主要集中在Android版本兼容，ViewPager及开发工具上&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/JakeWharton&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/JakeWharton&lt;/a&gt;&lt;br&gt;代表作：ActionBarSherlock，Android-ViewPagerIndicator，Nine Old Androids，SwipeToDismissNOA，hugo，butterknife，Android-DirectionalViewPager, scalpel&lt;br&gt;pidcat另外对square及其他开源项目有很多贡献&lt;br&gt;主页：&lt;a href=&quot;http://jakewharton.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://jakewharton.com/&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Chris Banes&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/chrisbanes&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/chrisbanes&lt;/a&gt;&lt;br&gt;代表作：ActionBar-PullToRefresh，PhotoView，Android-BitmapCache，Android-PullToRefresh&lt;br&gt;主页：&lt;a href=&quot;http://chris.banes.me/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://chris.banes.me/&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Koushik Dutta&lt;br&gt;就职于ClockworkMod&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/koush&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/koush&lt;/a&gt;&lt;br&gt;代表作：Superuser，AndroidAsync，UrlImageViewHelper，ion, 另外对&lt;a href=&quot;https://github.com/CyanogenMod&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/CyanogenMod&lt;/a&gt; 的开源项目有很多贡献&lt;br&gt;主页：&lt;a href=&quot;http://koush.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://koush.com/&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Simon Vig&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/SimonVT&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/SimonVT&lt;/a&gt;&lt;br&gt;代表作：android-menudrawer，MessageBar&lt;br&gt;主页：&lt;a href=&quot;http://simonvt.net/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://simonvt.net/&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Manuel Peinado&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/ManuelPeinado&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/ManuelPeinado&lt;/a&gt;&lt;br&gt;代表作：FadingActionBar，GlassActionBar，RefreshActionItem，QuickReturnHeader  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Emil Sj?lander&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/emilsjolander&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/emilsjolander&lt;/a&gt;&lt;br&gt;代表作：StickyListHeaders，sprinkles，android-FlipView&lt;br&gt;主页：&lt;a href=&quot;http://emilsjolander.se/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://emilsjolander.se/&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;greenrobot&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/greenrobot&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/greenrobot&lt;/a&gt;&lt;br&gt;代表作：greenDAO，EventBus&lt;br&gt;主页：&lt;a href=&quot;http://greenrobot.de/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://greenrobot.de/&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Jeff Gilfelt&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/jgilfelt&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/jgilfelt&lt;/a&gt;&lt;br&gt;代表作：android-mapviewballoons，android-viewbadger，android-actionbarstylegenerator，android-sqlite-asset-helper&lt;br&gt;主页：&lt;a href=&quot;http://jeffgilfelt.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://jeffgilfelt.com&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Romain Guy&lt;br&gt;Android team成员(2013.10已离开Android team，仍在Google)&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/romainguy&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/romainguy&lt;/a&gt;&lt;br&gt;代表作：ViewServer&lt;br&gt;主页：&lt;a href=&quot;http://www.curious-creature.org/category/android/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.curious-creature.org/category/android/&lt;/a&gt;&lt;br&gt;個人攝影作品：&lt;a href=&quot;http://www.flickr.com/photos/romainguy&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.flickr.com/photos/romainguy&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;sephiroth74&lt;br&gt;就职于Aviary.com&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/sephiroth74&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/sephiroth74&lt;/a&gt;&lt;br&gt;代表作：ImageViewZoom，HorizontalVariableListView，AndroidWheel，purePDF&lt;br&gt;主页：&lt;a href=&quot;http://www.sephiroth.it/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.sephiroth.it/&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Cyril Mottier&lt;br&gt;Google开发者专家认证，发布一些Android技巧及文章&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/cyrilmottier&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/cyrilmottier&lt;/a&gt;&lt;br&gt;代表作：GreenDroid，Polaris&lt;br&gt;主页：&lt;a href=&quot;http://cyrilmottier.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://cyrilmottier.com/&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/Trinea/android-open-project#%E7%9B%AE%E5%89%8D%E5%8C%85%E6%8B%AC&quot; title=&quot;返回目录&quot; style=&quot;width:100%&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://farm4.staticflickr.com/3737/12167413134_edcff68e22_o.png&quot; align=&quot;right&quot;&gt;&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4 id=&quot;二、组织&quot;&gt;&lt;a href=&quot;#二、组织&quot; class=&quot;headerlink&quot; title=&quot;二、组织&quot;&gt;&lt;/a&gt;二、组织&lt;/h4&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Square&lt;br&gt;有态度有良心的企业，很多不错的分享&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/square&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/square&lt;/a&gt;&lt;br&gt;代表作：okhttp、fest-android，android-times-square、picasso、dagger、spoon等等&lt;br&gt;主页：&lt;a href=&quot;http://square.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://square.github.io/&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Inmite s.r.o.&lt;br&gt;Github地址：&lt;a href=&quot;https://github.com/inmite&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/inmite&lt;/a&gt;&lt;br&gt;代表作：android-styled-dialogs，android-grid-wichterle，android-selector-chapek&lt;br&gt;主页：&lt;a href=&quot;http://www.inmite.eu/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.inmite.eu/&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/Trinea/android-open-project#%E7%9B%AE%E5%89%8D%E5%8C%85%E6%8B%AC&quot; title=&quot;返回目录&quot; style=&quot;width:100%&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://farm4.staticflickr.com/3737/12167413134_edcff68e22_o.png&quot; align=&quot;right&quot;&gt;&lt;/a&gt;  &lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4 id=&quot;三、博客&quot;&gt;&lt;a href=&quot;#三、博客&quot; class=&quot;headerlink&quot; title=&quot;三、博客&quot;&gt;&lt;/a&gt;三、博客&lt;/h4&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/android-cn/android-dev-com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;部分国外著名 Android 开发者信息&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/Trinea/android-open-project#%E7%9B%AE%E5%89%8D%E5%8C%85%E6%8B%AC&quot; title=&quot;返回目录&quot; style=&quot;width:100%&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://farm4.staticflickr.com/3737/12167413134_edcff68e22_o.png&quot; align=&quot;right&quot;&gt;&lt;/a&gt;  &lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;主要介绍那些乐于分享并且有一些很不错的开源项目的个人和组织。Follow大神，深挖大神的项目和following，你会发现很多。  &lt;/p&gt;
-&lt;h4 id=&quot;一、个人&quot;&gt;&lt;a href=&quot;#一、个人&quot; class=&quot;headerlink&quot; title=&quot;一、个人&quot;&gt;&lt;/a&gt;
     
     </summary>
     

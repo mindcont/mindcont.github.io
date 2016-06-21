@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://blog.mindcont.com/about/index.html</loc>
+    <loc>http://blog.mindcont.com/2016/06/21/The-Long-March/</loc>
     
-    <lastmod>2016-06-16T09:11:26.234Z</lastmod>
+    <lastmod>2016-06-21T11:49:41.707Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://blog.mindcont.com/2016/05/13/Open-Source-Computer-Vision/</loc>
     
-    <lastmod>2016-06-11T12:34:02.300Z</lastmod>
+    <lastmod>2016-06-16T12:24:22.908Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/about/index.html</loc>
+    
+    <lastmod>2016-06-16T09:11:26.234Z</lastmod>
     
   </url>
   
