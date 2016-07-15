@@ -1,29 +1,36 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>Git操作：强制删除提交到远程版本库的数据与版本记录 | 微纪元</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/3.0.3/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Git操作：强制删除提交到远程版本库的数据与版本记录</h1><a id="logo" href="/.">微纪元</a><p class="description">根据同名科幻小说改编</p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/history/"><i class="fa fa-history"> 历史</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div id="layout" class="pure-g"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">Git操作：强制删除提交到远程版本库的数据与版本记录</h1><div class="post-meta">Jun 3, 2016<script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> Hits</span></span></div><a data-disqus-identifier="2016/06/03/GitHub-Rollback/" href="/2016/06/03/GitHub-Rollback/#disqus_thread" class="disqus-comment-count"></a><div class="post-content"><p>经常往GitHub上提交修改的代码，会导致提交次数很多；又或者提交了某些不应该提交测试数据，那麽我们应该如何删除这些提交记录呢？  </p>
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>Ubuntu 14.04 安装 Nvidia 私有驱动并进行双显卡切换 | 微纪元</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/3.0.3/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Ubuntu 14.04 安装 Nvidia 私有驱动并进行双显卡切换</h1><a id="logo" href="/.">微纪元</a><p class="description">根据同名科幻小说改编</p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/history/"><i class="fa fa-history"> 历史</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div id="layout" class="pure-g"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">Ubuntu 14.04 安装 Nvidia 私有驱动并进行双显卡切换</h1><div class="post-meta">Jul 15, 2016<span> | </span><span class="category"><a href="/categories/Linux/">Linux</a></span><script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> Hits</span></span></div><a data-disqus-identifier="2016/07/15/ubuntu1404-nvidia-graphics-driver/" href="/2016/07/15/ubuntu1404-nvidia-graphics-driver/#disqus_thread" class="disqus-comment-count"></a><div class="post-content"><p>笔者最近弄Caffe不小心有把nvidia显卡驱动弄坏了，现在将ubuntu14.04 双显卡切换记录如下。</p>
 <table>
 <thead>
 <tr>
-<th>运行平台</th>
-<th>环境</th>
+<th>—</th>
+<th>—</th>
 <th>备注</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Microsoft Windows [版本 10.0.10240]</td>
-<td>GitHub Desktop (3.1.1.4)</td>
-<td>无</td>
+<td>硬件</td>
+<td>GeForce GT640M</td>
+<td>-</td>
+<td></td>
+</tr>
+<tr>
+<td>系统版本</td>
+<td>3.13.0-37-generic #64-Ubuntu x86_64 GNU/Linux</td>
+<td>输入<code>uname -a</code>查看</td>
+<td></td>
 </tr>
 </tbody>
 </table>
-<p><strong>1、启动 git shell, 切换到项目所在的空间</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> c://github/android/rubikrobot            <span class="comment">#例如项目位于C://GitHub/Android/RubikRobot 目录下</span></span><br></pre></td></tr></table></figure></p>
-<p><strong>2、查看当前提交记录</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">log</span></span><br></pre></td></tr></table></figure></p>
-<p>输入 q退出日志</p>
-<p><strong>3、使用git reset 进行撤销操作</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git reset --hard HEAD~2                   <span class="comment"># 取消当前版本之前的两次提交  </span></span><br><span class="line">git push origin HEAD --force              <span class="comment"># 强制提交到远程版本库，从而删除之前的两次提交数据</span></span><br></pre></td></tr></table></figure></p>
-<p><img src="/images/github.png" alt=""><br><a href="https://git-scm.com/book/zh/v1/Git-%E5%9F%BA%E7%A1%80-%E6%92%A4%E6%B6%88%E6%93%8D%E4%BD%9C" target="_blank" rel="external">了解更多关于git 操作</a></p>
-</div><script type="text/javascript" src="/js/share.js?v=0.0.0" async></script><a data-url="http://blog.mindcont.com/2016/06/03/GitHub-Rollback/" data-id="ciqngee810002o89ow1401ftn" class="article-share-link">分享到</a><div class="tags"><a href="/tags/GitHub/">GitHub</a></div><div class="post-nav"><a href="/2016/06/06/Chinese-college-entrance-examination/" class="pre">CCTV9记录-《高考》</a><a href="/2016/05/28/OpenCV-2-4-9-Module-Introduction/" class="next">OpenCV 2.4.9 模块简介</a></div><div id="disqus_thread"><script>var disqus_shortname = 'micro-era';
-var disqus_identifier = '2016/06/03/GitHub-Rollback/';
-var disqus_title = 'Git操作：强制删除提交到远程版本库的数据与版本记录';
-var disqus_url = 'http://blog.mindcont.com/2016/06/03/GitHub-Rollback/';
+<p>首先 彻底卸载原有Nvidia驱动<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get purge nvidia*</span><br></pre></td></tr></table></figure></p>
+<p>清理无关项<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get autoremove</span><br></pre></td></tr></table></figure></p>
+<p>安装特定版本的nvidia 专有驱动和设置工具<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install nvidia-340 nvidia-settings nvidia-prime prime-indicator</span><br></pre></td></tr></table></figure></p>
+<p>重启,同windows一样，驱动需要重启后生效。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo reboot</span><br></pre></td></tr></table></figure></p>
+<p><img src="/images/ubuntu/nvidia_success.png" alt=""></p>
+</div><script type="text/javascript" src="/js/share.js?v=0.0.0" async></script><a data-url="http://blog.mindcont.com/2016/07/15/ubuntu1404-nvidia-graphics-driver/" data-id="ciqngee9c0017o89ovyulszfv" class="article-share-link">分享到</a><div class="tags"></div><div class="post-nav"><a href="/2016/06/29/Website-under-attack/" class="next">Houston, we have a problem</a></div><div id="disqus_thread"><script>var disqus_shortname = 'micro-era';
+var disqus_identifier = '2016/07/15/ubuntu1404-nvidia-graphics-driver/';
+var disqus_title = 'Ubuntu 14.04 安装 Nvidia 私有驱动并进行双显卡切换';
+var disqus_url = 'http://blog.mindcont.com/2016/07/15/ubuntu1404-nvidia-graphics-driver/';
 (function() {
   var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
   dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
