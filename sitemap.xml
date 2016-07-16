@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.mindcont.com/2016/07/16/installing-opencv-2-4-9-in-ubuntu-14-04-lts/</loc>
+    
+    <lastmod>2016-07-16T09:03:19.544Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.mindcont.com/2016/07/15/ubuntu1404-nvidia-graphics-driver/</loc>
     
     <lastmod>2016-07-15T08:14:28.362Z</lastmod>
