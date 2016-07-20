@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://blog.mindcont.com/2016/07/16/installing-opencv-2-4-9-in-ubuntu-14-04-lts/</loc>
+    <loc>http://blog.mindcont.com/2016/07/20/ubuntu1404-caffe-cuda7-5-mkl/</loc>
     
-    <lastmod>2016-07-16T09:03:19.544Z</lastmod>
+    <lastmod>2016-07-20T11:37:57.742Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://blog.mindcont.com/2016/07/15/ubuntu1404-nvidia-graphics-driver/</loc>
     
-    <lastmod>2016-07-15T08:14:28.362Z</lastmod>
+    <lastmod>2016-07-20T08:13:04.830Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/05/12/win10-ubuntu-remote-desktop/</loc>
+    
+    <lastmod>2016-07-16T09:11:33.171Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/07/16/installing-opencv-2-4-9-in-ubuntu-14-04-lts/</loc>
+    
+    <lastmod>2016-07-16T09:03:19.544Z</lastmod>
     
   </url>
   
@@ -96,13 +110,6 @@
     <loc>http://blog.mindcont.com/2016/05/09/The-basic-principle-of-Kinect-depth-imaging/</loc>
     
     <lastmod>2016-05-13T06:08:37.708Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/05/12/win10-ubuntu-remote-desktop/</loc>
-    
-    <lastmod>2016-05-12T04:43:26.994Z</lastmod>
     
   </url>
   
