@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.mindcont.com/"/>
-  <updated>2016-07-23T00:47:28.297Z</updated>
+  <updated>2016-07-27T02:34:46.517Z</updated>
   <id>http://blog.mindcont.com/</id>
   
   <author>
@@ -14,6 +14,60 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Nvidia Digits with Caffe 配置指南</title>
+    <link href="http://blog.mindcont.com/2016/07/26/Nvidia-Digits-with-Caffe/"/>
+    <id>http://blog.mindcont.com/2016/07/26/Nvidia-Digits-with-Caffe/</id>
+    <published>2016-07-26T13:33:58.000Z</published>
+    <updated>2016-07-27T02:34:46.517Z</updated>
+    
+    <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;Digits-简介&quot;&gt;&lt;a href=&quot;#Digits-简介&quot; class=&quot;headerlink&quot; title=&quot;Digits 简介&quot;&gt;&lt;/a&gt;Digits 简介&lt;/h2&gt;&lt;p&gt;Digits: Deep Learning GPU Training System1，是由英伟达（NVIDIA）公司开发的第一个交互式深度学习GPU训练系统。目的在于整合现有的Deep Learning开发工具，实现深度神经网络（Deep Neural Network，DNN）设计、训练和可视化等任务变得简单化。DIGITS是基于浏览器的接口，因而通过实时的网络行为的可视化，可以快速设计最优的DNN。DIGITS是开源软件，可在&lt;a href=&quot;https://github.com/NVIDIA/DIGITS&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;上找到，因而开发人员可以扩展和自定义DIGITS。&lt;/p&gt;
+&lt;h2 id=&quot;Digits-特性&quot;&gt;&lt;a href=&quot;#Digits-特性&quot; class=&quot;headerlink&quot; title=&quot;Digits 特性&quot;&gt;&lt;/a&gt;Digits 特性&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;提供了友好的用户界面，只需简单的点击即完成DNNs的训练。Digits是一个Web应用，用浏览器访问，上图是典型的工作流程图。&lt;/li&gt;
+&lt;li&gt;Digits用户接口提供了DNN优化工具。主控制台列出了现有的数据库和机器上可用的先前训练好的网络模型以及正在进行的训练活动。&lt;/li&gt;
+&lt;li&gt;Digits使可视化网络和快速对比精度变得简单。你选择一个模型，Digits显示训练状态和精度，并提供在网络训练时或训练完毕后加载和分类图像的选项。&lt;/li&gt;
+&lt;li&gt;由于Digits运行在一个web服务器上，团队用户可以很方便地分享数据库和网络配置，以及测试和分享结果。&lt;/li&gt;
+&lt;li&gt;Digits集成了流行的 &lt;a href=&quot;https://github.com/BVLC/caffe&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Caffe&lt;/a&gt; (deep learning framework)，并支持使用cuDNN进行GPU加速。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;注意：&lt;/strong&gt; 在此，我们默认你以安装好了&lt;a href=&quot;https://github.com/BVLC/caffe&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Caffe&lt;/a&gt; 或 &lt;a href=&quot;https://github.com/torch/torch7&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;torch7&lt;/a&gt;，本文以Ubuntu 14.04 LTS 环境下简述Nvidia Digits 和 caffe 相关配置，如果您在Ubuntu 下还没有配置成功 Caffe ,建议你查看我的另一篇博客 &lt;a href=&quot;http://blog.mindcont.com/2016/07/20/ubuntu1404-caffe-r3-cuda7-5-mkl/&quot;&gt;Ubuntu 14.04 64bit + Caffe rc3 + CUDA 7.5 + Intel MKL 配置说明&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;打开命令行，依次输入下面的指令&lt;br&gt;&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 获取 CUDA packages&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;CUDA_REPO_PKG=cuda-repo-ubuntu1404_7.5-18_amd64.deb&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;wget http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1404/x86_64/&lt;span class=&quot;variable&quot;&gt;$&amp;#123;CUDA_REPO_PKG&amp;#125;&lt;/span&gt; -O /tmp/&lt;span class=&quot;variable&quot;&gt;$&amp;#123;CUDA_REPO_PKG&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo dpkg -i /tmp/&lt;span class=&quot;variable&quot;&gt;$&amp;#123;CUDA_REPO_PKG&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rm &lt;span class=&quot;_&quot;&gt;-f&lt;/span&gt; /tmp/&lt;span class=&quot;variable&quot;&gt;$&amp;#123;CUDA_REPO_PKG&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 获取 Nvidia Machine Learning packages&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ML_REPO_PKG=nvidia-machine-learning-repo_4.0-2_amd64.deb&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;wget http://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1404/x86_64/&lt;span class=&quot;variable&quot;&gt;$&amp;#123;ML_REPO_PKG&amp;#125;&lt;/span&gt; -O /tmp/&lt;span class=&quot;variable&quot;&gt;$&amp;#123;ML_REPO_PKG&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo dpkg -i /tmp/&lt;span class=&quot;variable&quot;&gt;$&amp;#123;ML_REPO_PKG&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rm &lt;span class=&quot;_&quot;&gt;-f&lt;/span&gt; /tmp/&lt;span class=&quot;variable&quot;&gt;$&amp;#123;ML_REPO_PKG&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# Download new list of packages&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo apt-get update&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;安装，默认位置 /usr/share/digits 下&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 安装Digits&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo apt-get install digits&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 安装Nvidia caffe ，安装过 BVLC/caffe 再安装这里的 Nvidia caffe 很容易！&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;export&lt;/span&gt; CAFFE_HOME=~/NVcaffe&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git &lt;span class=&quot;built_in&quot;&gt;clone&lt;/span&gt; https://github.com/NVIDIA/caffe.git &lt;span class=&quot;variable&quot;&gt;$CAFFE_HOME&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 安装 python依赖&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo pip install -r &lt;span class=&quot;variable&quot;&gt;$CAFFE_HOME&lt;/span&gt;/python/requirements.txt&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 编译&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;variable&quot;&gt;$CAFFE_HOME&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;mkdir build&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;cd&lt;/span&gt; build&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;cmake ..&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;make --jobs=4 &lt;span class=&quot;comment&quot;&gt;#这里指使用4线程编译，通常跟 **你的处理器的核数** 一致&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 配置，按提示执行&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo python -m digits.config.edit -v&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;开启服务&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 跳转到安装目录&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;cd&lt;/span&gt; /usr/share/digits&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 查看当前目录下的文件&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;dir &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 启动&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo ./digits-devserver&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;打开浏览器，依次访问 &lt;a href=&quot;http://localhost/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://localhost/&lt;/a&gt; (if installed from Deb packages), &lt;a href=&quot;http://localhost:5000/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://localhost:5000/&lt;/a&gt; (if using digits-devserver) or &lt;a href=&quot;http://localhost:34448/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://localhost:34448/&lt;/a&gt; (if using digits-server). 如果你看到如下画面，恭喜你，digits 已运行成功！&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/digits/digits_success.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;不过一般情况下，你会看到如下画面&lt;br&gt;&lt;img src=&quot;/images/digits/digits_error.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;不要气馁，导致的原因大多因为Digits 依赖的环境与你本地的环境版本不符而导致的。&lt;br&gt;下面是官方&lt;a href=&quot;https://github.com/NVIDIA/DIGITS/blob/master/requirements.txt&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;requirements.txt&lt;/a&gt;，其中有几项必须是特定版本，如 Flask==0.10.1，lmdb==0.87等&lt;br&gt;&lt;figure class=&quot;highlight xml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Pillow&amp;gt;=2.3.0,&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;=3.1.2&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;numpy&lt;/span&gt;&amp;gt;&lt;/span&gt;=1.8.1,&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;=1.11.0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;scipy&lt;/span&gt;&amp;gt;&lt;/span&gt;=0.13.3,&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;=0.17.0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;protobuf&lt;/span&gt;&amp;gt;&lt;/span&gt;=2.5.0,&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;=2.6.1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;six&lt;/span&gt;&amp;gt;&lt;/span&gt;=1.5.2,&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;=1.10.0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;requests&lt;/span&gt;&amp;gt;&lt;/span&gt;=2.2.1,&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;=2.9.1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;gevent&lt;/span&gt;&amp;gt;&lt;/span&gt;=1.0,&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;=1.0.2&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;Flask&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;=0.10.1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;Flask-WTF&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;=0.11,&amp;lt;=0.12&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;wtforms&lt;/span&gt;&amp;gt;&lt;/span&gt;=2.0,&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;=2.1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;Flask-SocketIO&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;=0.6.0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;gunicorn&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;=17.5&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;setuptools&lt;/span&gt;&amp;gt;&lt;/span&gt;=3.3,&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;=20.7.0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;lmdb&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;=0.87&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;h5py&lt;/span&gt;&amp;gt;&lt;/span&gt;=2.2.1,&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;=2.6.0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;pydot&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;=1.0.28&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;解决方法&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 查看本地环境版本&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;pip list&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;#比对其中不合适的，进行卸载&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo pip uninstall ***&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;#例如安装指定版本 lmdb==0.87&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo pip install &lt;span class=&quot;string&quot;&gt;&#39;lmdb==0.87&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&quot;使用&quot;&gt;&lt;a href=&quot;#使用&quot; class=&quot;headerlink&quot; title=&quot;使用&quot;&gt;&lt;/a&gt;使用&lt;/h2&gt;&lt;h3 id=&quot;下载数据集&quot;&gt;&lt;a href=&quot;#下载数据集&quot; class=&quot;headerlink&quot; title=&quot;下载数据集&quot;&gt;&lt;/a&gt;下载数据集&lt;/h3&gt;&lt;p&gt;打开命令行，依次输入下面的指令,将会下载mnist数据集到 /home/你的用户名/mnist 文件夹下&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;python /usr/share/digits/tools/download_data/main.py mnist ~/mnist&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h3 id=&quot;创建数据集&quot;&gt;&lt;a href=&quot;#创建数据集&quot; class=&quot;headerlink&quot; title=&quot;创建数据集&quot;&gt;&lt;/a&gt;创建数据集&lt;/h3&gt;&lt;p&gt;依次点击 New Dataset &amp;gt; Images &amp;gt; Classification，并按下图配置&lt;br&gt;&lt;img src=&quot;/images/digits/new-dataset.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;点击 create，会看到如下画面。表示正在把下载的数据集创建为 lmdb 数据库格式。&lt;br&gt;&lt;img src=&quot;/images/digits/creating-dataset.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;当 jobs 进度条完成后，可以查看数据库中的 trian 和 test 数据库格式。其中 训练数据 占数据集的75%&lt;br&gt;&lt;img src=&quot;/images/digits/explore_mnist_train_lmdb.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;测试数据 占数据集的 25%&lt;br&gt;&lt;img src=&quot;/images/digits/explore_mnist_test_lmdb.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;点击 左上角 DIGITS 返回主界面&lt;br&gt;&lt;img src=&quot;/images/digits/digits_main.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;训练模型&quot;&gt;&lt;a href=&quot;#训练模型&quot; class=&quot;headerlink&quot; title=&quot;训练模型&quot;&gt;&lt;/a&gt;训练模型&lt;/h3&gt;&lt;p&gt;依次点击  New Model &amp;gt; Images &amp;gt; Classification，进入模型配置界面，并按下图配置训练模型&lt;br&gt;&lt;img src=&quot;/images/digits/new-model-top-half.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/digits/new-model-bottom-half.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;点击创建后，训练任务自动执行。如下图所示&lt;br&gt;&lt;img src=&quot;/images/digits/digits_real_time.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;等待训练结束，下面我们好进行测试。&lt;/p&gt;
+&lt;h3 id=&quot;测试训练结果&quot;&gt;&lt;a href=&quot;#测试训练结果&quot; class=&quot;headerlink&quot; title=&quot;测试训练结果&quot;&gt;&lt;/a&gt;测试训练结果&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;/images/digits/digits_test.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;首先测试&lt;strong&gt;单张图片&lt;/strong&gt;，点击Browse 按钮，以此选择类似于下面的路径&lt;br&gt;&lt;img src=&quot;/images/digits/digits_test_one_upload.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;之后点击 Classify One ，并候选选框，会看到如下，显示模型每层的处理情况。&lt;br&gt;&lt;img src=&quot;/images/digits/digits_test_one_res.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;strong&gt;测试多张图片&lt;/strong&gt;，同理打开类似下面的路径&lt;br&gt;&lt;img src=&quot;/images/digits/digits_test_many_upload.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;然后点击 Classify Many。会看到后台结果如下&lt;br&gt;&lt;img src=&quot;/images/digits/digits_test_many_service.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;测试结果如下&lt;br&gt;&lt;img src=&quot;/images/digits/digits_test_many_res.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;可视化分类结果&lt;br&gt;&lt;img src=&quot;/images/digits/digits_test_many_TopN.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;参考链接&quot;&gt;&lt;a href=&quot;#参考链接&quot; class=&quot;headerlink&quot; title=&quot;参考链接&quot;&gt;&lt;/a&gt;参考链接&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/NVIDIA/DIGITS/blob/master/docs/GettingStarted.md&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;NVIDIA-DIGITS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/enjoyyl/article/details/47397505&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;如若明镜- NVIDIA DIGITS 学习笔记&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;Digits-简介&quot;&gt;&lt;a href=&quot;#Digits-简介&quot; class=&quot;headerlink&quot; title=&quot;Digits 简介&quot;&gt;&lt;/a&gt;Digits 简介&lt;/h2&gt;&lt;p&gt;Digits: Deep Learning GP
+    
+    </summary>
+    
+      <category term="计算机视觉" scheme="http://blog.mindcont.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/"/>
+    
+    
+      <category term="caffe" scheme="http://blog.mindcont.com/tags/caffe/"/>
+    
+  </entry>
   
   <entry>
     <title>基于深度学习的目标检测研究进展</title>
@@ -2242,86 +2296,6 @@
       &lt;p&gt;本系列应用程序开发课程涵盖了 Kinect 开发的方方面面。对主要功能包括 Kinect Fusion、HD Face 等进行了深入解析。介绍了 Kinect 应用与第三方类库包括 Unity、Cinder、Openframework 等的结合使用，及如何发布支持 Kine
     
     </summary>
-    
-    
-      <category term="Kinect" scheme="http://blog.mindcont.com/tags/Kinect/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Xbox One Kinect完全拆解</title>
-    <link href="http://blog.mindcont.com/2016/04/15/Kinect-Disassemble/"/>
-    <id>http://blog.mindcont.com/2016/04/15/Kinect-Disassemble/</id>
-    <published>2016-04-15T08:26:26.000Z</published>
-    <updated>2016-05-20T03:21:26.122Z</updated>
-    
-    <content type="html">&lt;p&gt;第二代 Kinect for Windows 感应器和软件开发工具包将人机交互带入新阶段，所提供的更大的整体精确度、响应能力和直觉能力将加速计算机语音和手势体验的发展。第二代感应器的彩色相机的增强特性包括 1080p 高分辨率视频,更宽广的视野、增强的骨骼追踪和新增的红外线探测功能。&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;Kinect Version 1&lt;/th&gt;
-&lt;th&gt;Kinect Version 2&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;有效距离&lt;/td&gt;
-&lt;td&gt;0.4m - 4.0m&lt;/td&gt;
-&lt;td&gt;0.4m - 4.5m&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;视频图分辨率&lt;/td&gt;
-&lt;td&gt;640x480&lt;/td&gt;
-&lt;td&gt;1920x1080&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;深度图分辨率&lt;/td&gt;
-&lt;td&gt;320x240&lt;/td&gt;
-&lt;td&gt;512x424&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;红外图分辨率&lt;/td&gt;
-&lt;td&gt;None&lt;/td&gt;
-&lt;td&gt;512x424&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;麦克风&lt;/td&gt;
-&lt;td&gt;4-mic array&lt;/td&gt;
-&lt;td&gt;4-mic array&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;USB接口&lt;/td&gt;
-&lt;td&gt;2.0&lt;/td&gt;
-&lt;td&gt;3.0&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;code移植性&lt;/td&gt;
-&lt;td&gt;v1 code cannot simply be recompiled into v2 code&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h3 id=&quot;1-全新的摄像头功能与技术&quot;&gt;&lt;a href=&quot;#1-全新的摄像头功能与技术&quot; class=&quot;headerlink&quot; title=&quot;1.全新的摄像头功能与技术&quot;&gt;&lt;/a&gt;1.全新的摄像头功能与技术&lt;/h3&gt;&lt;p&gt;新的Kinect有1080p视频传感器，相较于原先一代的VGA传感器是一个巨大的改进。新kinect允许更精确的人脸识别功能，可获得更清晰的图像和视频信息！这种清晰的视频信息将会在全新的Skype整合功能方面派上大用场。他们还提高了深度传感器所能支持的最大分辨率来允许捕捉更多的细节，如手指动作和肢体定位。新的Xbox Kinect 每秒数据处理量可达2GB！微软还用读取深度“飞行时间计算”的方法来替代了现有的“光照测量”的测算方法，使得新Kinect比原始Kinect更快、更准确。该方法基于单个光子从物体或人身上反弹回来的最准确的时间计算原理。&lt;/p&gt;
-&lt;h3 id=&quot;2-对于初代Kinect不满之处的改进&quot;&gt;&lt;a href=&quot;#2-对于初代Kinect不满之处的改进&quot; class=&quot;headerlink&quot; title=&quot;2.对于初代Kinect不满之处的改进&quot;&gt;&lt;/a&gt;2.对于初代Kinect不满之处的改进&lt;/h3&gt;&lt;p&gt;原来的Kinect是具有革命性的产品，但也不是没有缺点，例如一些核心玩家的抱怨。微软已经采纳了一些意见，明显提高了新Kinect的技术来解决他们的问题。&lt;/p&gt;
-&lt;p&gt;抱怨之一是延迟。原先做一个动作可以看到与屏幕输入之间有时间差。而现在专用处理和USB 3.0端口使新的Kinect只剩下每秒2帧的延迟！也就是仅有66毫秒的延迟！大多数主机手柄输入游戏为133毫秒的平均延迟，而需要更敏捷操作的游戏（第一人称射击游戏）具有67毫秒的响应时间！这是一个巨大的改进！你的动作将以每秒30帧的实时速度被捕捉更新！意味着与大多数游戏运行相同的帧率！&lt;/p&gt;
-&lt;p&gt;Kinect的另一个主要抱怨是有关空间的要求。新的Kinect的视野已经提高了60%！这意味着新的传感器，可以看到更紧密，更广泛和更深入的捕捉范围。你不再需要重新布置客厅进行游玩！&lt;/p&gt;
-&lt;h3 id=&quot;3-其他方面的改进&quot;&gt;&lt;a href=&quot;#3-其他方面的改进&quot; class=&quot;headerlink&quot; title=&quot;3.其他方面的改进&quot;&gt;&lt;/a&gt;3.其他方面的改进&lt;/h3&gt;&lt;p&gt;微软并没有停止前进，或只是解决抱怨，他们还想达到新的水平。新的Kinect现在可以同时跟踪6人动作！它还可以跟踪每个Xbox手柄内置的红外LED。例如，在游戏时举起你的手柄，你的角色可能会举起他的盾牌。Kinect2.0也将自动跟踪分屏游戏时手柄的位置来调整分屏位置。&lt;/p&gt;
-&lt;p&gt;骨骼跟踪已经提高了很多。不仅可以读取更多的关节、四肢的运动方向，还有你动作的力度。导航仪表现在可以有打开或关闭的手势了，你将不再需要“悬停”在一个对象上进行选择。夜间捕捉模式是内置的，无论照明条件如何，都可以进行捕捉。新的Kinect甚至可以捕捉你的情绪（快乐，悲伤等），甚至读取你的脉搏！&lt;/p&gt;
-&lt;p&gt;其他一些值得注意的改进是麦克风阵列。现在它可以更可靠地消除背景噪声，玩家可以使用更顺畅的语音控制。不用花更多时间思考猜测什么语音命令才能让Xbox理解，你只需要说你想说的话，Xbox就会做它应该做的！&lt;/p&gt;
-&lt;h2 id=&quot;拆机&quot;&gt;&lt;a href=&quot;#拆机&quot; class=&quot;headerlink&quot; title=&quot;拆机&quot;&gt;&lt;/a&gt;拆机&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/images/Kinect-Disassemble/Kinect-1.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;Kinect 2.0配备1080p全高清广角摄像头，还有适应低光环境的主动式红外摄像头，多麦克风阵列具备降噪和语音指令功能，每秒钟可处理2Gb(256MB/s)的环境数据。&lt;br&gt;&lt;img src=&quot;/images/Kinect-Disassemble/Kinect-2.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;电源线插得很结实&lt;br&gt;&lt;img src=&quot;/images/Kinect-Disassemble/Kinect-3.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;T10标准螺丝&lt;br&gt;&lt;img src=&quot;/images/Kinect-Disassemble/Kinect-4.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;拧下螺丝，外壳就打开了。&lt;br&gt;&lt;img src=&quot;/images/Kinect-Disassemble/Kinect-5.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;型号编号Model 1520(主机是Model 1540)，同样有来自西雅图的问候。&lt;br&gt;&lt;img src=&quot;/images/Kinect-Disassemble/Kinect-6.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;散热器很容易拿下。&lt;br&gt;&lt;img src=&quot;/images/Kinect-Disassemble/Kinect-7.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;散热器来自日本电产科宝(Nidec)，编号U40R05MS1A7-57A07A。&lt;br&gt;&lt;img src=&quot;/images/Kinect-Disassemble/Kinect-8.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;内部世界开始显现&lt;br&gt;&lt;img src=&quot;/images/Kinect-Disassemble/Kinect-9.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;主体也是绿色调的。&lt;br&gt;&lt;img src=&quot;/images/Kinect-Disassemble/Kinect-10.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;解脱束缚&lt;br&gt;&lt;img src=&quot;/images/Kinect-Disassemble/Kinect-11.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;主体侧面挂着一小块电路板&lt;br&gt;&lt;img src=&quot;/images/Kinect-Disassemble/Kinect-12.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;很小，但也很重要，上边有LED和传感器&lt;br&gt;&lt;img src=&quot;/images/Kinect-Disassemble/Kinect-13.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;红色的是主处理器，取代第一代里的主传感芯片。上边打着微软和Xbox的标记，编号为X871141-001。橙色的是三星K4B1G1646G 1Gb(128MB) DDR3 SDRAM内存。&lt;br&gt;&lt;img src=&quot;/images/Kinect-Disassemble/Kinect-14.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;小心地取下第一个摄像头。都是螺丝固定的。&lt;br&gt;&lt;img src=&quot;/images/Kinect-Disassemble/Kinect-15.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;摄像头近照&lt;br&gt;&lt;img src=&quot;/images/Kinect-Disassemble/Kinect-16.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;第二个摄像头&lt;br&gt;&lt;img src=&quot;/images/Kinect-Disassemble/Kinect-17.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;三个红外增强器，Kinect 2.0具备新的主动式红外技术，即便在黑暗的房间里也能看到你。&lt;br&gt;&lt;img src=&quot;/images/Kinect-Disassemble/Kinect-18.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;所有零部件合集&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt; 整理:&lt;a href=&quot;https://github.com/mindcont&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;mindcont&lt;/a&gt; &lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;2016-04-15 第一次编辑&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;第二代 Kinect for Windows 感应器和软件开发工具包将人机交互带入新阶段，所提供的更大的整体精确度、响应能力和直觉能力将加速计算机语音和手势体验的发展。第二代感应器的彩色相机的增强特性包括 1080p 高分辨率视频,更宽广的视野、增强的骨骼追踪和新增的红外线
-    
-    </summary>
-    
-      <category term="Kinect" scheme="http://blog.mindcont.com/categories/Kinect/"/>
     
     
       <category term="Kinect" scheme="http://blog.mindcont.com/tags/Kinect/"/>
