@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://blog.mindcont.com/2016/07/29/docker-learning/</loc>
+    <loc>http://blog.mindcont.com/2016/07/31/TED-talks-Linus-Torvalds/</loc>
     
-    <lastmod>2016-07-30T01:22:14.520Z</lastmod>
+    <lastmod>2016-07-31T13:47:45.806Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://blog.mindcont.com/2016/07/26/Nvidia-Digits-with-Caffe/</loc>
     
-    <lastmod>2016-07-27T02:34:46.517Z</lastmod>
+    <lastmod>2016-07-30T04:25:42.223Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/07/29/docker-learning/</loc>
+    
+    <lastmod>2016-07-30T01:22:14.520Z</lastmod>
     
   </url>
   
