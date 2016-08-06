@@ -2,16 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.mindcont.com/2016/08/06/Run-YOLO-Demo/</loc>
+    
+    <lastmod>2016-08-06T13:37:54.660Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.mindcont.com/2016/07/31/TED-talks-Linus-Torvalds/</loc>
     
-    <lastmod>2016-07-31T13:47:45.806Z</lastmod>
+    <lastmod>2016-08-06T12:10:27.035Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/07/22/Research-Progress-in-Object-Detection/</loc>
+    
+    <lastmod>2016-08-06T11:32:08.184Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/07/20/ubuntu1404-caffe-r3-cuda7-5-mkl/</loc>
+    
+    <lastmod>2016-08-06T11:31:39.593Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://blog.mindcont.com/2016/07/26/Nvidia-Digits-with-Caffe/</loc>
     
-    <lastmod>2016-07-30T04:25:42.223Z</lastmod>
+    <lastmod>2016-08-06T11:31:24.907Z</lastmod>
     
   </url>
   
@@ -30,23 +51,9 @@
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/07/20/ubuntu1404-caffe-r3-cuda7-5-mkl/</loc>
-    
-    <lastmod>2016-07-25T05:36:18.672Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://blog.mindcont.com/2016/05/12/win10-ubuntu-remote-desktop/</loc>
     
     <lastmod>2016-07-25T01:26:44.833Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/07/22/Research-Progress-in-Object-Detection/</loc>
-    
-    <lastmod>2016-07-23T00:47:28.297Z</lastmod>
     
   </url>
   
