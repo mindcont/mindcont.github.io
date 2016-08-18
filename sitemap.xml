@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.mindcont.com/2016/08/18/git-commands/</loc>
+    
+    <lastmod>2016-08-18T13:29:03.306Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/07/20/ubuntu1404-caffe-r3-cuda7-5-mkl/</loc>
+    
+    <lastmod>2016-08-18T11:44:33.326Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/07/16/installing-opencv-2-4-9-in-ubuntu-14-04-lts/</loc>
+    
+    <lastmod>2016-08-10T07:50:19.701Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.mindcont.com/2016/08/06/Run-YOLO-Demo/</loc>
     
     <lastmod>2016-08-07T02:10:04.553Z</lastmod>
@@ -23,13 +44,6 @@
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/07/20/ubuntu1404-caffe-r3-cuda7-5-mkl/</loc>
-    
-    <lastmod>2016-08-06T11:31:39.593Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://blog.mindcont.com/2016/07/26/Nvidia-Digits-with-Caffe/</loc>
     
     <lastmod>2016-08-06T11:31:24.907Z</lastmod>
@@ -40,13 +54,6 @@
     <loc>http://blog.mindcont.com/2016/07/29/docker-learning/</loc>
     
     <lastmod>2016-07-30T01:22:14.520Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/07/16/installing-opencv-2-4-9-in-ubuntu-14-04-lts/</loc>
-    
-    <lastmod>2016-07-25T12:27:48.776Z</lastmod>
     
   </url>
   
@@ -103,13 +110,6 @@
     <loc>http://blog.mindcont.com/2016/06/06/Chinese-college-entrance-examination/</loc>
     
     <lastmod>2016-06-07T09:01:14.522Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/06/03/GitHub-Rollback/</loc>
-    
-    <lastmod>2016-06-03T01:29:43.614Z</lastmod>
     
   </url>
   
