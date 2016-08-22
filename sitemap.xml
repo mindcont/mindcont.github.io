@@ -2,30 +2,86 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.mindcont.com/2016/05/04/how-to-use-ngrok-penetrate-internal-network/</loc>
+    
+    <lastmod>2016-08-22T09:46:21.012Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.mindcont.com/2016/08/18/git-commands/</loc>
     
-    <lastmod>2016-08-18T13:29:03.306Z</lastmod>
+    <lastmod>2016-08-22T09:43:39.632Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/07/20/ubuntu1404-caffe-r3-cuda7-5-mkl/</loc>
+    <loc>http://blog.mindcont.com/2016/08/22/caffe-guide-book/</loc>
     
-    <lastmod>2016-08-18T11:44:33.326Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/07/16/installing-opencv-2-4-9-in-ubuntu-14-04-lts/</loc>
-    
-    <lastmod>2016-08-10T07:50:19.701Z</lastmod>
+    <lastmod>2016-08-22T09:43:04.901Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://blog.mindcont.com/2016/08/06/Run-YOLO-Demo/</loc>
     
-    <lastmod>2016-08-07T02:10:04.553Z</lastmod>
+    <lastmod>2016-08-22T08:48:45.406Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/07/26/Nvidia-Digits-with-Caffe/</loc>
+    
+    <lastmod>2016-08-22T08:30:05.440Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/05/13/Open-Source-Computer-Vision/</loc>
+    
+    <lastmod>2016-08-22T08:11:40.172Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/07/16/installing-opencv-2-4-9-in-ubuntu-14-04-lts/</loc>
+    
+    <lastmod>2016-08-22T08:11:15.055Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/05/28/OpenCV-2-4-9-Module-Introduction/</loc>
+    
+    <lastmod>2016-08-22T08:11:01.614Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/07/22/Research-Progress-in-Object-Detection/</loc>
+    
+    <lastmod>2016-08-22T08:08:06.145Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/07/20/ubuntu1404-caffe-r3-cuda7-5-mkl/</loc>
+    
+    <lastmod>2016-08-22T08:06:21.030Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/04/24/how-to-use-tensorflow/</loc>
+    
+    <lastmod>2016-08-22T08:05:45.102Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/about/index.html</loc>
+    
+    <lastmod>2016-08-19T10:58:50.686Z</lastmod>
     
   </url>
   
@@ -33,20 +89,6 @@
     <loc>http://blog.mindcont.com/2016/07/31/TED-talks-Linus-Torvalds/</loc>
     
     <lastmod>2016-08-06T12:10:27.035Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/07/22/Research-Progress-in-Object-Detection/</loc>
-    
-    <lastmod>2016-08-06T11:32:08.184Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/07/26/Nvidia-Digits-with-Caffe/</loc>
-    
-    <lastmod>2016-08-06T11:31:24.907Z</lastmod>
     
   </url>
   
@@ -93,20 +135,6 @@
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/05/13/Open-Source-Computer-Vision/</loc>
-    
-    <lastmod>2016-06-16T12:24:22.908Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/about/index.html</loc>
-    
-    <lastmod>2016-06-16T09:11:26.234Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://blog.mindcont.com/2016/06/06/Chinese-college-entrance-examination/</loc>
     
     <lastmod>2016-06-07T09:01:14.522Z</lastmod>
@@ -117,13 +145,6 @@
     <loc>http://blog.mindcont.com/2016/05/05/RaspberryPi/</loc>
     
     <lastmod>2016-05-28T03:28:26.909Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/05/28/OpenCV-2-4-9-Module-Introduction/</loc>
-    
-    <lastmod>2016-05-28T03:24:36.226Z</lastmod>
     
   </url>
   
@@ -156,23 +177,9 @@
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/04/24/how-to-use-tensorflow/</loc>
-    
-    <lastmod>2016-05-07T02:22:51.539Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://blog.mindcont.com/history/index.html</loc>
     
     <lastmod>2016-05-06T12:06:57.409Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/05/04/how-to-use-ngrok-penetrate-internal-network/</loc>
-    
-    <lastmod>2016-05-05T09:20:03.819Z</lastmod>
     
   </url>
   

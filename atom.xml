@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.mindcont.com/"/>
-  <updated>2016-08-18T13:29:03.306Z</updated>
+  <updated>2016-08-22T09:43:04.901Z</updated>
   <id>http://blog.mindcont.com/</id>
   
   <author>
@@ -16,14 +16,82 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Caffe 入门指南</title>
+    <link href="http://blog.mindcont.com/2016/08/22/caffe-guide-book/"/>
+    <id>http://blog.mindcont.com/2016/08/22/caffe-guide-book/</id>
+    <published>2016-08-22T07:26:11.000Z</published>
+    <updated>2016-08-22T09:43:04.901Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;img src=&quot;/images/caffe.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;http://caffe.berkeleyvision.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Caffe&lt;/a&gt;是一个清晰而高效的深度学习85框架，其作者是博士毕业于UC Berkeley的&lt;a href=&quot;http://daggerfs.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;贾扬清&lt;/a&gt;，目前在Google工作。&lt;br&gt;&lt;a href=&quot;http://caffe.berkeleyvision.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Caffe&lt;/a&gt;是纯粹的C++/CUDA架构，支持命令行、Python和MATLAB接口；可以在CPU和GPU54直接无缝切换：&lt;br&gt;&lt;figure class=&quot;highlight less&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;Caffe&lt;/span&gt;::set_mode(&lt;span class=&quot;attribute&quot;&gt;Caffe&lt;/span&gt;::GPU);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Caffe的优势&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;上手快：模型与相应优化都是以文本形式而非代码形式给出。&lt;/li&gt;
+&lt;li&gt;Caffe给出了模型的定义、最优化设置以及预训练的权重，方便立即上手。&lt;/li&gt;
+&lt;li&gt;速度快：能够运行最棒的模型与海量的数据。&lt;/li&gt;
+&lt;li&gt;Caffe与cuDNN结合使用，测试AlexNet模型，在K40上处理每张图片只需要1.17ms.&lt;/li&gt;
+&lt;li&gt;模块化：方便扩展到新的任务和设置上。&lt;/li&gt;
+&lt;li&gt;可以使用Caffe提供的各层类型来定义自己的模型。&lt;/li&gt;
+&lt;li&gt;开放性：公开的代码和参考模型用于再现。&lt;/li&gt;
+&lt;li&gt;社区好：可以通过BSD-2参与开发与讨论。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;入门篇&quot;&gt;&lt;a href=&quot;#入门篇&quot; class=&quot;headerlink&quot; title=&quot;入门篇&quot;&gt;&lt;/a&gt;入门篇&lt;/h2&gt;&lt;p&gt;前期入门主要根据自己的机器（nvidia显卡）完成Caffe 的安装，运行&lt;a href=&quot;http://caffe.berkeleyvision.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Caffe-官网&lt;/a&gt;和 &lt;a href=&quot;https://github.com/bvlc/caffe&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;github&lt;/a&gt; repo 上的例程。&lt;/p&gt;
+&lt;h3 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h3&gt;&lt;p&gt;安装请仔细阅读下面的中文教程，&lt;strong&gt;编译中遇到的错误&lt;/strong&gt;请在 github issues用英文仔细查看错误原因。而且大部分都是环境依赖，路径错误。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.mindcont.com/2016/07/20/ubuntu1404-caffe-r3-cuda7-5-mkl/&quot;&gt;Ubuntu 14.04 64bit + Caffe rc3 + CUDA 7.5 + Intel MKL 配置说明&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://caffe.berkeleyvision.org/installation.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Installation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/bvlc/caffe/issues&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;issues&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;入门书籍&quot;&gt;&lt;a href=&quot;#入门书籍&quot; class=&quot;headerlink&quot; title=&quot;入门书籍&quot;&gt;&lt;/a&gt;入门书籍&lt;/h3&gt;&lt;p&gt;如果链接失效，可以访问 &lt;a href=&quot;ftp://mindcont.com/Book&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ftp://mindcont.com/Book&lt;/a&gt; 获取。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://pan.baidu.com/s/1c0Ri2Py#path=%252FCaffeCN%25E7%25BF%25BB%25E8%25AF%2591&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Caffe 官方教程中译本&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://book.douban.com/subject/26825082/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;深度学习21天实战Caffe-赵永科&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://pan.baidu.com/s/1hq8IoHe&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;贾扬清-DIY Deep Learning for Vision-  a Hands-On Tutorial with Caffe&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;答疑社区&quot;&gt;&lt;a href=&quot;#答疑社区&quot; class=&quot;headerlink&quot; title=&quot;答疑社区&quot;&gt;&lt;/a&gt;答疑社区&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://caffecn.cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Caffe 中文社区&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;&quot;&gt;Caffe 深度学习交流2群 534492004&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://gitter.im/BVLC/caffe&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Caffe 讨论组&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;进阶篇&quot;&gt;&lt;a href=&quot;#进阶篇&quot; class=&quot;headerlink&quot; title=&quot;进阶篇&quot;&gt;&lt;/a&gt;进阶篇&lt;/h2&gt;&lt;h3 id=&quot;博客&quot;&gt;&lt;a href=&quot;#博客&quot; class=&quot;headerlink&quot; title=&quot;博客&quot;&gt;&lt;/a&gt;博客&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/liumaolincycle/article/category/5705161&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;liumaolincycle&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;数据集&quot;&gt;&lt;a href=&quot;#数据集&quot; class=&quot;headerlink&quot; title=&quot;数据集&quot;&gt;&lt;/a&gt;数据集&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.cnblogs.com/huashiyiqike/p/3778035.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;常用图像数据集：标注、检索&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;微调网络&quot;&gt;&lt;a href=&quot;#微调网络&quot; class=&quot;headerlink&quot; title=&quot;微调网络&quot;&gt;&lt;/a&gt;微调网络&lt;/h3&gt;&lt;h3 id=&quot;可视化&quot;&gt;&lt;a href=&quot;#可视化&quot; class=&quot;headerlink&quot; title=&quot;可视化&quot;&gt;&lt;/a&gt;可视化&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/mindcont/caffe/blob/work/%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/caffe%20%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4.md&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;caffe 常用指令&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;扩展新layer&quot;&gt;&lt;a href=&quot;#扩展新layer&quot; class=&quot;headerlink&quot; title=&quot;扩展新layer&quot;&gt;&lt;/a&gt;扩展新layer&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/sunshine_in_moon/article/details/51453951&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Sunshine_in_Moon的专栏-Caffe扩展新层&lt;/a&gt;&lt;h2 id=&quot;高级篇&quot;&gt;&lt;a href=&quot;#高级篇&quot; class=&quot;headerlink&quot; title=&quot;高级篇&quot;&gt;&lt;/a&gt;高级篇&lt;/h2&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;参考&quot;&gt;&lt;a href=&quot;#参考&quot; class=&quot;headerlink&quot; title=&quot;参考&quot;&gt;&lt;/a&gt;参考&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://daggerfs.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Yangqing Jia (贾扬清)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;作者:&lt;a href=&quot;https://github.com/mindcont&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;mindcont&lt;/a&gt;  2016-08-22 第一次编辑&lt;br&gt;&lt;strong&gt;转载注明出处 &lt;a href=&quot;http://blog.mindcont.com/2016/08/22/caffe-guide-book/&quot;&gt;http://blog.mindcont.com/2016/08/22/caffe-guide-book/&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/caffe.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="深度学习" scheme="http://blog.mindcont.com/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="Caffe" scheme="http://blog.mindcont.com/tags/Caffe/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Git 常用指令</title>
     <link href="http://blog.mindcont.com/2016/08/18/git-commands/"/>
     <id>http://blog.mindcont.com/2016/08/18/git-commands/</id>
     <published>2016-08-18T13:08:09.000Z</published>
-    <updated>2016-08-18T13:29:03.306Z</updated>
+    <updated>2016-08-22T09:43:39.632Z</updated>
     
-    <content type="html">&lt;p&gt;Git 是由 Linux 之父 Linus Tovalds 为了更好地管理linux内核开发而创立的分布式版本控制／软件配置管理软件。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;简单来说，Git 是一个管理你的「代码的历史记录」的工具。&lt;/strong&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;/images/github.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;Git 是由 Linux 之父 Linus Tovalds 为了更好地管理linux内核开发而创立的分布式版本控制／软件配置管理软件。&lt;strong&gt;简单来说，Git 是一个管理你的「代码的历史记录」的工具。&lt;/strong&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;/images/github.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -58,7 +126,7 @@
 &lt;h3 id=&quot;分支&quot;&gt;&lt;a href=&quot;#分支&quot; class=&quot;headerlink&quot; title=&quot;分支&quot;&gt;&lt;/a&gt;分支&lt;/h3&gt;&lt;p&gt;分支是用来将特性开发绝缘开来的。在你创建仓库的时候，master 是“默认的”。在其他分支上进行开发，完成后再将它们合并到主分支上。&lt;br&gt;&lt;img src=&quot;https://camo.githubusercontent.com/1db631d931f4a57a439deb5f747bfc0c3c1098b2/68747470733a2f2f7777772e61746c61737369616e2e636f6d2f6769742f696d616765732f7475746f7269616c732f636f6c6c61626f726174696e672f636f6d706172696e672d776f726b666c6f77732f676974666c6f772d776f726b666c6f772f30352e737667&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;创建一个叫做“feature_x”的分支，并切换过去：&lt;br&gt;&lt;figure class=&quot;highlight stylus&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git checkout -&lt;span class=&quot;selector-tag&quot;&gt;b&lt;/span&gt; feature_x&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;切换回主分支：&lt;br&gt;&lt;figure class=&quot;highlight crmsh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git checkout &lt;span class=&quot;literal&quot;&gt;master&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;再把新建的分支删掉：&lt;br&gt;&lt;figure class=&quot;highlight armasm&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;branch &lt;/span&gt;-d feature_x&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;再把新建的分支删掉：&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git branch &lt;span class=&quot;_&quot;&gt;-d&lt;/span&gt; feature_x&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;注意&lt;/strong&gt; 除非你将分支推送到远端仓库，不然该分支就是 不为他人所见的。&lt;/p&gt;
 &lt;h3 id=&quot;更新与合并&quot;&gt;&lt;a href=&quot;#更新与合并&quot; class=&quot;headerlink&quot; title=&quot;更新与合并&quot;&gt;&lt;/a&gt;更新与合并&lt;/h3&gt;&lt;p&gt;将你本地分支推送到远端仓库，执行：&lt;br&gt;&lt;figure class=&quot;highlight maxima&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git &lt;span class=&quot;built_in&quot;&gt;push&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;origin&lt;/span&gt; &amp;lt;branch&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;要更新你的本地仓库至最新改动，执行：&lt;br&gt;&lt;figure class=&quot;highlight nginx&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;git&lt;/span&gt; pull&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
@@ -89,18 +157,28 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id=&quot;疑难杂症&quot;&gt;&lt;a href=&quot;#疑难杂症&quot; class=&quot;headerlink&quot; title=&quot;疑难杂症&quot;&gt;&lt;/a&gt;疑难杂症&lt;/h2&gt;&lt;h3 id=&quot;删除已同步到远程的commit&quot;&gt;&lt;a href=&quot;#删除已同步到远程的commit&quot; class=&quot;headerlink&quot; title=&quot;删除已同步到远程的commit&quot;&gt;&lt;/a&gt;删除已同步到远程的commit&lt;/h3&gt;&lt;p&gt;经常往GitHub上提交修改的代码，会导致提交次数很多；又或者提交了某些不应该提交测试数据，那麽我们应该如何删除这些提交记录呢？&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;## 1、启动 git shell, 切换到项目所在的空间&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;cd&lt;/span&gt; c://github/android/rubikrobot   &lt;span class=&quot;comment&quot;&gt;#例如项目位于C://GitHub/Android/RubikRobot 目录下&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;## 2、查看当前提交记录，输入 q退出日志&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git &lt;span class=&quot;built_in&quot;&gt;log&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;## 3、使用git reset 进行撤销操作&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git reset --hard HEAD~2                   &lt;span class=&quot;comment&quot;&gt;# 取消当前版本之前的两次提交  &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git push origin HEAD --force              &lt;span class=&quot;comment&quot;&gt;# 强制提交到远程版本库，从而删除之前的两次提交数据&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h3 id=&quot;保持Fork的同步&quot;&gt;&lt;a href=&quot;#保持Fork的同步&quot; class=&quot;headerlink&quot; title=&quot;保持Fork的同步&quot;&gt;&lt;/a&gt;保持Fork的同步&lt;/h3&gt;&lt;p&gt;在原始Repo有新的commit后，Fork的Repo不会自动与原分支同步。&lt;/p&gt;
+&lt;p&gt;前置条件&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;已Fork&lt;/li&gt;
+&lt;li&gt;已在本地clone了Fork&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;步骤&lt;/p&gt;
+&lt;p&gt;进入命令行，进入本地Repo目录&lt;br&gt;&lt;figure class=&quot;highlight vala&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;# 添加远程分支(仅第一次)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;remote add upstream https:&lt;span class=&quot;comment&quot;&gt;//github.com/akfish/MwCG.git&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;# 取回远程分支&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git fetch upstream&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;合并(以更新本地Dev分支为例)&lt;br&gt;&lt;figure class=&quot;highlight cos&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git checkout Dev&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git &lt;span class=&quot;keyword&quot;&gt;merge&lt;/span&gt; upstream/Dev&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;把同步后的分支push到GitHub的remote repo上（可选）&lt;/p&gt;
 &lt;h2 id=&quot;参考链接&quot;&gt;&lt;a href=&quot;#参考链接&quot; class=&quot;headerlink&quot; title=&quot;参考链接&quot;&gt;&lt;/a&gt;参考链接&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://git-scm.com/book/zh/v2&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;git - 指南&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://git-scm.com/download/gui/linux&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GUI Clients&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://git-scm.com/book/zh/v1/Git-%E5%88%86%E6%94%AF-%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Git 分支 - 远程分支&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://git-scm.com/book/zh/v1/Git-%E5%9F%BA%E7%A1%80-%E6%92%A4%E6%B6%88%E6%93%8D%E4%BD%9C&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;了解更多关于git 操作&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/akfish/MwCG/wiki/%E4%BB%BB%E5%8A%A1%EF%BC%9A%E4%BF%9D%E6%8C%81Fork%E7%9A%84%E5%90%8C%E6%AD%A5&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;保持Fork的同步&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p&gt;Git 是由 Linux 之父 Linus Tovalds 为了更好地管理linux内核开发而创立的分布式版本控制／软件配置管理软件。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;简单来说，Git 是一个管理你的「代码的历史记录」的工具。&lt;/strong&gt;&lt;br&gt;
+      &lt;p&gt;Git 是由 Linux 之父 Linus Tovalds 为了更好地管理linux内核开发而创立的分布式版本控制／软件配置管理软件。&lt;strong&gt;简单来说，Git 是一个管理你的「代码的历史记录」的工具。&lt;/strong&gt;&lt;br&gt;
     
     </summary>
     
@@ -114,15 +192,14 @@
     <link href="http://blog.mindcont.com/2016/08/06/Run-YOLO-Demo/"/>
     <id>http://blog.mindcont.com/2016/08/06/Run-YOLO-Demo/</id>
     <published>2016-08-06T11:24:00.000Z</published>
-    <updated>2016-08-07T02:10:04.553Z</updated>
+    <updated>2016-08-22T08:48:45.406Z</updated>
     
-    <content type="html">&lt;p&gt;You only look once (YOLO) is a system for detecting objects on the Pascal VOC 2012 dataset. It can detect the 20 Pascal object classes:&lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+    <content type="html">&lt;p&gt;YOLO 是一个用来在VOC 2012 数据集上检测物体的框架。它可以检测 20 类物体：&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;person&lt;/li&gt;
-&lt;li&gt;bird, cat, cow, dog, horse, sheep&lt;/li&gt;
-&lt;li&gt;aeroplane, bicycle, boat, bus, car, motorbike, train&lt;/li&gt;
-&lt;li&gt;bottle, chair, dining table, potted plant, sofa, tv/monitor&lt;/li&gt;
+&lt;li&gt;人&lt;/li&gt;
+&lt;li&gt;鸟, 猫, 牛, 狗, 马, 羊&lt;/li&gt;
+&lt;li&gt;飞机, 自行车, 船, 公共汽车, 小汽车, 摩托车, 火车&lt;/li&gt;
+&lt;li&gt;瓶，椅子，餐桌，盆花，沙发，电视/显示器&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;YOLO is joint work with &lt;a href=&quot;http://homes.cs.washington.edu/~santosh/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Santosh&lt;/a&gt;, &lt;a href=&quot;http://www.cs.berkeley.edu/~rbg/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Ross&lt;/a&gt;, and &lt;a href=&quot;http://homes.cs.washington.edu/~ali/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Ali&lt;/a&gt;, and is described in detail in our &lt;a href=&quot;http://arxiv.org/abs/1506.02640&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;paper&lt;/a&gt;.&lt;/p&gt;
 &lt;video src=&quot;https://dn-mindcont.qbox.me/YOLO_Watches_Nature_Part_2.mp4&quot; controls=&quot;controls&quot; width=&quot;640px&quot; heigt=&quot;480px&quot; preload=&quot;none&quot; poster=&quot;/images/Object-Detection/Yolo/YOLO_Watches_Nature_Part_2.png&quot;&gt;&lt;/video&gt;
@@ -161,14 +238,12 @@
     
     <summary type="html">
     
-      &lt;p&gt;You only look once (YOLO) is a system for detecting objects on the Pascal VOC 2012 dataset. It can detect the 20 Pascal object classes:&lt;/p&gt;
+      &lt;p&gt;YOLO 是一个用来在VOC 2012 数据集上检测物体的框架。它可以检测 20 类物体：&lt;br&gt;
     
     </summary>
     
-      <category term="计算机视觉" scheme="http://blog.mindcont.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/"/>
+      <category term="深度学习" scheme="http://blog.mindcont.com/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
-    
-      <category term="深度学习" scheme="http://blog.mindcont.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
@@ -287,10 +362,9 @@
     <link href="http://blog.mindcont.com/2016/07/26/Nvidia-Digits-with-Caffe/"/>
     <id>http://blog.mindcont.com/2016/07/26/Nvidia-Digits-with-Caffe/</id>
     <published>2016-07-26T13:33:58.000Z</published>
-    <updated>2016-08-06T11:31:24.907Z</updated>
+    <updated>2016-08-22T08:30:05.440Z</updated>
     
-    <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h2 id=&quot;Digits-简介&quot;&gt;&lt;a href=&quot;#Digits-简介&quot; class=&quot;headerlink&quot; title=&quot;Digits 简介&quot;&gt;&lt;/a&gt;Digits 简介&lt;/h2&gt;&lt;p&gt;Digits: Deep Learning GPU Training System1，是由英伟达（NVIDIA）公司开发的第一个交互式深度学习GPU训练系统。目的在于整合现有的Deep Learning开发工具，实现深度神经网络（Deep Neural Network，DNN）设计、训练和可视化等任务变得简单化。DIGITS是基于浏览器的接口，因而通过实时的网络行为的可视化，可以快速设计最优的DNN。DIGITS是开源软件，可在&lt;a href=&quot;https://github.com/NVIDIA/DIGITS&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;上找到，因而开发人员可以扩展和自定义DIGITS。&lt;/p&gt;
+    <content type="html">&lt;p&gt;Digits: Deep Learning GPU Training System1，是由英伟达（NVIDIA）公司开发的第一个交互式深度学习GPU训练系统。目的在于整合现有的Deep Learning开发工具，实现深度神经网络（Deep Neural Network，DNN）设计、训练和可视化等任务变得简单化。&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;DIGITS是基于浏览器的接口，因而通过实时的网络行为的可视化，可以快速设计最优的DNN。DIGITS是开源软件，可在&lt;a href=&quot;https://github.com/NVIDIA/DIGITS&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;上找到，因而开发人员可以扩展和自定义DIGITS。&lt;/p&gt;
 &lt;p&gt;Demo: 访问 &lt;a href=&quot;http://digits.daoapp.io&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://digits.daoapp.io&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;Digits-特性&quot;&gt;&lt;a href=&quot;#Digits-特性&quot; class=&quot;headerlink&quot; title=&quot;Digits 特性&quot;&gt;&lt;/a&gt;Digits 特性&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;提供了友好的用户界面，只需简单的点击即完成DNNs的训练。Digits是一个Web应用，用浏览器访问，上图是典型的工作流程图。&lt;/li&gt;
@@ -325,12 +399,11 @@
     
     <summary type="html">
     
-      &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h2 id=&quot;Digits-简介&quot;&gt;&lt;a href=&quot;#Digits-简介&quot; class=&quot;headerlink&quot; title=&quot;Digits 简介&quot;&gt;&lt;/a&gt;Digits 简介&lt;/h2&gt;&lt;p&gt;Digits: Deep Learning GP
+      &lt;p&gt;Digits: Deep Learning GPU Training System1，是由英伟达（NVIDIA）公司开发的第一个交互式深度学习GPU训练系统。目的在于整合现有的Deep Learning开发工具，实现深度神经网络（Deep Neural Network，DNN）设计、训练和可视化等任务变得简单化。
     
     </summary>
     
-      <category term="计算机视觉" scheme="http://blog.mindcont.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/"/>
+      <category term="深度学习" scheme="http://blog.mindcont.com/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
     
       <category term="Caffe" scheme="http://blog.mindcont.com/tags/Caffe/"/>
@@ -342,7 +415,7 @@
     <link href="http://blog.mindcont.com/2016/07/22/Research-Progress-in-Object-Detection/"/>
     <id>http://blog.mindcont.com/2016/07/22/Research-Progress-in-Object-Detection/</id>
     <published>2016-07-22T13:03:09.000Z</published>
-    <updated>2016-08-06T11:32:08.184Z</updated>
+    <updated>2016-08-22T08:08:06.145Z</updated>
     
     <content type="html">&lt;p&gt;目标检测对于人来说是再简单不过的任务，但是对于计算机来说，它看到的是一些值为0~255的数组，因而很难直接得到图像中有人或者猫这种高层语义概念，也不清楚目标出现在图像中哪个区域。图像中的目标可能出现在任何位置，目标的形态可能存在各种各样的变化，图像的背景千差万别……，这些因素导致目标检测并不是一个容易解决的任务。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;/images/Object-Detection/1.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;开始本文内容之前，我们先来看一下上边左侧的这张图，从图中你看到了什么物体？他们在什么位置？这还不简单，图中有一个猫和一个人，具体的位置就是上图右侧图像两个边框(bounding-box)所在的位置。其实刚刚的这个过程就是目标检测，目标检测就是“给定一张图像或者视频帧，找出其中所有目标的位置，并给出每个目标的具体类别”。&lt;/p&gt;
 &lt;p&gt;得益于深度学习——主要是卷积神经网络(convolution neural network: CNN)和候选区域(region proposal)算法，从2014年开始，目标检测取得了巨大的突破。本文主要对基于深度学习的目标检测算法进行剖析和总结，文章分为四个部分：第一部分大体介绍下传统目标检测的流程，第二部分介绍以R-CNN为代表的结合region proposal和CNN分类的目标检测框架(R-CNN, SPP-NET, Fast R-CNN, Faster R-CNN); 第三部分介绍以YOLO为代表的将目标检测转换为回归问题的目标检测框架(YOLO, SSD); 第四部分介绍一些可以提高目标检测性能的技巧和方法。&lt;/p&gt;
@@ -418,10 +491,8 @@
     
     </summary>
     
-      <category term="计算机视觉" scheme="http://blog.mindcont.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/"/>
+      <category term="深度学习" scheme="http://blog.mindcont.com/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
-    
-      <category term="深度学习" scheme="http://blog.mindcont.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
@@ -430,7 +501,7 @@
     <link href="http://blog.mindcont.com/2016/07/20/ubuntu1404-caffe-r3-cuda7-5-mkl/"/>
     <id>http://blog.mindcont.com/2016/07/20/ubuntu1404-caffe-r3-cuda7-5-mkl/</id>
     <published>2016-07-20T08:24:09.000Z</published>
-    <updated>2016-08-18T11:44:33.326Z</updated>
+    <updated>2016-08-22T08:06:21.030Z</updated>
     
     <content type="html">&lt;p&gt;本步骤经笔者亲身实践，集百家所长，能实现Caffe在NVIDIA GPU下进行计算。&lt;/p&gt;
 &lt;h2 id=&quot;安装开发所需的依赖包&quot;&gt;&lt;a href=&quot;#安装开发所需的依赖包&quot; class=&quot;headerlink&quot; title=&quot;安装开发所需的依赖包&quot;&gt;&lt;/a&gt;安装开发所需的依赖包&lt;/h2&gt;&lt;p&gt;安装开发所需要的一些基本包&lt;br&gt;&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo apt-get install build-essential  &lt;span class=&quot;comment&quot;&gt;# basic requirement&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo apt-get install vim cmake git    &lt;span class=&quot;comment&quot;&gt;# tools&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libboost-all-dev libhdf5-serial-dev libgflags-dev libgoogle-glog-dev liblmdb-dev protobuf-compiler libatlas-base-dev  &lt;span class=&quot;comment&quot;&gt;#required by caffe&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
@@ -515,7 +586,7 @@
     
     </summary>
     
-      <category term="计算机视觉" scheme="http://blog.mindcont.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/"/>
+      <category term="深度学习" scheme="http://blog.mindcont.com/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
     
       <category term="Caffe" scheme="http://blog.mindcont.com/tags/Caffe/"/>
@@ -527,7 +598,7 @@
     <link href="http://blog.mindcont.com/2016/07/16/installing-opencv-2-4-9-in-ubuntu-14-04-lts/"/>
     <id>http://blog.mindcont.com/2016/07/16/installing-opencv-2-4-9-in-ubuntu-14-04-lts/</id>
     <published>2016-07-16T07:27:45.000Z</published>
-    <updated>2016-08-10T07:50:19.701Z</updated>
+    <updated>2016-08-22T08:11:15.055Z</updated>
     
     <content type="html">&lt;p&gt;OpenCV的全称是Open Source Computer Vision Library，是一个跨平台的计算机视觉库。OpenCV是由英特尔公司发起并参与开发，以BSD许可证授权发行，可以在商业和研究领域中免费使用。OpenCV可用于开发实时的图像处理、计算机视觉以及模式识别程序。该程序库也可以使用英特尔公司的IPP进行加速处理。&lt;br&gt;在本指南中，我将告诉你如何在ubuntu14.04(lts)中安装OpenCV。ok,让我们开始吧～&lt;/p&gt;
 &lt;h2 id=&quot;更新源&quot;&gt;&lt;a href=&quot;#更新源&quot; class=&quot;headerlink&quot; title=&quot;更新源&quot;&gt;&lt;/a&gt;更新源&lt;/h2&gt;&lt;p&gt;首先将源更新为阿里云源&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak         &lt;span class=&quot;comment&quot;&gt;#备份&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo gedit /etc/apt/sources.list                                &lt;span class=&quot;comment&quot;&gt;#修改&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;##添加如下内容，点击保存后关闭文件&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb http://mirrors.aliyun.com/ubuntu/ trusty main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb http://mirrors.aliyun.com/ubuntu/ trusty-security main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb http://mirrors.aliyun.com/ubuntu/ trusty-updates main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb http://mirrors.aliyun.com/ubuntu/ trusty-proposed main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src http://mirrors.aliyun.com/ubuntu/ trusty main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src http://mirrors.aliyun.com/ubuntu/ trusty-security main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src http://mirrors.aliyun.com/ubuntu/ trusty-updates main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src http://mirrors.aliyun.com/ubuntu/ trusty-proposed main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;deb-src http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;##更新系统&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo apt-get update &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo apt-get upgrade&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
@@ -566,8 +637,6 @@
       &lt;p&gt;OpenCV的全称是Open Source Computer Vision Library，是一个跨平台的计算机视觉库。OpenCV是由英特尔公司发起并参与开发，以BSD许可证授权发行，可以在商业和研究领域中免费使用。OpenCV可用于开发实时的图像处理、计算机视觉以及模式
     
     </summary>
-    
-      <category term="计算机视觉" scheme="http://blog.mindcont.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/"/>
     
     
       <category term="OpenCV" scheme="http://blog.mindcont.com/tags/OpenCV/"/>
@@ -881,7 +950,7 @@
     <link href="http://blog.mindcont.com/2016/05/28/OpenCV-2-4-9-Module-Introduction/"/>
     <id>http://blog.mindcont.com/2016/05/28/OpenCV-2-4-9-Module-Introduction/</id>
     <published>2016-05-28T01:49:51.000Z</published>
-    <updated>2016-05-28T03:24:36.226Z</updated>
+    <updated>2016-08-22T08:11:01.614Z</updated>
     
     <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;p&gt;&lt;img src=&quot;/images/OpenCV/OpenCV_Logo.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;OpenCV的全称是Open Source Computer Vision Library，是一个跨平台的计算机视觉库。OpenCV是由英特尔公司发起并参与开发，以BSD许可证授权发行，可以在商业和研究领域中免费使用。OpenCV可用于开发实时的图像处理、计算机视觉以及模式识别程序。该程序库也可以使用英特尔公司的IPP进行加速处理。   &lt;/p&gt;
@@ -1045,8 +1114,6 @@
     
     </summary>
     
-      <category term="计算机视觉" scheme="http://blog.mindcont.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/"/>
-    
     
       <category term="OpenCV" scheme="http://blog.mindcont.com/tags/OpenCV/"/>
     
@@ -1114,7 +1181,7 @@
     <link href="http://blog.mindcont.com/2016/05/13/Open-Source-Computer-Vision/"/>
     <id>http://blog.mindcont.com/2016/05/13/Open-Source-Computer-Vision/</id>
     <published>2016-05-13T05:40:08.000Z</published>
-    <updated>2016-06-16T12:24:22.908Z</updated>
+    <updated>2016-08-22T08:11:40.172Z</updated>
     
     <content type="html">&lt;p&gt;笔者日前在搜索计算机视觉方面的代码,偶然发现这个,不敢独享,随整理发表于此,希望可以帮助到有关学习计算机视觉的朋友们!&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/images/NASA_Mars_Rover.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
@@ -2058,8 +2125,8 @@
     
     </summary>
     
-      <category term="计算机视觉" scheme="http://blog.mindcont.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/"/>
     
+      <category term="OpenCV" scheme="http://blog.mindcont.com/tags/OpenCV/"/>
     
   </entry>
   
@@ -2222,50 +2289,6 @@
     
     
       <category term="Kinect" scheme="http://blog.mindcont.com/tags/Kinect/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>有趣的树莓派项目</title>
-    <link href="http://blog.mindcont.com/2016/05/05/RaspberryPi/"/>
-    <id>http://blog.mindcont.com/2016/05/05/RaspberryPi/</id>
-    <published>2016-05-05T08:39:38.000Z</published>
-    <updated>2016-05-28T03:28:26.909Z</updated>
-    
-    <content type="html">&lt;p&gt;分享我所收集的有趣树莓派项目，相关项目的开源文件也可以在此路径相应文件夹下进行下载。欢迎大家fork和push ( /) V (\ ) 嘻嘻~&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/images/flying_pi.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;目录&quot;&gt;&lt;a href=&quot;#目录&quot; class=&quot;headerlink&quot; title=&quot;目录&quot;&gt;&lt;/a&gt;目录&lt;/h2&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;文件夹&lt;/th&gt;
-&lt;th&gt;说明&lt;/th&gt;
-&lt;th&gt;作者&lt;/th&gt;
-&lt;th&gt;开源地址&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Big Dog&lt;/td&gt;
-&lt;td&gt;基于3D打印的开源大狗&lt;/td&gt;
-&lt;td&gt;HuskyRobo&lt;/td&gt;
-&lt;td&gt;&lt;a href=&quot;http://www.instructables.com/id/Fenrir-an-Open-Source-Dog-Robot/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.instructables.com/id/Fenrir-an-Open-Source-Dog-Robot/&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id=&quot;致谢&quot;&gt;&lt;a href=&quot;#致谢&quot; class=&quot;headerlink&quot; title=&quot;致谢&quot;&gt;&lt;/a&gt;致谢&lt;/h2&gt;&lt;p&gt;在此，感谢所有致力于开放源代码并为之努力的朋友们！&lt;/p&gt;
-&lt;h4 id=&quot;1、Big-Dog&quot;&gt;&lt;a href=&quot;#1、Big-Dog&quot; class=&quot;headerlink&quot; title=&quot;1、Big Dog&quot;&gt;&lt;/a&gt;1、Big Dog&lt;/h4&gt;&lt;p&gt;一个利用3D打印机和树莓派制作的开源大狗机器人&lt;br&gt;博客地址：&lt;a href=&quot;http://www.instructables.com/id/Fenrir-an-Open-Source-Dog-Robot/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.instructables.com/id/Fenrir-an-Open-Source-Dog-Robot/&lt;/a&gt;&lt;br&gt;源码地址：&lt;a href=&quot;https://github.com/HackHusky/Fenrir&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/HackHusky/Fenrir&lt;/a&gt;&lt;br&gt;效果图： &lt;img src=&quot;/images/dog-robot.jpg&quot; alt=&quot;dog robot&quot;&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;分享我所收集的有趣树莓派项目，相关项目的开源文件也可以在此路径相应文件夹下进行下载。欢迎大家fork和push ( /) V (\ ) 嘻嘻~&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/images/flying_pi.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;目录&quot;&gt;&lt;
-    
-    </summary>
-    
-    
-      <category term="树莓派" scheme="http://blog.mindcont.com/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
     
   </entry>
   
