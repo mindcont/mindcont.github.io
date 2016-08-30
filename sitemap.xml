@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.mindcont.com/2016/08/22/caffe-guide-book/</loc>
+    
+    <lastmod>2016-08-30T03:25:59.331Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/07/31/TED-talks-Linus-Torvalds/</loc>
+    
+    <lastmod>2016-08-30T03:16:53.649Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.mindcont.com/2016/05/04/how-to-use-ngrok-penetrate-internal-network/</loc>
     
     <lastmod>2016-08-22T09:46:21.012Z</lastmod>
@@ -12,13 +26,6 @@
     <loc>http://blog.mindcont.com/2016/08/18/git-commands/</loc>
     
     <lastmod>2016-08-22T09:43:39.632Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/08/22/caffe-guide-book/</loc>
-    
-    <lastmod>2016-08-22T09:43:04.901Z</lastmod>
     
   </url>
   
@@ -82,13 +89,6 @@
     <loc>http://blog.mindcont.com/about/index.html</loc>
     
     <lastmod>2016-08-19T10:58:50.686Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/07/31/TED-talks-Linus-Torvalds/</loc>
-    
-    <lastmod>2016-08-06T12:10:27.035Z</lastmod>
     
   </url>
   

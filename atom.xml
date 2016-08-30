@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.mindcont.com/"/>
-  <updated>2016-08-22T09:43:04.901Z</updated>
+  <updated>2016-08-30T03:25:59.331Z</updated>
   <id>http://blog.mindcont.com/</id>
   
   <author>
@@ -20,10 +20,10 @@
     <link href="http://blog.mindcont.com/2016/08/22/caffe-guide-book/"/>
     <id>http://blog.mindcont.com/2016/08/22/caffe-guide-book/</id>
     <published>2016-08-22T07:26:11.000Z</published>
-    <updated>2016-08-22T09:43:04.901Z</updated>
+    <updated>2016-08-30T03:25:59.331Z</updated>
     
     <content type="html">&lt;p&gt;&lt;img src=&quot;/images/caffe.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;http://caffe.berkeleyvision.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Caffe&lt;/a&gt;是一个清晰而高效的深度学习85框架，其作者是博士毕业于UC Berkeley的&lt;a href=&quot;http://daggerfs.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;贾扬清&lt;/a&gt;，目前在Google工作。&lt;br&gt;&lt;a href=&quot;http://caffe.berkeleyvision.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Caffe&lt;/a&gt;是纯粹的C++/CUDA架构，支持命令行、Python和MATLAB接口；可以在CPU和GPU54直接无缝切换：&lt;br&gt;&lt;figure class=&quot;highlight less&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;Caffe&lt;/span&gt;::set_mode(&lt;span class=&quot;attribute&quot;&gt;Caffe&lt;/span&gt;::GPU);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;http://caffe.berkeleyvision.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Caffe&lt;/a&gt;是一个清晰而高效的深度学习的框架，其作者是博士毕业于UC Berkeley的&lt;a href=&quot;http://daggerfs.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;贾扬清&lt;/a&gt;，目前在Google工作。&lt;br&gt;&lt;a href=&quot;http://caffe.berkeleyvision.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Caffe&lt;/a&gt;是纯粹的C++/CUDA架构，支持命令行、Python和MATLAB接口；可以在CPU和GPU54直接无缝切换：&lt;br&gt;&lt;figure class=&quot;highlight less&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;Caffe&lt;/span&gt;::set_mode(&lt;span class=&quot;attribute&quot;&gt;Caffe&lt;/span&gt;::GPU);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Caffe的优势&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;上手快：模型与相应优化都是以文本形式而非代码形式给出。&lt;/li&gt;
@@ -35,38 +35,73 @@
 &lt;li&gt;开放性：公开的代码和参考模型用于再现。&lt;/li&gt;
 &lt;li&gt;社区好：可以通过BSD-2参与开发与讨论。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;入门篇&quot;&gt;&lt;a href=&quot;#入门篇&quot; class=&quot;headerlink&quot; title=&quot;入门篇&quot;&gt;&lt;/a&gt;入门篇&lt;/h2&gt;&lt;p&gt;前期入门主要根据自己的机器（nvidia显卡）完成Caffe 的安装，运行&lt;a href=&quot;http://caffe.berkeleyvision.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Caffe-官网&lt;/a&gt;和 &lt;a href=&quot;https://github.com/bvlc/caffe&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;github&lt;/a&gt; repo 上的例程。&lt;/p&gt;
+&lt;h2 id=&quot;入门篇&quot;&gt;&lt;a href=&quot;#入门篇&quot; class=&quot;headerlink&quot; title=&quot;入门篇&quot;&gt;&lt;/a&gt;入门篇&lt;/h2&gt;&lt;p&gt;前期入门主要根据自己的机器（nvidia显卡）完成Caffe 的安装，运行&lt;a href=&quot;http://caffe.berkeleyvision.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Caffe官网&lt;/a&gt;和 &lt;a href=&quot;https://github.com/bvlc/caffe&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;github&lt;/a&gt; repo 上的&lt;strong&gt;例程&lt;/strong&gt;。&lt;/p&gt;
 &lt;h3 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h3&gt;&lt;p&gt;安装请仔细阅读下面的中文教程，&lt;strong&gt;编译中遇到的错误&lt;/strong&gt;请在 github issues用英文仔细查看错误原因。而且大部分都是环境依赖，路径错误。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://blog.mindcont.com/2016/07/20/ubuntu1404-caffe-r3-cuda7-5-mkl/&quot;&gt;Ubuntu 14.04 64bit + Caffe rc3 + CUDA 7.5 + Intel MKL 配置说明&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://caffe.berkeleyvision.org/installation.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Installation&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://github.com/bvlc/caffe/issues&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;issues&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h3 id=&quot;例程&quot;&gt;&lt;a href=&quot;#例程&quot; class=&quot;headerlink&quot; title=&quot;例程&quot;&gt;&lt;/a&gt;例程&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;&quot;&gt;LeNet MNIST 手写数字&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;&quot;&gt;Fine-tuning for style recognition&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;&quot;&gt;CaffeNet C++ Classification example&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;&quot;&gt;Web demo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&quot;入门书籍&quot;&gt;&lt;a href=&quot;#入门书籍&quot; class=&quot;headerlink&quot; title=&quot;入门书籍&quot;&gt;&lt;/a&gt;入门书籍&lt;/h3&gt;&lt;p&gt;如果链接失效，可以访问 &lt;a href=&quot;ftp://mindcont.com/Book&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ftp://mindcont.com/Book&lt;/a&gt; 获取。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://pan.baidu.com/s/1c0Ri2Py#path=%252FCaffeCN%25E7%25BF%25BB%25E8%25AF%2591&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Caffe 官方教程中译本&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://book.douban.com/subject/26825082/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;深度学习21天实战Caffe-赵永科&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;ftp://mindcont.com/Book/caffe学习笔记.pdf&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;薛开宇-caffe学习笔记&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://pan.baidu.com/s/1hq8IoHe&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;贾扬清-DIY Deep Learning for Vision-  a Hands-On Tutorial with Caffe&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&quot;答疑社区&quot;&gt;&lt;a href=&quot;#答疑社区&quot; class=&quot;headerlink&quot; title=&quot;答疑社区&quot;&gt;&lt;/a&gt;答疑社区&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://caffecn.cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Caffe 中文社区&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;&quot;&gt;Caffe 深度学习交流2群 534492004&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://gitter.im/BVLC/caffe&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Caffe 讨论组&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://valser.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Valse 视觉与学习青年研讨会&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;&quot;&gt;VALSE-D群 481109645&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://valser.org/article-86-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;历次VALSE Webinar活动的录像&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;进阶篇&quot;&gt;&lt;a href=&quot;#进阶篇&quot; class=&quot;headerlink&quot; title=&quot;进阶篇&quot;&gt;&lt;/a&gt;进阶篇&lt;/h2&gt;&lt;h3 id=&quot;博客&quot;&gt;&lt;a href=&quot;#博客&quot; class=&quot;headerlink&quot; title=&quot;博客&quot;&gt;&lt;/a&gt;博客&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/liumaolincycle/article/category/5705161&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;liumaolincycle&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;数据集&quot;&gt;&lt;a href=&quot;#数据集&quot; class=&quot;headerlink&quot; title=&quot;数据集&quot;&gt;&lt;/a&gt;数据集&lt;/h3&gt;&lt;ul&gt;
+&lt;h2 id=&quot;进阶篇&quot;&gt;&lt;a href=&quot;#进阶篇&quot; class=&quot;headerlink&quot; title=&quot;进阶篇&quot;&gt;&lt;/a&gt;进阶篇&lt;/h2&gt;&lt;h3 id=&quot;数据集&quot;&gt;&lt;a href=&quot;#数据集&quot; class=&quot;headerlink&quot; title=&quot;数据集&quot;&gt;&lt;/a&gt;数据集&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.sigvc.org/bbs/forum.php?mod=viewthread&amp;amp;tid=72&amp;amp;highlight=%B4%FA%C2%EB&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;CV codes代码&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://host.robots.ox.ac.uk/pascal/VOC/voc2007/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;The PASCAL VOC Challenge 2007&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://host.robots.ox.ac.uk/pascal/VOC/voc2012/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;The PASCAL VOC Challenge 2012&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://mscoco.org/dataset/#download&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;COCO - Common Objects in Context&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://image-net.org/challenges/LSVRC/2016/download-images-8r28#det&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ILSVRC2016 Challenge&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://image-net.org/challenges/LSVRC/2015/download-images-3j16.php&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ILSVRC2015 Challenge&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://image-net.org/challenges/LSVRC/2014/download-images-5jj5.php&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ILSVRC2014 Challenge&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://image-net.org/challenges/LSVRC/2012/nonpub-downloads&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ILSVRC2012 Challenge&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://image-net.org/challenges/LSVRC/2010/download-all-nonpub&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ILSVRC2010 Challenge&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://vis-www.cs.umass.edu/lfw/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;人脸&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.cs.tau.ac.il/~wolf/ytfaces/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;youtube人脸&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://biometrics.idealtest.org/dbDetailForUser.do?id=8&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;三维人脸&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/freesum/article/details/7370823&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;文本类&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/wangyaninglm/article/details/38707257&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;数字图像处理&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/maxiemei/article/details/17281767&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;机器视觉中常用的数据测试集&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.cnblogs.com/huashiyiqike/p/3778035.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;常用图像数据集：标注、检索&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.cnblogs.com/fuleying/p/3895817.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;花卉&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.cnblogs.com/xianghang123/p/3773086.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;100+诡异的数据集&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;微调网络&quot;&gt;&lt;a href=&quot;#微调网络&quot; class=&quot;headerlink&quot; title=&quot;微调网络&quot;&gt;&lt;/a&gt;微调网络&lt;/h3&gt;&lt;h3 id=&quot;可视化&quot;&gt;&lt;a href=&quot;#可视化&quot; class=&quot;headerlink&quot; title=&quot;可视化&quot;&gt;&lt;/a&gt;可视化&lt;/h3&gt;&lt;ul&gt;
+&lt;h3 id=&quot;博客&quot;&gt;&lt;a href=&quot;#博客&quot; class=&quot;headerlink&quot; title=&quot;博客&quot;&gt;&lt;/a&gt;博客&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.cnblogs.com/louyihang-loves-baiyan/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;楼燚(yì)航的blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/liumaolincycle/article/category/5705161&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;liumaolincycle的博客&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.cnblogs.com/denny402&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;denny的学习专栏&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;微调网络&quot;&gt;&lt;a href=&quot;#微调网络&quot; class=&quot;headerlink&quot; title=&quot;微调网络&quot;&gt;&lt;/a&gt;微调网络&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.cnblogs.com/louyihang-loves-baiyan/p/5038758.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;楼燚(yì)航的blog-Caffe fine-tuning 微调网络&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/sinat_30071459/article/details/51613304&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;小咸鱼_-基于caffe的图像分类(1)——制作train.txt和val.txt文件&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;可视化&quot;&gt;&lt;a href=&quot;#可视化&quot; class=&quot;headerlink&quot; title=&quot;可视化&quot;&gt;&lt;/a&gt;可视化&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://github.com/mindcont/caffe/blob/work/%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/caffe%20%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4.md&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;caffe 常用指令&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&quot;扩展新layer&quot;&gt;&lt;a href=&quot;#扩展新layer&quot; class=&quot;headerlink&quot; title=&quot;扩展新layer&quot;&gt;&lt;/a&gt;扩展新layer&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/sunshine_in_moon/article/details/51453951&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Sunshine_in_Moon的专栏-Caffe扩展新层&lt;/a&gt;&lt;h2 id=&quot;高级篇&quot;&gt;&lt;a href=&quot;#高级篇&quot; class=&quot;headerlink&quot; title=&quot;高级篇&quot;&gt;&lt;/a&gt;高级篇&lt;/h2&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/sunshine_in_moon/article/details/51453951&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Sunshine_in_Moon的专栏-Caffe扩展新层&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;参考&quot;&gt;&lt;a href=&quot;#参考&quot; class=&quot;headerlink&quot; title=&quot;参考&quot;&gt;&lt;/a&gt;参考&lt;/h2&gt;&lt;ul&gt;
+&lt;h2 id=&quot;高级篇&quot;&gt;&lt;a href=&quot;#高级篇&quot; class=&quot;headerlink&quot; title=&quot;高级篇&quot;&gt;&lt;/a&gt;高级篇&lt;/h2&gt;&lt;h2 id=&quot;参考&quot;&gt;&lt;a href=&quot;#参考&quot; class=&quot;headerlink&quot; title=&quot;参考&quot;&gt;&lt;/a&gt;参考&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://daggerfs.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Yangqing Jia (贾扬清)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://image-net.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Image Net&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;作者:&lt;a href=&quot;https://github.com/mindcont&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;mindcont&lt;/a&gt;  2016-08-22 第一次编辑&lt;br&gt;&lt;strong&gt;转载注明出处 &lt;a href=&quot;http://blog.mindcont.com/2016/08/22/caffe-guide-book/&quot;&gt;http://blog.mindcont.com/2016/08/22/caffe-guide-book/&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 </content>
@@ -248,11 +283,11 @@
   </entry>
   
   <entry>
-    <title>【TED】Linux 操作系统之父</title>
+    <title>Linux 操作系统之父</title>
     <link href="http://blog.mindcont.com/2016/07/31/TED-talks-Linus-Torvalds/"/>
     <id>http://blog.mindcont.com/2016/07/31/TED-talks-Linus-Torvalds/</id>
     <published>2016-07-31T13:40:27.000Z</published>
-    <updated>2016-08-06T12:10:27.035Z</updated>
+    <updated>2016-08-30T03:16:53.649Z</updated>
     
     <content type="html">&lt;p&gt;讲师：Linus Torvalds&lt;br&gt;授课语言：英文&lt;br&gt;类型：心理 艺术 计算机 历史 管理 TED 演讲 媒体 技能 其他 TED全网首播 网易公开课&lt;br&gt;课程简介：Linus Torvalds 先生带来了两次技术革新——第一次是开发出Linux内核，驱动了因特网，第二次是开发出Git，一种源代码管理系统，被全世界开发者广泛使用。在这次难得的TED演讲中，让我们一同来了解这位传奇性人物。&lt;/p&gt;
 &lt;h2 id=&quot;视频&quot;&gt;&lt;a href=&quot;#视频&quot; class=&quot;headerlink&quot; title=&quot;视频&quot;&gt;&lt;/a&gt;视频&lt;/h2&gt;&lt;object width=&quot;640&quot; height=&quot;480&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://swf.ws.126.net/openplayer/v02/-0-2_MBPNHJU6K_MBR358639-vimg1_ws_126_net//image/snapshot_movie/2016/7/3/A/MBR35863A-1423031805654.swf?isTEDPlay=1&quot;&gt;&lt;param name=&quot;allowScriptAccess&quot; value=&quot;always&quot;&gt;&lt;param name=&quot;wmode&quot; value=&quot;transparent&quot;&gt;&lt;embed src=&quot;http://swf.ws.126.net/openplayer/v02/-0-2_MBPNHJU6K_MBR358639-vimg1_ws_126_net//image/snapshot_movie/2016/7/3/A/MBR35863A-1423031805654.swf?isTEDPlay=1&quot; type=&quot;application/x-shockwave-flash&quot; width=&quot;640&quot; height=&quot;480&quot; allowfullscreen=&quot;true&quot; wmode=&quot;transparent&quot; allowscriptaccess=&quot;always&quot;&gt;&lt;/object&gt;
