@@ -1,0 +1,128 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>Caffe 入门指南 | 微纪元</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/3.0.3/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Caffe 入门指南</h1><a id="logo" href="/.">微纪元</a><p class="description">根据同名科幻小说改编</p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/history/"><i class="fa fa-history"> 历史</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div id="layout" class="pure-g"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">Caffe 入门指南</h1><div class="post-meta">Sep 4, 2016<span> | </span><span class="category"><a href="/categories/深度学习/">深度学习</a></span><script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> Hits</span></span></div><a data-disqus-identifier="2016/09/04/caffe-guide-book/" href="/2016/09/04/caffe-guide-book/#disqus_thread" class="disqus-comment-count"></a><div class="clear"><div id="toc" class="toc-article"><div class="toc-title">文章目录</div><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#简介"><span class="toc-number">1.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#入门篇"><span class="toc-number">2.</span> <span class="toc-text">入门篇</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装"><span class="toc-number">2.1.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#例程"><span class="toc-number">2.2.</span> <span class="toc-text">例程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#入门书籍"><span class="toc-number">2.3.</span> <span class="toc-text">入门书籍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#答疑社区"><span class="toc-number">2.4.</span> <span class="toc-text">答疑社区</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#进阶篇"><span class="toc-number">3.</span> <span class="toc-text">进阶篇</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#CS231N-课程"><span class="toc-number">3.1.</span> <span class="toc-text">CS231N 课程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据集"><span class="toc-number">3.2.</span> <span class="toc-text">数据集</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#博客"><span class="toc-number">3.3.</span> <span class="toc-text">博客</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#微调网络"><span class="toc-number">3.4.</span> <span class="toc-text">微调网络</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#可视化"><span class="toc-number">3.5.</span> <span class="toc-text">可视化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#扩展新layer"><span class="toc-number">3.6.</span> <span class="toc-text">扩展新layer</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#高级篇"><span class="toc-number">4.</span> <span class="toc-text">高级篇</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考"><span class="toc-number">5.</span> <span class="toc-text">参考</span></a></li></ol></div></div><div class="post-content"><p><img src="/images/caffe.jpg" alt=""><br><a id="more"></a></p>
+<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p><a href="http://caffe.berkeleyvision.org/" target="_blank" rel="external">Caffe</a>是一个清晰而高效的深度学习的框架，其作者是博士毕业于UC Berkeley的<a href="http://daggerfs.com/" target="_blank" rel="external">贾扬清</a>，目前在Google工作。<br><a href="http://caffe.berkeleyvision.org/" target="_blank" rel="external">Caffe</a>是纯粹的C++/CUDA架构，支持命令行、Python和MATLAB接口；可以在CPU和GPU54直接无缝切换：<br><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">Caffe</span>::set_mode(<span class="attribute">Caffe</span>::GPU);</span><br></pre></td></tr></table></figure></p>
+<p><strong>Caffe的优势</strong></p>
+<ul>
+<li>上手快：模型与相应优化都是以文本形式而非代码形式给出。</li>
+<li>Caffe给出了模型的定义、最优化设置以及预训练的权重，方便立即上手。</li>
+<li>速度快：能够运行最棒的模型与海量的数据。</li>
+<li>Caffe与cuDNN结合使用，测试AlexNet模型，在K40上处理每张图片只需要1.17ms.</li>
+<li>模块化：方便扩展到新的任务和设置上。</li>
+<li>可以使用Caffe提供的各层类型来定义自己的模型。</li>
+<li>开放性：公开的代码和参考模型用于再现。</li>
+<li>社区好：可以通过BSD-2参与开发与讨论。</li>
+</ul>
+<h2 id="入门篇"><a href="#入门篇" class="headerlink" title="入门篇"></a>入门篇</h2><p>前期入门主要根据自己的机器（nvidia显卡）完成Caffe 的安装，运行 <a href="http://caffe.berkeleyvision.org/" target="_blank" rel="external">Caffe官网</a>和  <a href="https://github.com/bvlc/caffe" target="_blank" rel="external">github</a> repo 上的<strong>例程</strong>。</p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>安装请仔细阅读下面的中文教程，<strong>编译中遇到的错误</strong>请在 github issues用英文仔细查看错误原因。而且大部分都是<strong>环境依赖，路径错误</strong>。</p>
+<ul>
+<li><a href="http://blog.mindcont.com/2016/07/20/ubuntu1404-caffe-r3-cuda7-5-mkl/">Ubuntu 14.04 64bit + Caffe rc3 + CUDA 7.5 + Intel MKL 配置说明</a></li>
+<li><a href="http://caffe.berkeleyvision.org/installation.html" target="_blank" rel="external">Installation</a></li>
+<li><a href="https://github.com/bvlc/caffe/issues" target="_blank" rel="external">issues</a></li>
+</ul>
+<h3 id="例程"><a href="#例程" class="headerlink" title="例程"></a>例程</h3><p>配合官方文档 例如mnist 手写体识别，其文档在 $CAFFE_ROOT/examples/mnist/Readme.md ，运行并理解其流程。尤其以下面几个最为重要，当细细品味。</p>
+<table>
+<thead>
+<tr>
+<th>例程名</th>
+<th>实现</th>
+<th>学习意义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LeNet MNIST</td>
+<td>手写数字识别</td>
+<td>理解模型</td>
+</tr>
+<tr>
+<td>CaffeNet C++ Classification example</td>
+<td>c++ 代码实现图片分类</td>
+<td>理解如何用c++ 调用caffe</td>
+</tr>
+<tr>
+<td>Fine-tuning for style recognition</td>
+<td>根据自己数据集微调模型</td>
+<td>迁移学习，构建自己数据集，微调模型</td>
+</tr>
+<tr>
+<td>Web demo</td>
+<td>基于web 网页的图片分类</td>
+<td>如何构建 client /server</td>
+</tr>
+</tbody>
+</table>
+<h3 id="入门书籍"><a href="#入门书籍" class="headerlink" title="入门书籍"></a>入门书籍</h3><p>如果链接失效，可以访问 <a href="ftp://mindcont.com/Book" target="_blank" rel="external">ftp://mindcont.com/Book</a> 获取。</p>
+<ul>
+<li><a href="http://pan.baidu.com/s/1c0Ri2Py#path=%252FCaffeCN%25E7%25BF%25BB%25E8%25AF%2591" target="_blank" rel="external">Caffe 官方教程中译本</a></li>
+<li><a href="https://book.douban.com/subject/26825082/" target="_blank" rel="external">深度学习21天实战Caffe-赵永科</a></li>
+<li><a href="ftp://mindcont.com/Book/caffe学习笔记.pdf" target="_blank" rel="external">薛开宇-caffe学习笔记</a></li>
+<li><a href="http://pan.baidu.com/s/1hq8IoHe" target="_blank" rel="external">贾扬清-DIY Deep Learning for Vision-  a Hands-On Tutorial with Caffe</a></li>
+</ul>
+<h3 id="答疑社区"><a href="#答疑社区" class="headerlink" title="答疑社区"></a>答疑社区</h3><ul>
+<li><a href="http://caffecn.cn/" target="_blank" rel="external">Caffe 中文社区</a></li>
+<li><a href="">Caffe 深度学习交流2群 534492004</a></li>
+<li><a href="https://gitter.im/BVLC/caffe" target="_blank" rel="external">Caffe 讨论组</a></li>
+<li><a href="http://valser.org/" target="_blank" rel="external">Valse 视觉与学习青年研讨会</a></li>
+<li><a href="">VALSE-D群 481109645</a></li>
+<li><a href="http://valser.org/article-86-1.html" target="_blank" rel="external">历次VALSE Webinar活动的录像</a></li>
+</ul>
+<h2 id="进阶篇"><a href="#进阶篇" class="headerlink" title="进阶篇"></a>进阶篇</h2><h3 id="CS231N-课程"><a href="#CS231N-课程" class="headerlink" title="CS231N 课程"></a>CS231N 课程</h3><ul>
+<li><a href="http://cs231n.stanford.edu/" target="_blank" rel="external">CS231n: Convolutional Neural Networks for Visual Recognition</a></li>
+<li><a href="https://zhuanlan.zhihu.com/intelligentunit?topic=%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%EF%BC%88Deep%20Learning%EF%BC%89" target="_blank" rel="external">智能单元-深度学习-cs231n 中文笔记</a></li>
+<li><a href="http://pan.baidu.com/s/1pKsTivp" target="_blank" rel="external">视频和课件</a></li>
+<li><a href="http://cs231n.stanford.edu/project.html" target="_blank" rel="external">课程资源</a></li>
+</ul>
+<h3 id="数据集"><a href="#数据集" class="headerlink" title="数据集"></a>数据集</h3><ul>
+<li><a href="http://www.sigvc.org/bbs/forum.php?mod=viewthread&amp;tid=72&amp;highlight=%B4%FA%C2%EB" target="_blank" rel="external">CV codes代码</a></li>
+<li><a href="http://host.robots.ox.ac.uk/pascal/VOC/voc2007/" target="_blank" rel="external">The PASCAL VOC Challenge 2007</a></li>
+<li><a href="http://host.robots.ox.ac.uk/pascal/VOC/voc2012/" target="_blank" rel="external">The PASCAL VOC Challenge 2012</a></li>
+<li><a href="http://mscoco.org/dataset/#download" target="_blank" rel="external">COCO - Common Objects in Context</a></li>
+<li><a href="http://image-net.org/challenges/LSVRC/2016/download-images-8r28#det" target="_blank" rel="external">ILSVRC2016 Challenge</a></li>
+<li><a href="http://image-net.org/challenges/LSVRC/2015/download-images-3j16.php" target="_blank" rel="external">ILSVRC2015 Challenge</a></li>
+<li><a href="http://image-net.org/challenges/LSVRC/2014/download-images-5jj5.php" target="_blank" rel="external">ILSVRC2014 Challenge</a></li>
+<li><a href="http://image-net.org/challenges/LSVRC/2012/nonpub-downloads" target="_blank" rel="external">ILSVRC2012 Challenge</a></li>
+<li><a href="http://image-net.org/challenges/LSVRC/2010/download-all-nonpub" target="_blank" rel="external">ILSVRC2010 Challenge</a></li>
+<li><a href="http://vis-www.cs.umass.edu/lfw/" target="_blank" rel="external">人脸</a></li>
+<li><a href="http://www.cs.tau.ac.il/~wolf/ytfaces/index.html" target="_blank" rel="external">youtube人脸</a></li>
+<li><a href="http://biometrics.idealtest.org/dbDetailForUser.do?id=8" target="_blank" rel="external">三维人脸</a></li>
+<li><a href="http://blog.csdn.net/freesum/article/details/7370823" target="_blank" rel="external">文本类</a></li>
+<li><a href="http://blog.csdn.net/wangyaninglm/article/details/38707257" target="_blank" rel="external">数字图像处理</a></li>
+<li><a href="http://blog.csdn.net/maxiemei/article/details/17281767" target="_blank" rel="external">机器视觉中常用的数据测试集</a></li>
+<li><a href="http://www.cnblogs.com/huashiyiqike/p/3778035.html" target="_blank" rel="external">常用图像数据集：标注、检索</a></li>
+<li><a href="http://www.cnblogs.com/fuleying/p/3895817.html" target="_blank" rel="external">花卉</a></li>
+<li><a href="http://www.cnblogs.com/xianghang123/p/3773086.html" target="_blank" rel="external">100+诡异的数据集</a></li>
+</ul>
+<h3 id="博客"><a href="#博客" class="headerlink" title="博客"></a>博客</h3><ul>
+<li><a href="http://www.cnblogs.com/louyihang-loves-baiyan/" target="_blank" rel="external">楼燚(yì)航的blog</a></li>
+<li><a href="http://blog.csdn.net/liumaolincycle/article/category/5705161" target="_blank" rel="external">liumaolincycle的博客</a></li>
+<li><a href="http://www.cnblogs.com/denny402" target="_blank" rel="external">denny的学习专栏</a></li>
+</ul>
+<h3 id="微调网络"><a href="#微调网络" class="headerlink" title="微调网络"></a>微调网络</h3><ul>
+<li><a href="">待续</a></li>
+<li><a href="http://www.cnblogs.com/louyihang-loves-baiyan/p/5038758.html" target="_blank" rel="external">楼燚(yì)航的blog-Caffe fine-tuning 微调网络</a></li>
+<li><a href="http://blog.csdn.net/sinat_30071459/article/details/51613304" target="_blank" rel="external">小咸鱼_-基于caffe的图像分类(1)——制作train.txt和val.txt文件</a></li>
+</ul>
+<h3 id="可视化"><a href="#可视化" class="headerlink" title="可视化"></a>可视化</h3><ul>
+<li><a href="">待续</a></li>
+</ul>
+<h3 id="扩展新layer"><a href="#扩展新layer" class="headerlink" title="扩展新layer"></a>扩展新layer</h3><ul>
+<li><a href="http://blog.csdn.net/sunshine_in_moon/article/details/51453951" target="_blank" rel="external">Sunshine_in_Moon的专栏-Caffe扩展新层</a></li>
+</ul>
+<h2 id="高级篇"><a href="#高级篇" class="headerlink" title="高级篇"></a>高级篇</h2><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
+<li><a href="http://daggerfs.com" target="_blank" rel="external">Yangqing Jia (贾扬清)</a></li>
+<li><a href="http://image-net.org/" target="_blank" rel="external">Image Net</a></li>
+</ul>
+<p>作者:<a href="https://github.com/mindcont" target="_blank" rel="external">mindcont</a>  2016-08-22 第一次编辑<br><strong>转载注明出处 <a href="http://blog.mindcont.com/2016/08/22/caffe-guide-book/">http://blog.mindcont.com/2016/08/22/caffe-guide-book/</a></strong></p>
+</div><script type="text/javascript" src="/js/share.js?v=0.0.0" async></script><a data-url="http://blog.mindcont.com/2016/09/04/caffe-guide-book/" data-id="cisor3f84001cig9orz6fou4c" class="article-share-link">分享到</a><div class="tags"><a href="/tags/Caffe/">Caffe</a></div><div class="post-nav"><a href="/2016/09/04/Historic-Photos-by-Marc-Riboud/" class="next">马克卢布： 时代光影</a></div><div id="disqus_thread"><script>var disqus_shortname = 'micro-era';
+var disqus_identifier = '2016/09/04/caffe-guide-book/';
+var disqus_title = 'Caffe 入门指南';
+var disqus_url = 'http://blog.mindcont.com/2016/09/04/caffe-guide-book/';
+(function() {
+  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//micro-era.disqus.com/count.js" async></script></div></div></div></div><div class="pure-u-1-4"><div id="sidebar"><div class="widget"><form action="//www.baidu.com/baidu" method="get" accept-charset="utf-8" target="_blank" class="search-form"><input type="search" name="word" maxlength="20" placeholder="Search"/><input type="hidden" name="si" value="http://blog.mindcont.com"/><input name="tn" type="hidden" value="bds"/><input name="cl" type="hidden" value="3"/><input name="ct" type="hidden" value="2097152"/><input name="s" type="hidden" value="on"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Kinect/">Kinect</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/深度学习/">深度学习</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/随笔日记/">随笔日记</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/Kinect/" style="font-size: 15px;">Kinect</a> <a href="/tags/树莓派/" style="font-size: 15px;">树莓派</a> <a href="/tags/matlab/" style="font-size: 15px;">matlab</a> <a href="/tags/OpenCV/" style="font-size: 15px;">OpenCV</a> <a href="/tags/安卓/" style="font-size: 15px;">安卓</a> <a href="/tags/Caffe/" style="font-size: 15px;">Caffe</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最新文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/09/04/caffe-guide-book/">Caffe 入门指南</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/04/Historic-Photos-by-Marc-Riboud/">马克卢布： 时代光影</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/04/Historic-Photos-by-XiaoQuan/">肖全：80 90我们这一代</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/18/git-commands/">Git 常用指令</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/06/Run-YOLO-Demo/">Ubuntu 14.04 运行 YOLO Demo 记录</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/31/TED-talks-Linus-Torvalds/">Linux 操作系统之父</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/29/docker-learning/">Docker 实践二三事</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/26/Nvidia-Digits-with-Caffe/">Nvidia Digits with Caffe 配置指南</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/22/Research-Progress-in-Object-Detection/">基于深度学习的目标检测研究进展</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/20/ubuntu1404-caffe-r3-cuda7-5-mkl/">Ubuntu 14.04 64bit + Caffe rc3 + CUDA 7.5 + Intel MKL 配置说明</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-comment-o"> 最近评论</i></div><script type="text/javascript" src="//micro-era.disqus.com/recent_comments_widget.js?num_items=5&amp;hide_avatars=1&amp;avatar_size=32&amp;excerpt_length=20&amp;hide_mods=1"></script></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="https://www.mindcont.com/" title="脑控科技" target="_blank">脑控科技</a><ul></ul><a href="https://www.mindcont.com/training/index.html" title="安卓培训" target="_blank">安卓培训</a><ul></ul><a href="http://ai.mindcont.com/" title="人工智能" target="_blank">人工智能</a><ul></ul><a href="ftp://www.mindcont.com/" title="FTP文件共享" target="_blank">FTP文件共享</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">© <a href="/." rel="nofollow">微纪元.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a id="rocket" href="#top" class="show"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.pack.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css?v=0.0.0"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create','UA-74386502-3','auto');ga('send','pageview');
+</script><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>

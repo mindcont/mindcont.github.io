@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.mindcont.com/"/>
-  <updated>2016-08-30T03:25:59.331Z</updated>
+  <updated>2016-09-04T15:43:50.556Z</updated>
   <id>http://blog.mindcont.com/</id>
   
   <author>
@@ -17,10 +17,10 @@
   
   <entry>
     <title>Caffe 入门指南</title>
-    <link href="http://blog.mindcont.com/2016/08/22/caffe-guide-book/"/>
-    <id>http://blog.mindcont.com/2016/08/22/caffe-guide-book/</id>
-    <published>2016-08-22T07:26:11.000Z</published>
-    <updated>2016-08-30T03:25:59.331Z</updated>
+    <link href="http://blog.mindcont.com/2016/09/04/caffe-guide-book/"/>
+    <id>http://blog.mindcont.com/2016/09/04/caffe-guide-book/</id>
+    <published>2016-09-04T15:43:46.000Z</published>
+    <updated>2016-09-04T15:43:50.556Z</updated>
     
     <content type="html">&lt;p&gt;&lt;img src=&quot;/images/caffe.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;http://caffe.berkeleyvision.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Caffe&lt;/a&gt;是一个清晰而高效的深度学习的框架，其作者是博士毕业于UC Berkeley的&lt;a href=&quot;http://daggerfs.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;贾扬清&lt;/a&gt;，目前在Google工作。&lt;br&gt;&lt;a href=&quot;http://caffe.berkeleyvision.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Caffe&lt;/a&gt;是纯粹的C++/CUDA架构，支持命令行、Python和MATLAB接口；可以在CPU和GPU54直接无缝切换：&lt;br&gt;&lt;figure class=&quot;highlight less&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;Caffe&lt;/span&gt;::set_mode(&lt;span class=&quot;attribute&quot;&gt;Caffe&lt;/span&gt;::GPU);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
@@ -35,19 +35,45 @@
 &lt;li&gt;开放性：公开的代码和参考模型用于再现。&lt;/li&gt;
 &lt;li&gt;社区好：可以通过BSD-2参与开发与讨论。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;入门篇&quot;&gt;&lt;a href=&quot;#入门篇&quot; class=&quot;headerlink&quot; title=&quot;入门篇&quot;&gt;&lt;/a&gt;入门篇&lt;/h2&gt;&lt;p&gt;前期入门主要根据自己的机器（nvidia显卡）完成Caffe 的安装，运行&lt;a href=&quot;http://caffe.berkeleyvision.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Caffe官网&lt;/a&gt;和 &lt;a href=&quot;https://github.com/bvlc/caffe&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;github&lt;/a&gt; repo 上的&lt;strong&gt;例程&lt;/strong&gt;。&lt;/p&gt;
-&lt;h3 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h3&gt;&lt;p&gt;安装请仔细阅读下面的中文教程，&lt;strong&gt;编译中遇到的错误&lt;/strong&gt;请在 github issues用英文仔细查看错误原因。而且大部分都是环境依赖，路径错误。&lt;/p&gt;
+&lt;h2 id=&quot;入门篇&quot;&gt;&lt;a href=&quot;#入门篇&quot; class=&quot;headerlink&quot; title=&quot;入门篇&quot;&gt;&lt;/a&gt;入门篇&lt;/h2&gt;&lt;p&gt;前期入门主要根据自己的机器（nvidia显卡）完成Caffe 的安装，运行 &lt;a href=&quot;http://caffe.berkeleyvision.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Caffe官网&lt;/a&gt;和  &lt;a href=&quot;https://github.com/bvlc/caffe&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;github&lt;/a&gt; repo 上的&lt;strong&gt;例程&lt;/strong&gt;。&lt;/p&gt;
+&lt;h3 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h3&gt;&lt;p&gt;安装请仔细阅读下面的中文教程，&lt;strong&gt;编译中遇到的错误&lt;/strong&gt;请在 github issues用英文仔细查看错误原因。而且大部分都是&lt;strong&gt;环境依赖，路径错误&lt;/strong&gt;。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://blog.mindcont.com/2016/07/20/ubuntu1404-caffe-r3-cuda7-5-mkl/&quot;&gt;Ubuntu 14.04 64bit + Caffe rc3 + CUDA 7.5 + Intel MKL 配置说明&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://caffe.berkeleyvision.org/installation.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Installation&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://github.com/bvlc/caffe/issues&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;issues&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;例程&quot;&gt;&lt;a href=&quot;#例程&quot; class=&quot;headerlink&quot; title=&quot;例程&quot;&gt;&lt;/a&gt;例程&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;&quot;&gt;LeNet MNIST 手写数字&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;&quot;&gt;Fine-tuning for style recognition&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;&quot;&gt;CaffeNet C++ Classification example&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;&quot;&gt;Web demo&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&quot;例程&quot;&gt;&lt;a href=&quot;#例程&quot; class=&quot;headerlink&quot; title=&quot;例程&quot;&gt;&lt;/a&gt;例程&lt;/h3&gt;&lt;p&gt;配合官方文档 例如mnist 手写体识别，其文档在 $CAFFE_ROOT/examples/mnist/Readme.md ，运行并理解其流程。尤其以下面几个最为重要，当细细品味。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;例程名&lt;/th&gt;
+&lt;th&gt;实现&lt;/th&gt;
+&lt;th&gt;学习意义&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;LeNet MNIST&lt;/td&gt;
+&lt;td&gt;手写数字识别&lt;/td&gt;
+&lt;td&gt;理解模型&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;CaffeNet C++ Classification example&lt;/td&gt;
+&lt;td&gt;c++ 代码实现图片分类&lt;/td&gt;
+&lt;td&gt;理解如何用c++ 调用caffe&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fine-tuning for style recognition&lt;/td&gt;
+&lt;td&gt;根据自己数据集微调模型&lt;/td&gt;
+&lt;td&gt;迁移学习，构建自己数据集，微调模型&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Web demo&lt;/td&gt;
+&lt;td&gt;基于web 网页的图片分类&lt;/td&gt;
+&lt;td&gt;如何构建 client /server&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;h3 id=&quot;入门书籍&quot;&gt;&lt;a href=&quot;#入门书籍&quot; class=&quot;headerlink&quot; title=&quot;入门书籍&quot;&gt;&lt;/a&gt;入门书籍&lt;/h3&gt;&lt;p&gt;如果链接失效，可以访问 &lt;a href=&quot;ftp://mindcont.com/Book&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ftp://mindcont.com/Book&lt;/a&gt; 获取。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://pan.baidu.com/s/1c0Ri2Py#path=%252FCaffeCN%25E7%25BF%25BB%25E8%25AF%2591&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Caffe 官方教程中译本&lt;/a&gt;&lt;/li&gt;
@@ -63,7 +89,13 @@
 &lt;li&gt;&lt;a href=&quot;&quot;&gt;VALSE-D群 481109645&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://valser.org/article-86-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;历次VALSE Webinar活动的录像&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;进阶篇&quot;&gt;&lt;a href=&quot;#进阶篇&quot; class=&quot;headerlink&quot; title=&quot;进阶篇&quot;&gt;&lt;/a&gt;进阶篇&lt;/h2&gt;&lt;h3 id=&quot;数据集&quot;&gt;&lt;a href=&quot;#数据集&quot; class=&quot;headerlink&quot; title=&quot;数据集&quot;&gt;&lt;/a&gt;数据集&lt;/h3&gt;&lt;ul&gt;
+&lt;h2 id=&quot;进阶篇&quot;&gt;&lt;a href=&quot;#进阶篇&quot; class=&quot;headerlink&quot; title=&quot;进阶篇&quot;&gt;&lt;/a&gt;进阶篇&lt;/h2&gt;&lt;h3 id=&quot;CS231N-课程&quot;&gt;&lt;a href=&quot;#CS231N-课程&quot; class=&quot;headerlink&quot; title=&quot;CS231N 课程&quot;&gt;&lt;/a&gt;CS231N 课程&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://cs231n.stanford.edu/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;CS231n: Convolutional Neural Networks for Visual Recognition&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/intelligentunit?topic=%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%EF%BC%88Deep%20Learning%EF%BC%89&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;智能单元-深度学习-cs231n 中文笔记&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://pan.baidu.com/s/1pKsTivp&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;视频和课件&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://cs231n.stanford.edu/project.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;课程资源&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;数据集&quot;&gt;&lt;a href=&quot;#数据集&quot; class=&quot;headerlink&quot; title=&quot;数据集&quot;&gt;&lt;/a&gt;数据集&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.sigvc.org/bbs/forum.php?mod=viewthread&amp;amp;tid=72&amp;amp;highlight=%B4%FA%C2%EB&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;CV codes代码&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://host.robots.ox.ac.uk/pascal/VOC/voc2007/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;The PASCAL VOC Challenge 2007&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://host.robots.ox.ac.uk/pascal/VOC/voc2012/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;The PASCAL VOC Challenge 2012&lt;/a&gt;&lt;/li&gt;
@@ -89,12 +121,12 @@
 &lt;li&gt;&lt;a href=&quot;http://www.cnblogs.com/denny402&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;denny的学习专栏&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&quot;微调网络&quot;&gt;&lt;a href=&quot;#微调网络&quot; class=&quot;headerlink&quot; title=&quot;微调网络&quot;&gt;&lt;/a&gt;微调网络&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;&quot;&gt;待续&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.cnblogs.com/louyihang-loves-baiyan/p/5038758.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;楼燚(yì)航的blog-Caffe fine-tuning 微调网络&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/sinat_30071459/article/details/51613304&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;小咸鱼_-基于caffe的图像分类(1)——制作train.txt和val.txt文件&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&quot;可视化&quot;&gt;&lt;a href=&quot;#可视化&quot; class=&quot;headerlink&quot; title=&quot;可视化&quot;&gt;&lt;/a&gt;可视化&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/mindcont/caffe/blob/work/%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/caffe%20%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4.md&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;caffe 常用指令&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;&quot;&gt;待续&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&quot;扩展新layer&quot;&gt;&lt;a href=&quot;#扩展新layer&quot; class=&quot;headerlink&quot; title=&quot;扩展新layer&quot;&gt;&lt;/a&gt;扩展新layer&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/sunshine_in_moon/article/details/51453951&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Sunshine_in_Moon的专栏-Caffe扩展新层&lt;/a&gt;&lt;/li&gt;
@@ -116,6 +148,78 @@
     
     
       <category term="Caffe" scheme="http://blog.mindcont.com/tags/Caffe/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>马克卢布： 时代光影</title>
+    <link href="http://blog.mindcont.com/2016/09/04/Historic-Photos-by-Marc-Riboud/"/>
+    <id>http://blog.mindcont.com/2016/09/04/Historic-Photos-by-Marc-Riboud/</id>
+    <published>2016-09-04T15:00:46.000Z</published>
+    <updated>2016-09-04T15:40:51.589Z</updated>
+    
+    <content type="html">&lt;p&gt;吕布出生于法国里昂，并在那里读中学，十四岁的时候（1937年）他第一次拍摄照片。1943年到1945年，他积极从事于法国抵抗运动，1945年到1948年，吕布在中央理工学习工程。1951年前，吕布在里昂的工厂内当一名工程师，此后他成为一名自由摄影师，1952年，吕布前往巴黎，与玛格南图片社的创始人亨利·卡蒂尔-布雷松、罗伯特·卡帕会面。吕布擅长通过高超的构图，把握生活中的精彩瞬间。吕布经常使用莱卡M6旁轴胶片相机与35毫米镜头拍摄。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/Historic_Photos/Marc_Riboud.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;1957年他成为首个被允许进入新中国拍摄的西方摄影师，他曾先后22次访问中国，跨越“毛时代”，“邓时代”以及新时代，他用冷静而饱含善意的纪实摄影作品，记录中国社会的变迁，让无数西方人看到了最真实的中国面孔。1968年、1972年以及1976年，他对北越作了数次新闻报道，而后游历世界各地，但主要在亚洲、非洲以及美国。&lt;/p&gt;
+&lt;p&gt;吕布见证了战争的残暴（在越战中他曾对越南和美国都做过拍摄）、文化的倒退（中国毛泽东时期的文化大革命）。但是吕布将镜头对准了日常生活的脚步，展现世界的各个层面，包括孩童在巴黎每天的嬉戏。&lt;/p&gt;
+&lt;p&gt;成名作《埃菲尔铁塔上的油漆工》1953&lt;br&gt;&lt;img src=&quot;/images/Historic_Photos/Marc_Riboud_3.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;1957年，马克.吕布从香港坐火车到广州，拍摄的关于中国的第一张照片&lt;br&gt;&lt;img src=&quot;/images/Historic_Photos/first_china.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;96岁的齐白石，于获国际和平奖后不久，北京1957&lt;br&gt;&lt;img src=&quot;/images/Historic_Photos/qibaishi_1957.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;街头穿着大氅的“贵族”，北京1957&lt;br&gt;&lt;img src=&quot;/images/Historic_Photos/guizu_1957.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;胸口碎大石，北京1957&lt;br&gt;&lt;img src=&quot;/images/Historic_Photos/suidashi_1957.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;正在修建的长江大桥，武汉1957&lt;br&gt;&lt;img src=&quot;/images/Historic_Photos/changjiang_1957.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;纤夫，重庆1957&lt;br&gt;&lt;img src=&quot;/images/Historic_Photos/qianfu_1957.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;周恩来，1965，后来八九十年代马克于街头拍摄大爷大妈时，有时候会被驱赶，他就会拿出这张照片，解围百试不爽&lt;br&gt;&lt;img src=&quot;/images/Historic_Photos/enlai_1965.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;古玩店窗口，北京1965&lt;br&gt;&lt;img src=&quot;/images/Historic_Photos/guwandian_1965.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;那时候“运动”要开始了，只有中央美院还会有裸体模特，1965&lt;br&gt;&lt;img src=&quot;/images/Historic_Photos/yangmei_1965.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;“运动”开始了，女生不准留长发，也不准穿花花绿绿的衣服 上海芭蕾舞学校学生，桌上是语录1971&lt;br&gt;&lt;img src=&quot;/images/Historic_Photos/balei_1971.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;抓拍的邓小平跨过门槛，那时候的中国也刚跨过门槛，北京1982&lt;br&gt;&lt;img src=&quot;/images/Historic_Photos/menkan_1982.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;西藏1985&lt;br&gt;&lt;img src=&quot;/images/Historic_Photos/xizang_1985.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;平遥2001&lt;br&gt;&lt;img src=&quot;/images/Historic_Photos/pingyao_2001.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;毕加索1952&lt;br&gt;&lt;img src=&quot;/images/Historic_Photos/bijiasuo.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;赫鲁晓夫1960&lt;br&gt;&lt;img src=&quot;/images/Historic_Photos/heluxiaofu.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;罗素1962&lt;br&gt;&lt;img src=&quot;/images/Historic_Photos/luosu.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;卡斯特罗1963&lt;br&gt;&lt;img src=&quot;/images/Historic_Photos/kasiteluo.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;列侬1964&lt;br&gt;&lt;img src=&quot;/images/Historic_Photos/lienong.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;铁托1964&lt;br&gt;&lt;img src=&quot;/images/Historic_Photos/tietuo.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;存在主义和第二性 让·保罗·萨特与西蒙娜·德·波伏娃1967&lt;br&gt;&lt;img src=&quot;/images/Historic_Photos/cunzaizhuyi.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;甘地夫人1971&lt;br&gt;&lt;img src=&quot;/images/Historic_Photos/gandi.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;贝聿铭1978 美籍华人建筑师，1983年普利茲克獎得主，被譽為「現代主義建築的最後大師」&lt;br&gt;&lt;img src=&quot;/images/Historic_Photos/beijinming.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;2016年8.30，大师去了另外一个世界。&lt;br&gt;&lt;img src=&quot;/images/Historic_Photos/Marc_Riboud_2.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;作者：未央之歌Peking&lt;br&gt;链接：&lt;a href=&quot;http://www.zhihu.com/question/23523696/answer/120121636&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.zhihu.com/question/23523696/answer/120121636&lt;/a&gt;&lt;br&gt;来源：知乎&lt;br&gt;著作权归作者所有，转载请联系作者获得授权。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;吕布出生于法国里昂，并在那里读中学，十四岁的时候（1937年）他第一次拍摄照片。1943年到1945年，他积极从事于法国抵抗运动，1945年到1948年，吕布在中央理工学习工程。1951年前，吕布在里昂的工厂内当一名工程师，此后他成为一名自由摄影师，1952年，吕布前往巴黎
+    
+    </summary>
+    
+      <category term="随笔日记" scheme="http://blog.mindcont.com/categories/%E9%9A%8F%E7%AC%94%E6%97%A5%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>肖全：80 90我们这一代</title>
+    <link href="http://blog.mindcont.com/2016/09/04/Historic-Photos-by-XiaoQuan/"/>
+    <id>http://blog.mindcont.com/2016/09/04/Historic-Photos-by-XiaoQuan/</id>
+    <published>2016-09-04T14:22:00.000Z</published>
+    <updated>2016-09-04T14:56:58.675Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;img src=&quot;/images/Historic_Photos/xiaoquan.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;他叫肖全，历经十余年拍摄了《我们这一代》，几乎网罗了八九十年代的各路文化精英。这些今天占据中国文艺领域半壁江山的大腕们，在青涩生长的年纪以一种难得一见的随性姿态走进了肖全的镜头，成就了肖全在摄影圈的地位。&lt;/p&gt;
+&lt;p&gt;他是“中国最好的人像摄影师”，拍谁就是谁这辈子最好的照片。——-江湖有这样的传说&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;北岛&lt;br&gt;&lt;img src=&quot;/images/Historic_Photos/beidao.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;顾城和谢烨&lt;br&gt;&lt;img src=&quot;/images/Historic_Photos/gucheng_xiehua.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;窦唯&lt;br&gt;&lt;img src=&quot;/images/Historic_Photos/douwei.jpg&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+&lt;li&gt;贾平凹&lt;br&gt;&lt;img src=&quot;/images/Historic_Photos/jiapingwa.jpg&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+&lt;li&gt;刘震云&lt;br&gt;&lt;img src=&quot;/images/Historic_Photos/liuzhenyun.jpg&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+&lt;li&gt;余华&lt;br&gt;&lt;img src=&quot;/images/Historic_Photos/yuhua.jpg&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+&lt;li&gt;陈丹青&lt;br&gt;&lt;img src=&quot;/images/Historic_Photos/chendanqing.jpg&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+&lt;li&gt;史铁生&lt;br&gt;&lt;img src=&quot;/images/Historic_Photos/shitiesheng.jpg&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+&lt;li&gt;三毛&lt;br&gt;&lt;img src=&quot;/images/Historic_Photos/sanmao.jpg&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+&lt;li&gt;崔健&lt;br&gt;&lt;img src=&quot;/images/Historic_Photos/cuijian.jpg&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+&lt;li&gt;唐朝乐队&lt;br&gt;&lt;img src=&quot;/images/Historic_Photos/tangchaoyuedui.jpg&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+&lt;li&gt;姜文&lt;br&gt;&lt;img src=&quot;/images/Historic_Photos/jiangwen.jpg&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+&lt;li&gt;杨丽萍&lt;br&gt;&lt;img src=&quot;/images/Historic_Photos/yangliping.jpg&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+&lt;li&gt;易知难&lt;br&gt;&lt;img src=&quot;/images/Historic_Photos/yizhinan.jpg&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+&lt;li&gt;杨乐乐&lt;br&gt;&lt;img src=&quot;/images/Historic_Photos/yanglele.jpg&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;作者：未央之歌Peking&lt;br&gt;链接：&lt;a href=&quot;http://www.zhihu.com/question/23523696/answer/120121636&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.zhihu.com/question/23523696/answer/120121636&lt;/a&gt;&lt;br&gt;来源：知乎&lt;br&gt;著作权归作者所有，转载请联系作者获得授权。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/Historic_Photos/xiaoquan.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;他叫肖全，历经十余年拍摄了《我们这一代》，几乎网罗了八九十年代的各路文化精英。这些今天占据中国文艺领域半壁江山的大腕们，在青涩生长的年纪以一种难得一
+    
+    </summary>
+    
+      <category term="随笔日记" scheme="http://blog.mindcont.com/categories/%E9%9A%8F%E7%AC%94%E6%97%A5%E8%AE%B0/"/>
+    
     
   </entry>
   
@@ -2225,105 +2329,6 @@
     
       <category term="Linux" scheme="http://blog.mindcont.com/categories/Linux/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>Kinect骨骼提取原理</title>
-    <link href="http://blog.mindcont.com/2016/05/10/Real-Time-Human-Pose-Recognition-in-Parts-from-Single-Depth-Images/"/>
-    <id>http://blog.mindcont.com/2016/05/10/Real-Time-Human-Pose-Recognition-in-Parts-from-Single-Depth-Images/</id>
-    <published>2016-05-10T12:39:47.000Z</published>
-    <updated>2016-05-11T10:20:53.943Z</updated>
-    
-    <content type="html">&lt;p&gt;我们给出了从单深度图像中快速准确预测出人体关节3D位置的新方法，且没有使用时间信息。Kinect获取人体骨骼信息的大致原理可以概括为：&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;1、使用物体识别方法，&lt;strong&gt;设计了身体组件的中间层表示&lt;/strong&gt;，从而将困难的姿势估计问题映射为简单些的逐像素分类问题。2、大型、丰富多样的训练数据集保证了&lt;strong&gt;分类器(随机决策森林)估计&lt;/strong&gt;身体组件时具有姿势、身材、衣着等不变性。3、通过&lt;strong&gt;重投影分类器&lt;/strong&gt;的(身体组件估计结果)，我们生成了几个人体关节的可信3D估计。&lt;/p&gt;
-&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;一些系统通过帧到帧的跟踪获得了很高的速度，但苦于&lt;strong&gt;无法快速重新初始化因而不鲁棒&lt;/strong&gt;。本文中，我们专注于组件的姿势识别：&lt;strong&gt;从单深度图像中检测出每个骨骼关节的少量3D候选位置&lt;/strong&gt;。我们设计了每帧初始化和恢复的技术，以作为任何适当跟踪算法的补充，从而可以进一步融入时间和运动的一致性中。这里给出的算法形成了Kinect游戏平台的核心组件。&lt;br&gt;&lt;img src=&quot;/images/Kinect-Skeleton-1.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;如图1所示，受近来物体识别工作将物体分成多个组件策略启发，我们的方法受两个关键设计目标驱动：&lt;br&gt;&lt;strong&gt;1、计算高效且鲁棒&lt;/strong&gt;。单幅输入深度图像被分割成稠密概率身体组件标签，组件定义为与感兴趣骨骼关节空间上相近的身体部分。&lt;br&gt;&lt;strong&gt;2、将推理出的组件重投影到世界空间&lt;/strong&gt;，我们局部化每个组件分布的空间模式，从而形成每个骨骼关节3D位置的带可信权重的预测，可能有几个。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;我们将身体组件的分割(从身体分割出各组件)当作逐像素分类问题&lt;/strong&gt;。对每个像素分别评估避免了不同身体关节间的组合搜索，尽管单个身体组件在不同情形下的外观仍千差万别。&lt;strong&gt;我们从运动捕捉数据库中采样出不同身材和体型人物的各种姿势（人体的深度图），然后生成逼真的合成深度图作为训练数据。我们训练出了一个深随机决策森林分类器，为避免过拟合，我们使用了数十万幅训练图像&lt;/strong&gt;。区别式深度比较图像特征简单产生3D变换不变性的同时维持了计算的高效性。为获得更高的速度，可以使用GPU在每个像素上并行运行分类器。推理出的逐像素分布的空间模式使用mean shift计算，由此空间模式给出3D关节的预测。&lt;/p&gt;
-&lt;p&gt;我们的主要贡献是：&lt;strong&gt;使用新颖的身体组件中间表示将姿势估计问题变成了物体识别问题，为低计算代价和高精度从空间上定位感兴趣的关节而设计了这个中间表示&lt;/strong&gt;。&lt;br&gt;我们从实验也获得了几个启示：&lt;br&gt;(i)合成深度训练数据是真实数据的极好代理（代替品）；&lt;br&gt;(ii)用各种合成数据成比例增大学习问题对（获得）高精确性很重要；&lt;br&gt;(iii)我们基于组件的方法甚至比精妙的确切最近邻方法更通用。&lt;/p&gt;
-&lt;h1 id=&quot;数据&quot;&gt;&lt;a href=&quot;#数据&quot; class=&quot;headerlink&quot; title=&quot;数据&quot;&gt;&lt;/a&gt;数据&lt;/h1&gt;&lt;p&gt;姿势估计研究往往关注克服训练数据缺乏的技术，这是因为两个问题。&lt;strong&gt;第一，使用计算机图形学技术生成逼真的强度图像往往受限于衣服、头发和皮肤造成的颜色和纹理的极大多变性，从而往往使生成的图像退化为2D轮廓&lt;/strong&gt;。尽管深度摄像机极大地减小了这种困难，仍然存在相当可观的身体和服装shape变化。&lt;strong&gt;第二个限制是合成身体姿势图像需要以动作捕获（mocap）的数据作为输入&lt;/strong&gt;。尽管存在模拟人类运动的技术，却无法模拟人类的所有自主运动。&lt;/p&gt;
-&lt;h2 id=&quot;深度成像&quot;&gt;&lt;a href=&quot;#深度成像&quot; class=&quot;headerlink&quot; title=&quot;深度成像&quot;&gt;&lt;/a&gt;深度成像&lt;/h2&gt;&lt;p&gt;深度摄像机较传统强度传感器有几个&lt;strong&gt;优势&lt;/strong&gt;：工作光强水平低，提供校准后的尺度估计，具有颜色和纹理不变性，解决了姿势的轮廓模糊问题。&lt;strong&gt;它们还极大简化了背景减除操作，本文我们将这一点作为前提之一&lt;/strong&gt;。对我们的方法更重 要的是，我们可以直接合成人物的逼真深度图像，从而可以轻易的建起大型的训练数据集。&lt;/p&gt;
-&lt;h2 id=&quot;运动捕捉数据&quot;&gt;&lt;a href=&quot;#运动捕捉数据&quot; class=&quot;headerlink&quot; title=&quot;运动捕捉数据&quot;&gt;&lt;/a&gt;运动捕捉数据&lt;/h2&gt;&lt;p&gt;人体可以做出很多姿势，这些是很难模仿的。&lt;strong&gt;因此，我们捕获人类运动构成一个大型运动捕获（mocap）数据库&lt;/strong&gt;。我们的目的是包含人们在娱乐场景下所能做的所有姿势。数据库包含几百段内容为驾驶、跳舞、踢、跑、和导航菜单等的视频序列的约500k帧图像。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;我们希望我们半局部的身体组件分类器多少能推广到未见过的姿势&lt;/strong&gt;。特别的，我们并不需要记录不同肢体的所有可能组合；实际上已证实较多的各种姿势已经足够了。进一步的，我们不需要记录运动捕获（mocap）关于垂直轴的旋转变化、左右镜像、场景位置、身材和体型、或摄像机位置，所有这些都可以（半）自动添加。&lt;/p&gt;
-&lt;p&gt;因为分类器没有使用时间信息，&lt;strong&gt;我们关注静止的姿势而不是运动&lt;/strong&gt;。通常，一macap帧到下一帧之间的姿势变化小得可以忽略。因此，我们使用“最远邻(furthest neighbor)”聚集[15]从初始mocap数据中除去大量相似、冗余的姿势，“最远邻”聚集将姿势p1和p2之间的距离定义为，&lt;img src=&quot;/images/Kinect-formula-1.png&quot; alt=&quot;&quot;&gt;即身体关节j的最大欧氏距离。我们使用100k姿势的子集以确保任何两个姿势之间的距离不小于5cm。&lt;/p&gt;
-&lt;p&gt;为了使用尚未发现的姿势空间区域提炼mocap（运动捕获）数据库，&lt;strong&gt;我们发现必须迭代执行包括运动捕获、从我们的模型采样、训练分类器和测试关节预测准确性的过程&lt;/strong&gt;。我们早期的实验使用了CMU运动捕获数据库。尽管覆盖的姿势空间远远不够，它还是给出了可接受的结果。&lt;/p&gt;
-&lt;h2 id=&quot;生成合成数据&quot;&gt;&lt;a href=&quot;#生成合成数据&quot; class=&quot;headerlink&quot; title=&quot;生成合成数据&quot;&gt;&lt;/a&gt;生成合成数据&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;我们建立了一个随机渲染管道，从中我们可以对全标注训练图像集采样&lt;/strong&gt;。我们建立该管道有两个目的：&lt;strong&gt;真实性和多样性&lt;/strong&gt;。为使训练出的模型良好工作，采样必须与真实摄像机图像十分相似，并且良好覆盖我们在测试时希望识别的外观多样性。我们的特征对深度/尺度和平移变化都进行了显式处理（见下述），但是其它不变性没能有效编码。因此，我们从&lt;strong&gt;（训练）数据学习摄像机、姿势、体型和身材的不变性&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;合成管道首先随机采样一组参数，然后使用标准计算机图形学技术从纹理映射3D网络渲染深度和（见下述）身体组件图像&lt;/strong&gt;。使用文献[4]中的方法，运动捕获重新指向覆盖身材和体型的15个基础网格。在身高和体重上使用的进一步轻微随机变化覆盖了额外的身材可变性。其它随机参数包括mocap帧、摄像机姿势、摄像机噪声、服装和发型。在补充材料中我们给出了这些变化的更多细节。图2比较了管道的各种输出与手工标注的摄像机图像。&lt;br&gt;&lt;img src=&quot;/images/Kinect-Skeleton-2.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;人体关节推理和联合&quot;&gt;&lt;a href=&quot;#人体关节推理和联合&quot; class=&quot;headerlink&quot; title=&quot;人体关节推理和联合&quot;&gt;&lt;/a&gt;人体关节推理和联合&lt;/h1&gt;&lt;p&gt;在本节给出我们的身体组件中间表示、描述区别式深度图像特征、回顾决策森林及其在身体组件识别中的应用，最后讨论怎样使用一个模式(mode)发现算法生成关节位置的估计（proposals）。&lt;/p&gt;
-&lt;h2 id=&quot;人体关节标记&quot;&gt;&lt;a href=&quot;#人体关节标记&quot; class=&quot;headerlink&quot; title=&quot;人体关节标记&quot;&gt;&lt;/a&gt;人体关节标记&lt;/h2&gt;&lt;p&gt;本文的一个主要贡献是我们的&lt;strong&gt;身体组件中间表示&lt;/strong&gt;。我们定义了稠密覆盖身体的几个局部身体组件标签，如图2的颜色编码。&lt;strong&gt;一些组件定义是用来直接定位感兴趣的特定骨架关节的，其他的是用来填补身体空白或者通过组合来预测其他关节的&lt;/strong&gt;。我们的中间表示将问题转化成一个能很容易使用&lt;strong&gt;高效分类算法&lt;/strong&gt;解决的问题。在4.3节我们证明了这种转换的惩罚代价很小。&lt;/p&gt;
-&lt;p&gt;组件在纹理映射中描述，纹理映射融合了渲染时的各种特征。&lt;strong&gt;深度和身体组件图像对作为全标注数据来训练分类器&lt;/strong&gt;(见下述)。本文中的实验使用了31个人体组件：LU/RU/LW/RW头，颈，L/R肩，LU/RU/LW/RW手臂,L/R肘,L/R腕,L/R手,LU/RU/LW/RW躯干,LU/RU/LW/RW腿,L/R膝,L/R踝,L/R脚(Left, Right, Upper, loWer)。明确左右组件使分类器可以区分身体的左右侧。&lt;/p&gt;
-&lt;p&gt;当然，为适用特定的应用，这些组件的精确定义可以修改。如在上半身跟踪场景中，所有下半身的组件都可以去掉。组件应该充分小以准确定位身体关节，但是也不能太多以免浪费分类器的能力。&lt;/p&gt;
-&lt;h2 id=&quot;深度图像特征&quot;&gt;&lt;a href=&quot;#深度图像特征&quot; class=&quot;headerlink&quot; title=&quot;深度图像特征&quot;&gt;&lt;/a&gt;深度图像特征&lt;/h2&gt;&lt;p&gt;受文献[20]中使用特征启发，我们使用简单的深度比较特征。对于给定的像素x，特征计算如下：&lt;br&gt;&lt;img src=&quot;/images/Kinect-formula-2.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;其中dI(x)是图像I在像素x处的深度，参数Ø= (u; v)描述了偏移u和v。使用规范化偏移保证了特征是深度不变的：对身体的一个给定点，无论它离摄像机近还是远，（特征计算）都会给出一个固定的世界空间偏移。特征因此也是3D变换不变的（modulo perspective effects，模型的视角影响）。对背景中或图像边界之外的偏移像素，深度探针将给出一个大的正常数。&lt;br&gt;&lt;img src=&quot;/images/Kinect-Skeleton-3.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;图3图示了不同像素位置x的两个特征。特征（Ø1）对接近身体顶部位置的像素x会有较大正响应，但对较低身体位置处像素点的响应则接近0。而特征（Ø2）将有助于发现细竖直结构，如手臂。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;任意单个这样的特征都只能提供关于像素属于身体哪个组件的微弱信号，但是在决策森林中组合起来后，他们就足以准确区分所有训练组件&lt;/strong&gt;。设计这些特征充分考虑到了计算效率：&lt;strong&gt;不需要预处理；（计算）每个特征最多只需要读取3个图像像素和执行5个算术运算；特征（计算）可以直接使用GPU实现&lt;/strong&gt;。如果采用更大的计算代价，则可以采用潜在的性能更强的基于诸如区域深度积分、曲率的特征，或者使用局部描述符，如[5]中所采用的。&lt;br&gt;&lt;img src=&quot;/images/Kinect-Skeleton-4.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;随机决策森林&quot;&gt;&lt;a href=&quot;#随机决策森林&quot; class=&quot;headerlink&quot; title=&quot;随机决策森林&quot;&gt;&lt;/a&gt;随机决策森林&lt;/h2&gt;&lt;p&gt;随机决策树和森林被证实是对于很多任务的快速有效多类分类器，且可以在GPU上高效实现；如图4所示，森林是T棵决策树的总体，每棵树都有分支节点和叶子节；每个分支都包含特征f(Ø)和一个阈值T组成；图像I的像素x进行分类时，从根节点开始不断计算公式1得到特征值，然后根据(特征值)与阈值T的比较结果往左或者往右分支。树T的叶子节点存储了身体组件标签c的训练出的分布。对所有树的分布求平均值并作为最终的分类：&lt;br&gt;&lt;img src=&quot;/images/Kinect-formula-3.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;训练&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;每棵树都在一个&lt;strong&gt;不同的随机的合成样本库上训练&lt;/strong&gt;得到。&lt;strong&gt;从每幅图像中随机选择2000个样本像素构成大致在各身体组件上均匀分布的随机子集&lt;/strong&gt;。&lt;br&gt;每棵树都使用下面的算法训练：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;1.随机给出一组（a set of）分支候选（特征参数和阈值);&lt;/li&gt;
-&lt;li&gt;2.使用每个将样本集分成左子集和右子集;&lt;br&gt;&lt;img src=&quot;/images/Kinect-formula-4.png&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
-&lt;li&gt;3.通过求解最大信息增益问题确定：&lt;br&gt;&lt;img src=&quot;/images/Kinect-formula-5.png&quot; alt=&quot;&quot;&gt;其中香农熵(Shannon entropy)在所有的身体组件标签的规范化直方图上进行计算&lt;/li&gt;
-&lt;li&gt;4.如果最大增益仍然很大（足够大），并且树的深度没有达到最大值，则在左右子集和中继续递归。&lt;br&gt;为降低训练时间，我们采用了分布式实现。在1000个核的集群上从1百万幅图像中将3棵树训练到20层花了大约1天。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;联接关节&quot;&gt;&lt;a href=&quot;#联接关节&quot; class=&quot;headerlink&quot; title=&quot;联接关节&quot;&gt;&lt;/a&gt;联接关节&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;前述身体组件识别推理出逐像素信息。现在需要将所有像素的这些信息汇聚起来形成3D骨架关节位置的可靠预测&lt;/strong&gt;。这些预测是我们算法的最终输出，可以在跟踪算法中进行自初始化和从失败中恢复。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;一个简单的选择是使用知名的校准深度为每个组件累加概率(分布)团的全局3D中心&lt;/strong&gt;。然而，无关像素会严重降低这样一个全局估计的质量。因此，我们采用了基于带权高斯核均值转移（mean shift）[10]的局部模式发现方法。&lt;/p&gt;
-&lt;p&gt;我们定义了如下的（逐个）身体组件的密度估计量：&lt;br&gt;&lt;img src=&quot;/images/Kinect-formula-6.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;其中是X 是3D世界空间中的坐标，N是图像像素数量，Wic是像素权重，Xi是图像像素xi在给定深度d（Xi）到世界空间的重新投影。Bc是训练出的每个组件的宽度。像素权重同时考虑了在像素上推理出的（属于哪个身体组件的）概率和像素在世界空间中的表面积：&lt;br&gt;&lt;img src=&quot;/images/Kinect-formula-7.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;这保证了密度估计是深度不变的，而且使关节预测的准确性有了一个虽小却意义重大的提高。根据身体组件定义不同，可以通过在少数组件集合中预累加得到后验概率P(c|I,x)。例如，在我们的实验中，可以融合覆盖头的四个身体组件来定位头关节。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;使用mean shift在这个概率密度（估计）中高效发现模式&lt;/strong&gt;。对于组件c，我们训练出一个概率阈值λc，所有概率高于该阈值的像素都作为（mean shift）的起始点。当像素权重之和达到每个模式（mode）时就得到了最终的可信估计。这被证明比采用模态密度估计更可靠。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;检测出的模式（实际上）位于身体的表面&lt;/strong&gt;。因此，使用训练出的z偏移将每个模式还原到现场（即身体表面）从而产生最后的关节位置预测。这个简单高效的方法在实践中工作得很好。宽度Bc，概率阈值λc，和表面到内部的z偏移都在一个保留的5000幅图像的验证集中使用网格搜索（grid search）优化。（As an indication,得到的平均宽度为0.065m，概率阈值为0.14，z偏移为0.039m。）&lt;/p&gt;
-&lt;h1 id=&quot;实验&quot;&gt;&lt;a href=&quot;#实验&quot; class=&quot;headerlink&quot; title=&quot;实验&quot;&gt;&lt;/a&gt;实验&lt;/h1&gt;&lt;p&gt;本节描述评估我们方法性能所进行的实验。我们给出了在几个具有挑战性的数据集上的定性和定量结果，并与最近邻方法和当前最高水准[13]进行了比较。在补充材料中我们给出了进一步的结果。除非特别指明，以下的参数都是如下都是这样设置的：3棵树，20层深，每棵树使用300k幅训练图像，每幅图像2000个训练样本像素，2000个候选特征θ，每个特征50个候选阈值τ。&lt;/p&gt;
-&lt;h2 id=&quot;定性结果&quot;&gt;&lt;a href=&quot;#定性结果&quot; class=&quot;headerlink&quot; title=&quot;定性结果&quot;&gt;&lt;/a&gt;定性结果&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/images/Kinect-Skeleton-5.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;图5给出了我们算法的一些例子推理。&lt;strong&gt;请注意，在很大的身体和摄像机姿势、景深、cropping（裁剪）、身材和体型（如瘦小的小孩和壮硕的成年人）变化范围上都有很高的分类和关节预测准确性&lt;/strong&gt;。底部一列给出了身体组件分类失败的一些形式（modes）。第一个例子是没能区分出&lt;strong&gt;深度图像中的细微变化&lt;/strong&gt;，像交叉的手臂。常常（就像第二和第三个失败的例子）最可能的&lt;strong&gt;身体组件是不正确的&lt;/strong&gt;，但是在分布P(c|I,x)中还是有足够多的正确概率团可以生成准确的（关节）预测。第四个是没能很好&lt;strong&gt;推广到未见过的姿势的例子&lt;/strong&gt;。但是（设置好的）置信度防止了（gates）很差预测的出现，以再现率（recall）的损失为代价维持了高的精确性。&lt;/p&gt;
-&lt;p&gt;注意我们没有使用任何时间或运动约束。尽管如此，补充材料中视频序列每帧图像的结果表明几乎每个关节都被准确预测，且抖动惊人的小。&lt;/p&gt;
-&lt;h2 id=&quot;分类准确度&quot;&gt;&lt;a href=&quot;#分类准确度&quot; class=&quot;headerlink&quot; title=&quot;分类准确度&quot;&gt;&lt;/a&gt;分类准确度&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/images/Kinect-Skeleton-6.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;我们研究了几个训练参数对分类准确性的影响。在合成测试集和真实测试集上的趋势高度相关，并且真实测试集一致地显得比合成测试集更“容易”，也是是因为其中的姿势变化少些。&lt;br&gt;&lt;img src=&quot;/images/Kinect-Skeleton-7.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;训练图像数量&quot;&gt;&lt;a href=&quot;#训练图像数量&quot; class=&quot;headerlink&quot; title=&quot;训练图像数量&quot;&gt;&lt;/a&gt;训练图像数量&lt;/h3&gt;&lt;p&gt;在图6(a)中，我们展示了准确性大约与随机生成图像数量之间呈对数关系，尽管训练图像增加到大约100k幅时准确性开始停止提高。下面就会展示，这种饱和很可能是3棵20层决策树构成的森林本身模型能力有限所致。&lt;/p&gt;
-&lt;h3 id=&quot;轮廓图像&quot;&gt;&lt;a href=&quot;#轮廓图像&quot; class=&quot;headerlink&quot; title=&quot;轮廓图像&quot;&gt;&lt;/a&gt;轮廓图像&lt;/h3&gt;&lt;p&gt;图6(a)也给出了我们的方法在合成轮廓图像上表现出来的品质。在合成轮廓图像中，式1所计算出来的特征可以是带尺度（以平均深度度量）的、也可以是不带尺度的（固定深度）。采用2D衡量标准设定10像素真正（true positive）阈值，对应的预测准确性分别是：有尺度的为0.539mAP，不带尺度的为0.465mAP。尽管深度模糊明显使预测更艰难，这些结果仍表明了我们方法对其他图像形态（other imaging modalities）也有较好的适用性。&lt;/p&gt;
-&lt;h3 id=&quot;树的深度&quot;&gt;&lt;a href=&quot;#树的深度&quot; class=&quot;headerlink&quot; title=&quot;树的深度&quot;&gt;&lt;/a&gt;树的深度&lt;/h3&gt;&lt;p&gt;使用15k和900k幅图像，图6(b)展示了树深度对测试准确性的影响。&lt;strong&gt;在所有训练参数中，深度似乎具有最显著的作用，因为它直接影响着分类器的建模能力&lt;/strong&gt;。只使用15k幅训练图像时在17层左右就出现了过拟合，将训练集增多到900k则避免了过拟合。精度在20层处的较高梯度表明训练更多层能得到更好的结果，当然有附加的较小的计算代价加上较大的额外存储代价。从实用方面看，感兴趣的是，直到大约10层，训练集的大小关系不大，这告诉了我们一个高效训练策略。&lt;/p&gt;
-&lt;h3 id=&quot;最大探针偏移&quot;&gt;&lt;a href=&quot;#最大探针偏移&quot; class=&quot;headerlink&quot; title=&quot;最大探针偏移&quot;&gt;&lt;/a&gt;最大探针偏移&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;训练时允许的深度探针偏移范围对准确性有很大影响&lt;/strong&gt;。图6(c)给出了在5k幅训练图像上的比较结果。这里，最大探针偏移(‘maximum probe offset’)指式1中u和v允许赋予的x和y坐标的最大绝对值。图中右侧的同心盒子是5个测试的最大偏移集，使用图像中左肩处的像素对它们进行了较准；最大的偏移几乎覆盖了整个身体。（记得最大偏移随像素的世界深度变化而缩放）。随着最大探针偏移增加，分类器可以使用更多空间上下文来做决定，尽管训练数据不够最终会导致过拟合，精度随最大探针偏移增大而提高，尽管在约129像素大小处就不再增大。&lt;/p&gt;
-&lt;h2 id=&quot;联合预测精度&quot;&gt;&lt;a href=&quot;#联合预测精度&quot; class=&quot;headerlink&quot; title=&quot;联合预测精度&quot;&gt;&lt;/a&gt;联合预测精度&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/images/Kinect-Skeleton-8.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;图7给出了在合成测试集上的平均精度，达0.731mAP。我们对比了理想化的配置——即给出了真实身体组件标签的情况和使用推理出的身体组件的真实配置情况。我们确实付出了小小的代价来适用身体组件的中间表示，但是很多关节的推理结果有很高的准确性并且接近（理论上的）上界。在真实测试集上，我们有头、肩、肘和手的真实标签。在这些真实组件上mAP达0.984，而在推理出的身体组件上的mAP也达到了0.914。正如预期一样，在这个较易的测试集上，这些数据理所当然较高。&lt;/p&gt;
-&lt;h1 id=&quot;参考&quot;&gt;&lt;a href=&quot;#参考&quot; class=&quot;headerlink&quot; title=&quot;参考&quot;&gt;&lt;/a&gt;参考&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;[1]《Real-Time Human Pose Recognition in Parts from Single Depth Images》&lt;/strong&gt;-Jamie Shotton  Andrew Fitzgibbon,Microsoft Research Cambridge &amp;amp; Xbox Incubation&lt;/p&gt;
-&lt;p&gt;&lt;i class=&quot;fa fa-download&quot; aria-hidden=&quot;true&quot;&gt;&lt;a href=&quot;ftp://mindcont.com/Book/Real-Time%20Human%20Pose%20Recognition%20in%20Parts%20from%20Single%20Depth%20Images%20%E8%8B%B1%E6%96%87.pdf&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;英文原文&lt;/a&gt;&lt;/i&gt;&lt;br&gt;&lt;i class=&quot;fa fa-download&quot; aria-hidden=&quot;true&quot;&gt;&lt;a href=&quot;ftp://mindcont.com/Book/Real-Time%20Human%20Pose%20Recognition%20in%20Parts%20from%20Single%20Depth%20Images%20%E4%B8%AD%E6%96%87%E7%BF%BB%E8%AF%91.pdf &quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;中文翻译&lt;/a&gt;&lt;/i&gt;&lt;/p&gt;
-&lt;p&gt;来源：网络 编辑：&lt;a href=&quot;https://github.com/mindcont&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;mindcont&lt;/a&gt; 校对：&lt;a href=&quot;https://github.com/mindcont&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;mindcont&lt;/a&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;我们给出了从单深度图像中快速准确预测出人体关节3D位置的新方法，且没有使用时间信息。Kinect获取人体骨骼信息的大致原理可以概括为：
-    
-    </summary>
-    
-      <category term="Kinect" scheme="http://blog.mindcont.com/categories/Kinect/"/>
-    
-    
-      <category term="Kinect" scheme="http://blog.mindcont.com/tags/Kinect/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Kinect深度成像的基本原理</title>
-    <link href="http://blog.mindcont.com/2016/05/09/The-basic-principle-of-Kinect-depth-imaging/"/>
-    <id>http://blog.mindcont.com/2016/05/09/The-basic-principle-of-Kinect-depth-imaging/</id>
-    <published>2016-05-09T08:01:32.000Z</published>
-    <updated>2016-05-13T06:08:37.708Z</updated>
-    
-    <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt; 
-&lt;p&gt;&lt;img src=&quot;/images/US7433024_Page_3.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;原理&quot;&gt;&lt;a href=&quot;#原理&quot; class=&quot;headerlink&quot; title=&quot;原理&quot;&gt;&lt;/a&gt;原理&lt;/h2&gt;&lt;p&gt;根据PrimeSense公司的专利[1]记载，Kinect深度成像的原理是一种叫做光编码(light coding)的技术。组成成像系统的三个核心元件包括:激光发射器，不均匀透明介质，CMOS感光器件。其构造图如下图所示，其中，激光发射器与CMOS感光器件成一定角度对准目标场景，而不均匀透明介质放置于激光发射器镜头前。激光发射器透过不均匀介质发射激光，在场景中形成激光散斑，CMOS感光元件可以拍摄散斑图像。&lt;br&gt;&lt;img src=&quot;/images/Kinect-Depth-imaging.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;标定&quot;&gt;&lt;a href=&quot;#标定&quot; class=&quot;headerlink&quot; title=&quot;标定&quot;&gt;&lt;/a&gt;标定&lt;/h3&gt;&lt;p&gt;首先在口标区域距光源的多个不同位置分别用CMOS感光元件采集散斑图案，然后存储这些不同位置的图案作为参考图像。此时标定完成。图3中，参考图像的位置分别记为Z1,Z2,Z3,Z4。   &lt;/p&gt;
-&lt;h3 id=&quot;取样&quot;&gt;&lt;a href=&quot;#取样&quot; class=&quot;headerlink&quot; title=&quot;取样&quot;&gt;&lt;/a&gt;取样&lt;/h3&gt;&lt;p&gt;当不透明物体放人场景，或者物体在场景中运动时，在物体表面形成新的散斑，得到测试图像，此时的散斑图样发生变化，与所有参考图像均不同。在图3中，物体A和物体B表面形成散斑的位置是Za,Zb。&lt;/p&gt;
-&lt;h3 id=&quot;定位&quot;&gt;&lt;a href=&quot;#定位&quot; class=&quot;headerlink&quot; title=&quot;定位&quot;&gt;&lt;/a&gt;定位&lt;/h3&gt;&lt;p&gt;将测试图像与所有参考图像分别计算相关系数，选取产生相关系数最大的参考图像，即物体在该参考图像所在位置的可能性最大。在图3中，场景放人A物体所拍摄的Za位置散斑测试图与Z2处参考图像相关系数最大，即认为A物体在Z2距离处。同理，B物体认为在Z3距离处。    &lt;/p&gt;
-&lt;h3 id=&quot;重建&quot;&gt;&lt;a href=&quot;#重建&quot; class=&quot;headerlink&quot; title=&quot;重建&quot;&gt;&lt;/a&gt;重建&lt;/h3&gt;&lt;p&gt;根据所选取的参考图像与光源间的标定关系，通过几何变换，计算得出物体到光源的距离，构建3D图像。并对距离数据归一化，转换成图像灰度值，最后将所生成的深度图像输出给外部处理设备。此时即完成对场景某一时刻的深度图像拍摄，向外部处理系统输出。然后返回执行第2步，得到连续不断的深度图像视频流。&lt;/p&gt;
-&lt;h2 id=&quot;总结&quot;&gt;&lt;a href=&quot;#总结&quot; class=&quot;headerlink&quot; title=&quot;总结&quot;&gt;&lt;/a&gt;总结&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/images/US7433024_Page_4.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;PrimeSense将其深度测量技术命名为Light coding，与结构光法不同的是，Light coding的光源被称为“激光散斑（laser speckle）”，是当激光照射到粗糙物体或穿透毛玻璃后形成的随机衍射斑点。这些散斑具有高度的随机性，而且会随着距离的不同变换图案。也就是说空间中任意两处的散斑图案都是不同的。只要在空间中打上这样的结构光，整个空间就都被做了标记，把一个物体放进这个空间，只要看看物体上面的散斑图案，就可以知道这个物体在什么位置了。&lt;/p&gt;
-&lt;p&gt;参考文献:&lt;br&gt;[1]&lt;a href=&quot;https://www.google.com/patents/US7433024&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.google.com/patents/US7433024&lt;/a&gt; &lt;i class=&quot;fa fa-download&quot; aria-hidden=&quot;true&quot;&gt;&lt;a href=&quot;ftp://mindcont.com/Book/US7433024.pdf &quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;下载&lt;/a&gt;&lt;/i&gt;&lt;br&gt;[2]李红波，丁林建，冉光勇. 基于Kinect深度图像的人体识别分析. 重庆邮电大学网络智能研究所&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;a id=&quot;more&quot;&gt;&lt;/a&gt; 
-&lt;p&gt;&lt;img src=&quot;/images/US7433024_Page_3.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;原理&quot;&gt;&lt;a href=&quot;#原理&quot; class=&quot;headerlink&quot; title=&quot;原理&quot;&gt;&lt;/a&gt;原理&lt;/h2
-    
-    </summary>
-    
-      <category term="Kinect" scheme="http://blog.mindcont.com/categories/Kinect/"/>
-    
-    
-      <category term="Kinect" scheme="http://blog.mindcont.com/tags/Kinect/"/>
     
   </entry>
   
