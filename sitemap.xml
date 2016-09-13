@@ -2,23 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.mindcont.com/2016/09/13/Deep-learning-dataset/</loc>
+    
+    <lastmod>2016-09-13T09:57:27.321Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/history/index.html</loc>
+    
+    <lastmod>2016-09-13T09:32:10.136Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/08/18/git-commands/</loc>
+    
+    <lastmod>2016-09-13T09:30:08.726Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.mindcont.com/2016/09/04/caffe-guide-book/</loc>
     
-    <lastmod>2016-09-04T15:43:50.556Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/09/04/Historic-Photos-by-Marc-Riboud/</loc>
-    
-    <lastmod>2016-09-04T15:40:51.589Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/09/04/Historic-Photos-by-XiaoQuan/</loc>
-    
-    <lastmod>2016-09-04T14:56:58.675Z</lastmod>
+    <lastmod>2016-09-13T09:25:39.433Z</lastmod>
     
   </url>
   
@@ -33,13 +40,6 @@
     <loc>http://blog.mindcont.com/2016/05/04/how-to-use-ngrok-penetrate-internal-network/</loc>
     
     <lastmod>2016-08-22T09:46:21.012Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/08/18/git-commands/</loc>
-    
-    <lastmod>2016-08-22T09:43:39.632Z</lastmod>
     
   </url>
   
@@ -187,13 +187,6 @@
     <loc>http://blog.mindcont.com/2016/05/10/Real-Time-Human-Pose-Recognition-in-Parts-from-Single-Depth-Images/</loc>
     
     <lastmod>2016-05-11T10:20:53.943Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/history/index.html</loc>
-    
-    <lastmod>2016-05-06T12:06:57.409Z</lastmod>
     
   </url>
   
