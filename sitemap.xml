@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.mindcont.com/about/index.html</loc>
+    
+    <lastmod>2016-10-31T11:19:08.174Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/09/13/deep-learning-dataset/</loc>
+    
+    <lastmod>2016-10-28T07:49:25.142Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.mindcont.com/2016/10/27/ubuntu-necessary-install-software/</loc>
     
-    <lastmod>2016-10-27T06:34:45.633Z</lastmod>
+    <lastmod>2016-10-27T06:46:55.981Z</lastmod>
     
   </url>
   
@@ -12,13 +26,6 @@
     <loc>http://blog.mindcont.com/2016/10/27/hg255d-openwrt/</loc>
     
     <lastmod>2016-10-27T06:32:50.692Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/about/index.html</loc>
-    
-    <lastmod>2016-10-27T01:39:17.692Z</lastmod>
     
   </url>
   
@@ -40,13 +47,6 @@
     <loc>http://blog.mindcont.com/2016/09/18/cnn/</loc>
     
     <lastmod>2016-09-18T03:21:10.540Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/09/13/deep-learning-dataset/</loc>
-    
-    <lastmod>2016-09-13T09:57:27.321Z</lastmod>
     
   </url>
   

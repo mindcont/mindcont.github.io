@@ -82,7 +82,7 @@
     <link href="http://blog.mindcont.com/2016/10/27/ubuntu-necessary-install-software/"/>
     <id>http://blog.mindcont.com/2016/10/27/ubuntu-necessary-install-software/</id>
     <published>2016-10-27T01:47:28.000Z</published>
-    <updated>2016-10-27T06:34:45.633Z</updated>
+    <updated>2016-10-27T06:46:55.981Z</updated>
     
     <content type="html">&lt;p&gt;说linux，不得不从unix 发展历史和发行版本说起，由通用电气\AT&amp;amp;T\MIT 合作开发unix。在美苏冷战期间,美国国防部 ncp &amp;gt;tcp/ip 捆绑 unix 上。c 语言之父肯.汤普森 丹尼斯.里奇重写了unix 底层代码。发行版本&lt;br&gt;&lt;figure class=&quot;highlight mathematica&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;AIX 	IBM 	PowerPC&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;HP-UX 	HP 	PA-RISC&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Solaris sun	SPARC&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Linux	&lt;span class=&quot;keyword&quot;&gt;Red&lt;/span&gt; Hat ,ubuntu (Intel AMD)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
@@ -170,10 +170,10 @@
     <link href="http://blog.mindcont.com/2016/09/13/deep-learning-dataset/"/>
     <id>http://blog.mindcont.com/2016/09/13/deep-learning-dataset/</id>
     <published>2016-09-13T08:34:32.000Z</published>
-    <updated>2016-09-13T09:57:27.321Z</updated>
+    <updated>2016-10-28T07:49:25.142Z</updated>
     
     <content type="html">&lt;p&gt;大数据，数据挖掘，深度学习，终究绕不开数据集，为此单独开一个页面，持续更新各类数据集，希望可以碰出一些好的思路，用深度学习的方法解决一些实际问题。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://mmlab.ie.cuhk.edu.hk/datasets/comp_cars/illustration.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/ubuntu/princeton.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -185,6 +185,10 @@
 &lt;tr&gt;
 &lt;td&gt;code&lt;/td&gt;
 &lt;td&gt;&lt;a href=&quot;http://www.sigvc.org/bbs/forum.php?mod=viewthread&amp;amp;tid=72&amp;amp;highlight=%B4%FA%C2%EB&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.sigvc.org/bbs/forum.php?mod=viewthread&amp;amp;tid=72&amp;amp;highlight=%B4%FA%C2%EB&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;vision.princeton.edu&lt;/td&gt;
+&lt;td&gt;vision.princeton.edu/research.html&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -294,7 +298,8 @@
     <summary type="html">
     
       &lt;p&gt;大数据，数据挖掘，深度学习，终究绕不开数据集，为此单独开一个页面，持续更新各类数据集，希望可以碰出一些好的思路，用深度学习的方法解决一些实际问题。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://mmlab.ie.cuhk.edu.hk/datasets/comp_cars
+&lt;p&gt;&lt;img src=&quot;/images/ubuntu/princeton.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;tab
     
     </summary>
     
@@ -473,7 +478,7 @@
 &lt;h3 id=&quot;分支&quot;&gt;&lt;a href=&quot;#分支&quot; class=&quot;headerlink&quot; title=&quot;分支&quot;&gt;&lt;/a&gt;分支&lt;/h3&gt;&lt;p&gt;分支是用来将特性开发绝缘开来的。在你创建仓库的时候，master 是“默认的”。在其他分支上进行开发，完成后再将它们合并到主分支上。&lt;br&gt;&lt;img src=&quot;https://camo.githubusercontent.com/1db631d931f4a57a439deb5f747bfc0c3c1098b2/68747470733a2f2f7777772e61746c61737369616e2e636f6d2f6769742f696d616765732f7475746f7269616c732f636f6c6c61626f726174696e672f636f6d706172696e672d776f726b666c6f77732f676974666c6f772d776f726b666c6f772f30352e737667&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;创建一个叫做“feature_x”的分支，并切换过去：&lt;br&gt;&lt;figure class=&quot;highlight stylus&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git checkout -&lt;span class=&quot;selector-tag&quot;&gt;b&lt;/span&gt; feature_x&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;切换回主分支：&lt;br&gt;&lt;figure class=&quot;highlight crmsh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git checkout &lt;span class=&quot;literal&quot;&gt;master&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;再把新建的分支删掉：&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git branch &lt;span class=&quot;_&quot;&gt;-d&lt;/span&gt; feature_x&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;再把新建的分支删掉：&lt;br&gt;&lt;figure class=&quot;highlight armasm&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;git&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;branch &lt;/span&gt;-d feature_x&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;注意&lt;/strong&gt; 除非你将分支推送到远端仓库，不然该分支就是 不为他人所见的。&lt;/p&gt;
 &lt;h3 id=&quot;更新与合并&quot;&gt;&lt;a href=&quot;#更新与合并&quot; class=&quot;headerlink&quot; title=&quot;更新与合并&quot;&gt;&lt;/a&gt;更新与合并&lt;/h3&gt;&lt;p&gt;将你本地分支推送到远端仓库，执行：&lt;br&gt;&lt;figure class=&quot;highlight maxima&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git &lt;span class=&quot;built_in&quot;&gt;push&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;origin&lt;/span&gt; &amp;lt;branch&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;要更新你的本地仓库至最新改动，执行：&lt;br&gt;&lt;figure class=&quot;highlight nginx&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;git&lt;/span&gt; pull&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
