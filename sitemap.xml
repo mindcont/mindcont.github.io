@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.mindcont.com/2016/10/27/ubuntu-necessary-install-software/</loc>
+    
+    <lastmod>2016-11-08T07:40:05.250Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.mindcont.com/about/index.html</loc>
     
-    <lastmod>2016-10-31T11:19:08.174Z</lastmod>
+    <lastmod>2016-11-04T01:04:02.426Z</lastmod>
     
   </url>
   
@@ -12,13 +19,6 @@
     <loc>http://blog.mindcont.com/2016/09/13/deep-learning-dataset/</loc>
     
     <lastmod>2016-10-28T07:49:25.142Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/10/27/ubuntu-necessary-install-software/</loc>
-    
-    <lastmod>2016-10-27T06:46:55.981Z</lastmod>
     
   </url>
   
