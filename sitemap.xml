@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.mindcont.com/2016/11/13/ppa/</loc>
+    
+    <lastmod>2016-11-13T13:28:13.826Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/07/20/ubuntu1404-caffe-r3-cuda7-5-mkl/</loc>
+    
+    <lastmod>2016-11-12T11:25:04.722Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/07/26/nvidia-digits-with-caffe/</loc>
+    
+    <lastmod>2016-11-12T11:24:50.145Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/09/04/caffe-guide-book/</loc>
+    
+    <lastmod>2016-11-12T11:24:22.363Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.mindcont.com/2016/10/27/ubuntu-necessary-install-software/</loc>
     
     <lastmod>2016-11-08T07:40:05.250Z</lastmod>
@@ -16,7 +44,7 @@
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/09/13/deep-learning-dataset/</loc>
+    <loc>http://blog.mindcont.com/2016/09/13/dataset/</loc>
     
     <lastmod>2016-10-28T07:49:25.142Z</lastmod>
     
@@ -33,13 +61,6 @@
     <loc>http://blog.mindcont.com/2016/07/15/ubuntu1404-nvidia-graphics-driver/</loc>
     
     <lastmod>2016-10-27T01:38:04.595Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/09/04/caffe-guide-book/</loc>
-    
-    <lastmod>2016-09-19T07:38:39.179Z</lastmod>
     
   </url>
   
@@ -79,16 +100,9 @@
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/08/06/run-YOLO-demo/</loc>
+    <loc>http://blog.mindcont.com/2016/08/06/run-yolo-demo/</loc>
     
     <lastmod>2016-08-22T08:48:45.406Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/07/26/nvidia-digits-with-caffe/</loc>
-    
-    <lastmod>2016-08-22T08:30:05.440Z</lastmod>
     
   </url>
   
@@ -117,13 +131,6 @@
     <loc>http://blog.mindcont.com/2016/07/22/research-progress-in-object-detection/</loc>
     
     <lastmod>2016-08-22T08:08:06.145Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/07/20/ubuntu1404-caffe-r3-cuda7-5-mkl/</loc>
-    
-    <lastmod>2016-08-22T08:06:21.030Z</lastmod>
     
   </url>
   
