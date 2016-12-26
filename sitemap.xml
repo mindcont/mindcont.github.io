@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://blog.mindcont.com/2016/12/14/ros-naoqi-ubuntu/</loc>
+    <loc>http://blog.mindcont.com/2016/12/26/nginx-proxy-lan/</loc>
     
-    <lastmod>2016-12-14T11:18:30.778Z</lastmod>
+    <lastmod>2016-12-26T06:27:05.107Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://blog.mindcont.com/2016/12/14/naoqi-robot-sdk-ubuntu/</loc>
     
-    <lastmod>2016-12-14T11:17:56.837Z</lastmod>
+    <lastmod>2016-12-26T04:41:44.581Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/12/14/ros-naoqi-ubuntu/</loc>
+    
+    <lastmod>2016-12-14T11:18:30.778Z</lastmod>
     
   </url>
   
