@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.mindcont.com/"/>
-  <updated>2016-12-26T06:43:51.752Z</updated>
+  <updated>2017-01-05T01:03:21.773Z</updated>
   <id>http://blog.mindcont.com/</id>
   
   <author>
@@ -14,6 +14,465 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>自上而下的学习路线-软件工程师的机器学习</title>
+    <link href="http://blog.mindcont.com/2017/01/05/machine-learning-for-software-engineers/"/>
+    <id>http://blog.mindcont.com/2017/01/05/machine-learning-for-software-engineers/</id>
+    <published>2017-01-05T00:43:44.000Z</published>
+    <updated>2017-01-05T01:03:21.773Z</updated>
+    
+    <content type="html">&lt;p&gt;灵感来源于 &lt;a href=&quot;https://github.com/jwasham/google-interview-university/blob/master/translations/README-cn.md&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;谷歌面试学习手册&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;原文地址：&lt;a href=&quot;https://github.com/ZuzooVn/machine-learning-for-software-engineers&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Machine Learning for Software Engineers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;原文作者：&lt;a href=&quot;https://github.com/ZuzooVn&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ZuzooVn(Nam Vu)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;翻译：&lt;a href=&quot;https://github.com/lsvih&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;lsvih&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;这是？&quot;&gt;&lt;a href=&quot;#这是？&quot; class=&quot;headerlink&quot; title=&quot;这是？&quot;&gt;&lt;/a&gt;这是？&lt;/h2&gt;&lt;p&gt;这是本人为期数月的学习计划。我正要从一名移动端软件开发者(自学，无计科文凭)转型成为一名机器学习工程师。&lt;/p&gt;
+&lt;p&gt;我的主要目标是找到一种以实践为主的学习方法，并为初学者抽象掉大多数的数学概念。&lt;br&gt;这种学习方法是非传统的，因为它是专门为软件工程师所设计的自上而下、以结果为导向的学习方法。&lt;/p&gt;
+&lt;p&gt;如果您想让它更好的话，随时欢迎您的贡献。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;目录&quot;&gt;&lt;a href=&quot;#目录&quot; class=&quot;headerlink&quot; title=&quot;目录&quot;&gt;&lt;/a&gt;目录&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#这是&quot;&gt;这是？&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#为何要用到它&quot;&gt;为何要用到它？&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#如何使用它&quot;&gt;如何使用它？&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#follow-me&quot;&gt;Follow me&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#别认为自己不够聪明&quot;&gt;别认为自己不够聪明&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#关于视频资源&quot;&gt;关于视频资源&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#预备知识&quot;&gt;预备知识&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#每日计划&quot;&gt;每日计划&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#动机&quot;&gt;动机&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#机器学习概论&quot;&gt;机器学习概论&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#掌握机器学习&quot;&gt;掌握机器学习&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#有趣的机器学习&quot;&gt;有趣的机器学习&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#机器学习简介&quot;&gt;机器学习简介&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#一本深入-非技术的机器学习指南&quot;&gt;一本深入，非技术的机器学习指南&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#故事与经验&quot;&gt;故事与经验&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#机器学习算法&quot;&gt;机器学习算法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#入门书籍&quot;&gt;入门书籍&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#实用书籍&quot;&gt;实用书籍&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#kaggle知识竞赛&quot;&gt;Kaggle知识竞赛&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#系列视频&quot;&gt;系列视频&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#mooc&quot;&gt;MOOC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#资源&quot;&gt;资源&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#成为一名开源贡献者&quot;&gt;成为一名开源贡献者&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#游戏&quot;&gt;游戏&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#播客&quot;&gt;播客&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#社区&quot;&gt;社区&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#面试问题&quot;&gt;面试问题&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#我崇拜的公司&quot;&gt;我崇拜的公司&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;为何要用到它？&quot;&gt;&lt;a href=&quot;#为何要用到它？&quot; class=&quot;headerlink&quot; title=&quot;为何要用到它？&quot;&gt;&lt;/a&gt;为何要用到它？&lt;/h2&gt;&lt;p&gt;我会为了我未来的工作————机器学习工程师 遵循这份计划。自2011年以来，我一直进行着移动端应用的开发(包括安卓、iOS与黑莓)。我有软件工程的文凭，但没有计算机科学的文凭。我仅仅在大学的时候学习过一点基础科学，包括微积分、线性代数、离散数学、概率论与统计。&lt;br&gt;我认真思考过我在机器学习方面的兴趣:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.quora.com/Can-I-learn-and-get-a-job-in-Machine-Learning-without-studying-CS-Master-and-PhD&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;我能在没有计科硕士、博士文凭的情况下找到一份关于机器学习的工作吗？&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;你当然可以，但是我想进入这个领域则无比艰难。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.quora.com/How-do-I-get-a-job-in-Machine-Learning-as-a-software-programmer-who-self-studies-Machine-Learning-but-never-has-a-chance-to-use-it-at-work&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;我是一名软件工程师，我自学了机器学习，我如何在没有相关经验的情况下找到一份关于机器学习的工作？&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;我正在为我的团队招聘机器学习专家，但你的MOOC并不会给你带来工作机会。事实上，大多数机器学习方向的硕士也并不会得到工作机会，因为他们（与大多数上过MOOC的人一样）并没有深入地去理解。他们都没法帮助我的团队解决问题。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://programmers.stackexchange.com/questions/79476/what-skills-are-needed-for-machine-learning-jobs&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;找一份机器学习相关的工作需要掌握怎样的技能？&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;首先，你得有正儿八经的计科或数学专业背景。ML是一个比较先进的课题，大多数的教材都会直接默认你有以上背景。其次，机器学习是一个集成了许多子专业的奇技淫巧的课题，你甚至会想看看MS的机器学习课程，去看看他们的授课、课程和教材。&lt;/li&gt;
+&lt;li&gt;统计，假设，分布式计算，然后继续统计。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;我深陷困境。&lt;/p&gt;
+&lt;p&gt;据我所知, &lt;a href=&quot;http://machinelearningmastery.com/programmers-can-get-into-machine-learning/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;机器学习有两个方向&lt;/a&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;实用机器学习： 这个方向主要是查询数据库、数据清洗、写脚本来转化数据，把算法和库结合起来再加上一些定制化的代码，从数据中挤出一些准确的答案来证明一些困难且模糊不清的问题。实际上它非常混乱。&lt;/li&gt;
+&lt;li&gt;理论机器学习： 这个方向主要是关于数学、抽象、理想状况、极限条件、典型例子以及一切可能的特征。这个方向十分的干净、整洁，远离混乱的现实。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;我认为对于以实践为主的人来说，做好的方法就是 &lt;a href=&quot;http://machinelearningmastery.com/machine-learning-for-programmers/#comment-358985&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;“练习–学习–练习”&lt;/a&gt;，这意味着每个学生一开始就能参与一些现有项目与一些问题，并练习（解决）它们以熟悉传统的方法是怎么做的。在有了一些简单的练习经验之后，他们就可以开始钻进书里去学习理论知识。这些理论知识将帮助他们在将来进行更进一步的训练，充实他们解决实际问题的工具箱。学习理论知识还会加深他们对那些简单练习的理解，帮助他们更快地获得进阶的经验。&lt;/p&gt;
+&lt;p&gt;这是一个很长的计划，它花去了我一年的时间。如果你已经对它有所了解了，它将会让你省去很多时间。&lt;/p&gt;
+&lt;h2 id=&quot;如何使用它？&quot;&gt;&lt;a href=&quot;#如何使用它？&quot; class=&quot;headerlink&quot; title=&quot;如何使用它？&quot;&gt;&lt;/a&gt;如何使用它？&lt;/h2&gt;&lt;p&gt;以下的内容全部是概要，你需要从上往下来解决这些项目。&lt;/p&gt;
+&lt;p&gt;我使用的是Github独特的flavored markdown的任务列表来检查我计划的进展。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[x] 创建一个新的分支，然后你可以这样来标出你已经完成的项目，只需要在框中填写一个x即可：[x]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;https://guides.github.com/features/mastering-markdown/#GitHub-flavored-markdown&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;了解更多有关 Github-flavored markdown的知识&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Follow-me&quot;&gt;&lt;a href=&quot;#Follow-me&quot; class=&quot;headerlink&quot; title=&quot;Follow me&quot;&gt;&lt;/a&gt;Follow me&lt;/h2&gt;&lt;p&gt;我是一名非常非常想去美国工作的越南软件工程师。&lt;/p&gt;
+&lt;p&gt;我在这份计划中花多少时间？在每天的艰辛工作完成后，每晚花4小时。&lt;/p&gt;
+&lt;p&gt;我已经在实现梦想的旅途中了。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Twitter: &lt;a href=&quot;https://twitter.com/zuzoovn&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;@Nam Vu&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;http://sv1.upsieutoc.com/2016/10/08/331f241c8da44d0c43e9324d55440db6.md.jpg&quot; alt=&quot;Nam Vu - Top-down learning path: machine learning for software engineers&quot;&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;USA as heck&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&quot;别认为自己不够聪明&quot;&gt;&lt;a href=&quot;#别认为自己不够聪明&quot; class=&quot;headerlink&quot; title=&quot;别认为自己不够聪明&quot;&gt;&lt;/a&gt;别认为自己不够聪明&lt;/h2&gt;&lt;p&gt;当我打开书本，发现他们告诉我多元微积分、统计与推理、线性代数是学习机器学习的先决条件的时候，我非常沮丧。因为我不知道从哪儿开始…&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://machinelearningmastery.com/what-if-im-not-good-at-mathematics/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;我数学不好怎么办&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://machinelearningmastery.com/techniques-to-understand-machine-learning-algorithms-without-the-background-in-mathematics/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;没有数学专业背景而理解机器学习算法的5种技巧&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.quora.com/Machine-Learning/How-do-I-learn-machine-learning-1&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;我是如何学习机器学习的？&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;关于视频资源&quot;&gt;&lt;a href=&quot;#关于视频资源&quot; class=&quot;headerlink&quot; title=&quot;关于视频资源&quot;&gt;&lt;/a&gt;关于视频资源&lt;/h2&gt;&lt;p&gt;部分视频只有在Coursera、EdX的课程注册了才能观看。虽然是免费的，但有些时间段这些课程并不开放，你可能需要等上一段时间(可能是好几个月)。我将会加上更多的公开的视频源来代替这些在线课程的视频。我很喜欢大学的讲座。&lt;/p&gt;
+&lt;h2 id=&quot;预备知识&quot;&gt;&lt;a href=&quot;#预备知识&quot; class=&quot;headerlink&quot; title=&quot;预备知识&quot;&gt;&lt;/a&gt;预备知识&lt;/h2&gt;&lt;p&gt;这个小章节是一些在每日计划开始前我想去了解的一些预备知识与一些有趣的信息。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.quora.com/What-is-the-difference-between-Data-Analytics-Data-Analysis-Data-Mining-Data-Science-Machine-Learning-and-Big-Data-1&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Data Analytics，Data Analysis，数据挖掘，数据科学，机器学习，大数据的区别是什么？&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.coursera.org/learn/learning-how-to-learn&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;学习如何去学习&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;http://lifehacker.com/281626/jerry-seinfelds-productivity-secret&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;不要斩断锁链&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://metacademy.org/roadmaps/rgrosse/learn_on_your_own&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;如何自学&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;每日计划&quot;&gt;&lt;a href=&quot;#每日计划&quot; class=&quot;headerlink&quot; title=&quot;每日计划&quot;&gt;&lt;/a&gt;每日计划&lt;/h2&gt;&lt;p&gt;每个主题都不需要用一整天来完全理解它们，你可以每天完成它们中的多个。&lt;/p&gt;
+&lt;p&gt;每天我都会从下面的列表中选一个出来，一遍又一遍的读，做笔记，练习，用Python或R语言实现它。&lt;/p&gt;
+&lt;h1 id=&quot;动机&quot;&gt;&lt;a href=&quot;#动机&quot; class=&quot;headerlink&quot; title=&quot;动机&quot;&gt;&lt;/a&gt;动机&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.youtube.com/watch?v=g-jwWYX7Jlo&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;梦&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;机器学习概论&quot;&gt;&lt;a href=&quot;#机器学习概论&quot; class=&quot;headerlink&quot; title=&quot;机器学习概论&quot;&gt;&lt;/a&gt;机器学习概论&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;http://www.r2d3.us/visual-intro-to-machine-learning-part-1/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;形象的机器学习简介&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://blog.monkeylearn.com/a-gentle-guide-to-machine-learning/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;一份温柔的机器学习指南&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;http://blog.algorithmia.com/introduction-machine-learning-developers/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;为开发者准备的机器学习简介&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.analyticsvidhya.com/blog/2015/06/machine-learning-basics/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;菜鸟的机器学习基础&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.quora.com/How-do-you-explain-Machine-Learning-and-Data-Mining-to-non-Computer-Science-people&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;你如何向非计算机专业的人来解释机器学习与数据挖掘？&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://georgemdallas.wordpress.com/2013/06/11/big-data-data-mining-and-machine-learning-under-the-hood/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;在罩子下的机器学习，博文简单明了地介绍了机器学习的原理&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.youtube.com/watch?v=elojMnjn4kk&amp;amp;list=PL5-da3qGB5ICeMbQuqbbCOQWcS6OYBr5A&amp;amp;index=1&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;机器学习是什么？它是如何工作的呢？&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;http://www.slideshare.net/AlfredPong1/deep-learning-a-nontechnical-introduction-69385936&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;深度学习——一份非技术性的简介&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;掌握机器学习&quot;&gt;&lt;a href=&quot;#掌握机器学习&quot; class=&quot;headerlink&quot; title=&quot;掌握机器学习&quot;&gt;&lt;/a&gt;掌握机器学习&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;http://machinelearningmastery.com/machine-learning-mastery-method/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;掌握机器学习的方法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;http://machinelearningmastery.com/machine-learning-for-programmers/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;程序员的机器学习&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;http://machinelearningmastery.com/start-here/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;掌握并运用机器学习&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;http://machinelearningmastery.com/python-machine-learning-mini-course/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Python机器学习小课程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;http://machinelearningmastery.com/machine-learning-algorithms-mini-course/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;机器学习算法小课程&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;有趣的机器学习&quot;&gt;&lt;a href=&quot;#有趣的机器学习&quot; class=&quot;headerlink&quot; title=&quot;有趣的机器学习&quot;&gt;&lt;/a&gt;有趣的机器学习&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://medium.com/@ageitgey/machine-learning-is-fun-80ea3ec3c471#.37ue6caww&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;机器学习真有趣！&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://medium.com/@ageitgey/machine-learning-is-fun-part-2-a26a10b68df3#.kh7qgvp1b&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Part 2: 使用机器学习来创造超级马里奥的关卡&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://medium.com/@ageitgey/machine-learning-is-fun-part-3-deep-learning-and-convolutional-neural-networks-f40359318721#.44rhxy637&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Part 3: 深度学习与卷积神经网络&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://medium.com/@ageitgey/machine-learning-is-fun-part-4-modern-face-recognition-with-deep-learning-c3cffc121d78#.3rwmq0ddc&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Part 4: 现代人脸识别与深度学习&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://medium.com/@ageitgey/machine-learning-is-fun-part-5-language-translation-with-deep-learning-and-the-magic-of-sequences-2ace0acca0aa#.wyfthap4c&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Part 5: 翻译与深度学习和序列的魔力&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://medium.com/@ageitgey/machine-learning-is-fun-part-6-how-to-do-speech-recognition-with-deep-learning-28293c162f7a#.lhr1nnpcy&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Part 6: 如何使用深度学习进行语音识别&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;机器学习简介-用手指沾上墨水来书写机器学习简介&quot;&gt;&lt;a href=&quot;#机器学习简介-用手指沾上墨水来书写机器学习简介&quot; class=&quot;headerlink&quot; title=&quot;机器学习简介(用手指沾上墨水来书写机器学习简介)&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://triskell.github.io/2016/11/15/Inky-Machine-Learning.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;机器学习简介&lt;/a&gt;(用手指沾上墨水来书写机器学习简介)&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://triskell.github.io/2016/10/23/What-is-Machine-Learning.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Part 1 : 什么是机器学习？&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://triskell.github.io/2016/11/13/Supervised-Learning-and-Unsupervised-Learning.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Part 2 : 监督学习与非监督学习&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;一本深入、非技术性的机器学习指南&quot;&gt;&lt;a href=&quot;#一本深入、非技术性的机器学习指南&quot; class=&quot;headerlink&quot; title=&quot;一本深入、非技术性的机器学习指南&quot;&gt;&lt;/a&gt;一本深入、非技术性的机器学习指南&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;http://www.innoarchitech.com/machine-learning-an-in-depth-non-technical-guide/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;概述，目标，学习类型和算法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;http://www.innoarchitech.com/machine-learning-an-in-depth-non-technical-guide-part-2/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;数据的选择，准备与建模&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;http://www.innoarchitech.com/machine-learning-an-in-depth-non-technical-guide-part-3/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;模型的评估，验证，复杂性与改进&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;http://www.innoarchitech.com/machine-learning-an-in-depth-non-technical-guide-part-4/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;模型性能与误差分析&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;http://www.innoarchitech.com/machine-learning-an-in-depth-non-technical-guide-part-5/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;无监督学习，相关领域与实践中的机器学习&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;故事与经验&quot;&gt;&lt;a href=&quot;#故事与经验&quot; class=&quot;headerlink&quot; title=&quot;故事与经验&quot;&gt;&lt;/a&gt;故事与经验&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://medium.com/learning-new-stuff/machine-learning-in-a-week-a0da25d59850#.tk6ft2kcg&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;一周的机器学习&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://medium.com/learning-new-stuff/machine-learning-in-a-year-cdb0b0ebd29c#.hhcb9fxk1&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;一年的机器学习&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;http://blog.adnansiddiqi.me/how-i-wrote-my-first-machine-learning-program-in-3-days/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;我是如何在3天内写出我的第一个机器学习程序的&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.analyticsvidhya.com/learning-path-learn-machine-learning/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;学习路径：你成为机器学习专家的导师&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://backchannel.com/you-too-can-become-a-machine-learning-rock-star-no-phd-necessary-107a1624d96b#.g9p16ldp7&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;不是PhD你也可以成为机器学习的摇滚明星&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] 如何6个月成为一名数据科学家：一名黑客的职业规划&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=rIofV14c0tc&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;视频&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.slideshare.net/TetianaIvanova2/how-to-become-a-data-scientist-in-6-months&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;幻灯片&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;http://blog.udacity.com/2016/04/5-skills-you-need-to-become-a-machine-learning-engineer.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;5个你成为机器学习工程师必须要掌握的技能&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.quora.com/Are-you-a-self-taught-machine-learning-engineer-If-yes-how-did-you-do-it-how-long-did-it-take-you&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;你是一个自学成才的机器学习工程师吗？你是怎么做的？花了多长时间？&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.quora.com/How-can-one-become-a-good-machine-learning-engineer&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;一个人如何成为一名优秀的机器学习工程师？&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;http://karlrosaen.com/ml/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;一个关注于机器学习的学术假期&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;机器学习算法&quot;&gt;&lt;a href=&quot;#机器学习算法&quot; class=&quot;headerlink&quot; title=&quot;机器学习算法&quot;&gt;&lt;/a&gt;机器学习算法&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.analyticsvidhya.com/blog/2015/12/10-machine-learning-algorithms-explained-army-soldier/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;用“士兵”来表示10种机器学习算法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://rayli.net/blog/data/top-10-data-mining-algorithms-in-plain-english/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Top10的数据挖掘算法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;http://blog.aylien.com/10-machine-learning-terms-explained-in-simple/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;介绍10种机器学习的术语&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;http://machinelearningmastery.com/a-tour-of-machine-learning-algorithms/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;机器学习算法之旅&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://gab41.lab41.org/the-10-algorithms-machine-learning-engineers-need-to-know-f4bb63f5b2fa#.ofc7t2965&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;机器学习工程师需要知道的10种算法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;http://www.dataschool.io/comparing-supervised-learning-algorithms/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;比较监督学习算法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/rushter/MLAlgorithms&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;收集的最简化、可执行的机器学习算法&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;入门书籍&quot;&gt;&lt;a href=&quot;#入门书籍&quot; class=&quot;headerlink&quot; title=&quot;入门书籍&quot;&gt;&lt;/a&gt;入门书籍&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.amazon.com/Data-Smart-Science-Transform-Information/dp/111866146X&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Data Smart: Using Data Science to Transform Information into Insight 1st Edition&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.amazon.com/Data-Science-Business-Data-Analytic-Thinking/dp/1449361323/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Data Science for Business: What you need to know about data mining and data­ analytic-thinking&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.amazon.com/Predictive-Analytics-Power-Predict-Click/dp/1118356853&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Predictive Analytics: The Power to Predict Who Will Click, Buy, Lie, or Die&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;实用书籍&quot;&gt;&lt;a href=&quot;#实用书籍&quot; class=&quot;headerlink&quot; title=&quot;实用书籍&quot;&gt;&lt;/a&gt;实用书籍&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.amazon.com/Machine-Learning-Hackers-Drew-Conway/dp/1449303714&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Machine Learning for Hackers&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/johnmyleswhite/ML_for_Hackers&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub repository(R)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/carljv/Will_it_Python&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub repository(Python)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.amazon.com/Python-Machine-Learning-Sebastian-Raschka-ebook/dp/B00YSILNL0&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Python Machine Learning&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/rasbt/python-machine-learning-book&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub repository&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.amazon.com/Programming-Collective-Intelligence-Building-Applications-ebook/dp/B00F8QDZWG&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Programming Collective Intelligence: Building Smart Web 2.0 Applications&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.amazon.com/Machine-Learning-Algorithmic-Perspective-Recognition/dp/1466583282&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Machine Learning: An Algorithmic Perspective, Second Edition&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/alexsosn/MarslandMLAlgo&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub repository&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://seat.massey.ac.nz/personal/s.r.marsland/MLbook.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Resource repository&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;http://shop.oreilly.com/product/0636920030515.do&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Introduction to Machine Learning with Python: A Guide for Data Scientists&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/amueller/introduction_to_ml_with_python&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub repository&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.amazon.com/Data-Mining-Practical-Techniques-Management/dp/0123748569&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Data Mining: Practical Machine Learning Tools and Techniques, Third Edition&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;Teaching material&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.cs.waikato.ac.nz/ml/weka/Slides3rdEd_Ch1-5.zip&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Slides for Chapters 1-5 (zip)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.cs.waikato.ac.nz/ml/weka/Slides3rdEd_Ch6-8.zip&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Slides for Chapters 6-8 (zip)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.amazon.com/Machine-Learning-Action-Peter-Harrington/dp/1617290181/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Machine Learning in Action&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/pbharrin/machinelearninginaction&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub repository&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.manning.com/books/reactive-machine-learning-systems&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Reactive Machine Learning Systems(MEAP)&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/jeffreyksmithjr/reactive-machine-learning-systems&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub repository&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;http://www-bcf.usc.edu/~gareth/ISL/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;An Introduction to Statistical Learning&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www-bcf.usc.edu/~gareth/ISL/code.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub repository(R)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/JWarmenhoven/ISLR-python&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub repository(Python)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.dataschool.io/15-hours-of-expert-machine-learning-videos/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;视频&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.packtpub.com/big-data-and-business-intelligence/building-machine-learning-systems-python&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Building Machine Learning Systems with Python&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/luispedro/BuildingMachineLearningSystemsWithPython&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub repository&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.packtpub.com/big-data-and-business-intelligence/learning-scikit-learn-machine-learning-python&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Learning scikit-learn: Machine Learning in Python&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/gmonce/scikit-learn-book&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub repository&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Probabilistic Programming &amp;amp; Bayesian Methods for Hackers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.amazon.com/Probabilistic-Graphical-Models-Principles-Computation/dp/0262013193&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Probabilistic Graphical Models: Principles and Techniques&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.amazon.com/Machine-Learning-Hands-Developers-Professionals/dp/1118889061&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Machine Learning: Hands-On for Developers and Technical Professionals&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://blogs.msdn.microsoft.com/querysimon/2015/01/01/book-review-machine-learning-hands-on-for-developers-and-technical-professionals/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Machine Learning Hands-On for Developers and Technical Professionals review&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/jasebell/mlbook&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub repository&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.amazon.com/Learning-Data-Yaser-S-Abu-Mostafa/dp/1600490069&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Learning from Data&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://work.caltech.edu/telecourse.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;在线教程&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://webdocs.cs.ualberta.ca/~sutton/book/the-book-2nd.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Reinforcement Learning: An Introduction (2nd Edition)&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/ShangtongZhang/reinforcement-learning-an-introduction&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub repository&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.manning.com/books/machine-learning-with-tensorflow&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;使用TensorFlow(MEAP)进行机器学习&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/BinRoot/TensorFlow-Book&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub repository&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;Kaggle知识竞赛&quot;&gt;&lt;a href=&quot;#Kaggle知识竞赛&quot; class=&quot;headerlink&quot; title=&quot;Kaggle知识竞赛&quot;&gt;&lt;/a&gt;Kaggle知识竞赛&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.analyticsvidhya.com/blog/2015/06/start-journey-kaggle/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Kaggle竞赛：怎么样，在哪里开始？&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;http://machinelearningmastery.com/how-a-beginner-used-small-projects-to-get-started-in-machine-learning-and-compete-on-kaggle&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;一个初学者如何用一个小项目在机器学习入门并在Kaggle竞争&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;http://machinelearningmastery.com/master-kaggle-by-competing-consistently/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;如何竞争Kaggle的Master&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;系列视频&quot;&gt;&lt;a href=&quot;#系列视频&quot; class=&quot;headerlink&quot; title=&quot;系列视频&quot;&gt;&lt;/a&gt;系列视频&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.youtube.com/playlist?list=PL2-dafEMk2A4ut2pyv0fSIXqOzXtBGkLj&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Machine Learning for Hackers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.youtube.com/playlist?list=PL2-dafEMk2A6Kc7pV6gHH-apBFxwFjKeY&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Fresh Machine Learning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.youtube.com/playlist?list=PLOU2XLYxmsIIuiBfYad6rFYQU_jL2ryal&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Machine Learning Recipes with Josh Gordon&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://vimeo.com/43547079&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Everything You Need to know about Machine Learning in 30 Minutes or Less&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.youtube.com/watch?v=IpGxLWOIZy4&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;A Friendly Introduction to Machine Learning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.youtube.com/watch?v=F1ka6a13S9I&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Nuts and Bolts of Applying Deep Learning - Andrew Ng&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] BigML Webinar&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?list=PL1bKyu9GtNYHcjGa6ulrvRVcm1lAB8he3&amp;amp;v=W62ehrnOVqo&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;视频&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://bigml.com/releases&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;资源&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.youtube.com/playlist?list=PLD0F06AA0D2E8FFBA&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;mathematicalmonk’s Machine Learning tutorials&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.youtube.com/playlist?list=PL5-da3qGB5ICeMbQuqbbCOQWcS6OYBr5A&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Machine learning in Python with scikit-learn&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/justmarkham/scikit-learn-videos&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub repository&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.kaggle.com/author/kevin-markham/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;博客&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.analyticsvidhya.com/blog/2015/07/top-youtube-videos-machine-learning-neural-network-deep-learning/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;My playlist – Top YouTube Videos on Machine Learning, Neural Network &amp;amp; Deep Learning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.analyticsvidhya.com/blog/2016/10/16-new-must-watch-tutorials-courses-on-machine-learning/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;16 New Must Watch Tutorials, Courses on Machine Learning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.youtube.com/channel/UC9OeZkIwhzfv-_Cb7fCikLQ&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;DeepLearning.TV&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.youtube.com/playlist?list=PLiaHhY2iBX9ihLasvE8BKnS2Xg8AhY6iV&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Learning To See&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.youtube.com/playlist?list=PL6Xpj9I5qXYEcOhn7TqghAJ6NAPrNmUBH&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Neural networks class - Université de Sherbrooke&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.analyticsvidhya.com/blog/2016/12/21-deep-learning-videos-tutorials-courses-on-youtube-from-2016/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;2016年的21个深度学习视频课程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.analyticsvidhya.com/blog/2016/12/30-top-videos-tutorials-courses-on-machine-learning-artificial-intelligence-from-2016/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;2016年的30个顶级的机器学习与人工智能视频教程 Top Videos, Tutorials &amp;amp; Courses on Machine Learning &amp;amp; Artificial Intelligence from 2016&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;http://course.fast.ai/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;程序员的深度学习实战&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;MOOC&quot;&gt;&lt;a href=&quot;#MOOC&quot; class=&quot;headerlink&quot; title=&quot;MOOC&quot;&gt;&lt;/a&gt;MOOC&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.udacity.com/course/intro-to-machine-learning--ud120&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Udacity的机器学习导论&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://hamelg.blogspot.com/2014/12/udacity-intro-to-machine-learning-review.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;复习Udacity机器学习导论&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.udacity.com/course/machine-learning--ud262&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Udacity的监督学习、非监督学习及深入&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.coursera.org/learn/ml-foundations&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Machine Learning Foundations: A Case Study Approach&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.coursera.org/learn/machine-learning&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Courserad的机器学习&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/playlist?list=PLZ9qNFMHZ-A4rycgrgOYma6zxF4BZGGPW&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;视频&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://rayli.net/blog/data/coursera-machine-learning-review/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;复习Coursera机器学习&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://metacademy.org/roadmaps/cjrd/coursera_ml_supplement&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Coursera的机器学习路线图&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://code.tutsplus.com/courses/machine-learning-distilled&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Machine Learning Distilled&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://bigml.com/training&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;BigML training&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.coursera.org/learn/neural-networks&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Coursera的神经网络课程&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;由Geoffrey Hinton（神经网络的先驱）执教&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.kadenze.com/courses/creative-applications-of-deep-learning-with-tensorflow/info&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;使用TensorFlow创建深度学习应用&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.udacity.com/course/intro-to-descriptive-statistics--ud827&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;描述统计学概论&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.udacity.com/course/intro-to-inferential-statistics--ud201&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;推理统计学概论&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;资源&quot;&gt;&lt;a href=&quot;#资源&quot; class=&quot;headerlink&quot; title=&quot;资源&quot;&gt;&lt;/a&gt;资源&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://elitedatascience.com/machine-learning-masterclass&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;一个月学会机器学习&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://medium.com/@samdebrule/a-humans-guide-to-machine-learning-e179f43b67a0#.cpzf3a5c0&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;一份“非技术性”的机器学习与人工智能指南&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://news.ycombinator.com/item?id=12898718&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hacker News的《软件工程师的机器学习》&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://xyclade.github.io/MachineLearning/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;开发者的机器学习&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://dev.to/thealexlavin/machine-learning-advice-for-developers&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;给开发者的关于机器学习的建议&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;http://pythonforengineers.com/machine-learning-for-complete-beginners/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;机器学习入门&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://medium.com/@suffiyanz/getting-started-with-machine-learning-f15df1c283ea#.yjtiy7ei9&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;为新手准备的机器学习入门教程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://elitedatascience.com/learn-machine-learning&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;初学者如何自学机器学习&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://ragle.sanukcode.net/articles/machine-learning-self-study-resources/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;机器学习自学资源&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://metacademy.org/roadmaps/cjrd/level-up-your-ml&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;提升你的机器学习技能&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://medium.com/axiomzenteam/an-honest-guide-to-machine-learning-2f6d7a6df60e#.ib12a1yw5&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;一份’坦诚’的机器学习指南&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] 用机器学习让Hacker News更具可读性&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=O7IezJT9uSI&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;视频&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://speakerdeck.com/pycon2014/enough-machine-learning-to-make-hacker-news-readable-again-by-ned-jackson-lovely&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;幻灯片&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://github.com/hangtwenty/dive-into-machine-learning&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;深入机器学习&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://speakerdeck.com/pmigdal/machine-deep-learning-for-software-engineers&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;软件工程师的{机器、深度}学习&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://deeplearning4j.org/deeplearningforbeginners.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;深度学习入门&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;大学中的机器学习课程&lt;ul&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;http://ai.stanford.edu/courses/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;斯坦福&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;http://mlss.cc/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;机器学习夏令营&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.cs.ox.ac.uk/people/nando.defreitas/machinelearning/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;牛津&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;http://mlg.eng.cam.ac.uk/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;剑桥&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Flipboard的主题&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://flipboard.com/topic/machinelearning&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;机器学习&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://flipboard.com/topic/deeplearning&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;深度学习&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://flipboard.com/topic/artificialintelligence&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;人工智能&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Medium的主题&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://medium.com/tag/machine-learning/latest&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;机器学习&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://medium.com/tag/deep-learning&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;深度学习&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://medium.com/tag/artificial-intelligence&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;人工智能&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;每月文章Top10&lt;ul&gt;
+&lt;li&gt;机器学习&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://medium.mybridge.co/top-ten-machine-learning-articles-for-the-past-month-9c1202351144#.lyycen64y&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;2016年7月&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://medium.mybridge.co/machine-learning-top-10-articles-for-the-past-month-2f3cb815ffed#.i9ee7qkjz&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;2016年8月&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://medium.mybridge.co/machine-learning-top-10-in-september-6838169e9ee7#.4jbjcibft&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;2016年9月&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://medium.mybridge.co/machine-learning-top-10-articles-for-the-past-month-35c37825a943#.td5im1p5z&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;2016年10月&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://medium.mybridge.co/machine-learning-top-10-articles-for-the-past-month-b499e4213a34#.7k39i08tv&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;2016年11月&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;算法&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://medium.mybridge.co/algorithm-top-10-articles-in-september-8a0e6afb0807#.hgjzuyxdb&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;2016年9月&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://medium.mybridge.co/algorithm-top-10-articles-v-november-e73cba2fa87e#.kothimkhb&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;2016年10月-11月&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.datasciencecentral.com/group/resources/forum/topics/comprehensive-list-of-data-science-resources&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;全面的数据科学家的资源&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.digitalmind.io/post/artificial-intelligence-resources&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;DigitalMind的人工智能资源&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/josephmisiti/awesome-machine-learning&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;令人惊叹的机器学习&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.creativeai.net/?cat%5B0%5D=machine-learning&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;CreativeAi的机器学习&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;成为一名开源贡献者&quot;&gt;&lt;a href=&quot;#成为一名开源贡献者&quot; class=&quot;headerlink&quot; title=&quot;成为一名开源贡献者&quot;&gt;&lt;/a&gt;成为一名开源贡献者&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://github.com/tensorflow/magenta&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;tensorflow/magenta: Magenta: Music and Art Generation with Machine Intelligence&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://github.com/tensorflow/tensorflow&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;tensorflow/tensorflow: Computation using data flow graphs for scalable machine learning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://github.com/cmusatyalab/openface&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;cmusatyalab/openface: Face recognition with deep neural networks.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://github.com/tensorflow/models/tree/master/syntaxnet&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;tensorflow/models/syntaxnet: Neural Models of Syntax.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;游戏&quot;&gt;&lt;a href=&quot;#游戏&quot; class=&quot;headerlink&quot; title=&quot;游戏&quot;&gt;&lt;/a&gt;游戏&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://halite.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Halite：AI编程游戏&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://vindinium.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Vindinium: 挑战AI编程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.gvgai.net/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Video Game AI比赛&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://aibirds.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;愤怒的小鸟AI比赛&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://theaigames.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;The AI Games&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.ice.ci.ritsumei.ac.jp/~ftgaic/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Fighting Game AI Competition&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.codecup.nl/intro.php&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;CodeCup&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://sscaitournament.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;星际争霸AI学生锦标赛&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.cs.mun.ca/~dchurchill/starcraftaicomp/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;AIIDE星际争霸AI竞赛&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://sites.google.com/site/starcraftaic/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;CIG星际争霸AI竞赛&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.codingame.com/training/machine-learning&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;CodinGame - AI Bot Games&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;播客&quot;&gt;&lt;a href=&quot;#播客&quot; class=&quot;headerlink&quot; title=&quot;播客&quot;&gt;&lt;/a&gt;播客&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;h3 id=&quot;适合初学者的播客：&quot;&gt;&lt;a href=&quot;#适合初学者的播客：&quot; class=&quot;headerlink&quot; title=&quot;适合初学者的播客：&quot;&gt;&lt;/a&gt;适合初学者的播客：&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.thetalkingmachines.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Talking Machines&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://lineardigressions.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Linear Digressions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://dataskeptic.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Data Skeptic&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://twimlai.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;This Week in Machine Learning &amp;amp; AI&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;h3 id=&quot;“更多”进阶的播客：&quot;&gt;&lt;a href=&quot;#“更多”进阶的播客：&quot; class=&quot;headerlink&quot; title=&quot;“更多”进阶的播客：&quot;&gt;&lt;/a&gt;“更多”进阶的播客：&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://partiallyderivative.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Partially Derivative&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://radar.oreilly.com/tag/oreilly-data-show-podcast&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;O’Reilly Data Show&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://soundcloud.com/nssd-podcast&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Not So Standard Deviation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;h3 id=&quot;盒子外的播客：&quot;&gt;&lt;a href=&quot;#盒子外的播客：&quot; class=&quot;headerlink&quot; title=&quot;盒子外的播客：&quot;&gt;&lt;/a&gt;盒子外的播客：&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://datastori.es/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Data Stories&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;社区&quot;&gt;&lt;a href=&quot;#社区&quot; class=&quot;headerlink&quot; title=&quot;社区&quot;&gt;&lt;/a&gt;社区&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Quora&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.quora.com/topic/Machine-Learning&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;机器学习&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.quora.com/topic/Statistics-academic-discipline&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;统计学&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.quora.com/topic/Data-Mining&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;数据挖掘&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Reddit&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.reddit.com/r/machinelearning&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;机器学习&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.reddit.com/r/computervision&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;计算机视觉&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.reddit.com/r/languagetechnology&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;自然语言处理&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.reddit.com/r/datascience&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;数据科学&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.reddit.com/r/bigdata&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;大数据&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.reddit.com/r/statistics&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;统计学&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://www.datatau.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Data Tau&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://news.startup.ml/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Deep Learning News&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://www.kdnuggets.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;KDnuggets&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;面试问题&quot;&gt;&lt;a href=&quot;#面试问题&quot; class=&quot;headerlink&quot; title=&quot;面试问题&quot;&gt;&lt;/a&gt;面试问题&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;http://blog.udacity.com/2016/05/prepare-machine-learning-interview.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;如何准备机器学习职位的面试&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.analyticsvidhya.com/blog/2016/09/40-interview-questions-asked-at-startups-in-machine-learning-data-science&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;40个机器学习与数据科学的面试问题&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;http://www.kdnuggets.com/2016/02/21-data-science-interview-questions-answers.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;21个必须要知道的数据科学问题与回答&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;http://career.guru99.com/top-50-interview-questions-on-machine-learning/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Top 50 机器学习面试问题与回答&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://resources.workable.com/machine-learning-engineer-interview-questions&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;机器学习面试问题&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;http://www.learn4master.com/machine-learning/popular-machine-learning-interview-questions&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;常用的机器学习面试问题&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.quora.com/What-are-some-common-Machine-Learning-interview-questions&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;机器学习面试问题有哪些相同的？&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.quora.com/What-are-the-best-interview-questions-to-evaluate-a-machine-learning-researcher&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;什么是评价一个机器学习研究者的最好的问题？&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;http://analyticscosm.com/machine-learning-interview-questions-for-data-scientist-interview/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;机器学习面试问题大搜集&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://learn.elitedatascience.com/mlqa-welcome&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;121个需要掌握的问题与回答&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;我崇拜的公司&quot;&gt;&lt;a href=&quot;#我崇拜的公司&quot; class=&quot;headerlink&quot; title=&quot;我崇拜的公司&quot;&gt;&lt;/a&gt;我崇拜的公司&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;[ ] &lt;a href=&quot;https://www.elsanow.io/home&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ELSA - 你虚拟的口语教练&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;灵感来源于 &lt;a href=&quot;https://github.com/jwasham/google-interview-university/blob/master/translations/README-cn.md&quot; target=&quot;_blank&quot; rel=&quot;externa
+    
+    </summary>
+    
+      <category term="深度学习" scheme="http://blog.mindcont.com/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>局域网内nginx反向代理上网</title>
@@ -1420,51 +1879,6 @@
     </summary>
     
       <category term="Linux" scheme="http://blog.mindcont.com/categories/Linux/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Houston, we have a problem</title>
-    <link href="http://blog.mindcont.com/2016/06/29/website-under-attack/"/>
-    <id>http://blog.mindcont.com/2016/06/29/website-under-attack/</id>
-    <published>2016-06-29T08:13:22.000Z</published>
-    <updated>2016-06-29T08:54:18.380Z</updated>
-    
-    <content type="html">&lt;p&gt;今天登录网站服务器，本来想看看硬盘存储空间被日志占用的还剩多少，谁知打开nginx的access.log 文件，发现15万9千条来自俄罗斯 ‘195.2.252.223’’195.2.252.67’’195.88.208.232’这3个IP地址利用 xmlrpc.php文件 POST数据，持续时间 从2016年6月6号到7号，初步确定想利用WordPress 的xmlrpc.php 漏洞 POST 用户名和密码来暴力破解。&lt;/p&gt;
-&lt;p&gt;部分记录如下:&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;195.2.252.67 - - [06/Jun/2016:03:40:53 -0400] &lt;span class=&quot;string&quot;&gt;&quot;POST /xmlrpc.php HTTP/1.0&quot;&lt;/span&gt; 499 0 &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;Mozilla/4.0 (compatible: MSIE 7.0; Windows NT 6.0)&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;195.2.252.223 - - [06/Jun/2016:03:40:53 -0400] &lt;span class=&quot;string&quot;&gt;&quot;POST /xmlrpc.php HTTP/1.0&quot;&lt;/span&gt; 499 0 &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;Mozilla/4.0 (compatible: MSIE 7.0; Windows NT 6.0)&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;195.2.252.223 - - [06/Jun/2016:03:40:53 -0400] &lt;span class=&quot;string&quot;&gt;&quot;POST /xmlrpc.php HTTP/1.0&quot;&lt;/span&gt; 499 0 &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;Mozilla/4.0 (compatible: MSIE 7.0; Windows NT 6.0)&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;195.88.208.232 - - [06/Jun/2016:03:40:53 -0400] &lt;span class=&quot;string&quot;&gt;&quot;POST /xmlrpc.php HTTP/1.0&quot;&lt;/span&gt; 499 0 &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;Mozilla/4.0 (compatible: MSIE 7.0; Windows NT 6.0)&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;195.2.252.67 - - [06/Jun/2016:03:40:54 -0400] &lt;span class=&quot;string&quot;&gt;&quot;POST /xmlrpc.php HTTP/1.0&quot;&lt;/span&gt; 499 0 &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;Mozilla/4.0 (compatible: MSIE 7.0; Windows NT 6.0)&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;195.2.252.223 - - [06/Jun/2016:03:40:54 -0400] &lt;span class=&quot;string&quot;&gt;&quot;POST /xmlrpc.php HTTP/1.0&quot;&lt;/span&gt; 499 0 &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;Mozilla/4.0 (compatible: MSIE 7.0; Windows NT 6.0)&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;195.2.252.223 - - [06/Jun/2016:03:40:55 -0400] &lt;span class=&quot;string&quot;&gt;&quot;POST /xmlrpc.php HTTP/1.0&quot;&lt;/span&gt; 499 0 &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;Mozilla/4.0 (compatible: MSIE 7.0; Windows NT 6.0)&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;195.2.252.67 - - [06/Jun/2016:03:40:56 -0400] &lt;span class=&quot;string&quot;&gt;&quot;POST /xmlrpc.php HTTP/1.0&quot;&lt;/span&gt; 499 0 &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;Mozilla/4.0 (compatible: MSIE 7.0; Windows NT 6.0)&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;195.2.252.67 - - [06/Jun/2016:03:40:56 -0400] &lt;span class=&quot;string&quot;&gt;&quot;POST /xmlrpc.php HTTP/1.0&quot;&lt;/span&gt; 499 0 &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;Mozilla/4.0 (compatible: MSIE 7.0; Windows NT 6.0)&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;195.2.252.223 - - [06/Jun/2016:03:40:57 -0400] &lt;span class=&quot;string&quot;&gt;&quot;POST /xmlrpc.php HTTP/1.0&quot;&lt;/span&gt; 499 0 &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;Mozilla/4.0 (compatible: MSIE 7.0; Windows NT 6.0)&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;195.2.252.223 - - [06/Jun/2016:03:40:57 -0400] &lt;span class=&quot;string&quot;&gt;&quot;POST /xmlrpc.php HTTP/1.0&quot;&lt;/span&gt; 499 0 &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;Mozilla/4.0 (compatible: MSIE 7.0; Windows NT 6.0)&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;195.2.252.67 - - [06/Jun/2016:03:40:58 -0400] &lt;span class=&quot;string&quot;&gt;&quot;POST /xmlrpc.php HTTP/1.0&quot;&lt;/span&gt; 499 0 &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;Mozilla/4.0 (compatible: MSIE 7.0; Windows NT 6.0)&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;195.2.252.223 - - [06/Jun/2016:03:40:58 -0400] &lt;span class=&quot;string&quot;&gt;&quot;POST /xmlrpc.php HTTP/1.0&quot;&lt;/span&gt; 499 0 &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;Mozilla/4.0 (compatible: MSIE 7.0; Windows NT 6.0)&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;195.2.252.223 - - [06/Jun/2016:03:40:58 -0400] &lt;span class=&quot;string&quot;&gt;&quot;POST /xmlrpc.php HTTP/1.0&quot;&lt;/span&gt; 499 0 &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;Mozilla/4.0 (compatible: MSIE 7.0; Windows NT 6.0)&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;195.2.252.223 - - [06/Jun/2016:03:40:58 -0400] &lt;span class=&quot;string&quot;&gt;&quot;POST /xmlrpc.php HTTP/1.0&quot;&lt;/span&gt; 499 0 &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;Mozilla/4.0 (compatible: MSIE 7.0; Windows NT 6.0)&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;195.2.252.223 - - [06/Jun/2016:03:40:59 -0400] &lt;span class=&quot;string&quot;&gt;&quot;POST /xmlrpc.php HTTP/1.0&quot;&lt;/span&gt; 499 0 &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;Mozilla/4.0 (compatible: MSIE 7.0; Windows NT 6.0)&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;195.88.208.232 - - [06/Jun/2016:03:40:59 -0400] &lt;span class=&quot;string&quot;&gt;&quot;POST /xmlrpc.php HTTP/1.0&quot;&lt;/span&gt; 499 0 &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;Mozilla/4.0 (compatible: MSIE 7.0; Windows NT 6.0)&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;195.2.252.223 - - [06/Jun/2016:03:40:59 -0400] &lt;span class=&quot;string&quot;&gt;&quot;POST /xmlrpc.php HTTP/1.0&quot;&lt;/span&gt; 499 0 &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;Mozilla/4.0 (compatible: MSIE 7.0; Windows NT 6.0)&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;195.2.252.67 - - [06/Jun/2016:03:41:00 -0400] &lt;span class=&quot;string&quot;&gt;&quot;POST /xmlrpc.php HTTP/1.0&quot;&lt;/span&gt; 499 0 &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;Mozilla/4.0 (compatible: MSIE 7.0; Windows NT 6.0)&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;195.2.252.67 - - [06/Jun/2016:03:41:00 -0400] &lt;span class=&quot;string&quot;&gt;&quot;POST /xmlrpc.php HTTP/1.0&quot;&lt;/span&gt; 499 0 &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;Mozilla/4.0 (compatible: MSIE 7.0; Windows NT 6.0)&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;195.2.252.223 - - [06/Jun/2016:03:41:00 -0400] &lt;span class=&quot;string&quot;&gt;&quot;POST /xmlrpc.php HTTP/1.0&quot;&lt;/span&gt; 499 0 &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;Mozilla/4.0 (compatible: MSIE 7.0; Windows NT 6.0)&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;195.2.252.223 - - [06/Jun/2016:03:41:00 -0400] &lt;span class=&quot;string&quot;&gt;&quot;POST /xmlrpc.php HTTP/1.0&quot;&lt;/span&gt; 499 0 &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;Mozilla/4.0 (compatible: MSIE 7.0; Windows NT 6.0)&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;195.2.252.67 - - [06/Jun/2016:03:41:01 -0400] &lt;span class=&quot;string&quot;&gt;&quot;POST /xmlrpc.php HTTP/1.0&quot;&lt;/span&gt; 499 0 &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;Mozilla/4.0 (compatible: MSIE 7.0; Windows NT 6.0)&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;195.2.252.223 - - [06/Jun/2016:03:41:01 -0400] &lt;span class=&quot;string&quot;&gt;&quot;POST /xmlrpc.php HTTP/1.0&quot;&lt;/span&gt; 499 0 &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;Mozilla/4.0 (compatible: MSIE 7.0; Windows NT 6.0)&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;195.2.252.67 - - [06/Jun/2016:03:41:03 -0400] &lt;span class=&quot;string&quot;&gt;&quot;POST /xmlrpc.php HTTP/1.0&quot;&lt;/span&gt; 499 0 &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;Mozilla/4.0 (compatible: MSIE 7.0; Windows NT 6.0)&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;195.2.252.67 - - [06/Jun/2016:03:41:03 -0400] &lt;span class=&quot;string&quot;&gt;&quot;POST /xmlrpc.php HTTP/1.0&quot;&lt;/span&gt; 499 0 &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;Mozilla/4.0 (compatible: MSIE 7.0; Windows NT 6.0)&quot;&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;-&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;h2 id=&quot;解决办法&quot;&gt;&lt;a href=&quot;#解决办法&quot; class=&quot;headerlink&quot; title=&quot;解决办法&quot;&gt;&lt;/a&gt;解决办法&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;删除xmlrpc.php或重命名为xmlrpc.php.backup&lt;/li&gt;
-&lt;li&gt;设置其权限为不可访问。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; class=&quot;headerlink&quot; title=&quot;背景&quot;&gt;&lt;/a&gt;背景&lt;/h2&gt;&lt;p&gt;暴力猜解攻击是我们至今为止在互联网上看到的最古老而常见的攻击之一。黑客可以通过SSH和FTP协议，暴力猜解攻击你的WEB服务器。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;传统暴力猜解攻击&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;  这些攻击一般都不是很复杂，而且理论上是比较容易遏制的。但是，它们仍然拥有存在的价值，因为人们并不习惯采用强密码，而且不是每个人都拥有良好的登录习惯。&lt;/p&gt;
-&lt;p&gt;  然而可惜的是，暴力猜解攻击有个致命的弱点。通常来说，如果黑客需要尝试500个不同的密码，他将尝试发送500次不同的请求到服务器上。通过限制登录次数，可以在一定层面上遏制暴力猜解攻击。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;放大型暴力猜解攻击&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;  黑客可以减少攻击次数么，他们能否一次请求，就能进行多次登陆尝试？请想象一下，如果你一次攻击请求能尝试500个密码，那么登录次数限制神马的，不都是战斗力5的渣渣了？&lt;/p&gt;
-&lt;p&gt;  这种手法有点类似于咱们以前的DDoS放大攻击，一个核心指挥服务器，能够利用DNS或者NTP协议回应进行放大攻击，增加原本攻击强度50-100倍。无论是任何类型的放大型攻击，都将让黑客倍加受益。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;通过Wordpress XML-RPC进行暴力猜解放大攻击&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;  XML-RPC的隐藏特性之一，则是你可以使用system.multicall方法，在单个请求中进行多次尝试，这是非常有用的。它允许应用程序通过一条HTTP请求，执行多个命令。&lt;/p&gt;
-&lt;p&gt;  &lt;strong&gt;XML-RPC是一个通过HTTP方法进行远程调用的，非常简单易用的玩意儿。它支持Perl、Java、Python、C、C++、PHP，以及许多其他编程语言。&lt;/strong&gt;Wordpress和Drupal，以及许多其他内容管理系统都支持XML-RPC。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;当然，&lt;strong&gt;任何好的技术都是双刃剑。&lt;/strong&gt;在XML-RPC技术被普通程序开发者所喜爱的同时，也成了黑客手中的利器。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;背景来源：SU、TA，编译/dawner，转载请注明来自FreeBuf黑客与极客（FreeBuf.COM）&lt;/p&gt;
-&lt;/blockquote&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;今天登录网站服务器，本来想看看硬盘存储空间被日志占用的还剩多少，谁知打开nginx的access.log 文件，发现15万9千条来自俄罗斯 ‘195.2.252.223’’195.2.252.67’’195.88.208.232’这3个IP地址利用 xmlrpc.php文件
-    
-    </summary>
-    
-      <category term="随笔日记" scheme="http://blog.mindcont.com/categories/%E9%9A%8F%E7%AC%94%E6%97%A5%E8%AE%B0/"/>
     
     
   </entry>

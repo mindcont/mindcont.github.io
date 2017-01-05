@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.mindcont.com/2017/01/05/machine-learning-for-software-engineers/</loc>
+    
+    <lastmod>2017-01-05T01:03:21.773Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.mindcont.com/2016/12/26/nginx-proxy-lan/</loc>
     
     <lastmod>2016-12-26T06:43:51.752Z</lastmod>
