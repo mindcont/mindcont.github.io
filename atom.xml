@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.mindcont.com/"/>
-  <updated>2017-01-05T01:03:21.773Z</updated>
+  <updated>2017-02-14T01:47:22.345Z</updated>
   <id>http://blog.mindcont.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://blog.mindcont.com/2017/01/05/machine-learning-for-software-engineers/"/>
     <id>http://blog.mindcont.com/2017/01/05/machine-learning-for-software-engineers/</id>
     <published>2017-01-05T00:43:44.000Z</published>
-    <updated>2017-01-05T01:03:21.773Z</updated>
+    <updated>2017-02-14T01:47:22.345Z</updated>
     
     <content type="html">&lt;p&gt;灵感来源于 &lt;a href=&quot;https://github.com/jwasham/google-interview-university/blob/master/translations/README-cn.md&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;谷歌面试学习手册&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
@@ -479,10 +479,9 @@
     <link href="http://blog.mindcont.com/2016/12/26/nginx-proxy-lan/"/>
     <id>http://blog.mindcont.com/2016/12/26/nginx-proxy-lan/</id>
     <published>2016-12-26T04:31:25.000Z</published>
-    <updated>2016-12-26T06:43:51.752Z</updated>
+    <updated>2017-02-14T02:03:18.399Z</updated>
     
-    <content type="html">&lt;p&gt;&lt;img src=&quot;https://sslbucket-a.akamaihd.net/www.opswat.com/images/blog/web-proxy-diagram-new.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; class=&quot;headerlink&quot; title=&quot;背景&quot;&gt;&lt;/a&gt;背景&lt;/h2&gt;&lt;p&gt;局域网下有两台Linux服务器，信息如下：&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;strong&gt;背景：&lt;/strong&gt;局域网下有两台Linux服务器，信息如下：&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -507,8 +506,10 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;p&gt;&lt;strong&gt;需求：&lt;/strong&gt;HOSTA和HOSTB均处在局域网中，二者能够互相ping通，HOSTA开通网络策略支持互联网访问，但是HOSTB不支持，现在需要将HOSTA作为代理服务器，让HOSTB通过HOSTA实现互联网访问，主要需要HOSTB能够进行在线的软件包安装（yum和pip）&lt;/p&gt;
 &lt;h2 id=&quot;方案&quot;&gt;&lt;a href=&quot;#方案&quot; class=&quot;headerlink&quot; title=&quot;方案&quot;&gt;&lt;/a&gt;方案&lt;/h2&gt;&lt;p&gt;使用Nginx反向代理将HOSTA作为http服务器，在HOSTB上配置http全局代理。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://sslbucket-a.akamaihd.net/www.opswat.com/images/blog/web-proxy-diagram-new.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;h3 id=&quot;设置nginx为HTTP代理服务器&quot;&gt;&lt;a href=&quot;#设置nginx为HTTP代理服务器&quot; class=&quot;headerlink&quot; title=&quot;设置nginx为HTTP代理服务器&quot;&gt;&lt;/a&gt;设置nginx为HTTP代理服务器&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;服务器端即HOSTA主机&lt;/strong&gt;,设置nginx为HTTP代理服务器上网，只需要3步，分别为安装nginx、配置nginx、修改OpenWrt 防火墙。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;1、登录OpenWrt 安装nginx&lt;/strong&gt;&lt;br&gt;在windows下使用SSH工具，如&lt;a href=&quot;http://www.chiark.greenend.org.uk/~sgtatham/putty/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Putty&lt;/a&gt;等，在Host name 填写192.168.1.1，端口22 ，然后点击 Open.&lt;br&gt;&lt;img src=&quot;/images/ubuntu/openwrt/putty.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;在linux下，打开终端输入&lt;br&gt;&lt;figure class=&quot;highlight nginx&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;ssh&lt;/span&gt; root@&lt;span class=&quot;number&quot;&gt;192.168.1.1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
@@ -535,8 +536,31 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;https://sslbucket-a.akamaihd.net/www.opswat.com/images/blog/web-proxy-diagram-new.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; cl
+      &lt;p&gt;&lt;strong&gt;背景：&lt;/strong&gt;局域网下有两台Linux服务器，信息如下：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;服务器&lt;/th&gt;
+&lt;th&gt;IP地址&lt;/th&gt;
+&lt;th&gt;操作系统&lt;/th&gt;
+&lt;th&gt;Internet访问&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;HOSTA(OpenWrt路由器)&lt;/td&gt;
+&lt;td&gt;110.1.1.65(wan)&lt;/td&gt;
+&lt;td&gt;CentOS 6.7 x64&lt;/td&gt;
+&lt;td&gt;是&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;HOSTB&lt;/td&gt;
+&lt;td&gt;110.1.1.215&lt;/td&gt;
+&lt;td&gt;CentOS 6.7 x64&lt;/td&gt;
+&lt;td&gt;否&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
     
     </summary>
     
@@ -548,9 +572,9 @@
     <link href="http://blog.mindcont.com/2016/12/14/ros-naoqi-ubuntu/"/>
     <id>http://blog.mindcont.com/2016/12/14/ros-naoqi-ubuntu/</id>
     <published>2016-12-14T08:47:33.000Z</published>
-    <updated>2016-12-14T11:18:30.778Z</updated>
+    <updated>2017-02-14T02:04:25.054Z</updated>
     
-    <content type="html">&lt;p&gt;&lt;img src=&quot;https://dn-mindcont.qbox.me/blog/images/ubuntu/ros/hero_product.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;ROS( robot operating system) 是一款开源的面向与机器人控制领域的操作系统，起源于2007斯坦福大学人工智能实验室的项目与机器人技术公司Willow Garage 的个人机器人项目之间的合作，2008年之后由Willow Garage 推动，2010 年该公司将其开源，2015年，ros 发布了Jade 版本。&lt;/p&gt;
+    <content type="html">&lt;p&gt;ROS( robot operating system) 是一款开源的面向与机器人控制领域的操作系统，起源于2007斯坦福大学人工智能实验室的项目与机器人技术公司Willow Garage 的个人机器人项目之间的合作，2008年之后由Willow Garage 推动，2010 年该公司将其开源，2015年，ros 发布了Jade 版本。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;https://dn-mindcont.qbox.me/blog/images/ubuntu/ros/hero_product.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;http://blog.mindcont.com/2016/12/14/naoqi-robot-sdk-ubuntu/&quot;&gt;书接上回&lt;/a&gt;，下面我将带您一览ros和naoqi robot 在ubuntu 14.04(lts)版本下开发环境的搭建。&lt;/p&gt;
 &lt;h3 id=&quot;安装-ros-indigo-desktop&quot;&gt;&lt;a href=&quot;#安装-ros-indigo-desktop&quot; class=&quot;headerlink&quot; title=&quot;安装 ros-indigo-desktop&quot;&gt;&lt;/a&gt;安装 ros-indigo-desktop&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;1、 配置 Ubuntu 软件仓库&lt;br&gt;配置你的 Ubuntu 软件仓库(repositories) 以允许 “restricted”、”universe” 和 “multiverse”这三种安装模式。 你可以 &lt;a href=&quot;https://help.ubuntu.com/community/Repositories/Ubuntu&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;按照ubuntu中的配置指南&lt;/a&gt;来完成配置。&lt;/li&gt;
@@ -608,7 +632,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;https://dn-mindcont.qbox.me/blog/images/ubuntu/ros/hero_product.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;ROS( robot operating system) 是一款开源的面向与机器人控制领域的操
+      &lt;p&gt;ROS( robot operating system) 是一款开源的面向与机器人控制领域的操作系统，起源于2007斯坦福大学人工智能实验室的项目与机器人技术公司Willow Garage 的个人机器人项目之间的合作，2008年之后由Willow Garage 推动，2010 年该公司将其开源，2015年，ros 发布了Jade 版本。&lt;br&gt;
     
     </summary>
     
@@ -622,9 +646,9 @@
     <link href="http://blog.mindcont.com/2016/12/14/naoqi-robot-sdk-ubuntu/"/>
     <id>http://blog.mindcont.com/2016/12/14/naoqi-robot-sdk-ubuntu/</id>
     <published>2016-12-14T02:52:41.000Z</published>
-    <updated>2016-12-26T04:41:44.581Z</updated>
+    <updated>2017-02-14T01:50:40.638Z</updated>
     
-    <content type="html">&lt;p&gt;&lt;img src=&quot;https://dn-mindcont.qbox.me/blog/images/ubuntu/ros/2016_DEV_PROG_launch_banner_600x360_mailing_V3_EN.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;本文将带您完成naoqi robot SDK 在ubuntu 14.04(lts)下开发环境的配置,这里值得注意的是您不一定需要购买一个naoqi 机器人才能进行开发，这里可以选择使用虚拟机器人，一般开发过程中我们首先将程序指令在虚拟机器人中进行调试，待成功后下载到真实机器人中进行实地运行。&lt;/p&gt;
+    <content type="html">&lt;p&gt;本文将带您完成naoqi robot SDK 在ubuntu 14.04(lts)下开发环境的配置,这里值得注意的是您不一定需要购买一个naoqi 机器人才能进行开发，这里可以选择使用虚拟机器人，一般开发过程中我们首先将程序指令在虚拟机器人中进行调试，待成功后下载到真实机器人中进行实地运行。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;https://dn-mindcont.qbox.me/blog/images/ubuntu/ros/2016_DEV_PROG_launch_banner_600x360_mailing_V3_EN.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;h3 id=&quot;安装-naoqi-choregraphe-suite&quot;&gt;&lt;a href=&quot;#安装-naoqi-choregraphe-suite&quot; class=&quot;headerlink&quot; title=&quot;安装　naoqi choregraphe suite&quot;&gt;&lt;/a&gt;安装　naoqi choregraphe suite&lt;/h3&gt;&lt;p&gt;Choregraphe是一个多平台的桌面应用程序，允许您：&lt;/p&gt;
 &lt;p&gt;1、创建动画，行为和对话框，&lt;br&gt;2、在模拟机器人上或直接在真实机器人上测试它们，&lt;br&gt;3、监控和控制你的机器人，&lt;br&gt;4、使用自己的Python代码丰富Choregraphe行为。&lt;/p&gt;
 &lt;p&gt;由于官方提供的链接国内下载容易失败，这里可以使用笔者已经下载好的文件。&lt;br&gt;&lt;figure class=&quot;highlight nginx&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;wget&lt;/span&gt; ftp://mindcont.com/IoT/Naoqi/Choregraphe/choregraphe-suite-2.1.4.13-linux64.tar.gz&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;tar -xvf choregraphe-suite-&lt;span class=&quot;number&quot;&gt;2.1.4.13&lt;/span&gt;-linux64.tar.gz naoqi/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;cd ~/naoqi/choregraphe-suite-&lt;span class=&quot;number&quot;&gt;2.1.4.13&lt;/span&gt;-linux64/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;./choregraphe&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
@@ -648,7 +672,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;https://dn-mindcont.qbox.me/blog/images/ubuntu/ros/2016_DEV_PROG_launch_banner_600x360_mailing_V3_EN.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;本文将带您完成nao
+      &lt;p&gt;本文将带您完成naoqi robot SDK 在ubuntu 14.04(lts)下开发环境的配置,这里值得注意的是您不一定需要购买一个naoqi 机器人才能进行开发，这里可以选择使用虚拟机器人，一般开发过程中我们首先将程序指令在虚拟机器人中进行调试，待成功后下载到真实机器人中进行实地运行。&lt;br&gt;
     
     </summary>
     
@@ -834,11 +858,9 @@
     <link href="http://blog.mindcont.com/2016/10/27/hg255d-openwrt/"/>
     <id>http://blog.mindcont.com/2016/10/27/hg255d-openwrt/</id>
     <published>2016-10-27T02:40:52.000Z</published>
-    <updated>2016-10-27T06:32:50.692Z</updated>
+    <updated>2017-02-14T01:53:02.025Z</updated>
     
-    <content type="html">&lt;p&gt;&lt;strong&gt;刷机有危险，刷机前请做好相关知识储备！！！&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;刷机有危险，刷机前请做好相关知识储备！！！&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;刷机有危险，刷机前请做好相关知识储备！！！&lt;/strong&gt;&lt;br&gt;重要的话儿，说三遍～&lt;/p&gt;
-&lt;p&gt;本文仅适合 华为hg255d v4 版本路由，某宝入手二手华为hg255d路由器，CPU: Ralink RT3052F Flash:4M RAM:32M 此为背景。硬改可参考[2].&lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+    <content type="html">&lt;p&gt;&lt;strong&gt;刷机有危险，刷机前请做好相关知识储备！！！&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;刷机有危险，刷机前请做好相关知识储备！！！&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;刷机有危险，刷机前请做好相关知识储备！！！&lt;/strong&gt;&lt;br&gt;重要的话儿，说三遍～&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;本文仅适合 华为hg255d v4 版本路由，某宝入手二手华为hg255d路由器，CPU: Ralink RT3052F Flash:4M RAM:32M 此为背景。硬改可参考[2].&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/images/ubuntu/hg255d.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=&quot;/images/ubuntu/hg255d-2.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;h3 id=&quot;连接路由，上传u-boot&quot;&gt;&lt;a href=&quot;#连接路由，上传u-boot&quot; class=&quot;headerlink&quot; title=&quot;连接路由，上传u-boot&quot;&gt;&lt;/a&gt;连接路由，上传u-boot&lt;/h3&gt;&lt;p&gt;设置本地连接为 192.168.1.100  子网掩码：255.255.255.0 网关丶DNS不用填写（以后只要更新固件就是192.168.1.100的固定ip切记切记），网线与hg255d连接好，保持机器关闭状态.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/images/ubuntu/hg255d-3.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
@@ -881,8 +903,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;strong&gt;刷机有危险，刷机前请做好相关知识储备！！！&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;刷机有危险，刷机前请做好相关知识储备！！！&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;刷机有危险，刷机前请做好相关知识储备！！！&lt;/strong&gt;&lt;br&gt;重要的话儿，说三遍～&lt;/p&gt;
-&lt;p&gt;本文仅适合 华为hg255d v4 版本路由，某宝入手二手华为hg255d路由器，CPU: Ralink RT3052F Flash:4M RAM:32M 此为背景。硬改可参考[2].&lt;/p&gt;
+      &lt;p&gt;&lt;strong&gt;刷机有危险，刷机前请做好相关知识储备！！！&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;刷机有危险，刷机前请做好相关知识储备！！！&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;刷机有危险，刷机前请做好相关知识储备！！！&lt;/strong&gt;&lt;br&gt;重要的话儿，说三遍～&lt;br&gt;
     
     </summary>
     
@@ -896,12 +917,14 @@
     <link href="http://blog.mindcont.com/2016/10/27/ubuntu-necessary-install-software/"/>
     <id>http://blog.mindcont.com/2016/10/27/ubuntu-necessary-install-software/</id>
     <published>2016-10-27T01:47:28.000Z</published>
-    <updated>2016-11-08T07:40:05.250Z</updated>
+    <updated>2017-02-14T01:56:38.724Z</updated>
     
-    <content type="html">&lt;p&gt;说linux，不得不从unix 发展历史和发行版本说起，由通用电气\AT&amp;amp;T\MIT 合作开发unix。在美苏冷战期间,美国国防部 ncp &amp;gt;tcp/ip 捆绑 unix 上。c 语言之父肯.汤普森 丹尼斯.里奇重写了unix 底层代码。发行版本&lt;br&gt;&lt;figure class=&quot;highlight mathematica&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;AIX 	IBM 	PowerPC&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;HP-UX 	HP 	PA-RISC&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Solaris sun	SPARC&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Linux	&lt;span class=&quot;keyword&quot;&gt;Red&lt;/span&gt; Hat ,ubuntu (Intel AMD)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;说linux，不得不从unix 发展历史和发行版本说起，由通用电气\AT&amp;amp;T\MIT 合作开发unix。在美苏冷战期间,美国国防部 ncp &amp;gt;tcp/ip 捆绑 unix 上。c 语言之父肯.汤普森 丹尼斯.里奇重写了unix 底层代码。&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;UNIX发行版本&lt;br&gt;&lt;figure class=&quot;highlight mathematica&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;AIX 	IBM 	PowerPC&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;HP-UX 	HP 	PA-RISC&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Solaris sun	SPARC&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Linux	&lt;span class=&quot;keyword&quot;&gt;Red&lt;/span&gt; Hat ,ubuntu (Intel AMD)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;!--more--&gt;
 &lt;p&gt;LINUX 发展历史，由芬兰大学 Linux Torvalds 开源的软件，而芬兰 企鹅 logo 极地动物,象征开源。其发行版本&lt;br&gt;&lt;img src=&quot;/images/ubuntu/linux.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;各发行版的特点&lt;br&gt;&lt;img src=&quot;/images/ubuntu/linux-2.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;figure class=&quot;highlight nginx&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;Redhat&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      fedora 全功能版,不稳定&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      centos 社区维护版 新浪,网易 服务都采用的版本&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;红旗 Linux&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;suse 欧洲用的多&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;其各发行版的特点&lt;br&gt;&lt;img src=&quot;/images/ubuntu/linux-2.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;figure class=&quot;highlight nginx&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;Redhat&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      fedora 全功能版,不稳定&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      centos 社区维护版 新浪,网易 服务都采用的版本&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;红旗 Linux&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;suse 欧洲用的多&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;linux 系统的应用领域&lt;br&gt;&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;基于linux的企业服务器&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;嵌入式应用&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;linux 在电影娱乐&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;linux 学习方法&lt;br&gt;&lt;figure class=&quot;highlight gams&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; 详细的报错信息 邮件称呼&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt; 帮助文档,查找,实例&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;3&lt;/span&gt; 英语&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	COMMAND &lt;span class=&quot;keyword&quot;&gt;NOT&lt;/span&gt; FOUND   未找到 命令 ?&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;NO&lt;/span&gt; SUCH &lt;span class=&quot;keyword&quot;&gt;file&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;or&lt;/span&gt; directory  没有找到文件或者 地址?&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;4&lt;/span&gt; 忘掉windows的思维方式&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;5&lt;/span&gt; 计划 专注 坚持 练习&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;h3 id=&quot;更改-home-分区挂载点&quot;&gt;&lt;a href=&quot;#更改-home-分区挂载点&quot; class=&quot;headerlink&quot; title=&quot;更改/home 分区挂载点&quot;&gt;&lt;/a&gt;更改/home 分区挂载点&lt;/h3&gt;&lt;p&gt;ubuntu 难免要弄坏，然后重装，重装的时候，可以将手动更改 /etc/fastab 这个文件来指定文件系统的加载位置。前提是从前系统的 /home 与/ 分区 不在同一个分区中。&lt;br&gt;&lt;figure class=&quot;highlight arduino&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo gedit /etc/fastab&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;# home was on /dev/sda9 during installation&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;UUID=&lt;span class=&quot;number&quot;&gt;9&lt;/span&gt;a1eabc7&lt;span class=&quot;number&quot;&gt;-17&lt;/span&gt;ef&lt;span class=&quot;number&quot;&gt;-4033&lt;/span&gt;-ae61&lt;span class=&quot;number&quot;&gt;-48549&lt;/span&gt;c0f1483 /&lt;span class=&quot;built_in&quot;&gt;home&lt;/span&gt;           ext4    defaults 	&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;       &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
@@ -931,7 +954,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;说linux，不得不从unix 发展历史和发行版本说起，由通用电气\AT&amp;amp;T\MIT 合作开发unix。在美苏冷战期间,美国国防部 ncp &amp;gt;tcp/ip 捆绑 unix 上。c 语言之父肯.汤普森 丹尼斯.里奇重写了unix 底层代码。发行版本&lt;br&gt;&lt;figure class=&quot;highlight mathematica&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;AIX 	IBM 	PowerPC&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;HP-UX 	HP 	PA-RISC&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Solaris sun	SPARC&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Linux	&lt;span class=&quot;keyword&quot;&gt;Red&lt;/span&gt; Hat ,ubuntu (Intel AMD)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+      &lt;p&gt;说linux，不得不从unix 发展历史和发行版本说起，由通用电气\AT&amp;amp;T\MIT 合作开发unix。在美苏冷战期间,美国国防部 ncp &amp;gt;tcp/ip 捆绑 unix 上。c 语言之父肯.汤普森 丹尼斯.里奇重写了unix 底层代码。&lt;/p&gt;
     
     </summary>
     

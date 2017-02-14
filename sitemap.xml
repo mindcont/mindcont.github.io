@@ -2,30 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://blog.mindcont.com/2017/01/05/machine-learning-for-software-engineers/</loc>
+    <loc>http://blog.mindcont.com/history/index.html</loc>
     
-    <lastmod>2017-01-05T01:03:21.773Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/12/26/nginx-proxy-lan/</loc>
-    
-    <lastmod>2016-12-26T06:43:51.752Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/12/14/naoqi-robot-sdk-ubuntu/</loc>
-    
-    <lastmod>2016-12-26T04:41:44.581Z</lastmod>
+    <lastmod>2017-02-14T02:12:26.039Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://blog.mindcont.com/2016/12/14/ros-naoqi-ubuntu/</loc>
     
-    <lastmod>2016-12-14T11:18:30.778Z</lastmod>
+    <lastmod>2017-02-14T02:04:25.054Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/12/26/nginx-proxy-lan/</loc>
+    
+    <lastmod>2017-02-14T02:03:18.399Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/about/index.html</loc>
+    
+    <lastmod>2017-02-14T01:57:30.631Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/10/27/ubuntu-necessary-install-software/</loc>
+    
+    <lastmod>2017-02-14T01:56:38.724Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/10/27/hg255d-openwrt/</loc>
+    
+    <lastmod>2017-02-14T01:53:02.025Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/12/14/naoqi-robot-sdk-ubuntu/</loc>
+    
+    <lastmod>2017-02-14T01:50:40.638Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2017/01/05/machine-learning-for-software-engineers/</loc>
+    
+    <lastmod>2017-02-14T01:47:22.345Z</lastmod>
     
   </url>
   
@@ -65,30 +93,9 @@
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/10/27/ubuntu-necessary-install-software/</loc>
-    
-    <lastmod>2016-11-08T07:40:05.250Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/about/index.html</loc>
-    
-    <lastmod>2016-11-04T01:04:02.426Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://blog.mindcont.com/2016/09/13/dataset/</loc>
     
     <lastmod>2016-10-28T07:49:25.142Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/10/27/hg255d-openwrt/</loc>
-    
-    <lastmod>2016-10-27T06:32:50.692Z</lastmod>
     
   </url>
   
@@ -103,13 +110,6 @@
     <loc>http://blog.mindcont.com/2016/09/18/cnn/</loc>
     
     <lastmod>2016-09-18T03:21:10.540Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/history/index.html</loc>
-    
-    <lastmod>2016-09-13T09:32:10.136Z</lastmod>
     
   </url>
   
