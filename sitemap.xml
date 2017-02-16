@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.mindcont.com/about/index.html</loc>
+    
+    <lastmod>2017-02-16T08:17:16.736Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2017/02/15/ideas-worth-spreading/</loc>
+    
+    <lastmod>2017-02-16T02:14:04.780Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2017/02/15/caffe-guide-book/</loc>
+    
+    <lastmod>2017-02-16T00:31:14.780Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.mindcont.com/history/index.html</loc>
     
     <lastmod>2017-02-14T02:12:26.039Z</lastmod>
@@ -19,13 +40,6 @@
     <loc>http://blog.mindcont.com/2016/12/26/nginx-proxy-lan/</loc>
     
     <lastmod>2017-02-14T02:03:18.399Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/about/index.html</loc>
-    
-    <lastmod>2017-02-14T01:57:30.631Z</lastmod>
     
   </url>
   
@@ -86,13 +100,6 @@
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/09/04/caffe-guide-book/</loc>
-    
-    <lastmod>2016-11-12T11:24:22.363Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://blog.mindcont.com/2016/09/13/dataset/</loc>
     
     <lastmod>2016-10-28T07:49:25.142Z</lastmod>
@@ -117,13 +124,6 @@
     <loc>http://blog.mindcont.com/2016/08/18/git-commands/</loc>
     
     <lastmod>2016-09-13T09:30:08.726Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/07/31/TED-talks-Linus-Torvalds/</loc>
-    
-    <lastmod>2016-08-30T03:16:53.649Z</lastmod>
     
   </url>
   
