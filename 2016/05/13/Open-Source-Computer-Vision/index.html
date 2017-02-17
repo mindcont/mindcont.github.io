@@ -1,34 +1,35 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>计算机视觉开源项目 | 微纪元</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/3.0.3/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">计算机视觉开源项目</h1><a id="logo" href="/.">微纪元</a><p class="description">根据同名科幻小说改编</p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/history/"><i class="fa fa-history"> 历史</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div id="layout" class="pure-g"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">计算机视觉开源项目</h1><div class="post-meta">May 13, 2016<script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> Hits</span></span></div><a data-thread-key="2016/05/13/open-source-computer-vision/" href="/2016/05/13/open-source-computer-vision/#comments" class="ds-thread-count"></a><div class="clear"><div id="toc" class="toc-article"><div class="toc-title">文章目录</div><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#特征提取Feature-Extraction"><span class="toc-number">1.</span> <span class="toc-text">特征提取Feature Extraction</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#图像分割Image-Segmentation"><span class="toc-number">2.</span> <span class="toc-text">图像分割Image Segmentation</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#目标检测Object-Detection"><span class="toc-number">3.</span> <span class="toc-text">目标检测Object Detection</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#显著性检测Saliency-Detection"><span class="toc-number">4.</span> <span class="toc-text">显著性检测Saliency Detection</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#图像分类、聚类Image-Classification-Clustering"><span class="toc-number">5.</span> <span class="toc-text">图像分类、聚类Image Classification, Clustering</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#抠图Image-Matting"><span class="toc-number">6.</span> <span class="toc-text">抠图Image Matting</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#目标跟踪Object-Tracking"><span class="toc-number">7.</span> <span class="toc-text">目标跟踪Object Tracking</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Kinect"><span class="toc-number">8.</span> <span class="toc-text">Kinect</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3D相关"><span class="toc-number">9.</span> <span class="toc-text">3D相关</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#机器学习算法"><span class="toc-number">10.</span> <span class="toc-text">机器学习算法</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#目标、行为识别Object-Action-Recognition"><span class="toc-number">11.</span> <span class="toc-text">目标、行为识别Object, Action Recognition</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#图像处理"><span class="toc-number">12.</span> <span class="toc-text">图像处理</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#一些实用工具"><span class="toc-number">13.</span> <span class="toc-text">一些实用工具</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#人手及指尖检测与识别"><span class="toc-number">14.</span> <span class="toc-text">人手及指尖检测与识别</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#场景解释"><span class="toc-number">15.</span> <span class="toc-text">场景解释</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#光流Optical-flow"><span class="toc-number">16.</span> <span class="toc-text">光流Optical flow</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#图像检索Image-Retrieval"><span class="toc-number">17.</span> <span class="toc-text">图像检索Image Retrieval</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#马尔科夫随机场Markov-Random-Fields"><span class="toc-number">18.</span> <span class="toc-text">马尔科夫随机场Markov Random Fields</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#运动检测Motion-detection"><span class="toc-number">19.</span> <span class="toc-text">运动检测Motion detection</span></a></li></ol></div></div><div class="post-content"><p>笔者日前在搜索计算机视觉方面的代码,偶然发现这个,不敢独享,随整理发表于此,希望可以帮助到有关学习计算机视觉的朋友们!</p>
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>计算机视觉开源项目 | 微纪元</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/3.0.3/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">计算机视觉开源项目</h1><a id="logo" href="/.">微纪元</a><p class="description">根据同名科幻小说改编</p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/history/"><i class="fa fa-history"> 历史</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div id="layout" class="pure-g"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">计算机视觉开源项目</h1><div class="post-meta">May 13, 2016<script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> Hits</span></span></div><a data-thread-key="2016/05/13/open-source-computer-vision/" href="/2016/05/13/open-source-computer-vision/#comments" class="ds-thread-count"></a><div class="clear"><div id="toc" class="toc-article"><div class="toc-title">文章目录</div><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">1.</span> <span class="toc-text">特征提取Feature Extraction</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">2.</span> <span class="toc-text">图像分割Image Segmentation</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">3.</span> <span class="toc-text">目标检测Object Detection</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">4.</span> <span class="toc-text">显著性检测Saliency Detection</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">5.</span> <span class="toc-text">图像分类、聚类Image Classification, Clustering</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">6.</span> <span class="toc-text">抠图Image Matting</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">7.</span> <span class="toc-text">目标跟踪Object Tracking</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">8.</span> <span class="toc-text">Kinect</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">9.</span> <span class="toc-text">3D相关</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">10.</span> <span class="toc-text">机器学习算法</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">11.</span> <span class="toc-text">目标、行为识别Object, Action Recognition</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">12.</span> <span class="toc-text">图像处理</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">13.</span> <span class="toc-text">一些实用工具</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">14.</span> <span class="toc-text">人手及指尖检测与识别</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">15.</span> <span class="toc-text">场景解释</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">16.</span> <span class="toc-text">光流Optical flow</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">17.</span> <span class="toc-text">图像检索Image Retrieval</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">18.</span> <span class="toc-text">马尔科夫随机场Markov Random Fields</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">19.</span> <span class="toc-text">运动检测Motion detection</span></a></li></ol></div></div><div class="post-content"><p>笔者日前在搜索计算机视觉方面的代码,偶然发现这个,不敢独享,随整理发表于此,希望可以帮助到有关学习计算机视觉的朋友们!</p>
 <p><img src="/images/NASA_Mars_Rover.jpg" alt=""></p>
-<h1 id="特征提取Feature-Extraction"><a href="#特征提取Feature-Extraction" class="headerlink" title="特征提取Feature Extraction"></a>特征提取Feature Extraction</h1><p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>SIFT</strong> </p>
+<h1>特征提取Feature Extraction</h1>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>SIFT</strong></p>
 <ul>
 <li>[Demo program]<a href="http://www.cs.ubc.ca/~lowe/keypoints/siftDemoV4.zip" target="_blank" rel="external">http://www.cs.ubc.ca/~lowe/keypoints/siftDemoV4.zip</a></li>
 <li>[SIFT Library ] <a href="http://blogs.oregonstate.edu/hess/code/sift/" target="_blank" rel="external">http://blogs.oregonstate.edu/hess/code/sift/</a></li>
 <li>[VLFeat] <a href="http://www.vlfeat.org/" target="_blank" rel="external">http://www.vlfeat.org/</a></li>
 </ul>
-<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>PCA-SIFT</strong> </p>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>PCA-SIFT</strong></p>
 <ul>
-<li>[Project] <a href="http://www.cs.cmu.edu/~yke/pcasift/" target="_blank" rel="external">http://www.cs.cmu.edu/~yke/pcasift/</a> </li>
+<li>[Project] <a href="http://www.cs.cmu.edu/~yke/pcasift/" target="_blank" rel="external">http://www.cs.cmu.edu/~yke/pcasift/</a></li>
 </ul>
-<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Affine-SIFT</strong> </p>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Affine-SIFT</strong></p>
 <ul>
 <li>[Project] <a href="http://www.ipol.im/pub/algo/my_affine_sift/" target="_blank" rel="external">http://www.ipol.im/pub/algo/my_affine_sift/</a></li>
 </ul>
-<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>SURF</strong> </p>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>SURF</strong></p>
 <ul>
 <li>[OpenSURF]<a href="http://www.chrisevansdev.com/computer-vision-opensurf.html" target="_blank" rel="external">http://www.chrisevansdev.com/computer-vision-opensurf.html</a></li>
 <li>[Matlab Wrapper]<a href="http://www.maths.lth.se/matematiklth/personal/petter/surfmex.php" target="_blank" rel="external">http://www.maths.lth.se/matematiklth/personal/petter/surfmex.php</a></li>
 </ul>
-<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Affine Covariant Features</strong> </p>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Affine Covariant Features</strong></p>
 <ul>
 <li>[Oxford project]<a href="http://www.robots.ox.ac.uk/~vgg/research/affine/" target="_blank" rel="external">http://www.robots.ox.ac.uk/~vgg/research/affine/</a></li>
 </ul>
-<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>MSER</strong>  </p>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>MSER</strong></p>
 <ul>
 <li>[Oxford project] <a href="http://www.robots.ox.ac.uk/~vgg/research/affine/" target="_blank" rel="external">http://www.robots.ox.ac.uk/~vgg/research/affine/</a></li>
 <li>[VLFeat]<a href="http://www.vlfeat.org/" target="_blank" rel="external">http://www.vlfeat.org/</a></li>
 </ul>
-<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Geometric Blur</strong>  </p>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Geometric Blur</strong></p>
 <ul>
 <li>[Code]<a href="http://www.robots.ox.ac.uk/~vgg/software/MKL/" target="_blank" rel="external">http://www.robots.ox.ac.uk/~vgg/software/MKL/</a></li>
 </ul>
@@ -40,24 +41,24 @@
 <ul>
 <li>[Code] <a href="http://www.vision.ee.ethz.ch/~calvin/gss/selfsim_release1.0.tgz" target="_blank" rel="external">http://www.vision.ee.ethz.ch/~calvin/gss/selfsim_release1.0.tgz</a></li>
 </ul>
-<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Histogram of Oriented Graidents</strong> </p>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Histogram of Oriented Graidents</strong></p>
 <ul>
 <li>[INRIA Object Localization Toolkit] <a href="http://www.navneetdalal.com/software" target="_blank" rel="external">http://www.navneetdalal.com/software</a></li>
 <li>[OLT toolkit for Windows] <a href="http://www.computing.edu.au/~12482661/hog.html" target="_blank" rel="external">http://www.computing.edu.au/~12482661/hog.html</a></li>
 </ul>
-<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>GIST </strong></p>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **GIST **</p>
 <ul>
 <li>[Project]<a href="http://people.csail.mit.edu/torralba/code/spatialenvelope/" target="_blank" rel="external">http://people.csail.mit.edu/torralba/code/spatialenvelope/</a></li>
 </ul>
-<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Shape Context </strong></p>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **Shape Context **</p>
 <ul>
 <li>[Project] <a href="http://www.eecs.berkeley.edu/Research/Projects/CS/vision/shape/sc_digits.html" target="_blank" rel="external">http://www.eecs.berkeley.edu/Research/Projects/CS/vision/shape/sc_digits.html</a></li>
 </ul>
-<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Color Descriptor </strong></p>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **Color Descriptor **</p>
 <ul>
 <li>[Project] <a href="http://koen.me/research/colordescriptors/" target="_blank" rel="external">http://koen.me/research/colordescriptors/</a></li>
 </ul>
-<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Pyramids of Histograms of Oriented Gradients </strong></p>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **Pyramids of Histograms of Oriented Gradients **</p>
 <ul>
 <li>[Code] <a href="http://www.robots.ox.ac.uk/~vgg/research/caltech/phog/phog.zip" target="_blank" rel="external">http://www.robots.ox.ac.uk/~vgg/research/caltech/phog/phog.zip</a></li>
 </ul>
@@ -66,7 +67,7 @@
 <li>[Project] <a href="http://www.nada.kth.se/cvap/abstracts/cvap284.html" target="_blank" rel="external">http://www.nada.kth.se/cvap/abstracts/cvap284.html</a></li>
 <li>[Code]<a href="http://www.irisa.fr/vista/Equipe/People/Laptev/download/stip-1.1-winlinux.zip" target="_blank" rel="external">http://www.irisa.fr/vista/Equipe/People/Laptev/download/stip-1.1-winlinux.zip</a></li>
 </ul>
-<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Boundary Preserving Dense Local Regions </strong></p>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **Boundary Preserving Dense Local Regions **</p>
 <ul>
 <li>[Project] <a href="http://vision.cs.utexas.edu/projects/bplr/bplr.html" target="_blank" rel="external">http://vision.cs.utexas.edu/projects/bplr/bplr.html</a></li>
 </ul>
@@ -79,15 +80,15 @@
 <li>[Paper] <a href="http://www.cs.nthu.edu.tw/~htchen/hipd_cvpr09.pdf" target="_blank" rel="external">http://www.cs.nthu.edu.tw/~htchen/hipd_cvpr09.pdf</a></li>
 <li>[Code] <a href="http://740-2.cs.nthu.edu.tw/~htchen/hipd/hist_corner.zip" target="_blank" rel="external">http://740-2.cs.nthu.edu.tw/~htchen/hipd/hist_corner.zip</a></li>
 </ul>
-<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>An OpenCV - C++ implementation of Local Self Similarity Descriptors </strong></p>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **An OpenCV - C++ implementation of Local Self Similarity Descriptors **</p>
 <ul>
-<li>[Project] <a href="http://intuitionlogic.com/post/2011/04/11/A-OpenCV-C++-implementation-of-Local-Self-Similarity-Descriptors.aspx" target="_blank" rel="external">http://intuitionlogic.com/post/2011/04/11/A-OpenCV-C++-implementation-of-Local-Self-Similarity-Descriptors.aspx</a></li>
+<li>[Project] <a href="http://intuitionlogic.com/post/2011/04/11/A-OpenCV-C++-implementation-of-Local-Self-Similarity-Descriptors.aspx" target="_blank" rel="external">http://intuitionlogic.com/post/2011/04/11/A-OpenCV-C+±implementation-of-Local-Self-Similarity-Descriptors.aspx</a></li>
 </ul>
 <p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Fast Sparse Representation with Prototypes</strong></p>
 <ul>
 <li>[Project] <a href="http://faculty.ucmerced.edu/mhyang/cvpr10_fsr.html" target="_blank" rel="external">http://faculty.ucmerced.edu/mhyang/cvpr10_fsr.html</a></li>
 </ul>
-<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Corner Detection </strong></p>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **Corner Detection **</p>
 <ul>
 <li>[Project] <a href="http://kiwi.cs.dal.ca/~dparks/CornerDetection/index.htm" target="_blank" rel="external">http://kiwi.cs.dal.ca/~dparks/CornerDetection/index.htm</a></li>
 </ul>
@@ -109,13 +110,14 @@
 </ul>
 <p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>HOG</strong></p>
 <ul>
-<li>[Project] <a href="http://soc.fudan.edu.cn/vip/projects/gradproj/wiki/HOG%E4%BB%A3%E7%A0%81" target="_blank" rel="external">http://soc.fudan.edu.cn/vip/projects/gradproj/wiki/HOG%E4%BB%A3%E7%A0%81</a></li>
+<li>[Project] <a href="http://soc.fudan.edu.cn/vip/projects/gradproj/wiki/HOG%E4%BB%A3%E7%A0%81" target="_blank" rel="external">http://soc.fudan.edu.cn/vip/projects/gradproj/wiki/HOG代码</a></li>
 </ul>
 <p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Online Selection of Discriminative Tracking Features</strong></p>
 <ul>
 <li>[Project] <a href="http://www.cs.ucla.edu/~roozbehm/cs7495/report.html" target="_blank" rel="external">http://www.cs.ucla.edu/~roozbehm/cs7495/report.html</a></li>
 </ul>
-<h1 id="图像分割Image-Segmentation"><a href="#图像分割Image-Segmentation" class="headerlink" title="图像分割Image Segmentation"></a>图像分割Image Segmentation</h1><p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Normalized Cut </strong></p>
+<h1>图像分割Image Segmentation</h1>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **Normalized Cut **</p>
 <ul>
 <li>[Matlab code]<a href="http://www.cis.upenn.edu/~jshi/software/" target="_blank" rel="external">http://www.cis.upenn.edu/~jshi/software/</a></li>
 </ul>
@@ -189,7 +191,7 @@
 </ul>
 <p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Blossom V: A new implementation of a minimum cost perfect matching algorithm</strong></p>
 <ul>
-<li>[Code] <a href="http://pub.ist.ac.at/~vnk/software/blossom5-v2.03.src.tar.gz" target="_blank" rel="external">http://pub.ist.ac.at/~vnk/software/blossom5-v2.03.src.tar.gz</a>  </li>
+<li>[Code] <a href="http://pub.ist.ac.at/~vnk/software/blossom5-v2.03.src.tar.gz" target="_blank" rel="external">http://pub.ist.ac.at/~vnk/software/blossom5-v2.03.src.tar.gz</a></li>
 </ul>
 <p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>An Experimental Comparison of Min-Cut/Max-Flow Algorithms for Energy Minimization in Computer Vision</strong></p>
 <ul>
@@ -243,12 +245,13 @@
 <ul>
 <li>[code] <a href="http://groups.inf.ed.ac.uk/calvin/classcut/ClassCut-release_v1.0.zip" target="_blank" rel="external">http://groups.inf.ed.ac.uk/calvin/classcut/ClassCut-release_v1.0.zip</a></li>
 </ul>
-<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>SEEDS: Superpixels Extracted via Energy-Driven Sampling </strong></p>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **SEEDS: Superpixels Extracted via Energy-Driven Sampling **</p>
 <ul>
 <li>[Project] <a href="http://www.vision.ee.ethz.ch/~vamichae/seeds/" target="_blank" rel="external">http://www.vision.ee.ethz.ch/~vamichae/seeds/</a></li>
 <li>[other] <a href="http://www.mvdblive.org/seeds/" target="_blank" rel="external">http://www.mvdblive.org/seeds/</a></li>
 </ul>
-<h1 id="目标检测Object-Detection"><a href="#目标检测Object-Detection" class="headerlink" title="目标检测Object Detection"></a>目标检测Object Detection</h1><p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>A simple object detector with boosting </strong></p>
+<h1>目标检测Object Detection</h1>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **A simple object detector with boosting **</p>
 <ul>
 <li>[Project] <a href="http://people.csail.mit.edu/torralba/shortCourseRLOC/boosting/boosting.html" target="_blank" rel="external">http://people.csail.mit.edu/torralba/shortCourseRLOC/boosting/boosting.html</a></li>
 </ul>
@@ -290,7 +293,7 @@
 <ul>
 <li>[Project] <a href="http://people.cs.uchicago.edu/~rbg/latent/" target="_blank" rel="external">http://people.cs.uchicago.edu/~rbg/latent/</a></li>
 </ul>
-<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Gradient Response Maps for Real-Time Detection of Texture-Less Objects: LineMOD </strong></p>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **Gradient Response Maps for Real-Time Detection of Texture-Less Objects: LineMOD **</p>
 <ul>
 <li>[Project] <a href="http://campar.cs.tum.edu/Main/StefanHinterstoisser" target="_blank" rel="external">http://campar.cs.tum.edu/Main/StefanHinterstoisser</a></li>
 </ul>
@@ -322,7 +325,8 @@
 <ul>
 <li>[Project] <a href="http://people.cs.uchicago.edu/~rbg/latent/" target="_blank" rel="external">http://people.cs.uchicago.edu/~rbg/latent/</a></li>
 </ul>
-<h1 id="显著性检测Saliency-Detection"><a href="#显著性检测Saliency-Detection" class="headerlink" title="显著性检测Saliency Detection"></a>显著性检测Saliency Detection</h1><p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Itti, Koch, and Niebur’ saliency detection</strong></p>
+<h1>显著性检测Saliency Detection</h1>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Itti, Koch, and Niebur’ saliency detection</strong></p>
 <ul>
 <li>[Matlab code] <a href="http://www.saliencytoolbox.net/" target="_blank" rel="external">http://www.saliencytoolbox.net/</a></li>
 </ul>
@@ -383,7 +387,8 @@
 <ul>
 <li>[Code] <a href="http://www.klab.caltech.edu/~xhou/projects/dva/dva.html" target="_blank" rel="external">http://www.klab.caltech.edu/~xhou/projects/dva/dva.html</a></li>
 </ul>
-<h1 id="图像分类、聚类Image-Classification-Clustering"><a href="#图像分类、聚类Image-Classification-Clustering" class="headerlink" title="图像分类、聚类Image Classification, Clustering"></a>图像分类、聚类Image Classification, Clustering</h1><p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Pyramid Match</strong></p>
+<h1>图像分类、聚类Image Classification, Clustering</h1>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Pyramid Match</strong></p>
 <ul>
 <li>[Project] <a href="http://people.csail.mit.edu/jjl/libpmk/" target="_blank" rel="external">http://people.csail.mit.edu/jjl/libpmk/</a></li>
 </ul>
@@ -413,7 +418,7 @@
 <ul>
 <li>[Project] <a href="http://www.vision.ee.ethz.ch/~pgehler/projects/iccv09/index.html" target="_blank" rel="external">http://www.vision.ee.ethz.ch/~pgehler/projects/iccv09/index.html</a></li>
 </ul>
-<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>SuperParsing </strong></p>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **SuperParsing **</p>
 <ul>
 <li>[Code] <a href="http://www.cs.unc.edu/~jtighe/Papers/ECCV10/eccv10-jtighe-code.zip" target="_blank" rel="external">http://www.cs.unc.edu/~jtighe/Papers/ECCV10/eccv10-jtighe-code.zip</a></li>
 </ul>
@@ -447,19 +452,21 @@
 <ul>
 <li>[Project] <a href="http://ivrg.epfl.ch/supplementary_material/RK_SLICSuperpixels/" target="_blank" rel="external">http://ivrg.epfl.ch/supplementary_material/RK_SLICSuperpixels/</a></li>
 </ul>
-<h1 id="抠图Image-Matting"><a href="#抠图Image-Matting" class="headerlink" title="抠图Image Matting"></a>抠图Image Matting</h1><p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>A Closed Form Solution to Natural Image Matting</strong> </p>
+<h1>抠图Image Matting</h1>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>A Closed Form Solution to Natural Image Matting</strong></p>
 <ul>
 <li>[Code] <a href="http://people.csail.mit.edu/alevin/matting.tar.gz" target="_blank" rel="external">http://people.csail.mit.edu/alevin/matting.tar.gz</a></li>
 </ul>
-<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Spectral Matting </strong></p>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **Spectral Matting **</p>
 <ul>
 <li>[Project] <a href="http://www.vision.huji.ac.il/SpectralMatting/" target="_blank" rel="external">http://www.vision.huji.ac.il/SpectralMatting/</a></li>
 </ul>
-<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Learning-based Matting </strong></p>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **Learning-based Matting **</p>
 <ul>
 <li>[Code] <a href="http://www.mathworks.com/matlabcentral/fileexchange/31412" target="_blank" rel="external">http://www.mathworks.com/matlabcentral/fileexchange/31412</a></li>
 </ul>
-<h1 id="目标跟踪Object-Tracking"><a href="#目标跟踪Object-Tracking" class="headerlink" title="目标跟踪Object Tracking"></a>目标跟踪Object Tracking</h1><p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>A Forest of Sensors - Tracking Adaptive Background Mixture Models </strong></p>
+<h1>目标跟踪Object Tracking</h1>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **A Forest of Sensors - Tracking Adaptive Background Mixture Models **</p>
 <ul>
 <li>[Project] <a href="http://www.ai.mit.edu/projects/vsam/Tracking/index.html" target="_blank" rel="external">http://www.ai.mit.edu/projects/vsam/Tracking/index.html</a></li>
 </ul>
@@ -507,7 +514,7 @@
 <li>[Paper] <a href="http://faculty.ucmerced.edu/mhyang/papers/bmvc11a.pdf" target="_blank" rel="external">http://faculty.ucmerced.edu/mhyang/papers/bmvc11a.pdf</a></li>
 <li>[Code] <a href="http://faculty.ucmerced.edu/mhyang/code/BMVC11-HSSL-package.zip" target="_blank" rel="external">http://faculty.ucmerced.edu/mhyang/code/BMVC11-HSSL-package.zip</a></li>
 </ul>
-<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Online Multiple Support Instance Tracking </strong></p>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **Online Multiple Support Instance Tracking **</p>
 <ul>
 <li>[Paper] <a href="http://faculty.ucmerced.edu/mhyang/papers/fg11a.pdf" target="_blank" rel="external">http://faculty.ucmerced.edu/mhyang/papers/fg11a.pdf</a></li>
 <li>[Code] <a href="http://faculty.ucmerced.edu/mhyang/code/fg11_omsit.zip" target="_blank" rel="external">http://faculty.ucmerced.edu/mhyang/code/fg11_omsit.zip</a></li>
@@ -530,8 +537,8 @@
 </ul>
 <p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Tracking-Learning-Detection</strong></p>
 <ul>
-<li>[Project] <a href="http://info.ee.surrey.ac.uk/Personal/Z.Kalal/" target="_blank" rel="external">http://info.ee.surrey.ac.uk/Personal/Z.Kalal/</a> </li>
-<li>[OpenTLD/C++ Code] <a href="https://github.com/arthurv/OpenTLD" target="_blank" rel="external">https://github.com/arthurv/OpenTLD</a> </li>
+<li>[Project] <a href="http://info.ee.surrey.ac.uk/Personal/Z.Kalal/" target="_blank" rel="external">http://info.ee.surrey.ac.uk/Personal/Z.Kalal/</a></li>
+<li>[OpenTLD/C++ Code] <a href="https://github.com/arthurv/OpenTLD" target="_blank" rel="external">https://github.com/arthurv/OpenTLD</a></li>
 </ul>
 <p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>the HandVu：vision-based hand gesture interface</strong></p>
 <ul>
@@ -541,7 +548,8 @@
 <ul>
 <li>[Project] <a href="http://files.is.tue.mpg.de/jgall/projects/stochGPLVM/stochGPLVM.html" target="_blank" rel="external">http://files.is.tue.mpg.de/jgall/projects/stochGPLVM/stochGPLVM.html</a></li>
 </ul>
-<h1 id="Kinect"><a href="#Kinect" class="headerlink" title="Kinect"></a>Kinect</h1><p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Kinect toolbox</strong></p>
+<h1>Kinect</h1>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Kinect toolbox</strong></p>
 <ul>
 <li>[Project] <a href="http://kinecttoolbox.codeplex.com/" target="_blank" rel="external">http://kinecttoolbox.codeplex.com/</a></li>
 </ul>
@@ -557,7 +565,8 @@
 <ul>
 <li>[code] <a href="http://makematics.com/code/FingerTracker/" target="_blank" rel="external">http://makematics.com/code/FingerTracker/</a></li>
 </ul>
-<h1 id="3D相关"><a href="#3D相关" class="headerlink" title="3D相关"></a>3D相关</h1><p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>3D Reconstruction of a Moving Object</strong></p>
+<h1>3D相关</h1>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>3D Reconstruction of a Moving Object</strong></p>
 <ul>
 <li>[Paper] <a href="http://www.wisdom.weizmann.ac.il/~ronen/papers/Simakov" target="_blank" rel="external">http://www.wisdom.weizmann.ac.il/~ronen/papers/Simakov</a> Frolova Basri - Dense Shape Reconstruction Under Arbitrary Unknown Lighting.pdf</li>
 <li>[Code] <a href="http://www.wisdom.weizmann.ac.il/~bagon/matlab_code/SFB_matlab1.0.tar.gz" target="_blank" rel="external">http://www.wisdom.weizmann.ac.il/~bagon/matlab_code/SFB_matlab1.0.tar.gz</a></li>
@@ -603,7 +612,8 @@
 <ul>
 <li>[Project] <a href="http://ai.stanford.edu/~asaxena/reconstruction3d/" target="_blank" rel="external">http://ai.stanford.edu/~asaxena/reconstruction3d/</a></li>
 </ul>
-<h1 id="机器学习算法"><a href="#机器学习算法" class="headerlink" title="机器学习算法"></a>机器学习算法</h1><p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Matlab class for computing Approximate Nearest Nieghbor (ANN) </strong></p>
+<h1>机器学习算法</h1>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **Matlab class for computing Approximate Nearest Nieghbor (ANN) **</p>
 <ul>
 <li>[Matlab class providing interface toANN library] <a href="http://www.wisdom.weizmann.ac.il/~bagon/matlab_code/ann_wrapper_Mar2012.tar.gz" target="_blank" rel="external">http://www.wisdom.weizmann.ac.il/~bagon/matlab_code/ann_wrapper_Mar2012.tar.gz</a></li>
 </ul>
@@ -655,7 +665,7 @@
 <ul>
 <li>[Project] <a href="http://www.ersatz1.com/" target="_blank" rel="external">http://www.ersatz1.com/</a></li>
 </ul>
-<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Deep Learning </strong></p>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **Deep Learning **</p>
 <ul>
 <li>[Project] <a href="http://www.cs.nyu.edu/~yann/research/deep/" target="_blank" rel="external">http://www.cs.nyu.edu/~yann/research/deep/</a></li>
 </ul>
@@ -703,7 +713,8 @@
 <ul>
 <li>[Software] <a href="http://lear.inrialpes.fr/software" target="_blank" rel="external">http://lear.inrialpes.fr/software</a></li>
 </ul>
-<h1 id="目标、行为识别Object-Action-Recognition"><a href="#目标、行为识别Object-Action-Recognition" class="headerlink" title="目标、行为识别Object, Action Recognition"></a>目标、行为识别Object, Action Recognition</h1><p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Action Recognition by Dense Trajectories</strong></p>
+<h1>目标、行为识别Object, Action Recognition</h1>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Action Recognition by Dense Trajectories</strong></p>
 <ul>
 <li>[Project] <a href="http://lear.inrialpes.fr/people/wang/dense_trajectories" target="_blank" rel="external">http://lear.inrialpes.fr/people/wang/dense_trajectories</a></li>
 <li>[Code] <a href="http://lear.inrialpes.fr/people/wang/download/dense_trajectory_release.tar.gz" target="_blank" rel="external">http://lear.inrialpes.fr/people/wang/download/dense_trajectory_release.tar.gz</a></li>
@@ -771,7 +782,8 @@
 <ul>
 <li>[Project] <a href="http://movement.stanford.edu/learning-nr-shape/" target="_blank" rel="external">http://movement.stanford.edu/learning-nr-shape/</a></li>
 </ul>
-<h1 id="图像处理"><a href="#图像处理" class="headerlink" title="图像处理"></a>图像处理</h1><p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Distance Transforms of Sampled Functions</strong></p>
+<h1>图像处理</h1>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Distance Transforms of Sampled Functions</strong></p>
 <ul>
 <li>[Project] <a href="http://cs.brown.edu/~pff/dt/" target="_blank" rel="external">http://cs.brown.edu/~pff/dt/</a></li>
 </ul>
@@ -787,19 +799,20 @@
 <ul>
 <li>[code] <a href="http://groups.inf.ed.ac.uk/calvin/ReleasedCode/image_exploration_v1.1.tgz" target="_blank" rel="external">http://groups.inf.ed.ac.uk/calvin/ReleasedCode/image_exploration_v1.1.tgz</a></li>
 </ul>
-<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Motion Magnification 运动放大 </strong></p>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **Motion Magnification 运动放大 **</p>
 <ul>
 <li>[Project] <a href="http://people.csail.mit.edu/celiu/motionmag/motionmag.html" target="_blank" rel="external">http://people.csail.mit.edu/celiu/motionmag/motionmag.html</a></li>
 </ul>
-<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Bilateral Filtering for Gray and Color Images 双边滤波器 </strong></p>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **Bilateral Filtering for Gray and Color Images 双边滤波器 **</p>
 <ul>
 <li>[Project] <a href="http://homepages.inf.ed.ac.uk/rbf/CVonline/LOCAL_COPIES/MANDUCHI1/Bilateral_Filtering.html" target="_blank" rel="external">http://homepages.inf.ed.ac.uk/rbf/CVonline/LOCAL_COPIES/MANDUCHI1/Bilateral_Filtering.html</a></li>
 </ul>
-<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>A Fast Approximation of the Bilateral Filter using a Signal Processing Approach </strong></p>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **A Fast Approximation of the Bilateral Filter using a Signal Processing Approach **</p>
 <ul>
 <li>[Project] <a href="http://people.csail.mit.edu/sparis/bf/" target="_blank" rel="external">http://people.csail.mit.edu/sparis/bf/</a></li>
 </ul>
-<h1 id="一些实用工具"><a href="#一些实用工具" class="headerlink" title="一些实用工具"></a>一些实用工具</h1><p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>EGT: a Toolbox for Multiple View Geometry and Visual Servoing</strong></p>
+<h1>一些实用工具</h1>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>EGT: a Toolbox for Multiple View Geometry and Visual Servoing</strong></p>
 <ul>
 <li>[Project]  <a href="http://egt.dii.unisi.it/" target="_blank" rel="external">http://egt.dii.unisi.it/</a></li>
 <li>[Code] <a href="http://egt.dii.unisi.it/download/EGT_v1p3.zip" target="_blank" rel="external">http://egt.dii.unisi.it/download/EGT_v1p3.zip</a></li>
@@ -812,27 +825,30 @@
 <ul>
 <li>[Project] <a href="http://leenissen.dk/fann/wp/" target="_blank" rel="external">http://leenissen.dk/fann/wp/</a></li>
 </ul>
-<h1 id="人手及指尖检测与识别"><a href="#人手及指尖检测与识别" class="headerlink" title="人手及指尖检测与识别"></a>人手及指尖检测与识别</h1><p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>finger-detection-and-gesture-recognition </strong></p>
+<h1>人手及指尖检测与识别</h1>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **finger-detection-and-gesture-recognition **</p>
 <ul>
 <li>[Code] <a href="http://code.google.com/p/finger-detection-and-gesture-recognition/downloads/list" target="_blank" rel="external">http://code.google.com/p/finger-detection-and-gesture-recognition/downloads/list</a></li>
 </ul>
 <p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Hand and Finger Detection using JavaCV</strong></p>
 <ul>
-<li>[Project] <a href="http://www.javacodegeeks.com/2012/12/hand-and-finger-detection-using-javacv.html?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+JavaCodeGeeks+%28Java+Code+Geeks%29" target="_blank" rel="external">http://www.javacodegeeks.com/2012/12/hand-and-finger-detection-using-javacv.html?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+JavaCodeGeeks+%28Java+Code+Geeks%29</a></li>
+<li>[Project] <a href="http://www.javacodegeeks.com/2012/12/hand-and-finger-detection-using-javacv.html?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+JavaCodeGeeks+%28Java+Code+Geeks%29" target="_blank" rel="external">http://www.javacodegeeks.com/2012/12/hand-and-finger-detection-using-javacv.html?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+JavaCodeGeeks+(Java+Code+Geeks)</a></li>
 </ul>
 <p><i class="fa fa-folder-o" aria-hidden="true"></i><strong>Hand and fingers detection</strong></p>
 <ul>
 <li>[Code] <a href="http://forum.openframeworks.cc/index.php?topic=1916.0" target="_blank" rel="external">http://forum.openframeworks.cc/index.php?topic=1916.0</a></li>
 </ul>
-<h1 id="场景解释"><a href="#场景解释" class="headerlink" title="场景解释"></a>场景解释</h1><p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Nonparametric Scene Parsing via Label Transfer </strong></p>
+<h1>场景解释</h1>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **Nonparametric Scene Parsing via Label Transfer **</p>
 <ul>
 <li>[Project] <a href="http://people.csail.mit.edu/celiu/LabelTransfer/code.html" target="_blank" rel="external">http://people.csail.mit.edu/celiu/LabelTransfer/code.html</a></li>
 </ul>
-<h1 id="光流Optical-flow"><a href="#光流Optical-flow" class="headerlink" title="光流Optical flow"></a>光流Optical flow</h1><p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>High accuracy optical flow using a theory for warping </strong></p>
+<h1>光流Optical flow</h1>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **High accuracy optical flow using a theory for warping **</p>
 <ul>
 <li>[Project] <a href="http://perception.inrialpes.fr/~chari/myweb/Software/" target="_blank" rel="external">http://perception.inrialpes.fr/~chari/myweb/Software/</a></li>
 </ul>
-<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Dense Trajectories Video Description </strong></p>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **Dense Trajectories Video Description **</p>
 <ul>
 <li>[Project] <a href="http://lear.inrialpes.fr/people/wang/dense_trajectories" target="_blank" rel="external">http://lear.inrialpes.fr/people/wang/dense_trajectories</a></li>
 </ul>
@@ -840,7 +856,7 @@
 <ul>
 <li>[Project] <a href="http://people.csail.mit.edu/celiu/SIFTflow/" target="_blank" rel="external">http://people.csail.mit.edu/celiu/SIFTflow/</a></li>
 </ul>
-<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>KLT: An Implementation of the Kanade-Lucas-Tomasi Feature Tracker </strong></p>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **KLT: An Implementation of the Kanade-Lucas-Tomasi Feature Tracker **</p>
 <ul>
 <li>[Project] <a href="http://www.ces.clemson.edu/~stb/klt/" target="_blank" rel="external">http://www.ces.clemson.edu/~stb/klt/</a></li>
 </ul>
@@ -872,7 +888,7 @@
 <ul>
 <li>[Project] <a href="http://lmb.informatik.uni-freiburg.de/resources/software.php" target="_blank" rel="external">http://lmb.informatik.uni-freiburg.de/resources/software.php</a></li>
 </ul>
-<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Robust Optical Flow Estimation</strong> </p>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Robust Optical Flow Estimation</strong></p>
 <ul>
 <li>[Project] <a href="http://www.ipol.im/pub/pre/21/" target="_blank" rel="external">http://www.ipol.im/pub/pre/21/</a></li>
 </ul>
@@ -880,20 +896,23 @@
 <ul>
 <li>[Project] <a href="http://www.jonathanmugan.com/GraphicsProject/OpticalFlow/" target="_blank" rel="external">http://www.jonathanmugan.com/GraphicsProject/OpticalFlow/</a></li>
 </ul>
-<h1 id="图像检索Image-Retrieval"><a href="#图像检索Image-Retrieval" class="headerlink" title="图像检索Image Retrieval"></a>图像检索Image Retrieval</h1><p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Semi-Supervised Distance Metric Learning for Collaborative Image Retrieval </strong></p>
+<h1>图像检索Image Retrieval</h1>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **Semi-Supervised Distance Metric Learning for Collaborative Image Retrieval **</p>
 <ul>
 <li>[Paper] <a href="http://www.ee.columbia.edu/~wliu/CVPR08_ssml.pdf" target="_blank" rel="external">http://www.ee.columbia.edu/~wliu/CVPR08_ssml.pdf</a></li>
 <li>[code] <a href="http://www.ee.columbia.edu/~wliu/SSMetric.zip" target="_blank" rel="external">http://www.ee.columbia.edu/~wliu/SSMetric.zip</a></li>
 </ul>
-<h1 id="马尔科夫随机场Markov-Random-Fields"><a href="#马尔科夫随机场Markov-Random-Fields" class="headerlink" title="马尔科夫随机场Markov Random Fields"></a>马尔科夫随机场Markov Random Fields</h1><p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Markov Random Fields for Super-Resolution </strong></p>
+<h1>马尔科夫随机场Markov Random Fields</h1>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **Markov Random Fields for Super-Resolution **</p>
 <ul>
 <li>[Project] <a href="http://people.csail.mit.edu/billf/project" target="_blank" rel="external">http://people.csail.mit.edu/billf/project</a> pages/sresCode/Markov Random Fields for Super-Resolution.html</li>
 </ul>
-<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>A Comparative Study of Energy Minimization Methods for Markov Random Fields with Smoothness-Based Priors</strong> </p>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>A Comparative Study of Energy Minimization Methods for Markov Random Fields with Smoothness-Based Priors</strong></p>
 <ul>
 <li>[Project] <a href="http://vision.middlebury.edu/MRF/" target="_blank" rel="external">http://vision.middlebury.edu/MRF/</a></li>
 </ul>
-<h1 id="运动检测Motion-detection"><a href="#运动检测Motion-detection" class="headerlink" title="运动检测Motion detection"></a>运动检测Motion detection</h1><p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Moving Object Extraction, Using Models or Analysis of Regions</strong></p>
+<h1>运动检测Motion detection</h1>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Moving Object Extraction, Using Models or Analysis of Regions</strong></p>
 <ul>
 <li>[Project] <a href="http://www.visionbib.com/bibliography/motion-i763.html" target="_blank" rel="external">http://www.visionbib.com/bibliography/motion-i763.html</a></li>
 </ul>
@@ -905,7 +924,7 @@
 <ul>
 <li>[Project] <a href="http://www.na.icar.cnr.it/~maddalena.l/MODLab/SoftwareSOBS.html" target="_blank" rel="external">http://www.na.icar.cnr.it/~maddalena.l/MODLab/SoftwareSOBS.html</a></li>
 </ul>
-<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>changedetection.net: A new change detection benchmark dataset</strong></p>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong><a href="http://changedetection.net" target="_blank" rel="external">changedetection.net</a>: A new change detection benchmark dataset</strong></p>
 <ul>
 <li>[Project] <a href="http://www.changedetection.net/" target="_blank" rel="external">http://www.changedetection.net/</a></li>
 </ul>
@@ -929,8 +948,9 @@
 <ul>
 <li>[Project] <a href="http://www.mathworks.cn/cn/help/vision/motion-analysis-and-tracking.html" target="_blank" rel="external">http://www.mathworks.cn/cn/help/vision/motion-analysis-and-tracking.html</a></li>
 </ul>
-<p>来源:网络 编辑:<a href="https://github.com/mindcont" target="_blank" rel="external">mindcont</a>  2016-05-13 第一次编辑<br><strong>转载注明出处 <a href="http://blog.mindcont.com/2016/05/13/Open-Source-Computer-Vision/">http://blog.mindcont.com/2016/05/13/Open-Source-Computer-Vision/</a></strong></p>
-</div><div class="tags"><a href="/tags/OpenCV/">OpenCV</a></div><div class="post-nav"><a href="/2016/05/18/microsoft-kinect-V2-with-matlab/" class="pre">Matlab连接Kinect V2</a><a href="/2016/05/12/win10-ubuntu-remote-desktop/" class="next">win10连结ubuntu 远程桌面</a></div><div data-thread-key="2016/05/13/open-source-computer-vision/" data-title="计算机视觉开源项目" data-url="http://blog.mindcont.com/2016/05/13/open-source-computer-vision/" class="ds-share flat"><div class="ds-share-inline"><ul class="ds-share-icons-16"><li data-toggle="ds-share-icons-more"><a href="javascript:void(0);" class="ds-more">分享到：</a></li><li><a href="javascript:void(0);" data-service="weibo" class="ds-weibo">微博</a></li><li><a href="javascript:void(0);" data-service="qzone" class="ds-qzone">QQ空间</a></li><li><a href="javascript:void(0);" data-service="qqt" class="ds-qqt">腾讯微博</a></li><li><a href="javascript:void(0);" data-service="wechat" class="ds-wechat">微信</a></li></ul><div class="ds-share-icons-more"></div></div></div><div data-thread-key="2016/05/13/open-source-computer-vision/" data-title="计算机视觉开源项目" data-url="http://blog.mindcont.com/2016/05/13/open-source-computer-vision/" data-author-key="1" class="ds-thread"></div></div></div></div><div class="pure-u-1-4"><div id="sidebar"><div class="widget"><form action="//www.baidu.com/baidu" method="get" accept-charset="utf-8" target="_blank" class="search-form"><input type="search" name="word" maxlength="20" placeholder="Search"/><input type="hidden" name="si" value="http://blog.mindcont.com"/><input name="tn" type="hidden" value="bds"/><input name="cl" type="hidden" value="3"/><input name="ct" type="hidden" value="2097152"/><input name="s" type="hidden" value="on"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Kinect/">Kinect</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/深度学习/">深度学习</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/随笔日记/">随笔日记</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/caffe/" style="font-size: 15px;">caffe</a> <a href="/tags/树莓派/" style="font-size: 15px;">树莓派</a> <a href="/tags/TED/" style="font-size: 15px;">TED</a> <a href="/tags/OpenCV/" style="font-size: 15px;">OpenCV</a> <a href="/tags/Kinect/" style="font-size: 15px;">Kinect</a> <a href="/tags/matlab/" style="font-size: 15px;">matlab</a> <a href="/tags/ros/" style="font-size: 15px;">ros</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最新文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/02/16/my-review-2016/">2016 , 我的年终总结</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/15/ideas-worth-spreading/">值得传播的思想</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/15/caffe-guide-book/">Caffe 入门指南</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/01/05/machine-learning-for-software-engineers/">自上而下的学习路线-软件工程师的机器学习</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/12/26/nginx-proxy-lan/">局域网内nginx反向代理上网</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/12/14/ros-naoqi-ubuntu/">naoqi ros 开发环境搭建</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/12/14/naoqi-robot-sdk-ubuntu/">naoqi robot 开发环境搭建</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/11/15/use-shadowsocks-on-openwrt/">使用OpenWrt打造透明路由</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/11/13/ppa/">发布自己的软件包存档</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/10/27/hg255d-openwrt/">二手华为路由hg255d刷OpenWrt</a></li></ul></div><div class="widget"><div class="comments-title"><i class="fa fa-comment-o"> 最近评论</i></div><div data-num-items="5" data-show-avatars="0" data-show-time="1" data-show-admin="0" data-excerpt-length="32" data-show-title="1" class="ds-recent-comments"></div></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="https://www.daoon.com/" title="道卬" target="_blank">道卬</a><ul></ul><a href="http://ai.mindcont.com/" title="人工智能" target="_blank">人工智能</a><ul></ul><a href="https://www.ted.com/" title="TED | 值得传播的思想" target="_blank">TED | 值得传播的思想</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">© <a href="/." rel="nofollow">微纪元.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a id="rocket" href="#top" class="show"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.pack.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css?v=0.0.0"><script>var duoshuoQuery = {short_name:'mindcont'};
+<p>来源:网络 编辑:<a href="https://github.com/mindcont" target="_blank" rel="external">mindcont</a>  2016-05-13 第一次编辑<br>
+<strong>转载注明出处 <a href="http://blog.mindcont.com/2016/05/13/Open-Source-Computer-Vision/">http://blog.mindcont.com/2016/05/13/Open-Source-Computer-Vision/</a></strong></p>
+</div><div class="tags"><a href="/tags/OpenCV/">OpenCV</a></div><div class="post-nav"><a href="/2016/05/18/microsoft-kinect-V2-with-matlab/" class="pre">Matlab连接Kinect V2</a><a href="/2016/05/12/win10-ubuntu-remote-desktop/" class="next">win10连结ubuntu 远程桌面</a></div><div data-thread-key="2016/05/13/open-source-computer-vision/" data-title="计算机视觉开源项目" data-url="http://blog.mindcont.com/2016/05/13/open-source-computer-vision/" class="ds-share flat"><div class="ds-share-inline"><ul class="ds-share-icons-16"><li data-toggle="ds-share-icons-more"><a href="javascript:void(0);" class="ds-more">分享到：</a></li><li><a href="javascript:void(0);" data-service="weibo" class="ds-weibo">微博</a></li><li><a href="javascript:void(0);" data-service="qzone" class="ds-qzone">QQ空间</a></li><li><a href="javascript:void(0);" data-service="qqt" class="ds-qqt">腾讯微博</a></li><li><a href="javascript:void(0);" data-service="wechat" class="ds-wechat">微信</a></li></ul><div class="ds-share-icons-more"></div></div></div><div data-thread-key="2016/05/13/open-source-computer-vision/" data-title="计算机视觉开源项目" data-url="http://blog.mindcont.com/2016/05/13/open-source-computer-vision/" data-author-key="1" class="ds-thread"></div></div></div></div><div class="pure-u-1-4"><div id="sidebar"><div class="widget"><form action="//www.baidu.com/baidu" method="get" accept-charset="utf-8" target="_blank" class="search-form"><input type="search" name="word" maxlength="20" placeholder="Search"/><input type="hidden" name="si" value="http://blog.mindcont.com"/><input name="tn" type="hidden" value="bds"/><input name="cl" type="hidden" value="3"/><input name="ct" type="hidden" value="2097152"/><input name="s" type="hidden" value="on"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Kinect/">Kinect</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/深度学习/">深度学习</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/随笔日记/">随笔日记</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/树莓派/" style="font-size: 15px;">树莓派</a> <a href="/tags/caffe/" style="font-size: 15px;">caffe</a> <a href="/tags/TED/" style="font-size: 15px;">TED</a> <a href="/tags/OpenCV/" style="font-size: 15px;">OpenCV</a> <a href="/tags/Kinect/" style="font-size: 15px;">Kinect</a> <a href="/tags/matlab/" style="font-size: 15px;">matlab</a> <a href="/tags/ros/" style="font-size: 15px;">ros</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最新文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/02/16/my-review-2016/">2016 , 我的年终总结</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/15/ideas-worth-spreading/">值得传播的思想</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/15/caffe-guide-book/">Caffe 入门指南</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/01/05/machine-learning-for-software-engineers/">自上而下的学习路线-软件工程师的机器学习</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/12/26/nginx-proxy-lan/">局域网内nginx反向代理上网</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/12/14/ros-naoqi-ubuntu/">naoqi ros 开发环境搭建</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/12/14/naoqi-robot-sdk-ubuntu/">naoqi robot 开发环境搭建</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/11/15/use-shadowsocks-on-openwrt/">使用OpenWrt打造透明路由</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/11/13/ppa/">发布自己的软件包存档</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/10/27/hg255d-openwrt/">二手华为路由hg255d刷OpenWrt</a></li></ul></div><div class="widget"><div class="comments-title"><i class="fa fa-comment-o"> 最近评论</i></div><div data-num-items="5" data-show-avatars="0" data-show-time="1" data-show-admin="0" data-excerpt-length="32" data-show-title="1" class="ds-recent-comments"></div></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="https://www.daoon.com/" title="道卬" target="_blank">道卬</a><ul></ul><a href="http://ai.mindcont.com/" title="人工智能" target="_blank">人工智能</a><ul></ul><a href="https://www.ted.com/" title="TED | 值得传播的思想" target="_blank">TED | 值得传播的思想</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">© <a href="/." rel="nofollow">微纪元.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a id="rocket" href="#top" class="show"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.pack.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css?v=0.0.0"><script>var duoshuoQuery = {short_name:'mindcont'};
 (function() {
     var ds = document.createElement('script');
     ds.type = 'text/javascript';ds.async = true;
