@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.mindcont.com/"/>
-  <updated>2017-02-16T02:14:04.780Z</updated>
+  <updated>2017-02-17T07:47:53.913Z</updated>
   <id>http://blog.mindcont.com/</id>
   
   <author>
@@ -14,6 +14,70 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2016 , 我的年终总结</title>
+    <link href="http://blog.mindcont.com/2017/02/16/my-review-2016/"/>
+    <id>http://blog.mindcont.com/2017/02/16/my-review-2016/</id>
+    <published>2017-02-16T08:27:20.000Z</published>
+    <updated>2017-02-17T07:47:53.913Z</updated>
+    
+    <content type="html">&lt;p&gt;转眼间，24岁我的本命年如风卷云涌般飘了过去，总感觉日子过得飞快，一不留神一年就过去了，也才想着趁现在做做年终总结，回顾一下自己的2016，并给2017的自己❤️&lt;strong&gt;订个小目标&lt;/strong&gt;❤️ 。&lt;/p&gt;
+&lt;h2 id=&quot;比赛篇💪&quot;&gt;比赛篇💪&lt;/h2&gt;
+&lt;h3 id=&quot;解魔方&quot;&gt;解魔方&lt;/h3&gt;
+&lt;p&gt;2016年寒假刚过🐒，我就早早地来了学校，为年前和兵哥和恒参加的一个比赛做最后的工作，并争取去珠海参加总决赛。当时做的是一个解三阶魔方的机器人，各自分工，队长兵哥做的最多，从机械结构的设计，到蓝牙模块通信，还有解算算法的优化，我和恒哥则打打下手，总算在比赛截止日提交了作品。&lt;br&gt;
+&lt;img src=&quot;https://raw.githubusercontent.com/mindcont/RubikRobot/master/picture/20160306.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+比赛方又要微信组织投票（朋友圈里小到幼儿园小朋友演出，大到省市优秀青年评选都喜欢微信投票😂）计入所谓的大众评分👽。&lt;/p&gt;
+&lt;p&gt;4月初，我们如愿以偿的✈️广州，兵哥带我去了华南理工见到了景海，我们围着华工转了转，传统的建筑和现代的教学楼，湖水给人的感觉很有气息，来来往往的学生和周围的环境很协调。之后我们转车到了珠海，安排入住，比赛展示和答辩，一切顺乎自然。比赛后，主办方全志科技的副总裁带我们参观了公司大楼，也给我们分享了他的创业历程，公司的定位和产品上下游链条以及公司未来的思考方向等等，总得感觉深圳和珠海的电子行业有实力也比其他地区有得天独厚的优势。&lt;/p&gt;
+&lt;p&gt;这次珠海行，对我的启发很大，无论从比赛本身还是眼界的扩展😂&lt;/p&gt;
+&lt;h3 id=&quot;bot计算机视觉&quot;&gt;BOT计算机视觉&lt;/h3&gt;
+&lt;p&gt;9月份，实验室的小涛告诉我BOT 有个计算机视觉的比赛，初赛是图片分类，让计算机预测新图片这个是猫还是狗，是选手利用卷积神经网络配合比赛主办方提供的数据集进行训练和预测，正好我们可以练练手。在余下的一个月时间里，我们就开始了不停训练、预测、提交的流程。那时候我们使用的NVIDIA K2200 4g 的显卡，用caffe 来做训练。印象中那一个月就是等待训练结果，然后下载新的预测集进行预测，提交和等待排名更新。最好的一次在12种分类中我们达到80%几，然后最高的已经到97%识别正确率了，结果显而易见我们没有进入复赛。&lt;/p&gt;
+&lt;p&gt;至于收获嘛，大体就是尝试将自己对卷积网络的理解，caffe平台的搭建，数据集的处理和网络构建和训练，最后部署预测，整个流程做了一遍。之后就是除比赛之外，我搞科研的故事了或者说我的研究方向的确定(听起来好屌的样子😆)。&lt;/p&gt;
+&lt;h2 id=&quot;科研篇👊&quot;&gt;科研篇👊&lt;/h2&gt;
+&lt;p&gt;比赛回来，转眼到了5月份，自己就开始选定研究方向了。一开始我打算利用 Kinect识别人体动作，然后和Nao robot 进行人机交互。嗯，就是打算做下面这种效果，&lt;strong&gt;机器人和人做同样的动作&lt;/strong&gt;。蒽，对，我们实验室有Nao robot。&lt;/p&gt;
+&lt;img src=&quot;http://7xn2mk.com1.z0.glb.clouddn.com/blog/images/resources/kinect-nao.jpg&quot; width=&quot;720&quot;&gt;
+&lt;p&gt;大体的思路是：kinect 输出人体关节点，计算机将人体的动作转化为Nao robot 各个关节电机参数，利用nao robot提供的API 驱动它。&lt;/p&gt;
+&lt;p&gt;之后我就顺着这个思路开始，先了解微软官方提供的Kinect v2 sdk 到他们的&lt;a href=&quot;https://mva.microsoft.com/zh-cn/training-courses/-kinect-for-windows-v2--8743?l=15BQDzV1_4504984382&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;讲解视频&lt;/a&gt;，然后又搜相关的开源程序和代码，慢慢得就到了&lt;a href=&quot;https://structure.io/openni&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;OpenNI&lt;/a&gt; 和 &lt;a href=&quot;https://openkinect.org/wiki/Main_Page/zh-hans&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;openKinect&lt;/a&gt; ，由于是 kinect v2 版本，所以当时颇费周章的弄，逐渐弄到了ubuntu平台下。下面是使用 ubuntu 下配合&lt;a href=&quot;https://github.com/OpenKinect/libfreenect2&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;libfreenect2&lt;/a&gt;成功读取到了信息。💩&lt;br&gt;
+&lt;img src=&quot;http://7xn2mk.com1.z0.glb.clouddn.com/blog/images/resources/openkinect_v2_ubuntu.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;后面越做发现自己的编程能力不够，尤其涉及linux下 c和 c++ 相互调用还有视频的缩放和处理部分帧的问题，越往后越多的问题发现。看来一个人做不下去了，然后转变思路，就想基于depth image 做一些东西，后面就搜到了 &lt;a href=&quot;http://vision.princeton.edu/people/shurans/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Shuran Song&lt;/a&gt; 的&lt;a href=&quot;http://videolectures.net/eccv2014_song_depth_images/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;室内场景下的3D 目标检测&lt;/a&gt;。根据她开放的数据集和代码，运行了demo如下&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xn2mk.com1.z0.glb.clouddn.com/blog/images/resources/reproduce-shuransong-results.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;还是没思路，7月份的时候，慢慢得就走向了 &lt;a href=&quot;http://cs231n.stanford.edu/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;卷积人工神经网络&lt;/a&gt; 和 &lt;a href=&quot;http://blog.mindcont.com/2017/02/15/caffe-guide-book/&quot;&gt;Caffe: a fast open framework for deep learning&lt;/a&gt;，就是用深度学习的方法去解决视觉方面的一些问题。先是安装 caffe,然后读了目标检测方面一些论文，动手实践了&lt;a href=&quot;https://github.com/ShaoqingRen/faster_rcnn&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;faster-rcnn&lt;/a&gt;、&lt;a href=&quot;http://pjreddie.com/darknet/yolo/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;YoLo&lt;/a&gt;、&lt;a href=&quot;https://github.com/weiliu89/caffe/tree/ssd&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;SSD&lt;/a&gt;等。下面是faster-rcnn 当时运行的demo&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xn2mk.com1.z0.glb.clouddn.com/blog/images/resources/faster-rcnn.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;9月份-10月份 参加了上海BOT大数据应用大赛是国内首个专业化AI大赛，“计算机视觉” 类的题目，见上面第二个比赛。11月初就开始弄开题报告，当时定的题目是&lt;strong&gt;复杂场景下的交通信号灯识别研究&lt;/strong&gt;。思路是：近年来卷积神经网络方面一些新的网络模型和传统的图形学方法模板匹配和色域转换相结合来解决这个问题，其中清华大学&lt;a href=&quot;http://cg.cs.tsinghua.edu.cn/traffic-sign/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;朱哲&lt;/a&gt;博士的论文&lt;a href=&quot;http://cg.cs.tsinghua.edu.cn/traffic-sign/0682.pdf&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Traffic-Sign Detection and Classification in the Wild&lt;/a&gt;给了我很大的启发，多次向他发邮件，都给予了回答和解释在此向他表示感谢。&lt;/p&gt;
+&lt;p&gt;下面是两个当时答辩做的PPT&lt;br&gt;
+&lt;img src=&quot;http://7xn2mk.com1.z0.glb.clouddn.com/blog/images/resources/tlr-research-status.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;拟研究思路，可能有理论问题，不要被我带入坑😜&lt;br&gt;
+&lt;img src=&quot;http://7xn2mk.com1.z0.glb.clouddn.com/blog/images/resources/idea-of-traffic-signal-recognition.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;答辩完,我们组组长zhou老大说这个问题和实验室大方向不符合😂,让我换到人体姿态估计上,类似下面这种识别人体姿势的效果，于是我就开始了这方面的学习🐶。&lt;/p&gt;
+&lt;img src=&quot;https://raw.githubusercontent.com/ZheC/Realtime_Multi-Person_Pose_Estimation/master/readme/shake.gif&quot; alt=&quot;图片来源 ZheC ,Realtime_Multi-Person_Pose_Estimation.&quot; align=&quot;right&quot; width=&quot;720&quot;&gt;
+&lt;h2 id=&quot;小目标🐤🐤🐤&quot;&gt;小目标🐤🐤🐤&lt;/h2&gt;
+&lt;p&gt;2017 年的钟声又响啦，和全国人民一样撸起袖子，加油干。先立个flag吧，先定它个小目标。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[x] 弄出实验结果🐸&lt;/li&gt;
+&lt;li&gt;[x] 发表文章，完成毕业要求🐧&lt;/li&gt;
+&lt;li&gt;[x] 早睡，早起，要锻炼🐜&lt;/li&gt;
+&lt;li&gt;[x] 补充短板，找实习🐺&lt;/li&gt;
+&lt;li&gt;[x] 提高博客质量🐋&lt;/li&gt;
+&lt;li&gt;[x] 维护主网站，找准特色，极客范🌴&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;现在是2017年2月17号 15点20分，坐在保守估计7万块电脑旁写下了这篇文章，马上就会更新上去了&lt;/strong&gt;😃&lt;/p&gt;
+&lt;h2 id=&quot;引用&quot;&gt;引用&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.webpagefx.com/tools/emoji-cheat-sheet/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;EMOJI CHEAT SHEET&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;作者:&lt;a href=&quot;https://github.com/mindcont&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;mindcont&lt;/a&gt;  2017-02-17 第一次编辑&lt;br&gt;
+&lt;strong&gt;转载注明出处 &lt;a href=&quot;http://blog.mindcont.com/2017/02/16/my-review-2016/&quot;&gt;http://blog.mindcont.com/2017/02/16/my-review-2016/&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;转眼间，24岁我的本命年如风卷云涌般飘了过去，总感觉日子过得飞快，一不留神一年就过去了，也才想着趁现在做做年终总结，回顾一下自己的2016，并给2017的自己❤️&lt;strong&gt;订个小目标&lt;/strong&gt;❤️ 。&lt;/p&gt;
+&lt;h2 id=&quot;比赛篇💪&quot;&gt;比赛篇💪&lt;/h2&gt;
+    
+    </summary>
+    
+      <category term="随笔日记" scheme="http://blog.mindcont.com/categories/%E9%9A%8F%E7%AC%94%E6%97%A5%E8%AE%B0/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>值得传播的思想</title>
@@ -88,10 +152,14 @@
     <link href="http://blog.mindcont.com/2017/02/15/caffe-guide-book/"/>
     <id>http://blog.mindcont.com/2017/02/15/caffe-guide-book/</id>
     <published>2017-02-15T08:22:46.000Z</published>
-    <updated>2017-02-16T00:31:14.780Z</updated>
+    <updated>2017-02-17T07:02:16.319Z</updated>
     
-    <content type="html">&lt;p&gt;&lt;img src=&quot;/images/caffe.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;http://caffe.berkeleyvision.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Caffe&lt;/a&gt;是一个清晰而高效的深度学习的框架，其作者是博士毕业于UC Berkeley的&lt;a href=&quot;http://daggerfs.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;贾扬清&lt;/a&gt;，目前在Google工作。&lt;br&gt;&lt;a href=&quot;http://caffe.berkeleyvision.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Caffe&lt;/a&gt;是纯粹的C++/CUDA架构，支持命令行、Python和MATLAB接口；可以在CPU和GPU54直接无缝切换：&lt;br&gt;&lt;figure class=&quot;highlight less&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;Caffe&lt;/span&gt;::set_mode(&lt;span class=&quot;attribute&quot;&gt;Caffe&lt;/span&gt;::GPU);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;img src=&quot;/images/caffe.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;简介&quot;&gt;简介&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://caffe.berkeleyvision.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Caffe&lt;/a&gt;是一个清晰而高效的深度学习的框架，其作者是博士毕业于UC Berkeley的&lt;a href=&quot;http://daggerfs.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;贾扬清&lt;/a&gt;，目前在Google工作。&lt;br&gt;
+&lt;a href=&quot;http://caffe.berkeleyvision.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Caffe&lt;/a&gt;是纯粹的C++/CUDA架构，支持命令行、Python和MATLAB接口；可以在CPU和GPU54直接无缝切换：&lt;/p&gt;
+&lt;figure class=&quot;highlight less&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;Caffe&lt;/span&gt;::set_mode(&lt;span class=&quot;attribute&quot;&gt;Caffe&lt;/span&gt;::GPU);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;&lt;strong&gt;Caffe的优势&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;上手快：模型与相应优化都是以文本形式而非代码形式给出。&lt;/li&gt;
@@ -103,14 +171,17 @@
 &lt;li&gt;开放性：公开的代码和参考模型用于再现。&lt;/li&gt;
 &lt;li&gt;社区好：可以通过BSD-2参与开发与讨论。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;入门篇&quot;&gt;&lt;a href=&quot;#入门篇&quot; class=&quot;headerlink&quot; title=&quot;入门篇&quot;&gt;&lt;/a&gt;入门篇&lt;/h2&gt;&lt;p&gt;前期入门主要根据自己的机器（nvidia显卡）完成Caffe 的安装，运行 &lt;a href=&quot;http://caffe.berkeleyvision.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Caffe官网&lt;/a&gt;和  &lt;a href=&quot;https://github.com/bvlc/caffe&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;github&lt;/a&gt; repo 上的&lt;strong&gt;例程&lt;/strong&gt;。&lt;/p&gt;
-&lt;h3 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h3&gt;&lt;p&gt;安装请仔细阅读下面的中文教程，&lt;strong&gt;编译中遇到的错误&lt;/strong&gt;请在 github issues用英文仔细查看错误原因。而且大部分都是&lt;strong&gt;环境依赖，路径错误&lt;/strong&gt;。&lt;/p&gt;
+&lt;h2 id=&quot;入门篇&quot;&gt;入门篇&lt;/h2&gt;
+&lt;p&gt;前期入门主要根据自己的机器（nvidia显卡）完成Caffe 的安装，运行 &lt;a href=&quot;http://caffe.berkeleyvision.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Caffe官网&lt;/a&gt;和  &lt;a href=&quot;https://github.com/bvlc/caffe&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;github&lt;/a&gt; repo 上的&lt;strong&gt;例程&lt;/strong&gt;。&lt;/p&gt;
+&lt;h3 id=&quot;安装&quot;&gt;安装&lt;/h3&gt;
+&lt;p&gt;安装请仔细阅读下面的中文教程，&lt;strong&gt;编译中遇到的错误&lt;/strong&gt;请在 github issues用英文仔细查看错误原因。而且大部分都是&lt;strong&gt;环境依赖，路径错误&lt;/strong&gt;。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://blog.mindcont.com/2016/07/20/ubuntu1404-caffe-r3-cuda7-5-mkl/&quot;&gt;Ubuntu 14.04 64bit + Caffe rc3 + CUDA 7.5 + Intel MKL 配置说明&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://caffe.berkeleyvision.org/installation.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Installation&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://github.com/bvlc/caffe/issues&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;issues&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;例程&quot;&gt;&lt;a href=&quot;#例程&quot; class=&quot;headerlink&quot; title=&quot;例程&quot;&gt;&lt;/a&gt;例程&lt;/h3&gt;&lt;p&gt;配合官方文档 例如mnist 手写体识别，其文档在 $CAFFE_ROOT/examples/mnist/Readme.md ，运行并理解其流程。尤其以下面几个最为重要，当细细品味。&lt;/p&gt;
+&lt;h3 id=&quot;例程&quot;&gt;例程&lt;/h3&gt;
+&lt;p&gt;配合官方文档 例如mnist 手写体识别，其文档在 $CAFFE_ROOT/examples/mnist/Readme.md ，运行并理解其流程。尤其以下面几个最为重要，当细细品味。&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -142,14 +213,16 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h3 id=&quot;入门书籍&quot;&gt;&lt;a href=&quot;#入门书籍&quot; class=&quot;headerlink&quot; title=&quot;入门书籍&quot;&gt;&lt;/a&gt;入门书籍&lt;/h3&gt;&lt;p&gt;如果链接失效，可以访问 &lt;a href=&quot;ftp://mindcont.com/Book&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ftp://mindcont.com/Book&lt;/a&gt; 获取。&lt;/p&gt;
+&lt;h3 id=&quot;入门书籍&quot;&gt;入门书籍&lt;/h3&gt;
+&lt;p&gt;如果链接失效，可以访问 &lt;a href=&quot;ftp://mindcont.com/Book&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ftp://mindcont.com/Book&lt;/a&gt; 获取。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://pan.baidu.com/s/1c0Ri2Py#path=%252FCaffeCN%25E7%25BF%25BB%25E8%25AF%2591&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Caffe 官方教程中译本&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://book.douban.com/subject/26825082/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;深度学习21天实战Caffe-赵永科&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;ftp://mindcont.com/Book/caffe学习笔记.pdf&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;薛开宇-caffe学习笔记&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;ftp://mindcont.com/Book/caffe%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.pdf&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;薛开宇-caffe学习笔记&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://pan.baidu.com/s/1hq8IoHe&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;贾扬清-DIY Deep Learning for Vision-  a Hands-On Tutorial with Caffe&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;答疑社区&quot;&gt;&lt;a href=&quot;#答疑社区&quot; class=&quot;headerlink&quot; title=&quot;答疑社区&quot;&gt;&lt;/a&gt;答疑社区&lt;/h3&gt;&lt;ul&gt;
+&lt;h3 id=&quot;答疑社区&quot;&gt;答疑社区&lt;/h3&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://caffecn.cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Caffe 中文社区&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;&quot;&gt;Caffe 深度学习交流2群 534492004&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://gitter.im/BVLC/caffe&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Caffe 讨论组&lt;/a&gt;&lt;/li&gt;
@@ -157,7 +230,10 @@
 &lt;li&gt;&lt;a href=&quot;&quot;&gt;VALSE-D群 481109645&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://valser.org/article-86-1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;历次VALSE Webinar活动的录像&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;进阶篇&quot;&gt;&lt;a href=&quot;#进阶篇&quot; class=&quot;headerlink&quot; title=&quot;进阶篇&quot;&gt;&lt;/a&gt;进阶篇&lt;/h2&gt;&lt;h3 id=&quot;应用&quot;&gt;&lt;a href=&quot;#应用&quot; class=&quot;headerlink&quot; title=&quot;应用&quot;&gt;&lt;/a&gt;应用&lt;/h3&gt;&lt;h4 id=&quot;视觉方向&quot;&gt;&lt;a href=&quot;#视觉方向&quot; class=&quot;headerlink&quot; title=&quot;视觉方向&quot;&gt;&lt;/a&gt;视觉方向&lt;/h4&gt;&lt;p&gt;视觉方面大致有针对图像的分类、分割(Segmentation)、理解(caption)，超分辨，去噪去模糊，以及针对物体的目标识别、检测和追踪。还有就是对视频信息进行同样的工作追求实时和可用。&lt;/p&gt;
+&lt;h2 id=&quot;进阶篇&quot;&gt;进阶篇&lt;/h2&gt;
+&lt;h3 id=&quot;应用&quot;&gt;应用&lt;/h3&gt;
+&lt;h4 id=&quot;视觉方向&quot;&gt;视觉方向&lt;/h4&gt;
+&lt;p&gt;视觉方面大致有针对图像的分类、分割(Segmentation)、理解(caption)，超分辨，去噪去模糊，以及针对物体的目标识别、检测和追踪。还有就是对视频信息进行同样的工作追求实时和可用。&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -234,19 +310,22 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h4 id=&quot;自然语言处理&quot;&gt;&lt;a href=&quot;#自然语言处理&quot; class=&quot;headerlink&quot; title=&quot;自然语言处理&quot;&gt;&lt;/a&gt;自然语言处理&lt;/h4&gt;&lt;p&gt;将机器学习用于语音文本，词汇方面的工作，典型应用机器翻译。&lt;/p&gt;
+&lt;h4 id=&quot;自然语言处理&quot;&gt;自然语言处理&lt;/h4&gt;
+&lt;p&gt;将机器学习用于语音文本，词汇方面的工作，典型应用机器翻译。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://github.com/Russell91/nlpcaffe&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;NLP-Caffe&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://city.shaform.com/blog/2015/06/06/caffe-sentiment-analysis.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Sentiment Analysis&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&quot;语音&quot;&gt;&lt;a href=&quot;#语音&quot; class=&quot;headerlink&quot; title=&quot;语音&quot;&gt;&lt;/a&gt;语音&lt;/h4&gt;&lt;p&gt;这里是指语言片段的识别，拼接，以及仿声合成，典型语音识别，也就是科大讯飞所作的工作。&lt;/p&gt;
+&lt;h4 id=&quot;语音&quot;&gt;语音&lt;/h4&gt;
+&lt;p&gt;这里是指语言片段的识别，拼接，以及仿声合成，典型语音识别，也就是科大讯飞所作的工作。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://github.com/pannous/caffe-speech-recognition&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Speech Recognition&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://github.com/kaldi-asr/kaldi&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Kaldi&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.xfyun.cn/index.php/default/doccenter/doccenterInner?itemTitle=anN3ZA==&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;技术文档-讯飞&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;更多访问 &lt;a href=&quot;https://github.com/MichaelXin/Awesome-Caffe&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;MichaelXin - Awesome-Caffe&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;CS231N-课程&quot;&gt;&lt;a href=&quot;#CS231N-课程&quot; class=&quot;headerlink&quot; title=&quot;CS231N 课程&quot;&gt;&lt;/a&gt;CS231N 课程&lt;/h3&gt;&lt;p&gt;有了前面的初步了解，认识了什么是深度学习，什么是caffe，怎么使用caffe，以及caffe能够干什么，想要进一步的学习还要了解卷积神经网络的前世今生。我推荐斯坦福大学的CS231N 课程作为卷积神经网络的系统学习。&lt;/p&gt;
+&lt;h3 id=&quot;cs231n-课程&quot;&gt;CS231N 课程&lt;/h3&gt;
+&lt;p&gt;有了前面的初步了解，认识了什么是深度学习，什么是caffe，怎么使用caffe，以及caffe能够干什么，想要进一步的学习还要了解卷积神经网络的前世今生。我推荐斯坦福大学的CS231N 课程作为卷积神经网络的系统学习。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://cs231n.stanford.edu/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;CS231n: Convolutional Neural Networks for Visual Recognition&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://pan.baidu.com/s/1pKsTivp&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;视频和课件&lt;/a&gt;&lt;/li&gt;
@@ -256,7 +335,8 @@
 &lt;li&gt;&lt;a href=&quot;http://deeplearning.stanford.edu/wiki/index.php/UFLDL%E6%95%99%E7%A8%8B&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;UFLDL教程&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://openclassroom.stanford.edu/MainFolder/CoursePage.php?course=MachineLearning&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Machine Learning&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;数据集&quot;&gt;&lt;a href=&quot;#数据集&quot; class=&quot;headerlink&quot; title=&quot;数据集&quot;&gt;&lt;/a&gt;数据集&lt;/h3&gt;&lt;p&gt;机器学习有人工标注数据的监督学习也好，没有人工标注数据的无监督学习以及介于两者之间的半监督学习也好，归根结底离不开大量的数据，基于各种各样场景下的问题性质，大家构建了相应的人工标注的数据集，一部分用于网络训练，让机器进行学习，另一部分用来做测试评价学习效果的好坏。&lt;/p&gt;
+&lt;h3 id=&quot;数据集&quot;&gt;数据集&lt;/h3&gt;
+&lt;p&gt;机器学习有人工标注数据的监督学习也好，没有人工标注数据的无监督学习以及介于两者之间的半监督学习也好，归根结底离不开大量的数据，基于各种各样场景下的问题性质，大家构建了相应的人工标注的数据集，一部分用于网络训练，让机器进行学习，另一部分用来做测试评价学习效果的好坏。&lt;/p&gt;
 &lt;p&gt;鉴于各式各样的数据集种类繁多，此部分单独列为一个页面，请参考下面的链接。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://blog.mindcont.com/2016/09/13/Deep-learning-dataset/&quot;&gt;深度学习：数据集篇&lt;/a&gt;&lt;/li&gt;
@@ -267,7 +347,8 @@
 &lt;li&gt;&lt;a href=&quot;https://github.com/puzzledqs/BBox-Label-Tool&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;BBox-Label-Tool&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://github.com/christopher5106/FastAnnotationTool&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;FastAnnotationTool&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;博客&quot;&gt;&lt;a href=&quot;#博客&quot; class=&quot;headerlink&quot; title=&quot;博客&quot;&gt;&lt;/a&gt;博客&lt;/h3&gt;&lt;p&gt;推荐一些好的博客，工程方面能让你解决某个具体问题能有所启发，而学术方面则可以让你紧跟业界最新潮流，这其中又分为学者个人的博客和著名科研单位的博客。&lt;/p&gt;
+&lt;h3 id=&quot;博客&quot;&gt;博客&lt;/h3&gt;
+&lt;p&gt;推荐一些好的博客，工程方面能让你解决某个具体问题能有所启发，而学术方面则可以让你紧跟业界最新潮流，这其中又分为学者个人的博客和著名科研单位的博客。&lt;/p&gt;
 &lt;p&gt;工程方面&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://tech.meituan.com/mt-mlinaction-how-to-ml.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;实例详解机器学习如何解决问题&lt;/a&gt;&lt;/li&gt;
@@ -276,7 +357,8 @@
 &lt;li&gt;&lt;a href=&quot;http://www.cnblogs.com/denny402&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;denny的学习专栏&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://console.faceplusplus.com/documents/5679308&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Face++ -API&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;学术探索&lt;br&gt;个人&lt;/p&gt;
+&lt;p&gt;学术探索&lt;br&gt;
+个人&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.rossgirshick.info/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Ross Girshick - Facebook AI Research&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.ee.cuhk.edu.hk/~xgwang/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Xiaogang Wang - CUHK&lt;/a&gt;&lt;/li&gt;
@@ -295,21 +377,26 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://openai.com/blog/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;OpenAI&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;微调网络&quot;&gt;&lt;a href=&quot;#微调网络&quot; class=&quot;headerlink&quot; title=&quot;微调网络&quot;&gt;&lt;/a&gt;微调网络&lt;/h3&gt;&lt;ul&gt;
+&lt;h3 id=&quot;微调网络&quot;&gt;微调网络&lt;/h3&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.cnblogs.com/louyihang-loves-baiyan/p/5038758.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;楼燚(yì)航的blog-Caffe fine-tuning 微调网络&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/sinat_30071459/article/details/51613304&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;小咸鱼_-基于caffe的图像分类(1)——制作train.txt和val.txt文件&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;可视化&quot;&gt;&lt;a href=&quot;#可视化&quot; class=&quot;headerlink&quot; title=&quot;可视化&quot;&gt;&lt;/a&gt;可视化&lt;/h3&gt;&lt;p&gt;用反卷积的方法对自己的网络的各个卷积层进行可视化，能更好的理解你的网络每层学习到那些特征，思考到网络可能进入了哪些误区。&lt;/p&gt;
+&lt;h3 id=&quot;可视化&quot;&gt;可视化&lt;/h3&gt;
+&lt;p&gt;用反卷积的方法对自己的网络的各个卷积层进行可视化，能更好的理解你的网络每层学习到那些特征，思考到网络可能进入了哪些误区。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;deep-visualization-toolbox &lt;a href=&quot;https://github.com/yosinski/deep-visualization-toolbox&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;code&lt;/a&gt; &lt;a href=&quot;http://arxiv.org/abs/1506.06579&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;paper&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://github.com/auduno/deepdraw&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;DeepDraw&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://ethereon.github.io/netscope/#/editor&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;netscope&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;扩展新layer&quot;&gt;&lt;a href=&quot;#扩展新layer&quot; class=&quot;headerlink&quot; title=&quot;扩展新layer&quot;&gt;&lt;/a&gt;扩展新layer&lt;/h3&gt;&lt;p&gt;加入一个新的层，满足自己的实际需求，最常见的就是修改 数据输入层DataLayer,增加一个新的、特殊的数据类型，也对应你特殊的数据处理方式，例如对图像进行每隔几度进行旋转，resize、crop、使用光流图像等。也可以换种思路看看别人是如何增加一个新的Layer的，从中获得启发。&lt;/p&gt;
+&lt;h3 id=&quot;扩展新layer&quot;&gt;扩展新layer&lt;/h3&gt;
+&lt;p&gt;加入一个新的层，满足自己的实际需求，最常见的就是修改 数据输入层DataLayer,增加一个新的、特殊的数据类型，也对应你特殊的数据处理方式，例如对图像进行每隔几度进行旋转，resize、crop、使用光流图像等。也可以换种思路看看别人是如何增加一个新的Layer的，从中获得启发。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/sunshine_in_moon/article/details/51453951&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Sunshine_in_Moon的专栏-Caffe扩展新层&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;高级篇&quot;&gt;&lt;a href=&quot;#高级篇&quot; class=&quot;headerlink&quot; title=&quot;高级篇&quot;&gt;&lt;/a&gt;高级篇&lt;/h2&gt;&lt;h3 id=&quot;调参&quot;&gt;&lt;a href=&quot;#调参&quot; class=&quot;headerlink&quot; title=&quot;调参&quot;&gt;&lt;/a&gt;调参&lt;/h3&gt;&lt;p&gt;深度学习，卷积神经网络莫过于一个适应于数据集规模，能够反映问题本质的网络，剩下的就是调参的事情了，无外乎实践，实践，再实践。当然机器很重要，好的机器，好的显卡，意味着快速迭代！机器不够用也没关系，那就要把理论功夫做足，参考成熟的网络设计，再前人的工作基础之上fine-tuning,往往比你自己训练要好的多。使用image-net数据集训练得到的caffemodel 就是一个很好的权值初始化参数。&lt;/p&gt;
+&lt;h2 id=&quot;高级篇&quot;&gt;高级篇&lt;/h2&gt;
+&lt;h3 id=&quot;调参&quot;&gt;调参&lt;/h3&gt;
+&lt;p&gt;深度学习，卷积神经网络莫过于一个适应于数据集规模，能够反映问题本质的网络，剩下的就是调参的事情了，无外乎实践，实践，再实践。当然机器很重要，好的机器，好的显卡，意味着快速迭代！机器不够用也没关系，那就要把理论功夫做足，参考成熟的网络设计，再前人的工作基础之上fine-tuning,往往比你自己训练要好的多。使用image-net数据集训练得到的caffemodel 就是一个很好的权值初始化参数。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.zhihu.com/question/41631631/answer/94816420&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;你有哪些deep learning（rnn、cnn）调参的经验？&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -317,27 +404,31 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://github.com/jay-mahadeokar/pynetbuilder&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;pynetbuilder&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;转化&quot;&gt;&lt;a href=&quot;#转化&quot; class=&quot;headerlink&quot; title=&quot;转化&quot;&gt;&lt;/a&gt;转化&lt;/h3&gt;&lt;ul&gt;
+&lt;h3 id=&quot;转化&quot;&gt;转化&lt;/h3&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://github.com/ethereon/caffe-tensorflow&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;caffe-tensorflow&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://github.com/kitofans/caffe-theano-conversion&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;caffe-theano-conversion&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://github.com/MarcBS/keras&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;CaffeToKeras&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;分布式计算&quot;&gt;&lt;a href=&quot;#分布式计算&quot; class=&quot;headerlink&quot; title=&quot;分布式计算&quot;&gt;&lt;/a&gt;分布式计算&lt;/h3&gt;&lt;ul&gt;
+&lt;h3 id=&quot;分布式计算&quot;&gt;分布式计算&lt;/h3&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://github.com/amplab/SparkNet&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;SparkNet&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://github.com/yahoo/CaffeOnSpark&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;CaffeOnSpark&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://github.com/petuum/bosen&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;petuum/bosen &lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;参考&quot;&gt;&lt;a href=&quot;#参考&quot; class=&quot;headerlink&quot; title=&quot;参考&quot;&gt;&lt;/a&gt;参考&lt;/h2&gt;&lt;ul&gt;
+&lt;h2 id=&quot;参考&quot;&gt;参考&lt;/h2&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://daggerfs.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Yangqing Jia (贾扬清)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://image-net.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Image Net&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://github.com/MichaelXin/Awesome-Caffe&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;MichaelXin - Awesome-Caffe&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;作者:&lt;a href=&quot;https://github.com/mindcont&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;mindcont&lt;/a&gt;  2016-08-22 第一次编辑&lt;br&gt;&lt;strong&gt;转载注明出处 &lt;a href=&quot;http://blog.mindcont.com/2016/08/22/caffe-guide-book/&quot;&gt;http://blog.mindcont.com/2016/08/22/caffe-guide-book/&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;作者:&lt;a href=&quot;https://github.com/mindcont&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;mindcont&lt;/a&gt;  2016-08-22 第一次编辑 2017-02-16 第二次编辑&lt;br&gt;
+&lt;strong&gt;转载注明出处 &lt;a href=&quot;http://blog.mindcont.com/2016/08/22/caffe-guide-book/&quot;&gt;http://blog.mindcont.com/2016/08/22/caffe-guide-book/&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;/images/caffe.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+      &lt;p&gt;&lt;img src=&quot;/images/caffe.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
     
     </summary>
     
@@ -2018,72 +2109,6 @@
     
     
       <category term="OpenCV" scheme="http://blog.mindcont.com/tags/OpenCV/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Ubuntu 14.04 安装 Nvidia 私有驱动并进行双显卡切换</title>
-    <link href="http://blog.mindcont.com/2016/07/15/ubuntu1404-nvidia-graphics-driver/"/>
-    <id>http://blog.mindcont.com/2016/07/15/ubuntu1404-nvidia-graphics-driver/</id>
-    <published>2016-07-15T07:55:36.000Z</published>
-    <updated>2016-10-27T01:38:04.595Z</updated>
-    
-    <content type="html">&lt;p&gt;笔者最近弄Caffe不小心有把nvidia显卡驱动弄坏了，现在将ubuntu14.04 双显卡切换记录如下。&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;—&lt;/th&gt;
-&lt;th&gt;—&lt;/th&gt;
-&lt;th&gt;备注&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;硬件&lt;/td&gt;
-&lt;td&gt;GeForce GT640M&lt;/td&gt;
-&lt;td&gt;-&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;系统版本&lt;/td&gt;
-&lt;td&gt;3.13.0-37-generic #64-Ubuntu x86_64 GNU/Linux&lt;/td&gt;
-&lt;td&gt;输入&lt;code&gt;uname -a&lt;/code&gt;查看&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;首先 彻底卸载原有Nvidia驱动&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo apt-get purge nvidia*&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;清理无关项&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo apt-get autoremove&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;使用如下命令添加Graphic Drivers PPA&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo add-apt-repository ppa:graphics-drivers/ppa&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo add-apt-repository ppa:nilarimogard/webupd8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;安装特定版本的nvidia 专有驱动和设置工具&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo apt-get update&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo apt-get install nvidia-340 nvidia-340-uvm nvidia-settings nvidia-prime prime-indicator&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;重启,同windows一样，驱动需要重启后生效。&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo reboot&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/images/ubuntu/nvidia_success.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;注意!!!&lt;/strong&gt;&lt;br&gt;如果在安装过程中遇到下面的问题&lt;br&gt;&lt;figure class=&quot;highlight sql&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo apt-get &lt;span class=&quot;keyword&quot;&gt;install&lt;/span&gt; nvidia&lt;span class=&quot;number&quot;&gt;-340&lt;/span&gt; nvidia-&lt;span class=&quot;keyword&quot;&gt;settings&lt;/span&gt; nvidia-prime&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;正在读取软件包列表... 完成&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;正在分析软件包的依赖关系树       &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;正在读取状态信息... 完成       &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;nvidia-&lt;span class=&quot;keyword&quot;&gt;settings&lt;/span&gt; 已经是最新的版本了。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;有一些软件包无法被安装。如果您用的是 unstable 发行版，这也许是&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;因为系统无法达到您要求的状态造成的。该版本中可能会有一些您需要的软件&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;包尚未被创建或是它们已被从新到(Incoming)目录移出。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;下列信息可能会对解决问题有所帮助：&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;下列软件包有未满足的依赖关系：&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; nvidia&lt;span class=&quot;number&quot;&gt;-331&lt;/span&gt; : 依赖: lib32gcc1 但是它将不会被安装&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;E: 无法修正错误，因为您要求某些软件包保持现状，就是它们破坏了软件包间的依赖关系&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;笔者认为之所以出现这个问题,是由于”源”(包含各种软件和环境依赖包)随着ubuntu内核和版本的更新导致低版本的ubuntu所需要的软件和环境与当前它所提供的各个软件包之间相互冲突.解决办法就是寻找一个满足你机器当前内核和软件环境的源来安装 nvidia 专有驱动.请按照以下两个方向寻找解决办法,我建议&lt;strong&gt;升级到最新ubuntu的发行版本&lt;/strong&gt;进行安装,不过最新的ubuntu 中附带的软件如 gcc 可能版本过高,需要降级使用.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;先尝试修改不同的源进行更新安装(软件源设置，在更新选项卡选中推荐更新)&lt;/li&gt;
-&lt;li&gt;或者升级到ubuntu 16.04 LTS&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;笔者最近弄Caffe不小心有把nvidia显卡驱动弄坏了，现在将ubuntu14.04 双显卡切换记录如下。&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;—&lt;/th&gt;
-&lt;th&gt;—&lt;/th&gt;
-&lt;th&gt;备注&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-
-    
-    </summary>
-    
-      <category term="Linux" scheme="http://blog.mindcont.com/categories/Linux/"/>
-    
     
   </entry>
   

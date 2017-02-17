@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.mindcont.com/2017/02/16/my-review-2016/</loc>
+    
+    <lastmod>2017-02-17T07:47:53.913Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2017/02/15/caffe-guide-book/</loc>
+    
+    <lastmod>2017-02-17T07:02:16.319Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.mindcont.com/about/index.html</loc>
     
     <lastmod>2017-02-16T08:17:16.736Z</lastmod>
@@ -12,13 +26,6 @@
     <loc>http://blog.mindcont.com/2017/02/15/ideas-worth-spreading/</loc>
     
     <lastmod>2017-02-16T02:14:04.780Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2017/02/15/caffe-guide-book/</loc>
-    
-    <lastmod>2017-02-16T00:31:14.780Z</lastmod>
     
   </url>
   

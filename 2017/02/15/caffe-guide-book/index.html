@@ -1,5 +1,9 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>Caffe 入门指南 | 微纪元</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/3.0.3/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Caffe 入门指南</h1><a id="logo" href="/.">微纪元</a><p class="description">根据同名科幻小说改编</p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/history/"><i class="fa fa-history"> 历史</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div id="layout" class="pure-g"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">Caffe 入门指南</h1><div class="post-meta">Feb 15, 2017<span> | </span><span class="category"><a href="/categories/深度学习/">深度学习</a></span><script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> Hits</span></span></div><a data-thread-key="2017/02/15/caffe-guide-book/" href="/2017/02/15/caffe-guide-book/#comments" class="ds-thread-count"></a><div class="clear"><div id="toc" class="toc-article"><div class="toc-title">文章目录</div><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#简介"><span class="toc-number">1.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#入门篇"><span class="toc-number">2.</span> <span class="toc-text">入门篇</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装"><span class="toc-number">2.1.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#例程"><span class="toc-number">2.2.</span> <span class="toc-text">例程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#入门书籍"><span class="toc-number">2.3.</span> <span class="toc-text">入门书籍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#答疑社区"><span class="toc-number">2.4.</span> <span class="toc-text">答疑社区</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#进阶篇"><span class="toc-number">3.</span> <span class="toc-text">进阶篇</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#应用"><span class="toc-number">3.1.</span> <span class="toc-text">应用</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#视觉方向"><span class="toc-number">3.1.1.</span> <span class="toc-text">视觉方向</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#自然语言处理"><span class="toc-number">3.1.2.</span> <span class="toc-text">自然语言处理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#语音"><span class="toc-number">3.1.3.</span> <span class="toc-text">语音</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CS231N-课程"><span class="toc-number">3.2.</span> <span class="toc-text">CS231N 课程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据集"><span class="toc-number">3.3.</span> <span class="toc-text">数据集</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#博客"><span class="toc-number">3.4.</span> <span class="toc-text">博客</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#微调网络"><span class="toc-number">3.5.</span> <span class="toc-text">微调网络</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#可视化"><span class="toc-number">3.6.</span> <span class="toc-text">可视化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#扩展新layer"><span class="toc-number">3.7.</span> <span class="toc-text">扩展新layer</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#高级篇"><span class="toc-number">4.</span> <span class="toc-text">高级篇</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#调参"><span class="toc-number">4.1.</span> <span class="toc-text">调参</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#转化"><span class="toc-number">4.2.</span> <span class="toc-text">转化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分布式计算"><span class="toc-number">4.3.</span> <span class="toc-text">分布式计算</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考"><span class="toc-number">5.</span> <span class="toc-text">参考</span></a></li></ol></div></div><div class="post-content"><p><img src="/images/caffe.jpg" alt=""><br><a id="more"></a></p>
-<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p><a href="http://caffe.berkeleyvision.org/" target="_blank" rel="external">Caffe</a>是一个清晰而高效的深度学习的框架，其作者是博士毕业于UC Berkeley的<a href="http://daggerfs.com/" target="_blank" rel="external">贾扬清</a>，目前在Google工作。<br><a href="http://caffe.berkeleyvision.org/" target="_blank" rel="external">Caffe</a>是纯粹的C++/CUDA架构，支持命令行、Python和MATLAB接口；可以在CPU和GPU54直接无缝切换：<br><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">Caffe</span>::set_mode(<span class="attribute">Caffe</span>::GPU);</span><br></pre></td></tr></table></figure></p>
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>Caffe 入门指南 | 微纪元</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/3.0.3/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Caffe 入门指南</h1><a id="logo" href="/.">微纪元</a><p class="description">根据同名科幻小说改编</p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/history/"><i class="fa fa-history"> 历史</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div id="layout" class="pure-g"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">Caffe 入门指南</h1><div class="post-meta">Feb 15, 2017<span> | </span><span class="category"><a href="/categories/深度学习/">深度学习</a></span><script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> Hits</span></span></div><a data-thread-key="2017/02/15/caffe-guide-book/" href="/2017/02/15/caffe-guide-book/#comments" class="ds-thread-count"></a><div class="clear"><div id="toc" class="toc-article"><div class="toc-title">文章目录</div><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#简介"><span class="toc-number">1.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#入门篇"><span class="toc-number">2.</span> <span class="toc-text">入门篇</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装"><span class="toc-number">2.1.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#例程"><span class="toc-number">2.2.</span> <span class="toc-text">例程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#入门书籍"><span class="toc-number">2.3.</span> <span class="toc-text">入门书籍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#答疑社区"><span class="toc-number">2.4.</span> <span class="toc-text">答疑社区</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#进阶篇"><span class="toc-number">3.</span> <span class="toc-text">进阶篇</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#应用"><span class="toc-number">3.1.</span> <span class="toc-text">应用</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#视觉方向"><span class="toc-number">3.1.1.</span> <span class="toc-text">视觉方向</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#自然语言处理"><span class="toc-number">3.1.2.</span> <span class="toc-text">自然语言处理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#语音"><span class="toc-number">3.1.3.</span> <span class="toc-text">语音</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#cs231n-课程"><span class="toc-number">3.2.</span> <span class="toc-text">CS231N 课程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据集"><span class="toc-number">3.3.</span> <span class="toc-text">数据集</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#博客"><span class="toc-number">3.4.</span> <span class="toc-text">博客</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#微调网络"><span class="toc-number">3.5.</span> <span class="toc-text">微调网络</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#可视化"><span class="toc-number">3.6.</span> <span class="toc-text">可视化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#扩展新layer"><span class="toc-number">3.7.</span> <span class="toc-text">扩展新layer</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#高级篇"><span class="toc-number">4.</span> <span class="toc-text">高级篇</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#调参"><span class="toc-number">4.1.</span> <span class="toc-text">调参</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#转化"><span class="toc-number">4.2.</span> <span class="toc-text">转化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分布式计算"><span class="toc-number">4.3.</span> <span class="toc-text">分布式计算</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考"><span class="toc-number">5.</span> <span class="toc-text">参考</span></a></li></ol></div></div><div class="post-content"><p><img src="/images/caffe.jpg" alt=""></p>
+<a id="more"></a>
+<h2 id="简介">简介</h2>
+<p><a href="http://caffe.berkeleyvision.org/" target="_blank" rel="external">Caffe</a>是一个清晰而高效的深度学习的框架，其作者是博士毕业于UC Berkeley的<a href="http://daggerfs.com/" target="_blank" rel="external">贾扬清</a>，目前在Google工作。<br>
+<a href="http://caffe.berkeleyvision.org/" target="_blank" rel="external">Caffe</a>是纯粹的C++/CUDA架构，支持命令行、Python和MATLAB接口；可以在CPU和GPU54直接无缝切换：</p>
+<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">Caffe</span>::set_mode(<span class="attribute">Caffe</span>::GPU);</span><br></pre></td></tr></table></figure>
 <p><strong>Caffe的优势</strong></p>
 <ul>
 <li>上手快：模型与相应优化都是以文本形式而非代码形式给出。</li>
@@ -11,14 +15,17 @@
 <li>开放性：公开的代码和参考模型用于再现。</li>
 <li>社区好：可以通过BSD-2参与开发与讨论。</li>
 </ul>
-<h2 id="入门篇"><a href="#入门篇" class="headerlink" title="入门篇"></a>入门篇</h2><p>前期入门主要根据自己的机器（nvidia显卡）完成Caffe 的安装，运行 <a href="http://caffe.berkeleyvision.org/" target="_blank" rel="external">Caffe官网</a>和  <a href="https://github.com/bvlc/caffe" target="_blank" rel="external">github</a> repo 上的<strong>例程</strong>。</p>
-<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>安装请仔细阅读下面的中文教程，<strong>编译中遇到的错误</strong>请在 github issues用英文仔细查看错误原因。而且大部分都是<strong>环境依赖，路径错误</strong>。</p>
+<h2 id="入门篇">入门篇</h2>
+<p>前期入门主要根据自己的机器（nvidia显卡）完成Caffe 的安装，运行 <a href="http://caffe.berkeleyvision.org/" target="_blank" rel="external">Caffe官网</a>和  <a href="https://github.com/bvlc/caffe" target="_blank" rel="external">github</a> repo 上的<strong>例程</strong>。</p>
+<h3 id="安装">安装</h3>
+<p>安装请仔细阅读下面的中文教程，<strong>编译中遇到的错误</strong>请在 github issues用英文仔细查看错误原因。而且大部分都是<strong>环境依赖，路径错误</strong>。</p>
 <ul>
 <li><a href="http://blog.mindcont.com/2016/07/20/ubuntu1404-caffe-r3-cuda7-5-mkl/">Ubuntu 14.04 64bit + Caffe rc3 + CUDA 7.5 + Intel MKL 配置说明</a></li>
 <li><a href="http://caffe.berkeleyvision.org/installation.html" target="_blank" rel="external">Installation</a></li>
 <li><a href="https://github.com/bvlc/caffe/issues" target="_blank" rel="external">issues</a></li>
 </ul>
-<h3 id="例程"><a href="#例程" class="headerlink" title="例程"></a>例程</h3><p>配合官方文档 例如mnist 手写体识别，其文档在 $CAFFE_ROOT/examples/mnist/Readme.md ，运行并理解其流程。尤其以下面几个最为重要，当细细品味。</p>
+<h3 id="例程">例程</h3>
+<p>配合官方文档 例如mnist 手写体识别，其文档在 $CAFFE_ROOT/examples/mnist/Readme.md ，运行并理解其流程。尤其以下面几个最为重要，当细细品味。</p>
 <table>
 <thead>
 <tr>
@@ -50,14 +57,16 @@
 </tr>
 </tbody>
 </table>
-<h3 id="入门书籍"><a href="#入门书籍" class="headerlink" title="入门书籍"></a>入门书籍</h3><p>如果链接失效，可以访问 <a href="ftp://mindcont.com/Book" target="_blank" rel="external">ftp://mindcont.com/Book</a> 获取。</p>
+<h3 id="入门书籍">入门书籍</h3>
+<p>如果链接失效，可以访问 <a href="ftp://mindcont.com/Book" target="_blank" rel="external">ftp://mindcont.com/Book</a> 获取。</p>
 <ul>
 <li><a href="http://pan.baidu.com/s/1c0Ri2Py#path=%252FCaffeCN%25E7%25BF%25BB%25E8%25AF%2591" target="_blank" rel="external">Caffe 官方教程中译本</a></li>
 <li><a href="https://book.douban.com/subject/26825082/" target="_blank" rel="external">深度学习21天实战Caffe-赵永科</a></li>
-<li><a href="ftp://mindcont.com/Book/caffe学习笔记.pdf" target="_blank" rel="external">薛开宇-caffe学习笔记</a></li>
+<li><a href="ftp://mindcont.com/Book/caffe%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.pdf" target="_blank" rel="external">薛开宇-caffe学习笔记</a></li>
 <li><a href="http://pan.baidu.com/s/1hq8IoHe" target="_blank" rel="external">贾扬清-DIY Deep Learning for Vision-  a Hands-On Tutorial with Caffe</a></li>
 </ul>
-<h3 id="答疑社区"><a href="#答疑社区" class="headerlink" title="答疑社区"></a>答疑社区</h3><ul>
+<h3 id="答疑社区">答疑社区</h3>
+<ul>
 <li><a href="http://caffecn.cn/" target="_blank" rel="external">Caffe 中文社区</a></li>
 <li><a href="">Caffe 深度学习交流2群 534492004</a></li>
 <li><a href="https://gitter.im/BVLC/caffe" target="_blank" rel="external">Caffe 讨论组</a></li>
@@ -65,7 +74,10 @@
 <li><a href="">VALSE-D群 481109645</a></li>
 <li><a href="http://valser.org/article-86-1.html" target="_blank" rel="external">历次VALSE Webinar活动的录像</a></li>
 </ul>
-<h2 id="进阶篇"><a href="#进阶篇" class="headerlink" title="进阶篇"></a>进阶篇</h2><h3 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h3><h4 id="视觉方向"><a href="#视觉方向" class="headerlink" title="视觉方向"></a>视觉方向</h4><p>视觉方面大致有针对图像的分类、分割(Segmentation)、理解(caption)，超分辨，去噪去模糊，以及针对物体的目标识别、检测和追踪。还有就是对视频信息进行同样的工作追求实时和可用。</p>
+<h2 id="进阶篇">进阶篇</h2>
+<h3 id="应用">应用</h3>
+<h4 id="视觉方向">视觉方向</h4>
+<p>视觉方面大致有针对图像的分类、分割(Segmentation)、理解(caption)，超分辨，去噪去模糊，以及针对物体的目标识别、检测和追踪。还有就是对视频信息进行同样的工作追求实时和可用。</p>
 <table>
 <thead>
 <tr>
@@ -142,19 +154,22 @@
 </tr>
 </tbody>
 </table>
-<h4 id="自然语言处理"><a href="#自然语言处理" class="headerlink" title="自然语言处理"></a>自然语言处理</h4><p>将机器学习用于语音文本，词汇方面的工作，典型应用机器翻译。</p>
+<h4 id="自然语言处理">自然语言处理</h4>
+<p>将机器学习用于语音文本，词汇方面的工作，典型应用机器翻译。</p>
 <ul>
 <li><a href="https://github.com/Russell91/nlpcaffe" target="_blank" rel="external">NLP-Caffe</a></li>
 <li><a href="http://city.shaform.com/blog/2015/06/06/caffe-sentiment-analysis.html" target="_blank" rel="external">Sentiment Analysis</a></li>
 </ul>
-<h4 id="语音"><a href="#语音" class="headerlink" title="语音"></a>语音</h4><p>这里是指语言片段的识别，拼接，以及仿声合成，典型语音识别，也就是科大讯飞所作的工作。</p>
+<h4 id="语音">语音</h4>
+<p>这里是指语言片段的识别，拼接，以及仿声合成，典型语音识别，也就是科大讯飞所作的工作。</p>
 <ul>
 <li><a href="https://github.com/pannous/caffe-speech-recognition" target="_blank" rel="external">Speech Recognition</a></li>
 <li><a href="https://github.com/kaldi-asr/kaldi" target="_blank" rel="external">Kaldi</a></li>
 <li><a href="http://www.xfyun.cn/index.php/default/doccenter/doccenterInner?itemTitle=anN3ZA==" target="_blank" rel="external">技术文档-讯飞</a></li>
 </ul>
 <p>更多访问 <a href="https://github.com/MichaelXin/Awesome-Caffe" target="_blank" rel="external">MichaelXin - Awesome-Caffe</a></p>
-<h3 id="CS231N-课程"><a href="#CS231N-课程" class="headerlink" title="CS231N 课程"></a>CS231N 课程</h3><p>有了前面的初步了解，认识了什么是深度学习，什么是caffe，怎么使用caffe，以及caffe能够干什么，想要进一步的学习还要了解卷积神经网络的前世今生。我推荐斯坦福大学的CS231N 课程作为卷积神经网络的系统学习。</p>
+<h3 id="cs231n-课程">CS231N 课程</h3>
+<p>有了前面的初步了解，认识了什么是深度学习，什么是caffe，怎么使用caffe，以及caffe能够干什么，想要进一步的学习还要了解卷积神经网络的前世今生。我推荐斯坦福大学的CS231N 课程作为卷积神经网络的系统学习。</p>
 <ul>
 <li><a href="http://cs231n.stanford.edu/" target="_blank" rel="external">CS231n: Convolutional Neural Networks for Visual Recognition</a></li>
 <li><a href="http://pan.baidu.com/s/1pKsTivp" target="_blank" rel="external">视频和课件</a></li>
@@ -164,7 +179,8 @@
 <li><a href="http://deeplearning.stanford.edu/wiki/index.php/UFLDL%E6%95%99%E7%A8%8B" target="_blank" rel="external">UFLDL教程</a></li>
 <li><a href="http://openclassroom.stanford.edu/MainFolder/CoursePage.php?course=MachineLearning" target="_blank" rel="external">Machine Learning</a></li>
 </ul>
-<h3 id="数据集"><a href="#数据集" class="headerlink" title="数据集"></a>数据集</h3><p>机器学习有人工标注数据的监督学习也好，没有人工标注数据的无监督学习以及介于两者之间的半监督学习也好，归根结底离不开大量的数据，基于各种各样场景下的问题性质，大家构建了相应的人工标注的数据集，一部分用于网络训练，让机器进行学习，另一部分用来做测试评价学习效果的好坏。</p>
+<h3 id="数据集">数据集</h3>
+<p>机器学习有人工标注数据的监督学习也好，没有人工标注数据的无监督学习以及介于两者之间的半监督学习也好，归根结底离不开大量的数据，基于各种各样场景下的问题性质，大家构建了相应的人工标注的数据集，一部分用于网络训练，让机器进行学习，另一部分用来做测试评价学习效果的好坏。</p>
 <p>鉴于各式各样的数据集种类繁多，此部分单独列为一个页面，请参考下面的链接。</p>
 <ul>
 <li><a href="http://blog.mindcont.com/2016/09/13/Deep-learning-dataset/">深度学习：数据集篇</a></li>
@@ -175,7 +191,8 @@
 <li><a href="https://github.com/puzzledqs/BBox-Label-Tool" target="_blank" rel="external">BBox-Label-Tool</a></li>
 <li><a href="https://github.com/christopher5106/FastAnnotationTool" target="_blank" rel="external">FastAnnotationTool</a></li>
 </ul>
-<h3 id="博客"><a href="#博客" class="headerlink" title="博客"></a>博客</h3><p>推荐一些好的博客，工程方面能让你解决某个具体问题能有所启发，而学术方面则可以让你紧跟业界最新潮流，这其中又分为学者个人的博客和著名科研单位的博客。</p>
+<h3 id="博客">博客</h3>
+<p>推荐一些好的博客，工程方面能让你解决某个具体问题能有所启发，而学术方面则可以让你紧跟业界最新潮流，这其中又分为学者个人的博客和著名科研单位的博客。</p>
 <p>工程方面</p>
 <ul>
 <li><a href="http://tech.meituan.com/mt-mlinaction-how-to-ml.html" target="_blank" rel="external">实例详解机器学习如何解决问题</a></li>
@@ -184,7 +201,8 @@
 <li><a href="http://www.cnblogs.com/denny402" target="_blank" rel="external">denny的学习专栏</a></li>
 <li><a href="https://console.faceplusplus.com/documents/5679308" target="_blank" rel="external">Face++ -API</a></li>
 </ul>
-<p>学术探索<br>个人</p>
+<p>学术探索<br>
+个人</p>
 <ul>
 <li><a href="http://www.rossgirshick.info/" target="_blank" rel="external">Ross Girshick - Facebook AI Research</a></li>
 <li><a href="http://www.ee.cuhk.edu.hk/~xgwang/" target="_blank" rel="external">Xiaogang Wang - CUHK</a></li>
@@ -203,21 +221,26 @@
 <ul>
 <li><a href="https://openai.com/blog/" target="_blank" rel="external">OpenAI</a></li>
 </ul>
-<h3 id="微调网络"><a href="#微调网络" class="headerlink" title="微调网络"></a>微调网络</h3><ul>
+<h3 id="微调网络">微调网络</h3>
+<ul>
 <li><a href="http://www.cnblogs.com/louyihang-loves-baiyan/p/5038758.html" target="_blank" rel="external">楼燚(yì)航的blog-Caffe fine-tuning 微调网络</a></li>
 <li><a href="http://blog.csdn.net/sinat_30071459/article/details/51613304" target="_blank" rel="external">小咸鱼_-基于caffe的图像分类(1)——制作train.txt和val.txt文件</a></li>
 </ul>
-<h3 id="可视化"><a href="#可视化" class="headerlink" title="可视化"></a>可视化</h3><p>用反卷积的方法对自己的网络的各个卷积层进行可视化，能更好的理解你的网络每层学习到那些特征，思考到网络可能进入了哪些误区。</p>
+<h3 id="可视化">可视化</h3>
+<p>用反卷积的方法对自己的网络的各个卷积层进行可视化，能更好的理解你的网络每层学习到那些特征，思考到网络可能进入了哪些误区。</p>
 <ul>
 <li>deep-visualization-toolbox <a href="https://github.com/yosinski/deep-visualization-toolbox" target="_blank" rel="external">code</a> <a href="http://arxiv.org/abs/1506.06579" target="_blank" rel="external">paper</a></li>
 <li><a href="https://github.com/auduno/deepdraw" target="_blank" rel="external">DeepDraw</a></li>
 <li><a href="http://ethereon.github.io/netscope/#/editor" target="_blank" rel="external">netscope</a></li>
 </ul>
-<h3 id="扩展新layer"><a href="#扩展新layer" class="headerlink" title="扩展新layer"></a>扩展新layer</h3><p>加入一个新的层，满足自己的实际需求，最常见的就是修改 数据输入层DataLayer,增加一个新的、特殊的数据类型，也对应你特殊的数据处理方式，例如对图像进行每隔几度进行旋转，resize、crop、使用光流图像等。也可以换种思路看看别人是如何增加一个新的Layer的，从中获得启发。</p>
+<h3 id="扩展新layer">扩展新layer</h3>
+<p>加入一个新的层，满足自己的实际需求，最常见的就是修改 数据输入层DataLayer,增加一个新的、特殊的数据类型，也对应你特殊的数据处理方式，例如对图像进行每隔几度进行旋转，resize、crop、使用光流图像等。也可以换种思路看看别人是如何增加一个新的Layer的，从中获得启发。</p>
 <ul>
 <li><a href="http://blog.csdn.net/sunshine_in_moon/article/details/51453951" target="_blank" rel="external">Sunshine_in_Moon的专栏-Caffe扩展新层</a></li>
 </ul>
-<h2 id="高级篇"><a href="#高级篇" class="headerlink" title="高级篇"></a>高级篇</h2><h3 id="调参"><a href="#调参" class="headerlink" title="调参"></a>调参</h3><p>深度学习，卷积神经网络莫过于一个适应于数据集规模，能够反映问题本质的网络，剩下的就是调参的事情了，无外乎实践，实践，再实践。当然机器很重要，好的机器，好的显卡，意味着快速迭代！机器不够用也没关系，那就要把理论功夫做足，参考成熟的网络设计，再前人的工作基础之上fine-tuning,往往比你自己训练要好的多。使用image-net数据集训练得到的caffemodel 就是一个很好的权值初始化参数。</p>
+<h2 id="高级篇">高级篇</h2>
+<h3 id="调参">调参</h3>
+<p>深度学习，卷积神经网络莫过于一个适应于数据集规模，能够反映问题本质的网络，剩下的就是调参的事情了，无外乎实践，实践，再实践。当然机器很重要，好的机器，好的显卡，意味着快速迭代！机器不够用也没关系，那就要把理论功夫做足，参考成熟的网络设计，再前人的工作基础之上fine-tuning,往往比你自己训练要好的多。使用image-net数据集训练得到的caffemodel 就是一个很好的权值初始化参数。</p>
 <ul>
 <li><a href="https://www.zhihu.com/question/41631631/answer/94816420" target="_blank" rel="external">你有哪些deep learning（rnn、cnn）调参的经验？</a></li>
 </ul>
@@ -225,23 +248,27 @@
 <ul>
 <li><a href="https://github.com/jay-mahadeokar/pynetbuilder" target="_blank" rel="external">pynetbuilder</a></li>
 </ul>
-<h3 id="转化"><a href="#转化" class="headerlink" title="转化"></a>转化</h3><ul>
+<h3 id="转化">转化</h3>
+<ul>
 <li><a href="https://github.com/ethereon/caffe-tensorflow" target="_blank" rel="external">caffe-tensorflow</a></li>
 <li><a href="https://github.com/kitofans/caffe-theano-conversion" target="_blank" rel="external">caffe-theano-conversion</a></li>
 <li><a href="https://github.com/MarcBS/keras" target="_blank" rel="external">CaffeToKeras</a></li>
 </ul>
-<h3 id="分布式计算"><a href="#分布式计算" class="headerlink" title="分布式计算"></a>分布式计算</h3><ul>
+<h3 id="分布式计算">分布式计算</h3>
+<ul>
 <li><a href="https://github.com/amplab/SparkNet" target="_blank" rel="external">SparkNet</a></li>
 <li><a href="https://github.com/yahoo/CaffeOnSpark" target="_blank" rel="external">CaffeOnSpark</a></li>
 <li><a href="https://github.com/petuum/bosen" target="_blank" rel="external">petuum/bosen </a></li>
 </ul>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
+<h2 id="参考">参考</h2>
+<ul>
 <li><a href="http://daggerfs.com" target="_blank" rel="external">Yangqing Jia (贾扬清)</a></li>
 <li><a href="http://image-net.org/" target="_blank" rel="external">Image Net</a></li>
 <li><a href="https://github.com/MichaelXin/Awesome-Caffe" target="_blank" rel="external">MichaelXin - Awesome-Caffe</a></li>
 </ul>
-<p>作者:<a href="https://github.com/mindcont" target="_blank" rel="external">mindcont</a>  2016-08-22 第一次编辑<br><strong>转载注明出处 <a href="http://blog.mindcont.com/2016/08/22/caffe-guide-book/">http://blog.mindcont.com/2016/08/22/caffe-guide-book/</a></strong></p>
-</div><div class="tags"><a href="/tags/caffe/">caffe</a></div><div class="post-nav"><a href="/2017/02/15/ideas-worth-spreading/" class="pre">值得传播的思想</a><a href="/2017/01/05/machine-learning-for-software-engineers/" class="next">自上而下的学习路线-软件工程师的机器学习</a></div><div data-thread-key="2017/02/15/caffe-guide-book/" data-title="Caffe 入门指南" data-url="http://blog.mindcont.com/2017/02/15/caffe-guide-book/" class="ds-share flat"><div class="ds-share-inline"><ul class="ds-share-icons-16"><li data-toggle="ds-share-icons-more"><a href="javascript:void(0);" class="ds-more">分享到：</a></li><li><a href="javascript:void(0);" data-service="weibo" class="ds-weibo">微博</a></li><li><a href="javascript:void(0);" data-service="qzone" class="ds-qzone">QQ空间</a></li><li><a href="javascript:void(0);" data-service="qqt" class="ds-qqt">腾讯微博</a></li><li><a href="javascript:void(0);" data-service="wechat" class="ds-wechat">微信</a></li></ul><div class="ds-share-icons-more"></div></div></div><div data-thread-key="2017/02/15/caffe-guide-book/" data-title="Caffe 入门指南" data-url="http://blog.mindcont.com/2017/02/15/caffe-guide-book/" data-author-key="1" class="ds-thread"></div></div></div></div><div class="pure-u-1-4"><div id="sidebar"><div class="widget"><form action="//www.baidu.com/baidu" method="get" accept-charset="utf-8" target="_blank" class="search-form"><input type="search" name="word" maxlength="20" placeholder="Search"/><input type="hidden" name="si" value="http://blog.mindcont.com"/><input name="tn" type="hidden" value="bds"/><input name="cl" type="hidden" value="3"/><input name="ct" type="hidden" value="2097152"/><input name="s" type="hidden" value="on"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Kinect/">Kinect</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/深度学习/">深度学习</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/随笔日记/">随笔日记</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/caffe/" style="font-size: 15px;">caffe</a> <a href="/tags/树莓派/" style="font-size: 15px;">树莓派</a> <a href="/tags/OpenCV/" style="font-size: 15px;">OpenCV</a> <a href="/tags/Kinect/" style="font-size: 15px;">Kinect</a> <a href="/tags/matlab/" style="font-size: 15px;">matlab</a> <a href="/tags/ros/" style="font-size: 15px;">ros</a> <a href="/tags/TED/" style="font-size: 15px;">TED</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最新文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/02/15/ideas-worth-spreading/">值得传播的思想</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/15/caffe-guide-book/">Caffe 入门指南</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/01/05/machine-learning-for-software-engineers/">自上而下的学习路线-软件工程师的机器学习</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/12/26/nginx-proxy-lan/">局域网内nginx反向代理上网</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/12/14/ros-naoqi-ubuntu/">naoqi ros 开发环境搭建</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/12/14/naoqi-robot-sdk-ubuntu/">naoqi robot 开发环境搭建</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/11/15/use-shadowsocks-on-openwrt/">使用OpenWrt打造透明路由</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/11/13/ppa/">发布自己的软件包存档</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/10/27/hg255d-openwrt/">二手华为路由hg255d刷OpenWrt</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/10/27/ubuntu-necessary-install-software/">ubuntu 装机必备</a></li></ul></div><div class="widget"><div class="comments-title"><i class="fa fa-comment-o"> 最近评论</i></div><div data-num-items="5" data-show-avatars="0" data-show-time="1" data-show-admin="0" data-excerpt-length="32" data-show-title="1" class="ds-recent-comments"></div></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="https://www.daoon.com/" title="道卬" target="_blank">道卬</a><ul></ul><a href="http://ai.mindcont.com/" title="人工智能" target="_blank">人工智能</a><ul></ul><a href="https://www.ted.com/" title="TED | 值得传播的思想" target="_blank">TED | 值得传播的思想</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">© <a href="/." rel="nofollow">微纪元.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a id="rocket" href="#top" class="show"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.pack.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css?v=0.0.0"><script>var duoshuoQuery = {short_name:'mindcont'};
+<p>作者:<a href="https://github.com/mindcont" target="_blank" rel="external">mindcont</a>  2016-08-22 第一次编辑 2017-02-16 第二次编辑<br>
+<strong>转载注明出处 <a href="http://blog.mindcont.com/2016/08/22/caffe-guide-book/">http://blog.mindcont.com/2016/08/22/caffe-guide-book/</a></strong></p>
+</div><div class="tags"><a href="/tags/caffe/">caffe</a></div><div class="post-nav"><a href="/2017/02/15/ideas-worth-spreading/" class="pre">值得传播的思想</a><a href="/2017/01/05/machine-learning-for-software-engineers/" class="next">自上而下的学习路线-软件工程师的机器学习</a></div><div data-thread-key="2017/02/15/caffe-guide-book/" data-title="Caffe 入门指南" data-url="http://blog.mindcont.com/2017/02/15/caffe-guide-book/" class="ds-share flat"><div class="ds-share-inline"><ul class="ds-share-icons-16"><li data-toggle="ds-share-icons-more"><a href="javascript:void(0);" class="ds-more">分享到：</a></li><li><a href="javascript:void(0);" data-service="weibo" class="ds-weibo">微博</a></li><li><a href="javascript:void(0);" data-service="qzone" class="ds-qzone">QQ空间</a></li><li><a href="javascript:void(0);" data-service="qqt" class="ds-qqt">腾讯微博</a></li><li><a href="javascript:void(0);" data-service="wechat" class="ds-wechat">微信</a></li></ul><div class="ds-share-icons-more"></div></div></div><div data-thread-key="2017/02/15/caffe-guide-book/" data-title="Caffe 入门指南" data-url="http://blog.mindcont.com/2017/02/15/caffe-guide-book/" data-author-key="1" class="ds-thread"></div></div></div></div><div class="pure-u-1-4"><div id="sidebar"><div class="widget"><form action="//www.baidu.com/baidu" method="get" accept-charset="utf-8" target="_blank" class="search-form"><input type="search" name="word" maxlength="20" placeholder="Search"/><input type="hidden" name="si" value="http://blog.mindcont.com"/><input name="tn" type="hidden" value="bds"/><input name="cl" type="hidden" value="3"/><input name="ct" type="hidden" value="2097152"/><input name="s" type="hidden" value="on"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Kinect/">Kinect</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/深度学习/">深度学习</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/随笔日记/">随笔日记</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/caffe/" style="font-size: 15px;">caffe</a> <a href="/tags/树莓派/" style="font-size: 15px;">树莓派</a> <a href="/tags/TED/" style="font-size: 15px;">TED</a> <a href="/tags/OpenCV/" style="font-size: 15px;">OpenCV</a> <a href="/tags/Kinect/" style="font-size: 15px;">Kinect</a> <a href="/tags/matlab/" style="font-size: 15px;">matlab</a> <a href="/tags/ros/" style="font-size: 15px;">ros</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最新文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/02/16/my-review-2016/">2016 , 我的年终总结</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/15/ideas-worth-spreading/">值得传播的思想</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/15/caffe-guide-book/">Caffe 入门指南</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/01/05/machine-learning-for-software-engineers/">自上而下的学习路线-软件工程师的机器学习</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/12/26/nginx-proxy-lan/">局域网内nginx反向代理上网</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/12/14/ros-naoqi-ubuntu/">naoqi ros 开发环境搭建</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/12/14/naoqi-robot-sdk-ubuntu/">naoqi robot 开发环境搭建</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/11/15/use-shadowsocks-on-openwrt/">使用OpenWrt打造透明路由</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/11/13/ppa/">发布自己的软件包存档</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/10/27/hg255d-openwrt/">二手华为路由hg255d刷OpenWrt</a></li></ul></div><div class="widget"><div class="comments-title"><i class="fa fa-comment-o"> 最近评论</i></div><div data-num-items="5" data-show-avatars="0" data-show-time="1" data-show-admin="0" data-excerpt-length="32" data-show-title="1" class="ds-recent-comments"></div></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="https://www.daoon.com/" title="道卬" target="_blank">道卬</a><ul></ul><a href="http://ai.mindcont.com/" title="人工智能" target="_blank">人工智能</a><ul></ul><a href="https://www.ted.com/" title="TED | 值得传播的思想" target="_blank">TED | 值得传播的思想</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">© <a href="/." rel="nofollow">微纪元.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a id="rocket" href="#top" class="show"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.pack.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css?v=0.0.0"><script>var duoshuoQuery = {short_name:'mindcont'};
 (function() {
     var ds = document.createElement('script');
     ds.type = 'text/javascript';ds.async = true;
