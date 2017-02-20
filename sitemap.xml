@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.mindcont.com/2017/02/20/visual-cortex/</loc>
+    
+    <lastmod>2017-02-20T10:28:55.405Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.mindcont.com/2017/02/16/my-review-2016/</loc>
     
-    <lastmod>2017-02-17T11:12:44.715Z</lastmod>
+    <lastmod>2017-02-20T06:11:42.461Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/about/index.html</loc>
+    
+    <lastmod>2017-02-19T04:20:02.922Z</lastmod>
     
   </url>
   
@@ -12,13 +26,6 @@
     <loc>http://blog.mindcont.com/2017/02/15/caffe-guide-book/</loc>
     
     <lastmod>2017-02-17T07:02:16.319Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/about/index.html</loc>
-    
-    <lastmod>2017-02-16T08:17:16.736Z</lastmod>
     
   </url>
   
