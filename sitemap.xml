@@ -2,6 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.mindcont.com/2017/02/25/debug-android-win/</loc>
+    
+    <lastmod>2017-02-25T08:43:39.718Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/12/26/nginx-proxy-lan/</loc>
+    
+    <lastmod>2017-02-24T02:44:06.477Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/09/18/cnn/</loc>
+    
+    <lastmod>2017-02-24T02:32:32.843Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/08/06/run-yolo-demo/</loc>
+    
+    <lastmod>2017-02-24T02:15:47.181Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/10/27/ubuntu-necessary-install-software/</loc>
+    
+    <lastmod>2017-02-22T12:40:14.384Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.mindcont.com/2017/02/22/some-advice-for-research-beginners/</loc>
     
     <lastmod>2017-02-22T02:01:43.298Z</lastmod>
@@ -54,20 +89,6 @@
     <loc>http://blog.mindcont.com/2016/12/14/ros-naoqi-ubuntu/</loc>
     
     <lastmod>2017-02-14T02:04:25.054Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/12/26/nginx-proxy-lan/</loc>
-    
-    <lastmod>2017-02-14T02:03:18.399Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/10/27/ubuntu-necessary-install-software/</loc>
-    
-    <lastmod>2017-02-14T01:56:38.724Z</lastmod>
     
   </url>
   
@@ -135,13 +156,6 @@
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/09/18/cnn/</loc>
-    
-    <lastmod>2016-09-18T03:21:10.540Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://blog.mindcont.com/2016/08/18/git-commands/</loc>
     
     <lastmod>2016-09-13T09:30:08.726Z</lastmod>
@@ -152,13 +166,6 @@
     <loc>http://blog.mindcont.com/2016/05/04/how-to-use-ngrok-penetrate-internal-network/</loc>
     
     <lastmod>2016-08-22T09:46:21.012Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/08/06/run-yolo-demo/</loc>
-    
-    <lastmod>2016-08-22T08:48:45.406Z</lastmod>
     
   </url>
   
@@ -187,13 +194,6 @@
     <loc>http://blog.mindcont.com/2016/07/22/research-progress-in-object-detection/</loc>
     
     <lastmod>2016-08-22T08:08:06.145Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/04/24/how-to-use-tensorflow/</loc>
-    
-    <lastmod>2016-08-22T08:05:45.102Z</lastmod>
     
   </url>
   
