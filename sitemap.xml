@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.mindcont.com/about/index.html</loc>
+    
+    <lastmod>2017-04-10T12:35:59.968Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2017/02/15/caffe-guide-book/</loc>
+    
+    <lastmod>2017-03-20T04:31:30.906Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.mindcont.com/2017/02/25/debug-android-win/</loc>
     
-    <lastmod>2017-02-25T08:43:39.718Z</lastmod>
+    <lastmod>2017-02-25T10:33:04.983Z</lastmod>
     
   </url>
   
@@ -54,20 +68,6 @@
     <loc>http://blog.mindcont.com/2017/02/16/my-review-2016/</loc>
     
     <lastmod>2017-02-20T06:11:42.461Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/about/index.html</loc>
-    
-    <lastmod>2017-02-19T04:20:02.922Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2017/02/15/caffe-guide-book/</loc>
-    
-    <lastmod>2017-02-17T07:02:16.319Z</lastmod>
     
   </url>
   

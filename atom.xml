@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>微纪元</title>
-  <subtitle>根据同名科幻小说改编</subtitle>
+  <title>项脊轩</title>
+  <subtitle>项脊轩，旧南阁子也</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.mindcont.com/"/>
-  <updated>2017-02-25T08:43:39.718Z</updated>
+  <updated>2017-02-25T10:33:04.983Z</updated>
   <id>http://blog.mindcont.com/</id>
   
   <author>
-    <name>mindcont</name>
+    <name>猿族</name>
     
   </author>
   
@@ -20,7 +20,7 @@
     <link href="http://blog.mindcont.com/2017/02/25/debug-android-win/"/>
     <id>http://blog.mindcont.com/2017/02/25/debug-android-win/</id>
     <published>2017-02-25T01:26:57.000Z</published>
-    <updated>2017-02-25T08:43:39.718Z</updated>
+    <updated>2017-02-25T10:33:04.983Z</updated>
     
     <content type="html">&lt;p&gt;在win10下开发安卓小程序使用物理机调试的时候，USB数据线接触不好，总是很容易断开链接，害的处女座的强迫症都要犯了。&lt;/p&gt;
 &lt;h2 id=&quot;使用wifi来调试你的应用&quot;&gt;使用wifi来调试你的应用&lt;/h2&gt;
@@ -60,12 +60,9 @@
 &lt;p&gt;查找 Android 设备的 IP 地址。例如，在 Nexus 设备上，您可以通过访问 Settings &amp;gt; About tablet（或 About phone) &amp;gt; Status &amp;gt; IP address 查找 IP 地址。例如我的手机地址为’192.168.1.100’,打开命令行，输入&lt;/p&gt;
 &lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;adb&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;connect&lt;/span&gt; 192&lt;span class=&quot;selector-class&quot;&gt;.168&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.1&lt;/span&gt;&lt;span class=&quot;selector-class&quot;&gt;.100&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#查看已连接设备&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-tag&quot;&gt;adb&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;devices&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;现在，您可以开始操作了！&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;如果 adb 连接丢失：&lt;/strong&gt;&lt;br&gt;
-1.请确保您的主机仍与您的 Android 设备连接到同一个 WLAN 网络。&lt;br&gt;
-2.通过再次执行 adb connect 步骤重新连接。&lt;br&gt;
-3.如果无法连接，则重置 adb 主机：&lt;/p&gt;
-  &lt;figure class=&quot;highlight sql&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;adb &lt;span class=&quot;keyword&quot;&gt;kill&lt;/span&gt;-&lt;span class=&quot;keyword&quot;&gt;server&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;然后，从头开始操作。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;注意：&lt;/strong&gt;&lt;br&gt;
+手机重启后需要使用数据线再连接一遍，重复以上步骤才可使用无线调试模式。&lt;br&gt;
+这属于安卓系统安全策略，不然任何时候局域网内其他PC都可以远程控制你的手机了&lt;/p&gt;
 &lt;h2 id=&quot;使用dryrun&quot;&gt;使用dryrun&lt;/h2&gt;
 &lt;p&gt;github是个大宝藏，对于 Android 开发者来说，除了阅读还有运行 demo 看下项目效果等。&lt;/p&gt;
 &lt;p&gt;来看下一般人的阅读开源项目的姿势是怎么样的：&lt;/p&gt;
@@ -375,7 +372,7 @@ google +对问题描述英文的关键词&lt;br&gt;
     <link href="http://blog.mindcont.com/2017/02/15/caffe-guide-book/"/>
     <id>http://blog.mindcont.com/2017/02/15/caffe-guide-book/</id>
     <published>2017-02-15T08:22:46.000Z</published>
-    <updated>2017-02-17T07:02:16.319Z</updated>
+    <updated>2017-03-20T04:31:30.906Z</updated>
     
     <content type="html">&lt;p&gt;&lt;img src=&quot;/images/caffe.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
@@ -611,6 +608,12 @@ google +对问题描述英文的关键词&lt;br&gt;
 &lt;li&gt;deep-visualization-toolbox &lt;a href=&quot;https://github.com/yosinski/deep-visualization-toolbox&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;code&lt;/a&gt; &lt;a href=&quot;http://arxiv.org/abs/1506.06579&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;paper&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://github.com/auduno/deepdraw&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;DeepDraw&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://ethereon.github.io/netscope/#/editor&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;netscope&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;全卷积-fcn&quot;&gt;全卷积(FCN)&lt;/h3&gt;
+&lt;p&gt;FCN将传统CNN中的全连接层转化成一个个的卷积层。在传统的CNN结构中，前5层是卷积层，第6层和第7层分别是一个长度为4096的一维向量，第8层是长度为1000的一维向量，分别对应1000个类别的概率。FCN将这3层表示为卷积层，卷积核的大小(通道数，宽，高)分别为（4096,1,1）、（4096,1,1）、（1000,1,1）。所有的层都是卷积层，故称为全卷积网络。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/taigw/article/details/51401448&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;全卷积网络（FCN）与图像分割&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/22976342&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;FCN学习:Semantic Segmentation&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&quot;扩展新layer&quot;&gt;扩展新layer&lt;/h3&gt;
 &lt;p&gt;加入一个新的层，满足自己的实际需求，最常见的就是修改 数据输入层DataLayer,增加一个新的、特殊的数据类型，也对应你特殊的数据处理方式，例如对图像进行每隔几度进行旋转，resize、crop、使用光流图像等。也可以换种思路看看别人是如何增加一个新的Layer的，从中获得启发。&lt;/p&gt;
