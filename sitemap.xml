@@ -2,16 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://blog.mindcont.com/about/index.html</loc>
+    <loc>http://blog.mindcont.com/2017/04/25/how-to-do-mnist-demo/</loc>
     
-    <lastmod>2017-04-10T12:35:59.968Z</lastmod>
+    <lastmod>2017-04-26T04:42:20.412Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://blog.mindcont.com/2017/02/15/caffe-guide-book/</loc>
     
-    <lastmod>2017-03-20T04:31:30.906Z</lastmod>
+    <lastmod>2017-04-26T04:38:29.432Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/10/27/ubuntu-necessary-install-software/</loc>
+    
+    <lastmod>2017-04-26T03:27:04.395Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/09/13/dataset/</loc>
+    
+    <lastmod>2017-04-22T07:30:35.177Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/about/index.html</loc>
+    
+    <lastmod>2017-04-10T12:35:59.968Z</lastmod>
     
   </url>
   
@@ -40,13 +61,6 @@
     <loc>http://blog.mindcont.com/2016/08/06/run-yolo-demo/</loc>
     
     <lastmod>2017-02-24T02:15:47.181Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/10/27/ubuntu-necessary-install-software/</loc>
-    
-    <lastmod>2017-02-22T12:40:14.384Z</lastmod>
     
   </url>
   
@@ -138,13 +152,6 @@
     <loc>http://blog.mindcont.com/2016/07/26/nvidia-digits-with-caffe/</loc>
     
     <lastmod>2016-11-12T11:24:50.145Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/09/13/dataset/</loc>
-    
-    <lastmod>2016-10-28T07:49:25.142Z</lastmod>
     
   </url>
   
