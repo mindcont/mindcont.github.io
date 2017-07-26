@@ -1,0 +1,966 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>计算机视觉开源项目 | 项脊轩</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/3.0.3/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">计算机视觉开源项目</h1><a id="logo" href="/.">项脊轩</a><p class="description">项脊轩，旧南阁子也</p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/history/"><i class="fa fa-history"> 历史</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div id="layout" class="pure-g"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">计算机视觉开源项目</h1><div class="post-meta">May 13, 2016<script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> Hits</span></span></div><a data-disqus-identifier="2016/05/13/open-source-computer-vision/" href="/2016/05/13/open-source-computer-vision/#disqus_thread" class="disqus-comment-count"></a><div class="clear"><div id="toc" class="toc-article"><div class="toc-title">文章目录</div><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">1.</span> <span class="toc-text">特征提取Feature Extraction</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">2.</span> <span class="toc-text">图像分割Image Segmentation</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">3.</span> <span class="toc-text">目标检测Object Detection</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">4.</span> <span class="toc-text">显著性检测Saliency Detection</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">5.</span> <span class="toc-text">图像分类、聚类Image Classification, Clustering</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">6.</span> <span class="toc-text">抠图Image Matting</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">7.</span> <span class="toc-text">目标跟踪Object Tracking</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">8.</span> <span class="toc-text">Kinect</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">9.</span> <span class="toc-text">3D相关</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">10.</span> <span class="toc-text">机器学习算法</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">11.</span> <span class="toc-text">目标、行为识别Object, Action Recognition</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">12.</span> <span class="toc-text">图像处理</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">13.</span> <span class="toc-text">一些实用工具</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">14.</span> <span class="toc-text">人手及指尖检测与识别</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">15.</span> <span class="toc-text">场景解释</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">16.</span> <span class="toc-text">光流Optical flow</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">17.</span> <span class="toc-text">图像检索Image Retrieval</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">18.</span> <span class="toc-text">马尔科夫随机场Markov Random Fields</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">19.</span> <span class="toc-text">运动检测Motion detection</span></a></li></ol></div></div><div class="post-content"><p>笔者日前在搜索计算机视觉方面的代码,偶然发现这个,不敢独享,随整理发表于此,希望可以帮助到有关学习计算机视觉的朋友们!</p>
+<p><img src="/images/NASA_Mars_Rover.jpg" alt=""></p>
+<h1>特征提取Feature Extraction</h1>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>SIFT</strong></p>
+<ul>
+<li>[Demo program]<a href="http://www.cs.ubc.ca/~lowe/keypoints/siftDemoV4.zip" target="_blank" rel="external">http://www.cs.ubc.ca/~lowe/keypoints/siftDemoV4.zip</a></li>
+<li>[SIFT Library ] <a href="http://blogs.oregonstate.edu/hess/code/sift/" target="_blank" rel="external">http://blogs.oregonstate.edu/hess/code/sift/</a></li>
+<li>[VLFeat] <a href="http://www.vlfeat.org/" target="_blank" rel="external">http://www.vlfeat.org/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>PCA-SIFT</strong></p>
+<ul>
+<li>[Project] <a href="http://www.cs.cmu.edu/~yke/pcasift/" target="_blank" rel="external">http://www.cs.cmu.edu/~yke/pcasift/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Affine-SIFT</strong></p>
+<ul>
+<li>[Project] <a href="http://www.ipol.im/pub/algo/my_affine_sift/" target="_blank" rel="external">http://www.ipol.im/pub/algo/my_affine_sift/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>SURF</strong></p>
+<ul>
+<li>[OpenSURF]<a href="http://www.chrisevansdev.com/computer-vision-opensurf.html" target="_blank" rel="external">http://www.chrisevansdev.com/computer-vision-opensurf.html</a></li>
+<li>[Matlab Wrapper]<a href="http://www.maths.lth.se/matematiklth/personal/petter/surfmex.php" target="_blank" rel="external">http://www.maths.lth.se/matematiklth/personal/petter/surfmex.php</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Affine Covariant Features</strong></p>
+<ul>
+<li>[Oxford project]<a href="http://www.robots.ox.ac.uk/~vgg/research/affine/" target="_blank" rel="external">http://www.robots.ox.ac.uk/~vgg/research/affine/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>MSER</strong></p>
+<ul>
+<li>[Oxford project] <a href="http://www.robots.ox.ac.uk/~vgg/research/affine/" target="_blank" rel="external">http://www.robots.ox.ac.uk/~vgg/research/affine/</a></li>
+<li>[VLFeat]<a href="http://www.vlfeat.org/" target="_blank" rel="external">http://www.vlfeat.org/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Geometric Blur</strong></p>
+<ul>
+<li>[Code]<a href="http://www.robots.ox.ac.uk/~vgg/software/MKL/" target="_blank" rel="external">http://www.robots.ox.ac.uk/~vgg/software/MKL/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Local Self-Similarity Descriptor</strong></p>
+<ul>
+<li>[Oxford implementation]<a href="http://www.robots.ox.ac.uk/~vgg/software/SelfSimilarity/" target="_blank" rel="external">http://www.robots.ox.ac.uk/~vgg/software/SelfSimilarity/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Global and Efficient Self-Similarity</strong></p>
+<ul>
+<li>[Code] <a href="http://www.vision.ee.ethz.ch/~calvin/gss/selfsim_release1.0.tgz" target="_blank" rel="external">http://www.vision.ee.ethz.ch/~calvin/gss/selfsim_release1.0.tgz</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Histogram of Oriented Graidents</strong></p>
+<ul>
+<li>[INRIA Object Localization Toolkit] <a href="http://www.navneetdalal.com/software" target="_blank" rel="external">http://www.navneetdalal.com/software</a></li>
+<li>[OLT toolkit for Windows] <a href="http://www.computing.edu.au/~12482661/hog.html" target="_blank" rel="external">http://www.computing.edu.au/~12482661/hog.html</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **GIST **</p>
+<ul>
+<li>[Project]<a href="http://people.csail.mit.edu/torralba/code/spatialenvelope/" target="_blank" rel="external">http://people.csail.mit.edu/torralba/code/spatialenvelope/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **Shape Context **</p>
+<ul>
+<li>[Project] <a href="http://www.eecs.berkeley.edu/Research/Projects/CS/vision/shape/sc_digits.html" target="_blank" rel="external">http://www.eecs.berkeley.edu/Research/Projects/CS/vision/shape/sc_digits.html</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **Color Descriptor **</p>
+<ul>
+<li>[Project] <a href="http://koen.me/research/colordescriptors/" target="_blank" rel="external">http://koen.me/research/colordescriptors/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **Pyramids of Histograms of Oriented Gradients **</p>
+<ul>
+<li>[Code] <a href="http://www.robots.ox.ac.uk/~vgg/research/caltech/phog/phog.zip" target="_blank" rel="external">http://www.robots.ox.ac.uk/~vgg/research/caltech/phog/phog.zip</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Space-Time Interest Points (STIP)</strong></p>
+<ul>
+<li>[Project] <a href="http://www.nada.kth.se/cvap/abstracts/cvap284.html" target="_blank" rel="external">http://www.nada.kth.se/cvap/abstracts/cvap284.html</a></li>
+<li>[Code]<a href="http://www.irisa.fr/vista/Equipe/People/Laptev/download/stip-1.1-winlinux.zip" target="_blank" rel="external">http://www.irisa.fr/vista/Equipe/People/Laptev/download/stip-1.1-winlinux.zip</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **Boundary Preserving Dense Local Regions **</p>
+<ul>
+<li>[Project] <a href="http://vision.cs.utexas.edu/projects/bplr/bplr.html" target="_blank" rel="external">http://vision.cs.utexas.edu/projects/bplr/bplr.html</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Weighted Histogram</strong></p>
+<ul>
+<li>[Code] <a href="http://www.wisdom.weizmann.ac.il/~bagon/matlab_code/whistc.tar.gz" target="_blank" rel="external">http://www.wisdom.weizmann.ac.il/~bagon/matlab_code/whistc.tar.gz</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Histogram-based Interest Points Detectors</strong></p>
+<ul>
+<li>[Paper] <a href="http://www.cs.nthu.edu.tw/~htchen/hipd_cvpr09.pdf" target="_blank" rel="external">http://www.cs.nthu.edu.tw/~htchen/hipd_cvpr09.pdf</a></li>
+<li>[Code] <a href="http://740-2.cs.nthu.edu.tw/~htchen/hipd/hist_corner.zip" target="_blank" rel="external">http://740-2.cs.nthu.edu.tw/~htchen/hipd/hist_corner.zip</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **An OpenCV - C++ implementation of Local Self Similarity Descriptors **</p>
+<ul>
+<li>[Project] <a href="http://intuitionlogic.com/post/2011/04/11/A-OpenCV-C++-implementation-of-Local-Self-Similarity-Descriptors.aspx" target="_blank" rel="external">http://intuitionlogic.com/post/2011/04/11/A-OpenCV-C+±implementation-of-Local-Self-Similarity-Descriptors.aspx</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Fast Sparse Representation with Prototypes</strong></p>
+<ul>
+<li>[Project] <a href="http://faculty.ucmerced.edu/mhyang/cvpr10_fsr.html" target="_blank" rel="external">http://faculty.ucmerced.edu/mhyang/cvpr10_fsr.html</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **Corner Detection **</p>
+<ul>
+<li>[Project] <a href="http://kiwi.cs.dal.ca/~dparks/CornerDetection/index.htm" target="_blank" rel="external">http://kiwi.cs.dal.ca/~dparks/CornerDetection/index.htm</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>AGAST Corner Detector: faster than FAST and even FAST-ER</strong></p>
+<ul>
+<li>[Project] <a href="http://www6.in.tum.de/Main/ResearchAgast" target="_blank" rel="external">http://www6.in.tum.de/Main/ResearchAgast</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Real-time Facial Feature Detection using Conditional Regression Forests</strong></p>
+<ul>
+<li>[Project] <a href="http://files.is.tue.mpg.de/jgall/projects/facialfeatures/facialfeatures.html" target="_blank" rel="external">http://files.is.tue.mpg.de/jgall/projects/facialfeatures/facialfeatures.html</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Global and Efficient Self-Similarity for Object Classification and Detection</strong></p>
+<ul>
+<li>[code] <a href="http://groups.inf.ed.ac.uk/calvin/gss/selfsim_release1.0.tgz" target="_blank" rel="external">http://groups.inf.ed.ac.uk/calvin/gss/selfsim_release1.0.tgz</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>WαSH: Weighted α-Shapes for Local Feature Detection</strong></p>
+<ul>
+<li>[Project] <a href="http://image.ntua.gr/iva/research/wash/" target="_blank" rel="external">http://image.ntua.gr/iva/research/wash/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>HOG</strong></p>
+<ul>
+<li>[Project] <a href="http://soc.fudan.edu.cn/vip/projects/gradproj/wiki/HOG%E4%BB%A3%E7%A0%81" target="_blank" rel="external">http://soc.fudan.edu.cn/vip/projects/gradproj/wiki/HOG代码</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Online Selection of Discriminative Tracking Features</strong></p>
+<ul>
+<li>[Project] <a href="http://www.cs.ucla.edu/~roozbehm/cs7495/report.html" target="_blank" rel="external">http://www.cs.ucla.edu/~roozbehm/cs7495/report.html</a></li>
+</ul>
+<h1>图像分割Image Segmentation</h1>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **Normalized Cut **</p>
+<ul>
+<li>[Matlab code]<a href="http://www.cis.upenn.edu/~jshi/software/" target="_blank" rel="external">http://www.cis.upenn.edu/~jshi/software/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Gerg Mori’ Superpixel code</strong></p>
+<ul>
+<li>[Matlab code]<a href="http://www.cs.sfu.ca/~mori/research/superpixels/" target="_blank" rel="external">http://www.cs.sfu.ca/~mori/research/superpixels/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Efficient Graph-based Image Segmentation</strong></p>
+<ul>
+<li>[C++ code] <a href="http://people.cs.uchicago.edu/~pff/segment/" target="_blank" rel="external">http://people.cs.uchicago.edu/~pff/segment/</a></li>
+<li>[Matlab wrapper]<a href="http://www.mathworks.com/matlabcentral/fileexchange/25866-efficient-graph-based-image-segmentation" target="_blank" rel="external">http://www.mathworks.com/matlabcentral/fileexchange/25866-efficient-graph-based-image-segmentation</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Mean-Shift Image Segmentation</strong></p>
+<ul>
+<li>[EDISON C++ code] <a href="http://coewww.rutgers.edu/riul/research/code/EDISON/index.html" target="_blank" rel="external">http://coewww.rutgers.edu/riul/research/code/EDISON/index.html</a></li>
+<li>[Matlab wrapper]<a href="http://www.wisdom.weizmann.ac.il/~bagon/matlab_code/edison_matlab_interface.tar.gz" target="_blank" rel="external">http://www.wisdom.weizmann.ac.il/~bagon/matlab_code/edison_matlab_interface.tar.gz</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>OWT-UCM Hierarchical Segmentation</strong></p>
+<ul>
+<li>[Resources]<a href="http://www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/resources.html" target="_blank" rel="external">http://www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/resources.html</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Turbepixels</strong></p>
+<ul>
+<li>[Matlab code 32bit] <a href="http://www.cs.toronto.edu/~babalex/turbopixels_code.tar.gz" target="_blank" rel="external">http://www.cs.toronto.edu/~babalex/turbopixels_code.tar.gz</a></li>
+<li>[Matlab code 64bit] <a href="http://www.cs.toronto.edu/~babalex/TurboPixels64.rar" target="_blank" rel="external">http://www.cs.toronto.edu/~babalex/TurboPixels64.rar</a></li>
+<li>[Updated code] <a href="http://www.cs.toronto.edu/~babalex/superpixels_update.tgz" target="_blank" rel="external">http://www.cs.toronto.edu/~babalex/superpixels_update.tgz</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Quick-Shift</strong></p>
+<ul>
+<li>[VLFeat] <a href="http://www.vlfeat.org/overview/quickshift.html" target="_blank" rel="external">http://www.vlfeat.org/overview/quickshift.html</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>SLIC Superpixels</strong></p>
+<ul>
+<li>[Project] <a href="http://ivrgwww.epfl.ch/supplementary_material/RK_SLICSuperpixels/index.html" target="_blank" rel="external">http://ivrgwww.epfl.ch/supplementary_material/RK_SLICSuperpixels/index.html</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Segmentation by Minimum Code Length</strong></p>
+<ul>
+<li>[Project] <a href="http://perception.csl.uiuc.edu/coding/image_segmentation/" target="_blank" rel="external">http://perception.csl.uiuc.edu/coding/image_segmentation/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Biased Normalized Cut</strong></p>
+<ul>
+<li>[Project] <a href="http://www.cs.berkeley.edu/~smaji/projects/biasedNcuts/" target="_blank" rel="external">http://www.cs.berkeley.edu/~smaji/projects/biasedNcuts/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Segmentation Tree</strong></p>
+<ul>
+<li>[Project] <a href="http://vision.ai.uiuc.edu/segmentation" target="_blank" rel="external">http://vision.ai.uiuc.edu/segmentation</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Entropy Rate Superpixel Segmentation</strong></p>
+<ul>
+<li>[Code] <a href="http://www.umiacs.umd.edu/~mingyliu/src/ers_matlab_wrapper_v0.1.zip" target="_blank" rel="external">http://www.umiacs.umd.edu/~mingyliu/src/ers_matlab_wrapper_v0.1.zip</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Fast Approximate Energy Minimization via Graph Cuts</strong></p>
+<ul>
+<li>[Paper] <a href="http://www.csd.uwo.ca/faculty/olga/Papers/pami01_final.pdf" target="_blank" rel="external">http://www.csd.uwo.ca/faculty/olga/Papers/pami01_final.pdf</a></li>
+<li>[Code] <a href="http://vision.csd.uwo.ca/code/gco-v3.0.zip" target="_blank" rel="external">http://vision.csd.uwo.ca/code/gco-v3.0.zip</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Efﬁcient Planar Graph Cuts with Applications in Computer Vision</strong></p>
+<ul>
+<li>[Paper] <a href="http://www.csd.uwo.ca/~schmidtf/pdf/schmidt_et_al_cvpr09.pdf" target="_blank" rel="external">http://www.csd.uwo.ca/~schmidtf/pdf/schmidt_et_al_cvpr09.pdf</a></li>
+<li>[Code] <a href="http://vision.csd.uwo.ca/code/PlanarCut-v1.0.zip" target="_blank" rel="external">http://vision.csd.uwo.ca/code/PlanarCut-v1.0.zip</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Isoperimetric Graph Partitioning for Image Segmentation</strong></p>
+<ul>
+<li>[Paper] <a href="http://www.cns.bu.edu/~lgrady/grady2006isoperimetric.pdf" target="_blank" rel="external">http://www.cns.bu.edu/~lgrady/grady2006isoperimetric.pdf</a></li>
+<li>[Code] <a href="http://www.cns.bu.edu/~lgrady/grady2006isoperimetric_code.zip" target="_blank" rel="external">http://www.cns.bu.edu/~lgrady/grady2006isoperimetric_code.zip</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Random Walks for Image Segmentation</strong></p>
+<ul>
+<li>[Paper] <a href="http://www.cns.bu.edu/~lgrady/grady2006random.pdf" target="_blank" rel="external">http://www.cns.bu.edu/~lgrady/grady2006random.pdf</a></li>
+<li>[Code] <a href="http://www.cns.bu.edu/~lgrady/random_walker_matlab_code.zip" target="_blank" rel="external">http://www.cns.bu.edu/~lgrady/random_walker_matlab_code.zip</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Blossom V: A new implementation of a minimum cost perfect matching algorithm</strong></p>
+<ul>
+<li>[Code] <a href="http://pub.ist.ac.at/~vnk/software/blossom5-v2.03.src.tar.gz" target="_blank" rel="external">http://pub.ist.ac.at/~vnk/software/blossom5-v2.03.src.tar.gz</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>An Experimental Comparison of Min-Cut/Max-Flow Algorithms for Energy Minimization in Computer Vision</strong></p>
+<ul>
+<li>[Paper] <a href="http://www.csd.uwo.ca/~yuri/Papers/pami04.pdf" target="_blank" rel="external">http://www.csd.uwo.ca/~yuri/Papers/pami04.pdf</a></li>
+<li>[Code] <a href="http://pub.ist.ac.at/~vnk/software/maxflow-v3.01.src.tar.gz" target="_blank" rel="external">http://pub.ist.ac.at/~vnk/software/maxflow-v3.01.src.tar.gz</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Geodesic Star Convexity for Interactive Image Segmentation</strong></p>
+<ul>
+<li>[Project] <a href="http://www.robots.ox.ac.uk/~vgg/software/iseg/" target="_blank" rel="external">http://www.robots.ox.ac.uk/~vgg/software/iseg/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Contour Detection and Image Segmentation Resources</strong></p>
+<ul>
+<li>[Project] <a href="http://www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/resources.html" target="_blank" rel="external">http://www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/resources.html</a></li>
+<li>[Code] <a href="http://www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/BSR/BSR_source.tgz" target="_blank" rel="external">http://www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/BSR/BSR_source.tgz</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Biased Normalized Cuts</strong></p>
+<ul>
+<li>[Project] <a href="http://www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/biasedNcuts/" target="_blank" rel="external">http://www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/biasedNcuts/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Max-flow/min-cut</strong></p>
+<ul>
+<li>[Project] <a href="http://vision.csd.uwo.ca/code/" target="_blank" rel="external">http://vision.csd.uwo.ca/code/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Chan-Vese Segmentation using Level Set</strong></p>
+<ul>
+<li>[Project] <a href="http://www.ipol.im/pub/art/2012/g-cv/" target="_blank" rel="external">http://www.ipol.im/pub/art/2012/g-cv/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>A Toolbox of Level Set Methods</strong></p>
+<ul>
+<li>[Project] <a href="http://www.cs.ubc.ca/~mitchell/ToolboxLS/index.html" target="_blank" rel="external">http://www.cs.ubc.ca/~mitchell/ToolboxLS/index.html</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Re-initialization Free Level Set Evolution via Reaction Diffusion</strong></p>
+<ul>
+<li>[Project] <a href="http://www4.comp.polyu.edu.hk/~cslzhang/RD/RD.htm" target="_blank" rel="external">http://www4.comp.polyu.edu.hk/~cslzhang/RD/RD.htm</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Improved C-V active contour model</strong></p>
+<ul>
+<li>[Paper] <a href="http://www4.comp.polyu.edu.hk/~cskhzhang/J_papers/ICV.pdf" target="_blank" rel="external">http://www4.comp.polyu.edu.hk/~cskhzhang/J_papers/ICV.pdf</a></li>
+<li>[Code] <a href="http://www4.comp.polyu.edu.hk/~cskhzhang/J_papers/ICV.rar" target="_blank" rel="external">http://www4.comp.polyu.edu.hk/~cskhzhang/J_papers/ICV.rar</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>A Variational Multiphase Level Set Approach to Simultaneous Segmentation and Bias Correction</strong></p>
+<ul>
+<li>[Paper] <a href="http://www4.comp.polyu.edu.hk/~cskhzhang/J_papers/ICIP10_SVMLS.pdf" target="_blank" rel="external">http://www4.comp.polyu.edu.hk/~cskhzhang/J_papers/ICIP10_SVMLS.pdf</a></li>
+<li>[Code] <a href="http://www4.comp.polyu.edu.hk/~cskhzhang/J_papers/SVMLS_v0.rar" target="_blank" rel="external">http://www4.comp.polyu.edu.hk/~cskhzhang/J_papers/SVMLS_v0.rar</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Level Set Method Research by Chunming Li</strong></p>
+<ul>
+<li>[Project] <a href="http://www.engr.uconn.edu/~cmli/" target="_blank" rel="external">http://www.engr.uconn.edu/~cmli/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>ClassCut for Unsupervised Class Segmentation</strong></p>
+<ul>
+<li>[code] <a href="http://groups.inf.ed.ac.uk/calvin/classcut/ClassCut-release_v1.0.zip" target="_blank" rel="external">http://groups.inf.ed.ac.uk/calvin/classcut/ClassCut-release_v1.0.zip</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **SEEDS: Superpixels Extracted via Energy-Driven Sampling **</p>
+<ul>
+<li>[Project] <a href="http://www.vision.ee.ethz.ch/~vamichae/seeds/" target="_blank" rel="external">http://www.vision.ee.ethz.ch/~vamichae/seeds/</a></li>
+<li>[other] <a href="http://www.mvdblive.org/seeds/" target="_blank" rel="external">http://www.mvdblive.org/seeds/</a></li>
+</ul>
+<h1>目标检测Object Detection</h1>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **A simple object detector with boosting **</p>
+<ul>
+<li>[Project] <a href="http://people.csail.mit.edu/torralba/shortCourseRLOC/boosting/boosting.html" target="_blank" rel="external">http://people.csail.mit.edu/torralba/shortCourseRLOC/boosting/boosting.html</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>INRIA Object Detection and Localization Toolkit</strong></p>
+<ul>
+<li>[Project] <a href="http://pascal.inrialpes.fr/soft/olt/" target="_blank" rel="external">http://pascal.inrialpes.fr/soft/olt/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Discriminatively Trained Deformable Part Models</strong></p>
+<ul>
+<li>[Project] <a href="http://people.eecs.berkeley.edu/~rbg/latent/index.html" target="_blank" rel="external">http://people.eecs.berkeley.edu/~rbg/latent/index.html</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Cascade Object Detection with Deformable Part Models</strong></p>
+<ul>
+<li>[Project] <a href="http://people.cs.uchicago.edu/~rbg/star-cascade/" target="_blank" rel="external">http://people.cs.uchicago.edu/~rbg/star-cascade/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Poselet</strong></p>
+<ul>
+<li>[Project] <a href="http://www.eecs.berkeley.edu/~lbourdev/poselets/" target="_blank" rel="external">http://www.eecs.berkeley.edu/~lbourdev/poselets/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Implicit Shape Model</strong></p>
+<ul>
+<li>[Project] <a href="http://www.vision.ee.ethz.ch/~bleibe/code/ism.html" target="_blank" rel="external">http://www.vision.ee.ethz.ch/~bleibe/code/ism.html</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Bayesian Modelling of Dyanmic Scenes for Object Detection</strong></p>
+<ul>
+<li>[Paper] <a href="http://vision.eecs.ucf.edu/papers/01512057.pdf" target="_blank" rel="external">http://vision.eecs.ucf.edu/papers/01512057.pdf</a></li>
+<li>[Code] <a href="http://vision.eecs.ucf.edu/Code/Background.zip" target="_blank" rel="external">http://vision.eecs.ucf.edu/Code/Background.zip</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Hand detection using multiple proposals</strong></p>
+<ul>
+<li>[Project] <a href="http://www.robots.ox.ac.uk/~vgg/software/hands/" target="_blank" rel="external">http://www.robots.ox.ac.uk/~vgg/software/hands/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Color Constancy, Intrinsic Images, and Shape Estimation</strong></p>
+<ul>
+<li>[Paper] <a href="http://www.eecs.berkeley.edu/Research/Projects/CS/vision/reconstruction/BarronMalikECCV2012.pdf" target="_blank" rel="external">http://www.eecs.berkeley.edu/Research/Projects/CS/vision/reconstruction/BarronMalikECCV2012.pdf</a></li>
+<li>[Code] <a href="http://www.cs.berkeley.edu/~barron/BarronMalikECCV2012_code.zip" target="_blank" rel="external">http://www.cs.berkeley.edu/~barron/BarronMalikECCV2012_code.zip</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Discriminatively trained deformable part models</strong></p>
+<ul>
+<li>[Project] <a href="http://people.cs.uchicago.edu/~rbg/latent/" target="_blank" rel="external">http://people.cs.uchicago.edu/~rbg/latent/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **Gradient Response Maps for Real-Time Detection of Texture-Less Objects: LineMOD **</p>
+<ul>
+<li>[Project] <a href="http://campar.cs.tum.edu/Main/StefanHinterstoisser" target="_blank" rel="external">http://campar.cs.tum.edu/Main/StefanHinterstoisser</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Image Processing On Line</strong></p>
+<ul>
+<li>[Project] <a href="http://www.ipol.im/" target="_blank" rel="external">http://www.ipol.im/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Robust Optical Flow Estimation</strong></p>
+<ul>
+<li>[Project] <a href="http://www.ipol.im/pub/pre/21/" target="_blank" rel="external">http://www.ipol.im/pub/pre/21/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Where’s Waldo: Matching People in Images of Crowds</strong></p>
+<ul>
+<li>[Project] <a href="http://homes.cs.washington.edu/~rahul/data/WheresWaldo.html" target="_blank" rel="external">http://homes.cs.washington.edu/~rahul/data/WheresWaldo.html</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Scalable Multi-class Object Detection</strong></p>
+<ul>
+<li>[Project] <a href="http://files.is.tue.mpg.de/jgall/projects/houghMC/houghMC.html" target="_blank" rel="external">http://files.is.tue.mpg.de/jgall/projects/houghMC/houghMC.html</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Class-Specific Hough Forests for Object Detection</strong></p>
+<ul>
+<li>[Project] <a href="http://files.is.tue.mpg.de/jgall/projects/houghforest/houghforest.html" target="_blank" rel="external">http://files.is.tue.mpg.de/jgall/projects/houghforest/houghforest.html</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Deformed Lattice Detection In Real-World Images</strong></p>
+<ul>
+<li>[Project] <a href="http://vision.cse.psu.edu/data/data.shtml" target="_blank" rel="external">http://vision.cse.psu.edu/data/data.shtml</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Discriminatively trained deformable part models</strong></p>
+<ul>
+<li>[Project] <a href="http://people.cs.uchicago.edu/~rbg/latent/" target="_blank" rel="external">http://people.cs.uchicago.edu/~rbg/latent/</a></li>
+</ul>
+<h1>显著性检测Saliency Detection</h1>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Itti, Koch, and Niebur’ saliency detection</strong></p>
+<ul>
+<li>[Matlab code] <a href="http://www.saliencytoolbox.net/" target="_blank" rel="external">http://www.saliencytoolbox.net/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Frequency-tuned salient region detection</strong></p>
+<ul>
+<li>[Project] <a href="http://ivrgwww.epfl.ch/supplementary_material/RK_CVPR09/index.html" target="_blank" rel="external">http://ivrgwww.epfl.ch/supplementary_material/RK_CVPR09/index.html</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Saliency detection using maximum symmetric surround</strong></p>
+<ul>
+<li>[Project] <a href="http://ivrg.epfl.ch/supplementary_material/RK_ICIP2010/index.html" target="_blank" rel="external">http://ivrg.epfl.ch/supplementary_material/RK_ICIP2010/index.html</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Attention via Information Maximization</strong></p>
+<ul>
+<li>[Matlab code] <a href="http://www.cse.yorku.ca/~neil/AIM.zip" target="_blank" rel="external">http://www.cse.yorku.ca/~neil/AIM.zip</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Context-aware saliency detection</strong></p>
+<ul>
+<li>[Matlab code] <a href="http://webee.technion.ac.il/labs/cgm/Computer-Graphics-Multimedia/Software/Saliency/Saliency.html" target="_blank" rel="external">http://webee.technion.ac.il/labs/cgm/Computer-Graphics-Multimedia/Software/Saliency/Saliency.html</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Graph-based visual saliency</strong></p>
+<ul>
+<li>[Matlab code] <a href="http://www.klab.caltech.edu/~harel/share/gbvs.php" target="_blank" rel="external">http://www.klab.caltech.edu/~harel/share/gbvs.php</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Saliency detection: A spectral residual approach.</strong></p>
+<ul>
+<li>[Matlab code] <a href="http://www.klab.caltech.edu/~xhou/projects/spectralResidual/spectralresidual.html" target="_blank" rel="external">http://www.klab.caltech.edu/~xhou/projects/spectralResidual/spectralresidual.html</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Segmenting salient objects from images and videos.</strong></p>
+<ul>
+<li>[Matlab code] <a href="http://www.cse.oulu.fi/MVG/Downloads/saliency" target="_blank" rel="external">http://www.cse.oulu.fi/MVG/Downloads/saliency</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Saliency Using Natural statistics.</strong></p>
+<ul>
+<li>[Matlab code] <a href="http://cseweb.ucsd.edu/~l6zhang/" target="_blank" rel="external">http://cseweb.ucsd.edu/~l6zhang/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Discriminant Saliency for Visual Recognition from Cluttered Scenes.</strong></p>
+<ul>
+<li>[Code] <a href="http://www.svcl.ucsd.edu/projects/saliency/" target="_blank" rel="external">http://www.svcl.ucsd.edu/projects/saliency/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Learning to Predict Where Humans Look</strong></p>
+<ul>
+<li>[Project] <a href="http://people.csail.mit.edu/tjudd/WherePeopleLook/index.html" target="_blank" rel="external">http://people.csail.mit.edu/tjudd/WherePeopleLook/index.html</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Global Contrast based Salient Region Detection</strong></p>
+<ul>
+<li>[Project] <a href="http://cg.cs.tsinghua.edu.cn/people/~cmm/saliency/" target="_blank" rel="external">http://cg.cs.tsinghua.edu.cn/people/~cmm/saliency/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Bayesian Saliency via Low and Mid Level Cues</strong></p>
+<ul>
+<li>[Project] <a href="http://ice.dlut.edu.cn/lu/Project/TIP_scm/TIP_scm.htm" target="_blank" rel="external">http://ice.dlut.edu.cn/lu/Project/TIP_scm/TIP_scm.htm</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Top-Down Visual Saliency via Joint CRF and Dictionary Learning</strong></p>
+<ul>
+<li>[Paper] <a href="http://faculty.ucmerced.edu/mhyang/papers/cvpr12a.pdf" target="_blank" rel="external">http://faculty.ucmerced.edu/mhyang/papers/cvpr12a.pdf</a></li>
+<li>[Code] <a href="http://faculty.ucmerced.edu/mhyang/code/top-down-saliency.zip" target="_blank" rel="external">http://faculty.ucmerced.edu/mhyang/code/top-down-saliency.zip</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Saliency Detection: A Spectral Residual Approach</strong></p>
+<ul>
+<li>[Code] <a href="http://www.klab.caltech.edu/~xhou/projects/dva/dva.html" target="_blank" rel="external">http://www.klab.caltech.edu/~xhou/projects/dva/dva.html</a></li>
+</ul>
+<h1>图像分类、聚类Image Classification, Clustering</h1>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Pyramid Match</strong></p>
+<ul>
+<li>[Project] <a href="http://people.csail.mit.edu/jjl/libpmk/" target="_blank" rel="external">http://people.csail.mit.edu/jjl/libpmk/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Spatial Pyramid Matching</strong></p>
+<ul>
+<li>[Code] <a href="http://www.cs.unc.edu/~lazebnik/research/SpatialPyramid.zip" target="_blank" rel="external">http://www.cs.unc.edu/~lazebnik/research/SpatialPyramid.zip</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Locality-constrained Linear Coding</strong></p>
+<ul>
+<li>[Project] <a href="http://www.ifp.illinois.edu/~jyang29/LLC.htm" target="_blank" rel="external">http://www.ifp.illinois.edu/~jyang29/LLC.htm</a></li>
+<li>[Matlab code] <a href="http://www.ifp.illinois.edu/~jyang29/codes/CVPR10-LLC.rar" target="_blank" rel="external">http://www.ifp.illinois.edu/~jyang29/codes/CVPR10-LLC.rar</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Sparse Coding</strong></p>
+<ul>
+<li>[Project] <a href="http://www.ifp.illinois.edu/~jyang29/ScSPM.htm" target="_blank" rel="external">http://www.ifp.illinois.edu/~jyang29/ScSPM.htm</a></li>
+<li>[Matlab code] <a href="http://www.ifp.illinois.edu/~jyang29/codes/CVPR09-ScSPM.rar" target="_blank" rel="external">http://www.ifp.illinois.edu/~jyang29/codes/CVPR09-ScSPM.rar</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Texture Classification</strong></p>
+<ul>
+<li>[Project] <a href="http://www.robots.ox.ac.uk/~vgg/research/texclass/index.html" target="_blank" rel="external">http://www.robots.ox.ac.uk/~vgg/research/texclass/index.html</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Multiple Kernels for Image Classification</strong></p>
+<ul>
+<li>[Project] <a href="http://www.robots.ox.ac.uk/~vgg/software/MKL/" target="_blank" rel="external">http://www.robots.ox.ac.uk/~vgg/software/MKL/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Feature Combination</strong></p>
+<ul>
+<li>[Project] <a href="http://www.vision.ee.ethz.ch/~pgehler/projects/iccv09/index.html" target="_blank" rel="external">http://www.vision.ee.ethz.ch/~pgehler/projects/iccv09/index.html</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **SuperParsing **</p>
+<ul>
+<li>[Code] <a href="http://www.cs.unc.edu/~jtighe/Papers/ECCV10/eccv10-jtighe-code.zip" target="_blank" rel="external">http://www.cs.unc.edu/~jtighe/Papers/ECCV10/eccv10-jtighe-code.zip</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Large Scale Correlation Clustering Optimization</strong></p>
+<ul>
+<li>[Matlab code] <a href="http://www.wisdom.weizmann.ac.il/~bagon/matlab_code/LargeScaleCC1.0.tar.gz" target="_blank" rel="external">http://www.wisdom.weizmann.ac.il/~bagon/matlab_code/LargeScaleCC1.0.tar.gz</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Detecting and Sketching the Common</strong></p>
+<ul>
+<li>[Project] <a href="http://www.wisdom.weizmann.ac.il/~vision/SketchTheCommon" target="_blank" rel="external">http://www.wisdom.weizmann.ac.il/~vision/SketchTheCommon</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Self-Tuning Spectral Clustering</strong></p>
+<ul>
+<li>[Project] <a href="http://www.vision.caltech.edu/lihi/Demos/SelfTuningClustering.html" target="_blank" rel="external">http://www.vision.caltech.edu/lihi/Demos/SelfTuningClustering.html</a></li>
+<li>[Code] <a href="http://www.vision.caltech.edu/lihi/Demos/SelfTuning/ZPclustering.zip" target="_blank" rel="external">http://www.vision.caltech.edu/lihi/Demos/SelfTuning/ZPclustering.zip</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>User Assisted Separation of Reflections from a Single Image Using a Sparsity Prior</strong></p>
+<ul>
+<li>[Paper] <a href="http://www.wisdom.weizmann.ac.il/~levina/papers/assisted-eccv04.pdf" target="_blank" rel="external">http://www.wisdom.weizmann.ac.il/~levina/papers/assisted-eccv04.pdf</a></li>
+<li>[Code] <a href="http://www.wisdom.weizmann.ac.il/~levina/papers/reflections.zip" target="_blank" rel="external">http://www.wisdom.weizmann.ac.il/~levina/papers/reflections.zip</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Filters for Texture Classification</strong></p>
+<ul>
+<li>[Project] <a href="http://www.robots.ox.ac.uk/~vgg/research/texclass/filters.html#download" target="_blank" rel="external">http://www.robots.ox.ac.uk/~vgg/research/texclass/filters.html#download</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Multiple Kernel Learning for Image Classification</strong></p>
+<ul>
+<li>[Project] <a href="http://www.robots.ox.ac.uk/~vgg/software/MKL/" target="_blank" rel="external">http://www.robots.ox.ac.uk/~vgg/software/MKL/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>SLIC Superpixels</strong></p>
+<ul>
+<li>[Project] <a href="http://ivrg.epfl.ch/supplementary_material/RK_SLICSuperpixels/" target="_blank" rel="external">http://ivrg.epfl.ch/supplementary_material/RK_SLICSuperpixels/</a></li>
+</ul>
+<h1>抠图Image Matting</h1>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>A Closed Form Solution to Natural Image Matting</strong></p>
+<ul>
+<li>[Code] <a href="http://people.csail.mit.edu/alevin/matting.tar.gz" target="_blank" rel="external">http://people.csail.mit.edu/alevin/matting.tar.gz</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **Spectral Matting **</p>
+<ul>
+<li>[Project] <a href="http://www.vision.huji.ac.il/SpectralMatting/" target="_blank" rel="external">http://www.vision.huji.ac.il/SpectralMatting/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **Learning-based Matting **</p>
+<ul>
+<li>[Code] <a href="http://www.mathworks.com/matlabcentral/fileexchange/31412" target="_blank" rel="external">http://www.mathworks.com/matlabcentral/fileexchange/31412</a></li>
+</ul>
+<h1>目标跟踪Object Tracking</h1>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **A Forest of Sensors - Tracking Adaptive Background Mixture Models **</p>
+<ul>
+<li>[Project] <a href="http://www.ai.mit.edu/projects/vsam/Tracking/index.html" target="_blank" rel="external">http://www.ai.mit.edu/projects/vsam/Tracking/index.html</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Object Tracking via Partial Least Squares Analysis</strong></p>
+<ul>
+<li>[Paper] <a href="http://faculty.ucmerced.edu/mhyang/papers/tip12_pls_tracking.pdf" target="_blank" rel="external">http://faculty.ucmerced.edu/mhyang/papers/tip12_pls_tracking.pdf</a></li>
+<li>[Code] <a href="http://faculty.ucmerced.edu/mhyang/code/PLS_tracker_tip.zip" target="_blank" rel="external">http://faculty.ucmerced.edu/mhyang/code/PLS_tracker_tip.zip</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Robust Object Tracking with Online Multiple Instance Learning</strong></p>
+<ul>
+<li>[Paper] <a href="http://faculty.ucmerced.edu/mhyang/papers/pami11b.pdf" target="_blank" rel="external">http://faculty.ucmerced.edu/mhyang/papers/pami11b.pdf</a></li>
+<li>[Code] <a href="http://vision.ucsd.edu/~bbabenko/project_miltrack.shtml" target="_blank" rel="external">http://vision.ucsd.edu/~bbabenko/project_miltrack.shtml</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Online Visual Tracking with Histograms and Articulating Blocks</strong></p>
+<ul>
+<li>[Project] <a href="http://www.cise.ufl.edu/~smshahed/tracking.htm" target="_blank" rel="external">http://www.cise.ufl.edu/~smshahed/tracking.htm</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Incremental Learning for Robust Visual Tracking</strong></p>
+<ul>
+<li>[Project] <a href="http://www.cs.toronto.edu/~dross/ivt/" target="_blank" rel="external">http://www.cs.toronto.edu/~dross/ivt/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Real-time Compressive Tracking</strong></p>
+<ul>
+<li>[Project] <a href="http://www4.comp.polyu.edu.hk/~cslzhang/CT/CT.htm" target="_blank" rel="external">http://www4.comp.polyu.edu.hk/~cslzhang/CT/CT.htm</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Robust Object Tracking via Sparsity-based Collaborative Model</strong></p>
+<ul>
+<li>[Project] <a href="http://faculty.ucmerced.edu/mhyang/project/cvpr12_scm.htm" target="_blank" rel="external">http://faculty.ucmerced.edu/mhyang/project/cvpr12_scm.htm</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Visual Tracking via Adaptive Structural Local Sparse Appearance Model</strong></p>
+<ul>
+<li>[Project] <a href="http://faculty.ucmerced.edu/mhyang/project/cvpr12_jia_project.htm" target="_blank" rel="external">http://faculty.ucmerced.edu/mhyang/project/cvpr12_jia_project.htm</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Online Discriminative Object Tracking with Local Sparse Representation</strong></p>
+<ul>
+<li>[Paper] <a href="http://faculty.ucmerced.edu/mhyang/papers/wacv12a.pdf" target="_blank" rel="external">http://faculty.ucmerced.edu/mhyang/papers/wacv12a.pdf</a></li>
+<li>[Code] <a href="http://faculty.ucmerced.edu/mhyang/code/wacv12a_code.zip" target="_blank" rel="external">http://faculty.ucmerced.edu/mhyang/code/wacv12a_code.zip</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Superpixel Tracking</strong></p>
+<ul>
+<li>[Project] <a href="http://faculty.ucmerced.edu/mhyang/papers/iccv11a.html" target="_blank" rel="external">http://faculty.ucmerced.edu/mhyang/papers/iccv11a.html</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Learning Hierarchical Image Representation with Sparsity, Saliency and Locality</strong></p>
+<ul>
+<li>[Paper] <a href="http://faculty.ucmerced.edu/mhyang/papers/bmvc11a.pdf" target="_blank" rel="external">http://faculty.ucmerced.edu/mhyang/papers/bmvc11a.pdf</a></li>
+<li>[Code] <a href="http://faculty.ucmerced.edu/mhyang/code/BMVC11-HSSL-package.zip" target="_blank" rel="external">http://faculty.ucmerced.edu/mhyang/code/BMVC11-HSSL-package.zip</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **Online Multiple Support Instance Tracking **</p>
+<ul>
+<li>[Paper] <a href="http://faculty.ucmerced.edu/mhyang/papers/fg11a.pdf" target="_blank" rel="external">http://faculty.ucmerced.edu/mhyang/papers/fg11a.pdf</a></li>
+<li>[Code] <a href="http://faculty.ucmerced.edu/mhyang/code/fg11_omsit.zip" target="_blank" rel="external">http://faculty.ucmerced.edu/mhyang/code/fg11_omsit.zip</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Visual Tracking with Online Multiple Instance Learning</strong></p>
+<ul>
+<li>[Project] <a href="http://vision.ucsd.edu/~bbabenko/project_miltrack.shtml" target="_blank" rel="external">http://vision.ucsd.edu/~bbabenko/project_miltrack.shtml</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Object detection and recognition</strong></p>
+<ul>
+<li>[Project] <a href="http://c2inet.sce.ntu.edu.sg/Jianxin/" target="_blank" rel="external">http://c2inet.sce.ntu.edu.sg/Jianxin/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Compressive Sensing Resources</strong></p>
+<ul>
+<li>[Project] <a href="http://dsp.rice.edu/cs" target="_blank" rel="external">http://dsp.rice.edu/cs</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Robust Real-Time Visual Tracking using Pixel-Wise Posteriors</strong></p>
+<ul>
+<li>[Project] <a href="http://www.robots.ox.ac.uk/~cbibby/index.shtml" target="_blank" rel="external">http://www.robots.ox.ac.uk/~cbibby/index.shtml</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Tracking-Learning-Detection</strong></p>
+<ul>
+<li>[Project] <a href="http://info.ee.surrey.ac.uk/Personal/Z.Kalal/" target="_blank" rel="external">http://info.ee.surrey.ac.uk/Personal/Z.Kalal/</a></li>
+<li>[OpenTLD/C++ Code] <a href="https://github.com/arthurv/OpenTLD" target="_blank" rel="external">https://github.com/arthurv/OpenTLD</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>the HandVu：vision-based hand gesture interface</strong></p>
+<ul>
+<li>[Project] <a href="http://ilab.cs.ucsb.edu/index.php/component/content/article/12/29" target="_blank" rel="external">http://ilab.cs.ucsb.edu/index.php/component/content/article/12/29</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Learning Probabilistic Non-Linear Latent Variable Models for Tracking Complex Activities</strong></p>
+<ul>
+<li>[Project] <a href="http://files.is.tue.mpg.de/jgall/projects/stochGPLVM/stochGPLVM.html" target="_blank" rel="external">http://files.is.tue.mpg.de/jgall/projects/stochGPLVM/stochGPLVM.html</a></li>
+</ul>
+<h1>Kinect</h1>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Kinect toolbox</strong></p>
+<ul>
+<li>[Project] <a href="http://kinecttoolbox.codeplex.com/" target="_blank" rel="external">http://kinecttoolbox.codeplex.com/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>OpenNI</strong></p>
+<ul>
+<li>[Project] <a href="http://www.openni.org/" target="_blank" rel="external">http://www.openni.org/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>zouxy09 CSDN Blog</strong></p>
+<ul>
+<li>[Resource] <a href="http://blog.csdn.net/zouxy09/article/details/8145688" target="_blank" rel="external">http://blog.csdn.net/zouxy09/article/details/8145688</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>FingerTracker 手指跟踪</strong></p>
+<ul>
+<li>[code] <a href="http://makematics.com/code/FingerTracker/" target="_blank" rel="external">http://makematics.com/code/FingerTracker/</a></li>
+</ul>
+<h1>3D相关</h1>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>3D Reconstruction of a Moving Object</strong></p>
+<ul>
+<li>[Paper] <a href="http://www.wisdom.weizmann.ac.il/~ronen/papers/Simakov" target="_blank" rel="external">http://www.wisdom.weizmann.ac.il/~ronen/papers/Simakov</a> Frolova Basri - Dense Shape Reconstruction Under Arbitrary Unknown Lighting.pdf</li>
+<li>[Code] <a href="http://www.wisdom.weizmann.ac.il/~bagon/matlab_code/SFB_matlab1.0.tar.gz" target="_blank" rel="external">http://www.wisdom.weizmann.ac.il/~bagon/matlab_code/SFB_matlab1.0.tar.gz</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Shape From Shading Using Linear Approximation</strong></p>
+<ul>
+<li>[Code] <a href="http://vision.eecs.ucf.edu/shadsrc.html" target="_blank" rel="external">http://vision.eecs.ucf.edu/shadsrc.html</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Combining Shape from Shading and Stereo Depth Maps</strong></p>
+<ul>
+<li>[Project] <a href="http://vision.eecs.ucf.edu/combsrc.html" target="_blank" rel="external">http://vision.eecs.ucf.edu/combsrc.html</a></li>
+<li>[Code] <a href="http://vision.eecs.ucf.edu/projects/ShapeFromShading/combine.tar.Z" target="_blank" rel="external">http://vision.eecs.ucf.edu/projects/ShapeFromShading/combine.tar.Z</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Shape from Shading: A Survey</strong></p>
+<ul>
+<li>[Paper] <a href="http://vision.eecs.ucf.edu/papers/shah/99/ZTCS99.pdf" target="_blank" rel="external">http://vision.eecs.ucf.edu/papers/shah/99/ZTCS99.pdf</a></li>
+<li>[Code] <a href="http://vision.eecs.ucf.edu/projects/ShapeFromShading/SFS_Survey_1_00.tar.gz" target="_blank" rel="external">http://vision.eecs.ucf.edu/projects/ShapeFromShading/SFS_Survey_1_00.tar.gz</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>A Spatio-Temporal Descriptor based on 3D Gradients (HOG3D)</strong></p>
+<ul>
+<li>[Project] <a href="http://lear.inrialpes.fr/people/klaeser/research_hog3d" target="_blank" rel="external">http://lear.inrialpes.fr/people/klaeser/research_hog3d</a></li>
+<li>[Code] <a href="http://lear.inrialpes.fr/people/klaeser/software_3d_video_descriptor" target="_blank" rel="external">http://lear.inrialpes.fr/people/klaeser/software_3d_video_descriptor</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Multi-camera Scene Reconstruction via Graph Cuts</strong></p>
+<ul>
+<li>[Paper] <a href="http://www.cs.cornell.edu/~rdz/papers/kz-eccv02-recon.pdf" target="_blank" rel="external">http://www.cs.cornell.edu/~rdz/papers/kz-eccv02-recon.pdf</a></li>
+<li>[Code] <a href="http://pub.ist.ac.at/~vnk/software/match-v3.4.src.tar.gz" target="_blank" rel="external">http://pub.ist.ac.at/~vnk/software/match-v3.4.src.tar.gz</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>A Fast Marching Formulation of Perspective Shape from Shading under Frontal Illumination</strong></p>
+<ul>
+<li>[Paper] <a href="http://www.cs.ucf.edu/~vision" target="_blank" rel="external">http://www.cs.ucf.edu/~vision</a></li>
+<li>[Code] <a href="http://www.ee.cityu.edu.hk/~syyuen/Public/SfS/PRL_Perspective_FMM.zip" target="_blank" rel="external">http://www.ee.cityu.edu.hk/~syyuen/Public/SfS/PRL_Perspective_FMM.zip</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Reconstruction:3D Shape, Illumination, Shading, Reflectance, Texture</strong></p>
+<ul>
+<li>[Project] <a href="http://www.eecs.berkeley.edu/Research/Projects/CS/vision/reconstruction/" target="_blank" rel="external">http://www.eecs.berkeley.edu/Research/Projects/CS/vision/reconstruction/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Monocular Tracking of 3D Human Motion with a Coordinated Mixture of Factor Analyzers</strong></p>
+<ul>
+<li>[Code] <a href="http://faculty.ucmerced.edu/mhyang/code/PackagedTrackingCode.tar.gz" target="_blank" rel="external">http://faculty.ucmerced.edu/mhyang/code/PackagedTrackingCode.tar.gz</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Learning 3-D Scene Structure from a Single Still Image</strong></p>
+<ul>
+<li>[Project] <a href="http://ai.stanford.edu/~asaxena/reconstruction3d/" target="_blank" rel="external">http://ai.stanford.edu/~asaxena/reconstruction3d/</a></li>
+</ul>
+<h1>机器学习算法</h1>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **Matlab class for computing Approximate Nearest Nieghbor (ANN) **</p>
+<ul>
+<li>[Matlab class providing interface toANN library] <a href="http://www.wisdom.weizmann.ac.il/~bagon/matlab_code/ann_wrapper_Mar2012.tar.gz" target="_blank" rel="external">http://www.wisdom.weizmann.ac.il/~bagon/matlab_code/ann_wrapper_Mar2012.tar.gz</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Random Sampling</strong></p>
+<ul>
+<li>[code] <a href="http://www.wisdom.weizmann.ac.il/~bagon/matlab_code/weight_sample.tar.gz" target="_blank" rel="external">http://www.wisdom.weizmann.ac.il/~bagon/matlab_code/weight_sample.tar.gz</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Probabilistic Latent Semantic Analysis (pLSA)</strong></p>
+<ul>
+<li>[Code] <a href="http://www.robots.ox.ac.uk/~vgg/software/pLSA/pLSA_demo.tgz" target="_blank" rel="external">http://www.robots.ox.ac.uk/~vgg/software/pLSA/pLSA_demo.tgz</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>FASTANN and FASTCLUSTER for approximate k-means (AKM)</strong></p>
+<ul>
+<li>[Project] <a href="http://www.robots.ox.ac.uk/~vgg/software/fastann/" target="_blank" rel="external">http://www.robots.ox.ac.uk/~vgg/software/fastann/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Fast Intersection / Additive Kernel SVMs</strong></p>
+<ul>
+<li>[Project] <a href="http://www.cs.berkeley.edu/~smaji/projects/fiksvm/" target="_blank" rel="external">http://www.cs.berkeley.edu/~smaji/projects/fiksvm/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>SVM</strong></p>
+<ul>
+<li>[Code] <a href="http://osmot.cs.cornell.edu/svm_light/" target="_blank" rel="external">http://osmot.cs.cornell.edu/svm_light/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Ensemble learning</strong></p>
+<ul>
+<li>[Project] <a href="http://c2inet.sce.ntu.edu.sg/Jianxin/" target="_blank" rel="external">http://c2inet.sce.ntu.edu.sg/Jianxin/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Deep Learning</strong></p>
+<ul>
+<li>[Net] <a href="http://deeplearning.net/" target="_blank" rel="external">http://deeplearning.net/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Deep Learning Methods for Vision</strong></p>
+<ul>
+<li>[Project] <a href="http://cs.nyu.edu/~fergus/tutorials/deep_learning_cvpr12/" target="_blank" rel="external">http://cs.nyu.edu/~fergus/tutorials/deep_learning_cvpr12/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Neural Network for Recognition of Handwritten Digits</strong></p>
+<ul>
+<li>[Project] <a href="http://www.codeproject.com/KB/library/NeuralNetRecognition.aspx" target="_blank" rel="external">http://www.codeproject.com/KB/library/NeuralNetRecognition.aspx</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Training a deep autoencoder or a classifier on MNIST digits</strong></p>
+<ul>
+<li>[Project] <a href="http://www.cs.toronto.edu/~hinton/MatlabForSciencePaper.html" target="_blank" rel="external">http://www.cs.toronto.edu/~hinton/MatlabForSciencePaper.html</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>THE MNIST DATABASE of handwritten digits</strong></p>
+<ul>
+<li>[Project] <a href="http://yann.lecun.com/exdb/mnist/" target="_blank" rel="external">http://yann.lecun.com/exdb/mnist/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Ersatz：deep neural networks in the cloud</strong></p>
+<ul>
+<li>[Project] <a href="http://www.ersatz1.com/" target="_blank" rel="external">http://www.ersatz1.com/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **Deep Learning **</p>
+<ul>
+<li>[Project] <a href="http://www.cs.nyu.edu/~yann/research/deep/" target="_blank" rel="external">http://www.cs.nyu.edu/~yann/research/deep/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>sparseLM : Sparse Levenberg-Marquardt nonlinear least squares in C/C++</strong></p>
+<ul>
+<li>[Project] <a href="http://www.ics.forth.gr/~lourakis/sparseLM/" target="_blank" rel="external">http://www.ics.forth.gr/~lourakis/sparseLM/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Weka 3: Data Mining Software in Java</strong></p>
+<ul>
+<li>[Project] <a href="http://www.cs.waikato.ac.nz/ml/weka/" target="_blank" rel="external">http://www.cs.waikato.ac.nz/ml/weka/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Invited talk “A Tutorial on Deep Learning” by Dr. Kai Yu (余凯)</strong></p>
+<ul>
+<li>[Video] <a href="http://vipl.ict.ac.cn/News/academic-report-tutorial-deep-learning-dr-kai-yu" target="_blank" rel="external">http://vipl.ict.ac.cn/News/academic-report-tutorial-deep-learning-dr-kai-yu</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>CNN - Convolutional neural network class</strong></p>
+<ul>
+<li>[Matlab Tool] <a href="http://www.mathworks.cn/matlabcentral/fileexchange/24291" target="_blank" rel="external">http://www.mathworks.cn/matlabcentral/fileexchange/24291</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Yann LeCun’s Publications</strong></p>
+<ul>
+<li>[Wedsite] <a href="http://yann.lecun.com/exdb/publis/index.html#lecun-98" target="_blank" rel="external">http://yann.lecun.com/exdb/publis/index.html#lecun-98</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>LeNet-5, convolutional neural networks</strong></p>
+<ul>
+<li>[Project] <a href="http://yann.lecun.com/exdb/lenet/index.html" target="_blank" rel="external">http://yann.lecun.com/exdb/lenet/index.html</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Training a deep autoencoder or a classifier on MNIST digits</strong></p>
+<ul>
+<li>[Project] <a href="http://www.cs.toronto.edu/~hinton/MatlabForSciencePaper.html" target="_blank" rel="external">http://www.cs.toronto.edu/~hinton/MatlabForSciencePaper.html</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Deep Learning 大牛Geoffrey E. Hinton’s HomePage</strong></p>
+<ul>
+<li>[Website] <a href="http://www.cs.toronto.edu/~hinton/" target="_blank" rel="external">http://www.cs.toronto.edu/~hinton/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Multiple Instance Logistic Discriminant-based Metric Learning (MildML) and Logistic Discriminant-based Metric Learning (LDML)</strong></p>
+<ul>
+<li>[Code] <a href="http://lear.inrialpes.fr/people/guillaumin/code.php#mildml" target="_blank" rel="external">http://lear.inrialpes.fr/people/guillaumin/code.php#mildml</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Sparse coding simulation software</strong></p>
+<ul>
+<li>[Project] <a href="http://redwood.berkeley.edu/bruno/sparsenet/" target="_blank" rel="external">http://redwood.berkeley.edu/bruno/sparsenet/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Visual Recognition and Machine Learning Summer School</strong></p>
+<ul>
+<li>[Software] <a href="http://lear.inrialpes.fr/software" target="_blank" rel="external">http://lear.inrialpes.fr/software</a></li>
+</ul>
+<h1>目标、行为识别Object, Action Recognition</h1>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Action Recognition by Dense Trajectories</strong></p>
+<ul>
+<li>[Project] <a href="http://lear.inrialpes.fr/people/wang/dense_trajectories" target="_blank" rel="external">http://lear.inrialpes.fr/people/wang/dense_trajectories</a></li>
+<li>[Code] <a href="http://lear.inrialpes.fr/people/wang/download/dense_trajectory_release.tar.gz" target="_blank" rel="external">http://lear.inrialpes.fr/people/wang/download/dense_trajectory_release.tar.gz</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Action Recognition Using a Distributed Representation of Pose and Appearance</strong></p>
+<ul>
+<li>[Project] <a href="http://www.eecs.berkeley.edu/Research/Projects/CS/vision/shape/action/" target="_blank" rel="external">http://www.eecs.berkeley.edu/Research/Projects/CS/vision/shape/action/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Recognition Using Regions</strong></p>
+<ul>
+<li>[Paper] <a href="http://www.eecs.berkeley.edu/Research/Projects/CS/vision/shape/glam-cvpr09.pdf" target="_blank" rel="external">http://www.eecs.berkeley.edu/Research/Projects/CS/vision/shape/glam-cvpr09.pdf</a></li>
+<li>[Code] <a href="http://www.eecs.berkeley.edu/Research/Projects/CS/vision/shape/glam_cvpr09_v2.zip" target="_blank" rel="external">http://www.eecs.berkeley.edu/Research/Projects/CS/vision/shape/glam_cvpr09_v2.zip</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>2D Articulated Human Pose Estimation</strong></p>
+<ul>
+<li>[Project] <a href="http://www.vision.ee.ethz.ch/~calvin/articulated_human_pose_estimation_code/" target="_blank" rel="external">http://www.vision.ee.ethz.ch/~calvin/articulated_human_pose_estimation_code/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Fast Human Pose Estimation Using Appearance and Motion via Multi-Dimensional Boosting Regression</strong></p>
+<ul>
+<li>[Paper] <a href="http://faculty.ucmerced.edu/mhyang/papers/cvpr07a.pdf" target="_blank" rel="external">http://faculty.ucmerced.edu/mhyang/papers/cvpr07a.pdf</a></li>
+<li>[Code] <a href="http://www.cise.ufl.edu/~smshahed/cvpr07_fast_human_pose.zip" target="_blank" rel="external">http://www.cise.ufl.edu/~smshahed/cvpr07_fast_human_pose.zip</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Estimating Human Pose from Occluded Images</strong></p>
+<ul>
+<li>[Paper] <a href="http://faculty.ucmerced.edu/mhyang/papers/accv09a.pdf" target="_blank" rel="external">http://faculty.ucmerced.edu/mhyang/papers/accv09a.pdf</a></li>
+<li>[Code] <a href="http://faculty.ucmerced.edu/mhyang/code/accv09_pose.zip" target="_blank" rel="external">http://faculty.ucmerced.edu/mhyang/code/accv09_pose.zip</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Quasi-dense wide baseline matching</strong></p>
+<ul>
+<li>[Project] <a href="http://www.ee.oulu.fi/~jkannala/quasidense/quasidense.html" target="_blank" rel="external">http://www.ee.oulu.fi/~jkannala/quasidense/quasidense.html</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>ChaLearn Gesture Challenge: Principal motion: PCA-based reconstruction of motion histograms</strong></p>
+<ul>
+<li>[Project] <a href="http://gesture.chalearn.org/data/sample-code" target="_blank" rel="external">http://gesture.chalearn.org/data/sample-code</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Real Time Head Pose Estimation with Random Regression Forests</strong></p>
+<ul>
+<li>[Project] <a href="http://files.is.tue.mpg.de/jgall/projects/RFhead/RFhead.html" target="_blank" rel="external">http://files.is.tue.mpg.de/jgall/projects/RFhead/RFhead.html</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>2D Action Recognition Serves 3D Human Pose Estimation</strong></p>
+<ul>
+<li>[Project] <a href="http://files.is.tue.mpg.de/jgall/projects/ARforPose/ARforPose.html" target="_blank" rel="external">http://files.is.tue.mpg.de/jgall/projects/ARforPose/ARforPose.html</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>A Hough Transform-Based Voting Framework for Action Recognition</strong></p>
+<ul>
+<li>[Project] <a href="http://files.is.tue.mpg.de/jgall/projects/houghAR/houghAR.html" target="_blank" rel="external">http://files.is.tue.mpg.de/jgall/projects/houghAR/houghAR.html</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Motion Interchange Patterns for Action Recognition in Unconstrained Videos</strong></p>
+<ul>
+<li>[Project] <a href="http://www.openu.ac.il/home/hassner/projects/MIP/" target="_blank" rel="external">http://www.openu.ac.il/home/hassner/projects/MIP/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>2D articulated human pose estimation software</strong></p>
+<ul>
+<li>[Project] <a href="http://groups.inf.ed.ac.uk/calvin/articulated_human_pose_estimation_code/" target="_blank" rel="external">http://groups.inf.ed.ac.uk/calvin/articulated_human_pose_estimation_code/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Learning and detecting shape models</strong></p>
+<ul>
+<li>[code] <a href="http://groups.inf.ed.ac.uk/calvin/release-learn-shapes-v1.3.tgz" target="_blank" rel="external">http://groups.inf.ed.ac.uk/calvin/release-learn-shapes-v1.3.tgz</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Progressive Search Space Reduction for Human Pose Estimation</strong></p>
+<ul>
+<li>[Project] <a href="http://www.robots.ox.ac.uk/~vgg/software/UpperBody/index.html" target="_blank" rel="external">http://www.robots.ox.ac.uk/~vgg/software/UpperBody/index.html</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Learning Non-Rigid 3D Shape from 2D Motion</strong></p>
+<ul>
+<li>[Project] <a href="http://movement.stanford.edu/learning-nr-shape/" target="_blank" rel="external">http://movement.stanford.edu/learning-nr-shape/</a></li>
+</ul>
+<h1>图像处理</h1>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Distance Transforms of Sampled Functions</strong></p>
+<ul>
+<li>[Project] <a href="http://cs.brown.edu/~pff/dt/" target="_blank" rel="external">http://cs.brown.edu/~pff/dt/</a></li>
+</ul>
+<p><strong>The Computer Vision Homepage</strong></p>
+<ul>
+<li>[Project] <a href="http://www.cs.cmu.edu/~cil/vision.html" target="_blank" rel="external">http://www.cs.cmu.edu/~cil/vision.html</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Efficient appearance distances between windows</strong></p>
+<ul>
+<li>[code] <a href="http://groups.inf.ed.ac.uk/calvin/efficientAppDistances/releaseEfficientAppDistances.zip" target="_blank" rel="external">http://groups.inf.ed.ac.uk/calvin/efficientAppDistances/releaseEfficientAppDistances.zip</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Image Exploration algorithm</strong></p>
+<ul>
+<li>[code] <a href="http://groups.inf.ed.ac.uk/calvin/ReleasedCode/image_exploration_v1.1.tgz" target="_blank" rel="external">http://groups.inf.ed.ac.uk/calvin/ReleasedCode/image_exploration_v1.1.tgz</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **Motion Magnification 运动放大 **</p>
+<ul>
+<li>[Project] <a href="http://people.csail.mit.edu/celiu/motionmag/motionmag.html" target="_blank" rel="external">http://people.csail.mit.edu/celiu/motionmag/motionmag.html</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **Bilateral Filtering for Gray and Color Images 双边滤波器 **</p>
+<ul>
+<li>[Project] <a href="http://homepages.inf.ed.ac.uk/rbf/CVonline/LOCAL_COPIES/MANDUCHI1/Bilateral_Filtering.html" target="_blank" rel="external">http://homepages.inf.ed.ac.uk/rbf/CVonline/LOCAL_COPIES/MANDUCHI1/Bilateral_Filtering.html</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **A Fast Approximation of the Bilateral Filter using a Signal Processing Approach **</p>
+<ul>
+<li>[Project] <a href="http://people.csail.mit.edu/sparis/bf/" target="_blank" rel="external">http://people.csail.mit.edu/sparis/bf/</a></li>
+</ul>
+<h1>一些实用工具</h1>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>EGT: a Toolbox for Multiple View Geometry and Visual Servoing</strong></p>
+<ul>
+<li>[Project]  <a href="http://egt.dii.unisi.it/" target="_blank" rel="external">http://egt.dii.unisi.it/</a></li>
+<li>[Code] <a href="http://egt.dii.unisi.it/download/EGT_v1p3.zip" target="_blank" rel="external">http://egt.dii.unisi.it/download/EGT_v1p3.zip</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>a development kit of matlab mex functions for OpenCV library</strong></p>
+<ul>
+<li>[Project] <a href="http://www.cs.stonybrook.edu/~kyamagu/mexopencv/" target="_blank" rel="external">http://www.cs.stonybrook.edu/~kyamagu/mexopencv/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Fast Artificial Neural Network Library</strong></p>
+<ul>
+<li>[Project] <a href="http://leenissen.dk/fann/wp/" target="_blank" rel="external">http://leenissen.dk/fann/wp/</a></li>
+</ul>
+<h1>人手及指尖检测与识别</h1>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **finger-detection-and-gesture-recognition **</p>
+<ul>
+<li>[Code] <a href="http://code.google.com/p/finger-detection-and-gesture-recognition/downloads/list" target="_blank" rel="external">http://code.google.com/p/finger-detection-and-gesture-recognition/downloads/list</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Hand and Finger Detection using JavaCV</strong></p>
+<ul>
+<li>[Project] <a href="http://www.javacodegeeks.com/2012/12/hand-and-finger-detection-using-javacv.html?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+JavaCodeGeeks+%28Java+Code+Geeks%29" target="_blank" rel="external">http://www.javacodegeeks.com/2012/12/hand-and-finger-detection-using-javacv.html?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+JavaCodeGeeks+(Java+Code+Geeks)</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i><strong>Hand and fingers detection</strong></p>
+<ul>
+<li>[Code] <a href="http://forum.openframeworks.cc/index.php?topic=1916.0" target="_blank" rel="external">http://forum.openframeworks.cc/index.php?topic=1916.0</a></li>
+</ul>
+<h1>场景解释</h1>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **Nonparametric Scene Parsing via Label Transfer **</p>
+<ul>
+<li>[Project] <a href="http://people.csail.mit.edu/celiu/LabelTransfer/code.html" target="_blank" rel="external">http://people.csail.mit.edu/celiu/LabelTransfer/code.html</a></li>
+</ul>
+<h1>光流Optical flow</h1>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **High accuracy optical flow using a theory for warping **</p>
+<ul>
+<li>[Project] <a href="http://perception.inrialpes.fr/~chari/myweb/Software/" target="_blank" rel="external">http://perception.inrialpes.fr/~chari/myweb/Software/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **Dense Trajectories Video Description **</p>
+<ul>
+<li>[Project] <a href="http://lear.inrialpes.fr/people/wang/dense_trajectories" target="_blank" rel="external">http://lear.inrialpes.fr/people/wang/dense_trajectories</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>SIFT Flow: Dense Correspondence across Scenes and its Applications</strong></p>
+<ul>
+<li>[Project] <a href="http://people.csail.mit.edu/celiu/SIFTflow/" target="_blank" rel="external">http://people.csail.mit.edu/celiu/SIFTflow/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **KLT: An Implementation of the Kanade-Lucas-Tomasi Feature Tracker **</p>
+<ul>
+<li>[Project] <a href="http://www.ces.clemson.edu/~stb/klt/" target="_blank" rel="external">http://www.ces.clemson.edu/~stb/klt/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Tracking Cars Using Optical Flow</strong></p>
+<ul>
+<li>[Project] <a href="http://www.mathworks.cn/cn/help/vision/examples/tracking-cars-using-optical-flow.html" target="_blank" rel="external">http://www.mathworks.cn/cn/help/vision/examples/tracking-cars-using-optical-flow.html</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Secrets of optical flow estimation and their principles</strong></p>
+<ul>
+<li>[Project] <a href="http://ps.is.tue.mpg.de/person/black#tabs-code" target="_blank" rel="external">http://ps.is.tue.mpg.de/person/black#tabs-code</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>implmentation of the Black and Anandan dense optical flow method</strong></p>
+<ul>
+<li>[Project] <a href="http://ps.is.tue.mpg.de/person/black#tabs-code" target="_blank" rel="external">http://ps.is.tue.mpg.de/person/black#tabs-code</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Optical Flow Computation</strong></p>
+<ul>
+<li>[Project] <a href="https://www.ceremade.dauphine.fr/~peyre/numerical-tour/tours/multidim_5_opticalflow/#37" target="_blank" rel="external">https://www.ceremade.dauphine.fr/~peyre/numerical-tour/tours/multidim_5_opticalflow/#37</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Beyond Pixels: Exploring New Representations and Applications for Motion Analysis</strong></p>
+<ul>
+<li>[Project] <a href="http://people.csail.mit.edu/celiu/OpticalFlow/" target="_blank" rel="external">http://people.csail.mit.edu/celiu/OpticalFlow/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>A Database and Evaluation Methodology for Optical Flow</strong></p>
+<ul>
+<li>[Project] <a href="http://vision.middlebury.edu/flow/" target="_blank" rel="external">http://vision.middlebury.edu/flow/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>optical flow relative</strong></p>
+<ul>
+<li>[Project] <a href="http://lmb.informatik.uni-freiburg.de/resources/software.php" target="_blank" rel="external">http://lmb.informatik.uni-freiburg.de/resources/software.php</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Robust Optical Flow Estimation</strong></p>
+<ul>
+<li>[Project] <a href="http://www.ipol.im/pub/pre/21/" target="_blank" rel="external">http://www.ipol.im/pub/pre/21/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>optical flow</strong></p>
+<ul>
+<li>[Project] <a href="http://www.jonathanmugan.com/GraphicsProject/OpticalFlow/" target="_blank" rel="external">http://www.jonathanmugan.com/GraphicsProject/OpticalFlow/</a></li>
+</ul>
+<h1>图像检索Image Retrieval</h1>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **Semi-Supervised Distance Metric Learning for Collaborative Image Retrieval **</p>
+<ul>
+<li>[Paper] <a href="http://www.ee.columbia.edu/~wliu/CVPR08_ssml.pdf" target="_blank" rel="external">http://www.ee.columbia.edu/~wliu/CVPR08_ssml.pdf</a></li>
+<li>[code] <a href="http://www.ee.columbia.edu/~wliu/SSMetric.zip" target="_blank" rel="external">http://www.ee.columbia.edu/~wliu/SSMetric.zip</a></li>
+</ul>
+<h1>马尔科夫随机场Markov Random Fields</h1>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> **Markov Random Fields for Super-Resolution **</p>
+<ul>
+<li>[Project] <a href="http://people.csail.mit.edu/billf/project" target="_blank" rel="external">http://people.csail.mit.edu/billf/project</a> pages/sresCode/Markov Random Fields for Super-Resolution.html</li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>A Comparative Study of Energy Minimization Methods for Markov Random Fields with Smoothness-Based Priors</strong></p>
+<ul>
+<li>[Project] <a href="http://vision.middlebury.edu/MRF/" target="_blank" rel="external">http://vision.middlebury.edu/MRF/</a></li>
+</ul>
+<h1>运动检测Motion detection</h1>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Moving Object Extraction, Using Models or Analysis of Regions</strong></p>
+<ul>
+<li>[Project] <a href="http://www.visionbib.com/bibliography/motion-i763.html" target="_blank" rel="external">http://www.visionbib.com/bibliography/motion-i763.html</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Background Subtraction: Experiments and Improvements for ViBe</strong></p>
+<ul>
+<li>[Project] <a href="http://www2.ulg.ac.be/telecom/publi/publications/mvd/VanDroogenbroeck2012Background/index.html" target="_blank" rel="external">http://www2.ulg.ac.be/telecom/publi/publications/mvd/VanDroogenbroeck2012Background/index.html</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>A Self-Organizing Approach to Background Subtraction for Visual Surveillance Applications</strong></p>
+<ul>
+<li>[Project] <a href="http://www.na.icar.cnr.it/~maddalena.l/MODLab/SoftwareSOBS.html" target="_blank" rel="external">http://www.na.icar.cnr.it/~maddalena.l/MODLab/SoftwareSOBS.html</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong><a href="http://changedetection.net" target="_blank" rel="external">changedetection.net</a>: A new change detection benchmark dataset</strong></p>
+<ul>
+<li>[Project] <a href="http://www.changedetection.net/" target="_blank" rel="external">http://www.changedetection.net/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>ViBe - a powerful technique for background detection and subtraction in video sequences</strong></p>
+<ul>
+<li>[Project] <a href="http://www2.ulg.ac.be/telecom/research/vibe/" target="_blank" rel="external">http://www2.ulg.ac.be/telecom/research/vibe/</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Background Subtraction Program</strong></p>
+<ul>
+<li>[Project] <a href="http://www.umiacs.umd.edu/~knkim/UMD-BGS/index.html" target="_blank" rel="external">http://www.umiacs.umd.edu/~knkim/UMD-BGS/index.html</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Motion Detection Algorithms</strong></p>
+<ul>
+<li>[Project] <a href="http://www.codeproject.com/Articles/10248/Motion-Detection-Algorithms" target="_blank" rel="external">http://www.codeproject.com/Articles/10248/Motion-Detection-Algorithms</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Stuttgart Artificial Background Subtraction Dataset</strong></p>
+<ul>
+<li>[Project] <a href="http://www.vis.uni-stuttgart.de/index.php?id=sabs" target="_blank" rel="external">http://www.vis.uni-stuttgart.de/index.php?id=sabs</a></li>
+</ul>
+<p><i class="fa fa-folder-o" aria-hidden="true"></i> <strong>Object Detection, Motion Estimation, and Tracking</strong></p>
+<ul>
+<li>[Project] <a href="http://www.mathworks.cn/cn/help/vision/motion-analysis-and-tracking.html" target="_blank" rel="external">http://www.mathworks.cn/cn/help/vision/motion-analysis-and-tracking.html</a></li>
+</ul>
+<p>来源:网络 编辑:<a href="https://github.com/mindcont" target="_blank" rel="external">mindcont</a>  2016-05-13 第一次编辑<br>
+<strong>转载注明出处 <a href="http://blog.mindcont.com/2016/05/13/Open-Source-Computer-Vision/">http://blog.mindcont.com/2016/05/13/Open-Source-Computer-Vision/</a></strong></p>
+</div><div class="tags"><a href="/tags/OpenCV/">OpenCV</a></div><div class="post-nav"><a href="/2016/05/18/microsoft-kinect-V2-with-matlab/" class="pre">Matlab连接Kinect V2</a><a href="/2016/05/12/win10-ubuntu-remote-desktop/" class="next">win10连结ubuntu 远程桌面</a></div><div id="disqus_thread"><script>var disqus_shortname = 'micro-era';
+var disqus_identifier = '2016/05/13/open-source-computer-vision/';
+var disqus_title = '计算机视觉开源项目';
+var disqus_url = 'http://blog.mindcont.com/2016/05/13/open-source-computer-vision/';
+(function() {
+  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//micro-era.disqus.com/count.js" async></script></div></div></div></div><div class="pure-u-1-4"><div id="sidebar"><div class="widget"><form action="//www.baidu.com/baidu" method="get" accept-charset="utf-8" target="_blank" class="search-form"><input type="search" name="word" maxlength="20" placeholder="Search"/><input type="hidden" name="si" value="http://blog.mindcont.com"/><input name="tn" type="hidden" value="bds"/><input name="cl" type="hidden" value="3"/><input name="ct" type="hidden" value="2097152"/><input name="s" type="hidden" value="on"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Kinect/">Kinect</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/深度学习/">深度学习</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/随笔日记/">随笔日记</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/caffe/" style="font-size: 15px;">caffe</a> <a href="/tags/树莓派/" style="font-size: 15px;">树莓派</a> <a href="/tags/coding/" style="font-size: 15px;">coding</a> <a href="/tags/TED/" style="font-size: 15px;">TED</a> <a href="/tags/OpenCV/" style="font-size: 15px;">OpenCV</a> <a href="/tags/Kinect/" style="font-size: 15px;">Kinect</a> <a href="/tags/matlab/" style="font-size: 15px;">matlab</a> <a href="/tags/ros/" style="font-size: 15px;">ros</a> <a href="/tags/转载/" style="font-size: 15px;">转载</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最新文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/04/25/how-to-do-mnist-demo/">Caffe 入门-MNIST 实验</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/25/debug-android-win/">调试安卓的小技巧</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/22/some-advice-for-research-beginners/">给初做科研的一些建议</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/20/visual-cortex/">从视网膜到视皮层——视觉系统知多少</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/16/my-review-2016/">2016 , 我的年终总结</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/15/ideas-worth-spreading/">值得传播的思想</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/15/caffe-guide-book/">Caffe 入门指南</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/01/05/machine-learning-for-software-engineers/">自上而下的学习路线-软件工程师的机器学习</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/12/26/nginx-proxy-lan/">局域网内nginx反向代理上网</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/12/14/ros-naoqi-ubuntu/">naoqi ros 开发环境搭建</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-comment-o"> 最近评论</i></div><script type="text/javascript" src="//micro-era.disqus.com/recent_comments_widget.js?num_items=5&amp;hide_avatars=1&amp;avatar_size=32&amp;excerpt_length=20&amp;hide_mods=1"></script></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="http://memect.com/" title="好东西传送门" target="_blank">好东西传送门</a><ul></ul><a href="https://prism-break.org/zh-CN/all/" title="粉碎棱镜" target="_blank">粉碎棱镜</a><ul></ul><a href="https://www.daoon.com/" title="道卬" target="_blank">道卬</a><ul></ul><a href="https://www.ted.com/" title="TED | 值得传播的思想" target="_blank">TED | 值得传播的思想</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">© <a href="/." rel="nofollow">项脊轩.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a id="rocket" href="#top" class="show"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.pack.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css?v=0.0.0"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create','UA-74386502-3','auto');ga('send','pageview');
+</script><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
