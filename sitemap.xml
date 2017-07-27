@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.mindcont.com/2017/02/15/caffe-guide-book/</loc>
+    
+    <lastmod>2017-07-27T11:47:35.153Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/05/09/the-basic-principle-of-kinect-depth-imaging/</loc>
+    
+    <lastmod>2017-07-27T11:35:27.473Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2017/01/05/machine-learning-for-software-engineers/</loc>
+    
+    <lastmod>2017-07-27T11:22:40.373Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/08/06/run-yolo-demo/</loc>
+    
+    <lastmod>2017-07-27T11:08:00.855Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.mindcont.com/2016/05/12/win10-ubuntu-remote-desktop/</loc>
     
     <lastmod>2017-07-27T10:30:04.477Z</lastmod>
@@ -12,13 +40,6 @@
     <loc>http://blog.mindcont.com/2016/05/04/how-to-use-ngrok-penetrate-internal-network/</loc>
     
     <lastmod>2017-07-27T10:16:39.233Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2017/03/15/caffe-guide-book/</loc>
-    
-    <lastmod>2017-07-27T10:13:50.099Z</lastmod>
     
   </url>
   
@@ -37,14 +58,14 @@
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/07/20/ubuntu1404-caffe-r3-cuda7-5-mkl/</loc>
+    <loc>http://blog.mindcont.com/2016/06/21/the-long-march/</loc>
     
     <lastmod>2017-07-27T10:10:28.384Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/06/21/the-long-march/</loc>
+    <loc>http://blog.mindcont.com/2016/07/20/ubuntu1404-caffe-r3-cuda7-5-mkl/</loc>
     
     <lastmod>2017-07-27T10:10:28.384Z</lastmod>
     
@@ -103,20 +124,6 @@
     <loc>http://blog.mindcont.com/2016/09/18/cnn/</loc>
     
     <lastmod>2017-07-27T10:10:28.310Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2017/05/09/the-basic-principle-of-kinect-depth-imaging/</loc>
-    
-    <lastmod>2017-07-27T10:10:28.308Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/08/06/run-yolo-demo/</loc>
-    
-    <lastmod>2017-07-27T10:10:28.307Z</lastmod>
     
   </url>
   
@@ -191,14 +198,14 @@
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2017/02/20/visual-cortex/</loc>
+    <loc>http://blog.mindcont.com/2017/02/22/some-advice-for-research-beginners/</loc>
     
     <lastmod>2017-07-27T09:08:01.487Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2017/02/22/some-advice-for-research-beginners/</loc>
+    <loc>http://blog.mindcont.com/2017/02/20/visual-cortex/</loc>
     
     <lastmod>2017-07-27T09:08:01.487Z</lastmod>
     
@@ -212,14 +219,14 @@
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2017/02/25/debug-android-win/</loc>
+    <loc>http://blog.mindcont.com/2017/02/16/my-review-2016/</loc>
     
     <lastmod>2017-07-27T09:08:01.485Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2017/02/16/my-review-2016/</loc>
+    <loc>http://blog.mindcont.com/2017/02/25/debug-android-win/</loc>
     
     <lastmod>2017-07-27T09:08:01.485Z</lastmod>
     
@@ -229,13 +236,6 @@
     <loc>http://blog.mindcont.com/2017/04/25/how-to-do-mnist-demo/</loc>
     
     <lastmod>2017-07-27T08:37:29.382Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2017/07/27/machine-learning-for-software-engineers/</loc>
-    
-    <lastmod>2017-07-27T07:14:48.473Z</lastmod>
     
   </url>
   
