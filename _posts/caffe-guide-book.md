@@ -1,6 +1,6 @@
 ---
 title: Caffe 入门指南
-date: 2017-03-15 16:22:46
+date: 2017-02-15 16:22:46
 tags: caffe
 categories: 深度学习
 toc: true
@@ -61,6 +61,8 @@ Caffe::set_mode(Caffe::GPU);
 * [历次VALSE Webinar活动的录像](http://valser.org/article-86-1.html)
 
 ## 进阶篇
+这里推荐一个很好的实践入门教程，使用python 和 caffe 进行了一个完整的流程，内容详实，可谓理论与实践兼备，不可多得。
+* [A Practical Introduction to Deep Learning with Caffe and Python](http://adilmoujahid.com/posts/2016/06/introduction-deep-learning-python-caffe/)
 ### 应用
 #### 视觉方向
 视觉方面大致有针对图像的分类、分割(Segmentation)、理解(caption)，超分辨，去噪去模糊，以及针对物体的目标识别、检测和追踪。还有就是对视频信息进行同样的工作追求实时和可用。
@@ -144,8 +146,13 @@ Caffe::set_mode(Caffe::GPU);
 * [Oxford - Information Engineering](http://www.robots.ox.ac.uk/~parg/home)
 * [Max Planck Institute for Intelligent Systems](https://ps.is.tuebingen.mpg.de/publications)
 
-非营利组织
+组织和竞赛
 * [OpenAI](https://openai.com/blog/)
+* [kaggle](https://www.kaggle.com)
+* [阿里云天池](https://tianchi.aliyun.com/)
+* [机器之心](https://www.jiqizhixin.com/)
+* [机器学习日报](https://memect.com/)
+* [深度学习大讲堂](https://zhuanlan.zhihu.com/dlclass)
 
 ### 微调网络
 * [楼燚(yì)航的blog-Caffe fine-tuning 微调网络](http://www.cnblogs.com/louyihang-loves-baiyan/p/5038758.html)
