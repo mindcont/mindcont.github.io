@@ -6,7 +6,7 @@ categories: 随笔日记
 ---
 背景：第五次反围剿失败，博古、李德失去了中央红军的控制力，在遵义会议后确定了周恩来、毛泽东同志的领导。
 
-![](/images/The-Long-March_1.png)
+![](http://static.mindcont.com/blog/images/The-Long-March_1.png)
 **恩来**：刚才伯承同志向政治局报告了有关的敌情，这说明敌人的主力虽然被我们吸引到了川滇黔边境，但是尚未构成包围之势，所以在这个紧要关头，请政治局讨论，决定我们红军下一步的行动方案。
 
 **伯承**：我们可否从敌人的动态当中得出这样的结论，我们原计划从扎西揮戈北进，出其不意的北渡长江的计划变成不可能了
@@ -30,4 +30,4 @@ categories: 随笔日记
 <i class="fa fa-video-camera" aria-hidden="true"></i>  http://v.youku.com/v_show/id_XMTE0MjQwNzM2.html
 
 ## 附：长征路线图
-![](/images/The-Long-March_2.jpg)
+![](http://static.mindcont.com/blog/images/The-Long-March_2.jpg)

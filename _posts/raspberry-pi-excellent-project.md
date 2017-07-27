@@ -5,7 +5,7 @@ tags: 树莓派
 ---
 分享我所收集的有趣树莓派项目，相关项目的开源文件也可以在此路径相应文件夹下进行下载。欢迎大家fork和push ( /) V (\ ) 嘻嘻~
 
-![](/images/flying_pi.png)
+![](http://static.mindcont.com/blog/images/flying_pi.png)
 
 ## 目录
 文件夹 |说明|作者|开源地址|
@@ -19,4 +19,4 @@ Big Dog | 基于3D打印的开源大狗 | HuskyRobo| http://www.instructables.co
 一个利用3D打印机和树莓派制作的开源大狗机器人  
 博客地址：http://www.instructables.com/id/Fenrir-an-Open-Source-Dog-Robot/  
 源码地址：https://github.com/HackHusky/Fenrir  
-效果图： ![dog robot](/images/dog-robot.jpg)
+效果图： ![dog robot](http://static.mindcont.com/blog/images/dog-robot.jpg)

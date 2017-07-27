@@ -12,47 +12,47 @@ toc: ture
 <!--more-->
 本文仅适合 华为hg255d v4 版本路由，某宝入手二手华为hg255d路由器，CPU: Ralink RT3052F Flash:4M RAM:32M 此为背景。硬改可参考[2].
 
-![](/images/ubuntu/hg255d.jpg)
-![](/images/ubuntu/hg255d-2.jpg)
+![](http://static.mindcont.com/blog/images/ubuntu/hg255d.jpg)
+![](http://static.mindcont.com/blog/images/ubuntu/hg255d-2.jpg)
 
 ### 连接路由，上传u-boot
 设置本地连接为 192.168.1.100  子网掩码：255.255.255.0 网关丶DNS不用填写（以后只要更新固件就是192.168.1.100的固定ip切记切记），网线与hg255d连接好，保持机器关闭状态.
 
-![](/images/ubuntu/hg255d-3.jpg)
+![](http://static.mindcont.com/blog/images/ubuntu/hg255d-3.jpg)
 
 先在浏览器输入http://192.168.1.1/upload.html 然后按住路由的reset键并接通电源，保持reset按住，浏览器刷新，大约十秒左右就可以进入如图所示的界面
-![](/images/ubuntu/hg255d-4.jpg)
+![](http://static.mindcont.com/blog/images/ubuntu/hg255d-4.jpg)
 
 此时一定要抓紧选择ralink.bin（此固件内已包含改版u-boot和电信原版u-boot，后面u-boot-rom-hg255d_hg256.bin是升级用的）固件并开始刷入，因为在10-20秒以后，路由将正常启动，页面输入固件将会失败。切记速度！！！
 
 lan口灯狂闪，ralink固件写入结束，大约5min之后路由**会自动重启**，稍等片刻在浏览器中输入192.168.1.1帐号密码同为admin.进入ralink的设置界面.
-![](/images/ubuntu/hg255d-5.jpg)
+![](http://static.mindcont.com/blog/images/ubuntu/hg255d-5.jpg)
 
 ### 刷u-boot
 u-boot 即Bootloader ,从设备加电到启动系统这段时间内固化这主板上的一段代码块，同电脑的BIOS类似。刷u-boot，只需要执行一个shell就可以了.找到 系统管理->系统指令。
 ```
 执行命令：/hg255d/hg255d-flash-uboot.sh   提交一下
 ```
-![](/images/ubuntu/hg255d-6.jpg)
+![](http://static.mindcont.com/blog/images/ubuntu/hg255d-6.jpg)
 
 大约1-2秒就结束了，很快的，然后**手动重启路由器**。路由重启后，只要是电源灯频闪基本上就说明刷u-boot成功了.（如想恢复电信原固件，用tftp重刷ralink.bin固件，执行/hg255d/hg255d-flash-tel-uboot.sh就OK了）
 
 ### 刷openwrt
 还是开机的时候按住wps/wlan/reset按钮任一按钮，然后刷入固件openwrt-ramips-rt305x-hg255d-squashfs-sysupgrade.bin.** 当进度条上传完成，不要断电和动路由器，路由器会自动重启**
-![](/images/ubuntu/hg255d-7.jpg)
+![](http://static.mindcont.com/blog/images/ubuntu/hg255d-7.jpg)
 
 
 写入固件大约10秒钟，此时电源灯为常亮，然后大约是5分钟的等待时间，电源灯会灭一下，然后频闪，之后稍等一会就可以192.168.1.1进入openwrt ...
-![](/images/ubuntu/hg255d-8.jpg)
+![](http://static.mindcont.com/blog/images/ubuntu/hg255d-8.jpg)
 默认账号：root 密码：admin，然后你就可以看到下面的画面
-![](/images/ubuntu/hg255d-9.jpg)
+![](http://static.mindcont.com/blog/images/ubuntu/hg255d-9.jpg)
 
 **固件和工具**
 链接：http://pan.baidu.com/s/1bpMd0OB 密码：zhe0
 
 ### 配置网络
 这一部分参考老高[4]的博客，来简要介绍openwrt中br-lan,eth0,eth0.1,eth0.2 这几个接口的意思。
-![](/images/ubuntu/hg255d-10.png)
+![](http://static.mindcont.com/blog/images/ubuntu/hg255d-10.png)
 
 #### 有线网配置
 openwrt的有线网络配置文件位于/etc/config/network，参考老高[4]的配置如下：
@@ -155,7 +155,7 @@ config wifi-iface
 
 * V. 虚拟局域网
 开启虚拟局域网 对应 config switch.划分子网 你可以在网络->交换机中找到！
-![](/images/ubuntu/hg255d-11.png)
+![](http://static.mindcont.com/blog/images/ubuntu/hg255d-11.png)
 对照着图下面的配置应该很容易就懂了。
 ```
 config switch_vlan

@@ -14,7 +14,7 @@ YOLO 是一个用来在VOC 2012 数据集上检测物体的框架。它可以检
 
 YOLO is joint work with [Santosh](http://homes.cs.washington.edu/~santosh/), [Ross](http://www.cs.berkeley.edu/~rbg/), and [Ali](http://homes.cs.washington.edu/~ali/), and is described in detail in our [paper](http://arxiv.org/abs/1506.02640).
 
-<video src="http://7xn2mk.com1.z0.glb.clouddn.com/video/YOLO_Watches_Nature_Part_2.mp4" controls="controls" width="640px" heigt="480px" preload="none" poster="/images/Object-Detection/Yolo/YOLO_Watches_Nature_Part_2.png"></video>
+<video src="http://static.mindcont.com/video/YOLO_Watches_Nature_Part_2.mp4" controls="controls" width="640px" heigt="480px" preload="none" poster="/images/Object-Detection/Yolo/YOLO_Watches_Nature_Part_2.png"></video>
 
 ## 安装 Darknet  
 
@@ -48,7 +48,7 @@ make -j4
 ./darknet  imtest data/eagle.jpg
 ```
 如果看到下面的画面，恭喜你安装Darknet 成功！
-![](http://7xn2mk.com1.z0.glb.clouddn.com/blog/images/Object-Detection/Yolo/darknet_test.jpg)
+![](http://static.mindcont.com/blog/images/Object-Detection/Yolo/darknet_test.jpg)
 
 ## 预测
 ### 下载权值文件
@@ -105,20 +105,20 @@ dog: 25%
 init done
 opengl support available
 ```
-![](http://7xn2mk.com1.z0.glb.clouddn.com/blog/images/Object-Detection/Yolo/YOLO_predictions_out.jpg)
+![](http://static.mindcont.com/blog/images/Object-Detection/Yolo/YOLO_predictions_out.jpg)
 
 多测试两张
 ```
 ./darknet yolo test cfg/yolo.cfg weights/yolo.weights data/person.jpg
 ```
 
-![](http://7xn2mk.com1.z0.glb.clouddn.com/blog/images/Object-Detection/Yolo/YOLO_person_prediction_out.jpg)
+![](http://static.mindcont.com/blog/images/Object-Detection/Yolo/YOLO_person_prediction_out.jpg)
 
 ```
 ./darknet yolo test cfg/yolo.cfg weights/yolo.weights data/horses.jpg
 ```
 
-![](http://7xn2mk.com1.z0.glb.clouddn.com/blog/images/Object-Detection/Yolo/YOLO_horses_prediction_out.jpg)
+![](http://static.mindcont.com/blog/images/Object-Detection/Yolo/YOLO_horses_prediction_out.jpg)
 
 ### 实时检测
 运行这个Demo你需要编译 Darknet with CUDA and OpenCV. 你还需要选择 大中小 适当的模型和其对应的权值文件。通过 ls /dev/vi* 查看usb摄像头设备，如果输出video0则证明可用。
@@ -137,7 +137,7 @@ YOLO 默认只显示 置信率大于0.2 的预测，可以通过参数 -thresh 0
 ```
 ./darknet yolo test cfg/yolo.cfg weights/yolo.weights data/dog.jpg -thresh 0
 ```
-![](http://pjreddie.com/media/image/Screen_Shot_2015-08-14_at_11.42.02_AM.png)
+![](http://static.mindcont.com/blog/images/Object-Detection/Yolo/Screen_Shot_2015-08-14_at_11.42.02_AM.png)
 
 ### 预测VOC2012test数据集
 
@@ -160,8 +160,8 @@ mv voc.2012.test <path-to>/darknet/data
 ```
 ./darknet yolo valid cfg/yolo.cfg weights/yolo.weights
 ```
-![](http://7xn2mk.com1.z0.glb.clouddn.com/blog/images/Object-Detection/Yolo/Yolo_vaild.jpg)
-![](http://7xn2mk.com1.z0.glb.clouddn.com/blog/images/Object-Detection/Yolo/Yolo_valid_finish.jpg)
+![](http://static.mindcont.com/blog/images/Object-Detection/Yolo/Yolo_vaild.jpg)
+![](http://static.mindcont.com/blog/images/Object-Detection/Yolo/Yolo_valid_finish.jpg)
 
 而结果在 /darknet/results/下，打开例如 comp4_det_test_bird.txt ，可以依次看到 图片名称，置信率，方框左上角和右下角的坐标
 ```

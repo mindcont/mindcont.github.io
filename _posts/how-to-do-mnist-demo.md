@@ -8,7 +8,7 @@ toc: ture
 MNIST 是一个包含各种手写数字（0-9）图片(images)和对应标签(label)的数据集，下面我们将介绍如何利用 [Caffe](https://github.com/bvlc/caffe/)框架对手写数字识别一个完整的流程，本实验代码可以[github](https://github.com/mindcont/caffe/blob/master/examples/mnist)下载。
 
 <!--more-->
-![](https://static.mindcont.com/blog/images/caffe/asamples.gif)
+![](http://static.mindcont.com/blog/images/caffe/asamples.gif)
 
 ## 数据集准备
 ### 下载数据集
@@ -98,7 +98,7 @@ python visual_mnist_data.py
 
 从 `data/mnist/train/`下，我们可以看到刚才将 rain-images-idx3-ubyte 提取出来的训练集图像，可以看到训练集中单个图片是28*28 单通道灰度图像，如下图所示
 
-![](https://static.mindcont.com/blog/images/caffe/0.png)
+![](http://static.mindcont.com/blog/images/caffe/0.png)
 
 标签文件按图片名称顺序代表图片中数字。如 `0.png` 对应label.txt 第一个字符 5。
 
@@ -136,10 +136,10 @@ cd  examples/mnist/trian
 bash ./vis_net.sh
 ```
 训练网络
-![](https://static.mindcont.com/blog/images/caffe/lenet_train_test.png)
+![](http://static.mindcont.com/blog/images/caffe/lenet_train_test.png)
 
 测试／部署网络，即用于测试，和训练网络区别在于没有标签的输入，只有前向传播过程。
-![](https://static.mindcont.com/blog/images/caffe/lenet.png)
+![](http://static.mindcont.com/blog/images/caffe/lenet.png)
 
 ## 训练
 
@@ -244,7 +244,7 @@ I0424 11:23:00.153573  4049 caffe.cpp:259] Optimization Done.
 ## 预测一张新的图片
 
 假设待预测图片为下图
-![](https://static.mindcont.com/blog/images/caffe/2.png)
+![](http://static.mindcont.com/blog/images/caffe/2.png)
 
 ```bash
 cd examples/mnist/test

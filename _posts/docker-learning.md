@@ -1,7 +1,7 @@
 ---
 title: Docker 实践二三事
 date: 2016-07-29 19:28:13
-tags: 
+tags:
 categories: Linux
 ---
 Docker是一个开源的引擎，可以轻松的为任何应用创建一个轻量级的、可移植的、自给自足的容器。开发者在笔记本上编译测试通过的容器可以批量地在生产环境中部署，包括VMs（虚拟机）、bare metal、OpenStack 集群和其他的基础应用平台。
@@ -10,7 +10,7 @@ Docker是一个开源的引擎，可以轻松的为任何应用创建一个轻�
 
 ## 架构
 
-![](https://docs.docker.com/engine/article-img/architecture.svg)
+![](http://static.mindcont.com/blog/images/tools/docker/architecture.svg)
 
 ## 安装
 以 Ubuntu 14.04 LTS 下为例
@@ -23,7 +23,7 @@ sudo apt-get update
 sudo apt-get install apt-transport-https ca-certificates
 sudo apt-get install docker.io
 
-# 查看是否安装成功 
+# 查看是否安装成功
 sudo docker info
 ```
 ## 常用命令
@@ -36,12 +36,12 @@ Docker 命令 总的来说分为以下几种：
 * 本地镜像管理 — docker [images|rmi|tag|build|history|save|import]
 * 其他命令 — docker [info|version]
 
-![](/images/docker/docker.png)
+![](http://static.mindcont.com/blog/images/tools/docker/docker.png)
 
 **注意** 有点需要切换为root用户后进行常用docker操作，以下命令如未特殊说明，均表示在root账户下进行。
 1. 列出机器上的镜像（images）
 ```
-# docker images 
+# docker images
 REPOSITORY               TAG             IMAGE ID        CREATED         VIRTUAL SIZE
 ubuntu                   14.10           2185fd50e2ca    13 days ago     236.9 MB
 …
@@ -79,7 +79,7 @@ seanloook/centos6   sean's docker repos         0
 与上面的pull对应，可以推送到Docker Hub的Public、Private以及私服，但不能推送到Top Level Repository。
 ```
 # docker push seanlook/mongo
- login name: 
+ login name:
  password:
 
 login success
@@ -104,20 +104,20 @@ login success
 root@85cea785dc:~/ ls
 
 # 退出容器
-root@85cea785dc:~/ exit 
+root@85cea785dc:~/ exit
 
 # 启动
 root@DeepMind:~/docker start ubuntu
 
 #查看当前正在运行的容器
-# docker ps 
+# docker ps
 
 #查看所有容器
-# docker ps -a 
+# docker ps -a
 
 # 依附到正在运行的容器
 root@DeepMind:~/docker attach ubuntu
-root@85cea785dc:~/ 
+root@85cea785dc:~/
 ```
  运行出一个container放到后台运行, 使用 **-d **参数
 ```
@@ -126,7 +126,7 @@ ae60c4b642058fefcc61ada85a610914bed9f5df0e2aa147100eab85cea785dc
 
 ```
  **-P(大写)**表示随机端口，**-p** 表示指定端口，如下宿主主机端口5000连接到容器34448端口
-![](/images/docker/docker_digits.png)
+![](http://static.mindcont.com/blog/images/tools/docker/docker_digits.png)
 
 6. 使用Dockerfile文件 build 生成新的image（镜像）
 这里给出github上的一份Dockerfile模板 [ubuntu:14.04-niginx](https://github.com/webdevops/Dockerfile/blob/develop/docker/nginx/ubuntu-14.04/Dockerfile),类似于脚本语言，只不过用来编译镜像而已
@@ -163,7 +163,7 @@ EXPOSE 80 443
 ```
 # docker build -t niginx .
 Sending build context to Docker daemon 73.45 MB
-Sending build context to Docker daemon 
+Sending build context to Docker daemon
 Step 0 : FROM seanlook/nginx
  ---> aa8516fa0bb7
 Step 1 : EXPOSE 80
@@ -185,7 +185,7 @@ seanlook/ubuntu   rm_test      195eb90b5349       4 months ago       184.6 MB
 
 使用195eb90b5349启动、停止一个容器后，删除这个镜像
 # docker rmi 195eb90b5349
-Error response from daemon: Conflict, cannot delete image 195eb90b5349 because it is 
+Error response from daemon: Conflict, cannot delete image 195eb90b5349 because it is
 tagged in multiple repositories, use -f to force
 2014/11/04 14:19:00 Error: failed to remove one or more images
 
@@ -195,7 +195,7 @@ Untagged: seanlook/ubuntu:rm_test
 
 现在删除镜像，还会由于container的存在不能rmi
 # docker rmi 195eb90b5349
-Error response from daemon: Conflict, cannot delete 195eb90b5349 because the 
+Error response from daemon: Conflict, cannot delete 195eb90b5349 because the
  container eef3648a6e77 is using it, use -f to force
 2014/11/04 14:24:15 Error: failed to remove one or more images
 

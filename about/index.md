@@ -4,7 +4,7 @@ date: 2016-03-30 12:53:01
 comments: false
 ---
 <!-- 梦想起飞 -->
-![](/images/ubuntu/raspberry.png)
+![](http://static.mindcont.com/blog/images/ubuntu/raspberry.png)
 
 <!-- 迪士尼动画《带着梦想上路》 -->
 <!-- <embed height="415" width="544" quality="high" allowfullscreen="true" autostart=true type="application/x-shockwave-flash" src="//static.hdslb.com/miniloader.swf" flashvars="aid=9367297&page=1" pluginspage="//www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed> -->
@@ -53,7 +53,7 @@ comments: false
 
 <!--
 ### 技能树
-![](/images/xuan.svg)
+![](http://static.mindcont.com/blog/images/xuan.svg)
 -->
 
 ### 联系方式

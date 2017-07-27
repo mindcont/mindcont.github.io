@@ -6,7 +6,7 @@ toc: true
 ---
 ngrok 是一个反向代理，通过在公共的端点和本地运行的 Web 服务器之间建立一个安全的通道。ngrok 可捕获和分析所有通道上的流量，便于后期分析和重放。简单来说就是可以让你的本地服务暴露在外网上面，可以通过外网访问，这是我们经常需要用到的功能。
 
-![](/images/ngrok.png)
+![](http://static.mindcont.com/blog/images/tools/ngrok/ngrok.png)
 
 ## 为何
 因为宽带运营商只是提供动态的公网IP,我们使用路由器DHCP(Dynamic Host Configuration Protocol，动态主机配置协议)来获得诸如192.168.0.2的IP地址进行上网。假如我们想远程登录链接在家中路由器下的树莓派是不能直接访问的，这时候我们就要考虑ngrok或花生壳来达到远程访问的效果。
@@ -152,11 +152,11 @@ ngrok -config=ngrok.cfg -subdomain upal 8080
 upal是你自定义地址。
 看到这样一个界面就说明成功了！！！
 
-![](/images/ngrok-1.png)
+![](http://static.mindcont.com/blog/images/tools/ngrok/ngrok-1.png)
 
 如果是这种界面应该是启动服务端的时候环境变量有问题，客户端与服务端的域名配置不一样导致的。客户端ngrok.cfg中serveraddr后的值必须严格与-domain 以及证书中的NGROK_DOMAIN相同。
 
-![](/images/ngrok-2.png)
+![](http://static.mindcont.com/blog/images/tools/ngrok/ngrok-2.png)
 
 ---
 参考：[在阿里云搭建自己的ngrok服务](http://bbear.me/shi-yong-a-li-yun-da-jian-zi-ji-de-ngrokfu-wu/)  

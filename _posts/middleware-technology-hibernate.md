@@ -47,7 +47,7 @@ Open and standard based platform for developing,deploying and managing n-tier,We
 * Java Web Server
 * JNDI，JDBC，JTA，JMS，JavaMail，CORBA……
 
-![](/images/hibernate/j2ee.png) 
+![](http://static.mindcont.com/blog/images/tools/hibernate/j2ee.png)
 
 **J2EE可以为开发者和用户带来:**
 
@@ -56,8 +56,8 @@ Open and standard based platform for developing,deploying and managing n-tier,We
 * 简化的连接(XML JDBC RMI-IIOP Web-Service)
 
 ### J2EE技术架构
-![](/images/hibernate/j2ee_1.png)
-![](/images/hibernate/j2ee_2.png)  
+![](http://static.mindcont.com/blog/images/tools/hibernate/j2ee_1.png)
+![](http://static.mindcont.com/blog/images/tools/hibernate/j2ee_2.png)  
 
 ### J2EE 主要技术概览
 * 展示层-Servlet/JSP

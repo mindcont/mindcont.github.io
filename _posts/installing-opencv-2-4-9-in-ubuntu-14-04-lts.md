@@ -2,7 +2,7 @@
 title: Ubuntu 14.04安装 OpenCV 2.4.9
 date: 2016-07-16 15:27:45
 tags: OpenCV
-categories: 
+categories:
 toc: ture
 ---
 OpenCV的全称是Open Source Computer Vision Library，是一个跨平台的计算机视觉库。OpenCV是由英特尔公司发起并参与开发，以BSD许可证授权发行，可以在商业和研究领域中免费使用。OpenCV可用于开发实时的图像处理、计算机视觉以及模式识别程序。该程序库也可以使用英特尔公司的IPP进行加速处理。
@@ -27,7 +27,7 @@ deb-src http://mirrors.aliyun.com/ubuntu/ trusty-proposed main restricted univer
 deb-src http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted universe multiverse
 
 ##更新系统
-sudo apt-get update 
+sudo apt-get update
 sudo apt-get upgrade
 ```
 ## 下载依赖环境
@@ -39,7 +39,7 @@ sudo apt-get install build-essential libgtk2.0-dev libjpeg-dev libtiff4-dev libj
 
 ```bash
 #切换到家目录
-cd ~ 
+cd ~
 
 #使用wget下载 Opencv-2.4.9
 wget http://sourceforge.net/projects/opencvlibrary/files/opencv-unix/2.4.9/opencv-2.4.9.zip   
@@ -54,8 +54,8 @@ cd opencv-2.4.9
 现在我们通过使用cmake生成Makefile文件。在这里我们可以定义我们要编译OpenCV的哪个部位。既然我们要使用的即模块，Python和Java的，TBB时，OpenGL，QT，与视频接口的调用等等，这里是我们需要来设置。而就在终端执行以下命令行来创建相应的Makefile文件。请注意，有在该行的最后两个点，它是为cmake的程序参数，这意味着父目录（因为我们是build目录里面，我们要参考OpenCV的目录，这是它的父目录）。
 ```bash
 #创建编译目录
-mkdir build 
-    
+mkdir build
+
 #转到编译目录下    
 cd build  
 
@@ -63,10 +63,10 @@ cd build
 cmake -D WITH_TBB=ON -D BUILD_NEW_PYTHON_SUPPORT=ON -D WITH_V4L=ON -D INSTALL_C_EXAMPLES=ON -D INSTALL_PYTHON_EXAMPLES=ON -D BUILD_EXAMPLES=ON -D WITH_QT=ON -D WITH_OPENGL=ON -D WITH_VTK=ON -D CUDA_GENERATION=Auto ..  
 ```
 检查上面的命令不会产生错误，并且特别是报告FFMPEG为YES。如果不是这种情况下，你将无法读取或写入视频。检查使用Java，Python，TBB，OpenGL的，V4L，OpenGL和Qt的都正确检测。
-![](/images/OpenCV/cmake1.png)
+![](http://static.mindcont.com/blog/images/tools/opencv/cmake1.png)
 
 确保你向上滚动，并检查了将要构建的模块是这些：core flann imgproc highgui features2d calib3d ml video legacy objdetect photo gpu ocl nonfree contrib java python stitching superres ts videostab viz.
-![](/images/OpenCV/cmake2.png)
+![](http://static.mindcont.com/blog/images/tools/opencv/cmake2.png)
 
 好，万事俱备，开始编译OpenCV-2.4.9。
 ```bash
@@ -95,7 +95,7 @@ sudo gedit /etc/ld.so.conf.d/opencv.conf
 ```bash
 /usr/local/lib
 ```
-![](/images/OpenCV/opencv-conf.png)
+![](http://static.mindcont.com/blog/images/tools/opencv/opencv-conf.png)
 输入下面的命令使其生效
 ```bash
 sudo ldconfig
@@ -109,7 +109,7 @@ sudo gedit /etc/bash.bashrc
 PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig
 export PKG_CONFIG_PATH
 ```
-![](/images/OpenCV/bashrc.png)
+![](http://static.mindcont.com/blog/images/tools/opencv/bashrc.png)
 
 **注意:** 关闭控制台，打开一个新的终端，或者重新启动计算机或注销，然后重新登录。不然OpenCV将无法正常工作。现在你有OpenCV的2.4.9安装在您的计算机三维可视化，Python和Java的，TBB，OpenGL的，视频和Qt支持。
 
@@ -125,16 +125,16 @@ chmod +x build_all.sh
 ```bash
 ./facedetect --cascade="/usr/local/share/OpenCV/haarcascades/haarcascade_frontalface_alt.xml" --nested-cascade="/usr/local/share/OpenCV/haarcascades/haarcascade_eye.xml" --scale=1.5 lena.jpg
 ```
-![](/images/OpenCV/demo1.png)
+![](http://static.mindcont.com/blog/images/tools/opencv/demo1.png)
 
 鼠标滚轮滑动，可以直接看到图像像素对应的RGB数值。
-![](/images/OpenCV/QT-tools.png)
+![](http://static.mindcont.com/blog/images/tools/opencv/QT-tools.png)
 
 再运行一个例子，输入下面的指令
 ```bash
 ~/opencv-2.4.9/build/bin/cpp-example-calibration_artific
 ```
-![](/images/OpenCV/demo2.png)
+![](http://static.mindcont.com/blog/images/tools/opencv/demo2.png)
 
 ## 参考
 

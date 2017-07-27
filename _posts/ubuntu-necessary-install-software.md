@@ -17,10 +17,10 @@ UNIX发行版本
 ```
 <!--more-->
 LINUX 发展历史，由芬兰大学 Linux Torvalds 开源的软件，而芬兰 企鹅 logo 极地动物,象征开源。其发行版本
-![](/images/ubuntu/linux.jpg)
+![](http://static.mindcont.com/blog/images/ubuntu/linux.jpg)
 
 其各发行版的特点
-![](/images/ubuntu/linux-2.jpg)
+![](http://static.mindcont.com/blog/images/ubuntu/linux-2.jpg)
 ```
  Redhat
        fedora 全功能版,不稳定
@@ -194,11 +194,11 @@ pip install shadowsocks
 ```
 SOCKS5 地址 127.0.0.1 端口 1080
 ```
-![](/images/ubuntu/firefox_test.png)
+![](http://static.mindcont.com/blog/images/ubuntu/firefox_test.png)
 
 如果这时能够正常访问 https://www.google.com/ncr ， 即说明 shadowsocks安装和你的配置文件都没有问题。
 
-![](/images/ubuntu/browser.png)
+![](http://static.mindcont.com/blog/images/ubuntu/browser.png)
 
 下面我们修改开机启动项，使它能够开机自启动
 ```
@@ -220,7 +220,7 @@ genpac -p "SOCKS5 127.0.0.1:1080" --gfwlist-proxy="SOCKS5 127.0.0.1:1080" --outp
 ```
 file:///home/pi/work/shadowsocks/autoproxy.pac
 ```
-![](/images/ubuntu/autoproxy.png)
+![](http://static.mindcont.com/blog/images/ubuntu/autoproxy.png)
 
 最后，在firefox 浏览器-》高级-》网络设置中选择，使用系统代理 。重启电脑后，再次访问 https://www.google.com/ncr 试试吧！
 

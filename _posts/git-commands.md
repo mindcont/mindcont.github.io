@@ -7,7 +7,7 @@ toc: ture
 ---
 Git 是由 Linux 之父 Linus Tovalds 为了更好地管理linux内核开发而创立的分布式版本控制／软件配置管理软件。简单来说，Git 是一个管理你的「代码的历史记录」的工具。
 <!--more-->
-![](/images/github.png)
+![](http://static.mindcont.com/blog/images/github.png)
 
 ## 安装
 运行平台|环境|链接|

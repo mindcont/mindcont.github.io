@@ -1,12 +1,12 @@
 ---
 title: Caffe 入门指南
-date: 2017-07-15 16:22:46
+date: 2017-03-15 16:22:46
 tags: caffe
 categories: 深度学习
 toc: true
 ---
 
-![](/images/caffe.jpg)
+![](http://static.mindcont.com/blog/images/caffe.jpg)
 <!--more-->
 ## 简介
 [Caffe](http://caffe.berkeleyvision.org/)是一个清晰而高效的深度学习的框架，其作者是博士毕业于UC Berkeley的[贾扬清](http://daggerfs.com/)，目前在Google工作。
