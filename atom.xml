@@ -450,9 +450,9 @@ google +对问题描述英文的关键词&lt;br&gt;
     <link href="http://blog.mindcont.com/2017/02/15/caffe-guide-book/"/>
     <id>http://blog.mindcont.com/2017/02/15/caffe-guide-book/</id>
     <published>2017-02-15T08:22:46.000Z</published>
-    <updated>2017-07-27T11:47:35.153Z</updated>
+    <updated>2017-07-27T12:10:53.599Z</updated>
     
-    <content type="html">&lt;p&gt;&lt;img src=&quot;http://static.mindcont.com/blog/images/caffe.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;img src=&quot;/images/caffe.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h2 id=&quot;简介&quot;&gt;简介&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;http://caffe.berkeleyvision.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Caffe&lt;/a&gt;是一个清晰而高效的深度学习的框架，其作者是博士毕业于UC Berkeley的&lt;a href=&quot;http://daggerfs.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;贾扬清&lt;/a&gt;，目前在Google工作。&lt;br&gt;
@@ -533,6 +533,7 @@ google +对问题描述英文的关键词&lt;br&gt;
 &lt;p&gt;这里推荐一个很好的实践入门教程，使用python 和 caffe 进行了一个完整的流程，内容详实，可谓理论与实践兼备，不可多得。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://adilmoujahid.com/posts/2016/06/introduction-deep-learning-python-caffe/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;A Practical Introduction to Deep Learning with Caffe and Python&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://blog.mindcont.com/2017/01/05/machine-learning-for-software-engineers/&quot;&gt;自上而下的学习路线-软件工程师的机器学习&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&quot;应用&quot;&gt;应用&lt;/h3&gt;
 &lt;h4 id=&quot;视觉方向&quot;&gt;视觉方向&lt;/h4&gt;
@@ -742,7 +743,7 @@ google +对问题描述英文的关键词&lt;br&gt;
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;http://static.mindcont.com/blog/images/caffe.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;img src=&quot;/images/caffe.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
     
     </summary>
     
