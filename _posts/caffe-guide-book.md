@@ -6,7 +6,7 @@ categories: 深度学习
 toc: true
 ---
 
-![](http://static.mindcont.com/blog/images/caffe.jpg)
+![](/images/caffe.jpg)
 <!--more-->
 ## 简介
 [Caffe](http://caffe.berkeleyvision.org/)是一个清晰而高效的深度学习的框架，其作者是博士毕业于UC Berkeley的[贾扬清](http://daggerfs.com/)，目前在Google工作。
@@ -63,6 +63,8 @@ Caffe::set_mode(Caffe::GPU);
 ## 进阶篇
 这里推荐一个很好的实践入门教程，使用python 和 caffe 进行了一个完整的流程，内容详实，可谓理论与实践兼备，不可多得。
 * [A Practical Introduction to Deep Learning with Caffe and Python](http://adilmoujahid.com/posts/2016/06/introduction-deep-learning-python-caffe/)
+* [自上而下的学习路线-软件工程师的机器学习](https://blog.mindcont.com/2017/01/05/machine-learning-for-software-engineers/)
+
 ### 应用
 #### 视觉方向
 视觉方面大致有针对图像的分类、分割(Segmentation)、理解(caption)，超分辨，去噪去模糊，以及针对物体的目标识别、检测和追踪。还有就是对视频信息进行同样的工作追求实时和可用。
