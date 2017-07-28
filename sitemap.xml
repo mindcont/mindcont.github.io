@@ -2,9 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.mindcont.com/about/index.html</loc>
+    
+    <lastmod>2017-07-28T11:39:49.668Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/06/21/the-long-march/</loc>
+    
+    <lastmod>2017-07-28T10:43:20.740Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/12/14/ros-naoqi-ubuntu/</loc>
+    
+    <lastmod>2017-07-28T10:43:12.318Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/12/14/naoqi-robot-sdk-ubuntu/</loc>
+    
+    <lastmod>2017-07-28T10:43:12.318Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.mindcont.com/2017/02/15/caffe-guide-book/</loc>
     
-    <lastmod>2017-07-27T12:10:53.599Z</lastmod>
+    <lastmod>2017-07-28T10:33:19.546Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/history/index.html</loc>
+    
+    <lastmod>2017-07-28T08:44:35.620Z</lastmod>
     
   </url>
   
@@ -47,20 +82,6 @@
     <loc>http://blog.mindcont.com/2016/07/15/ubuntu1404-nvidia-graphics-driver/</loc>
     
     <lastmod>2017-07-27T10:10:28.385Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/about/index.html</loc>
-    
-    <lastmod>2017-07-27T10:10:28.385Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/06/21/the-long-march/</loc>
-    
-    <lastmod>2017-07-27T10:10:28.384Z</lastmod>
     
   </url>
   
@@ -142,14 +163,14 @@
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/04/15/kinect-unboxing/</loc>
+    <loc>http://blog.mindcont.com/2016/05/18/kinect-V2-with-matlab/</loc>
     
     <lastmod>2017-07-27T10:10:28.305Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/05/18/kinect-V2-with-matlab/</loc>
+    <loc>http://blog.mindcont.com/2016/04/15/kinect-unboxing/</loc>
     
     <lastmod>2017-07-27T10:10:28.305Z</lastmod>
     
@@ -219,14 +240,14 @@
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2017/02/16/my-review-2016/</loc>
+    <loc>http://blog.mindcont.com/2017/02/25/debug-android-win/</loc>
     
     <lastmod>2017-07-27T09:08:01.485Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2017/02/25/debug-android-win/</loc>
+    <loc>http://blog.mindcont.com/2017/02/16/my-review-2016/</loc>
     
     <lastmod>2017-07-27T09:08:01.485Z</lastmod>
     
@@ -243,27 +264,6 @@
     <loc>http://blog.mindcont.com/2017/02/15/ideas-worth-spreading/</loc>
     
     <lastmod>2017-02-16T02:14:04.780Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/history/index.html</loc>
-    
-    <lastmod>2017-02-14T02:12:26.039Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/12/14/ros-naoqi-ubuntu/</loc>
-    
-    <lastmod>2017-02-14T02:04:25.054Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/12/14/naoqi-robot-sdk-ubuntu/</loc>
-    
-    <lastmod>2017-02-14T01:50:40.638Z</lastmod>
     
   </url>
   

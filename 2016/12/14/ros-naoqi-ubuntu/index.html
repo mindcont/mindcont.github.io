@@ -1,13 +1,13 @@
 <!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="Solve intelligence, use it to make the world a better place."><title>naoqi ros 开发环境搭建 | 项脊轩</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/3.0.3/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">naoqi ros 开发环境搭建</h1><a id="logo" href="/.">项脊轩</a><p class="description">项脊轩，旧南阁子也</p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/history/"><i class="fa fa-history"> 历史</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div id="layout" class="pure-g"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">naoqi ros 开发环境搭建</h1><div class="post-meta">Dec 14, 2016<script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> Hits</span></span></div><a data-disqus-identifier="2016/12/14/ros-naoqi-ubuntu/" href="/2016/12/14/ros-naoqi-ubuntu/#disqus_thread" class="disqus-comment-count"></a><div class="post-content"><p>ROS( robot operating system) 是一款开源的面向与机器人控制领域的操作系统，起源于2007斯坦福大学人工智能实验室的项目与机器人技术公司Willow Garage 的个人机器人项目之间的合作，2008年之后由Willow Garage 推动，2010 年该公司将其开源，2015年，ros 发布了Jade 版本。</p>
 <a id="more"></a>
-<p><img src="https://dn-mindcont.qbox.me/blog/images/ubuntu/ros/hero_product.jpg" alt=""></p>
+<p><img src="http://static.mindcont.com/blog/images/ubuntu/ros/hero_product.jpg" alt=""></p>
 <p><a href="http://blog.mindcont.com/2016/12/14/naoqi-robot-sdk-ubuntu/">书接上回</a>，下面我将带您一览ros和naoqi robot 在ubuntu 14.04(lts)版本下开发环境的搭建。</p>
 <h3 id="安装-ros-indigo-desktop">安装 ros-indigo-desktop</h3>
 <ul>
 <li>1、 配置 Ubuntu 软件仓库<br>
 配置你的 Ubuntu 软件仓库(repositories) 以允许 “restricted”、“universe” 和 &quot;multiverse&quot;这三种安装模式。 你可以 <a href="https://help.ubuntu.com/community/Repositories/Ubuntu" target="_blank" rel="external">按照ubuntu中的配置指南</a>来完成配置。</li>
 </ul>
-<p><img src="https://dn-mindcont.qbox.me/blog/images/ubuntu/ros/ubuntu-repositories-config.png" alt=""></p>
+<p><img src="http://static.mindcont.com/blog/images/ubuntu/ros/ubuntu-repositories-config.png" alt=""></p>
 <ul>
 <li>2、 添加 sources.list<br>
 配置你的电脑使其能够安装来自 packages.ros.org的软件。 ROS Indigo 仅 支持 Saucy (13.10) 和 Trusty (14.04)。</li>
@@ -36,17 +36,17 @@ The core functionality is implemented in the <a href="http://wiki.ros.org/nao_ro
 <p><strong>1、运行roscore</strong><br>
 打开命令行窗口，这里我们称它为窗口1</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">roscore</span><br></pre></td></tr></table></figure>
-<p><img src="https://dn-mindcont.qbox.me/blog/images/ubuntu/ros/roscore.png" alt=""></p>
+<p><img src="http://static.mindcont.com/blog/images/ubuntu/ros/roscore.png" alt=""></p>
 <p><strong>2、运行naoqi-bin 启动虚拟naoqi</strong><br>
 再打开一个新的命令行窗口，这里我们称它为窗口2</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~/naoqi/choregraphe-suite-2.1.4.13-linux64/bin/naoqi-bin --verbose --broker-ip 127.0.0.1</span><br></pre></td></tr></table></figure>
 <p>broker-ip地址127.0.0.1是用于连接到您自己的PC的环回地址。 因此，只有本地ROS可以连接到NAOqi。 NAOqi API可以通过broker-ip地址访问，nao_driver充当NAOqi API的包装器。</p>
-<p><img src="https://dn-mindcont.qbox.me/blog/images/ubuntu/ros/naoqi-bin.png" alt=""></p>
+<p><img src="http://static.mindcont.com/blog/images/ubuntu/ros/naoqi-bin.png" alt=""></p>
 <p><strong>3、然后启动ros_driver包，使ros连接到本地PC上的模拟Naoqi</strong><br>
 再打开一个新的命令行窗口，这里我们称它为窗口3，在新终端中运行：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LD_LIBRARY_PATH=~/naoqi/choregraphe-suite-2.1.4.13-linux64/lib:$LD_LIBRARY_PATH NAO_IP=127.0.0.1 roslaunch naoqi_driver_py naoqi_driver.launch</span><br></pre></td></tr></table></figure>
 <p><strong>注意</strong>：不要将此路径添加到.bashrc中的全局LD_LIBRARY_PATH，因为其他事情将会中断。 例如 rviz将无法运行与错误</p>
-<p><img src="https://dn-mindcont.qbox.me/blog/images/ubuntu/ros/naoqi_driver_launch.png" alt=""></p>
+<p><img src="http://static.mindcont.com/blog/images/ubuntu/ros/naoqi_driver_launch.png" alt=""></p>
 <p>完整输出如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">... logging to /home/pi/.ros/log/873f953c-c1d1-11e6-bfbe-68f728886d0f/roslaunch-MINDCONT-32499.log</span><br><span class="line">Checking log directory for disk usage. This may take awhile.</span><br><span class="line">Press Ctrl-C to interrupt</span><br><span class="line">Done checking log file disk usage. Usage is &lt;1GB.</span><br><span class="line"></span><br><span class="line">started roslaunch server http://MINDCONT:44778/</span><br><span class="line"></span><br><span class="line">SUMMARY</span><br><span class="line">========</span><br><span class="line"></span><br><span class="line">PARAMETERS</span><br><span class="line">* /naoqi_joint_states/use_odometry: True</span><br><span class="line">* /rosdistro: indigo</span><br><span class="line">* /rosversion: 1.11.20</span><br><span class="line"></span><br><span class="line">NODES</span><br><span class="line"> /</span><br><span class="line">   nao_logger (naoqi_driver_py/naoqi_logger.py)</span><br><span class="line">   naoqi_joint_states (naoqi_driver_py/naoqi_joint_states.py)</span><br><span class="line">   naoqi_moveto (naoqi_driver_py/naoqi_moveto.py)</span><br><span class="line"></span><br><span class="line">ROS_MASTER_URI=http://localhost:11311</span><br><span class="line"></span><br><span class="line">core service [/rosout] found</span><br><span class="line">process[naoqi_joint_states-1]: started with pid [32526]</span><br><span class="line">process[naoqi_moveto-2]: started with pid [32527]</span><br><span class="line">process[nao_logger-3]: started with pid [32528]</span><br><span class="line">[INFO] [WallTime: 1481702387.495187] Connecting to NaoQi at 127.0.0.1:9559</span><br><span class="line">[I] 32527 qimessaging.session: Session listener created on tcp://0.0.0.0:0</span><br><span class="line">[I] 32527 qimessaging.transportserver: TransportServer will listen on: tcp://172.17.0.1:34320</span><br><span class="line">[I] 32527 qimessaging.transportserver: TransportServer will listen on: tcp://192.168.1.123:34320</span><br><span class="line">[I] 32527 qimessaging.transportserver: TransportServer will listen on: tcp://127.0.0.1:34320</span><br></pre></td></tr></table></figure>
 <p>至此，你就通过ros -&gt; naoqi_driver -&gt; virtual NAOqi 会话过程的建立，但是还没有可视化过程，下面我们将进行可视化。</p>
@@ -54,12 +54,12 @@ The core functionality is implemented in the <a href="http://wiki.ros.org/nao_ro
 <p>关闭所有的窗口，然后打开一个新的窗口，输入下面的指令</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">roslaunch nao_description display.launch</span><br></pre></td></tr></table></figure>
 <p>在左上角的“显示”窗口中，将“固定框架”更改为“/ base_link”。如果只有“/ map”选项可用，则不会从上一步加载URDF模型。<br>
-<img src="https://dn-mindcont.qbox.me/blog/images/ubuntu/ros/fixed-frame-base_link.jpg" alt=""></p>
+<img src="http://static.mindcont.com/blog/images/ubuntu/ros/fixed-frame-base_link.jpg" alt=""></p>
 <p>点击“添加”按钮并添加RobotModel</p>
-<p><img src="https://dn-mindcont.qbox.me/blog/images/ubuntu/ros/add-robot-model.png" alt=""></p>
+<p><img src="http://static.mindcont.com/blog/images/ubuntu/ros/add-robot-model.png" alt=""></p>
 <p>如果一切正常，你会看到一个机器人模型。通过调节右侧的滑块，机器人将做相应的动作。</p>
-<p><img src="https://dn-mindcont.qbox.me/blog/images/ubuntu/ros/naoqi-display.jpg" alt=""><br>
-<img src="https://dn-mindcont.qbox.me/blog/images/ubuntu/ros/turtlebot.jpg" alt=""></p>
+<p><img src="http://static.mindcont.com/blog/images/ubuntu/ros/naoqi-display.jpg" alt=""><br>
+<img src="http://static.mindcont.com/blog/images/ubuntu/ros/turtlebot.jpg" alt=""></p>
 <p>如果过程中遇到错误和问题，请参考下面的<a href="http://blog.mindcont.coms/2016/12/14/ros-naoqi-ubuntu/#%E5%8F%82%E8%80%83" target="_blank" rel="external">参考链接</a>。</p>
 <p>本文系作者原创，<strong>转载注明出处 <a href="http://blog.mindcont.com/2016/12/14/ros-naoqi-ubuntu/">http://blog.mindcont.com/2016/12/14/ros-naoqi-ubuntu/</a></strong></p>
 <h2 id="参考">参考</h2>
