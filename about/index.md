@@ -4,7 +4,7 @@ date: 2016-03-30 12:53:01
 comments: false
 ---
 <!-- 梦想起飞 -->
-![](http://static.mindcont.com/blog/images/ubuntu/raspberry.png)
+![](/images/ubuntu/raspberry.png)
 
 <!-- 迪士尼动画《带着梦想上路》 -->
 <!-- <embed height="415" width="544" quality="high" allowfullscreen="true" autostart=true type="application/x-shockwave-flash" src="//static.hdslb.com/miniloader.swf" flashvars="aid=9367297&page=1" pluginspage="//www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed> -->
@@ -12,32 +12,29 @@ comments: false
 
 ### 简介
 
-<!-- 歌单大
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="//music.163.com/outchain/player?type=0&id=403246303&auto=1&height=430"></iframe>
--->
+<!-- 我的歌单大 -->
+<!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="//music.163.com/outchain/player?type=0&id=403246303&auto=1&height=430"></iframe> -->
 
-<!-- 歌单小
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=110 src="//music.163.com/outchain/player?type=0&id=403246303&auto=1&height=90"></iframe>
--->
+<!-- 我的歌单小 -->
+<!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=110 src="//music.163.com/outchain/player?type=0&id=403246303&auto=1&height=90"></iframe> -->
 
-<!-- 一生所爱
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="http://music.163.com/outchain/player?type=2&id=32785700&auto=1&height=66"></iframe>
--->
+<!-- 一生所爱 -->
+<!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="http://music.163.com/outchain/player?type=2&id=32785700&auto=1&height=66"></iframe> -->
 
-<!-- 无地自容
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="http://music.163.com/outchain/player?type=2&id=357279&auto=1&height=66"></iframe>
--->
+<!-- 无地自容 -->
+<!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="http://music.163.com/outchain/player?type=2&id=357279&auto=1&height=66"></iframe> -->
 
-<!-- Come and Get Your Love
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="http://music.163.com/outchain/player?type=2&id=28864241&auto=1&height=66"></iframe>
--->
+<!-- Come and Get Your Love -->
+<!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="http://music.163.com/outchain/player?type=2&id=28864241&auto=1&height=66"></iframe> -->
 
-<!-- Take Me Home Country Roads
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="http://music.163.com/outchain/player?type=2&id=1477670&auto=1&height=66"></iframe>
--->
+<!-- Take Me Home Country Roads -->
+<!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="http://music.163.com/outchain/player?type=2&id=1477670&auto=1&height=66"></iframe> -->
 
 <!--醉拳 2017.6.13-->
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=95643&auto=1&height=66"></iframe>
+<!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=95643&auto=1&height=66"></iframe> -->
+
+<!-- 你在他乡还好吗 光头李进 -->
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=89973&auto=1&height=66"></iframe>
 
 一个恪守良知与底线的流浪诗人，
 一个思考人类最终命运与怀疑世界真实性的灵魂舞者，
@@ -53,7 +50,7 @@ comments: false
 
 <!--
 ### 技能树
-![](http://static.mindcont.com/blog/images/xuan.svg)
+![](http://static.mindcont.com/blog/images/resources/xuan_skills-tree.svg)
 -->
 
 ### 联系方式
@@ -66,12 +63,17 @@ comments: false
 <i class="fa fa-github" aria-hidden="true"></i> GitHub: [mindcont](https://github.com/mindcont)
 <i class="fa fa-twitter" aria-hidden="true"></i> Twitter: [張正軒](https://twitter.com/zhangzhengxuan)
 
-#### 正在维护的工作
+#### 正在维护
 <!-- <i class="fa fa-book" aria-hidden="true"></i> [ 人工智能 ](https://ai.mindcont.com)   -->
-<i class="fa fa-cloud" aria-hidden="true"></i> [ 共享文件 ](https://share.mindcont.com)  
 <!-- <i class="fa fa-android" aria-hidden="true"></i> [ 安卓入门教程](https://www.mindcont.com/training/index.html) -->
 
+<i class="fa fa-cloud" aria-hidden="true"></i> [ 共享文件 ](https://share.mindcont.com)  
+<i class="fa fa-gamepad" aria-hidden="true"> [ 2048 ](https://mindcont.com/2048)</i>
+<i class="fa fa-scissors" aria-hidden="true">[ clumsy-bird ](https://mindcont.com/clumsy-bird) </i>
 
-<!-- ### 打赏
-**如果您喜欢我的文章，请用支付宝扫一扫，支持我因购买服务器而带来的高额费用**
-<img src="/images/alipay.png" alt=" 主人，给我卖点狗粮吧！" width="256" height="256"> -->
+
+### 打赏
+如果您喜欢我的文章，**请用微信扫一扫**，支持我因购买服务器而带来的高额费用
+<!-- <img src="/images/resources/pay/alipay-com.png" alt=" 主人，给我卖点狗粮吧！" width="256" > -->
+
+<img src="/images/resources/pay/wechat.png" >

@@ -6,7 +6,7 @@ categories: 随笔日记
 ---
 背景：第五次反围剿失败，博古、李德失去了中央红军的控制力，在遵义会议后确定了周恩来、毛泽东同志的领导。
 
-![](http://static.mindcont.com/blog/images/The-Long-March_1.png)
+![](http://static.mindcont.com/blog/images/resources/The-Long-March_1.png)
 **恩来**：刚才伯承同志向政治局报告了有关的敌情，这说明敌人的主力虽然被我们吸引到了川滇黔边境，但是尚未构成包围之势，所以在这个紧要关头，请政治局讨论，决定我们红军下一步的行动方案。
 
 **伯承**：我们可否从敌人的动态当中得出这样的结论，我们原计划从扎西揮戈北进，出其不意的北渡长江的计划变成不可能了
@@ -24,10 +24,10 @@ categories: 随笔日记
 * 第一 敌人的主力，已经被我们调到了川、滇、黔三省交界处，**现在赤水河以东的黔北已经成为敌人最薄弱的地区**
 * 第二 我们可以利用敌人的错觉，以为红军要北渡长江，实际上我们突然挥师东进杀个回马枪，**从不利的战局中寻找有利的因素，变被动为主动**。换句话说 我们可以从消极避战变成主动调动敌人
 * 第三 在主动调敌的过程中，我们应该寻找有利战机，**集中优势兵力发扬我军"运动战"的特长**，去主动消灭敌人
-    
+
 来大家看，这里是遵义，这是娄山关 我们二渡赤水抢占娄山关之后，进逼遵义.....
 
 <i class="fa fa-video-camera" aria-hidden="true"></i>  http://v.youku.com/v_show/id_XMTE0MjQwNzM2.html
 
 ## 附：长征路线图
-![](http://static.mindcont.com/blog/images/The-Long-March_2.jpg)
+![](http://static.mindcont.com/blog/images/resources/The-Long-March_2.jpg)
