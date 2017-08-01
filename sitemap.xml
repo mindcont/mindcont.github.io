@@ -4,7 +4,21 @@
   <url>
     <loc>http://blog.mindcont.com/about/index.html</loc>
     
-    <lastmod>2017-07-28T11:39:49.668Z</lastmod>
+    <lastmod>2017-08-01T02:10:23.997Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/books/index.html</loc>
+    
+    <lastmod>2017-08-01T02:09:52.676Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/history/index.html</loc>
+    
+    <lastmod>2017-07-31T11:29:47.353Z</lastmod>
     
   </url>
   
@@ -33,13 +47,6 @@
     <loc>http://blog.mindcont.com/2017/02/15/caffe-guide-book/</loc>
     
     <lastmod>2017-07-28T10:33:19.546Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/history/index.html</loc>
-    
-    <lastmod>2017-07-28T08:44:35.620Z</lastmod>
     
   </url>
   
@@ -163,14 +170,14 @@
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/05/18/kinect-V2-with-matlab/</loc>
+    <loc>http://blog.mindcont.com/2016/04/15/kinect-unboxing/</loc>
     
     <lastmod>2017-07-27T10:10:28.305Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/04/15/kinect-unboxing/</loc>
+    <loc>http://blog.mindcont.com/2016/05/18/kinect-V2-with-matlab/</loc>
     
     <lastmod>2017-07-27T10:10:28.305Z</lastmod>
     
