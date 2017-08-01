@@ -11,7 +11,6 @@ comments: false
 
 
 ### 简介
-
 <!-- 我的歌单大 -->
 <!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="//music.163.com/outchain/player?type=0&id=403246303&auto=1&height=430"></iframe> -->
 
@@ -53,15 +52,22 @@ comments: false
 ![](http://static.mindcont.com/blog/images/resources/xuan_skills-tree.svg)
 -->
 
+
 ### 联系方式
+<iframe id="ghcard-mindcont-1" frameborder="0" scrolling="0" allowtransparency="true" src="http://lab.lepture.com/github-cards/cards/default.html?user=mindcont&amp;identity=ghcard-mindcont-5&amp;client_id=a11a1bda412d928fb39a&amp;client_secret=92b7cf30bc42c49d589a10372c3f9ff3bb310037" width="400" height="150" ></iframe>
+
+<div class="zhihu-card" data-userhash="apeindustry" data-width="400" data-height="150" data-key1="agree" data-key2="answer" data-key3="follower"></div>
+<script src="https://cdn.jsdelivr.net/zhihu-card/latest/widget.js"></script>
+
 <!-- <i class="fa fa-user" aria-hidden="true"></i> Nickname：bond
 <i class="fa fa-globe" aria-hidden="true"></i> Personal Homepage: [https://mindcont.com](https://mindcont.com)
 <i class="fa fa-envelope" aria-hidden="true"></i> Email：[bond@mindcont.com](mailto:bond@mindcont.com)
 <i class="fa fa-github" aria-hidden="true"></i> GitHub: [mindcont](https:/www.github.com/mindcont) -->
 
-<i class="fa fa-globe" aria-hidden="true"></i> Homepage: [https://mindcont.com](https://mindcont.com)
+<!-- <i class="fa fa-globe" aria-hidden="true"></i> Homepage: [https://mindcont.com](https://mindcont.com)
 <i class="fa fa-github" aria-hidden="true"></i> GitHub: [mindcont](https://github.com/mindcont)
-<i class="fa fa-twitter" aria-hidden="true"></i> Twitter: [張正軒](https://twitter.com/zhangzhengxuan)
+<i class="fa fa-twitter" aria-hidden="true"></i> Twitter: [張正軒](https://twitter.com/zhangzhengxuan) -->
+
 
 #### 正在维护
 <!-- <i class="fa fa-book" aria-hidden="true"></i> [ 人工智能 ](https://ai.mindcont.com)   -->
@@ -75,5 +81,4 @@ comments: false
 ### 打赏
 如果您喜欢我的文章，**请用微信扫一扫**，支持我因购买服务器而带来的高额费用
 <!-- <img src="/images/resources/pay/alipay-com.png" alt=" 主人，给我卖点狗粮吧！" width="256" > -->
-
 <img src="/images/resources/pay/wechat.png" >

@@ -18,4 +18,7 @@ comments: false
     <div class="timeline-item active">
         <div class="year">2017.2<span class="marker"><span class="dot"></span></span></div><div class="info">用机器学习的方法解决人体姿态估计问题</div>
     </div>
+    <div class="timeline-item active">
+        <div class="year">2017.7<span class="marker"><span class="dot"></span></span></div><div class="info">全栈成长之路</div>
+    </div>
 </div>
