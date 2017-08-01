@@ -12,9 +12,9 @@ comments: false
 
 ### 简介
 <!-- 我的歌单大 -->
-<!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="//music.163.com/outchain/player?type=0&id=403246303&auto=1&height=430"></iframe> -->
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="//music.163.com/outchain/player?type=0&id=403246303&auto=1&height=430"></iframe>
 
-<!-- 我的歌单小 -->
+<!-- 我的歌单小  -->
 <!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=110 src="//music.163.com/outchain/player?type=0&id=403246303&auto=1&height=90"></iframe> -->
 
 <!-- 一生所爱 -->
@@ -33,7 +33,7 @@ comments: false
 <!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=95643&auto=1&height=66"></iframe> -->
 
 <!-- 你在他乡还好吗 光头李进 -->
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=89973&auto=1&height=66"></iframe>
+<!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=89973&auto=1&height=66"></iframe> -->
 
 一个恪守良知与底线的流浪诗人，
 一个思考人类最终命运与怀疑世界真实性的灵魂舞者，
@@ -54,7 +54,7 @@ comments: false
 
 
 ### 联系方式
-<iframe id="ghcard-mindcont-1" frameborder="0" scrolling="0" allowtransparency="true" src="http://lab.lepture.com/github-cards/cards/default.html?user=mindcont&amp;identity=ghcard-mindcont-5&amp;client_id=a11a1bda412d928fb39a&amp;client_secret=92b7cf30bc42c49d589a10372c3f9ff3bb310037" width="400" height="150" ></iframe>
+<iframe id="ghcard-mindcont-1" frameborder="0" scrolling="0" allowtransparency="true" src="https://lab.lepture.com/github-cards/cards/default.html?user=mindcont&amp;identity=ghcard-mindcont-5&amp;client_id=a11a1bda412d928fb39a&amp;client_secret=92b7cf30bc42c49d589a10372c3f9ff3bb310037" width="400" height="150" ></iframe>
 
 <div class="zhihu-card" data-userhash="apeindustry" data-width="400" data-height="150" data-key1="agree" data-key2="answer" data-key3="follower"></div>
 <script src="https://cdn.jsdelivr.net/zhihu-card/latest/widget.js"></script>
