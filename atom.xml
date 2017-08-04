@@ -2490,7 +2490,7 @@ pooling的本质是一种局部特征的表达。max pooling的是用图像某�
     <link href="http://blog.mindcont.com/2016/08/06/run-yolo-demo/"/>
     <id>http://blog.mindcont.com/2016/08/06/run-yolo-demo/</id>
     <published>2016-08-06T11:24:00.000Z</published>
-    <updated>2017-07-27T11:08:00.855Z</updated>
+    <updated>2017-08-02T13:12:34.591Z</updated>
     
     <content type="html">&lt;p&gt;YOLO 是一个用来在VOC 2012 数据集上检测物体的框架。它可以检测 20 类物体：&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
@@ -2501,7 +2501,7 @@ pooling的本质是一种局部特征的表达。max pooling的是用图像某�
 &lt;li&gt;瓶，椅子，餐桌，盆花，沙发，电视/显示器&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;YOLO is joint work with &lt;a href=&quot;http://homes.cs.washington.edu/~santosh/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Santosh&lt;/a&gt;, &lt;a href=&quot;http://www.cs.berkeley.edu/~rbg/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Ross&lt;/a&gt;, and &lt;a href=&quot;http://homes.cs.washington.edu/~ali/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Ali&lt;/a&gt;, and is described in detail in our &lt;a href=&quot;http://arxiv.org/abs/1506.02640&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;paper&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;video src=&quot;http://static.mindcont.com/video/YOLO_Watches_Nature_Part_2.mp4&quot; controls=&quot;controls&quot; width=&quot;640px&quot; heigt=&quot;480px&quot; preload=&quot;none&quot; poster=&quot;/images/Object-Detection/Yolo/YOLO_Watches_Nature_Part_2.png&quot;&gt;&lt;/video&gt;&lt;/p&gt;
+&lt;p&gt;&lt;video src=&quot;http://static.mindcont.com/video/YOLO_Watches_Nature_Part_2.mp4&quot; controls=&quot;controls&quot; width=&quot;640px&quot; heigt=&quot;480px&quot; preload=&quot;none&quot; poster=&quot;http://static.mindcont.com/blog/images/object-detection/Yolo/YOLO_Watches_Nature_Part_2.png&quot;&gt;&lt;/video&gt;&lt;/p&gt;
 &lt;h2 id=&quot;安装-darknet&quot;&gt;安装 Darknet&lt;/h2&gt;
 &lt;h3 id=&quot;下载darknet&quot;&gt;下载Darknet&lt;/h3&gt;
 &lt;p&gt;同时按住 Alt + Ctrl + T ,打开命令行终端&lt;/p&gt;
