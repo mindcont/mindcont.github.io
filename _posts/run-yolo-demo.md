@@ -14,7 +14,7 @@ YOLO 是一个用来在VOC 2012 数据集上检测物体的框架。它可以检
 
 YOLO is joint work with [Santosh](http://homes.cs.washington.edu/~santosh/), [Ross](http://www.cs.berkeley.edu/~rbg/), and [Ali](http://homes.cs.washington.edu/~ali/), and is described in detail in our [paper](http://arxiv.org/abs/1506.02640).
 
-<video src="http://static.mindcont.com/video/YOLO_Watches_Nature_Part_2.mp4" controls="controls" width="640px" heigt="480px" preload="none" poster="/images/Object-Detection/Yolo/YOLO_Watches_Nature_Part_2.png"></video>
+<video src="http://static.mindcont.com/video/YOLO_Watches_Nature_Part_2.mp4" controls="controls" width="640px" heigt="480px" preload="none" poster="http://static.mindcont.com/blog/images/object-detection/Yolo/YOLO_Watches_Nature_Part_2.png"></video>
 
 ## 安装 Darknet  
 
