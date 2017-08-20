@@ -1907,16 +1907,19 @@ eth0是一块物理网卡。eth0.1 eth0.2都是从此设备上虚拟出来的。
     <link href="http://blog.mindcont.com/2016/10/27/ubuntu-necessary-install-software/"/>
     <id>http://blog.mindcont.com/2016/10/27/ubuntu-necessary-install-software/</id>
     <published>2016-10-27T01:47:28.000Z</published>
-    <updated>2017-07-27T10:10:28.382Z</updated>
+    <updated>2017-08-11T02:02:38.039Z</updated>
     
     <content type="html">&lt;p&gt;说linux，不得不从unix 发展历史和发行版本说起，由通用电气\AT&amp;amp;T\MIT 合作开发unix。在美苏冷战期间,美国国防部 ncp &amp;gt;tcp/ip 捆绑 unix 上。c 语言之父肯.汤普森 丹尼斯.里奇重写了unix 底层代码。&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;p&gt;UNIX发行版本&lt;/p&gt;
 &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;AIX 	IBM 	PowerPC&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;HP-UX 	HP 	PA-RISC&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Solaris sun	SPARC&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Linux	Red Hat ,ubuntu (Intel AMD)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;!--more--&gt;
-&lt;p&gt;LINUX 发展历史，由芬兰大学 Linux Torvalds 开源的软件，而芬兰 企鹅 logo 极地动物,象征开源。其发行版本&lt;br&gt;
+&lt;p&gt;LINUX 发展历史，由芬兰大学 Linux Torvalds 开源的软件，而芬兰 企鹅 logo 极地动物,象征开源。&lt;/p&gt;
+&lt;p&gt;Linux架构图&lt;br&gt;
+&lt;img src=&quot;http://static.mindcont.com/blog/images/ubuntu/linux_kernel.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;其发行版本&lt;br&gt;
 &lt;img src=&quot;http://static.mindcont.com/blog/images/ubuntu/linux.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;其各发行版的特点&lt;br&gt;
+&lt;p&gt;各发行版的特点&lt;br&gt;
 &lt;img src=&quot;http://static.mindcont.com/blog/images/ubuntu/linux-2.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Redhat&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      fedora 全功能版,不稳定&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      centos 社区维护版 新浪,网易 服务都采用的版本&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;红旗 Linux&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;suse 欧洲用的多&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;linux 系统的应用领域&lt;/p&gt;
