@@ -16,11 +16,17 @@ UNIX发行版本
 		Linux	Red Hat ,ubuntu (Intel AMD)
 ```
 <!--more-->
-LINUX 发展历史，由芬兰大学 Linux Torvalds 开源的软件，而芬兰 企鹅 logo 极地动物,象征开源。其发行版本
+LINUX 发展历史，由芬兰大学 Linux Torvalds 开源的软件，而芬兰 企鹅 logo 极地动物,象征开源。
+
+Linux架构图
+![](http://static.mindcont.com/blog/images/ubuntu/linux_kernel.jpg)
+
+其发行版本
 ![](http://static.mindcont.com/blog/images/ubuntu/linux.jpg)
 
-其各发行版的特点
+各发行版的特点
 ![](http://static.mindcont.com/blog/images/ubuntu/linux-2.jpg)
+
 ```
  Redhat
        fedora 全功能版,不稳定

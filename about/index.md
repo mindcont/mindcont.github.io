@@ -54,10 +54,13 @@ comments: false
 
 
 ### 联系方式
+<!-- github-cards -->
 <iframe id="ghcard-mindcont-1" frameborder="0" scrolling="0" allowtransparency="true" src="https://lab.lepture.com/github-cards/cards/default.html?user=mindcont&amp;identity=ghcard-mindcont-5&amp;client_id=a11a1bda412d928fb39a&amp;client_secret=92b7cf30bc42c49d589a10372c3f9ff3bb310037" width="400" height="150" ></iframe>
 
+<!-- zhihu-card -->
+<!--
 <div class="zhihu-card" data-userhash="apeindustry" data-width="400" data-height="150" data-key1="agree" data-key2="answer" data-key3="follower"></div>
-<script src="https://cdn.jsdelivr.net/zhihu-card/latest/widget.js"></script>
+<script src="https://cdn.jsdelivr.net/zhihu-card/latest/widget.js"></script> -->
 
 <!-- <i class="fa fa-user" aria-hidden="true"></i> Nickname：bond
 <i class="fa fa-globe" aria-hidden="true"></i> Personal Homepage: [https://mindcont.com](https://mindcont.com)
@@ -69,7 +72,7 @@ comments: false
 <i class="fa fa-twitter" aria-hidden="true"></i> Twitter: [張正軒](https://twitter.com/zhangzhengxuan) -->
 
 
-#### 正在维护
+### 正在维护
 <!-- <i class="fa fa-book" aria-hidden="true"></i> [ 人工智能 ](https://ai.mindcont.com)   -->
 <!-- <i class="fa fa-android" aria-hidden="true"></i> [ 安卓入门教程](https://www.mindcont.com/training/index.html) -->
 
