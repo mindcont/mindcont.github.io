@@ -1,12 +1,13 @@
 ---
-title: 星际迷航
+title:
 date: 2016-03-30 12:53:01
 comments: false
 ---
 <!-- 梦想起飞 -->
 <!-- ![](/images/ubuntu/raspberry.png) -->
 <!-- ![](http://www.pacq.gov.cn/uploads/allimg/170725/1-1FH5111000K1.png) -->
-![](/images/resources/cruiser_athabaska.jpg)
+<!-- ![](/images/resources/cruiser_athabaska.jpg) -->
+![](http://image12.m1905.cn/mapps/uploadfile/edu/2014/0925/2014092510594066002.jpg)
 
 <!-- 迪士尼动画《带着梦想上路》 -->
 <!-- <embed height="415" width="544" quality="high" allowfullscreen="true" autostart=true type="application/x-shockwave-flash" src="//static.hdslb.com/miniloader.swf" flashvars="aid=9367297&page=1" pluginspage="//www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed> -->
@@ -52,15 +53,27 @@ comments: false
 
 总的来说，应该是个好人吧！ -->
 
-<p style="font-size:18px"><span style="FONT-FAMILY: 楷体,楷体_GB2312, SimKai"> <br>前程浩浩，后顾茫茫。<br><br>红日初升，其道大光。河出伏流，一泻汪洋。潜龙腾渊，鳞爪飞扬。乳虎啸谷，百兽震惶。鹰隼试翼，风尘翕张。奇花初胎，矞矞皇皇。干将发硎，有作其芒。天戴其苍，地履其黄。纵有千古，横有八荒。前途似海，来日方长。</span></p>
+<!-- <p style="font-size:18px"><span style="FONT-FAMILY: 楷体,楷体_GB2312, SimKai"> <br>前程浩浩，后顾茫茫。<br><br>红日初升，其道大光。河出伏流，一泻汪洋。潜龙腾渊，鳞爪飞扬。乳虎啸谷，百兽震惶。鹰隼试翼，风尘翕张。奇花初胎，矞矞皇皇。干将发硎，有作其芒。天戴其苍，地履其黄。纵有千古，横有八荒。前途似海，来日方长。</span></p>
 
-<p style="TEXT-ALIGN: right "><br/><span style="FONT-FAMILY: 楷体,楷体_GB2312, SimKai">&mdash;&mdash;梁启超《少年中国说》节选</span></p>
+<p style="TEXT-ALIGN: right "><br/><span style="FONT-FAMILY: 楷体,楷体_GB2312, SimKai">&mdash;&mdash;梁启超《少年中国说》节选</span></p> -->
+<p style="font-size:18px"><span style="FONT-FAMILY: 楷体,楷体_GB2312, SimKai">
+<br>
+老友们常聊起他<br>
+他那些惊人之举<br>
+他走了  有时<br>
+令我感伤<br>
+有的鸟毕竟是关不住的<br>
+他们的羽翼太过光辉<br>
+当他们飞走时...<br>
+你会由衷庆贺他获得自由<br>
+无奈的是...<br>
+你得继续在这乏味之地苟活<br>
+我真怀念这位友伴啊<br></span></p>
 
 <!--
 ### 技能树
 ![](http://static.mindcont.com/blog/images/resources/xuan_skills-tree.svg)
 -->
-
 
 <!-- ### 联系方式 -->
 <!-- github-cards -->
