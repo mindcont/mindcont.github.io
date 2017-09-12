@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.mindcont.com/"/>
-  <updated>2017-09-09T08:55:50.825Z</updated>
+  <updated>2017-09-12T01:05:56.160Z</updated>
   <id>http://blog.mindcont.com/</id>
   
   <author>
@@ -16,24 +16,26 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>求职日记</title>
+    <title>求职笔记</title>
     <link href="http://blog.mindcont.com/2017/09/09/interview-diary/"/>
     <id>http://blog.mindcont.com/2017/09/09/interview-diary/</id>
     <published>2017-09-09T05:13:48.000Z</published>
-    <updated>2017-09-09T08:55:50.825Z</updated>
+    <updated>2017-09-12T01:05:56.160Z</updated>
     
     <content type="html">&lt;p&gt;&lt;img src=&quot;http://image12.m1905.cn/mapps/uploadfile/edu/2014/0925/2014092510594066002.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;!-- &lt;p style=&quot;font-size:18px&quot;&gt;&lt;span style=&quot;FONT-FAMILY: 楷体,楷体_GB2312, SimKai&quot;&gt; 每个人的大学都离不开求职，像肖申克的救赎一样，涤尽罪恶 在彼岸重生&lt;br&gt; 从学生时代进入工作和生活，妥协和屈服，迷茫和怅惘...&lt;br&gt; 这里将我在互联网企业求职过程和心得记录下来&lt;br&gt; 它将持续更新，直到我获得第一份正式工作为止&lt;/span&gt;&lt;/p&gt; --&gt;
 &lt;p&gt;每个人的大学都离不开求职，像肖申克的救赎一样，涤尽罪恶 在彼岸重生&lt;br&gt; 从学生时代进入工作和生活，&lt;br&gt;妥协和屈服，迷茫和怅惘…&lt;br&gt; 这里将我在互联网企业求职过程和心得记录下来&lt;br&gt; 它将持续更新，直到我获得第一份正式工作为止&lt;/p&gt;
 &lt;h2 id=&quot;认识自己&quot;&gt;认识自己&lt;/h2&gt;
-&lt;p&gt;认识自己（性格，技术/管理…），遵循内心，职业规划，&lt;br&gt;
-岗位&lt;/p&gt;
+&lt;p&gt;认识自己（性格，技术/管理/销售…），审视自己，遵循内心，自己值什么价，职业规划(前途，也就是未来生活和打算)&lt;br&gt;
+互联网企业有哪些岗位？&lt;br&gt;
+产品，前端，后端，运营，运维，销售&lt;/p&gt;
 &lt;h2 id=&quot;面试准备&quot;&gt;面试准备&lt;/h2&gt;
 &lt;p&gt;简历（一页，抓重点，扬长避短）&lt;br&gt;
 前端（html/css/js/框架/作品）&lt;br&gt;
-算法，数据结构，面试题&lt;br&gt;
-企业文化&lt;/p&gt;
+算法，数据结构，面试题 &lt;a href=&quot;https://www.nowcoder.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;刷题&lt;/a&gt;&lt;br&gt;
+企业文化（optional）&lt;/p&gt;
 &lt;h2 id=&quot;时间表&quot;&gt;时间表&lt;/h2&gt;
+&lt;p&gt;下面是几个往年都比较热门的企业校招时间节点，总得来说待遇氛围都不错，持续更新中，欢迎大家留意补充~&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -51,14 +53,14 @@
 &lt;td&gt;–&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;–&lt;/td&gt;
+&lt;td&gt;9月9日&lt;/td&gt;
 &lt;td&gt;联通&lt;/td&gt;
 &lt;td&gt;&lt;a href=&quot;http://chinaunicom2018.zhaopin.com/cl.html?=1105801&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;download&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;–&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;–&lt;/td&gt;
-&lt;td&gt;–&lt;/td&gt;
+&lt;td&gt;9月5号&lt;/td&gt;
+&lt;td&gt;中国中车&lt;/td&gt;
 &lt;td&gt;–&lt;/td&gt;
 &lt;td&gt;–&lt;/td&gt;
 &lt;/tr&gt;
@@ -77,6 +79,7 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id=&quot;面试心得&quot;&gt;面试心得&lt;/h2&gt;
+&lt;p&gt;图像处理算法工程师 &lt;a href=&quot;http://blog.csdn.net/u013360881/article/details/47609581&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;常用算法&lt;/a&gt; &lt;a href=&quot;http://blog.csdn.net/liuuze5/article/details/44247043&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;招聘要求&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;与君共勉&quot;&gt;与君共勉&lt;/h2&gt;
 &lt;p style=&quot;font-size:18px&quot;&gt;&lt;span style=&quot;FONT-FAMILY: 楷体,楷体_GB2312, SimKai&quot;&gt; &lt;br&gt;前程浩浩，后顾茫茫。&lt;br&gt;&lt;br&gt;红日初升，其道大光。河出伏流，一泻汪洋。潜龙腾渊，鳞爪飞扬。乳虎啸谷，百兽震惶。鹰隼试翼，风尘翕张。奇花初胎，矞矞皇皇。干将发硎，有作其芒。天戴其苍，地履其黄。纵有千古，横有八荒。前途似海，来日方长。&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;TEXT-ALIGN: right &quot;&gt;&lt;br&gt;&lt;span style=&quot;FONT-FAMILY: 楷体,楷体_GB2312, SimKai&quot;&gt;&amp;mdash;&amp;mdash;梁启超《少年中国说》节选&lt;/span&gt;&lt;/p&gt;
