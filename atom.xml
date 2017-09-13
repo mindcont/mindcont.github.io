@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.mindcont.com/"/>
-  <updated>2017-09-12T01:05:56.160Z</updated>
+  <updated>2017-09-13T02:28:12.510Z</updated>
   <id>http://blog.mindcont.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://blog.mindcont.com/2017/09/09/interview-diary/"/>
     <id>http://blog.mindcont.com/2017/09/09/interview-diary/</id>
     <published>2017-09-09T05:13:48.000Z</published>
-    <updated>2017-09-12T01:05:56.160Z</updated>
+    <updated>2017-09-13T02:28:12.510Z</updated>
     
     <content type="html">&lt;p&gt;&lt;img src=&quot;http://image12.m1905.cn/mapps/uploadfile/edu/2014/0925/2014092510594066002.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;!-- &lt;p style=&quot;font-size:18px&quot;&gt;&lt;span style=&quot;FONT-FAMILY: 楷体,楷体_GB2312, SimKai&quot;&gt; 每个人的大学都离不开求职，像肖申克的救赎一样，涤尽罪恶 在彼岸重生&lt;br&gt; 从学生时代进入工作和生活，妥协和屈服，迷茫和怅惘...&lt;br&gt; 这里将我在互联网企业求职过程和心得记录下来&lt;br&gt; 它将持续更新，直到我获得第一份正式工作为止&lt;/span&gt;&lt;/p&gt; --&gt;
@@ -30,10 +30,21 @@
 互联网企业有哪些岗位？&lt;br&gt;
 产品，前端，后端，运营，运维，销售&lt;/p&gt;
 &lt;h2 id=&quot;面试准备&quot;&gt;面试准备&lt;/h2&gt;
-&lt;p&gt;简历（一页，抓重点，扬长避短）&lt;br&gt;
-前端（html/css/js/框架/作品）&lt;br&gt;
-算法，数据结构，面试题 &lt;a href=&quot;https://www.nowcoder.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;刷题&lt;/a&gt;&lt;br&gt;
-企业文化（optional）&lt;/p&gt;
+&lt;p&gt;简历（一页，抓重点，扬长避短）&lt;a href=&quot;http://office.mmais.com.cn/List.shtml?cat=WORD&amp;amp;tag=13&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;模板&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;前端（html/css/js/框架/作品）&lt;/p&gt;
+&lt;p&gt;算法，数据结构，面试题 &lt;a href=&quot;https://www.nowcoder.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;牛客网刷题&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;排序 快速排序，冒泡排序，&lt;a href=&quot;http://bubkoo.com/2014/01/14/sort-algorithm/heap-sort/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;堆排序&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;链表 散列表&lt;/li&gt;
+&lt;li&gt;前序遍历，中序遍历，后续遍历 &lt;a href=&quot;http://blog.csdn.net/antineutrino/article/details/6763722&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;后缀表达式&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;c/c++ 多线程，java,ssh ,tomcat,nginx,github&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;企业文化&lt;/p&gt;
+&lt;h3 id=&quot;信息&quot;&gt;信息&lt;/h3&gt;
+&lt;p&gt;岗位&lt;br&gt;
+&lt;a href=&quot;https://www.lagou.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;拉钩网&lt;/a&gt;、各大企业校招平台、宣讲会，&lt;/p&gt;
+&lt;p&gt;面经，薪资，待遇&lt;br&gt;
+&lt;a href=&quot;&quot;&gt;看准网&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;时间表&quot;&gt;时间表&lt;/h2&gt;
 &lt;p&gt;下面是几个往年都比较热门的企业校招时间节点，总得来说待遇氛围都不错，持续更新中，欢迎大家留意补充~&lt;/p&gt;
 &lt;table&gt;
@@ -47,32 +58,80 @@
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
+&lt;td&gt;–&lt;/td&gt;
+&lt;td&gt;百度&lt;/td&gt;
+&lt;td&gt;–&lt;/td&gt;
+&lt;td&gt;–&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;–&lt;/td&gt;
+&lt;td&gt;阿里&lt;/td&gt;
+&lt;td&gt;–&lt;/td&gt;
+&lt;td&gt;–&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;–&lt;/td&gt;
+&lt;td&gt;腾讯&lt;/td&gt;
+&lt;td&gt;–&lt;/td&gt;
+&lt;td&gt;–&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;–&lt;/td&gt;
+&lt;td&gt;网易&lt;/td&gt;
+&lt;td&gt;–&lt;/td&gt;
+&lt;td&gt;–&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 &lt;td&gt;9月&lt;/td&gt;
 &lt;td&gt;华为&lt;/td&gt;
-&lt;td&gt;&lt;a href=&quot;http://career.huawei.com/reccampportal/campus4_index.html#campus4/pages/home/trainee.html?type=0&amp;faqtype=3&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;download&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://career.huawei.com/reccampportal/campus4_index.html#campus4/pages/home/trainee.html?type=0&amp;faqtype=3&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;校招&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;–&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;9月9日&lt;/td&gt;
 &lt;td&gt;联通&lt;/td&gt;
-&lt;td&gt;&lt;a href=&quot;http://chinaunicom2018.zhaopin.com/cl.html?=1105801&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;download&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://chinaunicom2018.zhaopin.com/cl.html?=1105801&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;校招&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;–&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;9月5号&lt;/td&gt;
 &lt;td&gt;中国中车&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://211.147.25.243/g17209.aspx&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;校招&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;–&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;–&lt;/td&gt;
+&lt;td&gt;海康威视&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://campus.hikvision.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;校招&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;–&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;–&lt;/td&gt;
+&lt;td&gt;浪潮&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://career.inspur.com/cwbase/web/recportal/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;校招&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;–&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;–&lt;/td&gt;
+&lt;td&gt;美团&lt;/td&gt;
 &lt;td&gt;–&lt;/td&gt;
 &lt;td&gt;–&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;–&lt;/td&gt;
-&lt;td&gt;–&lt;/td&gt;
+&lt;td&gt;饿了么&lt;/td&gt;
 &lt;td&gt;–&lt;/td&gt;
 &lt;td&gt;–&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;–&lt;/td&gt;
+&lt;td&gt;滴滴&lt;/td&gt;
 &lt;td&gt;–&lt;/td&gt;
+&lt;td&gt;–&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;–&lt;/td&gt;
+&lt;td&gt;ofo&lt;/td&gt;
 &lt;td&gt;–&lt;/td&gt;
 &lt;td&gt;–&lt;/td&gt;
 &lt;/tr&gt;
@@ -93,7 +152,7 @@
     
     </summary>
     
-      <category term="生活随笔" scheme="http://blog.mindcont.com/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
+      <category term="随笔日记" scheme="http://blog.mindcont.com/categories/%E9%9A%8F%E7%AC%94%E6%97%A5%E8%AE%B0/"/>
     
     
   </entry>
@@ -533,7 +592,7 @@ google +对问题描述英文的关键词&lt;br&gt;
     <link href="http://blog.mindcont.com/2017/02/15/caffe-guide-book/"/>
     <id>http://blog.mindcont.com/2017/02/15/caffe-guide-book/</id>
     <published>2017-02-15T08:22:46.000Z</published>
-    <updated>2017-07-28T10:33:19.546Z</updated>
+    <updated>2017-09-13T02:25:06.272Z</updated>
     
     <content type="html">&lt;p&gt;&lt;img src=&quot;/images/caffe/caffe.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
@@ -554,6 +613,7 @@ google +对问题描述英文的关键词&lt;br&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;a href=&quot;https://caffe2.ai/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Caffe2&lt;/a&gt; 一个新的轻量级，模块化和可扩展的深度学习框架，由 NVIDIA和Facebook团队重新打造并在&lt;a href=&quot;https://github.com/caffe2/caffe2&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;github&lt;/a&gt;上开源，Caffe2允许开发人员和研究人员创建大规模分布式训练场景和构建边缘设备机器学习应用。&lt;/p&gt;
 &lt;h2 id=&quot;入门篇&quot;&gt;入门篇&lt;/h2&gt;
+&lt;p&gt;推荐先阅读&lt;a href=&quot;http://www.cnblogs.com/mengfanrong/p/5169548.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;一文读懂机器学习&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;前期入门主要根据自己的机器（nvidia显卡）完成Caffe 的安装，运行 &lt;a href=&quot;http://caffe.berkeleyvision.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Caffe官网&lt;/a&gt;和  &lt;a href=&quot;https://github.com/bvlc/caffe&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;github&lt;/a&gt; repo 上的&lt;strong&gt;例程&lt;/strong&gt;。&lt;/p&gt;
 &lt;h3 id=&quot;安装&quot;&gt;安装&lt;/h3&gt;
 &lt;p&gt;安装请仔细阅读下面的中文教程，&lt;strong&gt;编译中遇到的错误&lt;/strong&gt;请在 github issues用英文仔细查看错误原因。而且大部分都是&lt;strong&gt;环境依赖，路径错误&lt;/strong&gt;。&lt;/p&gt;
