@@ -28,6 +28,8 @@ Caffe::set_mode(Caffe::GPU);
 [Caffe2](https://caffe2.ai/) 一个新的轻量级，模块化和可扩展的深度学习框架，由 NVIDIA和Facebook团队重新打造并在[github](https://github.com/caffe2/caffe2)上开源，Caffe2允许开发人员和研究人员创建大规模分布式训练场景和构建边缘设备机器学习应用。
 
 ## 入门篇
+推荐先阅读[一文读懂机器学习](http://www.cnblogs.com/mengfanrong/p/5169548.html)
+
 前期入门主要根据自己的机器（nvidia显卡）完成Caffe 的安装，运行 [Caffe官网](http://caffe.berkeleyvision.org/)和  [github](https://github.com/bvlc/caffe) repo 上的**例程**。
 ### 安装
 安装请仔细阅读下面的中文教程，**编译中遇到的错误**请在 github issues用英文仔细查看错误原因。而且大部分都是**环境依赖，路径错误**。

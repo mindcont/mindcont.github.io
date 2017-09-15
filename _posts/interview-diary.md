@@ -2,7 +2,7 @@
 title: 求职笔记
 date: 2017-09-09 13:13:48
 tags:
-categories: 生活随笔
+categories: 随笔日记
 toc: false
 ---
 
@@ -14,8 +14,12 @@ toc: false
 
 ## 认识自己
  认识自己（性格，技术/管理/销售...），审视自己，遵循内心，自己值什么价，职业规划(前途，也就是未来生活和打算)
- 互联网企业有哪些岗位？
- 产品，前端，后端，运营，运维，销售
+
+ 找准自己的优势和弱势
+
+ Q:互联网企业有哪些岗位？
+ A:产品，前端，后端，运营，运维，销售
+
 
 ## 面试准备
  简历（一页，抓重点，扬长避短）[模板](http://office.mmais.com.cn/List.shtml?cat=WORD&tag=13)
@@ -31,13 +35,21 @@ toc: false
 
 企业文化
 
-### 信息
+### 招聘信息
 
-岗位
-[拉钩网](https://www.lagou.com/)、各大企业校招平台、宣讲会，
+* 1 岗位信息
+      [拉钩网](https://www.lagou.com/)
+      [校园招聘](https://xiaoyuan.zhaopin.com/)
+      各大企业校招平台、宣讲会
 
-面经，薪资，待遇
-[看准网]()
+* 2 面经
+      薪资，待遇。 [看准网](http://www.kanzhun.com/)
+
+* 3 事业单位
+        公务员(国考/省考/选调生) 党员优先
+        铁路交通 （中车/中铁各单位）交通类院校优先
+        电信运营 （移动/联通/电信 各省分 县市 研究院）邮电类院校优先
+        教师医生 （教师资格证/高校教师、 辅导员）[高校人才网](http://www.gaoxiaojob.com/)
 
 ## 时间表
 下面是几个往年都比较热门的企业校招时间节点，总得来说待遇氛围都不错，持续更新中，欢迎大家留意补充~
@@ -50,9 +62,10 @@ toc: false
 |--|网易|--|--|
 |9月|华为|<a href="http://career.huawei.com/reccampportal/campus4_index.html#campus4/pages/home/trainee.html?type=0&faqtype=3">校招</a>|--|
 |9月9日|联通|<a href="http://chinaunicom2018.zhaopin.com/cl.html?=1105801">校招</a>|--|
-|9月5号|中国中车|<a href="http://211.147.25.243/g17209.aspx">校招</a>|--|
+|9月15号|中国中车|<a href="http://211.147.25.243/g17209.aspx">校招</a>|--|
 |--|海康威视|<a href="http://campus.hikvision.com">校招</a>|--|
 |--|浪潮|<a href="http://career.inspur.com/cwbase/web/recportal/index.html">校招</a>|--|
+|--|移动|<a href="http://special.zhaopin.com/2017/sh/zgyd091093w/scJob.html">校招</a>|--|
 |--|美团|--|--|
 |--|饿了么|--|--|
 |--|滴滴|--|--|
@@ -62,6 +75,8 @@ toc: false
 ## 面试心得
 图像处理算法工程师 [常用算法](http://blog.csdn.net/u013360881/article/details/47609581) [招聘要求](http://blog.csdn.net/liuuze5/article/details/44247043)
 
+就业协议书（三方，你，学校，用人单位）
+劳动合同（薪资待遇，合同年限，违约金）
 
 ## 与君共勉
 <p style="font-size:18px"><span style="FONT-FAMILY: 楷体,楷体_GB2312, SimKai"> <br>前程浩浩，后顾茫茫。<br><br>红日初升，其道大光。河出伏流，一泻汪洋。潜龙腾渊，鳞爪飞扬。乳虎啸谷，百兽震惶。鹰隼试翼，风尘翕张。奇花初胎，矞矞皇皇。干将发硎，有作其芒。天戴其苍，地履其黄。纵有千古，横有八荒。前途似海，来日方长。</span></p>
