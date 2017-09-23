@@ -143,20 +143,24 @@ Caffe::set_mode(Caffe::GPU);
 * [Andrej Karpathy - Stanford Computer Science Ph.D. student](http://cs.stanford.edu/people/karpathy/)
 * [Rodrigo Benenson](http://rodrigob.github.io/#code)
 
-单位
+单位和组织
+* [视觉与学习青年学者研讨会](http://www.valser.org/)
+* [历次活动录像下载地址](http://vision.ouc.edu.cn/valse/)
+* [CVPR](http://www.cv-foundation.org/openaccess/menu.py)
+* [深度学习大讲堂](https://zhuanlan.zhihu.com/dlclass)
+* [机器之心](https://www.jiqizhixin.com/)
+* [机器学习日报](https://memect.com/)
 * [Berkeley Computer Vision Group](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/)
 * [Stanford Vision Lab](http://vision.stanford.edu/)
 * [Princeton Vision & Robotics Labs](http://vision.princeton.edu/)
 * [Oxford - Information Engineering](http://www.robots.ox.ac.uk/~parg/home)
 * [Max Planck Institute for Intelligent Systems](https://ps.is.tuebingen.mpg.de/publications)
-
-组织和竞赛
 * [OpenAI](https://openai.com/blog/)
+
+竞赛
 * [kaggle](https://www.kaggle.com)
 * [阿里云天池](https://tianchi.aliyun.com/)
-* [机器之心](https://www.jiqizhixin.com/)
-* [机器学习日报](https://memect.com/)
-* [深度学习大讲堂](https://zhuanlan.zhihu.com/dlclass)
+
 
 ### 微调网络
 * [楼燚(yì)航的blog-Caffe fine-tuning 微调网络](http://www.cnblogs.com/louyihang-loves-baiyan/p/5038758.html)
