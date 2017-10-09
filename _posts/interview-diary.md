@@ -15,13 +15,13 @@ toc: false
 ## 认识自己
  认识自己（性格，技术/管理/销售...），审视自己，遵循内心，自己值什么价，职业规划(前途，也就是未来生活和打算)
 
- 找准自己的优势和弱势，找到自己熟悉的那个城市的生活方式，对你工作、生活有很大的帮助。
-
- Q:互联网企业有哪些岗位？
- A:产品，前端，后端，运营，运维，销售
+ 找准自己的优势和弱势，找到自己熟悉的那个城市的生活方式，适合自己的level，对你工作、生活有很大的帮助。
 
 [如何高效地找工作？](https://www.zhihu.com/question/20221715)
 [哪个求职网站（app）最靠谱？](https://www.zhihu.com/question/21383951)
+
+**Q**:互联网企业有哪些岗位？
+**A**:产品，前端，后端，运营，运维，销售
 
 ## 面试准备
  简历（一页，抓重点，扬长避短）[模板](http://office.mmais.com.cn/List.shtml?cat=WORD&tag=13)
@@ -35,7 +35,7 @@ toc: false
 * 前序遍历，中序遍历，后续遍历 [后缀表达式](http://blog.csdn.net/antineutrino/article/details/6763722)
 * c/c++ 多线程，java,ssh ,tomcat,nginx,github
 
-企业文化
+企业文化(**加分项**， 企业是做什么，主打什么)
 
 ### 招聘信息
 
@@ -48,34 +48,24 @@ toc: false
       薪资，待遇。 [看准网](http://www.kanzhun.com/)
 
 * 3 事业单位
-        公务员(国考/省考/选调生) 党员优先
-        铁路交通 （中车/中铁各单位）交通类院校优先
-        电信运营 （移动/联通/电信 各省分 县市 研究院）邮电类院校优先
-        教师医生 （教师资格证/高校教师、 辅导员）[高校人才网](http://www.gaoxiaojob.com/)
-        银行期货 （招商/中信）
+      公务员(国考/省考/选调生) 党员优先
+      铁路交通 （中车/中铁各单位）交通类院校优先
+      电信运营 （移动/联通/电信 各省分 县市 研究院）邮电类院校优先
+      教师医生 （教师资格证/高校教师、 辅导员）[高校人才网](http://www.gaoxiaojob.com/)
+      银行期货 （招商/中信）
 
 ## 时间表
 下面是几个往年都比较热门的企业校招时间节点，总得来说待遇氛围都不错，持续更新中，欢迎大家留意补充~
 
-|时间点|企业|网申网址|说明|
-|--|--|--|--|
-|--|百度|--|--|
-|--|阿里|--|--|
-|--|腾讯|--|--|
-|--|网易|--|--|
-|9月|华为|<a href="http://career.huawei.com/reccampportal/campus4_index.html#campus4/pages/home/trainee.html?type=0&faqtype=3">校招</a>|--|
-|9月9日|联通|<a href="http://chinaunicom2018.zhaopin.com/cl.html?=1105801">校招</a>|--|
-|9月15号|中国中车|<a href="http://211.147.25.243/g17209.aspx">校招</a>|--|
-|--|海康威视|<a href="http://campus.hikvision.com">校招</a>|--|
-|--|浪潮|<a href="http://career.inspur.com/cwbase/web/recportal/index.html">校招</a>|--|
-|--|移动|<a href="http://special.zhaopin.com/2017/sh/zgyd091093w/scJob.html">校招</a>|--|
-|--|国家电网|<a href="http://xjgc.zhaopin.com/">校招</a>|--|
-|--|招商银行|<a href="http://career.cmbchina.com/Campus/Campus.html">校招</a>|--|
-|--|上汽通用|<a href="http://sgm.zhiye.com/campusjobs">校招</a>|--|
-|--|美团|--|--|
-|--|饿了么|--|--|
-|--|滴滴|--|--|
-|--|ofo|--|--|
+* **[互联网巨头]** 百度、阿里、腾讯、谷歌、MSRA、亚马逊
+
+* **[衣食住行类]** 网易，美团，饿了么，滴滴，携程，摩拜，[中车](http://211.147.25.243/g17209.aspx),中铁各局，建工集团
+
+* **[通信和电力]** 小米，中兴,vivo,[华为](http://career.huawei.com/reccampportal/campus4_index.html#campus4/pages/home/trainee.html?type=0&faqtype=3),[移动](http://special.zhaopin.com/2017/sh/zgyd091093w/scJob.html)，电信，[联通](http://chinaunicom2018.zhaopin.com/cl.html?=1105801) [联通面经](http://wk.yingjiesheng.com/v-000-022-341.html) [国家电网](http://xjgc.zhaopin.com/)，[上汽通用](http://sgm.zhiye.com/campusjobs)，[浪潮](http://career.inspur.com/cwbase/web/recportal/index.html)
+
+* **[金融]** [招商银行](http://career.cmbchina.com/Campus/Campus.html),建设
+
+* **[软硬结合]** [海康威视](http://campus.hikvision.com)，大疆
 
 
 ## 面试心得
