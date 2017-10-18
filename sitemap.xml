@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.mindcont.com/2017/10/18/how-to-become-a-teacher/</loc>
+    
+    <lastmod>2017-10-18T08:48:37.500Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.mindcont.com/2017/09/09/interview-diary/</loc>
     
-    <lastmod>2017-10-09T07:15:23.975Z</lastmod>
+    <lastmod>2017-10-18T08:39:32.102Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/history/index.html</loc>
+    
+    <lastmod>2017-10-09T08:46:43.869Z</lastmod>
     
   </url>
   
@@ -40,13 +54,6 @@
     <loc>http://blog.mindcont.com/books/index.html</loc>
     
     <lastmod>2017-08-01T02:09:52.676Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/history/index.html</loc>
-    
-    <lastmod>2017-07-31T11:29:47.353Z</lastmod>
     
   </url>
   
@@ -135,14 +142,14 @@
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/11/13/ppa/</loc>
+    <loc>http://blog.mindcont.com/2016/05/05/raspberry-pi-excellent-project/</loc>
     
     <lastmod>2017-07-27T10:10:28.312Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/05/05/raspberry-pi-excellent-project/</loc>
+    <loc>http://blog.mindcont.com/2016/11/13/ppa/</loc>
     
     <lastmod>2017-07-27T10:10:28.312Z</lastmod>
     
@@ -233,14 +240,14 @@
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2017/02/22/some-advice-for-research-beginners/</loc>
+    <loc>http://blog.mindcont.com/2017/02/20/visual-cortex/</loc>
     
     <lastmod>2017-07-27T09:08:01.487Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2017/02/20/visual-cortex/</loc>
+    <loc>http://blog.mindcont.com/2017/02/22/some-advice-for-research-beginners/</loc>
     
     <lastmod>2017-07-27T09:08:01.487Z</lastmod>
     
@@ -254,14 +261,14 @@
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2017/02/16/my-review-2016/</loc>
+    <loc>http://blog.mindcont.com/2017/02/25/debug-android-win/</loc>
     
     <lastmod>2017-07-27T09:08:01.485Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2017/02/25/debug-android-win/</loc>
+    <loc>http://blog.mindcont.com/2017/02/16/my-review-2016/</loc>
     
     <lastmod>2017-07-27T09:08:01.485Z</lastmod>
     

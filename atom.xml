@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.mindcont.com/"/>
-  <updated>2017-10-09T07:15:23.975Z</updated>
+  <updated>2017-10-18T08:48:37.500Z</updated>
   <id>http://blog.mindcont.com/</id>
   
   <author>
@@ -16,11 +16,40 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>如何成为一名教师</title>
+    <link href="http://blog.mindcont.com/2017/10/18/how-to-become-a-teacher/"/>
+    <id>http://blog.mindcont.com/2017/10/18/how-to-become-a-teacher/</id>
+    <published>2017-10-18T08:02:36.000Z</published>
+    <updated>2017-10-18T08:48:37.500Z</updated>
+    
+    <content type="html">&lt;p style=&quot;font-size:18px&quot;&gt;&lt;span style=&quot;FONT-FAMILY: 楷体,楷体_GB2312, SimKai&quot;&gt;
+一位教师在教学中描述水循环的复杂过程时，这样讲述：“让我们展开想象的翅膀，跟踪水质点作一次循环旅行，那将是极其有趣的。&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;你可以想象你所喝的那杯水中的水质点，曾经在唐古拉山上的冰晶中闪烁，然后它奔入山中小溪、急流，随着小河水进入滔滔长江，汇入东海，来到太平洋，在广袤的大洋上游荡....... 在灼热的阳光下，它又从洋面蒸发到空中，开始周游世界——也许它出现在北京太空的彩虹里，赤道上空的雷雨中，西伯利亚的沼泽里，非洲的大瀑布中，吐鲁番的坎儿井里，南极洲的冰原上；也许它又从土壤中被吸收到甘蔗的枝叶里、纺锤树的躯干中、仙人掌的茎球中；也许它又摇身一变，成了骏马身上的汗珠、巨鲸喷射的水珠、鳄鱼流出的眼泪、草履虫体中的细胞液。你也可以想象它正在为人类做出贡献——流淌在水乡泽国的稻田上，沸腾在发电厂的锅炉里，或者病房的吊瓶中缓缓滴入病人的体内........通过这次漫游世界的追踪旅行，你完全可以体会到，地球表层几乎任何地方、任何时刻，都有水的踪迹，并且它们是处在永无休止的循环运动中的。”&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&quot;是否打算教书育人&quot;&gt;是否打算教书育人&lt;/h2&gt;
+&lt;p&gt;做一名中学教师，教书育人，甘于平凡与稳定，优点 每年寒暑假两个月带薪休假&lt;br&gt;
+自己适合当老师吗？&lt;br&gt;
+当老师需要哪些能力？&lt;/p&gt;
+&lt;p&gt;好的老师，知识点融会贯通，启迪心智，充满智慧&lt;/p&gt;
+&lt;h2 id=&quot;教师资格证考试&quot;&gt;教师资格证考试&lt;/h2&gt;
+&lt;p&gt;如何备考？考试流程？&lt;/p&gt;
+&lt;h2 id=&quot;考编制&quot;&gt;考编制&lt;/h2&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p style=&quot;font-size:18px&quot;&gt;&lt;span style=&quot;FONT-FAMILY: 楷体,楷体_GB2312, SimKai&quot;&gt;
+一位教师在教学中描述水循环的复杂过程时，这样讲述：“让我们展开想象的翅膀，跟踪水质点作一次循环旅行，那将是极其有趣的。
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>求职笔记</title>
     <link href="http://blog.mindcont.com/2017/09/09/interview-diary/"/>
     <id>http://blog.mindcont.com/2017/09/09/interview-diary/</id>
     <published>2017-09-09T05:13:48.000Z</published>
-    <updated>2017-10-09T07:15:23.975Z</updated>
+    <updated>2017-10-18T08:39:32.102Z</updated>
     
     <content type="html">&lt;p&gt;&lt;img src=&quot;http://image12.m1905.cn/mapps/uploadfile/edu/2014/0925/2014092510594066002.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;!-- &lt;p style=&quot;font-size:18px&quot;&gt;&lt;span style=&quot;FONT-FAMILY: 楷体,楷体_GB2312, SimKai&quot;&gt; 每个人的大学都离不开求职，像肖申克的救赎一样，涤尽罪恶 在彼岸重生&lt;br&gt; 从学生时代进入工作和生活，妥协和屈服，迷茫和怅惘...&lt;br&gt; 这里将我在互联网企业求职过程和心得记录下来&lt;br&gt; 它将持续更新，直到我获得第一份正式工作为止&lt;/span&gt;&lt;/p&gt; --&gt;
@@ -41,23 +70,24 @@
 &lt;li&gt;链表 散列表&lt;/li&gt;
 &lt;li&gt;前序遍历，中序遍历，后续遍历 &lt;a href=&quot;http://blog.csdn.net/antineutrino/article/details/6763722&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;后缀表达式&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;c/c++ 多线程，java,ssh ,tomcat,nginx,github&lt;/li&gt;
+&lt;li&gt;linux下编程，gcc,g++,cmake&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;企业文化(&lt;strong&gt;加分项&lt;/strong&gt;， 企业是做什么，主打什么)&lt;/p&gt;
 &lt;h3 id=&quot;招聘信息&quot;&gt;招聘信息&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;1 岗位信息&lt;br&gt;
-&lt;a href=&quot;https://www.lagou.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;拉钩网&lt;/a&gt;&lt;br&gt;
+&lt;li&gt;1 岗位信息&lt;br&gt;
 &lt;a href=&quot;https://xiaoyuan.zhaopin.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;校园招聘&lt;/a&gt;&lt;br&gt;
-各大企业校招平台、宣讲会&lt;/p&gt;
-&lt;/li&gt;
+各大企业校招平台、宣讲会&lt;br&gt;
+&lt;a href=&quot;https://www.lagou.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;拉钩网&lt;/a&gt; （这一块主要是社招）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;2 面经&lt;br&gt;
 薪资，待遇。 &lt;a href=&quot;http://www.kanzhun.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;看准网&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;3 事业单位&lt;br&gt;
-公务员(国考/省考/选调生) 党员优先&lt;br&gt;
+公务员 (国考/省考/选调生) 党员优先&lt;br&gt;
 铁路交通 （中车/中铁各单位）交通类院校优先&lt;br&gt;
 电信运营 （移动/联通/电信 各省分 县市 研究院）邮电类院校优先&lt;br&gt;
 教师医生 （教师资格证/高校教师、 辅导员）&lt;a href=&quot;http://www.gaoxiaojob.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;高校人才网&lt;/a&gt;&lt;br&gt;
@@ -65,7 +95,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&quot;时间表&quot;&gt;时间表&lt;/h2&gt;
-&lt;p&gt;下面是几个往年都比较热门的企业校招时间节点，总得来说待遇氛围都不错，持续更新中，欢迎大家留意补充~&lt;/p&gt;
+&lt;p&gt;下面是历年几个比较热门的企业目录，待遇氛围都很好，校招有“金九银十”之说，多去好大学宣讲会转，欢迎大家留意补充~&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;[互联网巨头]&lt;/strong&gt; 百度、阿里、腾讯、谷歌、MSRA、亚马逊&lt;/p&gt;
@@ -74,19 +104,25 @@
 &lt;p&gt;&lt;strong&gt;[衣食住行类]&lt;/strong&gt; 网易，美团，饿了么，滴滴，携程，摩拜，&lt;a href=&quot;http://211.147.25.243/g17209.aspx&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;中车&lt;/a&gt;,中铁各局，建工集团&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;[通信和电力]&lt;/strong&gt; 小米，中兴,vivo,&lt;a href=&quot;http://career.huawei.com/reccampportal/campus4_index.html#campus4/pages/home/trainee.html?type=0&amp;amp;faqtype=3&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;华为&lt;/a&gt;,&lt;a href=&quot;http://special.zhaopin.com/2017/sh/zgyd091093w/scJob.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;移动&lt;/a&gt;，电信，&lt;a href=&quot;http://chinaunicom2018.zhaopin.com/cl.html?=1105801&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;联通&lt;/a&gt; &lt;a href=&quot;http://wk.yingjiesheng.com/v-000-022-341.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;联通面经&lt;/a&gt; &lt;a href=&quot;http://xjgc.zhaopin.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;国家电网&lt;/a&gt;，&lt;a href=&quot;http://sgm.zhiye.com/campusjobs&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;上汽通用&lt;/a&gt;，&lt;a href=&quot;http://career.inspur.com/cwbase/web/recportal/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;浪潮&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;[通信和电力]&lt;/strong&gt; 小米，中兴,vivo,&lt;a href=&quot;http://career.huawei.com/reccampportal/campus4_index.html#campus4/pages/home/trainee.html?type=0&amp;amp;faqtype=3&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;华为&lt;/a&gt;,&lt;a href=&quot;http://special.zhaopin.com/2017/sh/zgyd091093w/scJob.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;移动&lt;/a&gt;，电信，&lt;a href=&quot;http://chinaunicom2018.zhaopin.com/cl.html?=1105801&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;联通&lt;/a&gt; &lt;a href=&quot;http://wk.yingjiesheng.com/v-000-022-341.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;联通面经&lt;/a&gt;， &lt;a href=&quot;http://xjgc.zhaopin.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;国家电网&lt;/a&gt;，&lt;a href=&quot;http://sgm.zhiye.com/campusjobs&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;上汽通用&lt;/a&gt;，&lt;a href=&quot;http://career.inspur.com/cwbase/web/recportal/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;浪潮&lt;/a&gt; （适合山东想回家的孩子）&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;[金融]&lt;/strong&gt; &lt;a href=&quot;http://career.cmbchina.com/Campus/Campus.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;招商银行&lt;/a&gt;,建设&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;[软硬结合]&lt;/strong&gt; &lt;a href=&quot;http://campus.hikvision.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;海康威视&lt;/a&gt;，大疆&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;[软硬结合]&lt;/strong&gt; &lt;a href=&quot;http://campus.hikvision.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;海康威视&lt;/a&gt;，大疆，联发科&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&quot;面试心得&quot;&gt;面试心得&lt;/h2&gt;
+&lt;p&gt;项目经验！！！&lt;br&gt;
+项目经验！！！&lt;br&gt;
+项目经验！！！&lt;br&gt;
+重要的事情说三遍，向HR阐述你具备这项工作的能力要求，你能带来的价值，还有就知道市场行情，自己能卖什么价。&lt;/p&gt;
 &lt;p&gt;图像处理算法工程师 &lt;a href=&quot;http://blog.csdn.net/u013360881/article/details/47609581&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;常用算法&lt;/a&gt; &lt;a href=&quot;http://blog.csdn.net/liuuze5/article/details/44247043&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;招聘要求&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;就业协议书（三方，你，学校，用人单位）&lt;br&gt;
-劳动合同（薪资待遇，合同年限，违约金）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;就业协议书（三方，你，学校，用人单位）&lt;/li&gt;
+&lt;li&gt;劳动合同（薪资待遇，合同年限，违约金）&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&quot;与君共勉&quot;&gt;与君共勉&lt;/h2&gt;
 &lt;p style=&quot;font-size:18px&quot;&gt;&lt;span style=&quot;FONT-FAMILY: 楷体,楷体_GB2312, SimKai&quot;&gt; &lt;br&gt;前程浩浩，后顾茫茫。&lt;br&gt;&lt;br&gt;红日初升，其道大光。河出伏流，一泻汪洋。潜龙腾渊，鳞爪飞扬。乳虎啸谷，百兽震惶。鹰隼试翼，风尘翕张。奇花初胎，矞矞皇皇。干将发硎，有作其芒。天戴其苍，地履其黄。纵有千古，横有八荒。前途似海，来日方长。&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;TEXT-ALIGN: right &quot;&gt;&lt;br&gt;&lt;span style=&quot;FONT-FAMILY: 楷体,楷体_GB2312, SimKai&quot;&gt;&amp;mdash;&amp;mdash;梁启超《少年中国说》节选&lt;/span&gt;&lt;/p&gt;
@@ -2578,95 +2614,6 @@ pooling的本质是一种局部特征的表达。max pooling的是用图像某�
     </summary>
     
       <category term="Linux" scheme="http://blog.mindcont.com/categories/Linux/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Ubuntu 14.04 运行 YOLO Demo 记录</title>
-    <link href="http://blog.mindcont.com/2016/08/06/run-yolo-demo/"/>
-    <id>http://blog.mindcont.com/2016/08/06/run-yolo-demo/</id>
-    <published>2016-08-06T11:24:00.000Z</published>
-    <updated>2017-08-02T13:12:34.591Z</updated>
-    
-    <content type="html">&lt;p&gt;YOLO 是一个用来在VOC 2012 数据集上检测物体的框架。它可以检测 20 类物体：&lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;人&lt;/li&gt;
-&lt;li&gt;鸟, 猫, 牛, 狗, 马, 羊&lt;/li&gt;
-&lt;li&gt;飞机, 自行车, 船, 公共汽车, 小汽车, 摩托车, 火车&lt;/li&gt;
-&lt;li&gt;瓶，椅子，餐桌，盆花，沙发，电视/显示器&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;YOLO is joint work with &lt;a href=&quot;http://homes.cs.washington.edu/~santosh/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Santosh&lt;/a&gt;, &lt;a href=&quot;http://www.cs.berkeley.edu/~rbg/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Ross&lt;/a&gt;, and &lt;a href=&quot;http://homes.cs.washington.edu/~ali/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Ali&lt;/a&gt;, and is described in detail in our &lt;a href=&quot;http://arxiv.org/abs/1506.02640&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;paper&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;video src=&quot;http://static.mindcont.com/video/YOLO_Watches_Nature_Part_2.mp4&quot; controls=&quot;controls&quot; width=&quot;640px&quot; heigt=&quot;480px&quot; preload=&quot;none&quot; poster=&quot;http://static.mindcont.com/blog/images/object-detection/Yolo/YOLO_Watches_Nature_Part_2.png&quot;&gt;&lt;/video&gt;&lt;/p&gt;
-&lt;h2 id=&quot;安装-darknet&quot;&gt;安装 Darknet&lt;/h2&gt;
-&lt;h3 id=&quot;下载darknet&quot;&gt;下载Darknet&lt;/h3&gt;
-&lt;p&gt;同时按住 Alt + Ctrl + T ,打开命令行终端&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git clone --recursive https://github.com/pjreddie/darknet.git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;cd darknet&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&quot;修改编译配置文件-makefile&quot;&gt;修改编译配置文件 Makefile&lt;/h3&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;gedit Makefile&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;根据你的情况进行修改，例如这里我将使用 GPU 和 cuDNN 进行加速计算，故将他们置为 1&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;GPU=1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;CUDNN=1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;OPENCV=1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;DEBUG=0&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# 根据你显卡的计算力确定架构。例如我的显卡是NVIDIA K2200, deviceQuery 是5.0  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ARCH= --gpu-architecture=compute_50 --gpu-code=compute_50&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;编译&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;make -j4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&quot;测试&quot;&gt;测试&lt;/h3&gt;
-&lt;p&gt;输入下面的指令进行测试Darknet 是否安装成功&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;./darknet  imtest data/eagle.jpg&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;如果看到下面的画面，恭喜你安装Darknet 成功！&lt;br&gt;
-&lt;img src=&quot;http://static.mindcont.com/blog/images/object-detection/Yolo/darknet_test.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;预测&quot;&gt;预测&lt;/h2&gt;
-&lt;h3 id=&quot;下载权值文件&quot;&gt;下载权值文件&lt;/h3&gt;
-&lt;p&gt;点击下面的网址，分别下载 大中小 三个模型对应已训练好的网络权值文件&lt;br&gt;
-&lt;a href=&quot;http://pjreddie.com/media/files/yolo.weights&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pjreddie.com/media/files/yolo.weights&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;http://pjreddie.com/media/files/yolo-small.weights&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pjreddie.com/media/files/yolo-small.weights&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;http://pjreddie.com/media/files/yolo-tiny.weights&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pjreddie.com/media/files/yolo-tiny.weights&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;然后放到darknet/weights目录下，然后在darknet根目录下输入下面的指令&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;./darknet yolo test cfg/yolo.cfg weights/yolo.weights data/dog.jpg&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;日志输出&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;39&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;0: Convolutional Layer: 448 x 448 x 3 image, 64 filters -&amp;gt; 224 x 224 x 64 image&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;1: Maxpool Layer: 224 x 224 x 64 image, 2 size, 2 stride&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2: Convolutional Layer: 112 x 112 x 64 image, 192 filters -&amp;gt; 112 x 112 x 192 image&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3: Maxpool Layer: 112 x 112 x 192 image, 2 size, 2 stride&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4: Convolutional Layer: 56 x 56 x 192 image, 128 filters -&amp;gt; 56 x 56 x 128 image&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5: Convolutional Layer: 56 x 56 x 128 image, 256 filters -&amp;gt; 56 x 56 x 256 image&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6: Convolutional Layer: 56 x 56 x 256 image, 256 filters -&amp;gt; 56 x 56 x 256 image&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7: Convolutional Layer: 56 x 56 x 256 image, 512 filters -&amp;gt; 56 x 56 x 512 image&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8: Maxpool Layer: 56 x 56 x 512 image, 2 size, 2 stride&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9: Convolutional Layer: 28 x 28 x 512 image, 256 filters -&amp;gt; 28 x 28 x 256 image&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10: Convolutional Layer: 28 x 28 x 256 image, 512 filters -&amp;gt; 28 x 28 x 512 image&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11: Convolutional Layer: 28 x 28 x 512 image, 256 filters -&amp;gt; 28 x 28 x 256 image&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12: Convolutional Layer: 28 x 28 x 256 image, 512 filters -&amp;gt; 28 x 28 x 512 image&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13: Convolutional Layer: 28 x 28 x 512 image, 256 filters -&amp;gt; 28 x 28 x 256 image&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14: Convolutional Layer: 28 x 28 x 256 image, 512 filters -&amp;gt; 28 x 28 x 512 image&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15: Convolutional Layer: 28 x 28 x 512 image, 256 filters -&amp;gt; 28 x 28 x 256 image&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16: Convolutional Layer: 28 x 28 x 256 image, 512 filters -&amp;gt; 28 x 28 x 512 image&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17: Convolutional Layer: 28 x 28 x 512 image, 512 filters -&amp;gt; 28 x 28 x 512 image&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18: Convolutional Layer: 28 x 28 x 512 image, 1024 filters -&amp;gt; 28 x 28 x 1024 image&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19: Maxpool Layer: 28 x 28 x 1024 image, 2 size, 2 stride&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20: Convolutional Layer: 14 x 14 x 1024 image, 512 filters -&amp;gt; 14 x 14 x 512 image&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21: Convolutional Layer: 14 x 14 x 512 image, 1024 filters -&amp;gt; 14 x 14 x 1024 image&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22: Convolutional Layer: 14 x 14 x 1024 image, 512 filters -&amp;gt; 14 x 14 x 512 image&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23: Convolutional Layer: 14 x 14 x 512 image, 1024 filters -&amp;gt; 14 x 14 x 1024 image&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24: Convolutional Layer: 14 x 14 x 1024 image, 1024 filters -&amp;gt; 14 x 14 x 1024 image&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25: Convolutional Layer: 14 x 14 x 1024 image, 1024 filters -&amp;gt; 7 x 7 x 1024 image&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26: Convolutional Layer: 7 x 7 x 1024 image, 1024 filters -&amp;gt; 7 x 7 x 1024 image&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27: Convolutional Layer: 7 x 7 x 1024 image, 1024 filters -&amp;gt; 7 x 7 x 1024 image&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28: Connected Layer: 50176 inputs, 4096 outputs&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29: Connected Layer: 4096 inputs, 1470 outputs&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30: Detection Layer&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;forced: Using default &amp;apos;0&amp;apos;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Loading weights from weights/yolo.weights...Done!&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;data/dog.jpg: Predicted in 0.170866 seconds.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;car: 51%&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;bicycle: 24%&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;dog: 25%&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;init done&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;opengl support available&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;img src=&quot;http://static.mindcont.com/blog/images/object-detection/Yolo/YOLO_predictions_out.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;多测试两张&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;./darknet yolo test cfg/yolo.cfg weights/yolo.weights data/person.jpg&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;img src=&quot;http://static.mindcont.com/blog/images/object-detection/Yolo/YOLO_person_prediction_out.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;./darknet yolo test cfg/yolo.cfg weights/yolo.weights data/horses.jpg&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;img src=&quot;http://static.mindcont.com/blog/images/object-detection/Yolo/YOLO_horses_prediction_out.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;实时检测&quot;&gt;实时检测&lt;/h3&gt;
-&lt;p&gt;运行这个Demo你需要编译 Darknet with CUDA and OpenCV. 你还需要选择 大中小 适当的模型和其对应的权值文件。通过 ls /dev/vi* 查看usb摄像头设备，如果输出video0则证明可用。&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;./darknet yolo demo cfg/yolo.cfg weights/yolo.weights&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;或者将一个小的待检测的视频文件，如test.mp4 放到darknet 根目录下&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;./darknet yolo demo cfg/yolo.cfg weights/yolo.weights test.mp4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;来实现对视频文件进行实时检测。&lt;/p&gt;
-&lt;h3 id=&quot;修改显示阈值&quot;&gt;修改显示阈值&lt;/h3&gt;
-&lt;p&gt;YOLO 默认只显示 置信率大于0.2 的预测，可以通过参数 -thresh 0 来制定显示置信率的范围&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;./darknet yolo test cfg/yolo.cfg weights/yolo.weights data/dog.jpg -thresh 0&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;img src=&quot;http://static.mindcont.com/blog/images/object-detection/Yolo/Screen_Shot_2015-08-14_at_11.42.02_AM.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;预测voc2012test数据集&quot;&gt;预测VOC2012test数据集&lt;/h3&gt;
-&lt;p&gt;点击下面的链接，下载VOC2012test数据集&lt;br&gt;
-&lt;a href=&quot;http://host.robots.ox.ac.uk:8080/eval/downloads/VOC2012test.tar&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://host.robots.ox.ac.uk:8080/eval/downloads/VOC2012test.tar&lt;/a&gt;&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;tar xf VOC2012test.tar&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;cp VOCdevkit/VOC2012/ImageSets/Main/test.txt .&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;生成图片文件的全路径&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sed &amp;apos;s?^?&amp;apos;`pwd`&amp;apos;/VOCdevkit/VOC2012/JPEGImages/?; s?$?.jpg?&amp;apos; test.txt &amp;gt; voc.2012.test&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;将测试文件路径复制到 darknet /data 目录下&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;mv voc.2012.test &amp;lt;path-to&amp;gt;/darknet/data&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;运行预测&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;./darknet yolo valid cfg/yolo.cfg weights/yolo.weights&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;img src=&quot;http://static.mindcont.com/blog/images/object-detection/Yolo/Yolo_vaild.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
-&lt;img src=&quot;http://static.mindcont.com/blog/images/object-detection/Yolo/Yolo_valid_finish.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;而结果在 /darknet/results/下，打开例如 comp4_det_test_bird.txt ，可以依次看到 图片名称，置信率，方框左上角和右下角的坐标&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;2008_000004 0.008654 0.000000 24.913101 363.373016 500.000000&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2008_000005 0.009914 312.701294 66.039398 386.487000 196.171997&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2008_000005 0.001622 332.917145 88.719940 395.596405 176.586151&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2008_000005 0.004571 333.134979 60.575203 423.763519 201.134369&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2008_000005 0.010197 410.791443 71.641754 485.329590 204.735779&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2008_000005 0.002316 419.207123 126.652931 475.495758 229.286133&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2008_000005 0.001054 268.657776 188.379456 387.683960 288.772614&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2008_000005 0.001442 253.524567 235.698074 394.108795 343.994049&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2008_000010 0.002900 34.902084 5.141296 378.781433 371.530365&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2008_000011 0.001770 88.507141 60.645809 251.819916 128.710754&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2008_000011 0.002937 208.442169 72.542442 356.038971 139.302185&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2008_000011 0.003189 15.292969 49.904770 209.187149 158.970016&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2008_000011 0.001175 350.284515 88.715370 441.157318 154.096954&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2008_000011 0.005729 352.224884 69.389618 479.886383 195.413666&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&quot;参考链接&quot;&gt;参考链接&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://pjreddie.com/darknet/yolo/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;YOLO: Real-Time Object Detection&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;YOLO 是一个用来在VOC 2012 数据集上检测物体的框架。它可以检测 20 类物体：&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="深度学习" scheme="http://blog.mindcont.com/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
     
   </entry>
