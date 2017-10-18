@@ -34,45 +34,54 @@ toc: false
 * 链表 散列表
 * 前序遍历，中序遍历，后续遍历 [后缀表达式](http://blog.csdn.net/antineutrino/article/details/6763722)
 * c/c++ 多线程，java,ssh ,tomcat,nginx,github
+* linux下编程，gcc,g++,cmake
 
 企业文化(**加分项**， 企业是做什么，主打什么)
 
 ### 招聘信息
 
 * 1 岗位信息
-      [拉钩网](https://www.lagou.com/)
       [校园招聘](https://xiaoyuan.zhaopin.com/)
       各大企业校招平台、宣讲会
+      [拉钩网](https://www.lagou.com/) （这一块主要是社招）
+
 
 * 2 面经
       薪资，待遇。 [看准网](http://www.kanzhun.com/)
 
 * 3 事业单位
-      公务员(国考/省考/选调生) 党员优先
+      公务员 (国考/省考/选调生) 党员优先
       铁路交通 （中车/中铁各单位）交通类院校优先
       电信运营 （移动/联通/电信 各省分 县市 研究院）邮电类院校优先
       教师医生 （教师资格证/高校教师、 辅导员）[高校人才网](http://www.gaoxiaojob.com/)
       银行期货 （招商/中信）
 
 ## 时间表
-下面是几个往年都比较热门的企业校招时间节点，总得来说待遇氛围都不错，持续更新中，欢迎大家留意补充~
+下面是历年几个比较热门的企业目录，待遇氛围都很好，校招有“金九银十”之说，多去好大学宣讲会转，欢迎大家留意补充~
 
 * **[互联网巨头]** 百度、阿里、腾讯、谷歌、MSRA、亚马逊
 
 * **[衣食住行类]** 网易，美团，饿了么，滴滴，携程，摩拜，[中车](http://211.147.25.243/g17209.aspx),中铁各局，建工集团
 
-* **[通信和电力]** 小米，中兴,vivo,[华为](http://career.huawei.com/reccampportal/campus4_index.html#campus4/pages/home/trainee.html?type=0&faqtype=3),[移动](http://special.zhaopin.com/2017/sh/zgyd091093w/scJob.html)，电信，[联通](http://chinaunicom2018.zhaopin.com/cl.html?=1105801) [联通面经](http://wk.yingjiesheng.com/v-000-022-341.html) [国家电网](http://xjgc.zhaopin.com/)，[上汽通用](http://sgm.zhiye.com/campusjobs)，[浪潮](http://career.inspur.com/cwbase/web/recportal/index.html)
+* **[通信和电力]** 小米，中兴,vivo,[华为](http://career.huawei.com/reccampportal/campus4_index.html#campus4/pages/home/trainee.html?type=0&faqtype=3),[移动](http://special.zhaopin.com/2017/sh/zgyd091093w/scJob.html)，电信，[联通](http://chinaunicom2018.zhaopin.com/cl.html?=1105801) [联通面经](http://wk.yingjiesheng.com/v-000-022-341.html)， [国家电网](http://xjgc.zhaopin.com/)，[上汽通用](http://sgm.zhiye.com/campusjobs)，[浪潮](http://career.inspur.com/cwbase/web/recportal/index.html) （适合山东想回家的孩子）
 
 * **[金融]** [招商银行](http://career.cmbchina.com/Campus/Campus.html),建设
 
-* **[软硬结合]** [海康威视](http://campus.hikvision.com)，大疆
+* **[软硬结合]** [海康威视](http://campus.hikvision.com)，大疆，联发科
 
 
 ## 面试心得
+
+项目经验！！！
+项目经验！！！
+项目经验！！！
+重要的事情说三遍，向HR阐述你具备这项工作的能力要求，你能带来的价值，还有就知道市场行情，自己能卖什么价。
+
+
 图像处理算法工程师 [常用算法](http://blog.csdn.net/u013360881/article/details/47609581) [招聘要求](http://blog.csdn.net/liuuze5/article/details/44247043)
 
-就业协议书（三方，你，学校，用人单位）
-劳动合同（薪资待遇，合同年限，违约金）
+* 就业协议书（三方，你，学校，用人单位）
+* 劳动合同（薪资待遇，合同年限，违约金）
 
 ## 与君共勉
 <p style="font-size:18px"><span style="FONT-FAMILY: 楷体,楷体_GB2312, SimKai"> <br>前程浩浩，后顾茫茫。<br><br>红日初升，其道大光。河出伏流，一泻汪洋。潜龙腾渊，鳞爪飞扬。乳虎啸谷，百兽震惶。鹰隼试翼，风尘翕张。奇花初胎，矞矞皇皇。干将发硎，有作其芒。天戴其苍，地履其黄。纵有千古，横有八荒。前途似海，来日方长。</span></p>
