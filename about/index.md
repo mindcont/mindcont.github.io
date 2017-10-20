@@ -21,7 +21,7 @@ comments: false
 <!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=110 src="//music.163.com/outchain/player?type=0&id=403246303&auto=1&height=90"></iframe> -->
 
 <!-- 黄河大道东 -->
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=5256036&auto=1&height=66"></iframe>
+<!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=5256036&auto=1&height=66"></iframe> -->
 
 <!-- 一生所爱 -->
 <!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="http://music.163.com/outchain/player?type=2&id=32785700&auto=1&height=66"></iframe> -->
@@ -36,7 +36,7 @@ comments: false
 <!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="http://music.163.com/outchain/player?type=2&id=1477670&auto=1&height=66"></iframe> -->
 
 <!--醉拳 2017.6.13-->
-<!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=95643&auto=1&height=66"></iframe> -->
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=95643&auto=1&height=66"></iframe>
 
 <!-- 你在他乡还好吗 光头李进 -->
 <!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=89973&auto=1&height=66"></iframe> -->
