@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.mindcont.com/"/>
-  <updated>2017-10-18T08:48:37.500Z</updated>
+  <updated>2017-10-20T13:17:11.448Z</updated>
   <id>http://blog.mindcont.com/</id>
   
   <author>
@@ -16,28 +16,50 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>如何成为一名教师</title>
-    <link href="http://blog.mindcont.com/2017/10/18/how-to-become-a-teacher/"/>
-    <id>http://blog.mindcont.com/2017/10/18/how-to-become-a-teacher/</id>
-    <published>2017-10-18T08:02:36.000Z</published>
-    <updated>2017-10-18T08:48:37.500Z</updated>
+    <title>我的影评</title>
+    <link href="http://blog.mindcont.com/2017/10/20/my-movie-review/"/>
+    <id>http://blog.mindcont.com/2017/10/20/my-movie-review/</id>
+    <published>2017-10-20T07:40:08.000Z</published>
+    <updated>2017-10-20T13:17:11.448Z</updated>
     
-    <content type="html">&lt;p style=&quot;font-size:18px&quot;&gt;&lt;span style=&quot;FONT-FAMILY: 楷体,楷体_GB2312, SimKai&quot;&gt;
-一位教师在教学中描述水循环的复杂过程时，这样讲述：“让我们展开想象的翅膀，跟踪水质点作一次循环旅行，那将是极其有趣的。&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;你可以想象你所喝的那杯水中的水质点，曾经在唐古拉山上的冰晶中闪烁，然后它奔入山中小溪、急流，随着小河水进入滔滔长江，汇入东海，来到太平洋，在广袤的大洋上游荡....... 在灼热的阳光下，它又从洋面蒸发到空中，开始周游世界——也许它出现在北京太空的彩虹里，赤道上空的雷雨中，西伯利亚的沼泽里，非洲的大瀑布中，吐鲁番的坎儿井里，南极洲的冰原上；也许它又从土壤中被吸收到甘蔗的枝叶里、纺锤树的躯干中、仙人掌的茎球中；也许它又摇身一变，成了骏马身上的汗珠、巨鲸喷射的水珠、鳄鱼流出的眼泪、草履虫体中的细胞液。你也可以想象它正在为人类做出贡献——流淌在水乡泽国的稻田上，沸腾在发电厂的锅炉里，或者病房的吊瓶中缓缓滴入病人的体内........通过这次漫游世界的追踪旅行，你完全可以体会到，地球表层几乎任何地方、任何时刻，都有水的踪迹，并且它们是处在永无休止的循环运动中的。”&lt;/span&gt;&lt;/p&gt;
-&lt;h2 id=&quot;是否打算教书育人&quot;&gt;是否打算教书育人&lt;/h2&gt;
-&lt;p&gt;做一名中学教师，教书育人，甘于平凡与稳定，优点 每年寒暑假两个月带薪休假&lt;br&gt;
-自己适合当老师吗？&lt;br&gt;
-当老师需要哪些能力？&lt;/p&gt;
-&lt;p&gt;好的老师，知识点融会贯通，启迪心智，充满智慧&lt;/p&gt;
-&lt;h2 id=&quot;教师资格证考试&quot;&gt;教师资格证考试&lt;/h2&gt;
-&lt;p&gt;如何备考？考试流程？&lt;/p&gt;
-&lt;h2 id=&quot;考编制&quot;&gt;考编制&lt;/h2&gt;
+    <content type="html">&lt;p&gt;电影，以蒙太奇的手法，围绕一段故事，几位人物，剪辑变换间带领观众进入情节，随着主人公一起进入方片时间，偷得浮生半日闲。一段光影一段人生。随着观影数量的增加，思考和视角也越深，这里将几部观后感记录下来。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;!-- ![](https://farm2.staticflickr.com/1485/26483308752_69ccab465f_z.jpg) --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css&quot; integrity=&quot;sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ&quot; crossorigin=&quot;anonymous&quot;&gt;
+&lt;script src=&quot;https://code.jquery.com/jquery-3.1.1.slim.min.js&quot; integrity=&quot;sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js&quot; integrity=&quot;sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js&quot; integrity=&quot;sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+&lt;h3 id=&quot;顺序不分先后&quot;&gt;顺序不分先后&lt;/h3&gt;
+&lt;p&gt;1、 《顽主》 1988年，葛优，张国立主演, &lt;a href=&quot;https://movie.douban.com/subject/1307690/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;豆瓣评分:8.3&lt;/a&gt;&lt;/p&gt;
+&lt;!-- &lt;img src=&quot;https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2363497441.webp&quot; width=&quot;135px&quot; align=&quot;left&quot;&gt; --&gt;
+&lt;!-- &lt;div style=&quot;FONT-FAMILY: 楷体,楷体_GB2312, SimKai; TEXT-ALIGN=&quot;right&quot;&gt;
+  &lt;img src=&quot;https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2363497441.webp&quot; width=&quot;135px&quot; align=&quot;left&quot;&gt;
+
+  &lt;p &gt;80年代太强悍：社会青年张嘴就是弗洛伊德尼采、扔一石头能砸中10个诗人、时装秀如意识形态大联欢；这么多年过去，社会的人际架构未变，一曲国产摇滚吼出的仍是心声，混混青年太可爱，能把叫兽玩死，“逻辑不对啊，你们应该痛苦”“可是我们不痛苦”，这种代沟和偏见至今无法消弭。&lt;/p&gt;
+&lt;/div&gt; --&gt;
+&lt;table style=&quot;FONT-FAMILY: 楷体,楷体_GB2312, SimKai; font-size=&quot; 20px&quot;&quot;=&quot;&quot;&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td class=&quot;align-baseline&quot;&gt; &lt;img src=&quot;https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2363497441.webp &quot; ;=&quot;&quot;&gt;&lt;/td&gt;
+      &lt;td class=&quot;align-middle&quot;&gt;该片于1988年上映，反映了改革开放那个年代下，各色人物涌入北京所带来的那种文化上的冲击，人们的彷徨，青年人的挣扎以及众生的忙忙碌碌；北京满大街的公共汽车，骑自行车的人们，社会青年张嘴就是弗洛伊德尼采、扔一石头能砸中10个诗人、时装秀如意识形态大联欢；这么多年过去，社会的人际架构未变，一曲国产摇滚吼出的仍是心声，混混青年太可爱，能把叫兽玩死，  “逻辑不对啊，你们应该痛苦”“可是我们不痛苦”，这种代沟和偏见至今无法消弭。&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;2、《牯岭街少年杀人事件》 1991，导演：杨德昌 主演：张震 &lt;a href=&quot;https://movie.douban.com/subject/1292329/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;豆瓣评分：8.7&lt;/a&gt;&lt;/p&gt;
+&lt;table style=&quot;FONT-FAMILY: 楷体,楷体_GB2312, SimKai; &quot;&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td class=&quot;align-baseline&quot;&gt; &lt;img src=&quot;https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p848381236.webp&quot; ;=&quot;&quot;&gt;&lt;/td&gt;
+      &lt;td class=&quot;align-middle&quot;&gt;民国三十八年前后，数百万的中国人随着国民政府退居台湾，绝大多数的这些人，只是为了一份安定的工作，为了下一代的一个安定成长环境。然而，在这下一代成长的过程里，却发现父母正生活在对前途的未知与惶恐中。这些少年，在这不安定的气氛里，往往以组织帮派来壮大自己幼小薄弱的生存意识。在那个特定的年代，从孩子到成人时代的一种过渡，面对成人世界的规则是否妥协与苟且，显而易见的是，多数人都选择了后者。&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;more … ，未完待续&lt;/p&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p style=&quot;font-size:18px&quot;&gt;&lt;span style=&quot;FONT-FAMILY: 楷体,楷体_GB2312, SimKai&quot;&gt;
-一位教师在教学中描述水循环的复杂过程时，这样讲述：“让我们展开想象的翅膀，跟踪水质点作一次循环旅行，那将是极其有趣的。
+      &lt;p&gt;电影，以蒙太奇的手法，围绕一段故事，几位人物，剪辑变换间带领观众进入情节，随着主人公一起进入方片时间，偷得浮生半日闲。一段光影一段人生。随着观影数量的增加，思考和视角也越深，这里将几部观后感记录下来。&lt;/p&gt;
     
     </summary>
     
