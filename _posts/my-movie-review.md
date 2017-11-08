@@ -45,4 +45,14 @@ categories:
   </tbody>
 </table>
 
+3、《刀》又名断刀客 1995，导演：徐克 主演：赵文卓 [豆瓣评分：7.9](https://movie.douban.com/subject/1401962/)
+<table style="FONT-FAMILY: 楷体,楷体_GB2312, SimKai; ">
+  <tbody>
+    <tr>
+      <td class="align-baseline"> <img src="http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2165557623.webp";></td>
+      <td class="align-middle">多情剑客与无情剑。<br>出来混就别耍花样，不想做买卖，就别坐这张桌子。江湖上的买卖，你只能占得了一时的便宜，对方总会有一天拿回他失去的东西。他若拿不回，他的后人也会去拿回。</td>
+      </tr>
+  </tbody>
+</table>
+
 more ..... ，未完待续

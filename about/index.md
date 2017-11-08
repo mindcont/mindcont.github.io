@@ -7,7 +7,8 @@ comments: false
 <!-- ![](/images/ubuntu/raspberry.png) -->
 <!-- ![](http://www.pacq.gov.cn/uploads/allimg/170725/1-1FH5111000K1.png) -->
 <!-- ![](/images/resources/cruiser_athabaska.jpg) -->
-![](http://image12.m1905.cn/mapps/uploadfile/edu/2014/0925/2014092510594066002.jpg)
+<!-- ![](http://image12.m1905.cn/mapps/uploadfile/edu/2014/0925/2014092510594066002.jpg) -->
+![](http://static.mindcont.com/blog/images/resources/mars_poster.jpg)
 
 <!-- 迪士尼动画《带着梦想上路》 -->
 <!-- <embed height="415" width="544" quality="high" allowfullscreen="true" autostart=true type="application/x-shockwave-flash" src="//static.hdslb.com/miniloader.swf" flashvars="aid=9367297&page=1" pluginspage="//www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed> -->
