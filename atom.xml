@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.mindcont.com/"/>
-  <updated>2017-10-20T13:17:11.448Z</updated>
+  <updated>2017-11-08T00:46:42.176Z</updated>
   <id>http://blog.mindcont.com/</id>
   
   <author>
@@ -16,11 +16,49 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>玩转微信公众号</title>
+    <link href="http://blog.mindcont.com/2017/11/07/have-fun-with-wechat-public-platform/"/>
+    <id>http://blog.mindcont.com/2017/11/07/have-fun-with-wechat-public-platform/</id>
+    <published>2017-11-07T01:42:56.000Z</published>
+    <updated>2017-11-08T00:46:42.176Z</updated>
+    
+    <content type="html">&lt;p&gt;再小的个体，也有自己的品牌。微信公众平台，给个人、企业和组织提供业务服务与用户管理能力的全新服务平台。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h3 id=&quot;大前提&quot;&gt;大前提&lt;/h3&gt;
+&lt;p style=&quot;font-size:20px&quot;&gt;&lt;span style=&quot;FONT-FAMILY: 楷体,楷体_GB2312, SimKai&quot;&gt;
+1 .微信的订阅号和服务号如何区分？
+&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://static.mindcont.com/blog/images/resources/wechat/wechat_public_platform-difference.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;span style=&quot;FONT-FAMILY: 楷体,楷体_GB2312, SimKai;font-size:14px&quot;&gt;
+1、订阅号：主要偏于为用户传达资讯（类似报纸杂志），认证前后都是每天只可以群发一条消息；&lt;br&gt;
+2、服务号：主要偏于服务交互（类似银行，114，提供服务查询），认证前后都是每个月可群发4条消息；&lt;br&gt;
+3、企业号：主要用于公司内部通讯使用，需要先验证身份才可以关注成功企业号。
+&lt;/span&gt;
+&lt;p style=&quot;font-size:20px&quot;&gt;&lt;span style=&quot;FONT-FAMILY: 楷体,楷体_GB2312, SimKai&quot;&gt;
+2 .如何学习微信公众平台开发？
+&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://static.mindcont.com/blog/images/resources/wechat/wechat_platform_principle.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;FONT-FAMILY: 楷体,楷体_GB2312, SimKai;font-size:18px&quot;&gt;运行原理，拿到用户请求，后台应用是我们服务器自定义的，而只不过是套了微信的服务器进行转发和过滤。&lt;br&gt;
+&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&quot;前提&quot;&gt;前提&lt;/h3&gt;
+&lt;p&gt;了解到上面的基础知识，我们开始申请自己的公众号，1，公众号定位（服务受众，咨询？技术？人生？企业品牌） 2，树立品牌意识，公众号名字&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;再小的个体，也有自己的品牌。微信公众平台，给个人、企业和组织提供业务服务与用户管理能力的全新服务平台。&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>我的影评</title>
     <link href="http://blog.mindcont.com/2017/10/20/my-movie-review/"/>
     <id>http://blog.mindcont.com/2017/10/20/my-movie-review/</id>
     <published>2017-10-20T07:40:08.000Z</published>
-    <updated>2017-10-20T13:17:11.448Z</updated>
+    <updated>2017-11-07T02:54:36.590Z</updated>
     
     <content type="html">&lt;p&gt;电影，以蒙太奇的手法，围绕一段故事，几位人物，剪辑变换间带领观众进入情节，随着主人公一起进入方片时间，偷得浮生半日闲。一段光影一段人生。随着观影数量的增加，思考和视角也越深，这里将几部观后感记录下来。&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
@@ -51,6 +89,15 @@
     &lt;tr&gt;
       &lt;td class=&quot;align-baseline&quot;&gt; &lt;img src=&quot;https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p848381236.webp&quot; ;=&quot;&quot;&gt;&lt;/td&gt;
       &lt;td class=&quot;align-middle&quot;&gt;民国三十八年前后，数百万的中国人随着国民政府退居台湾，绝大多数的这些人，只是为了一份安定的工作，为了下一代的一个安定成长环境。然而，在这下一代成长的过程里，却发现父母正生活在对前途的未知与惶恐中。这些少年，在这不安定的气氛里，往往以组织帮派来壮大自己幼小薄弱的生存意识。在那个特定的年代，从孩子到成人时代的一种过渡，面对成人世界的规则是否妥协与苟且，显而易见的是，多数人都选择了后者。&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;3、《刀》又名断刀客 1995，导演：徐克 主演：赵文卓 &lt;a href=&quot;https://movie.douban.com/subject/1401962/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;豆瓣评分：7.9&lt;/a&gt;&lt;/p&gt;
+&lt;table style=&quot;FONT-FAMILY: 楷体,楷体_GB2312, SimKai; &quot;&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td class=&quot;align-baseline&quot;&gt; &lt;img src=&quot;http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2165557623.webp&quot; ;=&quot;&quot;&gt;&lt;/td&gt;
+      &lt;td class=&quot;align-middle&quot;&gt;多情剑客与无情剑。&lt;br&gt;出来混就别耍花样，不想做买卖，就别坐这张桌子。江湖上的买卖，你只能占得了一时的便宜，对方总会有一天拿回他失去的东西。他若拿不回，他的后人也会去拿回。&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -2498,144 +2545,6 @@ pooling的本质是一种局部特征的表达。max pooling的是用图像某�
     </summary>
     
       <category term="深度学习" scheme="http://blog.mindcont.com/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Git 常用指令</title>
-    <link href="http://blog.mindcont.com/2016/08/18/git-commands/"/>
-    <id>http://blog.mindcont.com/2016/08/18/git-commands/</id>
-    <published>2016-08-18T13:08:09.000Z</published>
-    <updated>2017-07-27T10:10:28.290Z</updated>
-    
-    <content type="html">&lt;p&gt;Git 是由 Linux 之父 Linus Tovalds 为了更好地管理linux内核开发而创立的分布式版本控制／软件配置管理软件。简单来说，Git 是一个管理你的「代码的历史记录」的工具。&lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;p&gt;&lt;img src=&quot;http://static.mindcont.com/blog/images/github.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;安装&quot;&gt;安装&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;运行平台&lt;/th&gt;
-&lt;th&gt;环境&lt;/th&gt;
-&lt;th&gt;链接&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Microsoft Windows [版本 10.0.10240]&lt;/td&gt;
-&lt;td&gt;GitHub Desktop (3.1.1.4)&lt;/td&gt;
-&lt;td&gt;&lt;a href=&quot;https://desktop.github.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://desktop.github.com/&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Ubuntu [版本14.04]&lt;/td&gt;
-&lt;td&gt;GitKraken&lt;/td&gt;
-&lt;td&gt;&lt;a href=&quot;https://www.gitkraken.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.gitkraken.com/&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id=&quot;常用命令&quot;&gt;常用命令&lt;/h2&gt;
-&lt;h3 id=&quot;创建新仓库&quot;&gt;创建新仓库&lt;/h3&gt;
-&lt;p&gt;创建新文件夹，打开，然后执行&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git init&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;以创建新的 git 仓库。&lt;/p&gt;
-&lt;h3 id=&quot;拉取远程仓库&quot;&gt;拉取远程仓库&lt;/h3&gt;
-&lt;p&gt;执行如下命令以创建一个远程仓库的克隆版本：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git clone username@host:/path/to/repository&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;举个实例&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;cd /home/pi&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git clone https://github.com/mindcont/caffe.git&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&quot;工作流&quot;&gt;工作流&lt;/h3&gt;
-&lt;p&gt;你的本地仓库由 git 维护的三棵“树”组成。第一个是你的 &lt;strong&gt;工作目录&lt;/strong&gt;，它持有实际文件；第二个是 &lt;strong&gt;缓存区（Index）&lt;/strong&gt;，它像个缓存区域，临时保存你的改动；最后是 &lt;strong&gt;HEAD&lt;/strong&gt;，指向你最近一次提交后的结果。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://git-scm.com/images/about/index1@2x.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;添加与提交&quot;&gt;添加与提交&lt;/h3&gt;
-&lt;p&gt;你可以计划改动（把它们添加到缓存区），使用如下命令：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git add &amp;lt;filename&amp;gt; # 添加单个改动的文件&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git add * #添加多个改动的文件&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;这是 git 基本工作流程的第一步；使用如下命令以实际提交改动：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git commit -m &amp;quot;代码提交信息&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;现在，你的改动已经提交到了 HEAD，但是还没到你的远端仓库。执行如下命令以将这些改动提交到远端仓库：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git push origin master&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;可以把 master 换成你想要推送的任何分支&lt;br&gt;
-&lt;img src=&quot;https://git-scm.com/images/about/index2@2x.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;分支&quot;&gt;分支&lt;/h3&gt;
-&lt;p&gt;分支是用来将特性开发绝缘开来的。在你创建仓库的时候，master 是“默认的”。在其他分支上进行开发，完成后再将它们合并到主分支上。&lt;br&gt;
-&lt;img src=&quot;https://camo.githubusercontent.com/1db631d931f4a57a439deb5f747bfc0c3c1098b2/68747470733a2f2f7777772e61746c61737369616e2e636f6d2f6769742f696d616765732f7475746f7269616c732f636f6c6c61626f726174696e672f636f6d706172696e672d776f726b666c6f77732f676974666c6f772d776f726b666c6f772f30352e737667&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;创建一个叫做“feature_x”的分支，并切换过去：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git checkout -b feature_x&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;切换回主分支：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git checkout master&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;再把新建的分支删掉：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git branch -d feature_x&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;strong&gt;注意&lt;/strong&gt; 除非你将分支推送到远端仓库，不然该分支就是 不为他人所见的。&lt;/p&gt;
-&lt;h3 id=&quot;更新与合并&quot;&gt;更新与合并&lt;/h3&gt;
-&lt;p&gt;将你本地分支推送到远端仓库，执行：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git push origin &amp;lt;branch&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;要更新你的本地仓库至最新改动，执行：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git pull&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;以在你的工作目录中 获取（fetch） 并 合并（merge） 远端的改动。&lt;br&gt;
-要合并其他分支到你的当前分支（例如 master），执行：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git merge &amp;lt;branch&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;两种情况下，git 都会尝试去自动合并改动。不幸的是，自动合并并非次次都能成功，并可能导致 冲突（conflicts）。 这时候就需要你修改这些文件来人肉合并这些 冲突（conflicts） 了。改完之后，你需要执行如下命令以将它们标记为合并成功：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git add &amp;lt;filename&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;在合并改动之前，也可以使用如下命令查看：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git diff &amp;lt;source_branch&amp;gt; &amp;lt;target_branch&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;**如果你上面的都没看懂，恭喜你可以略过前面的章节，仅看下面的 **可视化操作 &lt;strong&gt;就可以了。&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&quot;可视化操作&quot;&gt;可视化操作&lt;/h2&gt;
-&lt;p&gt;这一部分仅推荐两个，Windows 平台下推荐使用 GitHub 官方的 GitHub Desktop ，泛 Linux 下推荐使用 GitKraken 。读者可能存有疑问为什么选择这两个作为推荐，因为我本人正在使用呀～～～～&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;软件&lt;/th&gt;
-&lt;th&gt;支持平台&lt;/th&gt;
-&lt;th&gt;截图&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;GitHub Desktop&lt;/td&gt;
-&lt;td&gt;Windows, Mac&lt;/td&gt;
-&lt;td&gt;&lt;img src=&quot;https://git-scm.com/images/guis/github-desktop@2x.png&quot; alt=&quot;&quot;&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;GitKraken&lt;/td&gt;
-&lt;td&gt;Windows, Mac, Linux&lt;/td&gt;
-&lt;td&gt;&lt;img src=&quot;https://git-scm.com/images/guis/git-kraken@2x.png&quot; alt=&quot;&quot;&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id=&quot;疑难杂症&quot;&gt;疑难杂症&lt;/h2&gt;
-&lt;h3 id=&quot;删除已同步到远程的commit&quot;&gt;删除已同步到远程的commit&lt;/h3&gt;
-&lt;p&gt;经常往GitHub上提交修改的代码，会导致提交次数很多；又或者提交了某些不应该提交测试数据，那麽我们应该如何删除这些提交记录呢？&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;## 1、启动 git shell, 切换到项目所在的空间&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;cd&lt;/span&gt; c://github/android/rubikrobot   &lt;span class=&quot;comment&quot;&gt;#例如项目位于C://GitHub/Android/RubikRobot 目录下&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;## 2、查看当前提交记录，输入 q退出日志&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git &lt;span class=&quot;built_in&quot;&gt;log&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;## 3、使用git reset 进行撤销操作&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git reset --hard HEAD~2                   &lt;span class=&quot;comment&quot;&gt;# 取消当前版本之前的两次提交  &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git push origin HEAD --force              &lt;span class=&quot;comment&quot;&gt;# 强制提交到远程版本库，从而删除之前的两次提交数据&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&quot;保持fork的同步&quot;&gt;保持Fork的同步&lt;/h3&gt;
-&lt;p&gt;在原始Repo有新的commit后，Fork的Repo不会自动与原分支同步。&lt;/p&gt;
-&lt;p&gt;前置条件&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;已Fork&lt;/li&gt;
-&lt;li&gt;已在本地clone了Fork&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;步骤&lt;/p&gt;
-&lt;p&gt;进入命令行，进入本地Repo目录&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;# 添加远程分支(仅第一次)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;remote add upstream https://github.com/akfish/MwCG.git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# 取回远程分支&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git fetch upstream&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;合并(以更新本地Dev分支为例)&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git checkout Dev&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git merge upstream/Dev&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;把同步后的分支push到GitHub的remote repo上（可选）&lt;/p&gt;
-&lt;h2 id=&quot;参考链接&quot;&gt;参考链接&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://git-scm.com/book/zh/v2&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;git - 指南&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://git-scm.com/download/gui/linux&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GUI Clients&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://git-scm.com/book/zh/v1/Git-%E5%88%86%E6%94%AF-%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Git 分支 - 远程分支&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://git-scm.com/book/zh/v1/Git-%E5%9F%BA%E7%A1%80-%E6%92%A4%E6%B6%88%E6%93%8D%E4%BD%9C&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;了解更多关于git 操作&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/akfish/MwCG/wiki/%E4%BB%BB%E5%8A%A1%EF%BC%9A%E4%BF%9D%E6%8C%81Fork%E7%9A%84%E5%90%8C%E6%AD%A5&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;保持Fork的同步&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Git 是由 Linux 之父 Linus Tovalds 为了更好地管理linux内核开发而创立的分布式版本控制／软件配置管理软件。简单来说，Git 是一个管理你的「代码的历史记录」的工具。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Linux" scheme="http://blog.mindcont.com/categories/Linux/"/>
     
     
   </entry>

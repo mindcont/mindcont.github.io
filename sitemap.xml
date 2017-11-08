@@ -2,9 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.mindcont.com/2017/11/07/have-fun-with-wechat-public-platform/</loc>
+    
+    <lastmod>2017-11-08T00:46:42.176Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.mindcont.com/2017/10/20/my-movie-review/</loc>
     
-    <lastmod>2017-10-20T13:17:11.448Z</lastmod>
+    <lastmod>2017-11-07T02:54:36.590Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/05/13/open-source-computer-vision/</loc>
+    
+    <lastmod>2017-11-07T02:18:42.031Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/about/index.html</loc>
+    
+    <lastmod>2017-11-07T02:17:05.740Z</lastmod>
     
   </url>
   
@@ -12,13 +33,6 @@
     <loc>http://blog.mindcont.com/books/index.html</loc>
     
     <lastmod>2017-10-20T08:32:36.808Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/about/index.html</loc>
-    
-    <lastmod>2017-10-20T08:20:13.754Z</lastmod>
     
   </url>
   
@@ -65,14 +79,14 @@
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/12/14/ros-naoqi-ubuntu/</loc>
+    <loc>http://blog.mindcont.com/2016/12/14/naoqi-robot-sdk-ubuntu/</loc>
     
     <lastmod>2017-07-28T10:43:12.318Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/12/14/naoqi-robot-sdk-ubuntu/</loc>
+    <loc>http://blog.mindcont.com/2016/12/14/ros-naoqi-ubuntu/</loc>
     
     <lastmod>2017-07-28T10:43:12.318Z</lastmod>
     
@@ -117,13 +131,6 @@
     <loc>http://blog.mindcont.com/2016/07/20/ubuntu1404-caffe-r3-cuda7-5-mkl/</loc>
     
     <lastmod>2017-07-27T10:10:28.384Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/05/13/open-source-computer-vision/</loc>
-    
-    <lastmod>2017-07-27T10:10:28.383Z</lastmod>
     
   </url>
   
@@ -184,14 +191,14 @@
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/04/15/kinect-unboxing/</loc>
+    <loc>http://blog.mindcont.com/2016/05/18/kinect-V2-with-matlab/</loc>
     
     <lastmod>2017-07-27T10:10:28.305Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/05/18/kinect-V2-with-matlab/</loc>
+    <loc>http://blog.mindcont.com/2016/04/15/kinect-unboxing/</loc>
     
     <lastmod>2017-07-27T10:10:28.305Z</lastmod>
     
