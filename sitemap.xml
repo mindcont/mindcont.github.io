@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://blog.mindcont.com/2017/11/07/have-fun-with-wechat-public-platform/</loc>
+    <loc>http://blog.mindcont.com/about/index.html</loc>
     
-    <lastmod>2017-11-08T00:46:42.176Z</lastmod>
+    <lastmod>2017-12-03T13:37:11.176Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/about/donate.html</loc>
+    
+    <lastmod>2017-12-03T13:12:06.616Z</lastmod>
     
   </url>
   
@@ -19,13 +26,6 @@
     <loc>http://blog.mindcont.com/2016/05/13/open-source-computer-vision/</loc>
     
     <lastmod>2017-11-07T02:18:42.031Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/about/index.html</loc>
-    
-    <lastmod>2017-11-07T02:17:05.740Z</lastmod>
     
   </url>
   
@@ -79,14 +79,14 @@
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/12/14/naoqi-robot-sdk-ubuntu/</loc>
+    <loc>http://blog.mindcont.com/2016/12/14/ros-naoqi-ubuntu/</loc>
     
     <lastmod>2017-07-28T10:43:12.318Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/12/14/ros-naoqi-ubuntu/</loc>
+    <loc>http://blog.mindcont.com/2016/12/14/naoqi-robot-sdk-ubuntu/</loc>
     
     <lastmod>2017-07-28T10:43:12.318Z</lastmod>
     
@@ -268,14 +268,14 @@
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2017/02/25/debug-android-win/</loc>
+    <loc>http://blog.mindcont.com/2017/02/16/my-review-2016/</loc>
     
     <lastmod>2017-07-27T09:08:01.485Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2017/02/16/my-review-2016/</loc>
+    <loc>http://blog.mindcont.com/2017/02/25/debug-android-win/</loc>
     
     <lastmod>2017-07-27T09:08:01.485Z</lastmod>
     
