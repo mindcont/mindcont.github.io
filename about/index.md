@@ -37,10 +37,10 @@ comments: false
 <!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="http://music.163.com/outchain/player?type=2&id=1477670&auto=1&height=66"></iframe> -->
 
 <!--醉拳 2017.6.13-->
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=95643&auto=1&height=66"></iframe>
+<!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=95643&auto=1&height=66"></iframe> -->
 
 <!-- 你在他乡还好吗 光头李进 -->
-<!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=89973&auto=1&height=66"></iframe> -->
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=89973&auto=1&height=66"></iframe>
 
 <!-- 一个恪守良知与底线的流浪诗人，
 一个思考人类最终命运与怀疑世界真实性的灵魂舞者，
@@ -101,10 +101,16 @@ comments: false
 
 <i class="fa fa-cloud" aria-hidden="true"></i> [ 共享文件 ](https://share.mindcont.com)  
 <i class="fa fa-gamepad" aria-hidden="true"> [ 2048 ](https://mindcont.com/games/2048)</i>
-<i class="fa fa-scissors" aria-hidden="true">[ clumsy-bird ](https://mindcont.com/games/clumsy-bird) </i>
+<i class="fa fa-money" aria-hidden="true">[ 捕鱼达人 ](https://mindcont.com/games/fish)</i>
+<i class="fa fa-delicious" aria-hidden="true">[ 俄罗斯方块 ](https://mindcont.com/games/tetris)</i>
+<!-- <i class="fa fa-scissors" aria-hidden="true">[ clumsy-bird ](https://mindcont.com/games/clumsy-bird) </i> -->
 
+
+如果您对于本站有好的想法和建议，随时欢迎您<a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=bond@mindcont.com" style="text-decoration:none;">给我写信</a> ~
 
 ### 打赏
-如果您喜欢我的文章，**请用微信扫一扫**，支持我因购买服务器而带来的高额费用
-<!-- <img src="/images/resources/pay/alipay-com.png" alt=" 主人，给我卖点狗粮吧！" width="256" > -->
-<img src="/images/resources/pay/wechat.png" >
+如果您喜欢我的文章，请用**微信扫一扫**，支持我更好的创作。
+赞赏时，请备注您的**姓名或昵称**和赞赏留言（可选），以便我在[捐赠](http://blog.mindcont.com//about/donate.html)页面中对您表示感谢。
+
+<!-- <img src="/images/resources/pay/alipay.jpg" alt=" 主人，给我卖点狗粮吧！" width="256" > -->
+<img src="/images/resources/pay/wechat.png" width="256">
