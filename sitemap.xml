@@ -2,16 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://blog.mindcont.com/about/index.html</loc>
+    <loc>http://blog.mindcont.com/2016/06/06/chinese-college-entrance-examination/</loc>
     
-    <lastmod>2017-12-03T13:37:11.176Z</lastmod>
+    <lastmod>2017-12-05T01:45:22.101Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/12/26/nginx-proxy-lan/</loc>
+    
+    <lastmod>2017-12-05T01:43:58.777Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2017/02/16/my-review-2016/</loc>
+    
+    <lastmod>2017-12-05T01:43:34.127Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2017/02/22/some-advice-for-research-beginners/</loc>
+    
+    <lastmod>2017-12-05T01:43:22.487Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2017/02/25/debug-android-win/</loc>
+    
+    <lastmod>2017-12-05T01:42:35.979Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/history/index.html</loc>
+    
+    <lastmod>2017-12-05T01:35:17.792Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://blog.mindcont.com/about/donate.html</loc>
     
-    <lastmod>2017-12-03T13:12:06.616Z</lastmod>
+    <lastmod>2017-12-05T01:21:15.372Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/about/index.html</loc>
+    
+    <lastmod>2017-12-05T00:48:47.496Z</lastmod>
     
   </url>
   
@@ -40,13 +82,6 @@
     <loc>http://blog.mindcont.com/2017/09/09/interview-diary/</loc>
     
     <lastmod>2017-10-18T08:39:32.102Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/history/index.html</loc>
-    
-    <lastmod>2017-10-09T08:46:43.869Z</lastmod>
     
   </url>
   
@@ -191,14 +226,14 @@
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/05/18/kinect-V2-with-matlab/</loc>
+    <loc>http://blog.mindcont.com/2016/04/15/kinect-unboxing/</loc>
     
     <lastmod>2017-07-27T10:10:28.305Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/04/15/kinect-unboxing/</loc>
+    <loc>http://blog.mindcont.com/2016/05/18/kinect-V2-with-matlab/</loc>
     
     <lastmod>2017-07-27T10:10:28.305Z</lastmod>
     
@@ -247,37 +282,9 @@
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2017/02/22/some-advice-for-research-beginners/</loc>
-    
-    <lastmod>2017-07-27T09:08:01.487Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://blog.mindcont.com/2017/02/20/visual-cortex/</loc>
     
     <lastmod>2017-07-27T09:08:01.487Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/12/26/nginx-proxy-lan/</loc>
-    
-    <lastmod>2017-07-27T09:08:01.486Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2017/02/16/my-review-2016/</loc>
-    
-    <lastmod>2017-07-27T09:08:01.485Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2017/02/25/debug-android-win/</loc>
-    
-    <lastmod>2017-07-27T09:08:01.485Z</lastmod>
     
   </url>
   
@@ -299,13 +306,6 @@
     <loc>http://blog.mindcont.com/2016/06/29/website-under-attack/</loc>
     
     <lastmod>2016-06-29T08:54:18.380Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/06/06/chinese-college-entrance-examination/</loc>
-    
-    <lastmod>2016-06-07T09:01:14.522Z</lastmod>
     
   </url>
   
