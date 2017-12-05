@@ -14,11 +14,17 @@ comments: false
 也打算在业余时间里做一些与物联网和智能家居相关的小创作，视频和教程
 基于树莓派+微信+后端api，慢慢打造属于自己的家庭智能管家Jarvis
 
-本着一颗极客的永不停歇心，在新长征路上摇滚
+本着一颗极客永不停歇的心，在新长征路上摇滚
 
 科技让生活更美好💖~
 
-Expect us ,we are coming soon
+Expect us ,we are coming soon 🏹~
+<img src="/images/resources/pay/wechat.png" width="256px" align="left"/>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 ### 您的每一份捐赠将用来：
 * 维护域名和服务器费用

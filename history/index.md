@@ -1,11 +1,11 @@
 ---
 title: 历史
-layout: page
 comments: false
+layout: timeline
 ---
 
 <!--more-->
-<div class="timeline">
+<!-- <div class="timeline">
     <div class="timeline-item active">
         <div class="year">2015.9<span class="marker"><span class="dot"></span></span></div><div class="info">搭建WordPress博客</div>
     </div>
@@ -21,4 +21,4 @@ comments: false
     <div class="timeline-item active">
         <div class="year">2017.7<span class="marker"><span class="dot"></span></span></div><div class="info">全栈+智能硬件+人工智能的成长之路</div>
     </div>
-</div>
+</div> -->

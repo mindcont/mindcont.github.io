@@ -5,6 +5,7 @@ tags:
 categories: 随笔日记
 ---
 这是我回顾一年多来的研究心得，写给那些初入研究生生涯人的，以求启迪后者，少走些弯路，但从方法论中来说有些弯路是不可逾越的并不会因你看了我的文章而改变。
+<!--more-->
 
 ![](http://static.mindcont.com/blog/images/resources/do-research.jpg)
 <p align="right">--图片来源 wikihow</p>

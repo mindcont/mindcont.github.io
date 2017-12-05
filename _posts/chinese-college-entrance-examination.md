@@ -5,6 +5,7 @@ tags:
 categories: 随笔日记
 ---
 高考，一场影响亿万中国人命运的考试。六集纪录片《高考》选取深具代­表性的不同社会横断面，记录个人故事、观照社会热点，从多个侧面走近并记录2014年­高考，为我们留下这个时代意味深长的社会现实记忆。
+<!--more-->
 
 第一集 ：毛坦厂的日与夜(上)
 <embed height="415" width="544" quality="high" allowfullscreen="true" type="application/x-shockwave-flash" src="http://static.hdslb.com/miniloader.swf" flashvars="aid=3584431&page=1" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed>

@@ -5,6 +5,7 @@ tags:
 categories:
 toc: false
 ---
+
 **背景：**局域网下有两台Linux服务器，信息如下：
 
 |服务器|IP地址|操作系统|Internet访问|

@@ -2,6 +2,7 @@
 title:
 date: 2016-03-30 12:53:01
 comments: false
+donate: true
 ---
 <!-- 梦想起飞 -->
 <!-- ![](/images/ubuntu/raspberry.png) -->
@@ -110,7 +111,14 @@ comments: false
 
 ### 打赏
 如果您喜欢我的文章，请用**微信扫一扫**，支持我更好的创作。
-赞赏时，请备注您的**姓名或昵称**和赞赏留言（可选），以便我在[捐赠](http://blog.mindcont.com//about/donate.html)页面中对您表示感谢。
+赞赏时，请备注您的**姓名或昵称**和赞赏留言（可选），以便我在[捐赠](http://blog.mindcont.com/about/donate.html)页面中对您表示感谢。
+
+#### 您的每一份捐赠将用来：
+* 维护域名和服务器费用
+* 购买平面设计版权
+* 设计更爽的用户界面
+* 购买更强大的计算力和存储设备
+* 吸引更多的合伙人，创造一个社区
 
 <!-- <img src="/images/resources/pay/alipay.jpg" alt=" 主人，给我卖点狗粮吧！" width="256" > -->
-<img src="/images/resources/pay/wechat.png" width="256">
+<!-- <img src="/images/resources/pay/wechat.png" width="256px"> -->
