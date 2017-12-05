@@ -1,5 +1,5 @@
 ---
-title:
+title: 关于
 date: 2016-03-30 12:53:01
 comments: false
 donate: true
