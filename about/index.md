@@ -109,6 +109,13 @@ donate: true
 
 如果您对于本站有好的想法和建议，随时欢迎您<a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=bond@mindcont.com" style="text-decoration:none;">给我写信</a> ~
 
+### 推广链接
+
+在这里，对于想打算入坑的VPS新童鞋，推荐一个云虚拟主机提供商[Vultr](https://www.vultr.com/)，清一水的SSD硬盘，支持BBR,全球15大节点（更有日本节点，新加坡节点，悉尼节点），每月最低2.5刀,对国内用户友好，工单超快，支持支付宝付款。首冲5刀更额外赠送25刀,实在是居家旅行、杀人灭口必备良药。赶快点击下方图片使用我的推广链接，你可以再获得10刀哦,赶快剁手吧~
+
+<a href="https://www.vultr.com/?ref=7173488"><img src="https://www.vultr.com/media/banner_2.png" width="468" height="60" align="left"></a>
+<br>
+
 ### 打赏
 如果您喜欢我的文章，请用**微信扫一扫**，支持我更好的创作。
 赞赏时，请备注您的**姓名或昵称**和赞赏留言（可选），以便我在[捐赠](http://blog.mindcont.com/about/donate.html)页面中对您表示感谢。
@@ -118,7 +125,7 @@ donate: true
 * 购买平面设计版权
 * 设计更爽的用户界面
 * 购买更强大的计算力和存储设备
-* 吸引更多的合伙人，创造一个社区
+* 吸引更多的合伙人，营造一个社区
 
 <!-- <img src="/images/resources/pay/alipay.jpg" alt=" 主人，给我卖点狗粮吧！" width="256" > -->
 <!-- <img src="/images/resources/pay/wechat.png" width="256px"> -->
