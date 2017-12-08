@@ -1,5 +1,5 @@
-fancybox: true ## If you want to use fancybox please set the value to true.
-disqus: ## Your disqus_shortname, e.g. username
+fancybox: false ## If you want to use fancybox please set the value to true.
+disqus: micro-era ## Your disqus_shortname, e.g. username
 gitment:
   enable: false ## If you want to use Gitment comment system please set the value to true.
   owner: ## Your GitHub ID, e.g. username
@@ -9,30 +9,29 @@ gitment:
 uyan: ## Your uyan_id. e.g. 1234567
 livere: ## Your livere data-uid, e.g. MTAyMC8zMDAxOC78NTgz
 changyan: ## Your changyan appid, e.g. cyrALsXc8
-changyan_conf: ## You changyan conf, e.g. prod_d8a508c2825ab57eeb43e7c69bba0e8b
-# https://valine.js.org
-valine:
-  enable: false ## if you want to use Valine comment system, please set the value to true
-  appid:  ## your leancloud application appid
-  appkey:  ## your leancloud application appkey
-  notify: false ## mail notifier , https://github.com/xCss/Valine/wiki
-  verify: false ## Verification code
-  placeholder: Just go go ## comment input placeholder text 
-  avatar: 'mm' ## header image https://github.com/xCss/Valine/wiki
-  pageSize: 10 ## 
-  guest_info: nick,mail,link
+changyan_conf: ## Your changyan conf, e.g. prod_d8a508c2825ab57eeb43e7c69bba0e8b
+valine: ## https://valine.js.org
+  enable: false ## If you want to use Valine comment system, please set the value to true.
+  appid: ## Your LeanCloud application App ID, e.g. pRBBL2JR4N7kLEGojrF0MsSs-gzGzoHsz
+  appkey: ## Your LeanCloud application App Key, e.g. tjczHpDfhjYDSYddzymYK1JJ
+  notify: false ## Mail notifier, see https://github.com/xCss/Valine/wiki/Valine-评论系统中的邮件提醒设置
+  verify: false ## Validation code.
+  placeholder: Just so so ## Comment box placeholders.
+  avatar: 'mm' ## Gravatar type, see https://github.com/xCss/Valine/wiki/avatar-setting-for-valine
+  pageSize: 10 ## Number of comments per page.
+  guest_info: nick,mail,link ## Attributes of reviewers.
 
 google_search: true ## Use Google search, true/false.
-baidu_search: ## Use Baidu search, true/false.
+baidu_search: false ## Use Baidu search, true/false.
 swiftype: ## Your swiftype_key, e.g. m7b11ZrsT8Me7gzApciT
 tinysou: ## Your tinysou_key, e.g. 4ac092ad8d749fdc6293
 self_search: ## Use a jQuery-based local search engine, true/false.
-google_analytics: ## Your Google Analytics tracking id, e.g. UA-42425684-2
+google_analytics: UA-74386502-3 ## Your Google Analytics tracking id, e.g. UA-42425684-2
 baidu_analytics: ## Your Baidu Analytics tracking id, e.g. 8006843039519956000
 show_category_count: false ## If you want to show the count of categories in the sidebar widget please set the value to true.
 toc_number: true ## If you want to add list number to toc please set the value to true.
 shareto: false ## If you want to use the share button please set the value to true, you must have hexo-helper-qrcode installed.
-busuanzi: false ## If you want to use Busuanzi page views please set the value to true.
+busuanzi: true ## If you want to use Busuanzi page views please set the value to true.
 widgets_on_small_screens: false ## Set to true to enable widgets on small screens.
 canvas_nest:
   enable: false ## If you want to use dynamic background please set the value to true, you can also fill the following parameters to customize the dynamic effect, or just leave them blank to keep the default effect.
@@ -42,24 +41,30 @@ canvas_nest:
   count: ## Quantity of lines, e.g. "150"
 donate:
   enable: false ## If you want to show the donate button after each post, please set the value to true and fill the following items according to your need. You can also enable donate button in a page by adding a "donate: true" item to the front-matter.
-  github: ## GitHub URL, e.g. https://github.com/Kaiyuan/donate-page
-  alipay_qr: ## Path of Alipay QRcode image, e.g. /img/AliPayQR.png
-  wechat_qr: ## Path of Wechat QRcode image, e.g. /img/WeChatQR.png
+  github: https://github.com/mindcont ## GitHub URL, e.g. https://github.com/Kaiyuan/donate-page
+  alipay_qr: /images/resources/pay/alipay.png ## Path of Alipay QRcode image, e.g. /img/AliPayQR.png
+  wechat_qr: /images/resources/pay/wechat_old.png ## Path of Wechat QRcode image, e.g. /img/WeChatQR.png
   btc_qr: ## Path of Bitcoin QRcode image, e.g. /img/BTCQR.png
   btc_key: ## Bitcoin key, e.g. 1KuK5eK2BLsqpsFVXXSBG5wbSAwZVadt6L
-  paypal_url: ## Paypal URL, e.g. https://paypal.me/tufu9441
+  paypal_url: https://www.paypal.me/openai ## Paypal URL, e.g. https://paypal.me/tufu9441
 
 menu:
-  - page: home
+  - page: 首页
     directory: .
     icon: fa-home
-  - page: archive
+  - page: 归档
     directory: archives/
     icon: fa-archive
-  - page: about
+  - page: 书单
+    directory: books/
+    icon: fa-book
+  - page: 关于
     directory: about/
     icon: fa-user
-  - page: rss
+  - page: 历史
+    directory: history/
+    icon: fa-history
+  - page: 订阅
     directory: atom.xml
     icon: fa-rss
 
@@ -70,23 +75,30 @@ widgets: ## Six widgets in sidebar provided: search, category, tag, recent_posts
   - recent_posts
   - recent_comments
   - links
+  - qrcode
 
 links:
-  - title: site-name1
-    url: http://www.example1.com/
-  - title: site-name2
-    url: http://www.example2.com/
-  - title: site-name3
-    url: http://www.example3.com/
+  - title: 好东西传送门
+    url: http://memect.com/
+  - title: 粉碎棱镜
+    url: https://prism-break.org/zh-CN/all/
+  - title: 道卬
+    url: https://www.daoon.com/
+  - title: TED | 值得传播的思想
+    url: https://www.ted.com/
 
 timeline:
   - num: 1
-    word: 2014/06/12-Start
+    word: 2015/09 “LNMP架构 + wordpress”
   - num: 2
-    word: 2014/11/29-XXX
+    word: 2016/03 “使用GitHub Pages + Hexo”
   - num: 3
-    word: 2015/02/18-DDD
+    word: 2016/07 “入坑卷积神经网络”
   - num: 4
+    word: 2017/02 “用机器学习的方法解决人体姿态估计问题”
+  - num: 5
+    word: 2017/07 “全栈+智能硬件+计算机视觉的成长之路”
+  - num: 6
     word: More
 
 # Static files
