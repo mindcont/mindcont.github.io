@@ -111,9 +111,21 @@ donate: true
 
 ### 推广链接
 
+#### VPS
 在这里，对于想打算入坑的VPS新童鞋，推荐一个云虚拟主机提供商[Vultr](https://www.vultr.com/)，清一水的SSD硬盘，支持BBR,全球15大节点（更有日本节点，新加坡节点，悉尼节点），每月最低2.5刀,对国内用户友好，工单超快，支持支付宝付款。首冲5刀更额外赠送25刀,实在是居家旅行、杀人灭口必备良药。赶快点击下方图片使用我的推广链接，你可以再获得10刀哦,赶快剁手吧~
 
 <a href="https://www.vultr.com/?ref=7173488"><img src="https://www.vultr.com/media/banner_2.png" width="468" height="60" align="left"></a>
+<br><br>
+#### CDN-七牛云服务
+点击下方图片，使用我的推广链接注册并通过实名认证，即可享受免费的标准用户配额，这些套餐包含如下内容:
+
+<li>10GB 存储空间</li>
+<li>每月 10GB 下载流量</li>
+<li>每月 PUT/DELETE 10万次请求</li>
+<li>每月 GET 100万次请求</li>
+
+<a href="https://portal.qiniu.com/signup?code=3lc7blnku8d3m"><img src="https://www.qiniu.com/assets/logo-b5caafe0363dace7b5c0a00be38a4829444918c4322a6168714522ee19dcb1c1.png"  align="left"></a>
+<br>
 <br>
 
 ### 打赏
