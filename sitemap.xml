@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.mindcont.com/about/index.html</loc>
+    
+    <lastmod>2017-12-10T06:44:32.904Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.mindcont.com/about/donate.html</loc>
     
     <lastmod>2017-12-07T01:01:49.101Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>http://blog.mindcont.com/2017/10/20/my-movie-review/</loc>
     
     <lastmod>2017-12-07T00:58:17.977Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/about/index.html</loc>
-    
-    <lastmod>2017-12-07T00:53:56.201Z</lastmod>
     
   </url>
   
@@ -114,14 +114,14 @@
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/12/14/naoqi-robot-sdk-ubuntu/</loc>
+    <loc>http://blog.mindcont.com/2016/12/14/ros-naoqi-ubuntu/</loc>
     
     <lastmod>2017-07-28T10:43:12.318Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/12/14/ros-naoqi-ubuntu/</loc>
+    <loc>http://blog.mindcont.com/2016/12/14/naoqi-robot-sdk-ubuntu/</loc>
     
     <lastmod>2017-07-28T10:43:12.318Z</lastmod>
     
@@ -226,14 +226,14 @@
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/04/15/kinect-unboxing/</loc>
+    <loc>http://blog.mindcont.com/2016/05/18/kinect-V2-with-matlab/</loc>
     
     <lastmod>2017-07-27T10:10:28.305Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/05/18/kinect-V2-with-matlab/</loc>
+    <loc>http://blog.mindcont.com/2016/04/15/kinect-unboxing/</loc>
     
     <lastmod>2017-07-27T10:10:28.305Z</lastmod>
     
