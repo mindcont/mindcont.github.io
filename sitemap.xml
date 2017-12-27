@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.mindcont.com/2016/09/18/cnn/</loc>
+    
+    <lastmod>2017-12-27T09:12:05.314Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.mindcont.com/about/index.html</loc>
     
     <lastmod>2017-12-10T06:44:32.904Z</lastmod>
@@ -18,21 +25,21 @@
   <url>
     <loc>http://blog.mindcont.com/2017/10/20/my-movie-review/</loc>
     
-    <lastmod>2017-12-07T00:58:17.977Z</lastmod>
+    <lastmod>2017-12-07T00:58:17.978Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://blog.mindcont.com/2016/06/06/chinese-college-entrance-examination/</loc>
     
-    <lastmod>2017-12-05T01:45:22.101Z</lastmod>
+    <lastmod>2017-12-05T01:45:22.102Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://blog.mindcont.com/2016/12/26/nginx-proxy-lan/</loc>
     
-    <lastmod>2017-12-05T01:43:58.777Z</lastmod>
+    <lastmod>2017-12-05T01:43:58.778Z</lastmod>
     
   </url>
   
@@ -67,14 +74,14 @@
   <url>
     <loc>http://blog.mindcont.com/2016/05/13/open-source-computer-vision/</loc>
     
-    <lastmod>2017-11-07T02:18:42.031Z</lastmod>
+    <lastmod>2017-11-07T02:18:42.032Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://blog.mindcont.com/books/index.html</loc>
     
-    <lastmod>2017-10-20T08:32:36.808Z</lastmod>
+    <lastmod>2017-10-20T08:32:36.809Z</lastmod>
     
   </url>
   
@@ -95,28 +102,28 @@
   <url>
     <loc>http://blog.mindcont.com/2016/10/27/ubuntu-necessary-install-software/</loc>
     
-    <lastmod>2017-08-11T02:02:38.039Z</lastmod>
+    <lastmod>2017-08-11T02:02:38.040Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://blog.mindcont.com/2016/08/06/run-yolo-demo/</loc>
     
-    <lastmod>2017-08-02T13:12:34.591Z</lastmod>
+    <lastmod>2017-08-02T13:12:34.592Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://blog.mindcont.com/2016/06/21/the-long-march/</loc>
     
-    <lastmod>2017-07-28T10:43:20.740Z</lastmod>
+    <lastmod>2017-07-28T10:43:20.741Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://blog.mindcont.com/2016/12/14/ros-naoqi-ubuntu/</loc>
     
-    <lastmod>2017-07-28T10:43:12.318Z</lastmod>
+    <lastmod>2017-07-28T10:43:12.319Z</lastmod>
     
   </url>
   
@@ -151,7 +158,7 @@
   <url>
     <loc>http://blog.mindcont.com/2016/05/04/how-to-use-ngrok-penetrate-internal-network/</loc>
     
-    <lastmod>2017-07-27T10:16:39.233Z</lastmod>
+    <lastmod>2017-07-27T10:16:39.234Z</lastmod>
     
   </url>
   
@@ -184,14 +191,14 @@
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/05/05/raspberry-pi-excellent-project/</loc>
+    <loc>http://blog.mindcont.com/2016/11/13/ppa/</loc>
     
     <lastmod>2017-07-27T10:10:28.312Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/11/13/ppa/</loc>
+    <loc>http://blog.mindcont.com/2016/05/05/raspberry-pi-excellent-project/</loc>
     
     <lastmod>2017-07-27T10:10:28.312Z</lastmod>
     
@@ -201,13 +208,6 @@
     <loc>http://blog.mindcont.com/2016/06/27/middleware-technology-hibernate/</loc>
     
     <lastmod>2017-07-27T10:10:28.311Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/09/18/cnn/</loc>
-    
-    <lastmod>2017-07-27T10:10:28.310Z</lastmod>
     
   </url>
   
@@ -284,7 +284,7 @@
   <url>
     <loc>http://blog.mindcont.com/2017/02/20/visual-cortex/</loc>
     
-    <lastmod>2017-07-27T09:08:01.487Z</lastmod>
+    <lastmod>2017-07-27T09:08:01.488Z</lastmod>
     
   </url>
   
@@ -298,21 +298,21 @@
   <url>
     <loc>http://blog.mindcont.com/2017/02/15/ideas-worth-spreading/</loc>
     
-    <lastmod>2017-02-16T02:14:04.780Z</lastmod>
+    <lastmod>2017-02-16T02:14:04.781Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://blog.mindcont.com/2016/06/29/website-under-attack/</loc>
     
-    <lastmod>2016-06-29T08:54:18.380Z</lastmod>
+    <lastmod>2016-06-29T08:54:18.381Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://blog.mindcont.com/2016/04/16/kinect-develop/</loc>
     
-    <lastmod>2016-04-16T12:21:35.799Z</lastmod>
+    <lastmod>2016-04-16T12:21:35.800Z</lastmod>
     
   </url>
   

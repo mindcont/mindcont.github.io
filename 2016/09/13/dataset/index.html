@@ -1,137 +1,12 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="Solve intelligence, use it to make the world a better place."><title>深度学习：数据集篇 | 项脊轩</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/7.0.0/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><script><!-- hexo-inject:begin --><!-- hexo-inject:end -->(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="Solve intelligence, use it to make the world a better place."><title>深度学习：数据集篇 | 项脊轩</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/7.0.0/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-ga('create','UA-74386502-3','auto');ga('send','pageview');</script><!-- hexo-inject:begin --><!-- hexo-inject:end --></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">深度学习：数据集篇</h1><a id="logo" href="/.">项脊轩</a><p class="description">项脊轩，旧南阁子也</p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/books/"><i class="fa fa-book"> 书单</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/history/"><i class="fa fa-history"> 历史</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div id="layout" class="pure-g"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">深度学习：数据集篇</h1><div class="post-meta">Sep 13, 2016<span> | </span><span class="category"><a href="/categories/深度学习/">深度学习</a></span><script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span></div><a data-disqus-identifier="2016/09/13/dataset/" href="/2016/09/13/dataset/#disqus_thread" class="disqus-comment-count"></a><div class="post-content"><p>大数据，数据挖掘，深度学习，终究绕不开数据集，为此单独开一个页面，持续更新各类数据集，希望可以碰出一些好的思路，用深度学习的方法解决一些实际问题。</p>
-<!-- hexo-inject:begin --><!-- hexo-inject:end --><!-- ![](http://static.mindcont.com/blog/images/ubuntu/princeton.jpg) -->
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Type</th>
-      <th>Download</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="http://places.csail.mit.edu/index.html" target="_blank" rel="external">AlexNet-Places205</a></td>
-      <td><img src="https://caffe2.ai/static/images/boathouse.png" alt="images places recognition"></td>
-      <td><a href="http://places.csail.mit.edu/model/placesCNN_upgraded.tar.gz" target="_blank" rel="external">download</a></td>
-    </tr>
-    <tr>
-      <td><a href="http://www.speech.cs.cmu.edu/databases/an4/" target="_blank" rel="external">AN4</a>: 948 training and 130 test utterances</td>
-      <td><img src="https://caffe2.ai/static/images/landing-audio.png" alt="speech"></td>
-      <td><a href="http://www.speech.cs.cmu.edu/databases/an4/an4_raw.bigendian.tar.gz" target="_blank" rel="external">download</a></td>
-    </tr>
-    <tr>
-      <td><a href="https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/bsds/" target="_blank" rel="external">BSDS (300/500)</a>: 12k labeled segmentations</td>
-      <td><img src="https://caffe2.ai/static/images/wolf.jpg" alt="image segmentation"></td>
-      <td><a href="https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/bsds/BSDS300-images.tgz" target="_blank" rel="external"> images</a> <a href="https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/bsds/BSDS300-human.tgz" target="_blank" rel="external"> segmentations</a></td>
-    </tr>
-    <tr>
-      <td><a href="http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html" target="_blank" rel="external">Celeb-A</a>: 200k+ celebrity images, 10k+ identities</td>
-      <td><img src="https://caffe2.ai/static/images/celebrity.png" alt="celebrity images"></td>
-      <td><a href="https://www.dropbox.com/sh/8oqt9vytwxb3s4r/AAB06FXaQRUNtjW9ntaoPGvCa?dl=0" target="_blank" rel="external">download</a></td>
-    </tr>
-    <tr>
-      <td><a href="https://www.cs.toronto.edu/~kriz/cifar.html" target="_blank" rel="external">CIFAR-10</a>: 60k tiny (32x32) tagged images</td>
-      <td><img src="https://caffe2.ai/static/images/cifar-tiny.png" alt="tiny images"></td>
-      <td><a href="https://www.cs.toronto.edu/~kriz/cifar.html" target="_blank" rel="external">download</a></td>
-    </tr>
-    <tr>
-      <td><a href="http://mscoco.org/dataset/" target="_blank" rel="external">COCO</a>: A large image dataset designed for object detection, segmentation, and caption generation.</td>
-      <td><img src="https://caffe2.ai/static/images/coco.png" alt="coco"></td>
-      <td><a href="http://mscoco.org/dataset/#download" target="_blank" rel="external">download</a></td>
-    </tr>
-    <tr>
-      <td><a href="http://mmlab.ie.cuhk.edu.hk/datasets/comp_cars/index.html" target="_blank" rel="external">CompCars</a>: 136k+ car images &amp; 1716 car models</td>
-      <td><img src="https://caffe2.ai/static/images/cars.png" alt="cars"></td>
-      <td><a href="http://mmlab.ie.cuhk.edu.hk/datasets/comp_cars/index.html" target="_blank" rel="external">download</a></td>
-    </tr>
-    <tr>
-      <td><a href="http://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html" target="_blank" rel="external">Oxford 102 Flowers</a>: 102 flower categories</td>
-      <td><img src="https://caffe2.ai/static/images/flowers.png" alt="flowers"></td>
-      <td><a href="http://www.robots.ox.ac.uk/~vgg/data/flowers/102/102flowers.tgz" target="_blank" rel="external"> images</a> <a href="http://www.robots.ox.ac.uk/~vgg/data/flowers/102/102segmentations.tgz" target="_blank" rel="external"> segmentations</a></td>
-    </tr>
-    <tr>
-      <td><a href="http://image-net.org/" target="_blank" rel="external">ImageNet</a>: 14,197,122 images, 21841 synsets indexed</td>
-      <td><img src="https://caffe2.ai/static/images/imagenet.jpg" alt="large range of images"></td>
-      <td><a href="http://image-net.org/download" target="_blank" rel="external">download</a></td>
-    </tr>
-    <tr>
-      <td><a href="http://www.image-net.org/challenges/LSVRC/" target="_blank" rel="external">ImageNet ILSVRC</a>: Competition datasets</td>
-      <td><img src="https://caffe2.ai/static/images/imagenet.jpg" alt="large range of images"></td>
-      <td><a href="http://www.image-net.org/challenges/LSVRC/" target="_blank" rel="external">download</a></td>
-    </tr>
-    <tr>
-      <td><a href="https://en.wikipedia.org/wiki/Iris_flower_data_set" target="_blank" rel="external">Iris</a></td>
-      <td><img src="https://caffe2.ai/static/images/iris.jpg" alt="flowers &gt; classification"></td>
-      <td><a href="https://en.wikipedia.org/wiki/Iris_flower_data_set" target="_blank" rel="external">download</a></td>
-    </tr>
-    <tr>
-      <td><a href="http://lsun.cs.princeton.edu/2016/" target="_blank" rel="external">LSUN Scenes</a> millions of indoor/outdoor building scenes</td>
-      <td><img src="https://caffe2.ai/static/images/kitchen.jpg" alt="scene classification"></td>
-      <td><a href="https://github.com/fyu/lsun/blob/master/download.py" target="_blank" rel="external">download</a></td>
-    </tr>
-    <tr>
-      <td><a href="http://lsun.cs.princeton.edu/2016/" target="_blank" rel="external">LSUN Room Layout</a> 4000 indoor scenes</td>
-      <td><img src="https://caffe2.ai/static/images/layout.png" alt="scene classification"></td>
-      <td><a href="https://github.com/fyu/lsun/blob/master/download.py" target="_blank" rel="external">download</a></td>
-    </tr>
-    <tr>
-      <td><a href="http://yann.lecun.com/exdb/mnist/" target="_blank" rel="external">MNIST</a> 60k handwriting training set, 10k test images</td>
-      <td><img src="https://caffe2.ai/static/images/mnist.png" alt="handwriting"></td>
-      <td><a href="http://yann.lecun.com/exdb/mnist/" target="_blank" rel="external">download</a></td>
-    </tr>
-    <tr>
-      <td><a href="http://cs-people.bu.edu/jmzhang/sos.html" target="_blank" rel="external">Multi-Salient-Object (MSO)</a> 1224 tagged salient object images</td>
-      <td><img src="https://caffe2.ai/static/images/mso.png" alt="tagged objects"></td>
-      <td><a href="http://www.cs.bu.edu/groups/ivc/data/SOS/MSO.zip" target="_blank" rel="external">download</a></td>
-    </tr>
-    <tr>
-      <td><a href="http://www.openu.ac.il/home/hassner/Adience/data.html#agegender" target="_blank" rel="external">OUI-Adience Face Image</a> 26,580 age &amp; gender labeled images</td>
-      <td><img src="https://caffe2.ai/static/images/age.png" alt="age, gender"></td>
-      <td><a href="http://www.openu.ac.il/home/hassner/Adience/data.html#agegender" target="_blank" rel="external">download</a></td>
-    </tr>
-    <tr>
-      <td><a href="http://host.robots.ox.ac.uk/pascal/VOC/" target="_blank" rel="external">PASCAL VOC 2012</a> 11,530 images w/ 27,450 ROI annotated objects and 6,929 segmentations</td>
-      <td><img src="https://caffe2.ai/static/images/voc.png" alt="images &gt; object recognition"></td>
-      <td><a href="http://host.robots.ox.ac.uk/pascal/VOC/" target="_blank" rel="external">download</a></td>
-    </tr>
-    <tr>
-      <td><a href="http://www.netresec.com/?page=PcapFiles" target="_blank" rel="external">PCAP</a> Network captures of regular internet traffic and attack scenario traffic</td>
-      <td><img src="https://caffe2.ai/static/images/defcon.jpg" alt="network capture"></td>
-      <td><a href="http://www.netresec.com/?page=PcapFiles" target="_blank" rel="external">download</a></td>
-    </tr>
-    <tr>
-      <td><a href="http://www.fit.vutbr.cz/~imikolov/rnnlm/" target="_blank" rel="external">Penn Treebank (PTB)</a> statistical language modeling</td>
-      <td><img src="https://caffe2.ai/static/images/landing-audio.png" alt="language"></td>
-      <td><a href="http://www.fit.vutbr.cz/~imikolov/rnnlm/simple-examples.tgz" target="_blank" rel="external">download</a></td>
-    </tr>
-    <tr>
-      <td><a href="http://crcv.ucf.edu/data/UCF_YouTube_Action.php" target="_blank" rel="external">UCF11/YouTube Action</a> 11 action categories: basketball shooting, biking/cycling, diving, golf swinging, horse back riding, soccer juggling, swinging, tennis swinging, trampoline jumping, volleyball spiking, and walking with a dog</td>
-      <td><img src="https://caffe2.ai/static/images/action.jpg" alt="video &gt; action"></td>
-      <td><a href="http://crcv.ucf.edu/data/UCF_YouTube_Action.php" target="_blank" rel="external">download</a></td>
-    </tr>
-    <tr>
-      <td><a href="https://archive.ics.uci.edu/ml/datasets.html" target="_blank" rel="external">UCI Datasets</a></td>
-      <td><img src="https://caffe2.ai/static/images/caffe2variety.png" alt="variety"></td>
-      <td><a href="https://archive.ics.uci.edu/ml/datasets.html" target="_blank" rel="external">download</a></td>
-    </tr>
-    <tr>
-      <td><a href="https://catalog.data.gov/dataset" target="_blank" rel="external">US Census</a>: demographic data</td>
-      <td><img src="https://caffe2.ai/static/images/linegraph.png" alt="line graph"></td>
-      <td><a href="https://catalog.data.gov/dataset" target="_blank" rel="external">download</a></td>
-    </tr>
-    <tr>
-      <td><a href="http://www.robots.ox.ac.uk/~vgg/software/vgg_face/" target="_blank" rel="external">VGG-Face</a> millions of faces</td>
-      <td><img src="https://caffe2.ai/static/images/faces.jpg" alt="faces"></td>
-      <td><a href="http://www.robots.ox.ac.uk/~vgg/software/vgg_face/src/vgg_face_caffe.tar.gz" target="_blank" rel="external">download</a></td>
-    </tr>
-  </tbody>
-</table>
-<h2 id="补充">补充</h2>
-<table>
+ga('create','UA-74386502-3','auto');ga('send','pageview');</script></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">深度学习：数据集篇</h1><a id="logo" href="/.">项脊轩</a><p class="description">项脊轩，旧南阁子也</p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/books/"><i class="fa fa-book"> 书单</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/history/"><i class="fa fa-history"> 历史</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div id="layout" class="pure-g"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">深度学习：数据集篇</h1><div class="post-meta">Sep 13, 2016<span> | </span><span class="category"><a href="/categories/深度学习/">深度学习</a></span><script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span></div><a data-disqus-identifier="2016/09/13/dataset/" href="/2016/09/13/dataset/#disqus_thread" class="disqus-comment-count"></a><div class="post-content"><p>大数据，数据挖掘，深度学习，终究绕不开数据集，为此单独开一个页面，持续更新各类数据集，希望可以碰出一些好的思路，用深度学习的方法解决一些实际问题。</p>
+<!-- ![](http://static.mindcont.com/blog/images/ubuntu/princeton.jpg) -->
+<table><br>  <thead><br>    <tr><br>      <th>Name</th><br>      <th>Type</th><br>      <th>Download</th><br>    </tr><br>  </thead><br>  <tbody><br>    <tr><br>      <td><a href="http://places.csail.mit.edu/index.html" target="_blank" rel="noopener">AlexNet-Places205</a></td><br>      <td><img src="https://caffe2.ai/static/images/boathouse.png" alt="images places recognition"></td><br>      <td><a href="http://places.csail.mit.edu/model/placesCNN_upgraded.tar.gz" target="_blank" rel="noopener">download</a></td><br>    </tr><br>    <tr><br>      <td><a href="http://www.speech.cs.cmu.edu/databases/an4/" target="_blank" rel="noopener">AN4</a>: 948 training and 130 test utterances</td><br>      <td><img src="https://caffe2.ai/static/images/landing-audio.png" alt="speech"></td><br>      <td><a href="http://www.speech.cs.cmu.edu/databases/an4/an4_raw.bigendian.tar.gz" target="_blank" rel="noopener">download</a></td><br>    </tr><br>    <tr><br>      <td><a href="https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/bsds/" target="_blank" rel="noopener">BSDS (300/500)</a>: 12k labeled segmentations</td><br>      <td><img src="https://caffe2.ai/static/images/wolf.jpg" alt="image segmentation"></td><br>      <td><a href="https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/bsds/BSDS300-images.tgz" target="_blank" rel="noopener"> images</a> <a href="https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/bsds/BSDS300-human.tgz" target="_blank" rel="noopener"> segmentations</a></td><br>    </tr><br>    <tr><br>      <td><a href="http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html" target="_blank" rel="noopener">Celeb-A</a>: 200k+ celebrity images, 10k+ identities</td><br>      <td><img src="https://caffe2.ai/static/images/celebrity.png" alt="celebrity images"></td><br>      <td><a href="https://www.dropbox.com/sh/8oqt9vytwxb3s4r/AAB06FXaQRUNtjW9ntaoPGvCa?dl=0" target="_blank" rel="noopener">download</a></td><br>    </tr><br>    <tr><br>      <td><a href="https://www.cs.toronto.edu/~kriz/cifar.html" target="_blank" rel="noopener">CIFAR-10</a>: 60k tiny (32x32) tagged images</td><br>      <td><img src="https://caffe2.ai/static/images/cifar-tiny.png" alt="tiny images"></td><br>      <td><a href="https://www.cs.toronto.edu/~kriz/cifar.html" target="_blank" rel="noopener">download</a></td><br>    </tr><br>    <tr><br>      <td><a href="http://mscoco.org/dataset/" target="_blank" rel="noopener">COCO</a>: A large image dataset designed for object detection, segmentation, and caption generation.</td><br>      <td><img src="https://caffe2.ai/static/images/coco.png" alt="coco"></td><br>      <td><a href="http://mscoco.org/dataset/#download" target="_blank" rel="noopener">download</a></td><br>    </tr><br>    <tr><br>      <td><a href="http://mmlab.ie.cuhk.edu.hk/datasets/comp_cars/index.html" target="_blank" rel="noopener">CompCars</a>: 136k+ car images &amp; 1716 car models</td><br>      <td><img src="https://caffe2.ai/static/images/cars.png" alt="cars"></td><br>      <td><a href="http://mmlab.ie.cuhk.edu.hk/datasets/comp_cars/index.html" target="_blank" rel="noopener">download</a></td><br>    </tr><br>    <tr><br>      <td><a href="http://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html" target="_blank" rel="noopener">Oxford 102 Flowers</a>: 102 flower categories</td><br>      <td><img src="https://caffe2.ai/static/images/flowers.png" alt="flowers"></td><br>      <td><a href="http://www.robots.ox.ac.uk/~vgg/data/flowers/102/102flowers.tgz" target="_blank" rel="noopener"> images</a> <a href="http://www.robots.ox.ac.uk/~vgg/data/flowers/102/102segmentations.tgz" target="_blank" rel="noopener"> segmentations</a></td><br>    </tr><br>    <tr><br>      <td><a href="http://image-net.org/" target="_blank" rel="noopener">ImageNet</a>: 14,197,122 images, 21841 synsets indexed</td><br>      <td><img src="https://caffe2.ai/static/images/imagenet.jpg" alt="large range of images"></td><br>      <td><a href="http://image-net.org/download" target="_blank" rel="noopener">download</a></td><br>    </tr><br>    <tr><br>      <td><a href="http://www.image-net.org/challenges/LSVRC/" target="_blank" rel="noopener">ImageNet ILSVRC</a>: Competition datasets</td><br>      <td><img src="https://caffe2.ai/static/images/imagenet.jpg" alt="large range of images"></td><br>      <td><a href="http://www.image-net.org/challenges/LSVRC/" target="_blank" rel="noopener">download</a></td><br>    </tr><br>    <tr><br>      <td><a href="https://en.wikipedia.org/wiki/Iris_flower_data_set" target="_blank" rel="noopener">Iris</a></td><br>      <td><img src="https://caffe2.ai/static/images/iris.jpg" alt="flowers &gt; classification"></td><br>      <td><a href="https://en.wikipedia.org/wiki/Iris_flower_data_set" target="_blank" rel="noopener">download</a></td><br>    </tr><br>    <tr><br>      <td><a href="http://lsun.cs.princeton.edu/2016/" target="_blank" rel="noopener">LSUN Scenes</a> millions of indoor/outdoor building scenes</td><br>      <td><img src="https://caffe2.ai/static/images/kitchen.jpg" alt="scene classification"></td><br>      <td><a href="https://github.com/fyu/lsun/blob/master/download.py" target="_blank" rel="noopener">download</a></td><br>    </tr><br>    <tr><br>      <td><a href="http://lsun.cs.princeton.edu/2016/" target="_blank" rel="noopener">LSUN Room Layout</a> 4000 indoor scenes</td><br>      <td><img src="https://caffe2.ai/static/images/layout.png" alt="scene classification"></td><br>      <td><a href="https://github.com/fyu/lsun/blob/master/download.py" target="_blank" rel="noopener">download</a></td><br>    </tr><br>    <tr><br>      <td><a href="http://yann.lecun.com/exdb/mnist/" target="_blank" rel="noopener">MNIST</a> 60k handwriting training set, 10k test images</td><br>      <td><img src="https://caffe2.ai/static/images/mnist.png" alt="handwriting"></td><br>      <td><a href="http://yann.lecun.com/exdb/mnist/" target="_blank" rel="noopener">download</a></td><br>    </tr><br>    <tr><br>      <td><a href="http://cs-people.bu.edu/jmzhang/sos.html" target="_blank" rel="noopener">Multi-Salient-Object (MSO)</a> 1224 tagged salient object images</td><br>      <td><img src="https://caffe2.ai/static/images/mso.png" alt="tagged objects"></td><br>      <td><a href="http://www.cs.bu.edu/groups/ivc/data/SOS/MSO.zip" target="_blank" rel="noopener">download</a></td><br>    </tr><br>    <tr><br>      <td><a href="http://www.openu.ac.il/home/hassner/Adience/data.html#agegender" target="_blank" rel="noopener">OUI-Adience Face Image</a> 26,580 age &amp; gender labeled images</td><br>      <td><img src="https://caffe2.ai/static/images/age.png" alt="age, gender"></td><br>      <td><a href="http://www.openu.ac.il/home/hassner/Adience/data.html#agegender" target="_blank" rel="noopener">download</a></td><br>    </tr><br>    <tr><br>      <td><a href="http://host.robots.ox.ac.uk/pascal/VOC/" target="_blank" rel="noopener">PASCAL VOC 2012</a> 11,530 images w/ 27,450 ROI annotated objects and 6,929 segmentations</td><br>      <td><img src="https://caffe2.ai/static/images/voc.png" alt="images &gt; object recognition"></td><br>      <td><a href="http://host.robots.ox.ac.uk/pascal/VOC/" target="_blank" rel="noopener">download</a></td><br>    </tr><br>    <tr><br>      <td><a href="http://www.netresec.com/?page=PcapFiles" target="_blank" rel="noopener">PCAP</a> Network captures of regular internet traffic and attack scenario traffic</td><br>      <td><img src="https://caffe2.ai/static/images/defcon.jpg" alt="network capture"></td><br>      <td><a href="http://www.netresec.com/?page=PcapFiles" target="_blank" rel="noopener">download</a></td><br>    </tr><br>    <tr><br>      <td><a href="http://www.fit.vutbr.cz/~imikolov/rnnlm/" target="_blank" rel="noopener">Penn Treebank (PTB)</a> statistical language modeling</td><br>      <td><img src="https://caffe2.ai/static/images/landing-audio.png" alt="language"></td><br>      <td><a href="http://www.fit.vutbr.cz/~imikolov/rnnlm/simple-examples.tgz" target="_blank" rel="noopener">download</a></td><br>    </tr><br>    <tr><br>      <td><a href="http://crcv.ucf.edu/data/UCF_YouTube_Action.php" target="_blank" rel="noopener">UCF11/YouTube Action</a> 11 action categories: basketball shooting, biking/cycling, diving, golf swinging, horse back riding, soccer juggling, swinging, tennis swinging, trampoline jumping, volleyball spiking, and walking with a dog</td><br>      <td><img src="https://caffe2.ai/static/images/action.jpg" alt="video &gt; action"></td><br>      <td><a href="http://crcv.ucf.edu/data/UCF_YouTube_Action.php" target="_blank" rel="noopener">download</a></td><br>    </tr><br>    <tr><br>      <td><a href="https://archive.ics.uci.edu/ml/datasets.html" target="_blank" rel="noopener">UCI Datasets</a></td><br>      <td><img src="https://caffe2.ai/static/images/caffe2variety.png" alt="variety"></td><br>      <td><a href="https://archive.ics.uci.edu/ml/datasets.html" target="_blank" rel="noopener">download</a></td><br>    </tr><br>    <tr><br>      <td><a href="https://catalog.data.gov/dataset" target="_blank" rel="noopener">US Census</a>: demographic data</td><br>      <td><img src="https://caffe2.ai/static/images/linegraph.png" alt="line graph"></td><br>      <td><a href="https://catalog.data.gov/dataset" target="_blank" rel="noopener">download</a></td><br>    </tr><br>    <tr><br>      <td><a href="http://www.robots.ox.ac.uk/~vgg/software/vgg_face/" target="_blank" rel="noopener">VGG-Face</a> millions of faces</td><br>      <td><img src="https://caffe2.ai/static/images/faces.jpg" alt="faces"></td><br>      <td><a href="http://www.robots.ox.ac.uk/~vgg/software/vgg_face/src/vgg_face_caffe.tar.gz" target="_blank" rel="noopener">download</a></td><br>    </tr><br>  </tbody><br></table>
+
+<h2 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h2><table>
 <thead>
 <tr>
 <th>CV 开源代码</th>
@@ -141,11 +16,11 @@ ga('create','UA-74386502-3','auto');ga('send','pageview');</script><!-- hexo-inj
 <tbody>
 <tr>
 <td>code</td>
-<td><a href="http://www.sigvc.org/bbs/thread-72-1-1.html" target="_blank" rel="external">http://www.sigvc.org/bbs/thread-72-1-1.html</a></td>
+<td><a href="http://www.sigvc.org/bbs/thread-72-1-1.html" target="_blank" rel="noopener">http://www.sigvc.org/bbs/thread-72-1-1.html</a></td>
 </tr>
 <tr>
-<td><a href="http://vision.princeton.edu" target="_blank" rel="external">vision.princeton.edu</a></td>
-<td><a href="http://vision.princeton.edu/research.html" target="_blank" rel="external">vision.princeton.edu/research.html</a></td>
+<td>vision.princeton.edu</td>
+<td>vision.princeton.edu/research.html</td>
 </tr>
 </tbody>
 </table>
@@ -153,29 +28,29 @@ ga('create','UA-74386502-3','auto');ga('send','pageview');</script><!-- hexo-inj
 <thead>
 <tr>
 <th>ILSVRC 历年竞赛数据集</th>
-<th>链接 (<a href="http://image-net.org/" target="_blank" rel="external">http://image-net.org/</a>)</th>
+<th>链接 (<a href="http://image-net.org/" target="_blank" rel="noopener">http://image-net.org/</a>)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>ILSVRC2016 Challenge</td>
-<td><a href="http://image-net.org/challenges/LSVRC/2016/download-images-8r28#det" target="_blank" rel="external">http://image-net.org/challenges/LSVRC/2016/download-images-8r28#det</a></td>
+<td><a href="http://image-net.org/challenges/LSVRC/2016/download-images-8r28#det" target="_blank" rel="noopener">http://image-net.org/challenges/LSVRC/2016/download-images-8r28#det</a></td>
 </tr>
 <tr>
 <td>ILSVRC2015 Challenge</td>
-<td><a href="http://image-net.org/challenges/LSVRC/2015/download-images-3j16.php" target="_blank" rel="external">http://image-net.org/challenges/LSVRC/2015/download-images-3j16.php</a></td>
+<td><a href="http://image-net.org/challenges/LSVRC/2015/download-images-3j16.php" target="_blank" rel="noopener">http://image-net.org/challenges/LSVRC/2015/download-images-3j16.php</a></td>
 </tr>
 <tr>
 <td>ILSVRC2014 Challenge</td>
-<td><a href="http://image-net.org/challenges/LSVRC/2014/download-images-5jj5.php" target="_blank" rel="external">http://image-net.org/challenges/LSVRC/2014/download-images-5jj5.php</a></td>
+<td><a href="http://image-net.org/challenges/LSVRC/2014/download-images-5jj5.php" target="_blank" rel="noopener">http://image-net.org/challenges/LSVRC/2014/download-images-5jj5.php</a></td>
 </tr>
 <tr>
 <td>ILSVRC2012 Challenge</td>
-<td><a href="http://image-net.org/challenges/LSVRC/2012/nonpub-downloads" target="_blank" rel="external">http://image-net.org/challenges/LSVRC/2012/nonpub-downloads</a></td>
+<td><a href="http://image-net.org/challenges/LSVRC/2012/nonpub-downloads" target="_blank" rel="noopener">http://image-net.org/challenges/LSVRC/2012/nonpub-downloads</a></td>
 </tr>
 <tr>
 <td>ILSVRC2010 Challenge</td>
-<td><a href="http://image-net.org/challenges/LSVRC/2010/download-all-nonpub" target="_blank" rel="external">http://image-net.org/challenges/LSVRC/2010/download-all-nonpub</a></td>
+<td><a href="http://image-net.org/challenges/LSVRC/2010/download-all-nonpub" target="_blank" rel="noopener">http://image-net.org/challenges/LSVRC/2010/download-all-nonpub</a></td>
 </tr>
 </tbody>
 </table>
@@ -189,11 +64,11 @@ ga('create','UA-74386502-3','auto');ga('send','pageview');</script><!-- hexo-inj
 <tbody>
 <tr>
 <td>The PASCAL VOC Challenge 2012</td>
-<td><a href="http://host.robots.ox.ac.uk/pascal/VOC/voc2012/" target="_blank" rel="external">http://host.robots.ox.ac.uk/pascal/VOC/voc2012/</a></td>
+<td><a href="http://host.robots.ox.ac.uk/pascal/VOC/voc2012/" target="_blank" rel="noopener">http://host.robots.ox.ac.uk/pascal/VOC/voc2012/</a></td>
 </tr>
 <tr>
 <td>The PASCAL VOC Challenge 2007</td>
-<td><a href="http://host.robots.ox.ac.uk/pascal/VOC/voc2007/" target="_blank" rel="external">http://host.robots.ox.ac.uk/pascal/VOC/voc2007/</a></td>
+<td><a href="http://host.robots.ox.ac.uk/pascal/VOC/voc2007/" target="_blank" rel="noopener">http://host.robots.ox.ac.uk/pascal/VOC/voc2007/</a></td>
 </tr>
 </tbody>
 </table>
@@ -207,50 +82,49 @@ ga('create','UA-74386502-3','auto');ga('send','pageview');</script><!-- hexo-inj
 <tbody>
 <tr>
 <td>MS-COCO</td>
-<td><a href="http://mscoco.org/dataset/#download" target="_blank" rel="external">http://mscoco.org/dataset/#download</a></td>
+<td><a href="http://mscoco.org/dataset/#download" target="_blank" rel="noopener">http://mscoco.org/dataset/#download</a></td>
 </tr>
 <tr>
 <td>youtube人脸</td>
-<td><a href="http://www.cs.tau.ac.il/~wolf/ytfaces/index.html" target="_blank" rel="external">http://www.cs.tau.ac.il/~wolf/ytfaces/index.html</a></td>
+<td><a href="http://www.cs.tau.ac.il/~wolf/ytfaces/index.html" target="_blank" rel="noopener">http://www.cs.tau.ac.il/~wolf/ytfaces/index.html</a></td>
 </tr>
 <tr>
 <td>人脸</td>
-<td><a href="http://vis-www.cs.umass.edu/lfw/" target="_blank" rel="external">http://vis-www.cs.umass.edu/lfw/</a></td>
+<td><a href="http://vis-www.cs.umass.edu/lfw/" target="_blank" rel="noopener">http://vis-www.cs.umass.edu/lfw/</a></td>
 </tr>
 <tr>
 <td>三维人脸</td>
-<td><a href="http://biometrics.idealtest.org/dbDetailForUser.do?id=8" target="_blank" rel="external">http://biometrics.idealtest.org/dbDetailForUser.do?id=8</a></td>
+<td><a href="http://biometrics.idealtest.org/dbDetailForUser.do?id=8" target="_blank" rel="noopener">http://biometrics.idealtest.org/dbDetailForUser.do?id=8</a></td>
 </tr>
 <tr>
 <td>文本类</td>
-<td><a href="http://blog.csdn.net/freesum/article/details/7370823" target="_blank" rel="external">http://blog.csdn.net/freesum/article/details/7370823</a></td>
+<td><a href="http://blog.csdn.net/freesum/article/details/7370823" target="_blank" rel="noopener">http://blog.csdn.net/freesum/article/details/7370823</a></td>
 </tr>
 <tr>
 <td>数字图像处理</td>
-<td><a href="http://blog.csdn.net/wangyaninglm/article/details/38707257" target="_blank" rel="external">http://blog.csdn.net/wangyaninglm/article/details/38707257</a></td>
+<td><a href="http://blog.csdn.net/wangyaninglm/article/details/38707257" target="_blank" rel="noopener">http://blog.csdn.net/wangyaninglm/article/details/38707257</a></td>
 </tr>
 <tr>
 <td>机器视觉中常用的数据测试集</td>
-<td><a href="http://blog.csdn.net/maxiemei/article/details/17281767" target="_blank" rel="external">http://blog.csdn.net/maxiemei/article/details/17281767</a></td>
+<td><a href="http://blog.csdn.net/maxiemei/article/details/17281767" target="_blank" rel="noopener">http://blog.csdn.net/maxiemei/article/details/17281767</a></td>
 </tr>
 <tr>
 <td>常用图像数据集：标注、检索</td>
-<td><a href="http://www.cnblogs.com/huashiyiqike/p/3778035.html" target="_blank" rel="external">http://www.cnblogs.com/huashiyiqike/p/3778035.html</a></td>
+<td><a href="http://www.cnblogs.com/huashiyiqike/p/3778035.html" target="_blank" rel="noopener">http://www.cnblogs.com/huashiyiqike/p/3778035.html</a></td>
 </tr>
 <tr>
 <td>花卉</td>
-<td><a href="http://www.cnblogs.com/fuleying/p/3895817.html" target="_blank" rel="external">http://www.cnblogs.com/fuleying/p/3895817.html</a></td>
+<td><a href="http://www.cnblogs.com/fuleying/p/3895817.html" target="_blank" rel="noopener">http://www.cnblogs.com/fuleying/p/3895817.html</a></td>
 </tr>
 <tr>
 <td>100+诡异的数据集</td>
-<td><a href="http://www.cnblogs.com/xianghang123/p/3773086.html" target="_blank" rel="external">http://www.cnblogs.com/xianghang123/p/3773086.html</a></td>
+<td><a href="http://www.cnblogs.com/xianghang123/p/3773086.html" target="_blank" rel="noopener">http://www.cnblogs.com/xianghang123/p/3773086.html</a></td>
 </tr>
 </tbody>
 </table>
-<h2 id="参考">参考</h2>
-<ul>
-<li><a href="https://www.zhihu.com/question/19969760" target="_blank" rel="external">数据分析和挖掘有哪些公开的数据来源？</a></li>
-<li><a href="https://caffe2.ai/docs/datasets.html" target="_blank" rel="external">Datasets | Caffe2</a></li>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
+<li><a href="https://www.zhihu.com/question/19969760" target="_blank" rel="noopener">数据分析和挖掘有哪些公开的数据来源？</a></li>
+<li><a href="https://caffe2.ai/docs/datasets.html" target="_blank" rel="noopener">Datasets | Caffe2</a></li>
 </ul>
 </div><div class="tags"></div><div class="post-nav"><a href="/2016/09/18/cnn/" class="pre">CNN 基本公式分析</a><a href="/2016/08/18/git-commands/" class="next">Git 常用指令</a></div><div id="disqus_thread"><div class="btn_click_load"><button class="disqus_click_btn">阅读评论 「请确保 disqus.com 可以正常加载」</button></div><script>var disqus_shortname = 'micro-era';
 var disqus_identifier = '2016/09/13/dataset/';
@@ -277,21 +151,4 @@ $.ajax({
   error: function() {
     $('.btn_click_load').css('display','block');
   }
-});</script><script id="dsq-count-scr" src="//micro-era.disqus.com/count.js" async></script></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank" class="search-form"><input type="text" name="q" maxlength="20" placeholder="Search"/><input type="hidden" name="sitesearch" value="http://blog.mindcont.com"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Kinect/">Kinect</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/深度学习/">深度学习</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/随笔日记/">随笔日记</a><span class="category-list-count">7</span></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/caffe/" style="font-size: 15px;">caffe</a> <a href="/tags/coding/" style="font-size: 15px;">coding</a> <a href="/tags/树莓派/" style="font-size: 15px;">树莓派</a> <a href="/tags/TED/" style="font-size: 15px;">TED</a> <a href="/tags/OpenCV/" style="font-size: 15px;">OpenCV</a> <a href="/tags/matlab/" style="font-size: 15px;">matlab</a> <a href="/tags/Kinect/" style="font-size: 15px;">Kinect</a> <a href="/tags/ros/" style="font-size: 15px;">ros</a> <a href="/tags/转载/" style="font-size: 15px;">转载</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/10/20/my-movie-review/">我的影评</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/09/interview-diary/">求职笔记</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/25/how-to-do-mnist-demo/">Caffe 入门-MNIST 实验</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/25/debug-android-win/">调试安卓的小技巧</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/22/some-advice-for-research-beginners/">给初做科研的一些建议</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/20/visual-cortex/">从视网膜到视皮层——视觉系统知多少</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/16/my-review-2016/">2016 , 我的年终总结</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/15/ideas-worth-spreading/">值得传播的思想</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/15/caffe-guide-book/">Caffe 入门指南</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/01/05/machine-learning-for-software-engineers/">自上而下的学习路线-软件工程师的机器学习</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-comment-o"> 最近评论</i></div><script type="text/javascript" src="//micro-era.disqus.com/recent_comments_widget.js?num_items=5&amp;hide_avatars=1&amp;avatar_size=32&amp;excerpt_length=20&amp;hide_mods=1"></script></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="http://memect.com/" title="好东西传送门" target="_blank">好东西传送门</a><ul></ul><a href="https://prism-break.org/zh-CN/all/" title="粉碎棱镜" target="_blank">粉碎棱镜</a><ul></ul><a href="https://www.daoon.com/" title="道卬" target="_blank">道卬</a><ul></ul><a href="https://www.ted.com/" title="TED | 值得传播的思想" target="_blank">TED | 值得传播的思想</a></div><div class="widget"><div class="widget-title"> <i class="fa fa-weixin"> 微信公众号</i></div><img src="/images/resources/pay/wechat-platform.jpg" width="128px"/><div class="widget-title"> <i class="fa fa-audio-description"> 推广链接</i></div><br/><a href="https://www.vultr.com/?ref=7173488" target="_black"> <img src="https://www.vultr.com/media/banner_3.png" width="192px"/></a><br/><a href="https://portal.qiniu.com/signup?code=3lc7blnku8d3m" target="_black"><img src="https://www.qiniu.com/assets/logo-b5caafe0363dace7b5c0a00be38a4829444918c4322a6168714522ee19dcb1c1.png" width="192px"/></a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2017 <a href="/." rel="nofollow">项脊轩.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a><br><a href="https://mindcont.com"><img src="https://mindcont.com/static/images/copyright.svg"/></a> <img src="https://mindcont.com/static/images/build-with-love.svg"/></div></div></div><a id="rocket" href="#top" class="show"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
-</script>
-
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Queue(function() {
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i=0; i < all.length; i += 1) {
-      all[i].SourceElement().parentNode.className += ' has-jax';
-    }
-  });
-</script>
-
-<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-<!-- End: Injected MathJax -->
-<!-- hexo-inject:end --></body></html>
+});</script><script id="dsq-count-scr" src="//micro-era.disqus.com/count.js" async></script></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank" class="search-form"><input type="text" name="q" maxlength="20" placeholder="Search"/><input type="hidden" name="sitesearch" value="http://blog.mindcont.com"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Kinect/">Kinect</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/深度学习/">深度学习</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/随笔日记/">随笔日记</a><span class="category-list-count">7</span></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/caffe/" style="font-size: 15px;">caffe</a> <a href="/tags/coding/" style="font-size: 15px;">coding</a> <a href="/tags/树莓派/" style="font-size: 15px;">树莓派</a> <a href="/tags/TED/" style="font-size: 15px;">TED</a> <a href="/tags/OpenCV/" style="font-size: 15px;">OpenCV</a> <a href="/tags/Kinect/" style="font-size: 15px;">Kinect</a> <a href="/tags/matlab/" style="font-size: 15px;">matlab</a> <a href="/tags/ros/" style="font-size: 15px;">ros</a> <a href="/tags/转载/" style="font-size: 15px;">转载</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/10/20/my-movie-review/">我的影评</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/09/interview-diary/">求职笔记</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/25/how-to-do-mnist-demo/">Caffe 入门-MNIST 实验</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/25/debug-android-win/">调试安卓的小技巧</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/22/some-advice-for-research-beginners/">给初做科研的一些建议</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/20/visual-cortex/">从视网膜到视皮层——视觉系统知多少</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/16/my-review-2016/">2016 , 我的年终总结</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/15/ideas-worth-spreading/">值得传播的思想</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/15/caffe-guide-book/">Caffe 入门指南</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/01/05/machine-learning-for-software-engineers/">自上而下的学习路线-软件工程师的机器学习</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-comment-o"> 最近评论</i></div><script type="text/javascript" src="//micro-era.disqus.com/recent_comments_widget.js?num_items=5&amp;hide_avatars=1&amp;avatar_size=32&amp;excerpt_length=20&amp;hide_mods=1"></script></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="http://memect.com/" title="好东西传送门" target="_blank">好东西传送门</a><ul></ul><a href="https://prism-break.org/zh-CN/all/" title="粉碎棱镜" target="_blank">粉碎棱镜</a><ul></ul><a href="https://www.daoon.com/" title="道卬" target="_blank">道卬</a><ul></ul><a href="https://www.ted.com/" title="TED | 值得传播的思想" target="_blank">TED | 值得传播的思想</a></div><div class="widget"><div class="widget-title"> <i class="fa fa-weixin"> 微信公众号</i></div><img src="/images/resources/pay/wechat-platform.jpg" width="128px"/><div class="widget-title"> <i class="fa fa-audio-description"> 推广链接</i></div><br/><a href="https://www.vultr.com/?ref=7173488" target="_black"> <img src="https://www.vultr.com/media/banner_3.png" width="192px"/></a><br/><a href="https://portal.qiniu.com/signup?code=3lc7blnku8d3m" target="_black"><img src="https://www.qiniu.com/assets/logo-b5caafe0363dace7b5c0a00be38a4829444918c4322a6168714522ee19dcb1c1.png" width="192px"/></a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2017 <a href="/." rel="nofollow">项脊轩.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a><br><a href="https://mindcont.com"><img src="https://mindcont.com/bigdata/static/img/copyright.svg"/></a> <img src="https://mindcont.com/bigdata/static/img/build-with-love.svg"/></div></div></div><a id="rocket" href="#top" class="show"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
