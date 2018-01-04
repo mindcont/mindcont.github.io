@@ -27,7 +27,7 @@ None
 
 ### Kinect 2.0 概述
 本节课程主要介绍 Kinect V2 的硬件组成部分，Kinect V2 与 V1 的硬件区别，Kinect SDK 2.0 的下载、安装与使用。
-<video width=640 height=400 src="http://video.ch9.ms/ch9/56e2/87969ee5-caa6-4413-9584-83acd20156e2/K4W20150212A01_mid.mp4" controls="controls" poster="/images/kinect-develop.png"></video>
+<video width=640 height=400 src="http://video.ch9.ms/ch9/56e2/87969ee5-caa6-4413-9584-83acd20156e2/K4W20150212A01_mid.mp4" controls="controls" poster="/images/research/kinect/kinect-develop.png"></video>
 ### Kinect 数据源
 本节课程主要介绍 Kinect 的集中主要数据源、Kinect 的系统架构、推荐的软硬件运行配置、程序设计基本原则、如何创建一个使用 Kinect 的 Windows 商店应用、如何获取各种 Kinect 数据源。
 
