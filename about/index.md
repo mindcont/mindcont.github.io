@@ -5,7 +5,7 @@ comments: false
 donate: true
 ---
 <!-- 梦想起飞 -->
-<!-- ![](/images/ubuntu/raspberry.png) -->
+<!-- ![](http://static.mindcont.com/blog/images/iot/flying_pi.png) -->
 <!-- ![](http://www.pacq.gov.cn/uploads/allimg/170725/1-1FH5111000K1.png) -->
 <!-- ![](/images/resources/cruiser_athabaska.jpg) -->
 <!-- ![](http://image12.m1905.cn/mapps/uploadfile/edu/2014/0925/2014092510594066002.jpg) -->

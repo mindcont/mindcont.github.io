@@ -7,14 +7,14 @@ toc: ture
 ---
 目标检测对于人来说是再简单不过的任务，但是对于计算机来说，它看到的是一些值为0~255的数组，因而很难直接得到图像中有人或者猫这种高层语义概念，也不清楚目标出现在图像中哪个区域。图像中的目标可能出现在任何位置，目标的形态可能存在各种各样的变化，图像的背景千差万别……，这些因素导致目标检测并不是一个容易解决的任务。
 <!--more-->
-![](http://static.mindcont.com/blog/images/object-detection/research-progress/1.jpg)
+![](http://static.mindcont.com/blog/images/research/object-detection/research-progress/1.jpg)
 开始本文内容之前，我们先来看一下上边左侧的这张图，从图中你看到了什么物体？他们在什么位置？这还不简单，图中有一个猫和一个人，具体的位置就是上图右侧图像两个边框(bounding-box)所在的位置。其实刚刚的这个过程就是目标检测，目标检测就是“给定一张图像或者视频帧，找出其中所有目标的位置，并给出每个目标的具体类别”。
 
 
 得益于深度学习——主要是卷积神经网络(convolution neural network: CNN)和候选区域(region proposal)算法，从2014年开始，目标检测取得了巨大的突破。本文主要对基于深度学习的目标检测算法进行剖析和总结，文章分为四个部分：第一部分大体介绍下传统目标检测的流程，第二部分介绍以R-CNN为代表的结合region proposal和CNN分类的目标检测框架(R-CNN, SPP-NET, Fast R-CNN, Faster R-CNN); 第三部分介绍以YOLO为代表的将目标检测转换为回归问题的目标检测框架(YOLO, SSD); 第四部分介绍一些可以提高目标检测性能的技巧和方法。
 
 ## 传统目标检测方法
-![](http://static.mindcont.com/blog/images/object-detection/research-progress/2.jpg)
+![](http://static.mindcont.com/blog/images/research/object-detection/research-progress/2.jpg)
 如上图所示，传统目标检测的方法一般分为三个阶段：首先在给定的图像上选择一些候选的区域，然后对这些区域提取特征，最后使用训练的分类器进行分类。下面我们对这三个阶段分别进行介绍。
 * **区域选择**
 这一步是为了对目标的位置进行定位。由于目标可能出现在图像的任何位置，而且目标的大小、长宽比例也不确定，所以最初采用滑动窗口的策略对整幅图像进行遍历，而且需要设置不同的尺度，不同的长宽比。**这种穷举的策略虽然包含了目标所有可能出现的位置，但是缺点也是显而易见的：时间复杂度太高，产生冗余窗口太多，这也严重影响后续特征提取和分类的速度和性能。**（实际上由于受到时间复杂度的问题，滑动窗口的长宽比一般都是固定的设置几个，所以对于长宽比浮动较大的多类别目标检测，即便是滑动窗口遍历也不能得到很好的区域）
@@ -37,7 +37,7 @@ toc: ture
 ### R-CNN (CVPR2014, TPAMI2015)
 (Region-based Convolution Networks for Accurate Object detection and Segmentation)
 
-![](http://static.mindcont.com/blog/images/object-detection/research-progress/3.jpg)
+![](http://static.mindcont.com/blog/images/research/object-detection/research-progress/3.jpg)
 
 上面的框架图清晰的给出了**R-CNN的目标检测流程：**
 ```
@@ -67,7 +67,7 @@ toc: ture
 
 有没有方法提速呢？好像是有的，**这2000个region proposal不都是图像的一部分吗，那么我们完全可以对图像提一次卷积层特征，然后只需要将region proposal在原图的位置映射到卷积层特征图上**，这样对于一张图像我们只需要提一次卷积层特征，然后将每个region proposal的卷积层特征输入到全连接层做后续操作。（对于CNN来说，大部分运算都耗在卷积操作上，这样做可以节省大量时间）。现在的问题是每个region proposal的尺度不一样，直接这样输入全连接层肯定是不行的，因为全连接层输入必须是固定的长度。SPP-NET恰好可以解决这个问题：
 
-![](http://static.mindcont.com/blog/images/object-detection/research-progress/4.jpg)
+![](http://static.mindcont.com/blog/images/research/object-detection/research-progress/4.jpg)
 
 上图对应的就是SPP-NET的网络结构图，任意给一张图像输入到CNN，经过卷积操作我们可以得到卷积特征（比如VGG16最后的卷积层为conv5_3，共产生512张特征图）。图中的window是就是原图一个region proposal对应到特征图的区域，只需要将这些不同大小window的特征映射到同样的维度，将其作为全连接的输入，就能保证只对图像提取一次卷积层特征。SPP-NET使用了空间金字塔采样（spatial pyramid pooling）：将每个window划分为`4*4, 2*2, 1*1`的块，然后每个块使用max-pooling下采样，这样对于每个window经过SPP层之后都得到了一个长度为`(4*4+2*2+1)*512`维度的特征向量，将这个作为全连接层的输入进行后续操作。
 
@@ -79,7 +79,7 @@ toc: ture
 
 ### Fast R-CNN(ICCV2015)
 有了前边R-CNN和SPP-NET的介绍，我们直接看Fast R-CNN的框架图：
-![](http://static.mindcont.com/blog/images/object-detection/research-progress/5.png)
+![](http://static.mindcont.com/blog/images/research/object-detection/research-progress/5.png)
 与R-CNN框架图对比，可以发现主要有两处不同：**一是最后一个卷积层后加了一个ROI pooling layer，二是损失函数使用了多任务损失函数(multi-task loss)，将边框回归直接加入到CNN网络中训练。**
 ```
 ROI pooling layer实际上是SPP-NET的一个精简版，SPP-NET对每个proposal使用了不同大小的金字塔映射，而ROI pooling layer只需要下采样到一个7x7的特征图。对于VGG16网络conv5_3有512个特征图，这样所有region proposal对应了一个7*7*512维度的特征向量作为全连接层的输入。
@@ -96,7 +96,7 @@ Fast R-CNN在网络微调的过程中，将部分卷积层也进行了微调，�
 
 **RPN的核心思想是使用卷积神经网络直接产生region proposal，使用的方法本质上就是滑动窗口。RPN的设计比较巧妙，RPN只需在最后的卷积层上滑动一遍，因为anchor机制和边框回归可以得到多尺度多长宽比的region proposal。**
 
-![](http://static.mindcont.com/blog/images/object-detection/research-progress/6.png)
+![](http://static.mindcont.com/blog/images/research/object-detection/research-progress/6.png)
 
 我们直接看上边的RPN网络结构图(使用了ZF模型)，给定输入图像(假设分辨率为`600*1000`)，经过卷积操作得到最后一层的卷积特征图(`大小约为40*60`)。在这个特征图上使用`3*3的卷积核`(滑动窗口)与特征图进行卷积，最后一层卷积层共有`256个feature map`，那么这个`3*3`的区域卷积后可以获得一个256维的特征向量，后边接cls layer和reg layer分别用于分类和边框回归（跟Fast R-CNN类似，只不过这里的类别只有目标和背景两个类别）。`3*3滑窗`对应的每个特征区域同时预测`输入图像3种尺度(128,256,512)，3种长宽比(1:1,1:2,2:1)`的region proposal，这种映射的机制称为anchor。所以对于这个`40*60的feature map`，总共有约`20000(40*60*9)个anchor`，也就是`预测20000个region proposal`。
 
@@ -125,7 +125,7 @@ Faster R-CNN的方法目前是主流的目标检测方法，但是速度上并�
 ### YOLO (CVPR2016, oral)
 (You Only Look Once: Unified, Real-Time Object Detection)
 
-![](http://static.mindcont.com/blog/images/object-detection/research-progress/7.png)
+![](http://static.mindcont.com/blog/images/research/object-detection/research-progress/7.png)
 
 我们直接看上面YOLO的目标检测的流程图：
 ```
@@ -143,7 +143,7 @@ Faster R-CNN的方法目前是主流的目标检测方法，但是速度上并�
 (SSD: Single Shot MultiBox Detector)
 上面分析了YOLO存在的问题，使用整图特征在`7*7`的粗糙网格内回归对目标的定位并不是很精准。那是不是可以结合region proposal的思想实现精准一些的定位？**SSD结合YOLO的回归思想以及Faster R-CNN的anchor机制做到了这点。**
 
-![](http://static.mindcont.com/blog/images/object-detection/research-progress/8.png)
+![](http://static.mindcont.com/blog/images/research/object-detection/research-progress/8.png)
 
 上图是SSD的一个框架图，首先SSD获取目标位置和类别的方法跟YOLO一样，都是使用回归，但是YOLO预测某个位置使用的是全图的特征，SSD预测某个位置使用的是这个位置周围的特征（感觉更合理一些）。那么如何建立某个位置和其特征的对应关系呢？可能你已经想到了，使用Faster R-CNN的anchor机制。`如SSD的框架图所示，假如某一层特征图(图b)大小是8*8，那么就使用3*3的滑窗提取每个位置的特征，然后这个特征回归得到目标的坐标信息和类别信息(图c)。`
 

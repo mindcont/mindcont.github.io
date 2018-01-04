@@ -31,7 +31,7 @@ sudo apt-get install packaging-dev
 ```
 gpg --gen-key　
 ```
-![](http://static.mindcont.com/blog/images/ubuntu/ppa/gpgkey.png)
+![](http://static.mindcont.com/blog/images/resources/ubuntu/ppa/gpgkey.png)
 之后你应该会看到如下信息：
 ```
 pub   2048R/AA08D2A8 2014-03-25
@@ -65,7 +65,7 @@ pbuilder-dist trusty create
 ```
 之后便是漫长的等待.....
 
-![](http://static.mindcont.com/blog/images/ubuntu/ppa/pbuilder.png)
+![](http://static.mindcont.com/blog/images/resources/ubuntu/ppa/pbuilder.png)
 
 ### 创建Launchpad账户
 
@@ -93,10 +93,10 @@ sub   2048R/EDE83100 2016-11-11
 ```
 
 登陆你的launchpad，选择下图红框的位置
-![](http://static.mindcont.com/blog/images/ubuntu/ppa/upload_gpg_key_1.png)
+![](http://static.mindcont.com/blog/images/resources/ubuntu/ppa/upload_gpg_key_1.png)
 
 然后填写刚才我们查找的pub字段，密钥指纹中的字符串
-![](http://static.mindcont.com/blog/images/ubuntu/ppa/upload_gpg_key_2.png)
+![](http://static.mindcont.com/blog/images/resources/ubuntu/ppa/upload_gpg_key_2.png)
 
 点击　import 之后，系统会发送一封邮件到你的邮箱，用来对导入的key进行验证。你需要用自己的私钥对服务器用你刚上传公钥加密的内容进行解密 。**其中邮件的内容为不可读的**,需要解密的内容类似于：
 ```
@@ -400,10 +400,10 @@ You are receiving this email because you made this upload.
 
 接下来就静待官方编译吧,编译进度可以在 Overview of published packages》View package details 中查看
 
-![](http://static.mindcont.com/blog/images/ubuntu/ppa/build.png)
+![](http://static.mindcont.com/blog/images/resources/ubuntu/ppa/build.png)
 
 编译完成后，就可以通过ppa源进行安装了
-![](http://static.mindcont.com/blog/images/ubuntu/ppa/build_success.png)
+![](http://static.mindcont.com/blog/images/resources/ubuntu/ppa/build_success.png)
 ```
 sudo add-apt-repository ppa:mindcont/openyoudao
 sudo apt-get update

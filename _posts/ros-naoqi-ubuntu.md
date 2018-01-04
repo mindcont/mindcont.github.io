@@ -6,7 +6,7 @@ categories:
 ---
 ROS( robot operating system) 是一款开源的面向与机器人控制领域的操作系统，起源于2007斯坦福大学人工智能实验室的项目与机器人技术公司Willow Garage 的个人机器人项目之间的合作，2008年之后由Willow Garage 推动，2010 年该公司将其开源，2015年，ros 发布了Jade 版本。
 <!--more-->
-![](http://static.mindcont.com/blog/images/ubuntu/ros/hero_product.jpg)
+![](http://static.mindcont.com/blog/images/resources/ubuntu/ros/hero_product.jpg)
 
 [书接上回](http://blog.mindcont.com/2016/12/14/naoqi-robot-sdk-ubuntu/)，下面我将带您一览ros和naoqi robot 在ubuntu 14.04(lts)版本下开发环境的搭建。
 
@@ -15,7 +15,7 @@ ROS( robot operating system) 是一款开源的面向与机器人控制领域的
 * 1、 配置 Ubuntu 软件仓库
 配置你的 Ubuntu 软件仓库(repositories) 以允许 "restricted"、"universe" 和 "multiverse"这三种安装模式。 你可以 [按照ubuntu中的配置指南](https://help.ubuntu.com/community/Repositories/Ubuntu)来完成配置。
 
-![](http://static.mindcont.com/blog/images/ubuntu/ros/ubuntu-repositories-config.png)
+![](http://static.mindcont.com/blog/images/resources/ubuntu/ros/ubuntu-repositories-config.png)
 
 
 * 2、 添加 sources.list
@@ -79,7 +79,7 @@ sudo apt-get install ros-indigo-nao-robot ros-indigo-nao-extras
 roscore
 ```
 
-![](http://static.mindcont.com/blog/images/ubuntu/ros/roscore.png)
+![](http://static.mindcont.com/blog/images/resources/ubuntu/ros/roscore.png)
 
 **2、运行naoqi-bin 启动虚拟naoqi**
 再打开一个新的命令行窗口，这里我们称它为窗口2
@@ -88,7 +88,7 @@ roscore
 ```
 broker-ip地址127.0.0.1是用于连接到您自己的PC的环回地址。 因此，只有本地ROS可以连接到NAOqi。 NAOqi API可以通过broker-ip地址访问，nao_driver充当NAOqi API的包装器。
 
-![](http://static.mindcont.com/blog/images/ubuntu/ros/naoqi-bin.png)
+![](http://static.mindcont.com/blog/images/resources/ubuntu/ros/naoqi-bin.png)
 
 **3、然后启动ros_driver包，使ros连接到本地PC上的模拟Naoqi**
 再打开一个新的命令行窗口，这里我们称它为窗口3，在新终端中运行：
@@ -98,7 +98,7 @@ LD_LIBRARY_PATH=~/naoqi/choregraphe-suite-2.1.4.13-linux64/lib:$LD_LIBRARY_PATH 
 ```
 **注意**：不要将此路径添加到.bashrc中的全局LD_LIBRARY_PATH，因为其他事情将会中断。 例如 rviz将无法运行与错误
 
-![](http://static.mindcont.com/blog/images/ubuntu/ros/naoqi_driver_launch.png)
+![](http://static.mindcont.com/blog/images/resources/ubuntu/ros/naoqi_driver_launch.png)
 
 完整输出如下：
 ```
@@ -146,16 +146,16 @@ roslaunch nao_description display.launch
 ```
 
 在左上角的“显示”窗口中，将“固定框架”更改为“/ base_link”。如果只有“/ map”选项可用，则不会从上一步加载URDF模型。
-![](http://static.mindcont.com/blog/images/ubuntu/ros/fixed-frame-base_link.jpg)
+![](http://static.mindcont.com/blog/images/resources/ubuntu/ros/fixed-frame-base_link.jpg)
 
 点击“添加”按钮并添加RobotModel
 
-![](http://static.mindcont.com/blog/images/ubuntu/ros/add-robot-model.png)
+![](http://static.mindcont.com/blog/images/resources/ubuntu/ros/add-robot-model.png)
 
 如果一切正常，你会看到一个机器人模型。通过调节右侧的滑块，机器人将做相应的动作。
 
-![](http://static.mindcont.com/blog/images/ubuntu/ros/naoqi-display.jpg)
-![](http://static.mindcont.com/blog/images/ubuntu/ros/turtlebot.jpg)
+![](http://static.mindcont.com/blog/images/resources/ubuntu/ros/naoqi-display.jpg)
+![](http://static.mindcont.com/blog/images/resources/ubuntu/ros/turtlebot.jpg)
 
 如果过程中遇到错误和问题，请参考下面的[参考链接](http://blog.mindcont.coms/2016/12/14/ros-naoqi-ubuntu/#参考)。
 
