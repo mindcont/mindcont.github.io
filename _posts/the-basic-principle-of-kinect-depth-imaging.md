@@ -1,8 +1,8 @@
 ---
 title: Kinect深度成像的基本原理
 date: 2016-05-09 16:01:32
-tags: Kinect
-categories: Kinect
+tags: kinect
+categories: 
 toc: true
 ---
 

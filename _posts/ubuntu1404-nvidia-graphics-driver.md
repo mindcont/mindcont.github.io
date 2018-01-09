@@ -1,7 +1,7 @@
 ---
 title: Ubuntu 14.04 安装 Nvidia 私有驱动并进行双显卡切换
 date: 2016-07-15 15:55:36
-tags:
+tags: ubuntu
 categories: Linux
 ---
 笔者最近弄Caffe不小心有把nvidia显卡驱动弄坏了，现在将ubuntu14.04 双显卡切换记录如下。
@@ -34,7 +34,7 @@ sudo apt-get install nvidia-340 nvidia-340-uvm nvidia-settings nvidia-prime prim
 ```bash
 sudo reboot
 ```
-![](http://static.mindcont.com/blog/images/resources/ubuntu/nvidia_success.png)
+![](http://static.mindcont.com/blog/images/coding/ubuntu/nvidia_success.png)
 
 **注意!!!**
 如果在安装过程中遇到下面的问题

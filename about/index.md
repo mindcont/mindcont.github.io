@@ -9,7 +9,8 @@ donate: true
 <!-- ![](http://www.pacq.gov.cn/uploads/allimg/170725/1-1FH5111000K1.png) -->
 <!-- ![](/images/resources/cruiser_athabaska.jpg) -->
 <!-- ![](http://image12.m1905.cn/mapps/uploadfile/edu/2014/0925/2014092510594066002.jpg) -->
-![](http://static.mindcont.com/blog/images/resources/mars_poster.jpg)
+<!-- ![](http://static.mindcont.com/blog/images/resources/mars_poster.jpg) -->
+![](/images/iot/Winter_Wildlife-homepage.png)
 
 <!-- 迪士尼动画《带着梦想上路》 -->
 <!-- <embed height="415" width="544" quality="high" allowfullscreen="true" autostart=true type="application/x-shockwave-flash" src="//static.hdslb.com/miniloader.swf" flashvars="aid=9367297&page=1" pluginspage="//www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed> -->
@@ -59,18 +60,17 @@ donate: true
 
 <p style="TEXT-ALIGN: right "><br/><span style="FONT-FAMILY: 楷体,楷体_GB2312, SimKai">&mdash;&mdash;梁启超《少年中国说》节选</span></p> -->
 <p style="font-size:18px"><span style="FONT-FAMILY: 楷体,楷体_GB2312, SimKai">
-<br>
-老友们常聊起他<br>
-他那些惊人之举<br>
-他走了  有时<br>
-令我感伤<br>
-有的鸟毕竟是关不住的<br>
-他们的羽翼太过光辉<br>
-当他们飞走时...<br>
-你会由衷庆贺他获得自由<br>
-无奈的是...<br>
-你得继续在这乏味之地苟活<br>
-我真怀念这位友伴啊<br></span></p>
+老友们常聊起他
+他那些惊人之举
+他走了  有时
+令我感伤
+有的鸟毕竟是关不住的
+他们的羽翼太过光辉
+当他们飞走时...
+你会由衷庆贺他获得自由
+无奈的是...
+你得继续在这乏味之地苟活
+我真怀念这位友伴啊</span></p>
 
 <!--
 ### 技能树
@@ -119,10 +119,7 @@ donate: true
 #### CDN-七牛云服务
 点击下方图片，使用我的推广链接注册并通过实名认证，即可享受免费的标准用户配额，这些套餐包含如下内容:
 
-<li>10GB 存储空间</li>
-<li>每月 10GB 下载流量</li>
-<li>每月 PUT/DELETE 10万次请求</li>
-<li>每月 GET 100万次请求</li>
+<li>10GB 存储空间</li><li>每月 10GB 下载流量</li><li>每月 PUT/DELETE 10万次请求</li><li>每月 GET 100万次请求</li>
 
 <a href="https://portal.qiniu.com/signup?code=3lc7blnku8d3m"><img src="https://www.qiniu.com/assets/logo-b5caafe0363dace7b5c0a00be38a4829444918c4322a6168714522ee19dcb1c1.png"  align="left"></a>
 <br>

@@ -1,7 +1,7 @@
 ---
 title: 快速入门 Kinect for Windows v2 开发
 date: 2016-04-16 18:43:51
-tags: Kinect
+tags: kinect
 ---
 本系列应用程序开发课程涵盖了 Kinect 开发的方方面面。对主要功能包括 Kinect Fusion、HD Face 等进行了深入解析。介绍了 Kinect 应用与第三方类库包括 Unity、Cinder、Openframework 等的结合使用，及如何发布支持 Kinect 的 Windows App Store 应用程序。并讲解演示了 Kinect 开发的辅助工具 Gesture Builder、Kinect Studio 的使用。无论您从事医疗、教育、零售等任何领域的应用开发，本课程一定会让您受益匪浅。
 

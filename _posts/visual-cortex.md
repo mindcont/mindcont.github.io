@@ -11,11 +11,11 @@ categories:
 
 　　如果说几十亿年前生命的诞生是地球上迄今为止最美的奇迹，那么生物体的神经系统堪称这个奇迹中最耀眼的巅峰之作。重量约为1.3千克，体积约为1200立方厘米，包含大约860亿个神经元（即神经细胞，是神经系统的结构与功能单位）以及同样数量的非神经元细胞（例如对神经元提供支撑和保护作用的胶质细胞，运输氧气和养料的血管组织等），人类大脑的复杂程度与奥妙之处被很多神经科学家认为并不亚于广袤无垠充满未知的浩瀚宇宙。
 
-![](http://static.mindcont.com/blog/images/resources/visual-cortex/1.jpg)
+![](http://static.mindcont.com/blog/images/research/visual-cortex/1.jpg)
 
 <center>图1 大鼠脑部（左）和人脑（右）的结构示意图</center>
 
-![](http://static.mindcont.com/blog/images/resources/visual-cortex/2.jpg)
+![](http://static.mindcont.com/blog/images/research/visual-cortex/2.jpg)
 
 <center>图2 大脑皮层左半球侧面视角的主要脑区和结构</center>
 
@@ -23,13 +23,13 @@ categories:
 
 外界环境信息的获取及处理主要由感觉系统来负责，包括视觉系统、听觉系统、嗅觉系统、味觉系统和触觉系统等。在生物体获取的所有外界信息中，视觉信息占有很大的比例，尤其是对于高等动物这一现象更为明显。对于一个正常人，视觉信息占全部感觉信息的70%以上。我们在生活中也很容易体会到视觉是多么重要的一种感觉。
 
-![](http://static.mindcont.com/blog/images/resources/visual-cortex/3.jpg)
+![](http://static.mindcont.com/blog/images/research/visual-cortex/3.jpg)
 
 <center>图3 人体的主要感觉</center>
 
 视觉系统在结构上主要包括眼睛（主要指视网膜）、外侧膝状体（简称外膝体）以及视皮层（包括初级视皮层以及纹外皮层）等，在功能上主要负责视觉信息的获取和处理进而形成视觉，同时也与其他脑区一同参与到一些和视觉成像无关的行为控制中。
 
-![](http://static.mindcont.com/blog/images/resources/visual-cortex/4.jpg)
+![](http://static.mindcont.com/blog/images/research/visual-cortex/4.jpg)
 
 <center>图4 视网膜神经节细胞投射的主要脑区和结构</center>
 
@@ -47,7 +47,7 @@ categories:
 
 　　近年来发现的一些不完全依赖于光感受器而是自身就具备感光功能可以进行光电转换的神经节细胞越来越引起人们的注意和兴趣。目前的研究表明这些感光神经节细胞可能并不参与视觉成像而是与生物个体的昼夜节律的调节相关。
 
-![](http://static.mindcont.com/blog/images/resources/visual-cortex/5.jpg)
+![](http://static.mindcont.com/blog/images/research/visual-cortex/5.jpg)
 
 <center>图5 视网膜结构及其神经元组成示意图</center>
 
@@ -55,7 +55,7 @@ categories:
 
 通过对视网膜功能的深入研究也证明了这一点。即便是在视觉信息的第一站，在光感受器进行光电转换将光信号转变为电信号之后，接下来一系列的神经元对这些信息进行了或多或少的加工处理，最终由神经节细胞向其他脑区传递。虽然视网膜是这么复杂的系统，但是也可以相对简单地来理解。一种简单的模型是说，光感受器将信息传递给十多个亚型的双极细胞，可以理解为十多条并行的通路，这十多条通路在对视觉信息进行平行传递时由水平细胞和无长突细胞进行加工处理，最终将视觉信息的不同要素（比如明暗变化，颜色，运动速度与方向等）抽提出来传递给不同亚型的神经节细胞。在某种程度上，不同亚型的神经节细胞具有的功能特征多样性反映了视网膜环路功能的复杂性。也是因为这个原因，同时考虑到临床意义，目前为止神经节细胞是视网膜中被研究得最多、了解得最深入的神经元，。而即便如此，我们对它们的了解也还是很不全面，甚至多数还停留在根据形态和功能对细胞进行分类的阶段。更不用说在形态和功能的一些最基本的方面才刚刚开始进行系统研究的双极神经元，以及其他种类的神经元。为了理解视网膜对视觉信息的加工处理过程与机制，对所有这些神经元进行系统而精细的研究都是必须的过程。而很多科学问题的研究和解决依赖于相关技术的进步。例如近些年来转基因小鼠在神经生物学领域的广泛应用，对科学研究起到了极大的促进作用。在视网膜的研究中，结合分子生物学制作的各种不同品系的转基因小鼠，使得实验人员可以针对某一种或者某几种细胞进行深入的功能研究，取得了很多的成果。
 
-![](http://static.mindcont.com/blog/images/resources/visual-cortex/6.jpg)
+![](http://static.mindcont.com/blog/images/research/visual-cortex/6.jpg)
 
 <center>图6 视网膜平行通道信息处理模型示意图 </center>
 
@@ -67,7 +67,7 @@ categories:
 
 视网膜神经节细胞投射到外膝体各层是有规律可循的。外膝体每层都与对测视野相应的半个视网膜之间形成一定的视网膜投射图关系，即视网膜中相邻区域投射到外膝体时也是相邻或重叠的。这一点的重要性在于可以将空间位置信息在视觉信息传递的过程中得以保留。
 
-![](http://static.mindcont.com/blog/images/resources/visual-cortex/7.jpg)
+![](http://static.mindcont.com/blog/images/research/visual-cortex/7.jpg)
 
 <center>图7 猕猴外侧膝状体在脑内位置以及切片结构示意图；下图为视网膜到外侧膝状体投射的空间位置拓扑关系</center>
 
@@ -83,13 +83,13 @@ categories:
 
 通常所说的视皮层主要包括初级视皮层（又称作纹状皮层或视觉第一区域，即V1）和纹外皮层（例如视觉第二、第三、第四、第五区域等，即V2、V3、V4、V5）。实际上，根据神经解剖学和生理学的研究，现在已经知道的猴皮层上至少有35个区域与视觉功能有关。视皮层和其他皮层区域一样，根据组织染色的结果以及神经元的种类与连接方式等，通常分为6层，有些层次的细胞接收皮层下区域或者其他皮层的输入，有些层次的细胞则负责向皮层下或者其他皮层输出信息。
 
-![](http://static.mindcont.com/blog/images/resources/visual-cortex/8.jpg)
+![](http://static.mindcont.com/blog/images/research/visual-cortex/8.jpg)
 
 <center>图8 外侧膝状体至初级视皮层各层的投射关系、初级视皮层内部的投射关系及初级视皮层向外侧膝状体、上丘及其他皮层区域的投射关系</center>
 
 初级视皮层接收来自外侧膝状体的信息，然后通过V2和V3传递给V4、V5（即MT区）以及更高的脑区。有一种模型认为，整个的皮层信息处理过程由两条并行的通路完成：V1、V2、V4等组成的腹侧通路主要处理物体形状、颜色等信息；V1、V2、V5等组成的背侧通路主要负责对运动等信息的感知。当然，还有其他的模型同样来阐述视觉皮层的工作机制，它们各自都有一定的优缺点。
 
-![](http://static.mindcont.com/blog/images/resources/visual-cortex/9.jpg)
+![](http://static.mindcont.com/blog/images/research/visual-cortex/9.jpg)
 
 <center>图9 视觉通路的平行处理模型。主要分为背侧通路和腹侧通路</center>
 
@@ -97,7 +97,7 @@ categories:
 
 Hubel和Wiesel根据对视觉刺激的反应特征，在视皮层发现了多种神经元，分别叫做简单细胞、复杂细胞以及超复杂细胞。他们后续的研究以及后来大量科研工作者的实验对这些不同细胞的功能进行了深入的探索。他们的另外一项重要发现则是在视皮层中证实了之前由Vernon Mountcastle(1918--2015)根据其在躯体感觉皮层的研究提出的皮层功能柱的结构。他们的发现可以简单描述为许多具有相同特性的皮层细胞，在视皮层内按照一定的规则在空间上排列起来，这种按功能排列的皮层结构，即皮层的功能构筑，沿着皮层的不同层次呈现柱状分布，例如方向柱、方位柱、眼优势柱、空间频率柱以及颜色柱等。这一结构的形成对于皮层内感觉信息的处理具有重要的影响。
 
-![](http://static.mindcont.com/blog/images/resources/visual-cortex/10.jpg)
+![](http://static.mindcont.com/blog/images/research/visual-cortex/10.jpg)
 
 <center>图10 初级视皮层功能住模型示意图。X轴代表眼优势功能柱（即柱内细胞接收左眼或右眼输入），Y轴代表方位功能柱（即柱内细胞偏好相应颜色代表的朝向）</center>
 

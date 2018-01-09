@@ -48,7 +48,7 @@ sudo reboot
 **(03-25: 今天下最新的caffe回来发现编译不过啊一直CUDNN报错浪费了我几个小时没搞定! 后来才发现caffe15小时前的更新开始使用cudnn v2, 但是官网上并没有明显提示!!! 坑爹啊!)**
 cuDNN能加速caffe中conv及pooling的计算。首先下载[cuDNN](https://developer.nvidia.com/cudnn),需要注册。或通过在**百度云** 链接：http://pan.baidu.com/s/1dEXPg3J 密码：v19o 得到。
 
-![](http://static.mindcont.com/blog/images/caffe/cuDNN Download.png)
+![](http://static.mindcont.com/blog/images/research/caffe/cuDNN Download.png)
 
 下载完成后，然后执行下列命令解压并安装
 ```sh
@@ -58,14 +58,14 @@ cd cuda
 sudo cp lib64/* /usr/local/cuda/lib64/
 sudo cp include/cudnn.h /usr/local/cuda/include/
 ```
-![](http://static.mindcont.com/blog/images/caffe/cudnn_copy.png)
+![](http://static.mindcont.com/blog/images/research/caffe/cudnn_copy.png)
 更新软链接
 ```sh
 cd /usr/local/cuda/lib64/
 sudo rm -rf libcudnn.so libcudnn.so.5
 sudo ln -s libcudnn.so.5.1.3 libcudnn.so
 ```
-![](http://static.mindcont.com/blog/images/caffe/cudnn_finish.png)
+![](http://static.mindcont.com/blog/images/research/caffe/cudnn_finish.png)
 ### 设置环境变量
 安装完成后需要在`/etc/profile`中添加环境变量,
 ```bash
@@ -76,7 +76,7 @@ sudo gedit /etc/profile
 PATH=/usr/local/cuda/bin:$PATH
 export PATH
 ```
-![](http://static.mindcont.com/blog/images/caffe/caffe_profile.png)
+![](http://static.mindcont.com/blog/images/research/caffe/caffe_profile.png)
 保存后, 执行下列命令, 使环境变量立即生效
 ```
 source /etc/profile
@@ -85,7 +85,7 @@ source /etc/profile
 ```sh
 /usr/local/cuda/lib64
 ```
-![](http://static.mindcont.com/blog/images/caffe/cuda_conf.png)
+![](http://static.mindcont.com/blog/images/research/caffe/cuda_conf.png)
 保存后，执行下列命令使之立刻生效
 ```sh
 sudo ldconfig
@@ -97,7 +97,7 @@ sudo ldconfig
 sudo make all -j4
 ```
 编译过程
-![](http://static.mindcont.com/blog/images/caffe/cuda_samples.png)
+![](http://static.mindcont.com/blog/images/research/caffe/cuda_samples.png)
 整个过程大概10分钟左右, 全部编译完成后， 进入 `samples/bin/x86_64/linux/release`, 运行deviceQuery
 ```sh
 ./deviceQuery
@@ -149,7 +149,7 @@ deviceQuery, CUDA Driver = CUDART, CUDA Driver Version = 7.5, CUDA Runtime Versi
 Result = PASS
 
 ```
-![](http://static.mindcont.com/blog/images/caffe/deviceQuery.png)
+![](http://static.mindcont.com/blog/images/research/caffe/deviceQuery.png)
 ## 安装Intel MKL 或Atlas
 如果没有Intel MKL， 可以用下列命令安装免费的atlas
 ```sh
@@ -158,26 +158,26 @@ sudo apt-get install libatlas-base-dev
 
 如果有mkl安装包[Intel® MKL](https://software.intel.com/en-us/intel-mkl)需注册后会发下载链接和激活码到注册邮箱。
 先注册，后再登录到此界面，选择'Get This Library for Free!'->'Everyone'。
-![](http://static.mindcont.com/blog/images/caffe/mkl_Download_1.png)
+![](http://static.mindcont.com/blog/images/research/caffe/mkl_Download_1.png)
 选择社区版本Licensing
-![](http://static.mindcont.com/blog/images/caffe/mkl_Download_2.png)
+![](http://static.mindcont.com/blog/images/research/caffe/mkl_Download_2.png)
 填写信息后，会下载链接和激活码到你注册邮箱。
-![](http://static.mindcont.com/blog/images/caffe/mkl_Download_3.png)
+![](http://static.mindcont.com/blog/images/research/caffe/mkl_Download_3.png)
 首先解压安装包，下面有一个install_GUI.sh文件， 执行该文件，会出现图形安装界面，根据说明一步一步执行即可。
 ```sh
 tar -zxvf l_mkl_11.3.3.210.tgz
 cd l_mkl_11.3.3.210
 sudo sh install.sh
 ```
-![](http://static.mindcont.com/blog/images/caffe/mkl_install.png)
-![](http://static.mindcont.com/blog/images/caffe/mkl_ativate.png)
-![](http://static.mindcont.com/blog/images/caffe/mkl_complete.png)
+![](http://static.mindcont.com/blog/images/research/caffe/mkl_install.png)
+![](http://static.mindcont.com/blog/images/research/caffe/mkl_ativate.png)
+![](http://static.mindcont.com/blog/images/research/caffe/mkl_complete.png)
 **注意**： 安装完成后需要添加library路径, 创建`/etc/ld.so.conf.d/intel_mkl.conf`文件， 在文件中添加内容
 ```
 /opt/intel/lib/intel64
 /opt/intel/mkl/lib/intel64
 ```
-![](http://static.mindcont.com/blog/images/caffe/intel_mkl_conf.png)
+![](http://static.mindcont.com/blog/images/research/caffe/intel_mkl_conf.png)
 注意把路径替换成自己的安装路径。 编辑完后执行
 ```sh
 sudo ldconfig
@@ -217,7 +217,7 @@ Terminal=false
 Categories=Development;Matlab;
 ```
 这里我的Matlab安装位置为默认，如下所示
-![](http://static.mindcont.com/blog/images/caffe/matlab_location.png)
+![](http://static.mindcont.com/blog/images/research/caffe/matlab_location.png)
 ##  编译Caffe
 ###  编译主程序
 终于完成了所有环境的配置，可以愉快的编译Caffe了！**需要注意的是，这里我采用的是caffe-rc3.zip(on 30 Jan 2016)。** 进入caffe根目录， 首先复制一份`Makefile.config`,
@@ -353,8 +353,8 @@ make test
 make runtest
 ```
 **注意** `-j4` 是指使用几个线程来同时编译， 可以加快速度， j后面的数字可以根据CPU core的个数来决定， 我的CPU使4核， 所以-j4.
-![](http://static.mindcont.com/blog/images/caffe/makeruntest_begin.png)
-![](http://static.mindcont.com/blog/images/caffe/makeruntest_finish.png)
+![](http://static.mindcont.com/blog/images/research/caffe/makeruntest_begin.png)
+![](http://static.mindcont.com/blog/images/research/caffe/makeruntest_finish.png)
 
 ### 编译Matlab wrapper
 执行如下命令

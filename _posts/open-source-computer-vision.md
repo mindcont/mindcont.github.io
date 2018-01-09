@@ -1,7 +1,7 @@
 ---
 title: 计算机视觉开源项目
 date: 2016-05-13 13:40:08
-tags: OpenCV
+tags: opencv
 categories: 
 toc: true
 ---

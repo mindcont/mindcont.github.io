@@ -1,8 +1,8 @@
 ---
 title: 使用OpenWrt打造透明路由
 date: 2016-11-15 20:32:36
-tags: 树莓派
-categories:
+tags: openwrt
+categories: 物联
 toc: ture
 ---
 
@@ -25,19 +25,19 @@ Openwrt是用于路由器的高度模块化，高度智能化的嵌入式Linux�
 
 ## 配置
 ### 安装shasowsocks和chinadns
-![](http://static.mindcont.com/blog/images/resources/ubuntu/openwrt/shadowsocks-install.png)
+![](http://static.mindcont.com/blog/images/images/iot/openwrt/shadowsocks-install.png)
 chinadns 的安装过程类似。
 
 ### 配置Shadowsocks
 在windows下使用SSH工具，如[Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/)等，在Host name 填写192.168.1.1，端口22 ，然后点击 Open.
-![](http://static.mindcont.com/blog/images/resources/ubuntu/openwrt/putty.png)
+![](http://static.mindcont.com/blog/images/images/iot/openwrt/putty.png)
 
 在linux下，打开终端输入
 ```
 ssh root@192.168.1.1
 ```
 输人密码（默认 admin）登陆,如下图所示
-![](http://static.mindcont.com/blog/images/resources/ubuntu/openwrt/welcome.png)
+![](http://static.mindcont.com/blog/images/images/iot/openwrt/welcome.png)
 
 配置 /etc/shadowsocks.json：运行命令vi /etc/shadowsocks.json，格式如下：
 
@@ -111,24 +111,24 @@ cd dnsmasq.d
 
 进入网络(Network)->DHCP and DNS。
 将DNS解析端口设置为127.0.0.1#5353。这将使得路由器将DNS请求经由dnsmasq全部转发至ChinaDNS处理。
-![](http://static.mindcont.com/blog/images/resources/ubuntu/openwrt/dhcp.png)
+![](http://static.mindcont.com/blog/images/images/iot/openwrt/dhcp.png)
 
 勾选“忽略解析文件”(ignore resolve file), 保存并应用
-![](http://static.mindcont.com/blog/images/resources/ubuntu/openwrt/dhcp_hosts.png)
+![](http://static.mindcont.com/blog/images/images/iot/openwrt/dhcp_hosts.png)
 
 #### ChinaDNS配置
 在路由器web管理页面，进入服务(Services)->ChinaDNS
 本地端口写5353，中国路由表(CHNRoute File)填/etc/chinadns_chnroute.txt
 上游DNS服务器填114.114.114.114,.8.8.8.8。（可将114.114.114.114改成当前ISP提供的DNS服务器IP）
 保存并应用
-![](http://static.mindcont.com/blog/images/resources/ubuntu/openwrt/chinadns.png)
+![](http://static.mindcont.com/blog/images/images/iot/openwrt/chinadns.png)
 
 这样设置后，从内网主机端发出的国外DNS请求将发送至：dnsmasq->ChinaDNS->8.8.8.8，
 国内DNS请求则：dnsmasq->ChinaDNS->114.114.114（或你的ISP供应商的DNS）。
 
 #### shadowsocks 配置
 进入服务(Services)->ShadowSocks 。访问控制－>接口-WAN 被忽略的IP 列表选择 chinadns路由表,保存并应用。
-![](http://static.mindcont.com/blog/images/resources/ubuntu/openwrt/shadowsocks_udp.png)
+![](http://static.mindcont.com/blog/images/images/iot/openwrt/shadowsocks_udp.png)
 
 #### 自定义防火墙
 进入Luci界面-网络-防火墙-自定义规则，加入以下规则（最后的1080是Shadowsocks的本地端口，请酌情修改）：
@@ -138,7 +138,7 @@ iptables -t nat -A PREROUTING -p tcp -m set --match-set gfwlist dst -j REDIRECT 
 iptables -t nat -A OUTPUT -p tcp -m set --match-set gfwlist dst -j REDIRECT --to-port 1080
 ```
 如下图所示
-![](http://static.mindcont.com/blog/images/resources/ubuntu/openwrt/iptable.png)
+![](http://static.mindcont.com/blog/images/images/iot/openwrt/iptable.png)
 
 ### 调试
 路由器**重启后**，即可无界访问了。如果遇到问题，请打开**下面的参考链接**。可以通过　netstat -nl 查看当前活动的链接，看看相应的端口是否已经打开。

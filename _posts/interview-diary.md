@@ -6,7 +6,7 @@ categories: 随笔日记
 toc: false
 ---
 
-![](http://image12.m1905.cn/mapps/uploadfile/edu/2014/0925/2014092510594066002.jpg)
+![](/images/resources/shawshank.jpg)
 
 <!-- <p style="font-size:18px"><span style="FONT-FAMILY: 楷体,楷体_GB2312, SimKai"> 每个人的大学都离不开求职，像肖申克的救赎一样，涤尽罪恶 在彼岸重生<br> 从学生时代进入工作和生活，妥协和屈服，迷茫和怅惘...<br> 这里将我在互联网企业求职过程和心得记录下来<br> 它将持续更新，直到我获得第一份正式工作为止</span></p> -->
 

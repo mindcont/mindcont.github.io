@@ -1,8 +1,8 @@
 ---
 title: 局域网内nginx反向代理上网
 date: 2016-12-26 12:31:25
-tags:
-categories:
+tags: openwrt
+categories: 物联
 toc: false
 ---
 
@@ -25,14 +25,14 @@ toc: false
 
 **1、登录OpenWrt 安装nginx**
 在windows下使用SSH工具，如[Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/)等，在Host name 填写192.168.1.1，端口22 ，然后点击 Open.
-![](http://static.mindcont.com/blog/images/resources/ubuntu/openwrt/putty.png)
+![](http://static.mindcont.com/blog/images/images/iot/openwrt/putty.png)
 
 在linux下，打开终端输入
 ```
 ssh root@192.168.1.1
 ```
 输人密码（默认 admin）登陆,如下图所示s
-![](http://static.mindcont.com/blog/images/resources/ubuntu/openwrt/welcome.png)
+![](http://static.mindcont.com/blog/images/images/iot/openwrt/welcome.png)
 
 使用opkg安装 nginx ,输入下面的指令
 ```
@@ -91,19 +91,19 @@ cd /etc/init.d
 
 打开浏览器，输入`192.168.1.1` ，账号默认为root,默认密码admin。依次选择网络 -> 防火墙
 
-![](http://static.mindcont.com/blog/images/resources/ubuntu/openwrt/firewall.png)
+![](http://static.mindcont.com/blog/images/images/iot/openwrt/firewall.png)
 
 使你的设置同绿框中标明的那样，然后点击`保存&应用`。
 
 略过此步，使用windows 网络 ->疑难解答,你将会看到**该设备或资源(Web 代理)未设置为接受端口'8080'上的连接**的错误提示，如下
-![](http://static.mindcont.com/blog/images/resources/ubuntu/openwrt/reject-detail.png)
+![](http://static.mindcont.com/blog/images/images/iot/openwrt/reject-detail.png)
 
 ### 设置浏览器的代理(以IE为例)
 设置HOSTB为http全局代理，以windows平台为例，在控制面板 -> Internet选项 -> 连接 -> 局域网设置 -> 代理服务器
 
 填写IP(这里我们填写HOSTA 的IP，即110.1.1.65)和Port(即nginx 监听端口8080)即可。
 
-![](http://static.mindcont.com/blog/images/resources/ubuntu/openwrt/client-config.png)
+![](http://static.mindcont.com/blog/images/images/iot/openwrt/client-config.png)
 
 注明：**nginx不支持https正向代理** 因为nginx不支持CONNECT，所以无法正向代理https网站。
 
