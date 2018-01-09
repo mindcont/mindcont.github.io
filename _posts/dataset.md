@@ -6,7 +6,7 @@ categories: 深度学习
 ---
 大数据，数据挖掘，深度学习，终究绕不开数据集，为此单独开一个页面，持续更新各类数据集，希望可以碰出一些好的思路，用深度学习的方法解决一些实际问题。
 
-<!-- ![](http://static.mindcont.com/blog/images/coding/ubuntu/princeton.jpg) -->
+<!-- ![](/images/coding/ubuntu/princeton.jpg) -->
 
 <table>
   <thead>

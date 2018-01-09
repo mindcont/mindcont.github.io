@@ -7,7 +7,7 @@ toc: ture
 ---
 <!--more-->
 
-![](http://static.mindcont.com/blog/images/tools/opencv/OpenCV_Logo.png)  
+![](/images/tools/opencv/OpenCV_Logo.png)  
 OpenCV的全称是Open Source Computer Vision Library，是一个跨平台的计算机视觉库。OpenCV是由英特尔公司发起并参与开发，以BSD许可证授权发行，可以在商业和研究领域中免费使用。OpenCV可用于开发实时的图像处理、计算机视觉以及模式识别程序。该程序库也可以使用英特尔公司的IPP进行加速处理。   
 
 |---|---|
@@ -24,13 +24,13 @@ OpenCV的全称是Open Source Computer Vision Library，是一个跨平台的计
 在此我们管中窥豹，通过opencv安装路径下include目录里面头文件的分类存放，来一窥OpenCV这些年迅猛发展起来的庞杂组件架构。  
 
 我们先进入OpenCV的安装路径，例如我的是E:\Program Files\OpenCV\OpenCV-2.4.9\build\include目录，可以看到有opencv和opencv2这两个文件夹。显然，opencv这个文件夹里面包含着旧版的头文件。而opencv2这个文件夹里面包含着具有时代意义的新版OpenCV2系列的头文件。
-![](http://static.mindcont.com/blog/images/tools/opencv/OpenCV-Module-1.png)  
+![](/images/tools/opencv/OpenCV-Module-1.png)  
 
 在opencv这个文件夹里面，也就是E:\Program Files\OpenCV\OpenCV-2.4.9\build\include\opencv目录下，可以看到如下的各种头文件。这里面大概就是opencv 1.0最核心的，而且保留下来的内容的头文件，可以把它们整体理解为一个组件。   
-![](http://static.mindcont.com/blog/images/tools/opencv/OpenCV-Module-2.png)
+![](/images/tools/opencv/OpenCV-Module-2.png)
 
 再来看看我们重点关注的opencv2这边，在E:\Program Files\OpenCV\OpenCV-2.4.9\build\include\opencv2目录下，我们可以看到这些文件夹
-![](http://static.mindcont.com/blog/images/tools/opencv/OpenCV-Module-3.png)
+![](/images/tools/opencv/OpenCV-Module-3.png)
 
 我们灵机一动，发现下面有个叫opencv_modules.hpp的hpp文件，一看就知道里面存放的是opencv2中的新模块构造相关的说明代码，打开一看，果不其然，定义的是OpenCV2所有组件的宏：
 ```cplusplus

@@ -63,10 +63,10 @@ cd build
 cmake -D WITH_TBB=ON -D BUILD_NEW_PYTHON_SUPPORT=ON -D WITH_V4L=ON -D INSTALL_C_EXAMPLES=ON -D INSTALL_PYTHON_EXAMPLES=ON -D BUILD_EXAMPLES=ON -D WITH_QT=ON -D WITH_OPENGL=ON -D WITH_VTK=ON -D CUDA_GENERATION=Auto ..  
 ```
 检查上面的命令不会产生错误，并且特别是报告FFMPEG为YES。如果不是这种情况下，你将无法读取或写入视频。检查使用Java，Python，TBB，OpenGL的，V4L，OpenGL和Qt的都正确检测。
-![](http://static.mindcont.com/blog/images/tools/opencv/cmake1.png)
+![](/images/tools/opencv/cmake1.png)
 
 确保你向上滚动，并检查了将要构建的模块是这些：core flann imgproc highgui features2d calib3d ml video legacy objdetect photo gpu ocl nonfree contrib java python stitching superres ts videostab viz.
-![](http://static.mindcont.com/blog/images/tools/opencv/cmake2.png)
+![](/images/tools/opencv/cmake2.png)
 
 好，万事俱备，开始编译OpenCV-2.4.9。
 ```bash
@@ -95,7 +95,7 @@ sudo gedit /etc/ld.so.conf.d/opencv.conf
 ```bash
 /usr/local/lib
 ```
-![](http://static.mindcont.com/blog/images/tools/opencv/opencv-conf.png)
+![](/images/tools/opencv/opencv-conf.png)
 输入下面的命令使其生效
 ```bash
 sudo ldconfig
@@ -109,7 +109,7 @@ sudo gedit /etc/bash.bashrc
 PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig
 export PKG_CONFIG_PATH
 ```
-![](http://static.mindcont.com/blog/images/tools/opencv/bashrc.png)
+![](/images/tools/opencv/bashrc.png)
 
 **注意:** 关闭控制台，打开一个新的终端，或者重新启动计算机或注销，然后重新登录。不然OpenCV将无法正常工作。现在你有OpenCV的2.4.9安装在您的计算机三维可视化，Python和Java的，TBB，OpenGL的，视频和Qt支持。
 
@@ -125,16 +125,16 @@ chmod +x build_all.sh
 ```bash
 ./facedetect --cascade="/usr/local/share/OpenCV/haarcascades/haarcascade_frontalface_alt.xml" --nested-cascade="/usr/local/share/OpenCV/haarcascades/haarcascade_eye.xml" --scale=1.5 lena.jpg
 ```
-![](http://static.mindcont.com/blog/images/tools/opencv/demo1.png)
+![](/images/tools/opencv/demo1.png)
 
 鼠标滚轮滑动，可以直接看到图像像素对应的RGB数值。
-![](http://static.mindcont.com/blog/images/tools/opencv/QT-tools.png)
+![](/images/tools/opencv/QT-tools.png)
 
 再运行一个例子，输入下面的指令
 ```bash
 ~/opencv-2.4.9/build/bin/cpp-example-calibration_artific
 ```
-![](http://static.mindcont.com/blog/images/tools/opencv/demo2.png)
+![](/images/tools/opencv/demo2.png)
 
 ## 参考
 

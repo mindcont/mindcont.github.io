@@ -20,19 +20,19 @@ date: 2016-09-18 16:11:09
 
 ### 一维卷积
 如下图所示，是一维卷积。类似于点积，**y = x*w**,下图的w=[1,0,-1]。这里引入了一个概念**局部接受野**(local receptive fields)和**权值共享**(weight sharing)。为了方便表述，灰色的是隐含层i，黄色是下一层隐含层i+1。对于传统的神经网络而言，i+1层的一个神经元是接收了i层所有神经元节点的加权求和得到的，而这里，则仅接收i层神经元局部输入的加权得到，也就是局部接受野的概念。而权值共享，指的是对于i+1层的每一个神经元用的权重w是同一个。原来是7个输入5个输出的话，那么需要w是`7*5=35`个参数，如果使用局部接受野，输入变为了3，则需要w是`3*5=15`个参数。如果再使用权值共享，那么就变成了3个参数！使得整个网络的参数大为减少。
-![](http://static.mindcont.com/blog/images/research/caffe/cnn/cnn_1d_conv.png)
+![](/images/research/caffe/cnn/cnn_1d_conv.png)
 当然，i层可以对应多个i+1层，也就是每一个共享的w得到一个i+1层，多个共享的w就得到了多个i+1层，这个数一般称之为feature map数。这样可以学习到更多的特征。
 **这样能够更好的表达局部特征！而通过不断的深度，使得局部特征聚合为高级特征**
 
 ### 二维卷积
-![](http://static.mindcont.com/blog/images/research/caffe/cnn/cnn_Convolution_schematic.gif)
+![](/images/research/caffe/cnn/cnn_Convolution_schematic.gif)
 这里不细说，下面会细说。
 ### 三维卷积
-![](http://static.mindcont.com/blog/images/research/caffe/cnn/cnn_3d_conv.png)
+![](/images/research/caffe/cnn/cnn_3d_conv.png)
 目前多数都是采用3d卷积，本质跟2d卷积一样。就是维度增加了，对应的输入变为了4维，而w也是4维的，这样卷积求和得到输出。
 
 除了卷积之外，cnn还有一个核心的概念，子抽样(subsampling)，一般用pooling来表示。pooling的种类有很多种，主要是用一个特征来表达一个局部特征，这样使得参数大为减少。常见的有max pooling和mean pooling，L2 pooling。max pooling就是用局部特征的最大值来表达这个区域的特征。其他依次类推。如下图所示：
-![](http://static.mindcont.com/blog/images/research/caffe/cnn/cnn_Pooling_schematic.gif)
+![](/images/research/caffe/cnn/cnn_Pooling_schematic.gif)
 
 另外，对于图像里的一些其他操作，比如stride，表示卷积每次的移动步长，pad表示对图像进行阔边，防止在卷积操作中丢失边界特征。
 
@@ -40,28 +40,28 @@ date: 2016-09-18 16:11:09
 卷积的BP推导可以概括为3个卷积。具体如下：
 这里我们以2d卷积为例子，3d卷积的话，就是在2d上增加一个循环就可以了。
 如下图所示：
-![](http://static.mindcont.com/blog/images/research/caffe/cnn/cnn_2d_conv.png)
+![](/images/research/caffe/cnn/cnn_2d_conv.png)
 
 这是一个forward过程，就是第二部分提到的卷积操作。这里仅用大O里面加个x表示卷积，**注意后者是卷积核**，也就是filter或者说weight。
 
 那么误差反馈就比较容易，首先是得到了上层传递过来的delta，之后对输入的x求导得到dx用于反馈误差。之后对w求导，得到dw，用于更新梯度。
 这个比较简单，因为本质都是点积，只需要对应的求导再加和就可以了。如下图所示：
-![](http://static.mindcont.com/blog/images/research/caffe/cnn/cnn_dx.png)
+![](/images/research/caffe/cnn/cnn_dx.png)
 对应的求解，发现这个操作类似于卷积。但是对于`x_{0,0}`的求解，需要对delta进行阔边以方便直接使用卷积操作。如下图所示:
-![](http://static.mindcont.com/blog/images/research/caffe/cnn/cnn_dx_border.png)
+![](/images/research/caffe/cnn/cnn_dx_border.png)
 
 接下来是对w求导，得到更新梯度。计算也是一样的，找到w参与的点积计算，拿到导数合并一下就可以了。如下图所示，我们发现同样可以用卷积操作来表示：
-![](http://static.mindcont.com/blog/images/research/caffe/cnn/cnn_dw.png)
+![](/images/research/caffe/cnn/cnn_dw.png)
 
 那么我们可以联系到线性回归，以方便我们记忆了：
-![](http://static.mindcont.com/blog/images/research/caffe/cnn/cnn_bp.png)
+![](/images/research/caffe/cnn/cnn_bp.png)
 
 以上就是关于卷积BP的推导和证明了。图片是在ppt里编辑好之后截图过来的，因为直接写一堆公式的话，感觉容易乱。
 此外，我们看到也能看到对于`5*5`的卷积操作，其实是可以用2个`3*3`的卷积操作来代替，同时还能达到层数更多的效果。目前通过可视化来看，深度学习的特征是层级式的，特征由低级不断的汇总为高级特征。
 
 ## pooling层BP
 对于pooling层，如何进行BP操作呢？pooling层比卷积层简单的地方是，pooling是没有参数的，所以只需要得到dx之后用于误差传递就可以了。对于mean pooling，其实相当于卷积都是均值，比如2*2的pooling，那么w就相当于[[0.25, 0.25],[0.25, 0.25]]，我们直接套用卷积的公式就可以了。而对于L2 pooling等等类似的pooling，其实是可以拆分成平方操作，sum pooling，再开方的三个操作分别传递误差就可以，而sum pooling也可以套用卷积操作。唯一不一样的是max pooling，没有固定的卷积核，所以需要循环一下，对于输入最大的点进行求导。pooling 如下图所示：
-![](http://static.mindcont.com/blog/images/research/caffe/cnn/cnn_pool.png)
+![](/images/research/caffe/cnn/cnn_pool.png)
 
 从max 和 mean等操作也可以看到，pooling的不同。
 pooling的本质是一种局部特征的表达。max pooling的是用图像某一区域像素值的最大值来表示该区域的特征，而mean pool是用图像某一区域像素值的均值来表示该区域的特征。这两个pooling操作都提高了提取特征的不变性，而特征提取的误差主要来自两个方面：
@@ -72,11 +72,11 @@ pooling的本质是一种局部特征的表达。max pooling的是用图像某�
 
 ## im2col
 实际在计算的卷积的时候，通常可以使用一些卷积操作库。在类比线性回归的时候，也容易想到，如果把二维的卷积核w转为一维的话，操作会不会更快？因为在误差反馈的时候，不需要再重复的循环。因此，有一种方式是把二维图像转为一维向量进行计算的方式。如下图所示：
-![](http://static.mindcont.com/blog/images/research/caffe/cnn/cnn_im2col.png)
+![](/images/research/caffe/cnn/cnn_im2col.png)
 简单的说，就是把操作转为向量的形式。那么计算就和线性回归一样了，如下：
-![](http://static.mindcont.com/blog/images/research/caffe/cnn/cnn_im2col_2.png)
+![](/images/research/caffe/cnn/cnn_im2col_2.png)
 对于误差反馈，我们还需要把反馈的误差，再转回到二维图像的形式，也就是col2im，如下图所示：
-![](http://static.mindcont.com/blog/images/research/caffe/cnn/cnn_col2im.png)
+![](/images/research/caffe/cnn/cnn_col2im.png)
 转换的时候，是不断的累加的。
 
 ## code

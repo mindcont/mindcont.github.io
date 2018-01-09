@@ -10,7 +10,7 @@ Docker是一个开源的引擎，可以轻松的为任何应用创建一个轻�
 
 ## 架构
 
-![](http://static.mindcont.com/blog/images/tools/docker/architecture.svg)
+![](/images/tools/docker/architecture.svg)
 
 ## 安装
 以 Ubuntu 14.04 LTS 下为例
@@ -36,7 +36,7 @@ Docker 命令 总的来说分为以下几种：
 * 本地镜像管理 — docker [images|rmi|tag|build|history|save|import]
 * 其他命令 — docker [info|version]
 
-![](http://static.mindcont.com/blog/images/tools/docker/docker.png)
+![](/images/tools/docker/docker.png)
 
 **注意** 有点需要切换为root用户后进行常用docker操作，以下命令如未特殊说明，均表示在root账户下进行。
 1. 列出机器上的镜像（images）
@@ -126,7 +126,7 @@ ae60c4b642058fefcc61ada85a610914bed9f5df0e2aa147100eab85cea785dc
 
 ```
  **-P(大写)**表示随机端口，**-p** 表示指定端口，如下宿主主机端口5000连接到容器34448端口
-![](http://static.mindcont.com/blog/images/tools/docker/docker_digits.png)
+![](/images/tools/docker/docker_digits.png)
 
 6. 使用Dockerfile文件 build 生成新的image（镜像）
 这里给出github上的一份Dockerfile模板 [ubuntu:14.04-niginx](https://github.com/webdevops/Dockerfile/blob/develop/docker/nginx/ubuntu-14.04/Dockerfile),类似于脚本语言，只不过用来编译镜像而已
