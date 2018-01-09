@@ -34,7 +34,7 @@ sudo apt-get install nvidia-340 nvidia-340-uvm nvidia-settings nvidia-prime prim
 ```bash
 sudo reboot
 ```
-![](http://static.mindcont.com/blog/images/coding/ubuntu/nvidia_success.png)
+![](/images/coding/ubuntu/nvidia_success.png)
 
 **注意!!!**
 如果在安装过程中遇到下面的问题

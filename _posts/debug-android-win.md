@@ -21,7 +21,7 @@ categories:
 
 当你打开命令行，输入'adb version'，看到类似如下信息，就说明adb配置成功
 
-![](http://static.mindcont.com/blog/images/coding/android/adb.png)
+![](/images/coding/android/adb.png)
 
 **3.设置手机以侦听端口 5555 上的 TCP/IP 连接**
 第一次的时候需要用手机USB连接到你的电脑，之后运行下面国外大牛写的shell脚本，脚本在mac或者Linux肯定是ok的，windows上需要安装一些如msysgit或者[Cygwin](https://www.cygwin.com/setup-x86.exe)才可运行以上Linux shell。
@@ -67,7 +67,7 @@ Sync gradle
 ```
 只要安装dryrun这个工具，直接执行一个命令：
 
-![](http://static.mindcont.com/blog/images/coding/android/usage_v4.gif)
+![](/images/coding/android/usage_v4.gif)
 
 ### 使用方法
 **1.安装ruby**
@@ -87,11 +87,11 @@ gem install dryrun
 ```
 dryrun git@github.com:cesarferreira/android-helloworld.git
 ```
-![](http://static.mindcont.com/blog/images/coding/android/dryrun-success.jpg)
+![](/images/coding/android/dryrun-success.jpg)
 
 附上我一张图
 
-![](http://static.mindcont.com/blog/images/coding/android/hello-world.jpg)
+![](/images/coding/android/hello-world.jpg)
 
 ## 有用的链接
 [stormzhang的博客](http://stormzhang.com/friends/)

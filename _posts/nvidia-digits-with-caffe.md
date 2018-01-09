@@ -72,10 +72,10 @@ sudo ./digits-devserver
 ```
 打开浏览器，依次访问 http://localhost/ (if installed from Deb packages), http://localhost:5000/ (if using digits-devserver) or http://localhost:34448/ (if using digits-server). 如果你看到如下画面，恭喜你，digits 已运行成功！
 
-![](http://static.mindcont.com/blog/images/research/caffe/digits/digits_success.jpg)
+![](/images/research/caffe/digits/digits_success.jpg)
 
 不过一般情况下，你会看到如下画面
-![](http://static.mindcont.com/blog/images/research/caffe/digits/digits_error.png)
+![](/images/research/caffe/digits/digits_error.png)
 不要气馁，导致的原因大多因为Digits 依赖的环境与你本地的环境版本不符而导致的。
 下面是官方[requirements.txt](https://github.com/NVIDIA/DIGITS/blob/master/requirements.txt)，其中有几项必须是特定版本，如 Flask==0.10.1，lmdb==0.87等
 ```
@@ -116,43 +116,43 @@ python /usr/share/digits/tools/download_data/main.py mnist ~/mnist
 ```
 ### 创建数据集
 依次点击 New Dataset > Images > Classification，并按下图配置
-![](http://static.mindcont.com/blog/images/research/caffe/digits/new-dataset.jpg)
+![](/images/research/caffe/digits/new-dataset.jpg)
 
 点击 create，会看到如下画面。表示正在把下载的数据集创建为 lmdb 数据库格式。
-![](http://static.mindcont.com/blog/images/research/caffe/digits/creating-dataset.jpg)
+![](/images/research/caffe/digits/creating-dataset.jpg)
 
 当 jobs 进度条完成后，可以查看数据库中的 trian 和 test 数据库格式。其中 训练数据 占数据集的75%
-![](http://static.mindcont.com/blog/images/research/caffe/digits/explore_mnist_train_lmdb.png)
+![](/images/research/caffe/digits/explore_mnist_train_lmdb.png)
 
 测试数据 占数据集的 25%
-![](http://static.mindcont.com/blog/images/research/caffe/digits/explore_mnist_test_lmdb.png)
+![](/images/research/caffe/digits/explore_mnist_test_lmdb.png)
 
 点击 左上角 DIGITS 返回主界面
-![](http://static.mindcont.com/blog/images/research/caffe/digits/digits_main.png)
+![](/images/research/caffe/digits/digits_main.png)
 
 ### 训练模型
 依次点击  New Model > Images > Classification，进入模型配置界面，并按下图配置训练模型
-![](http://static.mindcont.com/blog/images/research/caffe/digits/new-model-top-half.jpg)
-![](http://static.mindcont.com/blog/images/research/caffe/digits/new-model-bottom-half.jpg)
+![](/images/research/caffe/digits/new-model-top-half.jpg)
+![](/images/research/caffe/digits/new-model-bottom-half.jpg)
 点击创建后，训练任务自动执行。如下图所示
-![](http://static.mindcont.com/blog/images/research/caffe/digits/digits_real_time.png)
+![](/images/research/caffe/digits/digits_real_time.png)
 等待训练结束，下面我们好进行测试。
 ### 测试训练结果
-![](http://static.mindcont.com/blog/images/research/caffe/digits/digits_test.png)
+![](/images/research/caffe/digits/digits_test.png)
 
 首先测试**单张图片**，点击Browse 按钮，以此选择类似于下面的路径
-![](http://static.mindcont.com/blog/images/research/caffe/digits/digits_test_one_upload.png)
+![](/images/research/caffe/digits/digits_test_one_upload.png)
 
 之后点击 Classify One ，并候选选框，会看到如下，显示模型每层的处理情况。
-![](http://static.mindcont.com/blog/images/research/caffe/digits/digits_test_one_res.png)
+![](/images/research/caffe/digits/digits_test_one_res.png)
 **测试多张图片**，同理打开类似下面的路径
-![](http://static.mindcont.com/blog/images/research/caffe/digits/digits_test_many_upload.png)
+![](/images/research/caffe/digits/digits_test_many_upload.png)
 然后点击 Classify Many。会看到后台结果如下
-![](http://static.mindcont.com/blog/images/research/caffe/digits/digits_test_many_service.png)
+![](/images/research/caffe/digits/digits_test_many_service.png)
 测试结果如下
-![](http://static.mindcont.com/blog/images/research/caffe/digits/digits_test_many_res.png)
+![](/images/research/caffe/digits/digits_test_many_res.png)
 可视化分类结果
-![](http://static.mindcont.com/blog/images/research/caffe/digits/digits_test_many_TopN.png)
+![](/images/research/caffe/digits/digits_test_many_TopN.png)
 
 ## 参考链接
 * [NVIDIA-DIGITS](https://github.com/NVIDIA/DIGITS/blob/master/docs/GettingStarted.md)

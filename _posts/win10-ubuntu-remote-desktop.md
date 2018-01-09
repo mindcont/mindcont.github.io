@@ -25,14 +25,14 @@ sudo apt-get install xrdp vnc4server xbase-clients
 sudo apt-get install dconf-editor
 ```
 然后 输入 dconf-editor ,以此在 org > gnome > desktop > remote-access
-![](http://static.mindcont.com/blog/images/coding/ubuntu/remote-access/ubuntu-dconf-editor.png)
+![](/images/coding/ubuntu/remote-access/ubuntu-dconf-editor.png)
 
 ## 设置远程桌面选项
 打开搜索，输入桌面，点击**桌面共享**。这里我们要对桌面共享首选项进行设置。
-![](http://static.mindcont.com/blog/images/coding/ubuntu/remote-access/ubuntu-share-desktop.png)
+![](/images/coding/ubuntu/remote-access/ubuntu-share-desktop.png)
 
 输入远程登录用户的密码并允许查看和控制，**特别注意的是 在"安全"选项下 将每次访问进行确认的对号去掉**，否则每次远程登录都要在待连接设备ubuntu 这边进行允许确认。
-![](http://static.mindcont.com/blog/images/coding/ubuntu/remote-access/ubunt-share-desktop-config.png)
+![](/images/coding/ubuntu/remote-access/ubunt-share-desktop-config.png)
 
 # win10 连接
 ## 打开远程桌面
@@ -40,14 +40,14 @@ sudo apt-get install dconf-editor
 ```bash
 ifconfig # 在ubuntu下输入，可以在ipv4一行中查看其IP地址。
 ```
-![](http://static.mindcont.com/blog/images/coding/ubuntu/remote-access/win-remote-desktop.png)
+![](/images/coding/ubuntu/remote-access/win-remote-desktop.png)
 ## 选择为console的方式
 按连接后，会打开如下界面。点击下三角，选择为console的方式,输入我们刚才在ubuntu下配置的远程访问密码。
 
-![](http://static.mindcont.com/blog/images/coding/ubuntu/remote-access/win-mstsc-xrdp-console.png)
+![](/images/coding/ubuntu/remote-access/win-mstsc-xrdp-console.png)
 
 恭喜，远程桌面连接成功！
-![](http://static.mindcont.com/blog/images/coding/ubuntu/remote-access/ubuntu-remote-desktop.png)
+![](/images/coding/ubuntu/remote-access/ubuntu-remote-desktop.png)
 
 作者:[mindcont](https://github.com/mindcont)  2016-05-12 第一次编辑 2016-07-25 第二次编辑
 **转载注明出处 http://blog.mindcont.com/2016/05/12/win10-ubuntu-remote-desktop/**

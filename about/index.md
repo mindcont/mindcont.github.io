@@ -5,11 +5,11 @@ comments: false
 donate: true
 ---
 <!-- 梦想起飞 -->
-<!-- ![](http://static.mindcont.com/blog/images/iot/flying_pi.png) -->
+<!-- ![](/images/iot/flying_pi.png) -->
 <!-- ![](http://www.pacq.gov.cn/uploads/allimg/170725/1-1FH5111000K1.png) -->
 <!-- ![](/images/resources/cruiser_athabaska.jpg) -->
 <!-- ![](http://image12.m1905.cn/mapps/uploadfile/edu/2014/0925/2014092510594066002.jpg) -->
-<!-- ![](http://static.mindcont.com/blog/images/resources/mars_poster.jpg) -->
+<!-- ![](/images/resources/mars_poster.jpg) -->
 ![](/images/iot/Winter_Wildlife-homepage.png)
 
 <!-- 迪士尼动画《带着梦想上路》 -->
@@ -74,7 +74,7 @@ donate: true
 
 <!--
 ### 技能树
-![](http://static.mindcont.com/blog/images/resources/xuan_skills-tree.svg)
+![](/images/resources/xuan_skills-tree.svg)
 -->
 
 <!-- ### 联系方式 -->

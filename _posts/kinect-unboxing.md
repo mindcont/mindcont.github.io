@@ -33,41 +33,41 @@ Kinect的另一个主要抱怨是有关空间的要求。新的Kinect的视野�
 其他一些值得注意的改进是麦克风阵列。现在它可以更可靠地消除背景噪声，玩家可以使用更顺畅的语音控制。不用花更多时间思考猜测什么语音命令才能让Xbox理解，你只需要说你想说的话，Xbox就会做它应该做的！
 
 ## 拆机
-![](http://static.mindcont.com/blog/images/research/kinect/unboxing/kinect-unboxing-1.jpg)
+![](/images/research/kinect/unboxing/kinect-unboxing-1.jpg)
 Kinect 2.0配备1080p全高清广角摄像头，还有适应低光环境的主动式红外摄像头，多麦克风阵列具备降噪和语音指令功能，每秒钟可处理2Gb(256MB/s)的环境数据。
-![](http://static.mindcont.com/blog/images/research/kinect/unboxing/kinect-unboxing-2.jpg)
+![](/images/research/kinect/unboxing/kinect-unboxing-2.jpg)
 电源线插得很结实
-![](http://static.mindcont.com/blog/images/research/kinect/unboxing/kinect-unboxing-3.jpg)
+![](/images/research/kinect/unboxing/kinect-unboxing-3.jpg)
 T10标准螺丝
-![](http://static.mindcont.com/blog/images/research/kinect/unboxing/kinect-unboxing-4.jpg)
+![](/images/research/kinect/unboxing/kinect-unboxing-4.jpg)
 拧下螺丝，外壳就打开了。
-![](http://static.mindcont.com/blog/images/research/kinect/unboxing/kinect-unboxing-5.jpg)
+![](/images/research/kinect/unboxing/kinect-unboxing-5.jpg)
 型号编号Model 1520(主机是Model 1540)，同样有来自西雅图的问候。
-![](http://static.mindcont.com/blog/images/research/kinect/unboxing/kinect-unboxing-6.jpg)
+![](/images/research/kinect/unboxing/kinect-unboxing-6.jpg)
 散热器很容易拿下。
-![](http://static.mindcont.com/blog/images/research/kinect/unboxing/kinect-unboxing-7.jpg)
+![](/images/research/kinect/unboxing/kinect-unboxing-7.jpg)
 散热器来自日本电产科宝(Nidec)，编号U40R05MS1A7-57A07A。
-![](http://static.mindcont.com/blog/images/research/kinect/unboxing/kinect-unboxing-8.jpg)
+![](/images/research/kinect/unboxing/kinect-unboxing-8.jpg)
 内部世界开始显现
-![](http://static.mindcont.com/blog/images/research/kinect/unboxing/kinect-unboxing-9.jpg)
+![](/images/research/kinect/unboxing/kinect-unboxing-9.jpg)
 主体也是绿色调的。
-![](http://static.mindcont.com/blog/images/research/kinect/unboxing/kinect-unboxing-10.jpg)
+![](/images/research/kinect/unboxing/kinect-unboxing-10.jpg)
 解脱束缚
-![](http://static.mindcont.com/blog/images/research/kinect/unboxing/kinect-unboxing-11.jpg)
+![](/images/research/kinect/unboxing/kinect-unboxing-11.jpg)
 主体侧面挂着一小块电路板
-![](http://static.mindcont.com/blog/images/research/kinect/unboxing/kinect-unboxing-12.jpg)
+![](/images/research/kinect/unboxing/kinect-unboxing-12.jpg)
 很小，但也很重要，上边有LED和传感器
-![](http://static.mindcont.com/blog/images/research/kinect/unboxing/kinect-unboxing-13.jpg)
+![](/images/research/kinect/unboxing/kinect-unboxing-13.jpg)
 红色的是主处理器，取代第一代里的主传感芯片。上边打着微软和Xbox的标记，编号为X871141-001。橙色的是三星K4B1G1646G 1Gb(128MB) DDR3 SDRAM内存。
-![](http://static.mindcont.com/blog/images/research/kinect/unboxing/kinect-unboxing-14.jpg)
+![](/images/research/kinect/unboxing/kinect-unboxing-14.jpg)
 小心地取下第一个摄像头。都是螺丝固定的。
-![](http://static.mindcont.com/blog/images/research/kinect/unboxing/kinect-unboxing-15.jpg)
+![](/images/research/kinect/unboxing/kinect-unboxing-15.jpg)
 摄像头近照
-![](http://static.mindcont.com/blog/images/research/kinect/unboxing/kinect-unboxing-16.jpg)
+![](/images/research/kinect/unboxing/kinect-unboxing-16.jpg)
 第二个摄像头
-![](http://static.mindcont.com/blog/images/research/kinect/unboxing/kinect-unboxing-17.jpg)
+![](/images/research/kinect/unboxing/kinect-unboxing-17.jpg)
 三个红外增强器，Kinect 2.0具备新的主动式红外技术，即便在黑暗的房间里也能看到你。
-![](http://static.mindcont.com/blog/images/research/kinect/unboxing/kinect-unboxing-18.jpg)
+![](/images/research/kinect/unboxing/kinect-unboxing-18.jpg)
 所有零部件合集
 ----
 完 ヽ(ﾟДﾟ)ﾉ

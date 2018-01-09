@@ -7,7 +7,7 @@ toc: true
 ---
 笔者日前在搜索计算机视觉方面的代码,偶然发现这个,不敢独享,随整理发表于此,希望可以帮助到有关学习计算机视觉的朋友们!
 
-![](http://static.mindcont.com/blog/images/NASA_Mars_Rover.jpg)
+![](/images/NASA_Mars_Rover.jpg)
 
 # 特征提取Feature Extraction
 <i class="fa fa-folder-o" aria-hidden="true"></i> **SIFT** 
