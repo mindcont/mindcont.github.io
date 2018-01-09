@@ -1,7 +1,7 @@
 ---
 title: OpenCV 2.4.9 模块简介
 date: 2016-05-28 09:49:51
-tags: OpenCV
+tags: opencv
 categories:
 toc: ture
 ---

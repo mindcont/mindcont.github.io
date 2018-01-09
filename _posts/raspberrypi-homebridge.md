@@ -2,6 +2,7 @@
 title: 玩转树莓派第一弹：HomeBridge控制LED灯
 date: 2018-01-03 20:06:32
 tags: 树莓派
+categories: 物联
 toc: true
 ---
 

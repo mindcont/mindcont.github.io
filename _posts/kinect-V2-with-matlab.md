@@ -2,7 +2,7 @@
 title: Matlab连接Kinect V2
 date: 2016-05-18 20:09:55
 tags: matlab
-categories: Kinect
+categories: 
 toc: ture
 ---
 如何让matlab支持Kinect呢？通过搜索在[mathworks 中国](http://cn.mathworks.com/hardware-support/kinect-windows.html)得知，只有最新版的 matlab 2016a 才支持 Kinect v2 。具体信息如下表，

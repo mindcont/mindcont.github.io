@@ -1,8 +1,8 @@
 ---
 title: Kinect骨骼提取原理
 date: 2016-05-10 20:39:47
-tags: Kinect
-categories: Kinect
+tags: kinect
+categories: 
 toc: ture
 ---
 我们给出了从单深度图像中快速准确预测出人体关节3D位置的新方法，且没有使用时间信息。Kinect获取人体骨骼信息的大致原理可以概括为：<!--more-->

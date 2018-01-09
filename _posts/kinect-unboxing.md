@@ -1,8 +1,8 @@
 ---
 title: Xbox One Kinect完全拆解
 date: 2016-04-15 16:26:26
-tags: Kinect
-categories: Kinect
+tags: kinect
+categories: 
 ---
 第二代 Kinect for Windows 感应器和软件开发工具包将人机交互带入新阶段，所提供的更大的整体精确度、响应能力和直觉能力将加速计算机语音和手势体验的发展。第二代感应器的彩色相机的增强特性包括 1080p 高分辨率视频,更宽广的视野、增强的骨骼追踪和新增的红外线探测功能。
 

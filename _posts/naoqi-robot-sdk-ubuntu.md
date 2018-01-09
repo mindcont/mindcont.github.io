@@ -7,7 +7,7 @@ toc: false
 ---
 本文将带您完成naoqi robot SDK 在ubuntu 14.04(lts)下开发环境的配置,这里值得注意的是您不一定需要购买一个naoqi 机器人才能进行开发，这里可以选择使用虚拟机器人，一般开发过程中我们首先将程序指令在虚拟机器人中进行调试，待成功后下载到真实机器人中进行实地运行。
 <!--more-->
-![](http://static.mindcont.com/blog/images/resources/ubuntu/ros/2016_DEV_PROG_launch_banner_600x360_mailing_V3_EN.png)
+![](http://static.mindcont.com/blog/images/coding/ubuntu/ros/2016_DEV_PROG_launch_banner_600x360_mailing_V3_EN.png)
 
 
 ### 安装　naoqi choregraphe suite
@@ -26,13 +26,13 @@ tar -xvf choregraphe-suite-2.1.4.13-linux64.tar.gz naoqi/
 cd ~/naoqi/choregraphe-suite-2.1.4.13-linux64/
 ./choregraphe
 ```
-![](http://static.mindcont.com/blog/images/resources/ubuntu/ros/choregraphe-license.png)
+![](http://static.mindcont.com/blog/images/coding/ubuntu/ros/choregraphe-license.png)
 
 这里先选择试用，当然你可以去[开发者社区](https://community.ald.softbankrobotics.com/en/developerprogram)申请为开发者，可以无限制的免费使用，但同一时间只能有一个　choregraphe运行。
 
 打开后界面如下,类似于matlab 工具箱中的模块化编程，可以在左下角中选择官方封装好的模块，然后用鼠标拖动到中间区域，连线使之成为一个通路，然后点击上方的绿色三角形，让虚拟机器人开始执行。
 
-![](http://static.mindcont.com/blog/images/resources/ubuntu/ros/choregraphe.jpg)
+![](http://static.mindcont.com/blog/images/coding/ubuntu/ros/choregraphe.jpg)
 
 通过执行naoqi来检查安装是否成功:
 ```
@@ -107,7 +107,7 @@ source ~/.bashrc
 python
 import naoqi
 ```
-![](http://static.mindcont.com/blog/images/resources/ubuntu/ros/naoqi-python-sdk.png)
+![](http://static.mindcont.com/blog/images/coding/ubuntu/ros/naoqi-python-sdk.png)
 
 ## Next
 下一步，我们会构建[基于ROS的 naoqi 机器人开发环境](http://blog.mindcont.com/2016/12/14/ros-naoqi-ubuntu/)的搭建，欢迎继续关注。

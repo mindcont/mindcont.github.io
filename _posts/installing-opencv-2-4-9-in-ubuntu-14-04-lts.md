@@ -1,7 +1,7 @@
 ---
 title: Ubuntu 14.04安装 OpenCV 2.4.9
 date: 2016-07-16 15:27:45
-tags: OpenCV
+tags: opencv
 categories:
 toc: ture
 ---
