@@ -2,16 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://blog.mindcont.com/2016/05/12/win10-ubuntu-remote-desktop/</loc>
+    <loc>http://blog.mindcont.com/2018/01/13/hack-wechat-run/</loc>
     
-    <lastmod>2018-01-09T03:40:54.382Z</lastmod>
+    <lastmod>2018-01-13T12:49:45.773Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2017/02/20/visual-cortex/</loc>
+    <loc>http://blog.mindcont.com/2016/09/13/dataset/</loc>
     
-    <lastmod>2018-01-09T03:40:51.934Z</lastmod>
+    <lastmod>2018-01-13T11:40:07.058Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/books/index.html</loc>
+    
+    <lastmod>2018-01-13T07:53:40.769Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/05/18/kinect-V2-with-matlab/</loc>
+    
+    <lastmod>2018-01-13T07:43:49.009Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/about/index.html</loc>
+    
+    <lastmod>2018-01-09T13:29:56.971Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/05/12/win10-ubuntu-remote-desktop/</loc>
+    
+    <lastmod>2018-01-09T03:40:54.382Z</lastmod>
     
   </url>
   
@@ -33,13 +61,6 @@
     <loc>http://blog.mindcont.com/2016/10/27/ubuntu-necessary-install-software/</loc>
     
     <lastmod>2018-01-09T03:40:40.829Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/06/21/the-long-march/</loc>
-    
-    <lastmod>2018-01-09T03:40:38.682Z</lastmod>
     
   </url>
   
@@ -149,13 +170,6 @@
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/05/18/kinect-V2-with-matlab/</loc>
-    
-    <lastmod>2018-01-09T03:39:37.580Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://blog.mindcont.com/2016/04/15/kinect-unboxing/</loc>
     
     <lastmod>2018-01-09T03:39:31.292Z</lastmod>
@@ -205,13 +219,6 @@
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/09/13/dataset/</loc>
-    
-    <lastmod>2018-01-09T03:38:44.609Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://blog.mindcont.com/2017/02/25/debug-android-win/</loc>
     
     <lastmod>2018-01-09T03:38:24.053Z</lastmod>
@@ -222,13 +229,6 @@
     <loc>http://blog.mindcont.com/2016/09/18/cnn/</loc>
     
     <lastmod>2018-01-09T03:38:20.134Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/about/index.html</loc>
-    
-    <lastmod>2018-01-09T03:38:15.400Z</lastmod>
     
   </url>
   
@@ -289,23 +289,9 @@
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/06/06/chinese-college-entrance-examination/</loc>
-    
-    <lastmod>2017-12-05T01:45:22.102Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://blog.mindcont.com/history/index.html</loc>
     
     <lastmod>2017-12-05T01:35:17.792Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/books/index.html</loc>
-    
-    <lastmod>2017-10-20T08:32:36.809Z</lastmod>
     
   </url>
   
