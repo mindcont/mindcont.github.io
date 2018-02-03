@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.mindcont.com/2018/01/03/raspberrypi-homebridge/</loc>
+    
+    <lastmod>2018-02-03T08:24:49.553Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/08/06/run-yolo-demo/</loc>
+    
+    <lastmod>2018-02-03T08:24:44.821Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.mindcont.com/2016/11/15/use-shadowsocks-on-openwrt/</loc>
     
     <lastmod>2018-01-17T09:28:40.553Z</lastmod>
@@ -82,13 +96,6 @@
     <loc>http://blog.mindcont.com/2017/02/22/some-advice-for-research-beginners/</loc>
     
     <lastmod>2018-01-09T03:40:34.024Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/08/06/run-yolo-demo/</loc>
-    
-    <lastmod>2018-01-09T03:40:28.784Z</lastmod>
     
   </url>
   
@@ -236,13 +243,6 @@
     <loc>http://blog.mindcont.com/2016/04/16/kinect-develop/</loc>
     
     <lastmod>2018-01-09T02:37:59.943Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2018/01/03/raspberrypi-homebridge/</loc>
-    
-    <lastmod>2018-01-09T02:36:39.658Z</lastmod>
     
   </url>
   
