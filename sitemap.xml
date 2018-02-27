@@ -2,240 +2,156 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://blog.mindcont.com/2018/01/03/raspberrypi-homebridge/</loc>
-    
-    <lastmod>2018-02-03T11:12:10.598Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://blog.mindcont.com/2016/08/06/run-yolo-demo/</loc>
     
-    <lastmod>2018-02-03T11:12:07.785Z</lastmod>
+    <lastmod>2018-02-27T03:02:25.512Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/11/15/use-shadowsocks-on-openwrt/</loc>
+    <loc>http://blog.mindcont.com/2018/01/03/raspberrypi-homebridge/</loc>
     
-    <lastmod>2018-01-17T09:28:40.553Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/12/26/nginx-proxy-lan/</loc>
-    
-    <lastmod>2018-01-13T12:59:44.814Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/09/13/dataset/</loc>
-    
-    <lastmod>2018-01-13T11:40:07.058Z</lastmod>
+    <lastmod>2018-02-27T03:02:04.384Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://blog.mindcont.com/books/index.html</loc>
     
-    <lastmod>2018-01-13T07:53:40.769Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/05/18/kinect-V2-with-matlab/</loc>
-    
-    <lastmod>2018-01-13T07:43:49.009Z</lastmod>
+    <lastmod>2018-02-27T02:46:08.515Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://blog.mindcont.com/about/index.html</loc>
     
-    <lastmod>2018-01-09T13:29:56.971Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/05/12/win10-ubuntu-remote-desktop/</loc>
-    
-    <lastmod>2018-01-09T03:40:54.382Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/07/15/ubuntu1404-nvidia-graphics-driver/</loc>
-    
-    <lastmod>2018-01-09T03:40:49.824Z</lastmod>
+    <lastmod>2018-02-27T02:46:08.508Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://blog.mindcont.com/2016/07/20/ubuntu1404-caffe-r3-cuda7-5-mkl/</loc>
     
-    <lastmod>2018-01-09T03:40:44.396Z</lastmod>
+    <lastmod>2018-02-27T02:46:08.504Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/11/15/use-shadowsocks-on-openwrt/</loc>
+    
+    <lastmod>2018-02-27T02:46:08.492Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://blog.mindcont.com/2016/10/27/ubuntu-necessary-install-software/</loc>
     
-    <lastmod>2018-01-09T03:40:40.829Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/05/09/the-basic-principle-of-kinect-depth-imaging/</loc>
-    
-    <lastmod>2018-01-09T03:40:36.046Z</lastmod>
+    <lastmod>2018-02-27T02:46:08.481Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://blog.mindcont.com/2017/02/22/some-advice-for-research-beginners/</loc>
     
-    <lastmod>2018-01-09T03:40:34.024Z</lastmod>
+    <lastmod>2018-02-27T02:46:08.473Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://blog.mindcont.com/2016/12/14/ros-naoqi-ubuntu/</loc>
     
-    <lastmod>2018-01-09T03:40:26.632Z</lastmod>
+    <lastmod>2018-02-27T02:46:08.469Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://blog.mindcont.com/2016/07/22/research-progress-in-object-detection/</loc>
     
-    <lastmod>2018-01-09T03:40:24.866Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/05/10/real-time-human-pose-recognition-in-parts-from-single-depth-images/</loc>
-    
-    <lastmod>2018-01-09T03:40:22.345Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/05/05/raspberry-pi-excellent-project/</loc>
-    
-    <lastmod>2018-01-09T03:40:19.349Z</lastmod>
+    <lastmod>2018-02-27T02:46:08.464Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://blog.mindcont.com/2016/11/13/ppa/</loc>
     
-    <lastmod>2018-01-09T03:40:14.990Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/05/13/open-source-computer-vision/</loc>
-    
-    <lastmod>2018-01-09T03:40:10.730Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/05/28/opencv-2-4-9-module-introduction/</loc>
-    
-    <lastmod>2018-01-09T03:40:08.450Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/07/26/nvidia-digits-with-caffe/</loc>
-    
-    <lastmod>2018-01-09T03:40:05.623Z</lastmod>
+    <lastmod>2018-02-27T02:46:08.457Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://blog.mindcont.com/2016/12/14/naoqi-robot-sdk-ubuntu/</loc>
     
-    <lastmod>2018-01-09T03:39:49.277Z</lastmod>
+    <lastmod>2018-02-27T02:46:08.451Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/06/27/middleware-technology-hibernate/</loc>
+    <loc>http://blog.mindcont.com/2016/07/26/nvidia-digits-with-caffe/</loc>
     
-    <lastmod>2018-01-09T03:39:47.014Z</lastmod>
+    <lastmod>2018-02-27T02:46:08.449Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://blog.mindcont.com/2017/02/16/my-review-2016/</loc>
     
-    <lastmod>2018-01-09T03:39:42.565Z</lastmod>
+    <lastmod>2018-02-27T02:46:08.441Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/04/15/kinect-unboxing/</loc>
+    <loc>http://blog.mindcont.com/2016/05/18/kinect-V2-with-matlab/</loc>
     
-    <lastmod>2018-01-09T03:39:31.292Z</lastmod>
+    <lastmod>2018-02-27T02:46:08.433Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://blog.mindcont.com/2016/07/16/installing-opencv-2-4-9-in-ubuntu-14-04-lts/</loc>
     
-    <lastmod>2018-01-09T03:39:03.468Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/05/04/how-to-use-ngrok-penetrate-internal-network/</loc>
-    
-    <lastmod>2018-01-09T03:39:00.111Z</lastmod>
+    <lastmod>2018-02-27T02:46:08.431Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://blog.mindcont.com/2017/04/25/how-to-do-mnist-demo/</loc>
     
-    <lastmod>2018-01-09T03:38:57.006Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/10/27/hg255d-openwrt/</loc>
-    
-    <lastmod>2018-01-09T03:38:51.621Z</lastmod>
+    <lastmod>2018-02-27T02:46:08.428Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://blog.mindcont.com/2016/08/18/git-commands/</loc>
     
-    <lastmod>2018-01-09T03:38:49.442Z</lastmod>
+    <lastmod>2018-02-27T02:46:08.420Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/10/27/hg255d-openwrt/</loc>
+    
+    <lastmod>2018-02-27T02:46:08.420Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://blog.mindcont.com/2016/07/29/docker-learning/</loc>
     
-    <lastmod>2018-01-09T03:38:46.954Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2017/02/25/debug-android-win/</loc>
-    
-    <lastmod>2018-01-09T03:38:24.053Z</lastmod>
+    <lastmod>2018-02-27T02:46:08.402Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://blog.mindcont.com/2016/09/18/cnn/</loc>
     
-    <lastmod>2018-01-09T03:38:20.134Z</lastmod>
+    <lastmod>2018-02-27T02:46:08.402Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2017/02/25/debug-android-win/</loc>
+    
+    <lastmod>2018-02-27T02:46:08.393Z</lastmod>
     
   </url>
   
@@ -292,13 +208,6 @@
     <loc>http://blog.mindcont.com/2017/01/05/machine-learning-for-software-engineers/</loc>
     
     <lastmod>2017-07-27T11:22:40.373Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/06/29/website-under-attack/</loc>
-    
-    <lastmod>2016-06-29T08:54:18.381Z</lastmod>
     
   </url>
   
