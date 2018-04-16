@@ -6,8 +6,8 @@ categories: 物联
 toc: true
 ---
 
-<!-- <img src="//static.mindcont.com/blog/images/iot/homebridge_mi.png?imageMogr2/thumbnail/!70p"> -->
-<img src="//static.mindcont.com/blog/images/iot/homebridge_mi.png?imageMogr2/thumbnail/500x">
+<!-- <img src="http://7xn2mk.com1.z0.glb.clouddn.com/blog/images/iot/homebridge_mi.png?imageMogr2/thumbnail/!70p"> -->
+<img src="http://7xn2mk.com1.z0.glb.clouddn.com/blog/images/iot/homebridge_mi.png?imageMogr2/thumbnail/500x">
 
 <!--more-->
 
@@ -16,7 +16,7 @@ toc: true
 
 Demo
 
-<video src="http://static.mindcont.com/blog/videos/raspberrypi-homebridge_led.MP4" controls="controls" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;">
+<video src="http://7xn2mk.com1.z0.glb.clouddn.com/blog/videos/raspberrypi-homebridge_led.MP4" controls="controls" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;">
 your browser does not support the video tag
 </video>
 
@@ -36,7 +36,7 @@ Let's begin ！！！
 其他，诸如树莓派电源（5v 2.5A），HDMI显示器连接线，读卡器等树莓派必备配件应该有。如果没有HDMI显示器连接线，可以参考[win10连结ubuntu 远程桌面](http://blog.mindcont.com/2016/05/12/win10-ubuntu-remote-desktop/)进行远程查看。
 
 ### 树莓派3b
-<img src="//static.mindcont.com/blog/images/iot/raspberrypi_3b.jpg" width="384px">
+<img src="/images/iot/raspberrypi_3b.jpg" width="384px">
 
 规格参数，
 
@@ -53,7 +53,7 @@ Let's begin ！！！
 **供电**：支持5V 2.5A
 
 GPIO引脚图，
-<img src="//static.mindcont.com/blog/images/iot/raspberrypi_3b_gpio.png" width="512px">
+<img src="/images/iot/raspberrypi_3b_gpio.png" width="512px">
 
 管脚驱动电流， 详细参见[官方说明](https://www.raspberrypi.org/help/faqs/#POWER)。
 <pre>
@@ -273,11 +273,11 @@ sudo npm install -g homebridge-gpio-wpi2
 ```
 在命令行输入`homebridge`启动,如下图说明启动成功
 
-<img src="//static.mindcont.com/blog/images/iot/homebridge.png?imageMogr2/thumbnail/400x">
+<img src="http://7xn2mk.com1.z0.glb.clouddn.com//blog/images/iot/homebridge.png?imageMogr2/thumbnail/400x">
 
 如果你的iPhone 和树莓派在同一局域网下， 打开`家庭`应用，会自动显示可配对的设备`homebridge`,通过扫描或输入 类似`133-45-678`即可添加成功。
 
-<img src="//static.mindcont.com/blog/images/iot/ios_home.JPG?imageMogr2/thumbnail/250x">
+<img src="http://7xn2mk.com1.z0.glb.clouddn.com//blog/images/iot/ios_home.JPG?imageMogr2/thumbnail/256x">
 
 赶快试试开关吧，这时你也可以通过Siri 进行控制了呢。输入日志如下
 ```json
