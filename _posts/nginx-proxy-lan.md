@@ -13,12 +13,14 @@ toc: false
 |HOSTA(OpenWrt路由器)|110.1.1.65(wan)|CentOS 6.7 x64|是|
 |HOSTB|110.1.1.215|CentOS 6.7 x64|否|
 <!--more-->
+
 **需求：**HOSTA和HOSTB均处在局域网中，二者能够互相ping通，HOSTA开通网络策略支持互联网访问，但是HOSTB不支持，现在需要将HOSTA作为代理服务器，让HOSTB通过HOSTA实现互联网访问，主要需要HOSTB能够进行在线的软件包安装（yum和pip）
 
 ## 方案
 使用Nginx反向代理将HOSTA作为http服务器，在HOSTB上配置http全局代理。
 
-![](https://sslbucket-a.akamaihd.net/www.opswat.com/images/blog/web-proxy-diagram-new.png)
+<!-- ![](https://sslbucket-a.akamaihd.net/www.opswat.com/images/blog/web-proxy-diagram-new.png) -->
+<img src="https://sslbucket-a.akamaihd.net/www.opswat.com/images/blog/web-proxy-diagram-new.png" width="512px">
 
 ### 设置nginx为HTTP代理服务器
 **服务器端即HOSTA主机**,设置nginx为HTTP代理服务器上网，只需要3步，分别为安装nginx、配置nginx、修改OpenWrt 防火墙。
