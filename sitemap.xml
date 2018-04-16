@@ -2,23 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://blog.mindcont.com/2016/08/06/run-yolo-demo/</loc>
+    <loc>http://blog.mindcont.com/books/index.html</loc>
     
-    <lastmod>2018-02-27T03:02:25.512Z</lastmod>
+    <lastmod>2018-04-16T09:45:24.385Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/05/12/win10-ubuntu-remote-desktop/</loc>
+    
+    <lastmod>2018-04-16T09:44:15.705Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/12/26/nginx-proxy-lan/</loc>
+    
+    <lastmod>2018-04-16T09:43:33.906Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://blog.mindcont.com/2018/01/03/raspberrypi-homebridge/</loc>
     
-    <lastmod>2018-02-27T03:02:04.384Z</lastmod>
+    <lastmod>2018-04-16T09:28:20.550Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/books/index.html</loc>
+    <loc>http://blog.mindcont.com/2016/08/06/run-yolo-demo/</loc>
     
-    <lastmod>2018-02-27T02:46:08.515Z</lastmod>
+    <lastmod>2018-04-16T09:00:05.352Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/07/20/ubuntu1404-caffe-r3-cuda7-5-mkl/</loc>
+    
+    <lastmod>2018-04-16T08:58:58.581Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/07/29/docker-learning/</loc>
+    
+    <lastmod>2018-04-16T08:58:33.686Z</lastmod>
     
   </url>
   
@@ -26,13 +54,6 @@
     <loc>http://blog.mindcont.com/about/index.html</loc>
     
     <lastmod>2018-02-27T02:46:08.508Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/07/20/ubuntu1404-caffe-r3-cuda7-5-mkl/</loc>
-    
-    <lastmod>2018-02-27T02:46:08.504Z</lastmod>
     
   </url>
   
@@ -121,13 +142,6 @@
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/08/18/git-commands/</loc>
-    
-    <lastmod>2018-02-27T02:46:08.420Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://blog.mindcont.com/2016/10/27/hg255d-openwrt/</loc>
     
     <lastmod>2018-02-27T02:46:08.420Z</lastmod>
@@ -135,9 +149,9 @@
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/07/29/docker-learning/</loc>
+    <loc>http://blog.mindcont.com/2016/08/18/git-commands/</loc>
     
-    <lastmod>2018-02-27T02:46:08.402Z</lastmod>
+    <lastmod>2018-02-27T02:46:08.420Z</lastmod>
     
   </url>
   
