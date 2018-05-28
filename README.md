@@ -5,3 +5,4 @@
 本项目利用[Hexo](https://hexo.io/zh-cn/)撰写个人技术博客，获取更多内容请访问 http://blog.mindcont.com。
 
 This project uses [Hexo](https://hexo.io/zh-cn/) to write personal technology blogs, for more information, please visit http://blog.mindcont.com.
+

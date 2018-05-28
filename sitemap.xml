@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.mindcont.com/2018/02/28/cube-robot/</loc>
+    
+    <lastmod>2018-05-28T07:41:39.305Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.mindcont.com/2018/04/16/diyprojects-raspbian/</loc>
     
-    <lastmod>2018-05-04T11:32:59.179Z</lastmod>
+    <lastmod>2018-05-04T11:38:26.564Z</lastmod>
     
   </url>
   
@@ -93,14 +100,14 @@
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/05/10/real-time-human-pose-recognition-in-parts-from-single-depth-images/</loc>
+    <loc>http://blog.mindcont.com/2016/07/22/research-progress-in-object-detection/</loc>
     
     <lastmod>2018-02-27T02:46:08.464Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/07/22/research-progress-in-object-detection/</loc>
+    <loc>http://blog.mindcont.com/2016/05/10/real-time-human-pose-recognition-in-parts-from-single-depth-images/</loc>
     
     <lastmod>2018-02-27T02:46:08.464Z</lastmod>
     
