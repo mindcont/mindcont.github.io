@@ -5,7 +5,7 @@ tags:
 categories: 深度学习
 toc: false
 ---
-<video src="http://7xn2mk.com1.z0.glb.clouddn.com/video/YOLO_Watches_Nature_Part_2.mp4" controls="controls" width="640px" heigt="480px" preload="none" poster="/images/research/object-detection/Yolo/YOLO_Watches_Nature_Part_2.png"></video>
+<video src="https://github.com/mindcont/mindcont.github.io/raw/master//video/YOLO_Watches_Nature_Part_2.mp4" controls="controls" width="640px" heigt="480px" preload="none" poster="/images/research/object-detection/Yolo/YOLO_Watches_Nature_Part_2.png"></video>
 
 YOLO 是一个用来在VOC 2012 数据集上检测物体的框架。它可以检测 20 类物体：
 <!--more-->

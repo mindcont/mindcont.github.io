@@ -6,8 +6,8 @@ categories: 物联
 toc: true
 ---
 
-<!-- <img src="http://7xn2mk.com1.z0.glb.clouddn.com/blog/images/iot/homebridge_mi.png?imageMogr2/thumbnail/!70p"> -->
-<img src="http://7xn2mk.com1.z0.glb.clouddn.com/blog/images/iot/homebridge_mi.png?imageMogr2/thumbnail/500x">
+<!-- <img src="https://github.com/mindcont/mindcont.github.io/raw/master/images/iot/homebridge_mi.png?imageMogr2/thumbnail/!70p"> -->
+<img src="https://github.com/mindcont/mindcont.github.io/raw/master/images/iot/homebridge_mi.png" width="500px">
 
 <!--more-->
 
@@ -16,7 +16,7 @@ toc: true
 
 Demo
 
-<video src="http://7xn2mk.com1.z0.glb.clouddn.com/blog/videos/raspberrypi-homebridge_led.MP4" controls="controls" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;">
+<video src="https://github.com/mindcont/mindcont.github.io/raw/master/videos/raspberrypi-homebridge_led.MP4" controls="controls" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;">
 your browser does not support the video tag
 </video>
 
@@ -273,11 +273,11 @@ sudo npm install -g homebridge-gpio-wpi2
 ```
 在命令行输入`homebridge`启动,如下图说明启动成功
 
-<img src="http://7xn2mk.com1.z0.glb.clouddn.com//blog/images/iot/homebridge.png?imageMogr2/thumbnail/400x">
+<img src="https://github.com/mindcont/mindcont.github.io/raw/master/images/iot/homebridge.png" width=400x>
 
 如果你的iPhone 和树莓派在同一局域网下， 打开`家庭`应用，会自动显示可配对的设备`homebridge`,通过扫描或输入 类似`133-45-678`即可添加成功。
 
-<img src="http://7xn2mk.com1.z0.glb.clouddn.com//blog/images/iot/ios_home.JPG?imageMogr2/thumbnail/256x">
+<img src="https://github.com/mindcont/mindcont.github.io/raw/master/images/iot/ios_home.JPG" width=256px>
 
 赶快试试开关吧，这时你也可以通过Siri 进行控制了呢。输入日志如下
 ```json
