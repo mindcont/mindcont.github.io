@@ -2,16 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.mindcont.com/history/index.html</loc>
+    
+    <lastmod>2018-10-04T03:00:01.443Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2018/01/03/raspberrypi-homebridge/</loc>
+    
+    <lastmod>2018-10-04T02:55:08.170Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/08/06/run-yolo-demo/</loc>
+    
+    <lastmod>2018-10-04T01:06:46.899Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.mindcont.com/2018/02/28/cube-robot/</loc>
     
-    <lastmod>2018-05-29T06:01:29.286Z</lastmod>
+    <lastmod>2018-10-04T00:59:43.389Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://blog.mindcont.com/2018/04/16/diyprojects-raspbian/</loc>
     
-    <lastmod>2018-05-04T11:38:26.564Z</lastmod>
+    <lastmod>2018-10-04T00:42:52.040Z</lastmod>
     
   </url>
   
@@ -33,20 +54,6 @@
     <loc>http://blog.mindcont.com/2016/12/26/nginx-proxy-lan/</loc>
     
     <lastmod>2018-04-16T09:43:33.906Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2018/01/03/raspberrypi-homebridge/</loc>
-    
-    <lastmod>2018-04-16T09:28:20.550Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2016/08/06/run-yolo-demo/</loc>
-    
-    <lastmod>2018-04-16T09:00:05.352Z</lastmod>
     
   </url>
   
@@ -100,14 +107,14 @@
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/05/10/real-time-human-pose-recognition-in-parts-from-single-depth-images/</loc>
+    <loc>http://blog.mindcont.com/2016/07/22/research-progress-in-object-detection/</loc>
     
     <lastmod>2018-02-27T02:46:08.464Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/07/22/research-progress-in-object-detection/</loc>
+    <loc>http://blog.mindcont.com/2016/05/10/real-time-human-pose-recognition-in-parts-from-single-depth-images/</loc>
     
     <lastmod>2018-02-27T02:46:08.464Z</lastmod>
     
@@ -170,14 +177,14 @@
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/10/27/hg255d-openwrt/</loc>
+    <loc>http://blog.mindcont.com/2016/08/18/git-commands/</loc>
     
     <lastmod>2018-02-27T02:46:08.420Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/08/18/git-commands/</loc>
+    <loc>http://blog.mindcont.com/2016/10/27/hg255d-openwrt/</loc>
     
     <lastmod>2018-02-27T02:46:08.420Z</lastmod>
     
@@ -236,13 +243,6 @@
     <loc>http://blog.mindcont.com/2017/10/20/my-movie-review/</loc>
     
     <lastmod>2017-12-07T00:58:17.978Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/history/index.html</loc>
-    
-    <lastmod>2017-12-05T01:35:17.792Z</lastmod>
     
   </url>
   
