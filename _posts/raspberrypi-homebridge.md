@@ -16,7 +16,7 @@ toc: true
 
 Demo
 
-<video src="https://github.com/mindcont/mindcont.github.io/raw/master/videos/raspberrypi-homebridge_led.MP4" controls="controls" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;">
+<video src="http://cdn-mindcont.opengps.cn/videos/cube-robot.mp4" controls="controls" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;">
 your browser does not support the video tag
 </video>
 
