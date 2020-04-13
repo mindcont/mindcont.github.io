@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.mindcont.com/about/index.html</loc>
+    
+    <lastmod>2020-04-13T13:26:38.249Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.mindcont.com/2019/01/02/my-review-2018/</loc>
     
     <lastmod>2019-01-18T12:22:36.603Z</lastmod>
@@ -75,13 +82,6 @@
     <loc>http://blog.mindcont.com/2016/07/29/docker-learning/</loc>
     
     <lastmod>2018-04-16T08:58:33.686Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/about/index.html</loc>
-    
-    <lastmod>2018-02-27T02:46:08.508Z</lastmod>
     
   </url>
   
