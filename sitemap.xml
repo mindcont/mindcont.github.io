@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.mindcont.com/2020/05/30/my-awtrix/</loc>
+    
+    <lastmod>2020-05-29T16:31:57.933Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.mindcont.com/about/index.html</loc>
     
     <lastmod>2020-04-13T13:26:38.249Z</lastmod>
@@ -184,14 +191,14 @@
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/10/27/hg255d-openwrt/</loc>
+    <loc>http://blog.mindcont.com/2016/08/18/git-commands/</loc>
     
     <lastmod>2018-02-27T02:46:08.420Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/08/18/git-commands/</loc>
+    <loc>http://blog.mindcont.com/2016/10/27/hg255d-openwrt/</loc>
     
     <lastmod>2018-02-27T02:46:08.420Z</lastmod>
     
