@@ -21,7 +21,7 @@ layout: timeline
     <div class="timeline-item active">
         <div class="year">2017.7<span class="marker"><span class="dot"></span></span></div><div class="info">全栈+智能硬件+人工智能的成长之路</div>
     </div>
-       <div class="timeline-item active">
+    <div class="timeline-item active">
         <div class="year">2018.7<span class="marker"><span class="dot"></span></span></div><div class="info">参加工作.嵌入式+qt+app+it部署</div>
     </div>
 </div> -->
