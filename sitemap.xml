@@ -2,269 +2,454 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://blog.mindcont.com/2020/05/30/my-awtrix/</loc>
+    <loc>http://example.com/about/index.html</loc>
     
-    <lastmod>2020-05-29T16:31:57.933Z</lastmod>
+    <lastmod>2023-03-01</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/about/index.html</loc>
+    <loc>http://example.com/books/index.html</loc>
     
-    <lastmod>2020-04-13T13:26:38.249Z</lastmod>
+    <lastmod>2023-03-01</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2019/01/02/my-review-2018/</loc>
+    <loc>http://example.com/history/index.html</loc>
     
-    <lastmod>2019-01-18T12:22:36.603Z</lastmod>
+    <lastmod>2023-03-01</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2018/01/03/raspberrypi-homebridge/</loc>
+    <loc>http://example.com/2019/01/02/my-review-2018/</loc>
     
-    <lastmod>2018-10-08T10:59:25.441Z</lastmod>
+    <lastmod>2023-02-28</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/history/index.html</loc>
+    <loc>http://example.com/2020/05/30/my-awtrix/</loc>
     
-    <lastmod>2018-10-04T03:00:01.443Z</lastmod>
+    <lastmod>2020-05-29</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/08/06/run-yolo-demo/</loc>
+    <loc>http://example.com/2018/01/03/raspberrypi-homebridge/</loc>
     
-    <lastmod>2018-10-04T01:06:46.899Z</lastmod>
+    <lastmod>2018-10-08</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2018/02/28/cube-robot/</loc>
+    <loc>http://example.com/2016/08/06/run-yolo-demo/</loc>
     
-    <lastmod>2018-10-04T00:59:43.389Z</lastmod>
+    <lastmod>2018-10-04</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2018/04/16/diyprojects-raspbian/</loc>
+    <loc>http://example.com/2018/02/28/cube-robot/</loc>
     
-    <lastmod>2018-10-04T00:42:52.040Z</lastmod>
+    <lastmod>2018-10-04</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/books/index.html</loc>
+    <loc>http://example.com/2018/04/16/diyprojects-raspbian/</loc>
     
-    <lastmod>2018-04-16T09:45:24.385Z</lastmod>
+    <lastmod>2018-10-04</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/05/12/win10-ubuntu-remote-desktop/</loc>
+    <loc>http://example.com/2016/05/12/win10-ubuntu-remote-desktop/</loc>
     
-    <lastmod>2018-04-16T09:44:15.705Z</lastmod>
+    <lastmod>2018-04-16</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/12/26/nginx-proxy-lan/</loc>
+    <loc>http://example.com/2016/12/26/nginx-proxy-lan/</loc>
     
-    <lastmod>2018-04-16T09:43:33.906Z</lastmod>
+    <lastmod>2018-04-16</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/07/20/ubuntu1404-caffe-r3-cuda7-5-mkl/</loc>
+    <loc>http://example.com/2016/07/20/ubuntu1404-caffe-r3-cuda7-5-mkl/</loc>
     
-    <lastmod>2018-04-16T08:58:58.581Z</lastmod>
+    <lastmod>2018-04-16</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/07/29/docker-learning/</loc>
+    <loc>http://example.com/2016/07/29/docker-learning/</loc>
     
-    <lastmod>2018-04-16T08:58:33.686Z</lastmod>
+    <lastmod>2018-04-16</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/11/15/use-shadowsocks-on-openwrt/</loc>
+    <loc>http://example.com/2016/11/15/use-shadowsocks-on-openwrt/</loc>
     
-    <lastmod>2018-02-27T02:46:08.492Z</lastmod>
+    <lastmod>2018-02-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/10/27/ubuntu-necessary-install-software/</loc>
+    <loc>http://example.com/2016/10/27/ubuntu-necessary-install-software/</loc>
     
-    <lastmod>2018-02-27T02:46:08.481Z</lastmod>
+    <lastmod>2018-02-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2017/02/22/some-advice-for-research-beginners/</loc>
+    <loc>http://example.com/2017/02/22/some-advice-for-research-beginners/</loc>
     
-    <lastmod>2018-02-27T02:46:08.473Z</lastmod>
+    <lastmod>2018-02-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/12/14/ros-naoqi-ubuntu/</loc>
+    <loc>http://example.com/2016/12/14/ros-naoqi-ubuntu/</loc>
     
-    <lastmod>2018-02-27T02:46:08.469Z</lastmod>
+    <lastmod>2018-02-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/05/10/real-time-human-pose-recognition-in-parts-from-single-depth-images/</loc>
+    <loc>http://example.com/2016/05/10/real-time-human-pose-recognition-in-parts-from-single-depth-images/</loc>
     
-    <lastmod>2018-02-27T02:46:08.464Z</lastmod>
+    <lastmod>2018-02-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/07/22/research-progress-in-object-detection/</loc>
+    <loc>http://example.com/2016/07/22/research-progress-in-object-detection/</loc>
     
-    <lastmod>2018-02-27T02:46:08.464Z</lastmod>
+    <lastmod>2018-02-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/11/13/ppa/</loc>
+    <loc>http://example.com/2016/11/13/ppa/</loc>
     
-    <lastmod>2018-02-27T02:46:08.457Z</lastmod>
+    <lastmod>2018-02-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/12/14/naoqi-robot-sdk-ubuntu/</loc>
+    <loc>http://example.com/2016/12/14/naoqi-robot-sdk-ubuntu/</loc>
     
-    <lastmod>2018-02-27T02:46:08.451Z</lastmod>
+    <lastmod>2018-02-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/07/26/nvidia-digits-with-caffe/</loc>
+    <loc>http://example.com/2016/07/26/nvidia-digits-with-caffe/</loc>
     
-    <lastmod>2018-02-27T02:46:08.449Z</lastmod>
+    <lastmod>2018-02-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2017/02/16/my-review-2016/</loc>
+    <loc>http://example.com/2017/02/16/my-review-2016/</loc>
     
-    <lastmod>2018-02-27T02:46:08.441Z</lastmod>
+    <lastmod>2018-02-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/06/27/middleware-technology-hibernate/</loc>
+    <loc>http://example.com/2016/06/27/middleware-technology-hibernate/</loc>
     
-    <lastmod>2018-02-27T02:46:08.438Z</lastmod>
+    <lastmod>2018-02-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/05/18/kinect-V2-with-matlab/</loc>
+    <loc>http://example.com/2016/05/18/kinect-V2-with-matlab/</loc>
     
-    <lastmod>2018-02-27T02:46:08.433Z</lastmod>
+    <lastmod>2018-02-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/07/16/installing-opencv-2-4-9-in-ubuntu-14-04-lts/</loc>
+    <loc>http://example.com/2016/07/16/installing-opencv-2-4-9-in-ubuntu-14-04-lts/</loc>
     
-    <lastmod>2018-02-27T02:46:08.431Z</lastmod>
+    <lastmod>2018-02-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2017/04/25/how-to-do-mnist-demo/</loc>
+    <loc>http://example.com/2017/04/25/how-to-do-mnist-demo/</loc>
     
-    <lastmod>2018-02-27T02:46:08.428Z</lastmod>
+    <lastmod>2018-02-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/08/18/git-commands/</loc>
+    <loc>http://example.com/2016/10/27/hg255d-openwrt/</loc>
     
-    <lastmod>2018-02-27T02:46:08.420Z</lastmod>
+    <lastmod>2018-02-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/10/27/hg255d-openwrt/</loc>
+    <loc>http://example.com/2016/08/18/git-commands/</loc>
     
-    <lastmod>2018-02-27T02:46:08.420Z</lastmod>
+    <lastmod>2018-02-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/09/18/cnn/</loc>
+    <loc>http://example.com/2016/09/18/cnn/</loc>
     
-    <lastmod>2018-02-27T02:46:08.402Z</lastmod>
+    <lastmod>2018-02-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2017/02/25/debug-android-win/</loc>
+    <loc>http://example.com/2017/02/25/debug-android-win/</loc>
     
-    <lastmod>2018-02-27T02:46:08.393Z</lastmod>
+    <lastmod>2018-02-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/04/16/kinect-develop/</loc>
+    <loc>http://example.com/2016/04/16/kinect-develop/</loc>
     
-    <lastmod>2018-01-09T02:37:59.943Z</lastmod>
+    <lastmod>2018-01-09</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2017/02/15/ideas-worth-spreading/</loc>
+    <loc>http://example.com/2017/02/15/ideas-worth-spreading/</loc>
     
-    <lastmod>2018-01-09T02:31:08.803Z</lastmod>
+    <lastmod>2018-01-09</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2017/02/15/caffe-guide-book/</loc>
+    <loc>http://example.com/2017/02/15/caffe-guide-book/</loc>
     
-    <lastmod>2018-01-09T02:17:55.758Z</lastmod>
+    <lastmod>2018-01-09</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2017/09/09/interview-diary/</loc>
+    <loc>http://example.com/2017/09/09/interview-diary/</loc>
     
-    <lastmod>2018-01-09T02:08:14.075Z</lastmod>
+    <lastmod>2018-01-09</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/about/donate.html</loc>
+    <loc>http://example.com/about/donate.html</loc>
     
-    <lastmod>2017-12-07T01:01:49.101Z</lastmod>
+    <lastmod>2017-12-07</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2017/10/20/my-movie-review/</loc>
+    <loc>http://example.com/2017/10/20/my-movie-review/</loc>
     
-    <lastmod>2017-12-07T00:58:17.978Z</lastmod>
+    <lastmod>2017-12-07</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2017/01/05/machine-learning-for-software-engineers/</loc>
+    <loc>http://example.com/2017/01/05/machine-learning-for-software-engineers/</loc>
     
-    <lastmod>2017-07-27T11:22:40.373Z</lastmod>
+    <lastmod>2017-07-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+
+  <url>
+    <loc>http://example.com/</loc>
+    <lastmod>2023-03-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  
+  <url>
+    <loc>http://example.com/tags/caffe/</loc>
+    <lastmod>2023-03-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/coding/</loc>
+    <lastmod>2023-03-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/opencv/</loc>
+    <lastmod>2023-03-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/openwrt/</loc>
+    <lastmod>2023-03-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/kinect/</loc>
+    <lastmod>2023-03-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/matlab/</loc>
+    <lastmod>2023-03-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/ros/</loc>
+    <lastmod>2023-03-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/%E9%9A%8F%E7%AC%94%E6%97%A5%E8%AE%B0/</loc>
+    <lastmod>2023-03-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/</loc>
+    <lastmod>2023-03-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/ubuntu/</loc>
+    <lastmod>2023-03-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+
+  
+  <url>
+    <loc>http://example.com/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</loc>
+    <lastmod>2023-03-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/categories/Linux/</loc>
+    <lastmod>2023-03-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/categories/%E9%9A%8F%E7%AC%94%E6%97%A5%E8%AE%B0/</loc>
+    <lastmod>2023-03-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/categories/%E7%89%A9%E8%81%94/</loc>
+    <lastmod>2023-03-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
   </url>
   
 </urlset>
