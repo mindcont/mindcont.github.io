@@ -3,27 +3,27 @@
   <title>项脊轩</title>
   
   <subtitle>项脊轩，旧南阁子也</subtitle>
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="http://blog.mindcont.com/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
-  <updated>2023-03-28T08:35:42.161Z</updated>
-  <id>http://example.com/</id>
+  <link href="http://blog.mindcont.com/"/>
+  <updated>2023-03-28T09:05:04.934Z</updated>
+  <id>http://blog.mindcont.com/</id>
   
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
     <title>部署自己的chatgpt</title>
-    <link href="http://example.com/2023/03/28/deploy-your-own-chatgpt/"/>
-    <id>http://example.com/2023/03/28/deploy-your-own-chatgpt/</id>
+    <link href="http://blog.mindcont.com/2023/03/28/deploy-your-own-chatgpt/"/>
+    <id>http://blog.mindcont.com/2023/03/28/deploy-your-own-chatgpt/</id>
     <published>2023-03-28T07:49:10.000Z</published>
-    <updated>2023-03-28T08:35:42.161Z</updated>
+    <updated>2023-03-28T09:05:04.934Z</updated>
     
-    <content type="html"><![CDATA[<img src="https://openaicom.imgix.net/b4871bfc-8429-4a93-a5a1-66e1dd60e3f8/gpt-4-92586ac_1080p60-poster.jpg?fm=auto&auto=compress,format&fit=min&rect=0,0,1920,1080&w=1440&h=810" width="750px"><p>Chatgpt 如火如荼，如何搭建自己的 chatgpt 服务呢？这里我们采用的技术路线 “OpenAI key” + “Chatbot UI” + “Vecel”实现。</p><span id="more"></span><p>和将一头大象放入冰箱的步骤一样，简单为三步：<br>1、申请 OpenAI 的 key;<br>2、将 Chatbot UI 项目 clone 到自己的 github 账号下；<br>3、创建 Vecel 项目 简单配置 然后 Vecel 会自动构建部署。<br>就可以使用了。</p><h2 id="申请-OpenAI-key"><a href="#申请-OpenAI-key" class="headerlink" title="申请 OpenAI key"></a>申请 OpenAI key</h2><p>参照 <a href="https://cloud.tencent.com/developer/article/2190154">一文教你快速注册 OpenAi</a></p><p>这里不在重复，经过这一步你需要拿到形如“sk-hyaUTHpxxxxxxxxxxxxxxx” 一个 key,即可进入下一步。</p><h2 id="clone-到自己的-github-账号下"><a href="#clone-到自己的-github-账号下" class="headerlink" title="clone 到自己的 github 账号下"></a>clone 到自己的 github 账号下</h2><p>1、打开项目地址 <code>https://github.com/mckaywrigley/chatbot-ui</code>， 点击 fork<br><img src="/images/resources/fork.png"></p><p>2、点击 create fork.<br><img src="/images/resources/fork-info.png"></p><h2 id="Vecel-项目和部署"><a href="#Vecel-项目和部署" class="headerlink" title="Vecel 项目和部署"></a>Vecel 项目和部署</h2><p>1、注册 Vercel 账号，推荐使用 GitHub 账号登录。<br><img src="/images/resources/login-vercel.png"></p><p>2、点击创建 Vercel 项目，import 刚才 clone 的 github 账号下的项目。<br><img src="/images/resources/add-new.png"></p><p><img src="/images/resources/import.png"></p><p>3、配置项目<br><img src="/images/resources/create-vercel.png"></p><p>ok !!!<br><img src="/images/resources/chatgpt-ok.png"></p>]]></content>
+    <content type="html"><![CDATA[<img src="https://openaicom.imgix.net/b4871bfc-8429-4a93-a5a1-66e1dd60e3f8/gpt-4-92586ac_1080p60-poster.jpg?fm=auto&auto=compress,format&fit=min&rect=0,0,1920,1080&w=1440&h=810" width="750px"><p>Chatgpt 如火如荼，如何搭建自己的 chatgpt 服务呢？这里我们采用的技术路线 “OpenAI key” + “Chatbot UI” + “Vercel”实现。</p><span id="more"></span><p>和将一头大象放入冰箱的步骤一样，简单为三步：<br>1、申请 OpenAI 的 key;<br>2、将 Chatbot UI 项目 clone 到自己的 github 账号下；<br>3、创建 Vecel 项目 简单配置 然后 Vecel 会自动构建部署。<br>就可以使用了。</p><h2 id="申请-OpenAI-key"><a href="#申请-OpenAI-key" class="headerlink" title="申请 OpenAI key"></a>申请 OpenAI key</h2><p>参照 <a href="https://cloud.tencent.com/developer/article/2190154">一文教你快速注册 OpenAi</a></p><p>这里不在重复，经过这一步你需要拿到形如“sk-hyaUTHpxxxxxxxxxxxxxxx” 一个 key,即可进入下一步。</p><h2 id="clone-到自己的-github-账号下"><a href="#clone-到自己的-github-账号下" class="headerlink" title="clone 到自己的 github 账号下"></a>clone 到自己的 github 账号下</h2><p>1、打开项目地址 <code>https://github.com/mckaywrigley/chatbot-ui</code>， 点击 fork<br><img src="/images/resources/fork.png"></p><p>2、点击 create fork.<br><img src="/images/resources/fork-info.png"></p><h2 id="Vecel-项目和部署"><a href="#Vecel-项目和部署" class="headerlink" title="Vecel 项目和部署"></a>Vecel 项目和部署</h2><p>1、注册 Vercel 账号，推荐使用 GitHub 账号登录。<br><img src="/images/resources/login-vercel.png"></p><p>2、点击创建 Vercel 项目，import 刚才 clone 的 github 账号下的项目。<br><img src="/images/resources/add-new.png"></p><p><img src="/images/resources/import.png"></p><p>3、配置项目<br><img src="/images/resources/create-vercel.png"></p><p>ok !!!<br><img src="/images/resources/chatgpt-ok.png"></p>]]></content>
     
     
     <summary type="html">&lt;img src=&quot;https://openaicom.imgix.net/b4871bfc-8429-4a93-a5a1-66e1dd60e3f8/gpt-4-92586ac_1080p60-poster.jpg?fm=auto&amp;auto=compress,format&amp;fit=min&amp;rect=0,0,1920,1080&amp;w=1440&amp;h=810&quot; width=&quot;750px&quot;&gt;
 
-&lt;p&gt;Chatgpt 如火如荼，如何搭建自己的 chatgpt 服务呢？这里我们采用的技术路线 “OpenAI key” + “Chatbot UI” + “Vecel”实现。&lt;/p&gt;</summary>
+&lt;p&gt;Chatgpt 如火如荼，如何搭建自己的 chatgpt 服务呢？这里我们采用的技术路线 “OpenAI key” + “Chatbot UI” + “Vercel”实现。&lt;/p&gt;</summary>
     
     
     
@@ -32,8 +32,8 @@
   
   <entry>
     <title>pyqt 加载自定义控件</title>
-    <link href="http://example.com/2023/03/27/pyqt-load-custom-control/"/>
-    <id>http://example.com/2023/03/27/pyqt-load-custom-control/</id>
+    <link href="http://blog.mindcont.com/2023/03/27/pyqt-load-custom-control/"/>
+    <id>http://blog.mindcont.com/2023/03/27/pyqt-load-custom-control/</id>
     <published>2023-03-27T08:09:19.000Z</published>
     <updated>2023-03-27T08:35:18.308Z</updated>
     
@@ -52,8 +52,8 @@
   
   <entry>
     <title>工业CT基本知识</title>
-    <link href="http://example.com/2023/03/01/Industrial-CT/"/>
-    <id>http://example.com/2023/03/01/Industrial-CT/</id>
+    <link href="http://blog.mindcont.com/2023/03/01/Industrial-CT/"/>
+    <id>http://blog.mindcont.com/2023/03/01/Industrial-CT/</id>
     <published>2023-03-01T10:40:10.000Z</published>
     <updated>2023-03-01T10:46:10.116Z</updated>
     
@@ -68,15 +68,15 @@
     
     
     
-    <category term="运动控制" scheme="http://example.com/categories/%E8%BF%90%E5%8A%A8%E6%8E%A7%E5%88%B6/"/>
+    <category term="运动控制" scheme="http://blog.mindcont.com/categories/%E8%BF%90%E5%8A%A8%E6%8E%A7%E5%88%B6/"/>
     
     
   </entry>
   
   <entry>
     <title>复刻一个 WIFI 像素时钟</title>
-    <link href="http://example.com/2020/05/30/my-awtrix/"/>
-    <id>http://example.com/2020/05/30/my-awtrix/</id>
+    <link href="http://blog.mindcont.com/2020/05/30/my-awtrix/"/>
+    <id>http://blog.mindcont.com/2020/05/30/my-awtrix/</id>
     <published>2020-05-29T16:23:31.000Z</published>
     <updated>2023-03-01T11:17:04.612Z</updated>
     
@@ -96,8 +96,8 @@
   
   <entry>
     <title>2018 , 我的年终总结</title>
-    <link href="http://example.com/2019/01/02/my-review-2018/"/>
-    <id>http://example.com/2019/01/02/my-review-2018/</id>
+    <link href="http://blog.mindcont.com/2019/01/02/my-review-2018/"/>
+    <id>http://blog.mindcont.com/2019/01/02/my-review-2018/</id>
     <published>2019-01-02T12:10:30.000Z</published>
     <updated>2023-03-07T00:41:50.708Z</updated>
     
@@ -112,14 +112,14 @@
     
     
     
-    <category term="随笔日记" scheme="http://example.com/tags/%E9%9A%8F%E7%AC%94%E6%97%A5%E8%AE%B0/"/>
+    <category term="随笔日记" scheme="http://blog.mindcont.com/tags/%E9%9A%8F%E7%AC%94%E6%97%A5%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
     <title>无线IO | 一个开源智能家居解决方案</title>
-    <link href="http://example.com/2018/04/16/diyprojects-raspbian/"/>
-    <id>http://example.com/2018/04/16/diyprojects-raspbian/</id>
+    <link href="http://blog.mindcont.com/2018/04/16/diyprojects-raspbian/"/>
+    <id>http://blog.mindcont.com/2018/04/16/diyprojects-raspbian/</id>
     <published>2018-04-16T10:45:31.000Z</published>
     <updated>2018-10-04T00:42:52.040Z</updated>
     
@@ -140,8 +140,8 @@
   
   <entry>
     <title>魔方机器人开箱</title>
-    <link href="http://example.com/2018/02/28/cube-robot/"/>
-    <id>http://example.com/2018/02/28/cube-robot/</id>
+    <link href="http://blog.mindcont.com/2018/02/28/cube-robot/"/>
+    <id>http://blog.mindcont.com/2018/02/28/cube-robot/</id>
     <published>2018-02-28T05:48:02.000Z</published>
     <updated>2018-10-04T00:59:43.389Z</updated>
     
@@ -157,8 +157,8 @@
   
   <entry>
     <title>玩转树莓派第一弹：HomeBridge控制LED灯</title>
-    <link href="http://example.com/2018/01/03/raspberrypi-homebridge/"/>
-    <id>http://example.com/2018/01/03/raspberrypi-homebridge/</id>
+    <link href="http://blog.mindcont.com/2018/01/03/raspberrypi-homebridge/"/>
+    <id>http://blog.mindcont.com/2018/01/03/raspberrypi-homebridge/</id>
     <published>2018-01-03T12:06:32.000Z</published>
     <updated>2018-10-08T10:59:25.441Z</updated>
     
@@ -170,17 +170,17 @@
     
     
     
-    <category term="物联" scheme="http://example.com/categories/%E7%89%A9%E8%81%94/"/>
+    <category term="物联" scheme="http://blog.mindcont.com/categories/%E7%89%A9%E8%81%94/"/>
     
     
-    <category term="树莓派" scheme="http://example.com/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
+    <category term="树莓派" scheme="http://blog.mindcont.com/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
     
   </entry>
   
   <entry>
     <title>我的影评</title>
-    <link href="http://example.com/2017/10/20/my-movie-review/"/>
-    <id>http://example.com/2017/10/20/my-movie-review/</id>
+    <link href="http://blog.mindcont.com/2017/10/20/my-movie-review/"/>
+    <id>http://blog.mindcont.com/2017/10/20/my-movie-review/</id>
     <published>2017-10-20T07:40:08.000Z</published>
     <updated>2017-12-07T00:58:17.978Z</updated>
     
@@ -196,8 +196,8 @@
   
   <entry>
     <title>求职笔记</title>
-    <link href="http://example.com/2017/09/09/interview-diary/"/>
-    <id>http://example.com/2017/09/09/interview-diary/</id>
+    <link href="http://blog.mindcont.com/2017/09/09/interview-diary/"/>
+    <id>http://blog.mindcont.com/2017/09/09/interview-diary/</id>
     <published>2017-09-09T05:13:48.000Z</published>
     <updated>2018-01-09T02:08:14.075Z</updated>
     
@@ -212,15 +212,15 @@
     
     
     
-    <category term="随笔日记" scheme="http://example.com/categories/%E9%9A%8F%E7%AC%94%E6%97%A5%E8%AE%B0/"/>
+    <category term="随笔日记" scheme="http://blog.mindcont.com/categories/%E9%9A%8F%E7%AC%94%E6%97%A5%E8%AE%B0/"/>
     
     
   </entry>
   
   <entry>
     <title>Caffe 入门-MNIST 实验</title>
-    <link href="http://example.com/2017/04/25/how-to-do-mnist-demo/"/>
-    <id>http://example.com/2017/04/25/how-to-do-mnist-demo/</id>
+    <link href="http://blog.mindcont.com/2017/04/25/how-to-do-mnist-demo/"/>
+    <id>http://blog.mindcont.com/2017/04/25/how-to-do-mnist-demo/</id>
     <published>2017-04-25T03:45:16.000Z</published>
     <updated>2018-02-27T02:46:08.428Z</updated>
     
@@ -231,15 +231,15 @@
     
     
     
-    <category term="深度学习" scheme="http://example.com/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    <category term="深度学习" scheme="http://blog.mindcont.com/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
     
   </entry>
   
   <entry>
     <title>调试安卓的小技巧</title>
-    <link href="http://example.com/2017/02/25/debug-android-win/"/>
-    <id>http://example.com/2017/02/25/debug-android-win/</id>
+    <link href="http://blog.mindcont.com/2017/02/25/debug-android-win/"/>
+    <id>http://blog.mindcont.com/2017/02/25/debug-android-win/</id>
     <published>2017-02-25T01:26:57.000Z</published>
     <updated>2018-02-27T02:46:08.393Z</updated>
     
@@ -251,14 +251,14 @@
     
     
     
-    <category term="coding" scheme="http://example.com/tags/coding/"/>
+    <category term="coding" scheme="http://blog.mindcont.com/tags/coding/"/>
     
   </entry>
   
   <entry>
     <title>给初做科研的一些建议</title>
-    <link href="http://example.com/2017/02/22/some-advice-for-research-beginners/"/>
-    <id>http://example.com/2017/02/22/some-advice-for-research-beginners/</id>
+    <link href="http://blog.mindcont.com/2017/02/22/some-advice-for-research-beginners/"/>
+    <id>http://blog.mindcont.com/2017/02/22/some-advice-for-research-beginners/</id>
     <published>2017-02-22T01:19:45.000Z</published>
     <updated>2018-02-27T02:46:08.473Z</updated>
     
@@ -269,15 +269,15 @@
     
     
     
-    <category term="随笔日记" scheme="http://example.com/categories/%E9%9A%8F%E7%AC%94%E6%97%A5%E8%AE%B0/"/>
+    <category term="随笔日记" scheme="http://blog.mindcont.com/categories/%E9%9A%8F%E7%AC%94%E6%97%A5%E8%AE%B0/"/>
     
     
   </entry>
   
   <entry>
     <title>2016 , 我的年终总结</title>
-    <link href="http://example.com/2017/02/16/my-review-2016/"/>
-    <id>http://example.com/2017/02/16/my-review-2016/</id>
+    <link href="http://blog.mindcont.com/2017/02/16/my-review-2016/"/>
+    <id>http://blog.mindcont.com/2017/02/16/my-review-2016/</id>
     <published>2017-02-16T08:27:20.000Z</published>
     <updated>2018-02-27T02:46:08.441Z</updated>
     
@@ -288,15 +288,15 @@
     
     
     
-    <category term="随笔日记" scheme="http://example.com/categories/%E9%9A%8F%E7%AC%94%E6%97%A5%E8%AE%B0/"/>
+    <category term="随笔日记" scheme="http://blog.mindcont.com/categories/%E9%9A%8F%E7%AC%94%E6%97%A5%E8%AE%B0/"/>
     
     
   </entry>
   
   <entry>
     <title>值得传播的思想</title>
-    <link href="http://example.com/2017/02/15/ideas-worth-spreading/"/>
-    <id>http://example.com/2017/02/15/ideas-worth-spreading/</id>
+    <link href="http://blog.mindcont.com/2017/02/15/ideas-worth-spreading/"/>
+    <id>http://blog.mindcont.com/2017/02/15/ideas-worth-spreading/</id>
     <published>2017-02-15T08:50:13.000Z</published>
     <updated>2018-01-09T02:31:08.803Z</updated>
     
@@ -307,15 +307,15 @@
     
     
     
-    <category term="随笔日记" scheme="http://example.com/categories/%E9%9A%8F%E7%AC%94%E6%97%A5%E8%AE%B0/"/>
+    <category term="随笔日记" scheme="http://blog.mindcont.com/categories/%E9%9A%8F%E7%AC%94%E6%97%A5%E8%AE%B0/"/>
     
     
   </entry>
   
   <entry>
     <title>Caffe 入门指南</title>
-    <link href="http://example.com/2017/02/15/caffe-guide-book/"/>
-    <id>http://example.com/2017/02/15/caffe-guide-book/</id>
+    <link href="http://blog.mindcont.com/2017/02/15/caffe-guide-book/"/>
+    <id>http://blog.mindcont.com/2017/02/15/caffe-guide-book/</id>
     <published>2017-02-15T08:22:46.000Z</published>
     <updated>2018-01-09T02:17:55.758Z</updated>
     
@@ -326,17 +326,17 @@
     
     
     
-    <category term="深度学习" scheme="http://example.com/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    <category term="深度学习" scheme="http://blog.mindcont.com/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="caffe" scheme="http://example.com/tags/caffe/"/>
+    <category term="caffe" scheme="http://blog.mindcont.com/tags/caffe/"/>
     
   </entry>
   
   <entry>
     <title>自上而下的学习路线-软件工程师的机器学习</title>
-    <link href="http://example.com/2017/01/05/machine-learning-for-software-engineers/"/>
-    <id>http://example.com/2017/01/05/machine-learning-for-software-engineers/</id>
+    <link href="http://blog.mindcont.com/2017/01/05/machine-learning-for-software-engineers/"/>
+    <id>http://blog.mindcont.com/2017/01/05/machine-learning-for-software-engineers/</id>
     <published>2017-01-05T00:43:44.000Z</published>
     <updated>2017-07-27T11:22:40.373Z</updated>
     
@@ -351,15 +351,15 @@
     
     
     
-    <category term="深度学习" scheme="http://example.com/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    <category term="深度学习" scheme="http://blog.mindcont.com/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
     
   </entry>
   
   <entry>
     <title>局域网内nginx反向代理上网</title>
-    <link href="http://example.com/2016/12/26/nginx-proxy-lan/"/>
-    <id>http://example.com/2016/12/26/nginx-proxy-lan/</id>
+    <link href="http://blog.mindcont.com/2016/12/26/nginx-proxy-lan/"/>
+    <id>http://blog.mindcont.com/2016/12/26/nginx-proxy-lan/</id>
     <published>2016-12-26T04:31:25.000Z</published>
     <updated>2018-04-16T09:43:33.906Z</updated>
     
@@ -392,17 +392,17 @@
     
     
     
-    <category term="物联" scheme="http://example.com/categories/%E7%89%A9%E8%81%94/"/>
+    <category term="物联" scheme="http://blog.mindcont.com/categories/%E7%89%A9%E8%81%94/"/>
     
     
-    <category term="openwrt" scheme="http://example.com/tags/openwrt/"/>
+    <category term="openwrt" scheme="http://blog.mindcont.com/tags/openwrt/"/>
     
   </entry>
   
   <entry>
     <title>naoqi ros 开发环境搭建</title>
-    <link href="http://example.com/2016/12/14/ros-naoqi-ubuntu/"/>
-    <id>http://example.com/2016/12/14/ros-naoqi-ubuntu/</id>
+    <link href="http://blog.mindcont.com/2016/12/14/ros-naoqi-ubuntu/"/>
+    <id>http://blog.mindcont.com/2016/12/14/ros-naoqi-ubuntu/</id>
     <published>2016-12-14T08:47:33.000Z</published>
     <updated>2018-02-27T02:46:08.469Z</updated>
     
@@ -414,14 +414,14 @@
     
     
     
-    <category term="ros" scheme="http://example.com/tags/ros/"/>
+    <category term="ros" scheme="http://blog.mindcont.com/tags/ros/"/>
     
   </entry>
   
   <entry>
     <title>naoqi robot 开发环境搭建</title>
-    <link href="http://example.com/2016/12/14/naoqi-robot-sdk-ubuntu/"/>
-    <id>http://example.com/2016/12/14/naoqi-robot-sdk-ubuntu/</id>
+    <link href="http://blog.mindcont.com/2016/12/14/naoqi-robot-sdk-ubuntu/"/>
+    <id>http://blog.mindcont.com/2016/12/14/naoqi-robot-sdk-ubuntu/</id>
     <published>2016-12-14T02:52:41.000Z</published>
     <updated>2018-02-27T02:46:08.451Z</updated>
     
@@ -433,7 +433,7 @@
     
     
     
-    <category term="ros" scheme="http://example.com/tags/ros/"/>
+    <category term="ros" scheme="http://blog.mindcont.com/tags/ros/"/>
     
   </entry>
   
