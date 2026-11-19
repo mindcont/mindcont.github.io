@@ -1,1 +1,5 @@
 ./git-author-rewrite.sh
+node_modules/
+.build/
+public/
+db.json

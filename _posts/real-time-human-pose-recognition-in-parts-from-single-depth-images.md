@@ -1,7 +1,7 @@
 ---
 title: Kinect骨骼提取原理
 date: 2016-05-10 20:39:47
-tags: kinect
+tags: Kinect
 categories: 
 toc: ture
 ---

@@ -1,0 +1,48 @@
+extends base
+
+block title
+  if config.subtitle
+    title= config.title + ' | ' + config.subtitle
+  else
+    title= config.title
+
+block content
+  for post in page.posts.toArray()
+    .post
+      h1.post-title
+        if post.sticky
+          span(class="top-post")= __('Sticky')
+        include _partial/helpers.pug
+        a(href=url_for(post.path))
+          +title(post)
+      .post-meta= post.date.format(config.date_format)
+      if theme.disqus.enable == true
+        a.disqus-comment-count(data-disqus-identifier=post.path, href=url_for(post.path) + '#disqus_thread')
+      if theme.changyan
+        a.ds-thread-count(href=url_for(post.path) + '#SOHUCS')
+          span.cy_cmt_count(id='sourceId::' + post.date.valueOf() style='margin: 0 3px 0 1px;') 0
+          span= ' ' + __('Comment')
+      if post.description
+        .post-content
+          != post.description
+      else if post.excerpt
+        .post-content
+          != post.excerpt
+      else if post.content
+        - const content = strip_html(post.content)
+        - let expert = content.substring(0,theme.post_content_length)
+        - content.length > theme.post_content_length ? expert += '...' : ''
+        .post-content
+          != expert
+      p.readmore
+        a(href=url_for(post.path))= __('Readmore')
+
+  include _partial/paginator.pug
+  if theme.disqus.enable == true
+    script#dsq-count-scr(src='//'+ theme.disqus.shortname + '.disqus.com/count.js', async)
+  if theme.changyan
+    script#cy_cmt_num(src='https://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId=' + theme.changyan, async)
+  if config.mathjax
+    include _partial/mathjax.pug
+  if config.mathjax2
+    include _partial/mathjax2.pug

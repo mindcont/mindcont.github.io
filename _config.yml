@@ -1,0 +1,105 @@
+title: 项脊轩
+subtitle: 项脊轩，旧南阁子也
+description: Solve intelligence, use it to make the world a better place.
+author: MindCont
+language: zh-CN
+timezone: Asia/Shanghai
+url: http://blog.mindcont.com
+root: /
+permalink: :year/:month/:day/:title/
+new_post_name: :year-:month-:day-:title.md
+default_layout: post
+post_asset_folder: false
+
+source_dir: .build/source
+public_dir: .build/public
+db: .build/db.json
+theme: maupassant
+
+index_generator:
+  path: ''
+  per_page: 10
+
+archive_generator:
+  per_page: 10
+
+category_generator:
+  per_page: 0
+
+tag_generator:
+  per_page: 0
+
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+
+sitemap:
+  path: sitemap.xml
+
+marked:
+  prependRoot: true
+  postAsset: false
+  smartypants: false
+
+math:
+  engine: mathjax
+  per_page: false
+
+# The deployment branch owns CNAME and legacy verification/static files.
+# Do not put generated files in this source branch.
+
+# Theme values kept here so a fresh checkout behaves consistently.
+theme_config:
+  fancybox: true
+  toc_number: true
+  copycode: true
+  totop: true
+  post_content_length: 180
+  google_search: true
+  baidu_search: false
+  menu:
+    - page: home
+      directory: .
+      icon: fa-home
+    - page: archive
+      directory: archives/
+      icon: fa-archive
+    - page: books
+      directory: books/
+      icon: fa-book
+    - page: about
+      directory: about/
+      icon: fa-user
+    - page: history
+      directory: history/
+      icon: fa-history
+    - page: rss
+      directory: atom.xml
+      icon: fa-rss
+  widgets:
+    - search
+    - info
+    - category
+    - tag
+    - recent_posts
+    - recent_comments
+    - links
+  links:
+    - title: 书格
+      url: https://new.shuge.org/
+    - title: "TED | 值得传播的思想"
+      url: https://www.ted.com/
+  info:
+    avatar: /img/avatar.png
+    discription: 回归.
+    outlinkitem:
+      - name: envelope
+        outlink: mailto:bond@mindcont.com
+        message: Email
+      - name: github
+        outlink: https://github.com/mindcont
+        message: Github
+      - name: rss
+        outlink: /atom.xml
+        message: RSS
