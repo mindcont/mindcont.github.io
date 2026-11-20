@@ -13,7 +13,6 @@ donate: true
 ![](/images/iot/Winter_Wildlife-homepage.png)
 
 <!-- 迪士尼动画《带着梦想上路》 -->
-<!-- <embed height="415" width="544" quality="high" allowfullscreen="true" autostart=true type="application/x-shockwave-flash" src="//static.hdslb.com/miniloader.swf" flashvars="aid=9367297&page=1" pluginspage="//www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed> -->
 
 
 ### 简介
