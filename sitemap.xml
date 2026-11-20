@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://blog.mindcont.com/2016/07/29/docker-learning/</loc>
+    <loc>http://blog.mindcont.com/2018/02/28/cube-robot/</loc>
     
     <lastmod>2026-11-20</lastmod>
     
@@ -20,15 +20,6 @@
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2019/01/02/my-review-2018/</loc>
-    
-    <lastmod>2026-11-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.mindcont.com/2018/04/16/diyprojects-raspbian/</loc>
     
     <lastmod>2026-11-20</lastmod>
@@ -38,7 +29,34 @@
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2018/02/28/cube-robot/</loc>
+    <loc>http://blog.mindcont.com/2020/05/30/my-awtrix/</loc>
+    
+    <lastmod>2026-11-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/08/06/run-yolo-demo/</loc>
+    
+    <lastmod>2026-11-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2016/07/29/docker-learning/</loc>
+    
+    <lastmod>2026-11-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/2019/01/02/my-review-2018/</loc>
     
     <lastmod>2026-11-20</lastmod>
     
@@ -227,15 +245,6 @@
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/08/06/run-yolo-demo/</loc>
-    
-    <lastmod>2026-10-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.mindcont.com/2016/10/27/ubuntu-necessary-install-software/</loc>
     
     <lastmod>2026-10-13</lastmod>
@@ -245,7 +254,7 @@
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/07/22/research-progress-in-object-detection/</loc>
+    <loc>http://blog.mindcont.com/2016/12/14/ros-naoqi-ubuntu/</loc>
     
     <lastmod>2026-10-13</lastmod>
     
@@ -254,7 +263,7 @@
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/2016/12/14/ros-naoqi-ubuntu/</loc>
+    <loc>http://blog.mindcont.com/2016/07/22/research-progress-in-object-detection/</loc>
     
     <lastmod>2026-10-13</lastmod>
     
@@ -291,15 +300,6 @@
   
   <url>
     <loc>http://blog.mindcont.com/2016/12/26/nginx-proxy-lan/</loc>
-    
-    <lastmod>2026-10-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2020/05/30/my-awtrix/</loc>
     
     <lastmod>2026-10-13</lastmod>
     
