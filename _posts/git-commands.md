@@ -60,7 +60,6 @@ git push origin master
 
 ### 分支
 分支是用来将特性开发绝缘开来的。在你创建仓库的时候，master 是“默认的”。在其他分支上进行开发，完成后再将它们合并到主分支上。
-![](https://camo.githubusercontent.com/1db631d931f4a57a439deb5f747bfc0c3c1098b2/68747470733a2f2f7777772e61746c61737369616e2e636f6d2f6769742f696d616765732f7475746f7269616c732f636f6c6c61626f726174696e672f636f6d706172696e672d776f726b666c6f77732f676974666c6f772d776f726b666c6f772f30352e737667)
 
 创建一个叫做“feature_x”的分支，并切换过去：
 ```
@@ -104,7 +103,7 @@ git diff <source_branch> <target_branch>
 软件|支持平台|截图|
 ---|---|---|
 GitHub Desktop | Windows, Mac | ![](/images/external/155fa6e77310.png)
-GitKraken | Windows, Mac, Linux |![](https://git-scm.com/images/guis/git-kraken@2x.png)
+GitKraken | Windows, Mac, Linux |
 
 ## 疑难杂症
 ### 删除已同步到远程的commit

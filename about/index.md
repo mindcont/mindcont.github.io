@@ -79,7 +79,6 @@ donate: true
 
 <!-- ### 联系方式 -->
 <!-- github-cards -->
-<!-- <iframe id="ghcard-mindcont-1" frameborder="0" scrolling="0" allowtransparency="true" src="https://lab.lepture.com/github-cards/cards/default.html?user=mindcont&amp;identity=ghcard-mindcont-5&amp;client_id=a11a1bda412d928fb39a&amp;client_secret=92b7cf30bc42c49d589a10372c3f9ff3bb310037" width="400" height="150" ></iframe> -->
 
 <!-- zhihu-card -->
 <!--

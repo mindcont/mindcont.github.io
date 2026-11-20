@@ -19,8 +19,6 @@ toc: false
 ## 方案
 使用Nginx反向代理将HOSTA作为http服务器，在HOSTB上配置http全局代理。
 
-<!-- ![](https://sslbucket-a.akamaihd.net/www.opswat.com/images/blog/web-proxy-diagram-new.png) -->
-<img src="https://sslbucket-a.akamaihd.net/www.opswat.com/images/blog/web-proxy-diagram-new.png" width="512px">
 
 ### 设置nginx为HTTP代理服务器
 **服务器端即HOSTA主机**,设置nginx为HTTP代理服务器上网，只需要3步，分别为安装nginx、配置nginx、修改OpenWrt 防火墙。
