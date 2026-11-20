@@ -5,7 +5,6 @@ tags:
 ---
 在知乎闲逛DIY作品，发现国外大神[AWTRIX 2.0](https://docs.blueforcer.de/#/v2/) 基于wifi 的像素时钟很炫酷、开源、材料易得随打算复刻一个。制作过程网上已有很多资料，不多说，上作品。
 
-<video src="/media/videos/my_awtrix_diy_demo.mp4" controls="controls" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;"><br>your browser does not support the video tag<br></video>
 
 ### 使用手册
 
