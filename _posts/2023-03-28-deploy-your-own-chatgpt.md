@@ -5,7 +5,7 @@ updated: 2023-03-28 17:05:04
 toc: true
 ---
 
-<img src="https://openaicom.imgix.net/b4871bfc-8429-4a93-a5a1-66e1dd60e3f8/gpt-4-92586ac_1080p60-poster.jpg?fm=auto&auto=compress,format&fit=min&rect=0,0,1920,1080&w=1440&h=810" width="750px">
+<img src="/images/external/09b281a3e509.jpg" width="750px">
 
 <p>Chatgpt 如火如荼，如何搭建自己的 chatgpt 服务呢？这里我们采用的技术路线 “OpenAI key” + “Chatbot UI” + “Vercel”实现。</p>
 <!--more-->

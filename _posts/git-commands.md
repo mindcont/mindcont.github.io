@@ -39,7 +39,7 @@ git clone https://github.com/mindcont/caffe.git
 
 你的本地仓库由 git 维护的三棵“树”组成。第一个是你的 **工作目录**，它持有实际文件；第二个是 **缓存区（Index）**，它像个缓存区域，临时保存你的改动；最后是 **HEAD**，指向你最近一次提交后的结果。
 
-![](https://git-scm.com/images/about/index1@2x.png)
+![](/images/external/2ea1a82568f1.png)
 
 ### 添加与提交
 你可以计划改动（把它们添加到缓存区），使用如下命令：
@@ -56,7 +56,7 @@ git commit -m "代码提交信息"
 git push origin master
 ```
 可以把 master 换成你想要推送的任何分支
-![](https://git-scm.com/images/about/index2@2x.png)
+![](/images/external/b3aede51fe85.png)
 
 ### 分支
 分支是用来将特性开发绝缘开来的。在你创建仓库的时候，master 是“默认的”。在其他分支上进行开发，完成后再将它们合并到主分支上。
@@ -103,7 +103,7 @@ git diff <source_branch> <target_branch>
 
 软件|支持平台|截图|
 ---|---|---|
-GitHub Desktop | Windows, Mac | ![](https://git-scm.com/images/guis/github-desktop@2x.png)
+GitHub Desktop | Windows, Mac | ![](/images/external/155fa6e77310.png)
 GitKraken | Windows, Mac, Linux |![](https://git-scm.com/images/guis/git-kraken@2x.png)
 
 ## 疑难杂症

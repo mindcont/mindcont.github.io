@@ -8,7 +8,7 @@ donate: true
 <!-- ![](/images/iot/flying_pi.png) -->
 <!-- ![](http://www.pacq.gov.cn/uploads/allimg/170725/1-1FH5111000K1.png) -->
 <!-- ![](/images/resources/cruiser_athabaska.jpg) -->
-<!-- ![](http://image12.m1905.cn/mapps/uploadfile/edu/2014/0925/2014092510594066002.jpg) -->
+<!-- ![](/images/external/d77341afa7dc.jpg) -->
 <!-- ![](/images/resources/mars_poster.jpg) -->
 ![](/images/iot/Winter_Wildlife-homepage.png)
 
@@ -27,16 +27,16 @@ donate: true
 <!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=5256036&auto=1&height=66"></iframe> -->
 
 <!-- 一生所爱 -->
-<!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="http://music.163.com/outchain/player?type=2&id=32785700&auto=1&height=66"></iframe> -->
+<!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="https://music.163.com/outchain/player?type=2&id=32785700&auto=1&height=66"></iframe> -->
 
 <!-- 无地自容 -->
-<!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="http://music.163.com/outchain/player?type=2&id=357279&auto=1&height=66"></iframe> -->
+<!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="https://music.163.com/outchain/player?type=2&id=357279&auto=1&height=66"></iframe> -->
 
 <!-- Come and Get Your Love -->
-<!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="http://music.163.com/outchain/player?type=2&id=28864241&auto=1&height=66"></iframe> -->
+<!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="https://music.163.com/outchain/player?type=2&id=28864241&auto=1&height=66"></iframe> -->
 
 <!-- Take Me Home Country Roads -->
-<!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="http://music.163.com/outchain/player?type=2&id=1477670&auto=1&height=66"></iframe> -->
+<!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="https://music.163.com/outchain/player?type=2&id=1477670&auto=1&height=66"></iframe> -->
 
 <!--醉拳 2017.6.13-->
 <!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=95643&auto=1&height=66"></iframe> -->
@@ -116,7 +116,7 @@ donate: true
 
 <li>10GB 存储空间</li><li>每月 10GB 下载流量</li><li>每月 PUT/DELETE 10万次请求</li><li>每月 GET 100万次请求</li>
 
-<a href="https://portal.qiniu.com/signup?code=3lc7blnku8d3m"><img src="https://www.qiniu.com/assets/logo-b5caafe0363dace7b5c0a00be38a4829444918c4322a6168714522ee19dcb1c1.png"  align="left"></a>
+<a href="https://portal.qiniu.com/signup?code=3lc7blnku8d3m"><img src="/images/external/bd1eadb4b05d.png"  align="left"></a>
 <br>
 <br>
 
