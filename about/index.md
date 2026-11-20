@@ -130,5 +130,4 @@ donate: true
 * 购买更强大的计算力和存储设备
 * 吸引更多的合伙人，营造一个社区
 
-<!-- <img src="/images/resources/pay/alipay.jpg" alt=" 主人，给我卖点狗粮吧！" width="256" > -->
 <!-- <img src="/images/resources/pay/wechat.png" width="256px"> -->
