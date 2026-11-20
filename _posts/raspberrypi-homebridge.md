@@ -16,7 +16,7 @@ toc: true
 
 Demo
 
-<video src="http://cdn-mindcont.opengps.cn/videos/cube-robot.mp4" controls="controls" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;">
+<video src="/media/videos/cube-robot.mp4" controls="controls" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;">
 your browser does not support the video tag
 </video>
 

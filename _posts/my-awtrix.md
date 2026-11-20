@@ -5,7 +5,7 @@ tags:
 ---
 在知乎闲逛DIY作品，发现国外大神[AWTRIX 2.0](https://docs.blueforcer.de/#/v2/) 基于wifi 的像素时钟很炫酷、开源、材料易得随打算复刻一个。制作过程网上已有很多资料，不多说，上作品。
 
-<video src="https://cdn.mindcont.com/videos/my_awtrix_diy_demo.mp4" controls="controls" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;"><br>your browser does not support the video tag<br></video>
+<video src="/media/videos/my_awtrix_diy_demo.mp4" controls="controls" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;"><br>your browser does not support the video tag<br></video>
 
 ### 使用手册
 
@@ -27,17 +27,17 @@ tags:
 
 STEP1:
 将设备接入电源，此时屏幕会显示如下
-![](https://cdn.mindcont.com/blog/images/m_awtrix_hostpot.jpg)
+![](/images/awtrix/m_awtrix_hostpot.jpg)
 
 拿起手机/笔记本 扫描WIFI网络，此时有 “AWTRIX Controller ”的热点，连接该热点
 
 STEP2:
 当手机连接到该热点后，会自动跳转到 http://172.217.28.1 网页上，如下图，此时类似于家用路由器配置界面
-<img src="https://cdn.mindcont.com/blog/images/m_awtrix_config_step1.jpg" width="50%">
+<img src="/images/awtrix/m_awtrix_config_step1.jpg" width="50%">
 
 STEP3: 
 选择 第一个按钮“Configure Controller”
-<img src="https://cdn.mindcont.com/blog/images/m_awtrix_config_step2.jpg" width="50%">
+<img src="/images/awtrix/m_awtrix_config_step2.jpg" width="50%">
 
 STEP4:
 此时设备会自动扫描本地附近热点，选择你的热点。
@@ -46,7 +46,7 @@ STEP4:
 
 STEP5:
 当你输入完成后，设备会自动重启。正常显示下图，就进入联网模式，动态显示预先设定好的APP。
-![](https://cdn.mindcont.com/blog/images/m_awtrix.png)
+![](/images/awtrix/m_awtrix.png)
 
 ENJOY~ AND HAVE FUN.
 

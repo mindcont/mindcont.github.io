@@ -45,7 +45,7 @@ More ...
 |:------:|:------:|:------:|
 |<a herf="http://raspberrypi.org"><img  src="/images/external/817a6cbda008.png" alt="raspberrypi" width="64px"> <p>Raspberry Pi</p> </a> |<a herf="https://github.com/haiwen/seafile"><img  src="/images/external/a1d4c1bf35e7.png" alt="seafile" width="64px" > <p>Seafile</p> </a>|<a herf="http://www.mplayerhq.hu/design7/news.html"><img  src="/images/external/3f9a1255aec1.svg" alt="mplayer" width="80px"> <p>MPlayer</p> </a>|
 |<a herf="https://github.com/Motion-Project/motion"><img  src="/images/external/32a4f4a9e2d9.gif" alt="motion" width="96px"> <p>Motion</p> </a> |<a herf="https://github.com/home-assistant/home-assistant"><img  src="/images/external/64f8a48b92bd.png" alt="home-assistant" width="64px"> <p>Home Assistant</p> </a>|<a herf="https://ifttt.com"><img  src="/images/external/fb00fed31685.png"  alt="ifttt" width="96px"> <p>IFTTT</p> </a>|
-|<a herf="https://github.com/dingdang-robot/dingdang-robot"><img src="https://camo.githubusercontent.com/5bcef117eff53d01751ac2ce6aa479f3a0a55939/687474703a2f2f6f6e6d7737793666342e626b742e636c6f7564646e2e636f6d2f64696e6764616e672d6c6f676f2e706e67" alt="dingdang-robot" width="64px"> <p>Dingdang Robot</p> </a>
+|<a herf="https://github.com/dingdang-robot/dingdang-robot"><img src="/images/external/dingdang.png" alt="dingdang-robot" width="64px"> <p>Dingdang Robot</p> </a>
 
 其他工具和api接口
 - [Frp](https://github.com/fatedier/frp)
