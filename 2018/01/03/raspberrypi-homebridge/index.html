@@ -10,17 +10,13 @@
 <!-- 本文的功能主旨 -->
 <p>作为玩转树莓派的第一弹，这里我们将借助iPhone 和 树莓派3b 实现通过Siri语音控制LED灯开关的功能。如上图控制逻辑类似，这里我们使用<code>HomeBridge</code>作为桥梁，将Siri 的语音指令发送给树莓派，然后一个插件控制gpio 27引脚上LED灯的亮灭。</p>
 <p>Demo</p>
-<video src="/media/videos/cube-robot.mp4" controls="controls" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;">
-your browser does not support the video tag
-</video>
-
 <p>Let&#39;s begin ！！！</p>
 <h2 id="硬件层"><a href="#硬件层" class="headerlink" title="硬件层"></a>硬件层</h2><h3 id="本期物料清单"><a href="#本期物料清单" class="headerlink" title="本期物料清单"></a>本期物料清单</h3><p>1、树莓派3b（默认ssh 打开）    一个<br>2、iPhone (ios 10以上版本)    一个<br>3、LED二极管                  一个<br>4、杜邦线                     两根<br>5、电阻                       若干<br>5、笔记本（mac&#x2F;win）          一台</p>
 <p>其他，诸如树莓派电源（5v 2.5A），HDMI显示器连接线，读卡器等树莓派必备配件应该有。如果没有HDMI显示器连接线，可以参考<a href="http://blog.mindcont.com/2016/05/12/win10-ubuntu-remote-desktop/">win10连结ubuntu 远程桌面</a>进行远程查看。</p>
 <h3 id="树莓派3b"><a href="#树莓派3b" class="headerlink" title="树莓派3b"></a>树莓派3b</h3><img src="/images/iot/raspberrypi_3b.jpg" width="384px">
 
 <p>规格参数，</p>
-<p><strong>SOC</strong>: Broadcom BCM2837芯片<br><strong>CPU</strong>: 四核<a href="mailto:&#x43;&#111;&#x72;&#x74;&#x65;&#120;&#45;&#65;&#53;&#x33;&#64;&#49;&#x2e;&#x32;&#x47;&#x48;&#122;">&#x43;&#111;&#x72;&#x74;&#x65;&#120;&#45;&#65;&#53;&#x33;&#64;&#49;&#x2e;&#x32;&#x47;&#x48;&#122;</a>，ARMv8架构，32KB一级缓存 512KB二级缓存<br><strong>GPU</strong>: 双核VideoCore IV GPU@400MHz，3D core@300MHz，OpenGL ES 2.0，1080p 60fps h.264&#x2F;MPEG-4 AVC<br><strong>工作温度范围</strong>: SOC-40<del>85°C，LAN9514(0</del>70°C)<br><strong>内存</strong>：1GB LPDDR2（900 MHz）<br><strong>SMSC LAN9514</strong>：4个USB2.0 和10&#x2F;100M Ethernet共享<br><strong>BCM43438</strong>：WiFi（802.11 b&#x2F;g&#x2F;n 2.4GHz）和蓝牙4.1（BLE）,支持无线电<br><strong>GPIO</strong>: 40-pin<br><strong>视频接口</strong>：HDMI1.4<br><strong>接口</strong>：DSI显示屏接口（15-pin）、CSI 2 摄像头接口（15-pin）、3.5mm复合视频输出口、microSD接口<br><strong>供电</strong>：支持5V 2.5A</p>
+<p><strong>SOC</strong>: Broadcom BCM2837芯片<br><strong>CPU</strong>: 四核<a href="mailto:&#67;&#111;&#114;&#x74;&#x65;&#x78;&#x2d;&#65;&#53;&#x33;&#64;&#x31;&#x2e;&#50;&#71;&#x48;&#122;">&#67;&#111;&#114;&#x74;&#x65;&#x78;&#x2d;&#65;&#53;&#x33;&#64;&#x31;&#x2e;&#50;&#71;&#x48;&#122;</a>，ARMv8架构，32KB一级缓存 512KB二级缓存<br><strong>GPU</strong>: 双核VideoCore IV GPU@400MHz，3D core@300MHz，OpenGL ES 2.0，1080p 60fps h.264&#x2F;MPEG-4 AVC<br><strong>工作温度范围</strong>: SOC-40<del>85°C，LAN9514(0</del>70°C)<br><strong>内存</strong>：1GB LPDDR2（900 MHz）<br><strong>SMSC LAN9514</strong>：4个USB2.0 和10&#x2F;100M Ethernet共享<br><strong>BCM43438</strong>：WiFi（802.11 b&#x2F;g&#x2F;n 2.4GHz）和蓝牙4.1（BLE）,支持无线电<br><strong>GPIO</strong>: 40-pin<br><strong>视频接口</strong>：HDMI1.4<br><strong>接口</strong>：DSI显示屏接口（15-pin）、CSI 2 摄像头接口（15-pin）、3.5mm复合视频输出口、microSD接口<br><strong>供电</strong>：支持5V 2.5A</p>
 <p>GPIO引脚图，<br><img src="/images/iot/raspberrypi_3b_gpio.png" width="512px"></p>
 <p>管脚驱动电流， 详细参见<a target="_blank" rel="noopener" href="https://www.raspberrypi.org/help/faqs/#POWER">官方说明</a>。</p>
 <pre>
