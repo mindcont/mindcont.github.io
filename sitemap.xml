@@ -11,6 +11,15 @@
   </url>
   
   <url>
+    <loc>http://blog.mindcont.com/2017/02/15/ideas-worth-spreading/</loc>
+    
+    <lastmod>2026-11-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.mindcont.com/2016/08/06/run-yolo-demo/</loc>
     
     <lastmod>2026-11-20</lastmod>
@@ -48,15 +57,6 @@
   
   <url>
     <loc>http://blog.mindcont.com/2017/10/20/my-movie-review/</loc>
-    
-    <lastmod>2026-11-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.mindcont.com/2017/02/15/ideas-worth-spreading/</loc>
     
     <lastmod>2026-11-20</lastmod>
     
@@ -408,13 +408,6 @@
   </url>
   
   <url>
-    <loc>http://blog.mindcont.com/tags/matlab/</loc>
-    <lastmod>2026-11-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.mindcont.com/tags/Kinect/</loc>
     <lastmod>2026-11-20</lastmod>
     <changefreq>weekly</changefreq>
@@ -430,6 +423,13 @@
   
   <url>
     <loc>http://blog.mindcont.com/tags/ros/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.mindcont.com/tags/matlab/</loc>
     <lastmod>2026-11-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
