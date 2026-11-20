@@ -7,7 +7,7 @@ toc: true
 ---
 
 <!-- <img src="/images/external/82fe8e810713.png"> -->
-<img src="/images/external/b48b251ca73d.png" width="500px">
+<img src="/images/iot/homebridge_mi.png" width="500px">
 
 <!--more-->
 
@@ -273,11 +273,11 @@ sudo npm install -g homebridge-gpio-wpi2
 ```
 在命令行输入`homebridge`启动,如下图说明启动成功
 
-<img src="/images/external/7831baff1e8a.png" width=400x>
+<img src="/images/iot/homebridge.png" width=400x>
 
 如果你的iPhone 和树莓派在同一局域网下， 打开`家庭`应用，会自动显示可配对的设备`homebridge`,通过扫描或输入 类似`133-45-678`即可添加成功。
 
-<img src="/images/external/87f5ebb1f47b.jpg" width=256px>
+<img src="/images/iot/ios_home.JPG" width=256px>
 
 赶快试试开关吧，这时你也可以通过Siri 进行控制了呢。输入日志如下
 ```json
