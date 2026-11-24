@@ -15,7 +15,13 @@ const path = require('node:path');
   }
 
   // Site-level static files kept outside the theme (legacy manual assets).
-  const staticFiles = ['js/recent-comments.js', 'favicon.ico', 'apple-touch-icon.png'];
+  const staticFiles = [
+    'js/recent-comments.js',
+    'favicon.ico',
+    'apple-touch-icon.png',
+    'CNAME',
+    'google44adb23bef6af1e9.html'
+  ];
   for (const relative of staticFiles) {
     const from = path.resolve(root, relative);
     if (fsSync.existsSync(from)) {
