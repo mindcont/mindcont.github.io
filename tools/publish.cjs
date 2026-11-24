@@ -9,7 +9,7 @@ const path = require('node:path');
 
   require('node:child_process').execFileSync(process.platform === 'win32' ? 'node.exe' : 'node', [path.resolve(root, 'tools', 'build.cjs')], { cwd: root, stdio: 'inherit' });
   if (!await exists(publicDir)) throw new Error(`Missing build output: ${publicDir}`);
-  if (!await exists(path.resolve(target, '.git'))) throw new Error(`Not a Git worktree: ${target}`);
+  if (!await exists(path.resolve(target, '.git'))) throw new Error(`Not a Git worktree: ${target}\n部署已迁移到 GitHub Actions（push rebuild-src 即可）；本脚本仅用于旧的 master 工作树发布流程。`);
 
   const preserved = new Set(['.git', 'CNAME', 'README.md', 'google44adb23bef6af1e9.html']);
   const entries = await fs.readdir(target);

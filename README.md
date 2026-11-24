@@ -1,18 +1,18 @@
 # 项脊轩博客
 
-这是博客的 **源码分支**。文章和图片保存在仓库根目录的 `_posts/`、`about/`、`books/`、`history/`、`images/` 中；`main/master` 分支保存 Hexo 生成的静态网站。
+博客源码。文章与图片位于 `_posts/`、`about/`、`books/`、`history/`、`images/`、`media/`；主题 `themes/maupassant` 随仓库托管（不再是 Git submodule）。站点由 GitHub Actions 构建并部署到 GitHub Pages，域名 `blog.mindcont.com`。
 
 ## 环境
 
-- Node.js 18 或 20（见 `package.json` 的 engines）
+- Node.js 18 或 20（`package.json` 的 engines 为 `>=18 <21`）
+- pnpm 10（仓库含 `pnpm-lock.yaml`，CI 使用 `--frozen-lockfile`）
 - Hexo 6.3.0
-- Maupassant 主题通过 Git submodule 固定版本
 
 首次准备：
 
 ```powershell
-git submodule update --init --recursive
-npm install
+corepack enable
+pnpm install --frozen-lockfile
 ```
 
 ## 写文章
@@ -21,7 +21,7 @@ npm install
 npx hexo new "文章标题"
 ```
 
-也可以直接新建 `_posts/2026-10-13-文章标题.md`，使用 YAML front matter：
+也可以直接新建 `_posts/YYYY-MM-DD-标题.md`，使用 YAML front matter：
 
 ```yaml
 ---
@@ -34,26 +34,34 @@ categories:
 ---
 ```
 
-## 本地预览和构建
+## 本地构建与预览
 
 ```powershell
-npm run build
-npm run serve
+pnpm run build
+pnpm run serve
 ```
 
-`npm run build` 使用 Node API 生成站点，生成结果位于 `.build/public/`，该目录不提交到源码分支。`npm run serve` 使用 Node API 启动本地预览。
+`build` 会清空 `.build/`，把 `_posts`、`about`、`books`、`history`、`images`、`media`、`icon` 及 `staticFiles` 复制到 `.build/source`，再由 Hexo 生成到 `.build/public`。`serve` 读取 `.build/source`，默认 http://localhost:4000；改文章后需重新 `build`。
 
-## 发布到 main/master
+## 部署
 
-`npm run publish` 默认只构建并显示 dry-run，不会覆盖发布工作树。确认 `.build/public/` 内容后，再设置 `PUBLISH_WORKTREE` 指向发布分支工作树并显式执行：
+推送到 `rebuild-src` 即触发 `.github/workflows/deploy.yml`：Node 20 + pnpm 10 安装依赖、构建，上传 `.build/public` 并由 GitHub Pages 发布。
 
-```powershell
-$env:PUBLISH_WORKTREE = 'D:\mindcont.github.io'
-npm run publish:apply
-```
+仓库设置要求：
 
-脚本会保留 `.git`、`CNAME`、Google 验证文件和 README，其余发布工作树内容替换为生成结果。请在发布工作树中检查 `git diff --stat`、链接和页面后，再自行 commit/push；本项目不会自动推送。
+- Settings → Pages → Build and deployment → Source 选择 **GitHub Actions**
+- Settings → Environments → `github-pages` → Deployment branches 允许 `rebuild-src`（或 No restriction）
+
+`CNAME` 与 `google44adb23bef6af1e9.html` 已在 `tools/build.cjs` 的 `staticFiles` 中，会随产物发布。
+
+## 分支
+
+- `rebuild-src`：唯一活跃分支，源码与部署触发分支
+- `master`：旧的分支式发布产物，已打 tag `site-master-e4f37b93` 归档；把默认分支切到 `rebuild-src` 后即可删除
+
+`npm run publish` / `npm run publish:apply` 是旧流程（复制到本地 `master` 工作树），Actions 上线后已停用；`D:\mindcont.github.io` 工作树已删除，仓库现在就在本目录。
 
 ## 已知限制
 
-源码分支没有旧主题之外的历史发布资源，故旧 `main/master` 中的部分头像、视频、验证文件和手工静态资源不会由源文件自动复现；发布脚本会保留现有 CNAME/验证文件。`_posts` 中引用的外部图片、视频和历史路径仍需逐篇核对。
+- `media/videos/` 被 `.gitignore` 忽略，视频不进入仓库；历史视频引用已移除或改为本地封面图。
+- 旧 CDN 外链图片已本地化到 `images/`，少量历史外链（音乐播放器、JS）仍为外部资源。
