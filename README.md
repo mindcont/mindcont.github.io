@@ -56,8 +56,8 @@ pnpm run serve
 
 ## 分支
 
-- `rebuild-src`：唯一活跃分支，源码与部署触发分支
-- `master`：旧的分支式发布产物，已打 tag `site-master-e4f37b93` 归档；把默认分支切到 `rebuild-src` 后即可删除
+- `rebuild-src`：唯一分支，源码与部署触发分支，也是仓库默认分支
+- 旧的 `master` 分支已删除；其最后的站点快照保存在 tag `site-master-e4f37b93`
 
 `npm run publish` / `npm run publish:apply` 是旧流程（复制到本地 `master` 工作树），Actions 上线后已停用；`D:\mindcont.github.io` 工作树已删除，仓库现在就在本目录。
 
