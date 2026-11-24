@@ -18,4 +18,4 @@ comments: false
 
 ### 🎬 电影推荐
 - [movies-for-hackers](https://github.com/k4m4/movies-for-hackers)
-- [我的影评](http://blog.mindcont.com/2017/10/20/my-movie-review/) ✈️🏰
+- [我的影评](https://mindcont.github.io/2017/10/20/my-movie-review/) ✈️🏰

@@ -185,7 +185,7 @@ sudo ldconfig
 ```
 
 ## 安装OpenCV (Optional， 如果运行caffe时opencv报错， 可以重新按照此步骤安装)
-参见我的另一篇博客[Ubuntu 14.04安装 OpenCV 2.4.9](http://blog.mindcont.com/2016/07/16/installing-opencv-2-4-9-in-ubuntu-14-04-lts/)
+参见我的另一篇博客[Ubuntu 14.04安装 OpenCV 2.4.9](https://mindcont.github.io/2016/07/16/installing-opencv-2-4-9-in-ubuntu-14-04-lts/)
 
 ## 安装Caffe所需要的Python环境
 ```bash
@@ -198,7 +198,7 @@ Caffe提供了MATLAB接口，有需要用MATLAB的同学可以额外安装MATLAB
 ```bash
 sudo sh ./install.sh
 ```
-弹出图形界面，之后同在Windows下一样进行破解激活。windows下安装和激活 Matlab参加我的另一篇博客[Matlab连接Kinect V2](http://blog.mindcont.com/2016/05/18/Microsoft-Kinect-V2-with-Matlab/)  。安装完成后可[添加图标]( http://www.linuxidc.com/Linux/2011-01/31632.htm)
+弹出图形界面，之后同在Windows下一样进行破解激活。windows下安装和激活 Matlab参加我的另一篇博客[Matlab连接Kinect V2](https://mindcont.github.io/2016/05/18/Microsoft-Kinect-V2-with-Matlab/)  。安装完成后可[添加图标]( http://www.linuxidc.com/Linux/2011-01/31632.htm)
 
 ```bash
 sudo vi /usr/share/applications/Matlab.desktop
@@ -409,4 +409,4 @@ Type "help", "copyright", "credits" or "license" for more information.
 * [caffe的配置过程](http://blog.csdn.net/brightming/article/details/51106629)
 * [error == cudaSuccess (8 vs. 0) ](https://github.com/rbgirshick/py-faster-rcnn/issues/2)
 
-**转载务必注明** 来自[微记元-Ubuntu 14.04 64bit + Caffe + CUDA 7.5 + Intel MKL 配置说明](http://blog.mindcont.com/2016/07/20/ubuntu1404-caffe-cuda7-5-mkl/)
+**转载务必注明** 来自[微记元-Ubuntu 14.04 64bit + Caffe + CUDA 7.5 + Intel MKL 配置说明](https://mindcont.github.io/2016/07/20/ubuntu1404-caffe-cuda7-5-mkl/)

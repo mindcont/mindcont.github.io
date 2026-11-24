@@ -30,7 +30,7 @@ Let's begin ！！！
 5、电阻                       若干
 5、笔记本（mac/win）          一台
 
-其他，诸如树莓派电源（5v 2.5A），HDMI显示器连接线，读卡器等树莓派必备配件应该有。如果没有HDMI显示器连接线，可以参考[win10连结ubuntu 远程桌面](http://blog.mindcont.com/2016/05/12/win10-ubuntu-remote-desktop/)进行远程查看。
+其他，诸如树莓派电源（5v 2.5A），HDMI显示器连接线，读卡器等树莓派必备配件应该有。如果没有HDMI显示器连接线，可以参考[win10连结ubuntu 远程桌面](https://mindcont.github.io/2016/05/12/win10-ubuntu-remote-desktop/)进行远程查看。
 
 ### 树莓派3b
 <img src="/images/iot/raspberrypi_3b.jpg" width="384px">
@@ -308,6 +308,6 @@ Or enter this code with your HomeKit app on your iOS device to pair with Homebri
 * [3] [树莓派进阶（一）：借助树莓派与 HomeBridge，从米家到 HomeKit](https://www.jianshu.com/p/ec79b2711bd5)
 * [4] [探索其他插件](https://www.npmjs.com/search?q=homebridge-plugin)
 * [5] [树莓派3B规格+GPIO引脚图+负载电流参考](https://www.jianshu.com/p/a255c22b96fa)
-* [6] [有趣的树莓派项目](https://blog.mindcont.com/2016/05/05/raspberry-pi-excellent-project/)
+* [6] [有趣的树莓派项目](https://mindcont.github.io/2016/05/05/raspberry-pi-excellent-project/)
 * [7] [家具变智能：用HomeKit+Siri声控家里电器](http://shumeipai.nxez.com/2017/09/04/homekit-and-siri-voice-control-home-appliances.html)
 * [8] [利用 HomeAssistant +树莓派+ Amazon Echo 的智能家居实践（二）—— 初识 HomeAssistant](http://kittenyang.com/homeassistant_practice_02/)

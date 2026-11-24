@@ -8,7 +8,7 @@ ROS( robot operating system) 是一款开源的面向与机器人控制领域的
 <!--more-->
 ![](/images/coding/ubuntu/ros/hero_product.jpg)
 
-[书接上回](http://blog.mindcont.com/2016/12/14/naoqi-robot-sdk-ubuntu/)，下面我将带您一览ros和naoqi robot 在ubuntu 14.04(lts)版本下开发环境的搭建。
+[书接上回](https://mindcont.github.io/2016/12/14/naoqi-robot-sdk-ubuntu/)，下面我将带您一览ros和naoqi robot 在ubuntu 14.04(lts)版本下开发环境的搭建。
 
 ### 安装 ros-indigo-desktop
 
@@ -157,9 +157,9 @@ roslaunch nao_description display.launch
 ![](/images/coding/ubuntu/ros/naoqi-display.jpg)
 ![](/images/coding/ubuntu/ros/turtlebot.jpg)
 
-如果过程中遇到错误和问题，请参考下面的[参考链接](http://blog.mindcont.coms/2016/12/14/ros-naoqi-ubuntu/#参考)。
+如果过程中遇到错误和问题，请参考下面的[参考链接](https://mindcont.github.io/2016/12/14/ros-naoqi-ubuntu/#参考)。
 
-本文系作者原创，**转载注明出处 http://blog.mindcont.com/2016/12/14/ros-naoqi-ubuntu/**
+本文系作者原创，**转载注明出处 https://mindcont.github.io/2016/12/14/ros-naoqi-ubuntu/**
 ## 参考
 * [Humanoid Teleoperation](http://wiki.ros.org/openni/Contests/ROS%203D/Humanoid%20Teleoperation)
 * [nao Tutorials](http://wiki.ros.org/nao/Tutorials)

@@ -110,9 +110,9 @@ import naoqi
 ![](/images/coding/ubuntu/ros/naoqi-python-sdk.png)
 
 ## Next
-下一步，我们会构建[基于ROS的 naoqi 机器人开发环境](http://blog.mindcont.com/2016/12/14/ros-naoqi-ubuntu/)的搭建，欢迎继续关注。
+下一步，我们会构建[基于ROS的 naoqi 机器人开发环境](https://mindcont.github.io/2016/12/14/ros-naoqi-ubuntu/)的搭建，欢迎继续关注。
 
-本文系作者原创，**转载注明出处 http://blog.mindcont.com/2016/12/14/naoqi-robot-sdk-ubuntu/**
+本文系作者原创，**转载注明出处 https://mindcont.github.io/2016/12/14/naoqi-robot-sdk-ubuntu/**
 
 ## 参考
 * [Getting started with ROS for Nao](http://wiki.ros.org/nao/Tutorials/Getting-Started)

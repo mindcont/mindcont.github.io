@@ -1,6 +1,6 @@
 # 项脊轩博客
 
-博客源码。文章与图片位于 `_posts/`、`about/`、`books/`、`history/`、`images/`、`media/`；主题 `themes/maupassant` 随仓库托管（不再是 Git submodule）。站点由 GitHub Actions 构建并部署到 GitHub Pages，域名 `blog.mindcont.com`。
+博客源码。文章与图片位于 `_posts/`、`about/`、`books/`、`history/`、`images/`、`media/`；主题 `themes/maupassant` 随仓库托管（不再是 Git submodule）。站点由 GitHub Actions 构建并部署到 GitHub Pages，默认地址 `https://mindcont.github.io/`。
 
 ## 环境
 
@@ -50,9 +50,10 @@ pnpm run serve
 仓库设置要求：
 
 - Settings → Pages → Build and deployment → Source 选择 **GitHub Actions**
+- Settings → Pages → Custom domain 必须为空（不再使用 `blog.mindcont.com`；若浏览器仍跳转该域名，在此清除并保存）
 - Settings → Environments → `github-pages` → Deployment branches 允许 `rebuild-src`（或 No restriction）
 
-`CNAME` 与 `google44adb23bef6af1e9.html` 已在 `tools/build.cjs` 的 `staticFiles` 中，会随产物发布。
+`google44adb23bef6af1e9.html` 已在 `tools/build.cjs` 的 `staticFiles` 中，会随产物发布；`CNAME` 文件与 `blog.mindcont.com` 已移除。域名侧若仍保留 `blog` 指向 `mindcont.github.io` 的 CNAME 记录，也应一并删除，否则该域名会解析到 GitHub 但不再有站点。
 
 ## 分支
 

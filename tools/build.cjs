@@ -19,7 +19,6 @@ const path = require('node:path');
     'js/recent-comments.js',
     'favicon.ico',
     'apple-touch-icon.png',
-    'CNAME',
     'google44adb23bef6af1e9.html'
   ];
   for (const relative of staticFiles) {

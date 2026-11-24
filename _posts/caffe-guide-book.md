@@ -33,7 +33,7 @@ Caffe::set_mode(Caffe::GPU);
 前期入门主要根据自己的机器（nvidia显卡）完成Caffe 的安装，运行 [Caffe官网](http://caffe.berkeleyvision.org/)和  [github](https://github.com/bvlc/caffe) repo 上的**例程**。
 ### 安装
 安装请仔细阅读下面的中文教程，**编译中遇到的错误**请在 github issues用英文仔细查看错误原因。而且大部分都是**环境依赖，路径错误**。
-* [Ubuntu 14.04 64bit + Caffe rc3 + CUDA 7.5 + Intel MKL 配置说明](http://blog.mindcont.com/2016/07/20/ubuntu1404-caffe-r3-cuda7-5-mkl/)
+* [Ubuntu 14.04 64bit + Caffe rc3 + CUDA 7.5 + Intel MKL 配置说明](https://mindcont.github.io/2016/07/20/ubuntu1404-caffe-r3-cuda7-5-mkl/)
 * [Installation](http://caffe.berkeleyvision.org/installation.html)
 * [issues](https://github.com/bvlc/caffe/issues)
 
@@ -42,7 +42,7 @@ Caffe::set_mode(Caffe::GPU);
 
 |例程名|实现|学习意义|
 |---|---|---|
-|LeNet MNIST|[手写数字识别](https://blog.mindcont.com/2017/04/25/how-to-do-mnist-demo/)|理解模型|
+|LeNet MNIST|[手写数字识别](https://mindcont.github.io/2017/04/25/how-to-do-mnist-demo/)|理解模型|
 |CaffeNet C++ Classification example|c++ 代码实现图片分类|理解如何用c++ 调用caffe|
 |Fine-tuning for style recognition|根据自己数据集微调模型|迁移学习，构建自己数据集，微调模型|
 |Web demo|基于web 网页的图片分类|如何构建 client /server|
@@ -65,7 +65,7 @@ Caffe::set_mode(Caffe::GPU);
 ## 进阶篇
 这里推荐一个很好的实践入门教程，使用python 和 caffe 进行了一个完整的流程，内容详实，可谓理论与实践兼备，不可多得。
 * [A Practical Introduction to Deep Learning with Caffe and Python](http://adilmoujahid.com/posts/2016/06/introduction-deep-learning-python-caffe/)
-* [自上而下的学习路线-软件工程师的机器学习](https://blog.mindcont.com/2017/01/05/machine-learning-for-software-engineers/)
+* [自上而下的学习路线-软件工程师的机器学习](https://mindcont.github.io/2017/01/05/machine-learning-for-software-engineers/)
 
 ### 应用
 #### 视觉方向
@@ -119,7 +119,7 @@ Caffe::set_mode(Caffe::GPU);
 
 鉴于各式各样的数据集种类繁多，此部分单独列为一个页面，请参考下面的链接。
 
-* [深度学习：数据集篇](http://blog.mindcont.com/2016/09/13/Deep-learning-dataset/)
+* [深度学习：数据集篇](https://mindcont.github.io/2016/09/13/Deep-learning-dataset/)
 
 标注工具
 * [LabelImg](https://github.com/tzutalin/labelImg)
@@ -210,4 +210,4 @@ FCN将传统CNN中的全连接层转化成一个个的卷积层。在传统的CN
 * [MichaelXin - Awesome-Caffe](https://github.com/MichaelXin/Awesome-Caffe)
 
 作者:[mindcont](https://github.com/mindcont)  2016-08-22 第一次编辑 2017-02-16 第二次编辑
-**转载注明出处 http://blog.mindcont.com/2016/08/22/caffe-guide-book/**
+**转载注明出处 https://mindcont.github.io/2016/08/22/caffe-guide-book/**

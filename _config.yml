@@ -4,7 +4,7 @@ description: Solve intelligence, use it to make the world a better place.
 author: MindCont
 language: zh-CN
 timezone: Asia/Shanghai
-url: http://blog.mindcont.com
+url: https://mindcont.github.io
 root: /
 permalink: :year/:month/:day/:title/
 new_post_name: :year-:month-:day-:title.md

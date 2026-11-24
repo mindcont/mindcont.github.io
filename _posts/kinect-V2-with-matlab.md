@@ -74,4 +74,4 @@ imaqhwinfo
 ![](/images/tools/matlab/kinect-v2-5.png)
 
 作者:[mindcont](https://github.com/mindcont)  2016-05-18 第一次编辑
-**转载注明出处 http://blog.mindcont.com/2016/05/18/Microsoft-Kinect-V2-with-Matlab/**
+**转载注明出处 https://mindcont.github.io/2016/05/18/Microsoft-Kinect-V2-with-Matlab/**

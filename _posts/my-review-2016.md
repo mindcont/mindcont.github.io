@@ -38,7 +38,7 @@ categories: 随笔日记
 
 ![](/images/resources/reproduce-shuransong-results.jpg)
 
-还是没思路，7月份的时候，慢慢得就走向了 [卷积人工神经网络](http://cs231n.stanford.edu/) 和 [Caffe: a fast open framework for deep learning](http://blog.mindcont.com/2017/02/15/caffe-guide-book/)，就是用深度学习的方法去解决视觉方面的一些问题。先是安装 caffe,然后读了目标检测方面一些论文，动手实践了[faster-rcnn](https://github.com/ShaoqingRen/faster_rcnn)、[YoLo](http://pjreddie.com/darknet/yolo/)、[SSD](https://github.com/weiliu89/caffe/tree/ssd)等。下面是faster-rcnn 当时运行的demo
+还是没思路，7月份的时候，慢慢得就走向了 [卷积人工神经网络](http://cs231n.stanford.edu/) 和 [Caffe: a fast open framework for deep learning](https://mindcont.github.io/2017/02/15/caffe-guide-book/)，就是用深度学习的方法去解决视觉方面的一些问题。先是安装 caffe,然后读了目标检测方面一些论文，动手实践了[faster-rcnn](https://github.com/ShaoqingRen/faster_rcnn)、[YoLo](http://pjreddie.com/darknet/yolo/)、[SSD](https://github.com/weiliu89/caffe/tree/ssd)等。下面是faster-rcnn 当时运行的demo
 
 ![](/images/resources/faster-rcnn.png)
 
@@ -70,4 +70,4 @@ categories: 随笔日记
 [EMOJI CHEAT SHEET](http://www.webpagefx.com/tools/emoji-cheat-sheet/)
 
 作者:[mindcont](https://github.com/mindcont)  2017-02-17 第一次编辑
-**转载注明出处 http://blog.mindcont.com/2017/02/16/my-review-2016/**
+**转载注明出处 https://mindcont.github.io/2017/02/16/my-review-2016/**

@@ -17,7 +17,7 @@ Demo: 访问 http://digits.daoapp.io
 * Digits集成了流行的 [Caffe](https://github.com/BVLC/caffe) (deep learning framework)，并支持使用cuDNN进行GPU加速。
 
 ## 安装
-**注意：** 在此，我们默认你以安装好了[Caffe](https://github.com/BVLC/caffe) 或 [torch7](https://github.com/torch/torch7)，本文以Ubuntu 14.04 LTS 环境下简述Nvidia Digits 和 caffe 相关配置，如果您在Ubuntu 下还没有配置成功 Caffe ,建议你查看我的另一篇博客 [Ubuntu 14.04 64bit + Caffe rc3 + CUDA 7.5 + Intel MKL 配置说明](http://blog.mindcont.com/2016/07/20/ubuntu1404-caffe-r3-cuda7-5-mkl/)。
+**注意：** 在此，我们默认你以安装好了[Caffe](https://github.com/BVLC/caffe) 或 [torch7](https://github.com/torch/torch7)，本文以Ubuntu 14.04 LTS 环境下简述Nvidia Digits 和 caffe 相关配置，如果您在Ubuntu 下还没有配置成功 Caffe ,建议你查看我的另一篇博客 [Ubuntu 14.04 64bit + Caffe rc3 + CUDA 7.5 + Intel MKL 配置说明](https://mindcont.github.io/2016/07/20/ubuntu1404-caffe-r3-cuda7-5-mkl/)。
 
 打开命令行，依次输入下面的指令
 ```sh
